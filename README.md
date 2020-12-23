@@ -10,8 +10,8 @@
 <br/>
 </div>
 <p align="center">
-<a href="./de/README.md"><img alt="Docs: CAPs" src="https://img.shields.io/badge/docs-DE-blue" /></a>
-<a href="./en/README.md"><img alt="Docs: SEPs" src="https://img.shields.io/badge/docs-EN-blue" /></a>
+<a href="./de/README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
+<a href="./en/README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
 </p>
 <br/>
 
@@ -19,13 +19,13 @@
 
 Dieses Repository beinhaltet die **Rollout Dokumentation** von fiskaltrust für den deutschen Markt. Es unterstüzt Kassenhersteller und Kassenhändler beim Rolloutprozess der fiskaltrust.Middleware und anderer fiskaltrust Produkte. 
 
-* zu dem Inhalten auf Deutsch
+* [zu dem Inhalten auf Deutsch](de/README.md)
 
 ## English
 
 This repository is home to **Rollout Documentation** of fiskaltrust for the german market. It supports POSCreators (cash register manufacturers) and POSDealers (cash register dealers) in the rollout process of the fiskaltrust.mMiddleware and other fiskaltrust products. 
 
-* to the Contents in English
+* [to the Contents in English](en/README.md)
 
 ## Contributing
 

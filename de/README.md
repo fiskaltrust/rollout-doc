@@ -8,8 +8,8 @@
 <br/>
 </div>
 <p align="center">
-<a href="./de/README.md"><img alt="Docs: CAPs" src="https://img.shields.io/badge/docs-DE-blue" /></a>
-<a href="../en/README.md"><img alt="Docs: SEPs" src="https://img.shields.io/badge/docs-EN-blue" /></a>
+<a href="README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
+<a href="../en/README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
 </p>
 <br/>
 
@@ -43,8 +43,3 @@ Beim Rolloutprozess unterscheidet fiskaltrust grundsätzlich zwischen drei Partn
 │       └── <a href="./middleware/README.md" title="Service testen">Fiskaly Cloud TSE auschecken und einrichten</a>
 </pre>
 
-## Beitragen
-
-See [CONTRIBUTING](CONTRIBUTING.md) to learn how to contribute.
-
-[fiskaltrust Germany]: https://fiskaltrust.de
