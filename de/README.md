@@ -25,7 +25,7 @@ Beim Rolloutprozess unterscheidet fiskaltrust grundsätzlich zwischen drei Partn
 ├── <a href="./einladungsmanagement/README.md" title="Einladungsmanagement">Einladungsmanagement</a>
 │   └── <a href="./einladungsmanagement/README.md#kassenhersteller-laden-kassenhändler-ein" title="KassenHändler einladen">KassenHändler einladen</a>
 │   └── <a href="./einladungsmanagement/README.md#kassenhändler-laden-kassenbetreiber-ein" title="KassenBetreiber einladen">KassenBetreiber einladen</a>
-│       └── <a href="./einladungsmanagement/README.md" title="Outlets für KassenBetreiber anlegen">Outlets für KassenBetreiber anlegen</a>
+│       └── <a href="./einladungsmanagement/README.md#standorte-fur-kassenbetreiber-anlegen" title="Standorte für KassenBetreiber anlegen">Standorte für KassenBetreiber anlegen</a>
 ├── <a href="./middleware/README.md" title="Middleware">Rollout der fiskaltrust.Middleware</a>
 │   └── <a href="./middleware/README.md" title="Konfiguration der Middleware">Konfiguration der Middleware</a>
 │   └── <a href="./middleware/README.md" title="Service testen">Service testen</a>

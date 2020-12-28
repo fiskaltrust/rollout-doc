@@ -297,7 +297,33 @@ Die Historie (Protokoll) Ihrer in der Vergangenheit versendeten Einladungen wird
 ![Einladungs-Email erneut senden lassen](images/Einladungs-Email-erneut-senden-lassen.png "Einladungs-Email erneut senden lassen")
 
 
-#####  Outlets für KassenBetreiber anlegen
+#####  Standorte für KassenBetreiber anlegen
+
+Soblad sich ein KassenBetreiber über die Einladung eines KassenHändlers im fiskaltrust.Portal registriert hat und die Nutzungsvereinbarung digital unterschrieben hat, legt das fiskaltrust.Portal automatisch einen Standort (Hauptstandort) mit den Stammdaten der Firma an. Sollte der KassenBetreiber mehrere Standort betreiben, so müssen diese im fiskaltrust.Portal angelegt werden, denn bei der Konfiguration der fiskaltrust.Middleware muss der genaue Standort (Outlet-Nummer) angegeben werden damit die Daten separiert werden können. Im Falle einer Finanzprüfung ist der Standort die prüfbare Einheit. 
+
+KassenHändler können Standorte für Ihre KassenBetreiber über die Surrogate-Funktion anlegen und editieren. Dazu benötigen Sie zumindest Schreibrechte auf den Account des KassenBetreiber. Sollte Sie als KassenHändler diese Rechte nicht besitzen, so können Sie alternativ den KassenBetreiber bitten die benötigten Standorte selbst anzulegen.
+
+Um als KassenHändler Standorte (Outlets) für Ihren KassenBetreiber anzulegen oder zu editieren, können Sie wie folgt vorgehen:
+
+1. Loggen Sie sich mit Ihrem Account (als KassenHändler) im fiskaltrust.Portal ein und gehen Sie auf POSOperator -> Übersicht. Drücken Sie hier den "Suchen" Button um dem KassenBetreiber zu finden:
+
+![Übersicht der Kassenbetreiber](images/Betreiber-suchen.png "Übersicht der Kassenbetreiber")
+
+
+
+Der gesuchte KassenBetreiber erscheint als Eintrag in der Ergebnisliste. Der Name des KassenBetreibers wird dabei als Link dargestellt. 
+
+2. Drücken Sie den Link um sich in den Account des KassenBetreiber einzuloggen (Surrogate-Funktion). Sie werden zu dem Account des KassenBetreiber weitergeleitet. 
+3. Gehen Sie im Menü auf den Firmennamen des KassenBetreiber und drücken Sie auf "Standorte". Eine Übersicht der Standorte des KassenBetreiber erscheint:
+
+![Übersicht der Standorte](images/Standort-Uebersicht.png "Übersicht der Standorte")
+
+4. Sie können hier neue Standorte einzeln anlegen (Button "Fügen Sie einen neuen Standort hinzu") oder mehrer Standorte gelichzeitig aus einer CSV-Datei importieren. Nach dem Anlegen erscheint der neue Standort in der Liste. 
+
+![Standort angelegt](images/Standort-angelegt.png "Standort angelegt")
+
+5. Drücken Sie nach getaner Arbeit im oberen Bereich rechts den Button "Zu Ihrem Account wechseln" um wieder zurück zu Ihrem KassenHändler Account zu wechseln.
+
 
 
 ### Schlusswort
