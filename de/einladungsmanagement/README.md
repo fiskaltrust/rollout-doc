@@ -22,7 +22,7 @@ Wie in der [Einleitung](../README.md) beschrieben, werden beim Rollout der fiska
 - KassenHändler (POSDealer)
 - und KassenBetreiber (POSOperator)
 
-Das fiskaltrust.Portal wird unter anderem als wichtiges Rolloutmanagement-Tool verwendet. Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagement-Tool ist die Registrierung der KassenHersteller, ihrer KassenHändler und KassenBetreiber im fiskaltrust.Portal. Hierzu müss sich zuerst der KassenHersteller im Portal registrieren, um dann seine KassenHändler zur Registrierung mit Hilfe des Portals einzuladen. Daraufhin laden die registrierten KassenHändler wiederum ihre KassenBetreiber zur Registrierung ein (ebenfalls über das fiskaltrust.Portal).
+Das fiskaltrust.Portal wird unter anderem als wichtiges Rolloutmanagement-Tool verwendet. Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagement-Tool ist die Registrierung der KassenHersteller, ihrer KassenHändler und KassenBetreiber im fiskaltrust.Portal. Hierzu registriert sich als erster der KassenHersteller, um daraufhin seine KassenHändler zur Registrierung mit Hilfe des Portals einzuladen. Dann laden die registrierten KassenHändler wiederum ihre KassenBetreiber zur Registrierung ein (ebenfalls über das fiskaltrust.Portal).
 
 ![Einladungsprozess](images/Einladungsprozess.png "Einladungsprozess")
 
@@ -56,7 +56,7 @@ Als KassenHändler können Sie wir folgt Ihr Kassensystem (POSSystem) im fiskalt
 
 
 
-3. Nach Eingabe der Daten, können Sie den Button "Erstellen" zum Anlegen des Kassensystem drücken. Daraufhin erscheint die wieder die Übersicht, in der nun das erfasste Kassensystem angezeigt wird:
+3. Nach Eingabe der Daten, können Sie den Button "Erstellen" zum Anlegen des Kassensystem drücken. Daraufhin erscheint wieder die Übersicht, in der nun das erfasste Kassensystem angezeigt wird:
 
 
 
@@ -74,7 +74,7 @@ Als KassenHändler können Sie wir folgt Ihr Kassensystem (POSSystem) im fiskalt
 
 
 
-5. Drücken Sie nun den "Hinzufügen" Button um einen Händler zu Erfassen und einzuladen. Geben Sie als nächstes die Email-Adresse des Händlers ein (Email-Adresse des Ansprechpartners - diese wird später zum Login vom Händler verwendet.):
+5. Drücken Sie nun den "Hinzufügen" Button um einen Händler zu erfassen und einzuladen. Geben Sie als nächstes die Email-Adresse des Händlers ein (Email-Adresse des Ansprechpartners - diese wird später zum Login vom Händler verwendet):
 
 
 
@@ -133,7 +133,7 @@ Als KassenHändler können Sie wir folgt Ihr Kassensystem (POSSystem) im fiskalt
 
 
 
-11. Sobald der Händler den Kooperationsvertrag mit fiskaltrust digital unterschrieben hat wird er zurück zur Übersicht geführt. Hier kann er sehen, dass die Rolle "KassenHändler" aktiviert hat:
+11. Sobald der Händler den Kooperationsvertrag mit fiskaltrust digital unterschrieben hat wird er zurück zur Übersicht geführt. Hier kann er sehen, dass die Rolle "KassenHändler" aktiviert wurde:
 
     
 
@@ -150,7 +150,7 @@ Als KassenHändler können Sie wir folgt Ihr Kassensystem (POSSystem) im fiskalt
 
 
 
-Damit sit der KassenHändler eingeladen und dem Kassensystem zugeordnet. Er kann nun mit der Einladung der KassenBetreiber beginnen.
+Damit ist der KassenHändler eingeladen und dem Kassensystem zugeordnet. Er kann nun mit der Einladung der KassenBetreiber beginnen.
 
 ### KassenHändler laden KassenBetreiber ein
 Als KassenHändler müssen Sie Ihre KassenBetreiber (POSOperator) im fiskaltrust.Portal einladen um das Portal als Rolloutmanagement-Tool für die fiskaltrust.Middleware und für andere fiskaltrust Produkte nutzen zu können. Sie können einzelne KassenBetreiber aber auch viele KassenBetreiber gleichzeitig einladen (CSV-Import).
@@ -172,10 +172,10 @@ Um KassenBetreiber einzuladen, gehen Sie wie folgt vor:
 
 2. Konfigurieren Sie als nächstes die Einladungs-Email die später an die eingeladenen Betreiber gesendet wird. Sie können hierzu eine PDF Datei anhängen und einen Zusatztext schreiben. Diese werden in die automatisch von fiskaltrust erstellte Einladung-Email übernommen.
 
-3. Geben Sie zudem an, welche Rechte Sie auf den Accout des Betreibers haben möchten. Dazu haben Sie folgende Möglichkeiten:
+3. Geben Sie zudem an, welche Rechte Sie auf den Account des Betreibers haben möchten. Dazu haben Sie folgende Möglichkeiten:
 
 - "Nur lesen": Sie können sich später in den Account des Betreibers einloggen, können dort aber nichts ändern
-- "Lesen und Schreiben": Sie können sich später in den Accoubt des Betreibers einloggen, können dort alles lesen und schreiben, also zum Beispiel die Konfiguration der fiskaltrust.Middelware anlegen, die sie beim Rollout benötigen werden.
+- "Lesen und Schreiben": Sie können sich später in den Account des Betreibers einloggen, können dort alles lesen und schreiben, also zum Beispiel die Konfiguration der fiskaltrust.Middelware anlegen, die sie beim Rollout benötigen werden.
 - "Voll": Sie können sich später in den Account des Betreibers einloggen, können dort alles lesen und schreiben, zudem können Sie im Namen des Betreibers Produkte von fiskaltrust einkaufen und Verträge unterzeichnen.
 - "keine Zugriffsrechte": Sie können sich später nicht in den Account des Betreibers einloggen.
 
