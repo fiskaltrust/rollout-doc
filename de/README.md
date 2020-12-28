@@ -23,23 +23,23 @@ Beim Rolloutprozess unterscheidet fiskaltrust grundsätzlich zwischen drei Partn
 ## Inhalte
 <pre>
 ├── <a href="./einladungsmanagement/README.md" title="Einladungsmanagement">Einladungsmanagement</a>
-│   └── <a href="./einladungsmanagement/README.md" title="KassenHändler einladen">KassenHändler einladen</a>
-│   └── <a href="./einladungsmanagement/README.md" title="KassenBetreiber einladen">KassenBetreiber einladen</a>
-│       └── <a href="./einladungsmanagement/README.md" title="KassenBetreiber einladen">Outlets für KassenBetreiber anlegen</a>
+│   └── <a href="./einladungsmanagement/README.md#kassenhersteller-laden-kassenhändler-ein" title="KassenHändler einladen">KassenHändler einladen</a>
+│   └── <a href="./einladungsmanagement/README.md#kassenhändler-laden-kassenbetreiber-ein" title="KassenBetreiber einladen">KassenBetreiber einladen</a>
+│       └── <a href="./einladungsmanagement/README.md" title="Outlets für KassenBetreiber anlegen">Outlets für KassenBetreiber anlegen</a>
 ├── <a href="./middleware/README.md" title="Middleware">Rollout der fiskaltrust.Middleware</a>
 │   └── <a href="./middleware/README.md" title="Konfiguration der Middleware">Konfiguration der Middleware</a>
 │   └── <a href="./middleware/README.md" title="Service testen">Service testen</a>
-│   └── <a href="./middleware/README.md" title="Service testen">Rollout Szenarien</a>
-│   └── <a href="./middleware/README.md" title="Service testen">Automatisierung des Rollout</a>
-│       └── <a href="./middleware/README.md" title="Service testen">Templates für die Konfiguration</a>
-│       └── <a href="./middleware/README.md" title="Service testen">Auslieferung der Middleware</a>
-├── <a href="./shop/README.md" title="Middleware">fiskaltrust Produkte kaufen und weiter verkaufen</a>
-│   └── <a href="./middleware/README.md" title="Service testen">fiskaltrust.Shop</a>
-│   └── <a href="./middleware/README.md" title="Service testen">Rahmenverträge für Mengenrabatt</a>
-│   └── <a href="./middleware/README.md" title="Service testen">Produkte über Entitlements kaufen</a>
-│   └── <a href="./middleware/README.md" title="Service testen">Übetragung gekaufter Produkte an die KassenBetreiber</a>
-│       └── <a href="./middleware/README.md" title="Service testen">Lieferoptionen für Hardware TSEs</a>
-│       └── <a href="./middleware/README.md" title="Service testen">Swissbit Cloud TSE auschecken und einrichten</a>
-│       └── <a href="./middleware/README.md" title="Service testen">Fiskaly Cloud TSE auschecken und einrichten</a>
+│   └── <a href="./middleware/README.md" title="Rollout Szenarien">Rollout Szenarien</a>
+│   └── <a href="./middleware/README.md" title="Automatisierung des Rollout">Automatisierung des Rollout</a>
+│       └── <a href="./middleware/README.md" title="Templates für die Konfiguration">Templates für die Konfiguration</a>
+│       └── <a href="./middleware/README.md" title="Auslieferung der Middleware">Auslieferung der Middleware</a>
+├── <a href="./shop/README.md" title="Shop">fiskaltrust Produkte kaufen und weiter verkaufen</a>
+│   └── <a href="./shop/README.md" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
+│   └── <a href="./shop/README.md" title="Rahmenverträge für Mengenrabatt">Rahmenverträge für Mengenrabatt</a>
+│   └── <a href="./shop/README.md" title="Produkte über Entitlements kaufen">Produkte über Entitlements kaufen</a>
+│   └── <a href="./shop/README.md" title="Übetragung gekaufter Produkte an die KassenBetreiber">Übetragung gekaufter Produkte an die KassenBetreiber</a>
+│       └── <a href="./shop/README.md" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
+│       └── <a href="./shop/README.md" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
+│       └── <a href="./shop/README.md" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
 </pre>
 

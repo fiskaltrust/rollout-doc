@@ -25,10 +25,4 @@ Dieses Repository beinhaltet die **Rollout Dokumentation** von fiskaltrust für 
 
 This repository is home to **Rollout Documentation** of fiskaltrust for the german market. It supports POSCreators (cash register manufacturers) and POSDealers (cash register dealers) in the rollout process of the fiskaltrust.mMiddleware and other fiskaltrust products. 
 
-* [to the Contents in English](en/README.md)
-
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md) to learn how to contribute.
-
-[fiskaltrust Germany]: https://fiskaltrust.de
+* [to the contents in English](en/README.md)

@@ -297,6 +297,8 @@ Die Historie (Protokoll) Ihrer in der Vergangenheit versendeten Einladungen wird
 ![Einladungs-Email erneut senden lassen](images/Einladungs-Email-erneut-senden-lassen.png "Einladungs-Email erneut senden lassen")
 
 
+#####  Outlets für KassenBetreiber anlegen
+
 
 ### Schlusswort
 
