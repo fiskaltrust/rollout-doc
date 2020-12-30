@@ -44,18 +44,18 @@ Die Queue erhält also Anfragen vom KassenSystem und verarbeitet diese. Sie ist 
 
 Für die Signierung der Daten ist die fiskaltrust.Middleware-Komponente "SCU" (Signaturerstellungseinheit) verantwortlich. Dabei werden die zu signierenden Daten von der Queue an die SCU gesendet, die wiederum, in der deutschen Variante, mit einer TSE kommuniziert. Die TSE nimmt schlussendlich die Signierung der Daten vor. Die signierten Daten und alle dazugehörigen Informationen werden dann von der SCU zurück an die Queue gesendet. Die Queue persistiert die Daten und baut die Antwort auf, die an das KassenSystem gesendet wird. In dieser Antwort befinden sich wichtige Angaben, die vom KassenSystem auf den Beleg gedruckt werden müssen.
 
-#### Die Cashbox als Konfigurationscontainer
+#### Die CashBox als Konfigurationscontainer
 
-Die Konfiguration einer fiskaltrust.Middleware Instanz wird über eine sogenannte **Cashbox** vorgenommen. Die Cashbox ist ein Konfigurationscontainer, der wiederum die Konfigurationen der zum Einsatz kommenden fiskaltrust.Middleware Komponenten (z.B. Queue, SCU)  beinhaltet und miteinander verbindet. Im folgenden Beispiel wird eine Cashbox dargestellt, die die Konfiguration einer Queue und die Konfiguration einer SCU beinhaltet:
-
-
-
-
-![Cashbox](images/cashbox.png "Cashbox mit Queue und SCU")
+Die Konfiguration einer fiskaltrust.Middleware Instanz wird über eine sogenannte **CashBox** vorgenommen. Die CashBox ist ein Konfigurationscontainer, der wiederum die Konfigurationen der zum Einsatz kommenden fiskaltrust.Middleware Komponenten (z.B. Queue, SCU)  beinhaltet und miteinander verbindet. Im folgenden Beispiel wird eine CashBox dargestellt, die die Konfiguration einer Queue und die Konfiguration einer SCU beinhaltet:
 
 
 
-für das obere Beispiel müssen wir also die Konfiguration der Queue und der SCU vornehmen und danach diese beiden Konfigurationen in einen Konfigurationscontainer (Cashbox) ablegen und miteinander verbinden. Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
+
+![CashBox](images/cashbox.png "CashBox mit Queue und SCU")
+
+
+
+für das obere Beispiel müssen wir also die Konfiguration der Queue und der SCU vornehmen und danach diese beiden Konfigurationen in einen Konfigurationscontainer (CashBox) ablegen und miteinander verbinden. Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
 
 ##### Konfiguration der Queue
 
@@ -73,14 +73,61 @@ Die SCU ist für die Erstellung der Signaturen verantwortlich. Sie bekommt dabei
 - 1. zum einen muss die Queue wissen, wie und wo sie die SCU erreichen kann (also z.B. über `grpc` auf `localhost:5678`).
 - 2. und zum zweiten muss die SCU wissen auf welche TSE sie zugreifen soll und wo sich diese befindet (z.B. Swissbit - USB - TSE im Laufwerk "E:").
 
-Sie werden sich nun sicherlich fragen, warum wir hier konfigurieren müssen, wie die SCU von der Queue erreichbar sein soll, wenn die Queue und SCU doch Komponenten der fiskaltrust.Middleware sind. Ist der Queue nicht schon bekannt, wie sie die SCU erreichen kann? Nun, die Antwort liegt in der Flexibilität des fiskaltrust.Middleware, denn eine Instanz der fiskaltrust.Middleware betreibt nur genau die Komponenten, die in ihrer Cashbox angegeben werden. So kann zum Beispiel erreicht werden dass sich drei Kassen eine Hardware-TSE teilen können:
+Sie werden sich nun sicherlich fragen, warum wir hier konfigurieren müssen, wie die SCU von der Queue erreichbar sein soll, wenn die Queue und SCU doch Komponenten der fiskaltrust.Middleware sind. Ist der Queue nicht schon bekannt, wie sie die SCU erreichen kann? Nun, die Antwort liegt in der Flexibilität des fiskaltrust.Middleware, denn eine Instanz der fiskaltrust.Middleware betreibt nur genau die Komponenten, die in ihrer CashBox angegeben werden. So kann zum Beispiel erreicht werden dass sich drei Kassen eine Hardware-TSE teilen können:
 
 ![Flexibilität der Middleware](images/kasse-als-server-mit-hw-tse.png "Flexibilität der Middleware")
 
-Auf jeder Kasse läuft eine Instanz der fiskaltrust.Middleware, die durch ihre eigene Cashbox konfiguriert wird. Die Cashbox der ersten Kasse beinhaltet nur die Konfiguration einer Queue. Die Cashbox der mittleren Kasse beinhaltet die Konfiguration einer Queue und einer SCU. Die Cashbox der unteren Kasse, so wie die obere, beinhaltet nur eine Queue. Damit die SCU aus der mittleren Kasse (z.B. Hauptkasse) für die anderen beiden Kassen bzw. Queues erreichbar ist, müssen wir in der SCU Konfiguration angeben wie und wo die SCU erreichbar ist (und natürlich den entsprechenden Port freigeben). Um sicherzustellen, dass eine Queue sich mit der richtigen SCU verbindet, müssen wir diese Verbindungangabe beim Erstellen der Cashbox für die Queue konfigurieren. Weitere, ähnliche Kombinationsmöglichkeiten werden wir im Kapitel [Rollout-Szenarien](#rollout-szenarien) diskutieren.
+Auf jeder Kasse läuft eine Instanz der fiskaltrust.Middleware, die durch ihre eigene CashBox konfiguriert wird. Die CashBox der ersten Kasse beinhaltet nur die Konfiguration einer Queue. Die CashBox der mittleren Kasse beinhaltet die Konfiguration einer Queue und einer SCU. Die CashBox der unteren Kasse, so wie die obere, beinhaltet nur eine Queue. Damit die SCU aus der mittleren Kasse (z.B. Hauptkasse) für die anderen beiden Kassen bzw. Queues erreichbar ist, müssen wir in der SCU Konfiguration angeben wie und wo die SCU erreichbar ist (und natürlich den entsprechenden Port freigeben). Um sicherzustellen, dass eine Queue sich mit der richtigen SCU verbindet, müssen wir diese Verbindungangabe beim Erstellen der CashBox für die Queue konfigurieren. 
 
-#### Cashbox manuell über das fiskaltrust.Portal anlegen
+#### CashBox manuell über das fiskaltrust.Portal anlegen
 
+Jede Instanz der fiskaltrust.Middleware muss mit Hilfe einer CashBox (Konfigurationscontainer) konfiguriert werden. Eine solche CashBox kann manuell über das fiskaltrust.Portal angelegt werden oder automatisiert über eine API. In diesem Kapitel zeigen wir Ihnen wie eine CashBox über das fiskaltrust.Portal angelegt wird. Dazu gehen wir von folgenden Szenario aus:
+
+![Szenario-Cashbox-Queue-SCU](images/kasse-queue-scu-tse.png "Szenario CashBox mit Queue und SCU")
+
+Unsere CashBox soll eine Queue und eine SCU beinhalten. Die SCU greift auf eine USB TSE zu. Konkret werden wir eine Queue konfigurieren, mit der das KassenSystem über `REST` kommuniziert und unter `localhost:1200/fiskaltrust` für das KassenSystem erreichbar ist. Sie legt die verarbeiteten Daten in einer `SQLite` Datenbank ab. Des Weiteren eine SCU die über `grpc` und unter `localhost:1400` für die Queue erreichbar ist und die zum Signieren der Daten auf eine Cryptovision USB-TSE zugreift. Die TSE ist im Laufwerk `E:` eingesteckt.
+
+**Schritt 1: Anlegen der SCU Konfiguration**
+
+Gehen Sie im fiskaltrust.Portal auf "Konfiguration ->  TSE/Signatur-Erstellungs-Einheit". Sie gelangen zur Liste der bereits angelegten SCUs. 
+
+![SCU Anlegen 1](images/SCU-Anlegen-1.png "Liste der SCUs")
+
+Drücken Sie nun auf den Button "+ Erstellen". Es erscheint ein Formular zum Erfassen der Konfiguration.
+
+![SCU Anlegen 2](images/SCU-Anlegen-2.png "SCU Anlegen")
+
+1. Geben Sie hier den Namen der SCU an (z.B. TEST SCU)
+2. Wählen Sie je nach TSE das Package (Modul) aus, das die SCU verwenden soll (in unserem Beispiel verwenden wir eine CryptoVision TSE)
+3. Bei der Package-Version wird automatisch die neueste gewählt
+4. Geben Sie den Standort an, es wird standardmäßig automatisch der Hauptstandort vorselektiert
+5. Drücken Sie "Speichern"
+
+Die SCU wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weitergeleitet. Diese richtet sich nach dem zuvor ausgewählten Package. In unserem Beispiel müssen wir für die Cryptovision TSE den Gerätepfad angeben. Für ein anderes Package kann hier auch was anderes verlangt werden (z.B. Com-Port für eine Diebold-TSE). 
+
+![SCU Anlegen 3](images/SCU-Anlegen-3.png "SCU Konfigurieren")
+
+1. Tragen Sie den Gerätepfad ein (also E: in unserem Fall)
+2. Geben Sie nun an, wie und wo die SCU für eine Queue erreichbar sein soll. Drücken Sie dazu zuerst den entsprechenden Button für die Art der Kommunikation (z.B. grpc) und tragen Sie danach den Pfad ein (z.B. localhost:1401).
+3. Drücken Sie auf "Speichern und schließen" um die Angaben zu Speichern und zurück zur Liste zu gelangen.
+
+In der Liste können wir nun sehen, dass unsere SCU Konfiguration erfolgreich angelegt wurde:
+
+![SCU Anlegen 4](images/SCU-Anlegen-4.png "Liste mit angelegter SCU")
+
+
+
+
+
+**Schritt 2: Anlegen der Queue Konfiguration**
+
+**Schritt 3: Anlegen der Cashbox**
+
+**Schritt 4: Cashbox füllen**
+
+**Schritt 5: Queue mit SCU verbinden**
+
+**Schritt 6: Cashbox publizieren (rebuild configuration)**
 
 
 ### Service testen
