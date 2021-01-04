@@ -93,11 +93,11 @@ Gehen Sie im fiskaltrust.Portal auf "Konfiguration ->  TSE/Signatur-Erstellungs-
 
 ![SCU Anlegen 1](images/SCU-Anlegen-1.png "Liste der SCUs")
 
-Drücken Sie nun auf den Button "+ Erstellen". Es erscheint ein Formular zum Erfassen der Konfiguration.
+Drücken Sie nun auf den Button "+ Erstellen". Es erscheint ein Formular zum Erfassen der SCU.
 
 ![SCU Anlegen 2](images/SCU-Anlegen-2.png "SCU Anlegen")
 
-1. Geben Sie hier den Namen der SCU an (z.B. TEST SCU)
+1. Geben Sie hier den Namen der SCU an (z.B. "TEST SCU")
 2. Wählen Sie je nach TSE das Package (Modul) aus, das die SCU verwenden soll (in unserem Beispiel verwenden wir eine CryptoVision TSE)
 3. Bei der Package-Version wird automatisch die neueste gewählt
 4. Geben Sie den Standort an, es wird standardmäßig automatisch der Hauptstandort vorselektiert
@@ -107,9 +107,9 @@ Die SCU wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weiter
 
 ![SCU Anlegen 3](images/SCU-Anlegen-3.png "SCU Konfigurieren")
 
-1. Tragen Sie den Gerätepfad ein (also E: in unserem Fall)
-2. Geben Sie nun an, wie und wo die SCU für eine Queue erreichbar sein soll. Drücken Sie dazu zuerst den entsprechenden Button für die Art der Kommunikation (z.B. grpc) und tragen Sie danach den Pfad ein (z.B. localhost:1401).
-3. Drücken Sie auf "Speichern und schließen" um die Angaben zu Speichern und zurück zur Liste zu gelangen.
+1. Tragen Sie den Gerätepfad ein (also `E:` in unserem Fall)
+2. Geben Sie nun an, wie und wo die SCU für eine Queue erreichbar sein soll. Drücken Sie dazu zuerst den entsprechenden Button für die Art der Kommunikation (z.B. grpc) und tragen Sie danach den Pfad ein (z.B. `localhost:1401`).
+3. Drücken Sie auf "Speichern und schließen" um die Angaben zu speichern und zurück zur Liste zu gelangen.
 
 In der Liste können wir nun sehen, dass unsere SCU Konfiguration erfolgreich angelegt wurde:
 
@@ -121,14 +121,97 @@ In der Liste können wir nun sehen, dass unsere SCU Konfiguration erfolgreich an
 
 **Schritt 2: Anlegen der Queue Konfiguration**
 
+Als nächstes legen wir die Queue Konfiguration an. Dazu gehen wir auf Konfiguration -> Queue. Die Liste der bereits angelegten Queues wird angezeigt.
+
+![Queue Anlegen 1](images/Queue-Anlegen-1.png "Liste der Queues")
+
+Drücken Sie nun auf den Button "Neu erstellen". Es erscheint ein Formular zum Erfassen der Queue.
+
+![Queue Anlegen 2](images/Queue-Anlegen-2.png "Queue anlegen")
+
+1. Geben Sie hier den Namen der Queue an (z.B. "TEST QUEUE")
+2. Wählen Sie aus, wie die Daten persistiert werden sollen (z.B. SQLite Datenbank). 
+3. Bei der Package-Version wird automatisch die neueste gewählt
+
+4. Geben Sie im Feld "CashBox Identification" die Kassenseriennummer an. Achten Sie darauf, dass diese weltweit eindeutig ist und dass es sich um einen [printable string](https://en.wikipedia.org/wiki/PrintableString) mit max. 20 Zeichen länge handelt. Die hier angegebene Kassenseriennummer wird später auch als ClientId in der TSE registriert, um die Signaturen eindeutig der Kasse zuzuordnen. Da die unterschiedlichen TSE Hersteller jeweils andere Vorgaben zur Formatierung und zur Länge der ClientId machen, haben wir uns hier auf den kleinsten gemeinsamen Nenner geeinigt ([printable string](https://en.wikipedia.org/wiki/PrintableString), max. 20 Zeichen)
+
+5. Geben Sie den Standort an, es wird standardmäßig automatisch der Hauptstandort vorselektiert
+
+6. Drücken Sie "Speichern"
+
+Die Queue wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weitergeleitet. Diese richtet sich nach dem zuvor ausgewählten Persitenz-Package. In unserem Beispiel müssen wir für die SQLite Datenbank keine weiteren Angaben vornehmen, denn sie wird automatisch von der fiskaltrust.Middleware angelegt. Handelt es sich jedoch um ein anderes Package, so müssen hier entsprechende Verbindungsangaben gemacht werden. Zum Beispiel die Angabe eines Connection-String für eine MySQL Datenbank. 
+
+![Queue Anlegen 3](images/Queue-Anlegen-3.png "Queue konfigurieren")
+
+1. Tragen Sie bei Bedarf die Verbindungsangaben ein (in diesem Besipiel nicht notwendig, das SQLite DB)
+2. Geben Sie nun an, wie die Queue von dem KassenSystem erreichbar sein soll. Drücken Sie dazu zuerst den entsprechenden Button für die Art der Kommunikation (z.B. `http(REST)`) und tragen Sie danach den Pfad ein (z.B. `localhost:1200/fiskaltrust`).
+3. Drücken Sie auf "Speichern und schließen" um die Angaben zu speichern und zurück zur Liste zu gelangen.
+
+In der Liste können wir nun sehen, dass unsere Queue Konfiguration erfolgreich angelegt wurde:
+
+![Queue Anlegen 4](images/Queue-Anlegen-4.png "Liste mit angelegter Queue")
+
+
+
 **Schritt 3: Anlegen der Cashbox**
+
+Nach dem Anlegen der SCU und der Queue legen wir als nächstes die Cashbox, also den Konfigurationscontainer für die fiskaltrust.Middleware Instanz, an. Gehen Sie dazu auf Konfiguration->CashBox. Die Liste der bereits angelegten Cashboxen wird angezeigt.
+
+![Cashbox Anlegen 1](images/Cashbox-Anlegen-1.png "Liste der Cashboxen")
+
+Drücken Sie nun auf den Button "+ Hinzufügen". Es erscheint ein Formular zum Erfassen der Cashbox.
+
+![Cashbox Anlegen 2](images/Cashbox-Anlegen-2.png "Cashbox Anlegen")
+
+1. Geben Sie hier den Namen der Cashbox an (z.B. "TEST CASHBOX")
+
+2. Geben Sie den Standort an, es wird standardmäßig automatisch der Hauptstandort vorselektiert
+
+3. Drücken Sie "Speichern" um die Angaben zu speichern und zurück zur Liste zu gelangen.
+
+In der Liste können wir nun sehen, dass unsere neue Cashbox erfolgreich angelegt wurde:
+
+![Cashbox Anlegen 3](images/Cashbox-Anlegen-3.png "Liste mit angelegter Cashbox")
 
 **Schritt 4: Cashbox füllen**
 
+Nach dem Anlegen der Cashbox wir diese als nächstes befüllt. In unserem Beispiel wollen wir die zuvor angelegte Queue Konfiguration und die SCU Konfiguration in die Cashbox hineinlegen. Der Listeneintrag mit unserer Cashbox lässt sich aufklappen. Hier können wir sehen, dass sie aktuell noch leer ist.
+
+![Cashbox Füllen 1](images/Cashbox-Fuellen-1.png "Cashbox aufklappen")
+
+Um die neu angelegte Cashbox zu füllen drücken Sie den "Bearbeiten per Liste" Knopf im Listeneintrag der Cashbox.
+
+![Cashbox Füllen 2](images/Cashbox-Fuellen-2.png "Bearbeiten per Liste")
+
+Die Liste der vorhandenen Konfigurationen wird angezeigt. 
+
+Wir können hier wählen, welche Konfigurationen wir unserem Konfigurationscontainer also in die Cashbox hinzufügen möchten. Für unser Beispiel wählen wir die zuvor angelegte Queue und SCU und drücken dann den "Speichern" Button.
+
+![Cashbox Füllen 3](images/Cashbox-Fuellen-3.png "Queue und SCU in die Cashbox")
+
+Zurück in der Liste können wir erneut den Listeneintrag unserer Cashbox aufklappen und sehen nun, dass sie Queue und SCU beinhaltet.
+
+![Cashbox Füllen 4](images/Cashbox-Fuellen-4.png "Cashbox ist befüllt")
+
 **Schritt 5: Queue mit SCU verbinden**
+
+Wie bereits oben beschrieben, müssen wir der Queue mitteilen, welche SCU sie zum Signieren der Daten verwenden soll. Wir müssen also die Queue mit der SCU "verbinden". In unserem Fall befinden sich Queue und SCU in der gleichen Cashbox. Dennoch müssen wir die Verbindung anlegen. Dazu drücken wir in dem aufgeklappten Listeneintrag der Cashbox den "Verbinden" Button, der rechts von der Queue angezeigt wird:
+
+![Queue-SCU Verbinden 1](images/Queue-SCU-Verbinden-1.png "Verbinden Button")
+
+Es erscheint ein Popup mit den verfügbaren SCUs. Aus dieser Liste können wir nun unsere zuvor angelegte SCU auswählen, speichern und das Popup schließen.
+
+![Queue-SCU Verbinden 2](images/Queue-SCU-Verbinden-2.png "SCU wählen")
+
+Die Queue weiß nun, mit welcher SCU sie zu kommunizieren hat und wo diese erreichbar ist.
 
 **Schritt 6: Cashbox publizieren (rebuild configuration)**
 
+Als letzten Schritt müssen wir die angelegte Cashbox publizieren. Dies geschieht mit dem "Rebuild configuration" Button, der in der Listenzeile der Casbox zur Verfügung steht.
+
+![Cashbox publizieren](images/Cashbox-publizieren.png "Rebuild configuration")
+
+Dadurch wird die Cashbox als JSON File zum Download verfügbar gemacht. Dieses JSON Konfigurations-File kann später von einer fiskaltrust.Middleware Instanz heruntergeladen werden und für die Erstinitialisierung oder für ein Update genutzt werden. Im Falle eines Updates, zum Beispiel Update der SCU Package Version aufgrund einer Gesetzesänderung, wird die Änderung in der Cashbox erst zur Verfügung gestellt, nachdem der "Rebuild configuration" Button gedrückt wurde. Wird daraufhin die fiskaltrust.Middleware Instanz, der diese Cashbox zugeordnet ist, neu gestartet, so lädt sie die neue Konfiguration und aktualisiert sich selbst automatisch, z.B. indem sie das neue Package herunterlädt und verwendet. 
 
 ### Service testen
 
