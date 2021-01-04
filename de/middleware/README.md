@@ -213,9 +213,115 @@ Als letzten Schritt müssen wir die angelegte Cashbox publizieren. Dies geschieh
 
 Dadurch wird die Cashbox als JSON File zum Download verfügbar gemacht. Dieses JSON Konfigurations-File kann später von einer fiskaltrust.Middleware Instanz heruntergeladen werden und für die Erstinitialisierung oder für ein Update genutzt werden. Im Falle eines Updates, zum Beispiel Update der SCU Package Version aufgrund einer Gesetzesänderung, wird die Änderung in der Cashbox erst zur Verfügung gestellt, nachdem der "Rebuild configuration" Button gedrückt wurde. Wird daraufhin die fiskaltrust.Middleware Instanz, der diese Cashbox zugeordnet ist, neu gestartet, so lädt sie die neue Konfiguration und aktualisiert sich selbst automatisch, z.B. indem sie das neue Package herunterlädt und verwendet. 
 
-### Service testen
+### Service starten und testen
+
+Zum Testen des Service, also einer fiskaltrust.Middleware Instanz, laden wir den sogenannten "Launcher" herunter. Dies können wir in dem Listeneintrag der zuvor angelegten Cashbox tun. Drücken Sie dazu den "Download .NET Launcher" Button. 
+
+![Download Launcher](images/Download-Launcher.png "Download Launcher")
+
+Sie erhalten ein zip komprimierten Ordner, den sie auf der Kasse entpacken können. Entpacken Sie das Zip-File. 
+
+![Launcher entpacken](images/Launcher-Entpacken.png "Launcher endpacken")
+
+Der daraus resultierende Ordner kann bei Bedarf auch umbenannt werden. In dem Ordner befinden sich der Launcher `fiskaltrust.exe`, der Service repräsentiert durch die .dll Files, eine Konfigurations-Datei `fiskaltrust.exe.config` und drei Command-Files:
+
+- `install-service.cmd`
+- `uninstall-service.cmd`
+- `test.cmd`
+
+Die Command-Files können zum parametrisierten Starten oder Stoppen des Service verwendet werden. Sie führen die fiskaltrust.exe aus mit entsprechenden Parameter. der Inhalt des `install-service.cmd` File ist zum Beispiel wie folgt:
+
+`cd /d "%~dp0%"`
+`fiskaltrust -cashboxid=259c5a7b-fc44-40d6-af7b-73fde0943ec4 -accesstoken=BL...8D6o= -sandbox -i -servicename=fiskaltrust-259c5a7b-fc44-40d6-af7b-73fde0943ec4`
+`timeout 15`
+
+`fiskaltrust.exe` wird also mit der `cashobxid` "259c.." gestartet. Dadurch weiß die gestartete fiskaltrust.Middleware Instanz aus welchem Konfigurationscontainer (Cashbox) sie sich initialisieren soll. Die CashboxId ist die ID der Cashbox und kann im fiskaltrust.Portal im aufgeklappten Listeneintrag der Cashbox eingesehen werden:
+
+![CashboxId und AccessToken](images/CashboxIdUndAccessToken.png "CashboxId und AccessToken")
+
+Um die Cashbox aus dem fiskaltrust.Portal laden zu können benötigt der Service eine Zugriffsberechtigung. Diese wird über den Parameter `accesstoken` angegeben. Der Wert ist ebenfalls im fiskaltrust.Portal im aufgeklappten Listeneintrag der Cashbox zu finden (s.o.).
+
+Der Parameter `sandbox` gibt an, dass auf das Sandbox-Portal zugegriffen werden soll. Der Parameter `i` gibt an, dass die fiskaltrust.Middleware Instanz als (Windows) Service installiert und gestartet werden soll. Der Parameter `servicename` setzt den Namen des (Windows) Service.
+
+Die vollständige Liste der zur Verfügung stehenden Parameter und weitere technische Angaben zur Installation des Service finden Sie in unserer IPOS Interface-Dokumentation im Kapitel [Installation](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/general/installation/installation.html).
+
+Zum Testen des Service können wir das Command-File `test.cmd` verwenden. Der Inhalt sieht wie folgt aus:
+
+`cd /d "%~dp0%"`
+`fiskaltrust -cashboxid=259c5a7b-fc44-40d6-af7b-73fde0943ec4 -accesstoken=BL...8D6o= -sandbox -test`
+
+Die fiskaltrust.Middleware Instanz wird also nicht als (Windows) Service installiert und gestartet, sondern stattdessen mit Hilfe des Parameters `test` direkt im Testmodus in der Konsole (cmd) gestartet. Der Vorteil hier ist, dass wir direkt in der Konsole die Logmeldungen sehen können und entsprechend reagieren können. Um eine erweiterte Logausgabe zu aktivieren können wir das `test.cmd` File vor dem Ausführen editieren und dort noch den Parameter `verbosity` mit dem Wert `Debug` anhängen:
+
+`cd /d "%~dp0%"`
+`fiskaltrust -cashboxid=259c5a7b-fc44-40d6-af7b-73fde0943ec4 -accesstoken=BL...8D6o= -sandbox -test -verbosity=Debug`
+
+Speichern und als Administrator starten:
+
+![Test starten](images/Test-starten.png "Test starten")
+
+Es erscheint eine Konsole, in der die fisklatrust.Middleware Instanz gestartet wird. Wir können hier sehen, was genau beim Start passiert und bei etwaigen Fehler entsprechende Korrekturen (z.B. in der Cashbox oder in physischen Anschluss der TSE) vornehmen.
+
+![Konsole](images/cmd-terminal-de.png "Konsole")
+
+
+
+Nun können Sie versuchen aus dem KassenSystem Anfragen an die gestartete fiskaltrust.Middleware Instanz zu senden. Als KassenHändler werden Ihnen im KassenSystem entsprechende Knöpfe zur Verfügung stehen. 
+
+In unserem Beispiel simulieren wir ein KassenSystem mit Hilfe von [Postman](https://www.postman.com/). Postman kann Anfragen an die Queue über REST senden. Dazu verwenden wir unsere Collection aus dem [middleware-demo-postman github Repository](https://github.com/fiskaltrust/middleware-demo-postman). In dem Repository findet sich auch die Anleitung zur Konfiguration der postman-collection. Wichtig hierbei ist die Angabe des Endpoint an der die Queue erreichbar ist und die Angabe der cashboxid als Werte für die bereits angelegten Variablen:
+
+![Postman config](images/postman-config.png "Postman Konfiguration")
+
+#### Verfügbarkeit der Queue testen
+
+Als erstes senden wir einen "echo" Request um die Verfügbarkeit der Queue zu überprüfen. Als KassenHändler wird Ihnen im KassenSystem ein entsprechender Knopf zur Verfügung stehen. In unserem Bespiel verwenden wir den "echo" Request aus der oben beschriebenen Postman-Collection:
+
+![Postman echo](images/postman-echo.png "Postman Echo Request")
+
+Die Queue antwortet und wir wissen nun, das die fiskaltrust.Middleware Instanz erreichbar ist und für weitere Anfragen zur Verfügung steht. Die Anfrage und Ihre Verarbeitung können wir auch in der zuvor gestarteten Konsole als Log-Nachricht sehen:
+
+![Terminal echo](images/terminal-echo.png "Konsole echo")
+
+#### Initialisierung der fiskaltrust.Middleware Instanz
+
+Als nächstes senden wir einen "Initialisierungs-Beleg". Als KassenHändler wird Ihnen im KassenSystem ein entsprechender Knopf zur Verfügung stehen. In unserem Bespiel verwenden wir wieder die oben beschriebene Postman-Collection. Der Initialisierungs-Beleg sorgt dafür, dass die fiskaltrust.Middleware initialisiert wird, sich als Client bei der TSE registriert und falls die TSE noch nicht initialisiert ist, die TSE in Betrieb nimmt.
+
+![Postman initial operation](images/postman-init.png "Postman Initialisierungs-Beleg")
+
+In der Antwort und in der Konsole können wir nun sehen, dass unsere Queue als Client in der TSE registriert wurde.
+
+#### Test Abrechnungs-Beleg senden
+
+Als nächste können wir einen Test-Beleg zum Abrechnen eines Einkaufs senden. Als KassenHändler wird Ihnen im KassenSystem entsprechende Funktionalität zur Verfügung stehen. In unserem Bespiel verwenden wir wieder die oben beschriebene Postman-Collection. 
+
+![Postman Beleg](images/postman-pos-receipt.png "Postman Test-Beleg")
+
+Die fiskaltrust.Middleware bearbeitet die Anfrage, und sendet eine Antwort zurück, die wichtige Belegdaten, inklusive der benötigten Signaturen enthält. Im Erfolgfall werden diese vom KassenSystem auf den Beleg gedruckt.
+
+#### Verbindung mit der fiskaltrust.Cloud überprüfen
+
+Auch im fiskaltrust.Portal können wir die oben abgesetzten Anfrage und den daraus resultierenden Beleg einsehen, da diese über den Helipad Helper alle 5 Minuten hochgeladen werden. Gehen Sie dazu auf Konfiguration->Queue und drücken Sie den "ReceiptJournal" Button im Listeneintrag der Queue.
+
+![ReceiptJournal](images/ReceiptJournal-de.png "ReceiptJournal")
+
+Es erscheint eine Übersicht der Verarbeiteten Beleganfragen:
+
+![Liste der Belege](images/Liste-der-Belege.png "Liste der Belege")
+
+Hinweis: 
+
+Sollten die Belege hier nicht erscheinen, kann es sein, dass die Kommunikation der fiskaltrust.Middleware mit dem Server nicht geklappt hat. Überprüfen Sie in diesem Fall zuerst ob bereits 5 Minuten seit dem Absetzen der Anfragen vergangen sind. Sollte dies der Fall sein, so überprüfen Sie bitte die Logmeldungen in der Konsole. Es kann sein, dass Sie zuerst entsprechende Firewall Ports freigeben müssen.
+
+Drücken Sie nun als nächstes auf den Button mit dem Auge-Symbol in der Zeile mit dem zuvor gesendeten Abrechnungs-Beleg (s.o.). Sie können nun eine beispielhafte Darstellung des Belegs einsehen. Zudem werden die konkrete Anfrage und Antwort an das KassenSystem angezeigt:
+
+![Beleg](images/Receipt.png "Anzeige des Belegs im Portal")
+
+
+
+In den oberen Kapitel haben wir beschrieben wie die fiskaltrust.Middleware aufgebaut ist, wie die einzelnen Instanzen manuell über das fiskaltrust.Portal konfiguriert werden kann und wie der Service gestartet und getestet werden kann. Als nächstes möchten wir Ihnen als Inspiration für den Rollout ein einige mögliche Rollout-Szenarien vorstellen. Diese zeigen, wie flexibel die fiskaltrust.Middleware am Standort des Betreibers eingesetzt werden kann. Nach der Präsentation verschiedener Rollout-Szenarien gehen wir dann auf mögliche Automatisierungsoptionen für den Massenrollout ein. 
 
 ### Rollout Szenarien
+
+
 
 ### Automatisierung des Rollout
 
