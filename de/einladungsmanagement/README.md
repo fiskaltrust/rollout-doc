@@ -14,11 +14,25 @@
 <br/>
 
 
-## Einladungsmanagement
+# Einladungsmanagement
 
 
+## Inhalte
 
-Wie in der [Einleitung](../README.md) beschrieben, werden von fiskaltrust beim Rollout der fiskaltrust.Middleware drei Partnerrollen unterschieden: 
+<pre>
+├── <a href="#einleitung" title="Einleitung">Einleitung</a>
+├── <a href="#kassenhersteller-laden-kassenhändler-ein" title="KassenHersteller laden KassenHändler ein">KassenHersteller laden KassenHändler ein</a>
+│   └── <a href="#kassensystem-possystem-eintragen" title="KassenSystem (POSSystem) eintragen">KassenSystem (POSSystem) eintragen</a>
+│   └── <a href="#kassenhändler-einladen" title="KassenHändler einladen">KassenHändler einladen</a>
+├── <a href="#kassenhändler-laden-kassenbetreiber-ein" title="KassenHändler laden KassenBetreiber ein">KassenHändler laden KassenBetreiber ein</a>
+│   └── <a href="#standorte-für-kassenbetreiber-anlegen" title="Standorte für KassenBetreiber anlegen">Standorte für KassenBetreiber anlegen</a>
+├── <a href="#schlusswort" title="Schlusswort">Schlusswort</a>
+
+</pre>
+
+## Einleitung
+
+Wie in der [allgemeinen Rollout-Einleitung](../README.md) beschrieben, werden von fiskaltrust beim Rollout der fiskaltrust.Middleware drei Partnerrollen unterschieden: 
 
 - KassenHersteller (POSCreator)
 - KassenHändler (POSDealer)
@@ -52,7 +66,7 @@ Im Folgenden wird im Detail beschrieben wie die einzelnen Schritte im Einladungs
 
 
 
-### KassenHersteller laden KassenHändler ein
+## KassenHersteller laden KassenHändler ein
 
 Die KassenHersteller integrieren die fiskaltrust.Middleware in ihr Kassensystem (POSSystem). Sie müssen sich dafür im fiskaltrust.Portal selbständig registrieren. Des Weiteren müssen KassenHersteller bei der Registrierung im fiskaltrust.Portal, die Rolle "KassenHersteller" (POSCreator) wählen, den Kooperationsvertrag mit fiskaltrust digital unterzeichnen und Ihr Kassensystem (POSSystem) im fiskaltrust.Portal eintragen. Die Registrierung des KassenSystems ist die Voraussetzung zur Einladung der KassenHändler. Bitte laden Sie so früh wie möglich Ihre KassenHändler ein, denn die KassenHändler benötigen genügend Zeit zum Einladen der KassenBetreiber und zum Vorbereiten und Testen des Massenrollout. 
 
@@ -60,7 +74,7 @@ Als erstes müssen Sie dazu Ihr(e) KassenSystem(e) im fiskaltrust.Portal eintrag
 
 
 
-#### KassenSystem (POSSystem) eintragen
+### KassenSystem (POSSystem) eintragen
 
 Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskaltrust.Portal registrieren:
 
@@ -88,7 +102,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
 
 
-#### KassenHändler einladen
+### KassenHändler einladen
 
 4. Wie im oberen Bild sichtbar, sind dem neu erfassten KassenSystem noch keine KassenHändler zugewiesen. Drücken Sie auf "Händler" um zur Übersicht der Händler zu gelangen und mit den Einladungen zu beginnen.
 
@@ -176,7 +190,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
 Damit ist der KassenHändler eingeladen und dem KassenSystem zugeordnet. Er kann nun mit der Einladung seiner KassenBetreiber beginnen.
 
-### KassenHändler laden KassenBetreiber ein
+## KassenHändler laden KassenBetreiber ein
 Als KassenHändler müssen Sie Ihre KassenBetreiber (POSOperator) im fiskaltrust.Portal einladen um das Portal als Rolloutmanagement-Tool für die fiskaltrust.Middleware und für andere fiskaltrust Produkte nutzen zu können. 
 
 Sie können einzelne KassenBetreiber aber auch viele KassenBetreiber gleichzeitig einladen (CSV-Import).
@@ -297,7 +311,7 @@ Die Historie (Protokoll) Ihrer in der Vergangenheit versendeten Einladungen wird
 ![Einladungs-Email erneut senden lassen](images/Einladungs-Email-erneut-senden-lassen.png "Einladungs-Email erneut senden lassen")
 
 
-#####  Standorte für KassenBetreiber anlegen
+###  Standorte für KassenBetreiber anlegen
 
 Soblad sich ein KassenBetreiber über die Einladung eines KassenHändlers im fiskaltrust.Portal registriert hat und die Nutzungsvereinbarung digital unterschrieben hat, legt das fiskaltrust.Portal automatisch einen Standort (Hauptstandort) mit den Stammdaten der Firma an. Sollte der KassenBetreiber mehrere Standort betreiben, so müssen diese im fiskaltrust.Portal angelegt werden, denn bei der Konfiguration der fiskaltrust.Middleware muss der genaue Standort (Outlet-Nummer) angegeben werden damit die Daten separiert werden können. Im Falle einer Finanzprüfung ist der Standort die prüfbare Einheit. 
 
@@ -326,6 +340,6 @@ Der gesuchte KassenBetreiber erscheint als Eintrag in der Ergebnisliste. Der Nam
 
 
 
-### Schlusswort
+## Schlusswort
 
 Wir hoffen, dass Ihnen der oben beschriebene Leitfaden bezüglich des Einladungsmanagement weitergeholfen hat. Sollten Sie Fragen dazu haben, bitten wir Sie unsere [FAQ Liste](https://docs.fiskaltrust.cloud/doc/faq/qna/market-de.html) aufzusuchen. Sollten Sie hier nicht fündig werden, so können Sie uns jederzeit gerne unter info@fiskaltrust.de kontaktieren.

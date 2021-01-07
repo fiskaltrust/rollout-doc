@@ -15,6 +15,45 @@
 
 # Rollout der fiskaltrust.Middleware
 ## Inhalte
+
+<pre>
+├── <a href="#einleitung" title="Einleitung">Einleitung</a>
+├── <a href="#konfiguration-der-fiskaltrustmiddleware" title="Konfiguration der fiskaltrust.Middleware">Konfiguration der fiskaltrust.Middleware</a>
+│   └── <a href="#aufbau-der-fiskaltrustmiddleware" title="Aufbau der fiskaltrust.Middleware">Aufbau der fiskaltrust.Middleware</a>
+│   └── <a href="#die-cashbox-als-konfigurationscontainer" title="Die CashBox als Konfigurationscontainer">Die CashBox als Konfigurationscontainer</a>
+│       └── <a href=#konfiguration-der-queue" title="Konfiguration der Queue">Konfiguration der Queue</a>
+│       └── <a href=#konfiguration-der-scu" title="Konfiguration der SCU">Konfiguration der SCU</a>
+│   └── <a href="#cashbox-manuell-über-das-fiskaltrustportal-anlegen" title="CashBox manuell über das fiskaltrust.Portal anlegen">CashBox manuell über das fiskaltrust.Portal anlegen</a>
+├── <a href="#service-starten-und-testen" title="Service starten und testen">Service starten und testen</a>
+│   └── <a href="#verfügbarkeit-der-queue-testen" title="Verfügbarkeit der Queue testen">Verfügbarkeit der Queue testen</a>
+│   └── <a href="#initialisierung-der-fiskaltrustmiddleware-instanz-über-einen-initialisierungs-beleg" title="Initialisierung der fiskaltrust.Middleware-Instanz über einen Initialisierungs-Beleg">Initialisierung der fiskaltrust.Middleware-Instanz über einen Initialisierungs-Beleg</a>
+│   └── <a href="#abrechnungs-beleg-senden" title="Abrechnungs-Beleg senden">Abrechnungs-Beleg senden</a>
+│   └── <a href="#verbindung-mit-der-fiskaltrustcloud-überprüfen" title="Verbindung mit der fiskaltrust.Cloud überprüfen">Verbindung mit der fiskaltrust.Cloud überprüfen</a>
+│   └── <a href="#datenexport-testen" title="Datenexport testen">Datenexport testen</a>
+│       └── <a href=#datenexport-lokal" title="Datenexport lokal">Datenexport lokal</a>
+│       └── <a href=#hinweise-zum-dsfinv-k-export" title="Hinweise zum DSFinV-K Export">Hinweise zum DSFinV-K Export</a>
+│       └── <a href=#hinweise-zum-tar-file-export" title="Hinweise zum TAR-File Export">Hinweise zum TAR-File Export</a>
+│       └── <a href=#datenexport-über-das-fiskaltrustportal" title="Datenexport über das fiskaltrust.Portal">Datenexport über das fiskaltrust.Portal</a>
+├── <a href="#rollout-szenarien" title="Rollout Szenarien">Rollout Szenarien</a>
+│   └── <a href="#einleitung-1" title="Einleitung">Einleitung</a>
+│   └── <a href="#eine-tse-pro-kasse" title="Eine TSE pro Kasse">Eine TSE pro Kasse</a>
+│   └── <a href="#hardware-tses-am-lokalen-server-für-mehrere-kassen" title="Hardware-TSE(s) am lokalen Server für mehrere Kassen">Hardware-TSE(s) am lokalen Server für mehrere Kassen</a>
+│   └── <a href="#hardware-tse-an-der-hauptkasse-für-mehrere-zusätzliche-kassen" title="Hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen">Hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen</a>
+│   └── <a href="#eine-cloud-tse-für-mehrere-kassen" title="Eine Cloud-TSE für mehrere Kassen">Eine Cloud-TSE für mehrere Kassen</a>
+│   └── <a href="#rollout-szenario-mit-terminals" title="Rollout-Szenario mit Terminals">Rollout-Szenario mit Terminals</a>
+│   └── <a href="#rechenzentrum-als-operational-environment" title="Rechenzentrum als operational environment">Rechenzentrum als operational environment</a>
+│   └── <a href="#anbindungsvarianten-der-tse-an-die-scu" title="Anbindungsvarianten der TSE an die SCU">Anbindungsvarianten der TSE an die SCU</a>
+│   └── <a href="#lösungsvorschläge-zur-virtualisierung-innerhalb-eines-standortes" title="Lösungsvorschläge zur Virtualisierung innerhalb eines Standortes">Lösungsvorschläge zur Virtualisierung innerhalb eines Standortes</a>
+│   └── <a href="#performanceempfehlungen" title="Performanceempfehlungen">Performanceempfehlungen</a>
+├── <a href="#automatisierung-des-rollout" title="Rollout Szenarien">Automatisierung des Rollout</a>
+│   └── <a href="#einleitung-2" title="Einleitung">Einleitung</a>
+│   └── <a href="#überblick-manueller-prozess" title=" Überblick manueller Prozess"> Überblick manueller Prozess</a>
+│   └── <a href="#templating-zum-anlegen-von-cashboxen" title="Einleitung">Templating zum Anlegen von CashBoxen</a>
+│   └── <a href="#automatisierter-rollout-der-fiskaltrustmiddleware" title="Automatisierter Rollout der fiskaltrust.Middleware">Automatisierter Rollout der fiskaltrust.Middleware</a>
+│   └── <a href="#hoher-automatisierungsgrad" title="Hoher Automatisierungsgrad">Hoher Automatisierungsgrad</a>
+
+</pre>
+
 ## Einleitung
 
 Die fiskaltrust.Middleware ist das lizenzkostenfreie Basisprodukt von fiskaltrust, dass von KassenHersteller in ihr KassenSystem integriert wird, um Konformität mit den neuen Fiskalisierungsgesetzen zu implementieren. Die fiskaltrust.Middleware läuft als eigenständiger Service auf der Kasse des KassenBetreibers und wird vom KassenSystem über eine Schnittstelle angesprochen. 
@@ -485,7 +524,7 @@ Im Falle eines Ausfalls der (Internet-)Verbindung ist es allerdings so, dass die
 
 ![cloud-middleware](images/terminals-mw-cloud.png)
 
-### Anbindungsvarianten der TSE and die SCU
+### Anbindungsvarianten der TSE an die SCU
 
 Für folgende Anbindungsvarianten haben wir eine Legende vorbereitet, die die Bedeutung der einzelnen Pfeile aufzeigt:
 
@@ -540,10 +579,10 @@ Eine mögliche Optimierung der oben beschriebenen Option könnte sein, dass die 
 
 ![virtualisierungs-vorschlag-ausserhalb](images/virtualisierung-vorschlag-scu-im-server.png)
 
-### Performanceempfehlung
+### Performanceempfehlungen
 Bei internen Tests haben wir festgestellt, dass 3 Signaturen pro Sekunde von jeder TSE gut verarbeitet werden können. Bei mehr als 3 Signaturen pro Sekunde kommt es zu Verzögerungen. Bitte achten Sie darauf, dass bei einem implicit-Flow 2 Signaturen pro Request abgesetzt werden. Wir empfehlen deshalb bei einer zu erwartenden höheren Menge an Signaturen der TSE pro Sekunde entsprechend zusätzliche TSEs bei der Planung zu berücksichtigen. 
 
-### Schlußwort
+
 
 ## Automatisierung des Rollout
 
@@ -978,6 +1017,6 @@ Nun können Sie den Launcher mit der angepassten Konfigurationsdatei auf die Kas
 
 Alternativ zur Anpassung der Konfiguration in der`fiskaltrust.exe.config` Datei können Sie beim Starten des Launcher (`fiskaltrust.exe` ) die `cashboxid` und den `accesstoken` als Parameter übergeben. Diese Angabe überschreibt die vorhandene Konfiguration. Die Beschreibung der möglichen Start-Parameter fnden sie [hier](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
 
-#### Hoher Automatisierungsgrad
+### Hoher Automatisierungsgrad
 
 Durch die oben beschriebene Vorgehensweisen zum Ausführen der Konfigurations-Templates über die API und zum automatisierten Rollout der fiskaltrust.Middleware ist ein hoher Automatisierungsgrad des Rollouts erreichbar. Lediglich die Outlets müssen mit Hilfe des Bulk-Import im Portal manuell angelegt werden.
