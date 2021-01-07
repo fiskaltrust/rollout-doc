@@ -296,15 +296,23 @@ Die Queue antwortet und wir wissen nun, das die fiskaltrust.Middleware-Instanz e
 
 Als nächstes senden wir einen "Initialisierungs-Beleg". Als KassenHändler wird Ihnen im KassenSystem ein entsprechender Knopf zur Verfügung stehen. In unserem Bespiel verwenden wir wieder die oben beschriebene Postman-Collection. Der Initialisierungs-Beleg sorgt dafür, dass die fiskaltrust.Middleware initialisiert wird, sich als Client bei der TSE registriert und falls die TSE noch nicht initialisiert ist, die TSE ebenfalls in Betrieb nimmt.
 
+
+
 ![Postman initial operation](images/postman-init.png "Postman Initialisierungs-Beleg")
+
+
 
 In der Antwort und in der Konsole können wir nun sehen, dass unsere Queue als Client in der TSE registriert wurde.
 
 ### Abrechnungs-Beleg senden
 
-Als nächste können wir einen Beleg zum Abrechnen eines Einkaufs senden. Als KassenHändler wird Ihnen im KassenSystem entsprechende Funktionalität zur Verfügung stehen. In unserem Bespiel verwenden wir wieder die oben beschriebene Postman-Collection. 
+Als nächste können wir einen Beleg zum Abrechnen eines Einkaufs senden. Als KassenHändler wird Ihnen im KassenSystem entsprechende Funktionalität zur Verfügung stehen. In unserem Beispiel verwenden wir wieder die oben beschriebene Postman-Collection. 
+
+
 
 ![Postman Beleg](images/postman-pos-receipt.png "Postman Test-Beleg")
+
+
 
 Die fiskaltrust.Middleware bearbeitet die Anfrage, und sendet eine Antwort zurück, die wichtige Belegdaten, inklusive der benötigten Signaturen enthält. Im Erfolgfall werden diese vom KassenSystem auf den Beleg gedruckt.
 
@@ -330,9 +338,82 @@ Drücken Sie nun als nächstes auf den Button mit dem Auge-Symbol in der Zeile m
 
 ### Datenexport testen
 
+Ein Datenexport kann lokal über die fiskaltrust.Middleware oder über das fiskaltrust.Portal vorgenommen werden. Der lokale Export von Daten direkt aus der fiskaltrust.Middleware ist lizenzkostenfrei. Der Export über das fiskaltrust.Portal ist kostenpflichtig und wir über das fiskaltrust Produkt POSArchiv pro KassenBetreiber und Kasse freigeschalten Das Produkt POSArchiv ist auch in unseren Sorglos-Paketen enthalten und bezieht sich dort auf alle Kassen des Standorts (ist jedoch auf eine Maximalanzahl an Kassen limitiert - siehe dazu auch die aktuelle Produktbeschreibung).
+
 #### Datenexport lokal
 
+Es können folgende Daten direkt lokal über die fiskaltrust.Middleware exportiert werden:
+
+- Aktionsjournal im internen fiskaltrust Format (JSON)
+- Belegjournal im internen fiskaltrust Format (JSON)
+- QueueItemesjournal im internen fiskaltrust Format (JSON)
+- DSFinV-K- Ein DSFinV-K (Digitale Schnittstelle der Finanzverwaltung für Kassensysteme) kompatibler Export der an die Queue gesendeten Daten. Die Daten werden in mehreren CSV-Dateien aggregiert, nach DSFinV-K 2.2
+- TAR-File Export der TSE Daten in der TAR-Datei (einem Archiv zum Verpacken von Dateien) aggregiert, dass z.B. mit 7-zip geöffnet werden kann.
+
+Der Export bezieht sich immer auf eine Queue (mit Ausnahme des TSE-TAR, siehe Hinweis weiter unten). Der Datenexport aus der fiskaltrust.Middleware wird vom KassenHersteller über das KassenSystem zur Verfügung gestellt. Dazu verwendet das KassenSystem die `journal` Funktion der IPOS Schnittstelle, die von der fiskaltrust.Middleware zur Verfügung gestellt wird. Als KassenHändler stehen Ihnen dann entsprechende Funktionalität an der Kasse zur Verfügung. Bitte testen Sie den Datenexport in diesem Fall direkt mit dem KassenSystem. Beachten Sie bitte dabei auch die weiter unten dargestellten Hinweise zum DSFinV-K Export und zu dem TAR-File Export.
+
+#### Hinweise zum DSFinV-K Export
+
+Der DSFinV-K Export bezieht sich immer auf einen abgeschossenen Tag. Er erfordert, dass jeder Tag mit einen sogenannten Tagesabschlußbeleg abegeschlossen wird. Der Tagesabschlußbelegt muss an die fiskaltrust.Middleware über das KassenSystem gesendet werden. Als KassenHändler stellt Ihnen das KassenSystem einen entsprechenden Knopf zur Verfügung.  
+
+#### Hinweise zum TAR-File Export
+
+Der Tar-File Export bezieht sich auf alle Daten der TSE, auch wenn die TSE von mehreren Queues verwendet wird. Der TSE-TAR Export beinhaltet also die Daten aller Queues, die die selbe TSE verwenden. 
+
+Der TAR Export wird beim daily-closing Beleg (Tagesabschlußbeleg) automatisch von der fiskaltrust.Middleware getriggert. Die Daten werden dabei in Datenbank der ausführenden Queue übertragen und aus der TSE gelöscht.  Des Weiteren werden die Daten in die fiskaltrust.Cloud hochgeladen wo sie dann im fiskaltrust.Portal nach Aktivierung des Produkts POSArchiv zur Verfügung stehen.
+
+Deshalb empfehlen wir, im Falle, dass mehrere Queues die selbe TSE verwenden, eine "führende Queue" zu definieren, die beim daily-closing Beleg die TSE Daten bekommt. Für die anderen Queues die auf die selbe TSE zugreifen, sollten KassenHersteller dafür sorgen, dass das KassenSystem beim daily-closing Beleg das receipt case flag [0x0000000004000000](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-receipt-ftreceiptcase.html#ftreceiptcaseflag) verwenden. Das verhindert den automatischen TAR Export durch die fiskaltrust.Middleware und damit sind die Daten nicht auf unterschiedliche Queues verteilt, sondern landen immer nur in der führenden Queue. Als KassenHändler sollten Ihnen für diesen Fall zwei unterschiedliche Funktionen im KassenSystem zur Verfügung stehen (z.B. Tagesabschluß mit automatischem TAR-File Export - für die führende Queue - und Tagesabschuß ohne automatischem TAR-File Export für die anderen Queues, die dieselbe TSE verwenden).
+
+Wir arbeiten außerdem gerade an einem Standortbasierten Export im fiskaltrust.Portal, der dann zu einer Handling-Vereinfachung führen wird.
+
+Der direkte Export der TSE-TAR Daten kann vom KassenSystem über die Journalfunktion der IPOS-Schnittstelle von der Kasse aufgerufen werden.
+
+Über den ftJournalType kann dabei zwischen zwei Varianten unterschieden werden:
+
+[0x4445000000000001](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-journal-ftjournaltype.html) - exportiert die TAR-TSE Daten, die sich aktuell in der TSE befinden (D.h. vom letzten daily-closing bis zum Zeitpunkt des Aufrufs)
+[0x4445000000000003](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-journal-ftjournaltype.html) - exportiert die TAR-TSE Daten, die sich in der Datenbank der Queue befinden.
+
+ Als KassenHändler sollten Ihnen auch hierzu entsprechende Knöpfe im KassenSystem zur Verfügung stehen.
+
 #### Datenexport über das fiskaltrust.Portal
+
+Es können folgende Daten pro Queue exportiert werden:
+
+- Vollständiger Export (XML oder CSV)  - Export aller Daten, die an die Queue gesendet wurden. Die Daten werden in Form einer XML-Datei  oder CSV-Datei aggregiert.
+- Aktionsjournal im internen fiskaltrust Format (JSON)
+- Belegjournal im internen fiskaltrust Format (JSON)
+- DSFinV-K- Ein DSFinV-K (Digitale Schnittstelle der Finanzverwaltung für Kassensysteme) kompatibler Export der an die Queue gesendeten Daten. Die Daten werden in mehreren CSV-Dateien aggregiert, nach DSFinV-K 2.2
+- TAR-File Export der TSE Daten in der TAR-Datei (einem Archiv zum Verpacken von Dateien) aggregiert, dass z.B. mit 7-zip geöffnet werden kann.
+
+
+
+Um den Datenexport über das fiskaltrust.Portal zu testen können Sie wie folgt vorgehen:
+
+##### Belegjournal oder Actionjournal exportieren
+
+Gehen Sie im fiskaltrust.Portal auf den Menüpunkt "Konfiguration -> Queue". Sie finden hier für jede Queue einen Listeneintrag. Im Listeneintrag der Queue befinden sich die Buttons zum Exportieren der Journale:
+
+![portal-journal-export](images/portal-journal-export.png "Journal Export über das fiskaltrust.Portal")
+
+
+
+
+
+##### Vollständiger Export (XML oder CSV), DSFinV-K Export oder TAR-File Export
+
+Gehen Sie dazu im fiskaltrust.Portal zuerst auf den Menüpunkt "Konfiguration -> Queue". Sie finden hier für jede Queue einen Listeneintrag. Im Listeneintrag der Queue befindet sich einen "Exportieren" Button:
+
+![portal-queue-export](images/portal-queue-export.png "Export von Queue Daten über das fiskaltrust.Portal")
+
+Sie gelangen zur Export-Ansicht für die gewählte Queue. Hier können Sie die Art des Exports wählen und den Export antriggern:
+
+![portal export wählen](images/portal-export-waehlen.png "Export wählen über das fiskaltrust.Portal")
+
+Setzen Sie in dem oberen Filterbereich die gewünschten Filter, wählen Sie danach z.B. "Vollständiger Export (CSV)" und drücken Sie im Anschluss den "Export starten" Button ganz unten. Sie werden zur Liste der angetriggerten Exports weitergeleitet, wo ihnen angezeigt wird, dass der Export sich gerade in Bearbeitung befindet. Sobald der gewünschte Export zur Verfügung steht können Sie den Listeneintrag aufklappen und den fertigen Export downloaden.
+
+![portal export download](images/portal-export-download.png "Export downloaden über das fiskaltrust.Portal")
+
+Die oben beschriebene Vorgehensweise kann analog zu allen der Export-Ansicht angebotenen Export-Formate durchgeführt werden. Achten Sie beim Testen des DSFinV-K und TAR-File Export darauf, dass auch ein dazugehöriger Tagesabschlußbeleg an die fiskaltrust.Middelware vom KassenSystem gesendet wurde.
 
 
 ### Schlußwort
