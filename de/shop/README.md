@@ -135,7 +135,7 @@ Drücken Sie hier auf "Checkout" und überprüfen Sie dann den Warenkorb bevor S
 
 ![Bestellung](images/bestellung-fuer-betreiber-2.png "Bestellung der Übertragungen und Aktivierungen")
 
-Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
+Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und Sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
 
 Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minuten dauern) werden Ihnen die verbrauchten Ansprüche abgezogen. In unserem Beispiel sind jetzt nur noch 14 von zuvor 15 übrig geblieben.
 
@@ -164,7 +164,7 @@ Möchten Sie jedoch, dass die Hardware TSE aus dem Sorglospaket nicht an den Sta
 
 Bezogen auf das obere Beispiel würden dann die Schritte wie folgt aussehen:
 
-1. Schritt : Im eigenen Account in den Shop gehen und den gewünschten eigenen Standort im oberen Bereich wählen.
+1. Schritt: Im eigenen Account in den Shop gehen und den gewünschten eigenen Standort im oberen Bereich wählen.
 2. Schritt: Im eigenen Account das Hardware TSE Aktivierungsprodukt, z.B. das Produkt "Swissbit USB Hardware TSE-as-a-Service - aus Anspruch erzeugen", in den Warenkorb legen - das sorgt dafür, dass die Hardware TSE direkt an Sie gesendet wird.
 3. Schritt: In den Account des KassenBetreiber mit Hilfe der surrogate Funktion wechseln  (wie oben beschrieben).
 4. Schritt: Im Account des KassenBetreiber in den Shop gehen und im oberen Bereich den gewünschten Standort des KassenBetreibers auswählen.
@@ -172,7 +172,7 @@ Bezogen auf das obere Beispiel würden dann die Schritte wie folgt aussehen:
 6. Schritt: Im Account des KassenBetreiber im Shop die Aktivierung des Sorglospakets vornehmen, also das Produkt "fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen" in den Warenkorb legen.
 7. Schritt: Zurück in Ihren eigenen Account wechseln und dort den Warenkorb auschecken und die Bestellung vornehmen.
 
-Der Unterschied zu dem in den oben Kapitel beschriebenen Vorgang ist, dass der Anspruch auf die Hardware-TSE nicht mehr auf den KassenBetreiber übertragen wird und unter seinem Account aktiviert wird, sondern direkt in Ihrem eigenen Account aktiviert wird. Somit erfolgt die Lieferung der Hardware TSE aus dem Sorglospaket direkt an Sie als KassenHändler. Wichtig hierbei ist jedoch, dass Sie den "fiskaltrust.Sorglos" Anspruch weiterhin an den KassenBetreiber übertragen und im Account des KassenBertreiber für den richtigen Standort des KassenBetreibers aktivieren.
+Der Unterschied zu dem in dem oberen Kapitel beschriebenen Vorgang ist, dass der Anspruch auf die Hardware-TSE nicht mehr auf den KassenBetreiber übertragen wird und unter seinem Account aktiviert wird, sondern direkt in Ihrem eigenen Account aktiviert wird. Somit erfolgt die Lieferung der Hardware TSE aus dem Sorglospaket direkt an Sie als KassenHändler. Wichtig hierbei ist jedoch, dass Sie den "fiskaltrust.Sorglos" Anspruch weiterhin an den KassenBetreiber übertragen und im Account des KassenBertreiber für den richtigen Standort des KassenBetreibers aktivieren.
 
 
 
@@ -188,7 +188,7 @@ Drücken Sie nun auf den Namen des KassenBetreibers, der in der Liste als Link d
 
 ![im betreiber account](images/im-kassenbetreiber-account.png "Im Account des KassenBetreiber")
 
-Drücken Sie nun hier im Account des KassenBetreiber auf den Menüpunkt: "Shop->Produkte". Wählen Sie nun zuerst im oberen Bereich den gewünschten Standort des KassenBetreibers aus.
+Drücken Sie nun hier im Account des KassenBetreiber auf den Menüpunkt: "Shop->Produkte". Wählen Sie zuerst im oberen Bereich den gewünschten Standort des KassenBetreibers aus.
 
 ***TODO: screenshot***
 
@@ -213,7 +213,7 @@ Drücken Sie hier auf "Checkout" und überprüfen Sie dann den Warenkorb bevor S
 
 ***TODO: screenshot***
 
-Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
+Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und Sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
 
 Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minuten dauern) können Sie im Account des KassenBetreibers sehen, dass das zuvor bestellte Sorglospaket im Standort des KassenBetreibers aktiviert wurde. Wechseln Sie dafür mit Hilfe der surrogation Funktion in den Account des KassenBetreibers und gehen Sie im Menü auf "[Firmenname] -> Standorte":
 
@@ -225,4 +225,4 @@ Sie können nun den gewünschten Launcher downloaden und starten, er verwendet z
 
 ## Fiskaly Cloud TSE auschecken und einrichten
 
-Der Vorgang zum Auschecken und Einrichten einer Fiskaly Cloud TSE ist analog zu dem oben im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten) beschrieben Vorgang. Der Unterschied ist nur, dass Sie hierbei die Fiskaly Cloud TSE statt der Swissbit Cloud TSE beziehen und einrichten. Legen Sie dazu statt dem Produkt " Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen" das Produkt "Fisklay Cloud TSE-as-a-Service - aus - Anspruch erzeugen" in den Warenkorb. Legen Sie zudem statt dem Template-Produkt "fiskaltrust.Middleware mit Swissbit Cloud TSE" das Template-Produkt "fiskaltrust.Middleware mit Fiskaly Cloud TSE" in den Warenkorb. Ansonsten ist die Vorgehensweise identisch mit der oben beschriebenen für die Swissbit Cloud TSE.
+Der Vorgang zum Auschecken und Einrichten einer Fiskaly Cloud TSE ist analog zu dem oben im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten) beschrieben Vorgang. Der Unterschied ist nur, dass Sie hierbei die Fiskaly Cloud TSE statt der Swissbit Cloud TSE beziehen und einrichten. Legen Sie dazu statt dem Produkt "Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen" das Produkt "Fisklay Cloud TSE-as-a-Service - aus - Anspruch erzeugen" in den Warenkorb. Legen Sie zudem statt dem Template-Produkt "fiskaltrust.Middleware mit Swissbit Cloud TSE" das Template-Produkt "fiskaltrust.Middleware mit Fiskaly Cloud TSE" in den Warenkorb. Ansonsten ist die Vorgehensweise identisch mit der oben beschriebenen für die Swissbit Cloud TSE.
