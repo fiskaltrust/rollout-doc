@@ -17,6 +17,19 @@
 
 ## Inhalte
 
+<pre>
+├── <a href="#einleitung" title="Einleitung">Einleitung</a>
+├── <a href="#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
+├── <a href="#rahmenverträge-für-mengenrabatt" title="Rahmenverträge für Mengenrabatt">Rahmenverträge für Mengenrabatt</a>
+├── <a href="#produkte-über-entitlements-kaufen" title="fiskaltrust.Shop">Produkte über Entitlements kaufen</a>
+├── <a href="#übertragung-gekaufter-entitlements-an-die-kassenbetreiber" title="Übertragung gekaufter Entitlements an die KassenBetreiber">Übertargung gekaufter Entitlements an die KassenBetreiber</a>
+├── <a href="#tipps--tricks" title="Tipps & Tricks">Tipps & Tricks</a>
+├── <a href="#lieferoptionen-für-hardware-tses" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
+├── <a href="#swissbit-cloud-tse-auschecken-und-einrichten" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
+├── <a href="#fiskaly-cloud-tse-auschecken-und-einrichten" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
+
+</pre>
+
 ## Einleitung
 
 fiskaltrust bietet neben der lizenzkostenfreien fiskaltrust.Middleware für KassenHersteller kostenpflichtige Add-On Produkte (die auf die fiskaltrust.Middleware aufbauen) und Einzelprodukte (unabhängig von der fiskaltrust.Middleware) für KassenBetreiber an. Diese fiskaltrust Produkte werden ausschließlich über unsere KassenHändler-Partner als Bestandteil ihrer Produkt- bzw. Ihrer Service-Pallette an KassenBetreiber vertrieben. Hierbei handelt es sich um Archivierungsprodukte, automatisierte Meldungen an das Finanzamt, Technische Sicherheitseinrichtungen (TSE) diverser Hersteller und auch um Sorglospakete mit und ohne TSE-as-a-Service. 
@@ -82,7 +95,7 @@ Nach der Bearbeitung der Bestellung durch das fiskaltrust System, erscheinen im 
 
 ![entitlements-kaufen-6](images/entitlements-kaufen-6.png "Entitlements gutgeschrieben")
 
-## Übertagung gekaufter Entitlements an die KassenBetreiber
+## Übertragung gekaufter Entitlements an die KassenBetreiber
 
 Die Übertragung der gekaufen Ansprüche/Entitlements und die Aktivierung der dazugehörigen Produkte für den KassenBetreiber wird bei fiskaltrust ebenfalls mit der Hilfe des Shops im fiskaltrust.Portal abgebildet.
 
@@ -131,7 +144,7 @@ Zudem können wir im Account des KassenBetreibers sehen, dass das Sorglospaket f
 ![Produkt Sorglos aktiviert](images/sorglos-aktiviert.png "Produkt Sorglos aktiviert")
 
 
-#### Tips & Tricks
+## Tipps & Tricks
 
 1. Neben den Produkten zur Übertragung und Aktivierung der Ansprüche pro Standort des KassenBetreibers können Sie im gleichen Schritt auch Templates zur automatischen Generierung der benötigten Cashboxen (Konfigurationscontainer) in den Warenkorb des KassenBetreibers legen. Dadurch können Sie den Rollout-Prozess optimieren und müssen die Templates nicht extra auschecken.
 
@@ -140,7 +153,7 @@ Zudem können wir im Account des KassenBetreibers sehen, dass das Sorglospaket f
 Beide oben beschriebenen Tipps werden auch in unserem  [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) detailliert dargestellt.
 
 
-### Lieferoptionen für Hardware TSEs
+## Lieferoptionen für Hardware TSEs
 
 Als KassenHändler können Sie Hardware TSEs entweder an den Standort des KassenBetreibers liefern lassen oder an Ihren eigenen Standort. Wenn Sie dem im oberen Beispiel dargestellten Prozess folgen, werden die aktivierten Hardware TSE(s) an den für die Aktivierung ausgewählten Standort des KassenBetreiber gesendet. 
 
@@ -148,6 +161,6 @@ Möchten Sie, dass die Hardware TSE(s) nicht an den Standort des KassenBetreiber
 
 
 
-### Swissbit Cloud TSE auschecken und einrichten
+## Swissbit Cloud TSE auschecken und einrichten
 
-### Fiskaly Cloud TSE auschecken und einrichten
+## Fiskaly Cloud TSE auschecken und einrichten

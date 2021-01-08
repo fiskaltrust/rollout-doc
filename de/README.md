@@ -78,12 +78,13 @@ Es kommt gelegentlich vor, dass fiskaltrust Partner nicht exakt in die oben besc
 │   └── <a href="./middleware/README.md#rollout-szenarien" title="Rollout Szenarien">Rollout Szenarien</a>
 │   └── <a href="./middleware/README.md#automatisierung-des-rollout" title="Automatisierung des Rollout">Automatisierung des Rollout</a>
 ├── <a href="./shop/README.md" title="Shop">fiskaltrust Produkte kaufen und weiter verkaufen</a>
-│   └── <a href="./shop/README.md" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
-│   └── <a href="./shop/README.md" title="Rahmenverträge für Mengenrabatt">Rahmenverträge für Mengenrabatt</a>
-│   └── <a href="./shop/README.md" title="Produkte über Entitlements kaufen">Produkte über Entitlements kaufen</a>
-│   └── <a href="./shop/README.md" title="Übetragung gekaufter Produkte an die KassenBetreiber">Übetragung gekaufter Produkte an die KassenBetreiber</a>
-│       └── <a href="./shop/README.md" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
-│       └── <a href="./shop/README.md" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
-│       └── <a href="./shop/README.md" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
+│   └── <a href="./shop/README.md#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
+│   └── <a href="./shop/README.md#rahmenverträge-für-mengenrabatt" title="Rahmenverträge für Mengenrabatt">Rahmenverträge für Mengenrabatt</a>
+│   └── <a href="./shop/README.md#produkte-über-entitlements-kaufen" title="Produkte über Entitlements kaufen">Produkte über Entitlements kaufen</a>
+│   └── <a href="./shop/README.md#übertragung-gekaufter-entitlements-an-die-kassenbetreiber" title="Übertragung gekaufter Entitlements an die KassenBetreiber">Übertragung gekaufter Entitlements an die KassenBetreiber</a>
+│   └── <a href="./shop/README.md#lieferoptionen-für-hardware-tses" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
+│   └── <a href="./shop/README.md#swissbit-cloud-tse-auschecken-und-einrichten" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
+│   └── <a href="./shop/README.md#fiskaly-cloud-tse-auschecken-und-einrichten" title="fFiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
+
 </pre>
 
