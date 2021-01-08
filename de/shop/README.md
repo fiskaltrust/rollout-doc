@@ -111,9 +111,9 @@ Gehen Sie nun im Menü zu "Shop->Produkte". Wählen Sie hier zuerst im oberen Be
 
 ![Ansprüche übertragen](images/ansprueche-uebertragen-1.png "Ansprüche übertragen")
 
-Legen Sie als nächstes zur Aktivierung beim KassenBetreiber die zu den Ansprüchen dazugehörigen "Erzeugungsprodukte" ebenfalls in den Warenkorb. Wir entscheiden uns nun in diesem Beispiel für eine Fiskaly Cloud-TSE. In unserem Beispiel sind also die "Erzeugungsprodukte": "Fiskaly Cloud TSE-as-a-Service - aus - Anspruch erzeugen" und "fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen" in den Warenkorb zu legen. Hinweis: Achten Sie bitte darauf, dass beim Legen in den Warenkorb im oberen Bereich der richtige Standort ausgewählt ist.
+Legen Sie als nächstes zur Aktivierung beim KassenBetreiber die zu den Ansprüchen dazugehörigen "Erzeugungsprodukte" ebenfalls in den Warenkorb. Wir entscheiden uns nun in diesem Beispiel für eine Swissbit USB Hardware-TSE. In unserem Beispiel sind also die "Erzeugungsprodukte": "Swissbit USB Hardware TSE-as-a-Service - aus - Anspruch erzeugen" und "fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen" in den Warenkorb zu legen. Hinweis: Achten Sie bitte darauf, dass beim Legen in den Warenkorb im oberen Bereich der richtige Standort ausgewählt ist.
 
-![Produkte aktivieren](images/ansprueche-uebertragen-2.png "Produkte aktivieren")
+![Produkte aktivieren](images/ansprueche-uebertragen-2-2.png "Produkte aktivieren")
 
 Die oben beschriebenen Schritte können Sie, wenn gewünscht, auch für andere Standorte wiederholen und auch für diese die Ansprüche und Aktivierungen in den Warenkorb legen:
 
@@ -129,11 +129,11 @@ Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun i
 
 Zürück in Ihrem Account können sie nun sehen, dass die zuvor gewählten Produkte ebenfalls in Ihrem Warenkorb erscheinen:
 
-![Checkout im Händleraccount](images/checkout-im-haendleraccount.png "Checkout im KassenHändler Account")
+![Checkout im Händleraccount](images/checkout-im-haendleraccount-2.png "Checkout im KassenHändler Account")
 
 Drücken Sie hier auf "Checkout" und überprüfen Sie dann den Warenkorb bevor Sie die Bestellung abschicken. Überprüfen Sie vor allem die Richtigkeit der Standortangaben. Diese Übertragungen und Aktivierungen von Produkten für den KassenBetreiber sollten natürlich kostenlos sein.
 
-![Bestellung](images/bestellung-fuer-betreiber.png "Bestellung der Übertragungen und Aktivierungen")
+![Bestellung](images/bestellung-fuer-betreiber-2.png "Bestellung der Übertragungen und Aktivierungen")
 
 Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
 
@@ -148,13 +148,13 @@ Zudem können wir im Account des KassenBetreibers sehen, dass das Sorglospaket f
 
 ## Tipps & Tricks
 
-1. Neben den Produkten zur Übertragung und Aktivierung der Ansprüche pro Standort des KassenBetreibers können Sie im gleichen Schritt auch Templates zur automatischen Generierung der benötigten Cashboxen (Konfigurationscontainer) in den Warenkorb des KassenBetreibers legen. Dadurch können Sie den Rollout-Prozess optimieren und müssen die Templates nicht extra auschecken.
+1. Neben den Produkten zur Übertragung und Aktivierung der Ansprüche pro Standort des KassenBetreibers können Sie im gleichen Schritt auch Templates zur automatischen Generierung der benötigten Cashboxen (Konfigurationscontainer) in den Warenkorb des KassenBetreibers legen. Dadurch können Sie den Rollout-Prozess optimieren und müssen die Templates nicht extra auschecken. Hierzu können Sie sowohl eigene Template als auch die von fiskaltrust zur Verfügung gestellten Default-Templates verwenden. Ein Beispiel dazu finden sie weiter unten im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten).
 
-2. Sie können, falls gewünscht, die "Händlereinkausprodukte" also die Ansprüche auch direkt im Account der KassenBetreiber erwerben, also in den gleichen Warenkorb wie deren Übertragung und Aktivierung legen. Dadurch erhalten sie pro KassenBetreiber eine separate Rechnung.
+2. Sie können, falls gewünscht, die "Händlereinkausprodukte", also die Ansprüche, auch direkt im Account der KassenBetreiber erwerben. D.h. in den gleichen Warenkorb wie (s.o.) deren Übertragung und Aktivierung legen. In diesem Fall müssen Sie keine "Übertragung" mehr vornehmen, erhalten aber dafür eine separate Rechnung. Ein Beispiel dazu finden sie weiter unten im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten).
 
 Beide oben beschriebenen Tipps werden auch in unserem  [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) detailliert dargestellt.
 
-3. Sie können im Warenkorb Bestell-Vorlagen aus Bestellungen Speichern um diese später wieder verwenden zu können. 
+3. Sie können im Warenkorb Bestell-Vorlagen aus Bestellungen Speichern um diese später wiederverwenden zu können. 
 
 ## Lieferoptionen für Hardware TSEs
 
@@ -178,4 +178,51 @@ Der Unterschied zu dem in den oben Kapitel beschriebenen Vorgang ist, dass der A
 
 ## Swissbit Cloud TSE auschecken und einrichten
 
+In diesem Kapitel möchten wir Ihnen anhand eines Beispiels das Auschecken und Einrichten einer Swissbit Cloud TSE als Bestandteil eines Sorglospakets mit TSE-as-a-Service vorführen. Dabei werden wir als Erweiterung zur oben beschriebenen Vorgehensweise das Erwerben des Anspruchs für das Sorglospaket ("fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt") direkt im Account des KassenBetreibers vornehmen. Zudem werden wir für die Einrichtung, also für die Erstellung der Cashbox, das für die Swissbit Cloud TSE von fiskaltrust zur Verfügung gestellte Default-Template im selben Warenkorb auschecken. Diese beiden Erweiterungen/Optimierungen sind auch im Kapitel [Tipps & Tricks](#tipps--tricks) beschrieben.
+
+Loggen Sie sich in Ihren KassenHändler Account ein und wechseln Sie im ersten Schritt mit Hilfe der surrogate Funktion in den Account des KassenBetreiber. Suchen Sie dazu unter dem Menüpunkt "POSOperator->Übersicht" den KassenBetreiber für den Sie die Swissbit Cloud TSE auschecken und einrichten möchten:
+
+![kassenbetreiber suchen](images/kassenbetreiber-suchen.png "KassenBetreiber suchen")
+
+Drücken Sie nun auf den Namen des KassenBetreibers, der in der Liste als Link dargestellt wird (sollte hier der Name des KassenBetreibers nicht als Link erscheinen, dann hat er die Nutzungsvereinbarung noch nicht unterschrieben). Dadurch werden Sie zu dem Account des KassenBetreibers weitergeleitet. Das erkennen Sie daran, dass im oberen Bereich rechts ein Button Namens "Zu Ihrem Account wechseln" erscheint und zudem in der Menüleiste nun der Firmenname es KassenBetreibers angezeigt wird.
+
+![im betreiber account](images/im-kassenbetreiber-account.png "Im Account des KassenBetreiber")
+
+Drücken Sie nun hier im Account des KassenBetreiber auf den Menüpunkt: "Shop->Produkte". Wählen Sie nun zuerst im oberen Bereich den gewünschten Standort des KassenBetreibers aus.
+
+***TODO: screenshot***
+
+Legen Sie als Nächstes folgende Produkte in den Warenkorb:
+
+- fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt
+- Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen
+- fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen
+- fiskaltrust.Middleware mit Swissbit Cloud TSE (das ist das fiskaltrust Template zum Erstellen der Cashbox)
+
+***TODO: screenshot***
+
+Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
+
+![Zurück zum KassenHändler Account](images/zuruek-zum-hanendler-account.png "Zurück zum KassenHändler Account")
+
+Zurück in Ihrem Account können sie nun sehen, dass die zuvor gewählten Produkte ebenfalls in Ihrem Warenkorb erscheinen:
+
+***TODO: screenshot***
+
+Drücken Sie hier auf "Checkout" und überprüfen Sie dann den Warenkorb bevor Sie die Bestellung abschicken. Überprüfen Sie vor allem die Richtigkeit der Standortangaben.
+
+***TODO: screenshot***
+
+Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
+
+Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minuten dauern) können Sie im Account des KassenBetreibers sehen, dass das zuvor bestellte Sorglospaket im Standort des KassenBetreibers aktiviert wurde. Wechseln Sie dafür mit Hilfe der surrogation Funktion in den Account des KassenBetreibers und gehen Sie im Menü auf "[Firmenname] -> Standorte":
+
+***TODO: screenshot***
+
+Zudem wurde die Cashbox ebenfalls angelegt, weil wir davor das Template in den Warenkorb gelegt haben und ausgescheckt haben. Um dies zu Überprüfen, gehen Sie im Menü auf "Konfiguration -> Cashbox":
+
+Sie können nun den gewünschten Launcher downloaden und starten, er verwendet zur Konfiguration die zuvor angelegte Cashbox für die Swissbit Cloud TSE.
+
 ## Fiskaly Cloud TSE auschecken und einrichten
+
+Der Vorgang zum Auschecken und Einrichten einer Fiskaly Cloud TSE ist analog zu dem oben im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten) beschrieben Vorgang. Der Unterschied ist nur, dass Sie hierbei die Fiskaly Cloud TSE statt der Swissbit Cloud TSE beziehen und einrichten. Legen Sie dazu statt dem Produkt " Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen" das Produkt "Fisklay Cloud TSE-as-a-Service - aus - Anspruch erzeugen" in den Warenkorb. Legen Sie zudem statt dem Template-Produkt "fiskaltrust.Middleware mit Swissbit Cloud TSE" das Template-Produkt "fiskaltrust.Middleware mit Fiskaly Cloud TSE" in den Warenkorb. Ansonsten ist die Vorgehensweise identisch mit der oben beschriebenen für die Swissbit Cloud TSE.
