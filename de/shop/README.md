@@ -119,9 +119,11 @@ Die oben beschriebenen Schritte können Sie, wenn gewünscht, auch für andere S
 
 1. Schritt: Standort wählen - im Doropdown oben
 2. Schritt: Ansprüche übertragen - (in Warenkorb legen)
-3. Schritt: Produkt aktivieren/aus Anspruch erzeugen - (in Warenkorb legen)
+3. Schritt: Produkt in dem oben gewählten Standort aktivieren/aus Anspruch erzeugen - (in Warenkorb legen)
 
-Der 2te und 3te Schritt (aktivieren/erzeugen) bezieht sich immer auf den oben gewählten Standort und kann nach dem auschecken nicht mehr geändert werden. Um den Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
+Der 2te und 3te Schritt (aktivieren/erzeugen) bezieht sich immer auf den oben gewählten Standort und kann nach dem auschecken nicht mehr geändert werden. Handelt es sich im 3ten Schritt um die Aktivierung eine Hardware TSE, so wird diese später an den angegebenen Standort des KassenBetreibers geliefert. Wenn Sie als KassenHändler jedoch möchten, dass die Hardware TSE an ihren eigenen Standort gesendet wird, so folgen Sie bitte der Anleitung im Kapitel [Lieferoptionen für Hardware TSEs](#lieferoptionen-für-hardware-tses).
+
+Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
 
 ![Zurück zum KassenHändler Account](images/zuruek-zum-hanendler-account.png "Zurück zum KassenHändler Account")
 
@@ -152,12 +154,25 @@ Zudem können wir im Account des KassenBetreibers sehen, dass das Sorglospaket f
 
 Beide oben beschriebenen Tipps werden auch in unserem  [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) detailliert dargestellt.
 
+3. Sie können im Warenkorb Bestell-Vorlagen aus Bestellungen Speichern um diese später wieder verwenden zu können. 
 
 ## Lieferoptionen für Hardware TSEs
 
-Als KassenHändler können Sie Hardware TSEs entweder an den Standort des KassenBetreibers liefern lassen oder an Ihren eigenen Standort. Wenn Sie dem im oberen Beispiel dargestellten Prozess folgen, werden die aktivierten Hardware TSE(s) an den für die Aktivierung ausgewählten Standort des KassenBetreiber gesendet. 
+Als KassenHändler können Sie Hardware TSEs entweder an den Standort des KassenBetreibers liefern lassen oder an Ihren eigenen Standort. Wenn Sie dem im oberen Beispiel dargestellten Vorgang folgen, dann wird die aktivierte Hardware TSE an den für die Aktivierung ausgewählten Standort des KassenBetreiber gesendet. 
 
-Möchten Sie, dass die Hardware TSE(s) nicht an den Standort des KassenBetreiber gesendet werden, so gehen Sie wie folgt vor:
+Möchten Sie jedoch, dass die Hardware TSE aus dem Sorglospaket nicht an den Standort des KassenBetreiber gesendet werden, sondern an Ihren eigenen Standort gesendet wird, dann aktivieren (erzeugen) Sie bitte die Hardware TSE aus dem Anspruch in Ihrem eigenen Account und nicht im Account des KassenBetreiber.
+
+Bezogen auf das obere Beispiel würden dann die Schritte wie folgt aussehen:
+
+1. Schritt : Im eigenen Account in den Shop gehen und den gewünschten eigenen Standort im oberen Bereich wählen.
+2. Schritt: Im eigenen Account das Hardware TSE Aktivierungsprodukt, z.B. das Produkt "Swissbit USB Hardware TSE-as-a-Service - aus Anspruch erzeugen", in den Warenkorb legen - das sorgt dafür, dass die Hardware TSE direkt an Sie gesendet wird.
+3. Schritt: In den Account des KassenBetreiber mit Hilfe der surrogate Funktion wechseln  (wie oben beschrieben).
+4. Schritt: Im Account des KassenBetreiber in den Shop gehen und im oberen Bereich den gewünschten Standort des KassenBetreibers auswählen.
+5. Schritt: Im Account des KassenBetreiber im Shop die Übertragung des Anspruchs auf das Sorglospaket an den KassenBetreiber vornehmen, also das Produkt "fiskaltrust.Sorglos -Anspruch übertragen" in den Warenkorb legen.
+6. Schritt: Im Account des KassenBetreiber im Shop die Aktivierung des Sorglospakets vornehmen, also das Produkt "fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen" in den Warenkorb legen.
+7. Schritt: Zurück in Ihren eigenen Account wechseln und dort den Warenkorb auschecken und die Bestellung vornehmen.
+
+Der Unterschied zu dem in den oben Kapitel beschriebenen Vorgang ist, dass der Anspruch auf die Hardware-TSE nicht mehr auf den KassenBetreiber übertragen wird und unter seinem Account aktiviert wird, sondern direkt in Ihrem eigenen Account aktiviert wird. Somit erfolgt die Lieferung der Hardware TSE aus dem Sorglospaket direkt an Sie als KassenHändler. Wichtig hierbei ist jedoch, dass Sie den "fiskaltrust.Sorglos" Anspruch weiterhin an den KassenBetreiber übertragen und im Account des KassenBertreiber für den richtigen Standort des KassenBetreibers aktivieren.
 
 
 
