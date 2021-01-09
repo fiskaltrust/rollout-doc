@@ -68,9 +68,8 @@ Occasionally, fiskaltrust partners do not fit exactly into the partner roles des
 
 <pre>
 ├── <a href="./invitation-management/README.md" title="Invitation management">Invitation management</a>
-│   └── <a href="./invitation-managemen/README.md" title="Inviting POSDealers">Inviting POSDealers</a>
-│   └── <a href="./invitation-managemen/README.md" title="Inviting POSOperators">Inviting POSOperators</a>
-│       └── <a href="./invitation-managemen/README.md" title="Adding outlets for POSOperators">Adding outlets for POSOPerators</a>
+│   └── <a href="./invitation-managemen/README.md#poscreators-invite-posdealers" title="POSCreators invite POSDealers">POSCreators invite POSDealers</a>
+│   └── <a href="./invitation-managemen/README.md#posdealers-invite-posoperators" title="POSDealers invite POSOperators">POSDealers invite POSOperators</a>
 ├── <a href="./middleware/README.md" title="Middleware">Rollout of the fiskaltrust.Middleware</a>
 │   └── <a href="./middleware/README.md" title="Middleware configuration">Middleware configuration</a>
 │   └── <a href="./middleware/README.md" title="Testing the Service">Testing the Service</a>

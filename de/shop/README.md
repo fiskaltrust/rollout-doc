@@ -115,7 +115,7 @@ Legen Sie als nächstes zur Aktivierung beim KassenBetreiber die zu den Ansprüc
 
 ![Produkte aktivieren](images/ansprueche-uebertragen-2-2.png "Produkte aktivieren")
 
-Die oben beschriebenen Schritte können Sie, wenn gewünscht, auch für andere Standorte wiederholen und auch für diese die Ansprüche und Aktivierungen in den Warenkorb legen:
+Die oben beschriebenen Schritte können Sie, wenn gewünscht, auch für andere Standorte und auch für andere Ihrer KassenBetreiber wiederholen und auch für diese die Ansprüche und Aktivierungen in den Warenkorb legen:
 
 1. Schritt: Standort wählen - im Doropdown oben
 2. Schritt: Ansprüche übertragen - (in Warenkorb legen)
