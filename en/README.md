@@ -13,7 +13,7 @@
 </p>
 <br/>
 
-This repository is home to **Rollout Documentation** of fiskaltrust for the german market. It supports POSCreators (cash register manufacturers) and POSDealers (cash register dealers) in the rollout process of the fiskaltrust.mMiddleware and other fiskaltrust products. 
+This repository is home to **Rollout Documentation** of fiskaltrust for the german market. It supports POSCreators (cash register manufacturers) and POSDealers (cash register dealers) in the rollout process of the fiskaltrust.Middleware and other fiskaltrust products. 
 
 ## Getting started
 

@@ -47,8 +47,8 @@
 │   └── <a href="#performanceempfehlungen" title="Performanceempfehlungen">Performanceempfehlungen</a>
 ├── <a href="#automatisierung-des-rollout" title="Rollout Szenarien">Automatisierung des Rollout</a>
 │   └── <a href="#einleitung-2" title="Einleitung">Einleitung</a>
-│   └── <a href="#überblick-manueller-prozess" title=" Überblick manueller Prozess"> Überblick manueller Prozess</a>
-│   └── <a href="#templating-zum-anlegen-von-cashboxen" title="Einleitung">Templating zum Anlegen von CashBoxen</a>
+│   └── <a href="#überblick-manueller-prozess" title="Überblick manueller Prozess">Überblick manueller Prozess</a>
+│   └── <a href="#templating-zum-anlegen-von-cashboxen" title="Templating zum Anlegen von CashBoxen">Templating zum Anlegen von CashBoxen</a>
 │   └── <a href="#automatisierter-rollout-der-fiskaltrustmiddleware" title="Automatisierter Rollout der fiskaltrust.Middleware">Automatisierter Rollout der fiskaltrust.Middleware</a>
 │   └── <a href="#hoher-automatisierungsgrad" title="Hoher Automatisierungsgrad">Hoher Automatisierungsgrad</a>
 
@@ -100,11 +100,11 @@ Die Konfiguration einer fiskaltrust.Middleware-Instanz wird über eine sogenannt
 
 
 
-für das obere Beispiel müssen wir also die Konfiguration der Queue und der SCU vornehmen und danach diese beiden Konfigurationen in einen Konfigurationscontainer (CashBox) ablegen. Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
+Für das obere Beispiel müssen wir also die Konfiguration der Queue und der SCU vornehmen und danach diese beiden Konfigurationen in einen Konfigurationscontainer (CashBox) ablegen. Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
 
 #### Konfiguration der Queue
 
-Wei bereits vorhin erwähnt, ist die Queue die Komponente der fiskaltrust.Middleware die über die IPOS Schnittstelle dem KassenSystem für Anfragen zur Verfügung steht. Zudem ist die Queue für die Persistenz der verarbeiteten Daten verantwortlich. Und genau das sind die zwei Punkte, die wir hier konfigurieren müssen:
+Wie bereits vorhin erwähnt, ist die Queue die Komponente der fiskaltrust.Middleware die über die IPOS Schnittstelle dem KassenSystem für Anfragen zur Verfügung steht. Zudem ist die Queue für die Persistenz der verarbeiteten Daten verantwortlich. Und genau das sind die zwei Punkte, die wir hier konfigurieren müssen:
 
 1. wie und wo genau soll die Queue für das KassenSystem erreichbar sein? (also z.B. per `grpc` auf `localhost:1234`)
 2. wo genau soll die Queue die Daten speichern? (also z.B. in eine MySql Datenbank mit dem connectionstring: "xyz")
@@ -113,7 +113,7 @@ Wie die Kommunikation stattfinden soll, also z.B. per `grpc`, entscheidet der Ka
 
 #### Konfiguration der SCU
 
-Die SCU ist für die Erstellung der Signaturen verantwortlich. Sie bekommt dabei die zu Signierenden Daten von der Queue und übernimmt die Kommunikation mit einer TSE und die Daten signieren zu lassen. Auch bei der SCU sind also zwei Konfigurationsangaben vorzunehmen:
+Die SCU ist für die Erstellung der Signaturen verantwortlich. Sie bekommt dabei die zu signierenden Daten von der Queue und übernimmt die Kommunikation mit einer TSE um die Daten signieren zu lassen. Auch bei der SCU sind also zwei Konfigurationsangaben vorzunehmen:
 
 1. zum einen muss die Queue wissen, wie und wo sie die SCU erreichen kann (also z.B. über `grpc` auf `localhost:5678`).
 
@@ -457,7 +457,7 @@ Die oben beschriebene Vorgehensweise kann analog zu allen der Export-Ansicht ang
 
 ### Schlußwort
 
-In den oberen Kapitel haben wir beschrieben wie die fiskaltrust.Middleware aufgebaut ist, wie die einzelnen Instanzen manuell über das fiskaltrust.Portal konfiguriert werden kann und wie der Service gestartet und getestet werden kann. Als nächstes möchten wir Ihnen als Inspiration für den Rollout ein einige mögliche Rollout-Szenarien vorstellen. Diese zeigen, wie flexibel die fiskaltrust.Middleware am Standort des Betreibers eingesetzt werden kann. Nach der Präsentation verschiedener Rollout-Szenarien gehen wir dann auf mögliche Automatisierungsoptionen für den Massenrollout ein. 
+In den oberen Kapitel haben wir beschrieben wie die fiskaltrust.Middleware aufgebaut ist, wie die einzelnen Instanzen manuell über das fiskaltrust.Portal konfiguriert werden können und wie der Service gestartet und getestet werden kann. Als nächstes möchten wir Ihnen als Inspiration für den Rollout ein einige mögliche Rollout-Szenarien vorstellen. Diese zeigen, wie flexibel die fiskaltrust.Middleware am Standort des Betreibers eingesetzt werden kann. Nach der Präsentation verschiedener Rollout-Szenarien gehen wir dann auf mögliche Automatisierungsoptionen für den Massenrollout ein. 
 
 ## Rollout Szenarien
 
@@ -858,7 +858,7 @@ Unter bestimmten Umständen kann der KassenHändler selbst für den KassenBetrei
 Eine häufig gestellte Frage in diesem Kontext ist, ob ein Template auch nur für einen bestimmten Endkunden (KassenBetreiber) zur Verfügung gestellt werden kann. Um dies zu erreichen, kann der KassenHändler mit der "Surrogating Funktion" in den Account des KassenBetreiber wechseln und dort unter das Template anlegen und mit der Freigabestufe `Privat (nur Besitzer)` freigeben. Somit wird dieses Template über den fiskaltrust.Shop nur im Account dieses KassenBetreibers sichtbar.
 
 
-#### Nutzung von API oder PowerShell zum automatisierten Ausführen der Templates
+#### Nutzung von API und PowerShell zum automatisierten Ausführen der Templates
 
 
 fiskaltrust stelle eine HTTP-API zur Verfügung mit der Sie die Automatisierung der CashBoxgenerierung mit Hilfe von Konfigurations-Templates vornehmen können. Im diesem Kapitel wird die API beschrieben und ein Aufruf am Beispiel PowerShell vorgeführt.
@@ -1020,3 +1020,9 @@ Alternativ zur Anpassung der Konfiguration in der`fiskaltrust.exe.config` Datei 
 ### Hoher Automatisierungsgrad
 
 Durch die oben beschriebene Vorgehensweisen zum Ausführen der Konfigurations-Templates über die API und zum automatisierten Rollout der fiskaltrust.Middleware ist ein hoher Automatisierungsgrad des Rollouts erreichbar. Lediglich die Outlets müssen mit Hilfe des Bulk-Import im Portal manuell angelegt werden.
+
+## Schlusswort
+
+Wir hoffen, dass Ihnen der oben beschriebenen Vorgänge zum Rollout der fiskaltrust.Middleware weitergeholfen haben. Sollten Sie weitere Fragen dazu haben, bitten wir Sie unsere [FAQ Liste](https://docs.fiskaltrust.cloud/doc/faq/qna/market-de.html) aufzusuchen. Sollten Sie hier nicht fündig werden, so können Sie uns jederzeit gerne unter info@fiskaltrust.de kontaktieren.
+
+Weiter zum Bereich: [fiskaltrust Produkte kaufen und weiter verkaufen](../shop/README.md)

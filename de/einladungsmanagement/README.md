@@ -343,3 +343,5 @@ Der gesuchte KassenBetreiber erscheint als Eintrag in der Ergebnisliste. Der Nam
 ## Schlusswort
 
 Wir hoffen, dass Ihnen der oben beschriebene Leitfaden bezüglich des Einladungsmanagement weitergeholfen hat. Sollten Sie Fragen dazu haben, bitten wir Sie unsere [FAQ Liste](https://docs.fiskaltrust.cloud/doc/faq/qna/market-de.html) aufzusuchen. Sollten Sie hier nicht fündig werden, so können Sie uns jederzeit gerne unter info@fiskaltrust.de kontaktieren.
+
+Weiter zum [Rollout der fiskaltrust.Middleware](../middleware/README.md)

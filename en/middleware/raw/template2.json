@@ -1,0 +1,48 @@
+{
+    "ftCashBoxId": "|[cashbox_id]|",
+    "ftSignaturCreationDevices": [
+        {
+            "Id": "|[scu0_id]|",
+            "Package": "fiskaltrust.Middleware.SCU.DE.Swissbit",
+            "Url": [
+                "grpc://localhost:10081"
+            ],
+            "Configuration": {
+                "devicePath": "s:"
+            }
+        }
+    ],
+    "ftQueues": [
+        {
+            "Id": "|[queue0_id]|",
+            "Package": "fiskaltrust.Middleware.Queue.SQLite",
+            "Version" : "1.3.5",
+            "Configuration": {
+                "init_ftQueue": [
+                    {
+                        "ftQueueId": "|[queue0_id]|",
+                        "ftCashBoxId": "|[cashbox_id]|",
+                        "CountryCode": "DE",
+                        "Timeout": 15000
+                    }
+                ],
+                "init_ftQueueDE": [
+                    {
+                        "ftQueueDEId": "|[queue0_id]|",
+                        "CashBoxIdentification": "reg-|[queue0_id_base64withoutspecialchars]|",
+                        "ftSignaturCreationUnitDEId": "|[scu0_id]|"
+                    }
+                ],
+                "init_ftSignaturCreationUnitDE": [
+                    {
+                        "ftSignaturCreationUnitDEId": "|[scu0_id]|",
+                        "Url": "[\"grpc://localhost:10081\"]"
+                    }
+                ]
+            },
+            "Url": [
+                "rest://localhost:10082"
+            ]
+        }
+    ]
+}
