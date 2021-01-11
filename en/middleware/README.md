@@ -712,25 +712,25 @@ The following key-value pairs are used in the **`Configuration` **object of a qu
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `ftQueueId` |yes |  ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden.|
-| `ftCashBoxId` |yes |  ```GUID String``` | Identifikation  der Cashbox. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden.|
-| `CountryCode` |yes |  ```String``` | Länderkürzel. Für Deutschland: "DE".|
-| `Timeout` |no |  ```Int``` | Timeout in Millisekunden. |
+| `ftQueueId` |yes |  ```GUID String``` | Identification of the Queue. The system variable `queue{0-9}_id` can be used.|
+| `ftCashBoxId` |yes |  ```GUID String``` | Identification of the CashBox. The system variable ``|[cashbox_id]|`` can be used here.|
+| `CountryCode` |yes |  ```String``` | Country code. For Germany: "DE".|
+| `Timeout` |no |  ```Int``` | Timeout in milliseconds. |
 
-Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Queue im Feld **`init_ftQueueDE`**  verwendet:
-
-| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `ftQueueDEId` |yes |  ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden. (Hier muss der gleiche Wert wie bei `ftQueueId` verwendet werden.) |
-| `CashBoxIdentification` |yes |  ```printable String (20)``` | Kassenseriennummer. Wird auch als Client-ID für die TSE verwendet. Printable String, max. 20 Zeichen.|
-| `ftSignaturCreationUnitDEId` |yes |  ```GUID String```  | Die ID der SCU mit der sich diese Queue verbinden soll.|
-
-Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Queue im Feld **`init_ftSignaturCreationUnitDE`**  verwendet:
+The following key-value pairs are used in the **`Configuration`** object of a queue in the **`init_ftQueueDE`** field:
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `ftSignaturCreationUnitDEId` |yes |  ```GUID String``` | Identifikation der SCU mit der sich diese Queue verbinden soll. Die Systemvariable `scu{0-9}_id` kann verwendet werden. |
-| `Url` |yes |  ```String``` | Kommunikationsendpunkte der SCU. Als Array im String Bsp: ```"[\"grpc://localhost:10081\", \"grpc://localhost:10082\"]"```. Normalerweise wird nur ein Endpunkt benötigt. |
+| `ftQueueDEId` |yes |  ```GUID String``` | Identification of the queue. The system variable `queue{0-9}_id` can be used. (Here the same value must be used as for `ftQueueId`). |
+| `CashBoxIdentification` |yes |  ```printable String (20)``` | Cash register serial number. Also used as client ID for the TSE. Printable string, max. 20 characters.|
+| `ftSignaturCreationUnitDEId` |yes |  ```GUID String```  | The ID of the SCU this queue should connect to.
+
+The following key-value pairs are used in the **`Configuration`** object of a queue in the **`init_ftSignatureCreationUnitDE`** field:
+
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
+|----------------------|--------------------------|--------------------------|---------------------|
+| `ftSignaturCreationUnitDEId` |yes |  ```GUID String``` | Identification of the SCU to which this Queue should connect. The system variable `scu{0-9}_id` can be used. |
+| `Url` |yes |  ```String``` | Communication endpoints of the SCU. As an array in the string Ex: ```"[\"grpc://localhost:10081\", \"grpc://localhost:10082\"]" ```. Normally only one endpoint is needed. |
 
 **SCU**
 
@@ -738,62 +738,62 @@ Folgende Packages stehen aktuell für SCUs zur Verfügung:
 
 | **Package Name**        | **Description**          |
 |----------------------|----------------------|
-| `fiskaltrust.Middleware.SCU.DE.CryptoVision` | Dieses Package ermöglicht die Kommunikation mit einer Cryptovision TSE.|
-| `fiskaltrust.Middleware.SCU.DE.DieboldNixdorf` | Dieses Package ermöglicht die Kommunikation mit einer Diebold Nixdorf TSE.|
-| `fiskaltrust.Middleware.SCU.DE.Epson` | Dieses Package ermöglicht die Kommunikation mit einer Epson TSE.|
-| `fiskaltrust.Middleware.SCU.DE.Fiskaly` | Dieses Package ermöglicht die Kommunikation mit eine Fiskaly TSE.|
-| `fiskaltrust.Middleware.SCU.DE.Swissbit` | Dieses Package ermöglicht die Kommunikation mit einer Swissbit TSE. |
+| `fiskaltrust.Middleware.SCU.DE.CryptoVision` | This package enables communication with a Cryptovision TSE.|
+| `fiskaltrust.Middleware.SCU.DE.DieboldNixdorf` | This package enables communication with a Diebold Nixdorf TSE.|
+| `fiskaltrust.Middleware.SCU.DE.Epson` | This package enables communication with an Epson TSE.|
+| `fiskaltrust.Middleware.SCU.DE.Fiskaly` | This package enables communication with a Fiskaly TSE.|
+| `fiskaltrust.Middleware.SCU.DE.Swissbit` | This package enables communication with a Swissbit TSE. |
 
-Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **SCU** je nach Hersteller der TSE verwendet:
+The following key-value pairs are used in the **`Configuration`** object of a **SCU** depending on the manufacturer of the TSE:
 
 **Swissbit TSE**
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `devicePath` |yes |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Swissbit TSE an der Kasse angeschossen wird. |
-| `adminPin` |no |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `devicePath` |yes |  ```String``` | Drive letter followed by colon (e.g. `E:`). Represents the drive to which the Swissbit TSE is connected at the cash register. |
+| `adminPin` |no |  ```String``` | Admin PIN. Only to be entered if the TSE has been initialized outside fiskaltrust. If the TSE is not yet initialized, this value is not required.|
+| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Only to be specified if the TSE has been initialized outside of fiskaltrust. If the TSE is not yet initialized, this value is not required.|
 
 **Cryptovision TSE**
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `devicePath` |yes |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Cryptovision TSE an der Kasse angeschossen wird. |
-| `adminPin` |no |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `devicePath` |yes |  ```String``` | Drive letter followed by colon (e.g. `E:`). Represents the drive to which the Cryptovision TSE is connected at the cash register. |
+| `adminPin` |no |  ```String``` | Admin PIN. Only to be entered if the TSE has been initialized outside fiskaltrust. If the TSE is not yet initialized, this value is not required.|
+| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Only to be specified if the TSE has been initialized outside of fiskaltrust. If the TSE is not yet initialized, this value is not required.|
 
 **Diebold Nixdorf**
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `comPort` |yes (nur USB) |  ```String``` | Definiert den Com Anschluß an, an dem die TSE angeschlossen wird. Zum Beispiel `COM6`. Nur zu verwenden wenn es sich um eine USB-TSE ohne Connect Box handelt. |
-| `url` |yes (nur Connect Box) |  ```String``` | Verbindungs-Url falls es sich um eine Diebold Nixdorf Connect Box handelt. |
-| `adminUser` |no |  ```String``` | Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `adminPin` |no |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminUser` |no |  ```String``` | Time Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `slotNumber` |yes (nur Connect Box) |  ```Int``` | Slot-Nummer der TSE falls hierbei eine Diebold Nixdorf Connect Box verwendet wird. |
+| `comPort` |yes (only USB) |  ```String``` | Defines the Com port to which the TSE is connected. For example `COM6`. Only to be used if it is a USB TSE without Connect Box. |
+| `url` |yes (only Connect Box) |  ```String``` | Connection url if it is a Diebold Nixdorf Connect Box. |
+| `adminUser` |no |  ```String``` | Admin Username. Only to be specified if the TSE has been initialized outside fiskaltrust. If the TSE is not yet initialized, this value is not required.|
+| `adminPin` |no |  ```String``` | Admin PIN. Only to be entered if the TSE has been initialized outside fiskaltrust. If the TSE is not yet initialized, this value is not required.|
+| `timeAdminUser` |no |  ```String``` | Time Admin Username. Only to be specified if the TSE has been initialized outside fiskaltrust. If the TSE is not yet initialized, this value is not required.|
+| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Only to be specified if the TSE has been initialized outside of fiskaltrust. If the TSE is not yet initialized, this value is not required.|
+| `slotNumber` |yes (nur Connect Box) |  ```Int``` | Slot number of the TSE if a Diebold Nixdorf Connect Box is used. |
 
 **Epson** 
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `tseurl` |yes |  ```String``` | Url zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein |
-| `tseport` |no |  ```String``` | Port zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein|
-| `deviceid` |no |  ```String``` | Device Id beim Epson Server.|
-| `timeout` |no | Int | Timeout in Millisekunden |
+| `tseurl` |yes |  ```String``` | Url to connect to the TSE. Here the TSE will be reachable. |
+| `tseport` |no |  ```String``` | Port to connect to the TSE. Here the TSE will be reachable.|
+| `deviceid` |no |  ```String``` | Device Id if Epson Server.|
+| `timeout` |no | Int | Timeout in milliseconds |
 
 **Fiskaly**
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `apiKey` |yes |  ```String``` | Fiskaly API Schlüssel |
+| `apiKey` |yes |  ```String``` | Fiskaly API Key |
 | `apiSecret` |yes |  ```String``` | Fiskaly API Secret |
-| `tssId` |yes |  ```GUID String``` | ID der TSE von Fiskaly |
+| `tssId` |yes |  ```GUID String``` | ID of the TSE from Fiskaly |
 
 #### System variables
 
-Folgende Systemvariablen stehen Ihnen zur Verwendung im Template zur Verfügung:
+The following system variables are available for use in the template:
 
 | Variable                                  | Wert                                                         |
 | ----------------------------------------- | ------------------------------------------------------------ |
@@ -803,71 +803,71 @@ Folgende Systemvariablen stehen Ihnen zur Verwendung im Template zur Verfügung:
 | `queue{0-9}_id`                           | Random GUID                                                  |
 | `queue{0-9}_id_base64withoutspecialchars` | `{queue_id}`, converted to Base64 without special characters |
 
-_Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
+_Dynamic values are highlighted by {} in this table._
 
 
 
 #### Making the configuration template available via the portal
 
-KassenHersteller, KassenHändler und KassebBetreiber können Konfigurations-Templates im fiskaltrust.Portal ablegen und freigeben. Dies können sie unter dem Menüpunkt `Konfiguration->Templates` vornehmen. 
+POSCreators, POSDealers and POSOPerators can store and release configuration templates in the fiskaltrust.Portal. They can do this under the menu item `Configuration->Templates`. 
 
-Das Template selbst (JSON String) wird dabei im das Formularfeld `Content`  hinterlegt.
+The template itself (JSON string) is stored in the form field `Content`.
 
-Beim Anlegen des Template kann gewählt werden an welche Zielgruppe das Template freigegeben werden soll. 
+When creating the template, one can select the target group for which the template is to be released. 
 
-Optionen für **KassenHersteller**:
-
-| **Option**        | **Description**          |
-|----------------------|----------------------|
-| `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
-| `Privat (nur Besitzer)` | Freigabe nur für dem Kassenhersteller selbst (z.B. zum Testen) |
-| `Geteilt mit Händler` | Freigabe für den Kassenhersteller selbst und für alle mit ihm verbundenen Kassenhändler. |
-| `Getielt mit Betreiber` | Freigabe für den Kassenhersteller selbst und für alle mit seinen Kassenhändler verbundenen Kassenbetreiber.|
-
-Optionen für **KassenHändler**:
+Options for **POSCreator**:
 
 | **Option**        | **Description**          |
 |----------------------|----------------------|
-| `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
-| `Privat (nur Besitzer)` | Freigabe nur für dem Kassenhändler selbst (z.B. zum Testen). |
-| `Getielt mit Betreiber` | Freigabe für den Kassenhändler selbst und für alle mit ihm verbundenen Kassenbetreiber.|
+| `Deaktiviert` | No release, template is still in preparation or has been paused. |
+| `Privat (nur Besitzer)` | Release only for the POSCreator itself (e.g. for testing) |
+| `Geteilt mit Händler` | Release for the POSCreator itself and for all POSDealers associated with him. |
+| `Getielt mit Betreiber` | Release for the POSCreator itself and for all POSOperators associated with his POSDealers.|
 
-Optionen für **KassenBetreiber**:
+Options for **POSDealer**:
 
 | **Option**        | **Description**          |
 |----------------------|----------------------|
-| `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
-| `Privat (nur Besitzer)` | Freigabe nur für dem Kassenbetreiber selbst. |
+| `Deaktiviert` | No release, template is still in preparation or has been paused. |
+| `Privat (nur Besitzer)` | Release only for the POSDealer himself (e.g. for testing). |
+| `Getielt mit Betreiber` | Release for the POSDealer itself and for all POSOperators associated with him.|
 
-Des Weiteren kann das Template mit einem Bild und Link personalisiert werden. Da später das Template im fiskaltrust.Webshop für freigegebene Accounts erscheint, wird durch dieses Branding eine bessere Erkennung ermöglicht.
+Options for **POSOperator**:
 
-Stellt der KassenHersteller ein Template für seine KassenHändler zur Verfügung, so können diese das Template klonen, eventuell anpassen und als neues Template ihren KassenBetreibern zur Verfügung stellen.
+| **Option**        | **Description**          |
+|----------------------|----------------------|
+| `Deaktiviert` | No release, template is still in preparation or has been paused. |
+| `Privat (nur Besitzer)` | Release only for the POSOperator itself. |
+
+Furthermore, the template can be personalized with an image and link. Since the template will later appear in the fiskaltrust.Shop for approved accounts, this branding will enable better recognition.
+
+If the POSCreator provides a template for his POSDealers, they can clone the template, possibly adapt it and make it available to their POSOperators as a new template.
 
 
 #### Manual execution of the configuration template
 
-Sobald ein Template für einen Account freigeben wurde, so erscheint dieses als kostenloses Produkt im fiskaltrust.Shop innerhalb des freigegebenen Account. Der Account-Besitzer kann das Template nun in beliebiger Menge auschecken. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account bei den Konfigurationen hinterlegt (Menüpunkt: `Konfiguration->CashBox`). 
+As soon as a template has been released for an account, it appears as a free product in the fiskaltrust.Shop within the released account. The account owner can now check out the template in any quantity. The quantity represents the number of CashBoxes that should be generated automatically. As soon as the checkout process is completed, the portal automatically generates the corresponding number of CashBoxes by applying the template. They can be found here:  `Configuration->CashBox`. 
 
-Handelt es sich hierbei um den Account eines KassenBetreibers, besteht die Möglichkeit je nach Outlet unterschiedliche Templates auszuchecken. Deshalb sollte vor der Übernahme des Templates in den Warenkorb auf die Standortauswahl geachtet werden (Auswahl: Standort-Dropdown oben links im Shop).
+If this is the account of a POSOperator, it is possible to check out different templates depending on the outlet. Therefore, before transferring the template to the shopping cart, you should pay attention to the outlet selection (selection: outlet dropdown in the upper left corner of the shop page).
 
-Unter bestimmten Umständen kann der KassenHändler selbst für den KassenBetreiber das Auschecken des Template vornehmen. Dies stellt eine zeitsparende Optimierung dar, die es KassenHändlern ermöglicht beim Rollout ohne das Zutun des KassenBetreibers zu operieren. Dafür benötig jedoch der KassenHändler eine generelle Erlaubnis des KassenBetreibers zur sog. "Surrogating Funktion". Mit dieser Funktion kann der KassenHändler in den Account des KassenBetreiber switchen.
+Under certain circumstances, the POSDealer can check out the template for the POSOperator himself. This is a time-saving optimization that allows POSDealers to operate during the rollout without the intervention of the POSOperator. To do this, however, the POSDealer needs general permission from the POSOperator for the so-called "surrogation" function. With this function, the POSDealer can switch to the account of the POSOperator. See also [invitation management](../invitation-management/README.md).
 
 #### FAQ: Template for one customer only
 
-Eine häufig gestellte Frage in diesem Kontext ist, ob ein Template auch nur für einen bestimmten Endkunden (KassenBetreiber) zur Verfügung gestellt werden kann. Um dies zu erreichen, kann der KassenHändler mit der "Surrogating Funktion" in den Account des KassenBetreiber wechseln und dort unter das Template anlegen und mit der Freigabestufe `Privat (nur Besitzer)` freigeben. Somit wird dieses Template über den fiskaltrust.Shop nur im Account dieses KassenBetreibers sichtbar.
+A frequently asked question in this context is whether a template can also be made available only to a specific end customer (POSOperator). To achieve this, the POSDealer can use the "surrogation" function to switch to the account of the POSOperator and create the template there and then release it with the release level `Privat (nur Besitzer)`. Thus, this template is visible via the fiskaltrust.Shop only in the account of this POSOperator.
 
 
 #### Use of API and PowerShell for automated execution of the templates
 
 
-fiskaltrust stelle eine HTTP-API zur Verfügung mit der Sie die Automatisierung der CashBoxgenerierung mit Hilfe von Konfigurations-Templates vornehmen können. Im diesem Kapitel wird die API beschrieben und ein Aufruf am Beispiel PowerShell vorgeführt.
+fiskaltrust provides an HTTP API that allows you to automate CashBox generation using configuration templates. This chapter describes the API and demonstrates a call using PowerShell as an example.
 
 #### API
-Die Ausführung von Templates kann über unsere HTTP-API leicht automatisiert werden. Sie benötigen dazu das Template als JSON String, die AccountId und den AccessToken des Accounts (z.B. des KassenBetreibers) für den das Template ausgeführt werden soll. AccountId und Accesstoken finden Sie im fiskaltrust.Portal innerhalb des entsprechenden Account (Menüpunkt: [`Firmanname -> Übersicht`](https://portal.fiskaltrust.de/AccountProfile) im unteren Bereich befindet sich die Sektion `API Zugriff`).
+The execution of templates can be easily automated via our HTTP API. You need the template as JSON string, the AccountId and the AccessToken of the account (e.g. of the POSOperator) for which the template should be executed. AccountId and AccessToken can be found in the fiskaltrust.Portal within the corresponding account (menu item: [`Company name -> Overview`](https://portal.fiskaltrust.de/AccountProfile) in the lower area there is the section `API Access`).
 
 ![Authentifizierung](images/accesstoken.png)
 
-Ihr Request sollte wie folgt aussehen:
+Your request should look like this:
 
 - _Method_: **POST**
 - _Headers_: 
@@ -880,58 +880,58 @@ Ihr Request sollte wie folgt aussehen:
 
 #### Parameterization
 
-Zusätzlich können Variablen zum Query-String der URL hinzugefügt werden, die dann automatisch im Template ersetzt werden.  Ändern Sie beispielsweise die obige URL auf den Wert:
+In addition, variables can be added to the query string of the URL, which will then be automatically replaced in the template.  For example, change the above URL to the value:
 
 `https://helipad.fiskaltrust.cloud/api/configuration?my_variable=123` 
 
-so werden vor dem Ausführen des Template die Vorkommnisse `|[my_variable]|` mit dem String  `123`  ersetzt.
+by doing so, the occurrences `|[my_variable]|` are replaced with the string `123` before the template is executed.
 
-Falls nicht über den Query-String überschrieben, werden [Systemvariablen](#systemvariablen) im Template wie oben beschrieben automatisch vom System ersetzt.
+If not overwritten via the query string, [system variables](#system-variables) in the template are automatically replaced by the system as described above.
 
-Des Weiteren besteht die Möglichkeit folgende zusätzliche (optionale) Parameter über den Query-String der URL zu übergeben:
+Furthermore, it is possible to pass the following additional (optional) parameters via the query string of the URL:
 
-| Variable                 | Beschreibung                                                 | Default Wert falls nicht übergeben                        |
+| Variable                 | Description                                                 | Default value if not passed                       |
 | ------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
-| `outlet_number`          | Nummer des Standorts                                         | `{max(outlets used in account's existing cashboxes) + 1}` |
-| `description`            | Name allgemein. Wird für die Cashbox, enthaltene Queues und SCUs verwendet, falls nicht einzeln mit eigenem Parameter überschrieben. | `ft{yyyyMMddHHmmss}`                                      |
-| `cashbox_description`    | Name für die Cashbox. Überschreibt  `description`            | `ft{yyyyMMddHHmmss}`                                      |
-| `cashbox_id`             | ID der Cashbox. Kann bei Neuanlage und bei Änderung verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `ftCashBoxId` überschrieben. | Random GUID                                               |
-| `cashbox_ipaddress`      | IP Adresse der Cashbox.                                      | Empty string                                              |
-| `cashbox_producttype`    | Cashbox Product Type                                         | Empty string                                              |
-| `queue{0-9}_id`          | ID der Queue. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben. | Random GUID                                               |
-| `queue{0-9}_description` | Name für die Queue. Überschreibt  `description`. Achtung: wird von `PackageConfiguration.Description`  überschrieben. | `{description}`                                           |
-|`queue{0-9}_package` |  Name des Package zum Erstellen der Queue. Achtung: wird von `PackageConfiguration.Package`  überschrieben. | Empty String |
-|`queue{0-9}_version` |  Version des Package zum Erstellen der Queue. Achtung: wird von `PackageConfiguration.Version`  überschrieben. | Empty String |
-| `queue{0-9}_url` | JSON Array mit URLs (Strings) für die Queue. Achtung: wird von `PackageConfiguration.Url`  überschrieben.  | `http://localhost:1200/fiskaltrust` for the first queue, `http://localhost:1200/fiskaltrust{1-9}` for others |
-| `queue{0-9}_configuration` | JSON Element zur Konfiguration der Queue. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben. | Empty |
-| `queue{0-9}_countrycode` | Länderkürzel für die Queue. Wie   `PackageConfiguration.Configuration.CountryCode`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration.CountryCode`  überschrieben.  | Empty |
-| `queue{0-9}_timeout` | Timeout für die Queue. Wie   `PackageConfiguration.Configuration.Timeout`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration.Timeout`  überschrieben.  | 15000 |
-| `scu{0-9}_id`                            | ID der SCU. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben. | Random GUID                                                  |
-| `scu{0-9}_description`                   | Name für die SCU. Überschreibt  `description` . Achtung: wird von `PackageConfiguration.Description`  überschrieben. | `{description}`                                              |
-|`scu{0-9}_package` |  Name des Package zum Erstellen der SCU. Achtung: wird von `PackageConfiguration.Package`  überschrieben. | Empty String |
-|`scu{0-9}_version` |  Version des Package zum Erstellen der SCU. Achtung: wird von `PackageConfiguration.Version`  überschrieben. | Empty String |
-| `scu{0-9}_url` | JSON Array mit URLs (Strings) für die SCU. Achtung: wird von `PackageConfiguration.Url`  überschrieben.  | `net.pipe://localhost/{scu_id}` |
-| `scu{0-9}_configuration` | JSON Element zur Konfiguration der SCU. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben. | Empty |
-| `helper{0-9}_id`                         | ID des Helper. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben. | Random GUID                                                  |
-| `helper{0-9}_description`                | Name für den Helper. Überschreibt  `description` . Achtung: wird von `PackageConfiguration.Description`  überschrieben.  | `{description}`                                              |
-| `helper{0-9}_url`                        | JSON Array mit URLs (Strings) für den Helper. Achtung: wird von `PackageConfiguration.Url`  überschrieben.  | `net.pipe://localhost/{helper_id}`                           |
-|`helper{0-9}_package` |  Name des Package zum Erstellen des Helper. Achtung: wird von `PackageConfiguration.Package`  überschrieben. | Empty String |
-|`helper{0-9}_version` |  Version des Package zum Erstellen des Helper. Achtung: wird von `PackageConfiguration.Version`  überschrieben. | Empty String |
-| `helper{0-9}_configuration` | JSON Element zur Konfiguration des Helper. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben.  | Empty |
+| `outlet_number`          | Outlet number                                         | `{max(outlets used in account's existing cashboxes) + 1}` |
+| `description`            | General name. Used for the CashBox, contained Queues and SCUs, if not individually overwritten with its own parameter. | `ft{yyyyMMddHHmmss}`                                      |
+| `cashbox_description`    | Name for the cashBox. Overwrites `description `           | `ft{yyyyMMddHHmmss}`                                      |
+| `cashbox_id`             | ID of the cashbox. Can be used for new creation and for modification. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field `ftCashBoxId`. | Random GUID                                               |
+| `cashbox_ipaddress`      | IP address of the CashBox.                                      | Empty string                                              |
+| `cashbox_producttype`    | CashBox Product Type                                         | Empty string                                              |
+| `queue{0-9}_id`          | ID of the queue. This parameter can be used for new queues and for changes. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field `PackageConfiguration.Id`. | Random GUID                                               |
+| `queue{0-9}_description` | Name for the queue. Overwrites `description`. Warning: will be overwritten by `PackageConfiguration.Description`. | `{description}` |
+|`queue{0-9}_package` |  Name of the package to create the Queue. Attention: will be overwritten by `PackageConfiguration.Package`. | Empty String |
+|`queue{0-9}_version` |  Version of the package to create the queue. Attention: will be overwritten by `PackageConfiguration.Version`. | Empty String |
+| `queue{0-9}_url` | JSON array with URLs (strings) for the queue. Attention: will be overwritten by `PackageConfiguration.Url`.  | `http://localhost:1200/fiskaltrust` for the first queue, `http://localhost:1200/fiskaltrust{1-9}` for others |
+| `queue{0-9}_configuration` | JSON element to configure the queue. Like `PackageConfiguration.Configuration` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration`. | Empty |
+| `queue{0-9}_countrycode` | Country code for the queue. Like `PackageConfiguration.Configuration.CountryCode` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration.CountryCode`.  | Empty |
+| `queue{0-9}_timeout` | Timeout for the Queue. Like `PackageConfiguration.Configuration.Timeout` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration.Timeout`.  | 15000 |
+| `scu{0-9}_id`                            | ID of the SCU. Can be used for new creation and for changes. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field 'PackageConfiguration.Id'. | Random GUID                                                  |
+| `scu{0-9}_description`                   | Name for the SCU. Overwrites `description` . Attention: will be overwritten by `PackageConfiguration.Description`. | `{description}`                                              |
+|`scu{0-9}_package` |  Name of the package to create the SCU. Attention: will be overwritten by `PackageConfiguration.Package`. | Empty String |
+|`scu{0-9}_version` |  Version of the package to create the SCU. Attention: will be overwritten by `PackageConfiguration.Version`. | Empty String |
+| `scu{0-9}_url` | JSON array with URLs (strings) for the SCU. Attention: will be overwritten by `PackageConfiguration.Url`.  | `net.pipe://localhost/{scu_id}` |
+| `scu{0-9}_configuration` | JSON element to configure the SCU. Like `PackageConfiguration.Configuration` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration`. | Empty |
+| `helper{0-9}_id`                         | ID of the helper. Can be used for new creation and for changes. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field `PackageConfiguration.Id`. | Random GUID                                                  |
+| `helper{0-9}_description`                | Name for the helper. Overwrites `description` . Warning: will be overwritten by `PackageConfiguration.Description`.  | `{description}`                                              |
+| `helper{0-9}_url`                        | JSON array with URLs (strings) for the helper. Attention: will be overwritten by `PackageConfiguration.Url`.  | `net.pipe://localhost/{helper_id}`                           |
+|`helper{0-9}_package` |  Name of the package to create the helper. Attention: will be overwritten by `PackageConfiguration.Package`. | Empty String |
+|`helper{0-9}_version` |  Version of the package to create the helper. Attention: will be overwritten by `PackageConfiguration.Version`. | Empty String |
+| `helper{0-9}_configuration` | JSON element to configure the helper. Like `PackageConfiguration.Configuration` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration`.  | Empty |
 
 
 
-Bsp:
+Example:
 
 `https://helipad-sandbox.fiskaltrust.cloud/api/configuration?outlet_number=55&description=Mdedarh999&queue0_description=Mdedarh999_Q1&queue1_description=Mdedarh999_Q2&queue2_description=Mdedarh999_Q3`
 
 #### Response
 
-Als Antwort gibt die API einen JSON String zurück, der die `cashboxid` der angelegten CashBox, den `accesstoken` und das Template beinhaltet. Die erhaltene `cashboxid` ist wichtig für die vollständige Automatisierung des Rollout. Siehe dazu auch [Automatisierter Rollout der fiskaltrust.Middleware](#automatisierter-rollout-der-fiskaltrust.middleware).
+In response, the API returns a JSON string containing the `cashboxid` of the created CashBox, the `accesstoken` and the template. The received `cashboxid` is important for the overall automation of the rollout. See also [Rollout automation](#rollout-automation).
 
 #### PowerShell
 
-Das folgende Beispiel zeigt wie mit Hilfe der PowerShell der Request an unsere API gesendet werden kann:
+The following example shows how to send the request to our API using PowerShell:
 
 ```powershell
 $headers = @{ accountid = "your-account-id" ; accesstoken = "your-access-token" }
@@ -944,17 +944,17 @@ Invoke-WebRequest -uri  $uri -Headers $headers -Method POST -ContentType "applic
 
 #### Handling of outlets
 
-Wie weiter oben bereits erwähnt, kann das Auschecken von Templates mit dem Standort des KassenBetreibers verknüpft werden. In diese Kapitel wird aufgezeigt wie diese Funktion automatisiert über die API vrogenommen werden kann.
+As mentioned above, the checkout of templates can be linked to the outlet of the POSOperator. This chapter shows how this function can be automated via the API.
 
 ##### Creating or importing the outlets in the portal
 
-Standorte (sogenannte Outlets) können manuell über das Portal im Account des KassenBetreibers angelegt werden. Siehe Menüpunkt `Outlets` . Des Weiteren kann als Optimierungsvariante unter dem selben Menüpunkt mit Hilfe einer csv. Datei eine ganze Liste von Standorten importiert werden. Der Aufbau einer solchen Liste ist im Portal beschrieben.
+Outlets can be created manually via the portal in the POSOperator's account. See menu item `Outlets`. Furthermore, as an optimization variant under the same menu item, an entire list of locations can be imported with the help of a csv. File a whole list of locations can be imported. The structure of such a list is described in the portal.
 
-Das Anlegen der Standorte ist nur über das Portal möglich und kann nicht über die API erfolgen.
+Creating the locations is only possible via the portal and cannot be done via the API.
 
 ##### Specification of the outlet in the API call
 
-Über den Parameter `outlet_number` kann im Query-String die Outlet-Nummer angebenen werden für die das Template ausgeführt werden soll:
+The `outlet_number` parameter can be used in the query string to specify the outlet number for which the template is to be executed:
 
 `https://helipad-sandbox.fiskaltrust.cloud/api/configuration?outlet_number=12`
 
@@ -977,10 +977,9 @@ foreach ($outlet in $outlets)
     Invoke-WebRequest -uri  $uri -Headers $headers -Method POST -ContentType "application/json" -Body "`"$template`""
 }
 ```
-Schritt 1: Header definieren (accountId und accesstoken setzen)
+Step 1: Define header (set accountId and accesstoken)
 
-Schritt 2: Outlets aus der [`fiskaltrustOutletsWithTemplateFile.csv`](media/fiskaltrustOutletsWithTemplateFile.csv) Datei einlesen. Diese Datei wird sowohl für das Anlegen der Outlets (Import im Portal) als auch zum Ausführen der Templates verwendet. Nach dem Import im Portal wird sie hier eingelesen. Beispielhafter Inhalt:
-
+Step 2: Import outlets from the [`fiskaltrustOutletsWithTemplateFile.csv`](images/fiskaltrustOutletsWithTemplateFile.csv) file. This file is used both for creating the outlets (import in the portal) and for running the templates. After import in the portal, it is read here. Sample content:
 `
 LocationId;OutletNumber;Name;Address;ContactName;Telephone;Fax;PostalCode;City;County;StateOrProvince;Country;Template;TillCode
 ;15;Outlet 5;street address5;;;;80803;München;;;DE;template1.json;till1
@@ -988,23 +987,23 @@ LocationId;OutletNumber;Name;Address;ContactName;Telephone;Fax;PostalCode;City;C
 ;17;Outlet 7;street address7;;;;80803;München;;;DE;template1.json;till3
 `
 
-Schritt 3: Iteration über die eingelesenen Zeilen aus der Outlet Datei.
+Step 3: Iterate over the lines read from the outlet file.
 
-Schritt 4: für jede eingelesene Zeile wird das entsprechende Template eingelesen und vorbereitet. Z.B. für Zeile 1 wird der Inhalt der Datei [`template1.json`](media/template1.json) eingelesen. In Zeile 2 wird für ein anderes Outlet ein anderes Template [`template2.json`](media/template2.json) benötigt.
+Step 4: for each line read in, the corresponding template is read in and prepared. E.g. for line 1 the content of the file [`template1.json`](images/template1.json) is read in. In line 2 another template [`template2.json`](images/template2.json) is needed for another outlet.
 
-Schritt 5: für jede eingelesene Zeile wird die Uri für den API Aufruf aufgebaut. Hierbei wird die Outlet Nummer als Parameter im Query-String übergeben.
+Step 5: for each row read in, the Uri for the API call is built. Here the outlet number is passed as a parameter in the query string.
 
-Schritt 6: für jede eingelesene Zeile wird ein Aufruf der HTTP-API mit dem zuvor vorbereiteten Header, Uri und Template abgesetzt.
+Step 6: for each line read, a call to the HTTP API is made with the previously prepared header, Uri and template.
 
-Zusammenfassung: In dem obigen Beispiel wurden mit Hilfe der [`fiskaltrustOutletsWithTemplateFile.csv`](media/fiskaltrustOutletsWithTemplateFile.csv) Datei sowohl die Outlets im Portal angelegt (Bulk-Import) als auch für jedes Outlet das dazugehörige Template (einmalig - als Beispiel) ausgeführt.
+Summary: In the above example, using the [`fiskaltrustOutletsWithTemplateFile.csv`](images/fiskaltrustOutletsWithTemplateFile.csv) file, both the outlets were created in the portal (bulk import) and the associated template was executed for each outlet (once - as an example).
 
 ### Automated rollout of the fiskaltrust.Middleware
 
-Über das fiskaltrust.Portal haben Sie die Möglichkeit den Launcher herunterzuladen. Drücken Sie dazu den "Download online Launcher" Button einer beliebigen Cahsbox im Portal. Den heruntergeladenen Launcher können Sie nun als Teil Ihres Rollouts automatisiert auf alle Kassen der Betreiber ausliefern und starten. 
+Via the fiskaltrust.Portal you have the possibility to download the launcher. To do so, press the "Download .NET Launcher" button of any CahsBox in the portal. You can now automatically deploy and start the downloaded launcher to all POSOperator cash registers as part of your rollout. 
 
-Wichtig ist es hierbei beim ersten Start darauf zu achten, dass die fiskaltrust.Middleware richtig, d.h. mit der dazugehörigen CashBox initialisiert wird. Dafür stellt der Launcher ein Konfigurationsfile (fiskaltrust.exe.config) zur Verfügung. Dieses können Sie vor dem Ausrollen des Launcher auf die Kasse des Betreibers entsprechend anpassen. 
+It is important to make sure that the fiskaltrust.Middleware is initialized correctly, i.e. with the corresponding CashBox. For this purpose, the Launcher provides a configuration file (fiskaltrust.exe.config). You can adjust this accordingly before rolling out the launcher to the operator's cash register. 
 
-Bitte geben Sie dazu in dem Bereich `appSetting` die Werte für `cashboxid` und `accesstoken` an. Diese Werte erhalten Sie als Rückgabewerte des [API Aufruf](#antwort) zum Ausführen des Konfigurations-Template.
+To do this, please specify the values for `cashboxid` and `accesstoken` in the `appSetting` section. You will get these values as return values of the [API call](#response) for executing the configuration template.
 
 ```xml
 <configuration>
@@ -1012,16 +1011,16 @@ Bitte geben Sie dazu in dem Bereich `appSetting` die Werte für `cashboxid` und 
   <add key="cashboxid" value="your-cashbox-id" />
   <add key="accesstoken" value="your-access-token" />
 ```
-Nun können Sie den Launcher mit der angepassten Konfigurationsdatei auf die Kasse des Betreibers ausliefern und mit `fiskaltrust.exe` starten. Der Launcher wird sich automatisch die CashBox (Konfigurationscontainer) zur in `fiskaltrust.exe.config` angegebenen `cashboxid`  vom fiskaltrust Server herunterladen und die fiskaltrust.Middleware entsprechend konfigurieren und starten.
+Now you can deliver the launcher with the customized configuration file to the POSOperator's cash register and start it with `fiskaltrust.exe`. The launcher will automatically download the CashBox (configuration container) identified by the `cashboxid` specified in `fiskaltrust.exe.config` from the fiskaltrust server, then configure and launch the fiskaltrust.Middleware accordingly.
 
-Alternativ zur Anpassung der Konfiguration in der`fiskaltrust.exe.config` Datei können Sie beim Starten des Launcher (`fiskaltrust.exe` ) die `cashboxid` und den `accesstoken` als Parameter übergeben. Diese Angabe überschreibt die vorhandene Konfiguration. Die Beschreibung der möglichen Start-Parameter fnden sie [hier](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
+Alternatively to adjusting the configuration in the `fiskaltrust.exe.config` file, you can pass the `cashboxid` and the `accesstoken` as parameters when starting the launcher (`fiskaltrust.exe` ). This specification overwrites the existing configuration in `fiskaltrust.exe.config`. The description of the possible start parameters can be found [here](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
 
 ### High degree of automation
 
-Durch die oben beschriebene Vorgehensweisen zum Ausführen der Konfigurations-Templates über die API und zum automatisierten Rollout der fiskaltrust.Middleware ist ein hoher Automatisierungsgrad des Rollouts erreichbar. Lediglich die Outlets müssen mit Hilfe des Bulk-Import im Portal manuell angelegt werden.
+The procedures described above for executing the configuration templates via the API and for the automated rollout of the fiskaltrust.Middleware allow a high degree of rollout automation to be achieved. Only the outlets have to be created manually using the bulk import in the portal.
 
 ## Closing words
 
-Wir hoffen, dass Ihnen der oben beschriebenen Vorgänge zum Rollout der fiskaltrust.Middleware weitergeholfen haben. Sollten Sie weitere Fragen dazu haben, bitten wir Sie unsere [FAQ Liste](https://docs.fiskaltrust.cloud/doc/faq/qna/market-de.html) aufzusuchen. Sollten Sie hier nicht fündig werden, so können Sie uns jederzeit gerne unter info@fiskaltrust.de kontaktieren.
+We hope that the procedures described above for the rollout of fiskaltrust.Middleware have been helpful to you. If you have any further questions, please visit our [FAQ list](https://docs.fiskaltrust.cloud/doc/faq/qna/market-de.html). If you do not find what you are looking for there, please feel free to contact us at info@fiskaltrust.de.
 
-Weiter zum Bereich: [fiskaltrust Produkte kaufen und weiter verkaufen](../shop/README.md)
+Go to the section: [buy and resell fiskaltrust products](../shop/README.md)
