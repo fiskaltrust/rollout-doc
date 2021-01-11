@@ -121,7 +121,7 @@ The SCU is responsible for creating the signatures. It receives the data to be s
 
 Now you will surely ask yourself why we have to configure here how the SCU should be reachable by the Queue, if the Queue and SCU are components of the fiskaltrust.Middleware after all. Isn't the Queue already aware of how to reach the SCU? Well, the answer lies in the flexibility of the fiskaltrust.Middleware, because an instance of the fiskaltrust.Middleware operates only exactly those components, which are specified in its CashBox. For example, three cash registers can share one SCU and thus one hardware TSE:
 
-![Flexibilität der Middleware](images/kasse-als-server-mit-hw-tse.png "Flexibilität der Middleware")
+![Flexibilität der Middleware](images/cash-register-as-sever-hw-tse.png "Flexibilität der Middleware")
 
 Each cash register runs an instance of the fiskaltrust.Middleware, which is configured by its own CashBox. The CashBoxes of the upper and lower cash registers contain only the configuration of a Queue. The CashBox of the middle cash register contains the configuration of a Queue and a SCU. To make the SCU from the middle cash register (e.g. main cash register) reachable for the other two cash registers or Queues, we have to specify in the Queue configuration how and where the SCU is reachable (and of course release the corresponding port). To ensure that a Queue connects to the correct SCU, we must specify this connection when creating the CashBox for the queue. 
 
@@ -129,7 +129,7 @@ Each cash register runs an instance of the fiskaltrust.Middleware, which is conf
 
 Each instance of the fiskaltrust.Middleware must be configured using a CashBox. Such a CashBox can be created manually via the fiskaltrust.Portal or automated via an API. In this chapter we will show you an example of how to create a CashBox via the fiskaltrust.Portal. For this purpose, we assume the following scenario:
 
-![Szenario-CashBox-Queue-SCU](images/kasse-queue-scu-tse.png "Szenario CashBox mit Queue und SCU")
+![Szenario-CashBox-Queue-SCU](images/cash-register-queue-scu-tse.png "Szenario CashBox mit Queue und SCU")
 
 Our CashBox shall contain a Queue and a SCU. The SCU accesses a USB TSE. Specifically, we will configure a Queue that the POSSystem communicates with via `REST` and is accessible to the POSSystem at `localhost:1200/fiskaltrust`. The Queue stores the processed data in a `SQLite` database. Furthermore we configure in this example a SCU which is accessible for the Queue via `grpc` and under `localhost:1400` and which accesses a Cryptovision USB-TSE for signing the data. The TSE is plugged into the `E:` drive.
 
@@ -137,11 +137,11 @@ Our CashBox shall contain a Queue and a SCU. The SCU accesses a USB TSE. Specifi
 
 In the fiskaltrust.Portal, go to "Configuration -> Signature creation unit". The list of SCUs already created appears. 
 
-![SCU Anlegen 1](images/SCU-Anlegen-1.png "Liste der SCUs")
+![SCU Anlegen 1](images/add-scu-1.png "Liste der SCUs")
 
 Now press the "+ Create" button. A form for entering the SCU data appears.
 
-![SCU Anlegen 2](images/SCU-Anlegen-2.png "SCU Anlegen")
+![SCU Anlegen 2](images/add-scu-2.png "SCU Anlegen")
 
 1. Enter the name of the SCU here (e.g. "TEST SCU").
 2. Depending on the TSE, select the package (module) that the SCU should use (in our example we use a CryptoVision TSE).
@@ -151,7 +151,7 @@ Now press the "+ Create" button. A form for entering the SCU data appears.
 
 The SCU has been created and we are now forwarded to the second configuration form. This form depends on the previously selected package. In our example, we must specify the device path for the Cryptovision TSE. For another package, something else may be required here (e.g. Com-Port for a Diebold TSE). 
 
-![SCU Anlegen 3](images/SCU-Anlegen-3.png "SCU Konfigurieren")
+![SCU Anlegen 3](images/add-scu-3.png "SCU Konfigurieren")
 
 1. Enter the device path (i.e. `E:` in our case).
 2. Now specify how and where the SCU is to be accessible for a Queue. First press the corresponding button for the type of communication (e.g. `grpc`) and then enter the path (e.g. `localhost:1401`).
@@ -159,7 +159,7 @@ The SCU has been created and we are now forwarded to the second configuration fo
 
 In the list we can now see that our SCU configuration has been successfully created:
 
-![SCU Anlegen 4](images/SCU-Anlegen-4.png "Liste mit angelegter SCU")
+![SCU Anlegen 4](images/add-scu-4.png "Liste mit angelegter SCU")
 
 
 
@@ -169,11 +169,11 @@ In the list we can now see that our SCU configuration has been successfully crea
 
 Next, we create the Queue configuration. To do this, we go to "Configuration -> Queue". The list of already created Queues is displayed.
 
-![Queue Anlegen 1](images/Queue-Anlegen-1.png "Liste der Queues")
+![Queue Anlegen 1](images/add-queue-1.png "Liste der Queues")
 
 Now press the "+ Create new" button. A form for entering the Queue data appears.
 
-![Queue Anlegen 2](images/Queue-Anlegen-2.png "Queue anlegen")
+![Queue Anlegen 2](images/add-queue-2.png "Queue anlegen")
 
 1. Enter the name of the Queue here (e.g. "TEST QUEUE"). 2.
 2. Select how the data should be persisted (e.g. SQLite database). 
@@ -187,7 +187,7 @@ Now press the "+ Create new" button. A form for entering the Queue data appears.
 
 The Queue has been created and we are now forwarded to the second configuration form. This form depends on the previously selected persistence package. In our example, we do not have to make any further entries for the SQLite database, because it is automatically created by the fiskaltrust.Middleware. However, if it was a different package, then appropriate connection specifications must be made here. For example, the specification of a connection string for a MySQL database. 
 
-![Queue Anlegen 3](images/Queue-Anlegen-3.png "Queue konfigurieren")
+![Queue Anlegen 3](images/add-queue-3.png "Queue konfigurieren")
 
 1. If necessary, enter the database connection details (not necessary in this example, the SQLite DB). 
 2. Now specify how the Queue should be accessible from the POSSystem. First press the corresponding button for the type of communication (e.g. `http(REST)`) and then enter the path (e.g. `localhost:1200/fiskaltrust`).
@@ -195,7 +195,7 @@ The Queue has been created and we are now forwarded to the second configuration 
 
 In the list we can now see that our Queue configuration has been successfully created:
 
-![Queue Anlegen 4](images/Queue-Anlegen-4.png "Liste mit angelegter Queue")
+![Queue Anlegen 4](images/add-queue-4.png "Liste mit angelegter Queue")
 
 
 
@@ -203,11 +203,11 @@ In the list we can now see that our Queue configuration has been successfully cr
 
 After creating the SCU and the Queue, we next create the CashBox, meaning the configuration container for the fiskaltrust.Middleware instance. To do this, go to "Configuration->CashBox". The list of already created CashBoxes will be displayed.
 
-![CashBox Anlegen 1](images/Cashbox-Anlegen-1.png "Liste der CashBoxen")
+![CashBox Anlegen 1](images/add-cashbox-1.png "Liste der CashBoxen")
 
 Now press the "+ Add" button. A form for entering the CashBox data will appear.
 
-![CashBox Anlegen 2](images/Cashbox-Anlegen-2.png "CashBox Anlegen")
+![CashBox Anlegen 2](images/add-cashbox-2.png "CashBox Anlegen")
 
 1. Enter the name of the CashBox here (e.g. "TEST CASHBOX")
 
@@ -217,37 +217,37 @@ Now press the "+ Add" button. A form for entering the CashBox data will appear.
 
 In the list we can now see that our new CashBox has been successfully created:
 
-![CashBox Anlegen 3](images/Cashbox-Anlegen-3.png "Liste mit angelegter CashBox")
+![CashBox Anlegen 3](images/add-cashbox-3.png "Liste mit angelegter CashBox")
 
 **Step 4: Fill the CashBox**
 
 After creating the CashBox, it is to be filled next. In our example, we want to put the previously created Queue configuration and the SCU configuration into the CashBox. The list entry with our CashBox can be expanded. Here we can see that it is currently still empty.
 
-![CashBox Füllen 1](images/Cashbox-Fuellen-1.png "CashBox aufklappen")
+![CashBox Füllen 1](images/fill-cashbox-1.png "CashBox aufklappen")
 
 To fill the newly created CashBox press the "Edit by list" button in the list entry of the CashBox.
 
-![CashBox Füllen 2](images/Cashbox-Fuellen-2.png "Bearbeiten per Liste")
+![CashBox Füllen 2](images/fill-cashbox-2.png "Bearbeiten per Liste")
 
 The list of existing configurations is displayed.
 
 We can choose here which configurations we want to add to our configuration container so into the CashBox. For our example we select the Queue and the SCU we created before and then press the "Save" button.
 
-![CashBox Füllen 3](images/Cashbox-Fuellen-3.png "Queue und SCU in die CashBox")
+![CashBox Füllen 3](images/fill-cashbox-3.png "Queue und SCU in die CashBox")
 
 Back in the list, we can expand the list entry of our CashBox again and now see that it contains Queue and SCU.
 
-![CashBox Füllen 4](images/Cashbox-Fuellen-4.png "CashBox ist befüllt")
+![CashBox Füllen 4](images/fill-cashbox-4.png "CashBox ist befüllt")
 
 **Step 5: Connect the Queue with the SCU**
 
 As described above, we need to tell the Queue which SCU to use to sign the data. So we have to "connect" the Queue with the SCU. In our case, the Queue and SCU are in the same CashBox. Nevertheless, we have to create the connection. To do this, we press the "Connect" button in the expanded list entry of the CashBox, which is displayed to the right of the Queue:
 
-![Queue-SCU Verbinden 1](images/Queue-SCU-Verbinden-1.png "Verbinden Button")
+![Queue-SCU Verbinden 1](images/connect-queue-scu-1.png "Verbinden Button")
 
 A popup appears with the available SCUs. From this list we can now select our previously created SCU, save and close the popup.
 
-![Queue-SCU Verbinden 2](images/Queue-SCU-Verbinden-2.png "SCU wählen")
+![Queue-SCU Verbinden 2](images/connect-queue-scu-2.png "SCU wählen")
 
 The queue now knows with which SCU it has to communicate and where the SCU can be reached.
 
@@ -255,7 +255,7 @@ The queue now knows with which SCU it has to communicate and where the SCU can b
 
 The last step is to publish the created CashBox. This is done with the "Rebuild configuration" button available in the list line of the CasBox.
 
-![CashBox publizieren](images/Cashbox-publizieren.png "Rebuild configuration")
+![CashBox publizieren](images/publish-cashbox.png "Rebuild configuration")
 
 This makes the CashBox available for download as a JSON file. This JSON configuration file can later be downloaded by a fiskaltrust.Middleware instance and used for initial initialization or for an update. In case of an update, for example update of the SCU package version due to a change in the law, the change is only made available in the CashBox after the "Rebuild configuration" button has been pressed. If the fiskaltrust.Middleware instance to which this CashBox is assigned is then restarted, it loads the new configuration and updates itself automatically, e.g. by downloading and using the new package. 
 
@@ -263,11 +263,11 @@ This makes the CashBox available for download as a JSON file. This JSON configur
 
 To test the service, meaning a fiskaltrust.Middleware instance, we download the so-called "Launcher". We can do this in the list entry of the previously created CashBox. To do this, press the "Download .NET Launcher" button. 
 
-![Download Launcher](images/Download-Launcher.png "Download Launcher")
+![Download Launcher](images/download-launcher.png "Download Launcher")
 
 You will receive a zip compressed folder that you can unzip on the cash register. Unzip the zip file. 
 
-![Launcher entpacken](images/Launcher-Entpacken.png "Launcher endpacken")
+![Launcher entpacken](images/unzip-launcher.png "Launcher endpacken")
 
 The resulting folder can also be renamed if necessary. The folder contains the launcher `fiskaltrust.exe`, the service represented by the `.dll` files, a configuration file named `fiskaltrust.exe.config` and three command files:
 
@@ -283,7 +283,7 @@ The command files can be used for parameterized starting or stopping of the serv
 
 Thus `fiskaltrust.exe` is started with the `cashobxid` "259c..". Thus the started fiskaltrust.Middleware instance knows from which configuration container (CashBox) it should initialize itself. The `cashboxid` is the ID of the CashBox and can be seen in the fiskaltrust.Portal in the expanded list entry of the CashBox:
 
-![CashBoxId und AccessToken](images/CashboxIdUndAccessToken.png "CashBoxId und AccessToken")
+![CashBoxId und AccessToken](images/cashbox-id-and-accesstoken.png "CashBoxId und AccessToken")
 
 To be able to load the CashBox from the fiskaltrust.Portal the service needs an access authorization. This is specified via the `accesstoken` parameter. The value can also be found in the fiskaltrust.Portal in the expanded list entry of the CashBox (see above).
 
@@ -303,11 +303,11 @@ So the fiskaltrust.Middleware instance is not installed and started as a (Window
 
 Save and run as administrator:
 
-![Test starten](images/Test-starten.png "Test starten")
+![run test.cmd](images/run-test-cmd.png "run test.cmd")
 
 A console appears in which the fisklatrust.Middleware instance is started. We can see here what exactly happens at startup and make appropriate corrections (e.g. in the CashBox or in the connection of the TSE) in case of any errors.
 
-![Konsole](images/cmd-terminal-de.png "Konsole")
+![terminal](images/cmd-terminal.png "terminal")
 
 
 
@@ -315,17 +315,17 @@ Now you can try to send requests from the POSSystem to the started fiskaltrust.M
 
 In our example we simulate a POSSystem using [Postman](https://www.postman.com/). Postman can send requests to the queue via `REST`. For this we use our collection from the fiskaltrust [middleware-demo-postman github repository](https://github.com/fiskaltrust/middleware-demo-postman). The repository also contains the instructions for configuring the Postman collection. Important here is the specification of the endpoint at which the Queue is accessible and the specification of the CashBoxId as values for the already created variables:
 
-![Postman config](images/postman-config.png "Postman Konfiguration")
+![postman config](images/postman-config.png "postman config")
 
 ### Test the availability of the queue
 
 First we send a `echo` request to check the availability of the Queue. As a POSDealer, you will have a corresponding button available in the POSSystem. In our example we use the "Echo" request from the Postman collection described above:
 
-![Postman echo](images/postman-echo.png "Postman Echo Request")
+![postman echo](images/postman-echo.png "postman echo request")
 
 The queue responds and we now know that the fiskaltrust.Middleware instance is reachable and available for further requests. We can also see the request and its processing in the previously started console as a log message:
 
-![Terminal echo](images/terminal-echo.png "Konsole echo")
+![Terminal echo](images/terminal-echo.png "terminal echo")
 
 
 
@@ -337,7 +337,7 @@ Next, we send an "initial-operation receipt". As a POSDealer, you will have a co
 
 
 
-![Postman initial operation](images/postman-init.png "Postman Initialisierungs-Beleg")
+![postman initial operation receipt](images/postman-init.png "postman initial operation receipt")
 
 
 
@@ -349,7 +349,7 @@ Next, we can send a pos-receipt to settle a purchase. As a POSDealer, the corres
 
 
 
-![Postman Beleg](images/postman-pos-receipt.png "Postman Test-Beleg")
+![postman pos receipt](images/postman-pos-receipt.png "postman pos receipt")
 
 
 
@@ -359,11 +359,11 @@ The fiskaltrust.Middleware processes the request and sends back a response conta
 
 In the fiskaltrust.Portal we can see the above submitted request and the resulting receipt, because they are uploaded via the Helipad Helper every 5 minutes. To do this, go to "Configuration->Queue" and press the "ReceiptJournal" button in the list entry of the queue.
 
-![ReceiptJournal](images/ReceiptJournal-de.png "ReceiptJournal")
+![ReceiptJournal](images/receipt-journal.png "ReceiptJournal")
 
 An overview of the processed receipt requests appears:
 
-![Liste der Belege](images/Liste-der-Belege.png "Liste der Belege")
+![Liste der Belege](images/list-of-receipts.png "Liste der Belege")
 
 Notice: 
 
@@ -371,7 +371,7 @@ If the receipts do not appear here, it is possible that the communication of the
 
 Now press the button with the eye symbol in the line with the previously sent pos-receipt request (see above). You can now view an exemplary representation of the receipt. In addition, the concrete request and the answer to the POS system are displayed:
 
-![Beleg](images/Receipt.png "Anzeige des Belegs im Portal")
+![Beleg](images/receipt.png "Anzeige des Belegs im Portal")
 
 
 
@@ -483,7 +483,7 @@ In a cloud TSE, a component runs in the data center of the cloud TSE provider. I
 ### A TSE per cash register
 From a technical point of view, this is the simplest scenario, but it requires a higher number of TSEs, since a separate TSE is used for each cash register. One advantage of this solution is that if one TSE fails or is lost, other cash registers are not affected. Another advantage is that performance bottlenecks are avoided because each cash register uses its own TSE and thus only the requests of this one cash register have to be processed or signed by the TSE.
 
-![tse-per-cashregister](images/kasse-queue-scu-tse2.png)
+![tse-per-cashregister](images/cash-register-queue-scu-tse2.png)
 
 
 
@@ -491,30 +491,30 @@ From a technical point of view, this is the simplest scenario, but it requires a
 
 The fiskaltrust.Middleware runs on each cash register and on the local server. The hardware TSE is connected to the local server (e.g. via USB). The server's CashBox configures the fiskaltrust.Middleware instance with an SCU. The SCU configured for the server accesses a hardware TSE. The CashBoxes of the individual cash registers are configured in such a way that their fiskaltrust.Middleware instance is equipped with only one Queue. The Queues used here connect to the server's SCU. This scenario enables a saving of TSEs. However, since all requests have to pass through the server's SCU, the server becomes a bottleneck. The TSE also becomes a bottleneck. If the server or the TSE fails, all cash registers are affected. Furthermore, this scenario can lead to [performance bottlenecks](#performance recommendation) in the hardware TSE. 
 
-![tse-separated](images/server-mit-hw-tse.png)
+![tse-separated](images/server-width-hw-tse.png)
 
 If you decide to use this scenario, we recommend using one or more additional TSEs if you have a large number of requests. This is visualized in the image below as an example.
 
-![tse-separated](images/server-mit-mehreren-hw-tse.png)
+![tse-separated](images/server-with-multiple-hw-tse.png)
 
 ### Hardware TSE at the main cash register for several additional cash registers
 The fiskaltrust.Middleware runs on each cash register. The CashBox of the main cash register configures the fiskaltrust.Middleware instance with a Queue and an SCU. The SCU configured for the main cash register accesses a TSE. The CashBoxes of the other cash registers are configured so that their fiskaltrust.Middleware instances are only equipped with a Queue. The Queues used here connect to the SCU of the main cash register. This scenario enables a saving of TSEs. However, since all requests have to run via the SCU of the main checkout, the main checkout becomes a bottleneck. The hardware TSE also becomes a bottleneck. If the main cash register or the hardware TSE fails, all other cash registers are affected. Furthermore, in this scenario, [performance bottlenecks](#performancerecommendation) may occur in the TSE. If you decide to use this scenario, we recommend using one or more additional TSEs if you have a large number of requests.
 
-![tse-on-cashregister](images/kasse-als-server-mit-hw-tse.png)
+![tse-on-cashregister](images/cash-register-as-sever-hw-tse.png)
 
 ### A cloud TSE for multiple cash registers
 The fiskaltrust.Middleware runs on each cash register. The CashBox of each cash register configures the fiskaltrust.Middleware instance with its own queue and its own SCU. Each SCU accesses the same cloud TSE. This scenario enables cloud TSEs to be saved. One advantage here is that the SCU does not become a bottleneck, since each POS has its own SCU. However, since all requests are sent to the same cloud TSE, the TSE becomes a bottleneck. Furthermore, both possible [performance bottlenecks](#performance recommendation) in the cloud TSE and our [fair use policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/tse-fiskaly-fair-use-policy.md) must also be taken into account here.
 
-![tse-on-cashregister](images/kassen-mit-cloud-tse.png)
+![tse-on-cashregister](images/cash-register-with-cloud-tse.png)
 
 ### Rollout scenario with terminals
 Terminals are input devices such as tablets, handhelds or similar (without cash register function), where it is not possible to connect a hardware TSE or to install the fiskaltrust.Middleware on the device itself. In this case the fiskaltrust.Middleware is operated at a cash register or at a server and is always accessible for the terminals. The terminals only serve as input devices and connect to the server or to the cash register. If there are many simultaneous requests, [performance bottlenecks](#performancerecommendation) may occur in the TSE. If you decide to use this scenario, we recommend using multiple cash registers with additional TSEs (alternatively: multiple fiskaltrust.Middleware instances with their own SCU and TSE on a server) if you have a large number of requests.
 
-![terminals-single-queue](images/terminals-eine-queue.png)
+![terminals-single-queue](images/terminals-one-queue.png)
 
 Another possible variation of this scenario is to assign each terminal to its own Queue.
 
-![terminals-mehrere-queues](images/terminals-mehrere-queues.png)
+![terminals-mehrere-queues](images/terminals-multiple-queues.png)
 
 
 ### Data center as operational environment
@@ -527,33 +527,33 @@ However, in the event of a failure of the (Internet) connection, the fiskaltrust
 
 For the following connection variants we have prepared a legend showing the meaning of the individual arrows:
 
-![anbindungs-varianten-Legende](images/Legende-Varianten.png)
+![anbindungs-varianten-Legende](images/legend-variants.png)
 
 #### Cash register with hardware TSE
 In the classic connection variant, the POSSystem is located in the local environment of the outlet and a hardware TSE is connected directly to the POSSystem, e.g. via USB or micro SD.
 
-![anbindungs-variante-scu-hw-tse](images/anbindung-scu-hw-tse.png)
+![anbindungs-variante-scu-hw-tse](images/connection-scu-hw-tse.png)
 
 #### Network printer with hardware TSE
 Another variant in the local environment is the use of a network printer with hardware TSE. The hardware TSE can be integrated directly in the printer or connected via USB. One or more cash registers use the printer.
 
-![anbindungs-variante-drucker](images/anbindungsvariante-drucker.png)
+![anbindungs-variante-drucker](images/connection-printer.png)
 
 #### Local TSE server with hardware TSEs
 The third connection variant in the local environment is implemented via a TSE server in the local network. Several hardware TSEs can be connected to one TSE server. Several cash registers access the TSE server via their SCU.
 
-![anbindungs-variante-server-lokal](images/anbindung-server-lokal.png)
+![anbindungs-variante-server-lokal](images/connection-local-server.png)
 
 #### Cash register with cloud TSE
 A cloud TSE must be accessed over the Internet. In the following scenario, a POSSystem accesses a cloud TSE over the Internet using the SCU.
 
-![anbindungs-variante-cloud](images/anbindungsvariante-cloud-tse.png)
+![anbindungs-variante-cloud](images/connection-cloud-tse.png)
 
 #### POSSystem in the operator's data center with cloud TSE
 
 Here, too, the POSSystem accesses a cloud TSE via the Internet with the help of the fiskaltrust SCU. In the local environment, there are only terminals without a cash register function that access the electronic POSSystem in the POSOperator's data center via the Internet.
 
-![anbindung-rechenzentrum-cloud-tse](images/anbindung-rechenzentrum-cloud-tse.png)
+![anbindung-rechenzentrum-cloud-tse](images/connection-datacenter-cloud-tse.png)
 
 ### Proposed solutions for virtualization within an outlet
 
@@ -566,17 +566,17 @@ When virtualizing the electronic cash register or recording system including fis
 - Connection of cloud TSEs
 - Connection to a Diebold-Nixdorf hardware TSE, as communication takes place via COM port here
 
-![virtualisierungs-vorschlag](images/virtualisierungs-vorschlag.png)
+![virtualisierungs-vorschlag](images/virtualization-proposal.png)
 
 #### SCU is outside the virtual instance
 
 A fiskaltrust.middleware runs on a second local server with this option. It is not operated in the virtualized environment. The CashBox used for this purpose merely configures an SCU that accesses the hardware TSE. The hardware TSE, in turn, is connected directly to this second server via USB or micro-SD. In the first server, in which the virtual instances run, the CashBoxes used configure the fiskaltrust.Middelware instances in such a way that they each operate only one Queue, which accesses the SCU in the second server.
 
-![virtualisierungs-vorschlag-ausserhalb](images/virtualisierungs-vorschlag-scu-ausserhalb.png)
+![virtualisierungs-vorschlag-ausserhalb](images/virtualization-proposal-scu-outside.png)
 
 A possible optimization of the option described above could be that the fiskaltrust.Middleware that runs the SCU runs on the same server as the virtual instances, but is not virtualized. This can then also access the hardware TSE.
 
-![virtualisierungs-vorschlag-ausserhalb](images/virtualisierung-vorschlag-scu-im-server.png)
+![virtualisierungs-vorschlag-ausserhalb](images/virtualization-proposal-scu-in-server.png)
 
 ### Performance recommendations
 In internal tests, we have found that 3 signatures per second can be processed well by each TSE. More than 3 signatures per second will cause delays. Please note that 2 signatures per request are sent in an implicit flow. We therefore recommend that if a higher number of signatures per second is expected, additional TSEs should be taken into account in the planning. 
