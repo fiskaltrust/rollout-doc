@@ -71,18 +71,17 @@ Occasionally, fiskaltrust partners do not fit exactly into the partner roles des
 │   └── <a href="./invitation-managemen/README.md#poscreators-invite-posdealers" title="POSCreators invite POSDealers">POSCreators invite POSDealers</a>
 │   └── <a href="./invitation-managemen/README.md#posdealers-invite-posoperators" title="POSDealers invite POSOperators">POSDealers invite POSOperators</a>
 ├── <a href="./middleware/README.md" title="Middleware">Rollout of the fiskaltrust.Middleware</a>
-│   └── <a href="./middleware/README.md" title="Middleware configuration">Middleware configuration</a>
-│   └── <a href="./middleware/README.md" title="Testing the Service">Testing the Service</a>
-│   └── <a href="./middleware/README.md" title="Rollout scenarios">Rollout scenarios</a>
-│   └── <a href="./middleware/README.md" title="Rollout automationt">Rollout automation</a>
-│       └── <a href="./middleware/README.md" title="Templates for the configuration">Templates for the configuration</a>
-│       └── <a href="./middleware/README.md" title="Deployment of the middleware">Deployment of the middleware</a>
-├── <a href="./shop/README.md" title="Shop">Buying and reselling fiskaltrust products</a>
+│   └── <a href="./middleware/README.md#configuration-of-the-fiskaltrustmiddleware" title="Configuration of the fiskaltrust.Middleware">Configuration of the fiskaltrust.Middleware</a>
+│   └── <a href="./middleware/README.md#start-and-test-the-service" title="Start and test the service">Start and test the service</a>
+│   └── <a href="./middleware/README.md#test-data-export" title="Test data export">Test data export</a>
+│   └── <a href="./middleware/README.md#rollout-scenarios" title="Rollout scenarios">Rollout scenarios</a>
+│   └── <a href="./middleware/README.md#rollout-automation" title="Rollout automationt">Rollout automation</a>
+├── <a href="./shop/README.md" title="Buy and resell fiskaltrust products">Buy and resell fiskaltrust products</a>
 │   └── <a href="./shop/README.md" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
-│   └── <a href="./shop/README.md" title="Contracts for volume discount">Contracts for volume discount</a>
-│   └── <a href="./shop/README.md" title="Using entitlements to purchase fiskaltrust products">Using entitlements to purchase fiskaltrust products</a>
-│   └── <a href="./shop/README.md" title="Transfer of purchased products to POSOperators">Transfer of purchased products to POSOperators</a>
-│       └── <a href="./shop/README.md" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
-│       └── <a href="./shop/README.md" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
-│       └── <a href="./shop/README.md" title="Fiskaly Cloud TSE check out and setup">Fiskaly Cloud TSE check out and setup</a>
+│   └── <a href="./shop/README.md" title="Framework agreements for volume discount">Framework agreements for volume discount</a>
+│   └── <a href="./shop/README.md" title="Buy products via Entitlements">Buy products via Entitlements</a>
+│   └── <a href="./shop/README.md" title="Transfer of purchased entitlements to the POSOperators">Transfer of purchased entitlements to the POSOperators</a>
+│   └── <a href="./shop/README.md" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
+│   └── <a href="./shop/README.md" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
+│   └── <a href="./shop/README.md" title="Fiskaly Cloud TSE  check out and setup">Fiskaly Cloud TSE  check out and setup</a>
 </pre>

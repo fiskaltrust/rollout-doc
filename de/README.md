@@ -84,7 +84,7 @@ Es kommt gelegentlich vor, dass fiskaltrust Partner nicht exakt in die oben besc
 │   └── <a href="./shop/README.md#übertragung-gekaufter-entitlements-an-die-kassenbetreiber" title="Übertragung gekaufter Entitlements an die KassenBetreiber">Übertragung gekaufter Entitlements an die KassenBetreiber</a>
 │   └── <a href="./shop/README.md#lieferoptionen-für-hardware-tses" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
 │   └── <a href="./shop/README.md#swissbit-cloud-tse-auschecken-und-einrichten" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
-│   └── <a href="./shop/README.md#fiskaly-cloud-tse-auschecken-und-einrichten" title="fFiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
+│   └── <a href="./shop/README.md#fiskaly-cloud-tse-auschecken-und-einrichten" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
 
 </pre>
 

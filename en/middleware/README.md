@@ -19,39 +19,39 @@
 
 <pre>
 ├── <a href="#introduction" title="Introduction">Introduction</a>
-├── <a href="#konfiguration-der-fiskaltrustmiddleware" title="Configuration of the fiskaltrust.Middleware">Configuration of the fiskaltrust.Middleware</a>
-│   └── <a href="#aufbau-der-fiskaltrustmiddleware" title="Structure of the fiskaltrust.Middleware">Structure of the fiskaltrust.Middleware</a>
-│   └── <a href="#die-cashbox-als-konfigurationscontainer" title="The CashBox as a configuration container">The CashBox as a configuration container</a>
-│       └── <a href="#konfiguration-der-queue" title="Configuration of the queue">Configuration of the queue</a>
-│       └── <a href="#konfiguration-der-scu" title="Configuration of the SCU">Configuration of the SCU</a>
-│   └── <a href="#cashbox-manuell-über-das-fiskaltrustportal-anlegen" title="Create CashBox manually via the fiskaltrust.Portal">Create CashBox manually via the fiskaltrust.Portal</a>
-├── <a href="#service-starten-und-testen" title="Start and test the service">Start and test the service</a>
-│   └── <a href="#verfügbarkeit-der-queue-testen" title="Test the availability of the queue">Test the availability of the queue</a>
-│   └── <a href="#initialisierung-der-fiskaltrustmiddleware-instanz-über-einen-initialisierungs-beleg" title="Initialization of the fiskaltrust.Middleware instance via an initial-operation receipt">Initialization of the fiskaltrust.Middleware instance via an initial-operation receipt</a>
-│   └── <a href="#abrechnungs-beleg-senden" title="Send a pos-receipt">Send a pos-receipt</a>
-│   └── <a href="#verbindung-mit-der-fiskaltrustcloud-überprüfen" title="Check connection with the fiskaltrust.Cloud">Check connection with the fiskaltrust.Cloud</a>
-│   └── <a href="#datenexport-testen" title="Test data export">Test data export</a>
-│       └── <a href="#datenexport-lokal" title="Local data export ">Local data export </a>
-│       └── <a href="#hinweise-zum-dsfinv-k-export" title="Notes on the DSFinV-K export">Notes on the DSFinV-K export</a>
-│       └── <a href="#hinweise-zum-tar-file-export" title="Notes on the TAR file export">Notes on the TAR file export</a>
-│       └── <a href="#datenexport-über-das-fiskaltrustportal" title="Data export via the fiskaltrust.Portal">Data export via the fiskaltrust.Portal</a>
-├── <a href="#rollout-szenarien" title="Rollout scenarios">Rollout scenarios</a>
+├── <a href="#configuration-of-the-fiskaltrustmiddleware" title="Configuration of the fiskaltrust.Middleware">Configuration of the fiskaltrust.Middleware</a>
+│   └── <a href="#structure-of-the-fiskaltrustmiddleware" title="Structure of the fiskaltrust.Middleware">Structure of the fiskaltrust.Middleware</a>
+│   └── <a href="##the-cashbox-as-a-configuration-container" title="The CashBox as a configuration container">The CashBox as a configuration container</a>
+│       └── <a href="#configuration-of-the-queue" title="Configuration of the queue">Configuration of the queue</a>
+│       └── <a href="#configuration-of-the-scu" title="Configuration of the SCU">Configuration of the SCU</a>
+│   └── <a href="#create-cashbox-manually-via-the-fiskaltrustportal" title="Create CashBox manually via the fiskaltrust.Portal">Create CashBox manually via the fiskaltrust.Portal</a>
+├── <a href="#start-and-test-the-service" title="Start and test the service">Start and test the service</a>
+│   └── <a href="#test-the-availability-of-the-queue" title="Test the availability of the queue">Test the availability of the queue</a>
+│   └── <a href="#initialization-of-the-fiskaltrustmiddleware-instance-via-an-initial-operation-receipt" title="Initialization of the fiskaltrust.Middleware instance via an initial-operation receipt">Initialization of the fiskaltrust.Middleware instance via an initial-operation receipt</a>
+│   └── <a href="#send-a-pos-receipt" title="Send a pos-receipt">Send a pos-receipt</a>
+│   └── <a href="#check-connection-with-the-fiskaltrustcloud" title="Check connection with the fiskaltrust.Cloud">Check connection with the fiskaltrust.Cloud</a>
+│   └── <a href="#test-data-export" title="Test data export">Test data export</a>
+│       └── <a href="#local-data-export" title="Local data export ">Local data export </a>
+│       └── <a href="#notes-on-the-dsfinv-k-export" title="Notes on the DSFinV-K export">Notes on the DSFinV-K export</a>
+│       └── <a href="#notes-on-the-tar-file-export" title="Notes on the TAR file export">Notes on the TAR file export</a>
+│       └── <a href="#data-export-via-the-fiskaltrustportal" title="Data export via the fiskaltrust.Portal">Data export via the fiskaltrust.Portal</a>
+├── <a href="#rollout-scenarios" title="Rollout scenarios">Rollout scenarios</a>
 │   └── <a href="#introduction-1" title="Introduction">Introduction</a>
-│   └── <a href="#eine-tse-pro-kasse" title="A TSE per cash register">A TSE per cash register</a>
-│   └── <a href="#hardware-tses-am-lokalen-server-für-mehrere-kassen" title="Hardware TSE(s) at local server for multiple cash registers">Hardware TSE(s) at local server for multiple cash registers</a>
-│   └── <a href="#hardware-tse-an-der-hauptkasse-für-mehrere-zusätzliche-kassen" title="Hardware TSE at the main cash register for several additional cash registers">Hardware TSE at the main cash register for several additional cash registers</a>
-│   └── <a href="#eine-cloud-tse-für-mehrere-kassen" title="A cloud TSE for multiple cash registers">A cloud TSE for multiple cash registers</a>
-│   └── <a href="#rollout-szenario-mit-terminals" title="Rollout scenario with terminals">Rollout scenario with terminals</a>
-│   └── <a href="#rechenzentrum-als-operational-environment" title="Data center as operational environment">Data center as operational environment</a>
-│   └── <a href="#anbindungsvarianten-der-tse-an-die-scu" title="Connection variants of the TSE to the SCU">Connection variants of the TSE to the SCU</a>
-│   └── <a href="#lösungsvorschläge-zur-virtualisierung-innerhalb-eines-standortes" title="Proposed solutions for virtualization within an outlet">Proposed solutions for virtualization within an outlet</a>
-│   └── <a href="#performanceempfehlungen" title="Performanceempfehlungen">Performanceempfehlungen</a>
-├── <a href="#automatisierung-des-rollout" title="Rollout Szenarien">Rollout automation</a>
+│   └── <a href="#a-tse-per-cash-register" title="A TSE per cash register">A TSE per cash register</a>
+│   └── <a href="#hardware-tses-at-local-server-for-multiple-cash-registers" title="Hardware TSE(s) at local server for multiple cash registers">Hardware TSE(s) at local server for multiple cash registers</a>
+│   └── <a href="#hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers" title="Hardware TSE at the main cash register for several additional cash registers">Hardware TSE at the main cash register for several additional cash registers</a>
+│   └── <a href="#a-cloud-tse-for-multiple-cash-registers" title="A cloud TSE for multiple cash registers">A cloud TSE for multiple cash registers</a>
+│   └── <a href="#rollout-scenario-with-terminals" title="Rollout scenario with terminals">Rollout scenario with terminals</a>
+│   └── <a href="#data-center-as-operational-environment" title="Data center as operational environment">Data center as operational environment</a>
+│   └── <a href="#connection-variants-of-the-tse-to-the-scu" title="Connection variants of the TSE to the SCU">Connection variants of the TSE to the SCU</a>
+│   └── <a href="#proposed-solutions-for-virtualization-within-an-outlet" title="Proposed solutions for virtualization within an outlet">Proposed solutions for virtualization within an outlet</a>
+│   └── <a href="#performance-recommendations" title="Performanceempfehlungen">Performanceempfehlungen</a>
+├── <a href="#rollout-automation" title="Rollout automation">Rollout automation</a>
 │   └── <a href="#introduction-2" title="Introduction">Introduction</a>
-│   └── <a href="#überblick-manueller-prozess" title="Overview manual process">Overview manual process</a>
-│   └── <a href="#templating-zum-anlegen-von-cashboxen" title="Templating to create CashBoxes">Templating to create CashBoxes</a>
-│   └── <a href="#automatisierter-rollout-der-fiskaltrustmiddleware" title="Automated rollout of the fiskaltrust.Middleware">Automated rollout of the fiskaltrust.Middleware</a>
-│   └── <a href="#hoher-automatisierungsgrad" title="High degree of automation">High degree of automation</a>
+│   └── <a href="#overview-manual-process" title="Overview manual process">Overview manual process</a>
+│   └── <a href="#templating-to-create-cashboxes" title="Templating to create CashBoxes">Templating to create CashBoxes</a>
+│   └── <a href="#automated-rollout-of-the-fiskaltrustmiddleware" title="Automated rollout of the fiskaltrust.Middleware">Automated rollout of the fiskaltrust.Middleware</a>
+│   └── <a href="#high-degree-of-automation" title="High degree of automation">High degree of automation</a>
 
 </pre>
 
