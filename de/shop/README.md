@@ -190,7 +190,7 @@ Drücken Sie nun auf den Namen des KassenBetreibers, der in der Liste als Link d
 
 Drücken Sie nun hier im Account des KassenBetreiber auf den Menüpunkt: "Shop->Produkte". Wählen Sie zuerst im oberen Bereich den gewünschten Standort des KassenBetreibers aus.
 
-***TODO: screenshot***
+![swissbit cloud produkte](images/swissbit-cloud-1.png "Swissbit Cloud TSE Produkte")
 
 Legen Sie als Nächstes folgende Produkte in den Warenkorb:
 
@@ -199,29 +199,31 @@ Legen Sie als Nächstes folgende Produkte in den Warenkorb:
 - fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen
 - fiskaltrust.Middleware mit Swissbit Cloud TSE (das ist das fiskaltrust Template zum Erstellen der Cashbox)
 
-***TODO: screenshot***
-
 Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
 
 ![Zurück zum KassenHändler Account](images/zuruek-zum-hanendler-account.png "Zurück zum KassenHändler Account")
 
+
+
 Zurück in Ihrem Account können sie nun sehen, dass die zuvor gewählten Produkte ebenfalls in Ihrem Warenkorb erscheinen:
 
-***TODO: screenshot***
+![swissbit cloud checkout](images/swissbit-cloud-2.png "Swissbit Cloud TSE Checkout")
 
 Drücken Sie hier auf "Checkout" und überprüfen Sie dann den Warenkorb bevor Sie die Bestellung abschicken. Überprüfen Sie vor allem die Richtigkeit der Standortangaben.
 
-***TODO: screenshot***
+![swissbit cloud check](images/swissbit-cloud-3.png "Swissbit Cloud TSE Überprüfen")
 
 Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und Sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
 
 Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minuten dauern) können Sie im Account des KassenBetreibers sehen, dass das zuvor bestellte Sorglospaket im Standort des KassenBetreibers aktiviert wurde. Wechseln Sie dafür mit Hilfe der surrogation Funktion in den Account des KassenBetreibers und gehen Sie im Menü auf "[Firmenname] -> Standorte":
 
-***TODO: screenshot***
+![sorglos aktiv](images/swissbit-cloud-4.png "Sorglos aktiviert")
 
-Zudem wurde die Cashbox ebenfalls angelegt, weil wir davor das Template in den Warenkorb gelegt haben und ausgescheckt haben. Um dies zu Überprüfen, gehen Sie im Menü auf "Konfiguration -> Cashbox":
+Zudem wurde die CashBox ebenfalls angelegt, weil wir davor das Template in den Warenkorb gelegt haben und ausgescheckt haben. Um dies zu Überprüfen, gehen Sie im Menü auf "Konfiguration -> Cashbox":
 
-Sie können nun den gewünschten Launcher downloaden und starten, er verwendet zur Konfiguration die zuvor angelegte Cashbox für die Swissbit Cloud TSE.
+![cashbox angelegt](images/swissbit-cloud-5.png "Cashbox angelegt")
+
+Damit ist die Cashbox für die Swissbit-Cloud TSE eingerichtet. Sie können nun den gewünschten Launcher downloaden und starten, er verwendet zur Konfiguration die zuvor angelegte Cashbox für die Swissbit Cloud TSE.
 
 ## Fiskaly Cloud TSE auschecken und einrichten
 
