@@ -56,7 +56,7 @@ Vor dem Einkauf von fiskaltrust Produkten sollten Sie als KassenHändler je nach
 
 ## Produkte über Entitlements kaufen
 
-KassenHersteller kaufen im fiskaltrust.Portal nicht die fiskaltrust Produkte selbst, sondern sogenannte "Entitlements" also Ansprüche auf die Produkte, die sie dann an die KassenBetreiber einzeln übertragen können und für diese pro Standort aktivieren können. Die Entitlements werden im fiskaltrust.Shop auch unter dem Namen "Händlereinkaufsprodukte" geführt.
+KassenHänder kaufen im fiskaltrust.Portal nicht die fiskaltrust Produkte selbst, sondern sogenannte "Entitlements" also Ansprüche auf die Produkte, die sie dann an die KassenBetreiber einzeln übertragen können und für diese pro Standort aktivieren können. Die Entitlements werden im fiskaltrust.Shop auch unter dem Namen "Händlereinkaufsprodukte" geführt.
 
 Im folgenden Beispiel zeigen wir Ihnen wie Sie als KassenHändler nach der Unterzeichnung eines Rahmenvertrags mit entsprechenden Mengenrabatten und Kreditlimitfreigabe im fiskaltrust.Shop Entitlements erwerben können. 
 
