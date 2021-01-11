@@ -78,7 +78,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
    
 
-![Übersicht KassenSysteme](images/Menu-Kassensysteme.png "Übersicht der Kassensysteme")
+![Übersicht KassenSysteme](images/menu-possystems.png "Übersicht der Kassensysteme")
 
 
 
@@ -86,7 +86,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
    
 
-![Kassensystem erfassen](images/Kassensystem-erfassen.png "Kassensystem erfassen")
+![Kassensystem erfassen](images/add-possystem.png "Kassensystem erfassen")
 
 
 
@@ -94,7 +94,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
 
 
-![Kassensystem in Übersicht](images/Kassensystem-in-Ueberischt.png "Kassensystem in Übersicht")
+![Kassensystem in Übersicht](images/possystem-in-overview.png "Kassensystem in Übersicht")
 
 
 
@@ -104,7 +104,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
 
 
-![Übersicht der Händler](images/Uebersicht-Haendler.png "Übersicht der Händler")
+![Übersicht der Händler](images/overview-dealers.png "Übersicht der Händler")
 
 
 
@@ -112,7 +112,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
 
 
-![Ansprechpartner beim Händler](images/Haendler-Ansprechpartner.png "Ansprechpartner beim Händler angeben")
+![Ansprechpartner beim Händler](images/dealer-contact.png "Ansprechpartner beim Händler angeben")
 
 
 
@@ -120,23 +120,23 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
 
 
-![Händler erfassen](images/Haendler-erfassen.png "Händler erfassen")
+![Händler erfassen](images/add-dealer-data.png "Händler erfassen")
 
 
 
 7. After entering the data in the form, press the "Add/Invite" button. The portal will then send an invitation email to the POSDealer (to the specified contact person). In the overview, the POSDealer can now be seen as assigned:
 
-![Händler wurde erfasst](images/Haendler-ist-drin.png "Händler wurde erfasst")
+![Händler wurde erfasst](images/dealer-data-added.png "Händler wurde erfasst")
 
  In addition, the POSDealer receives two emails (an invitation email and an assignment email):
 
 **Invitation email to the POSDealer:**
 
-![Händler bekommt eine Einladungs-Email](images/Haendler-Einladungsmail.png "Händler bekommt eine Einladungs-Email")
+![Händler bekommt eine Einladungs-Email](images/dealer-invitation-mail.png "Händler bekommt eine Einladungs-Email")
 
 **Assignment email to the POSDealer:**
 
-![Händler bekommt eine Zuordnungs-Email](images/Haendler-Zuordnungsemail.png "Händler bekommt eine Zuordnungs-Email")
+![Händler bekommt eine Zuordnungs-Email](images/dealer-connection-mail.png "Händler bekommt eine Zuordnungs-Email")
 
 
 
@@ -144,7 +144,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
    
 
-![Händler setzt Passwort](images/Haendler-setzt-Passwort.png "Händler setzt Passwort um die Registrierung abzuschließen")
+![Händler setzt Passwort](images/dealer-sets-pwd.png "Händler setzt Passwort um die Registrierung abzuschließen")
 
 
 
@@ -152,7 +152,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
    
 
-![Händler aktiviert Rolle](images/Haendler-aktiviert-Rolle.png "Händler aktiviert Rolle")
+![Händler aktiviert Rolle](images/dealer-activates-role.png "Händler aktiviert Rolle")
 
 
 
@@ -160,7 +160,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
     
 
-![Händler unterschreibt Vertrag](images/Haendler-unterschreibt-Vertrag.png "Händler unterschreibt den Kooperationsvertrag mit fiskaltrust")
+![Händler unterschreibt Vertrag](images/dealer-signs-contract.png "Händler unterschreibt den Kooperationsvertrag mit fiskaltrust")
 
 
 
@@ -171,7 +171,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
     
 
 
-![Händler Rolle wurde aktiviert](images/Haendler-hat-unterschrieben.png "Rolle KassenHändler wurde nach Unterschrift aktiviert")
+![Händler Rolle wurde aktiviert](images/dealer-contract-signed.png "Rolle KassenHändler wurde nach Unterschrift aktiviert")
 
 
 
@@ -179,7 +179,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
     
 
-![Händler bekommt Aktivierungsmail](images/Haendler-bekommt-Aktivierungs-Email.png "Aktivierung der Rolle KassenHändler wird dem Händler auch per Email mitgeteilt")
+![Händler bekommt Aktivierungsmail](images/delealer-activation-mail.png "Aktivierung der Rolle KassenHändler wird dem Händler auch per Email mitgeteilt")
 
 
 
@@ -192,7 +192,7 @@ You can invite single POSOperators but also many POSOperators at the same time (
 
 Under the menu item "PosOperator -> Overview" you can display the list of POSOperators already assigned to you. This list is empty at the beginning:
 
-![Übersicht der Betreiber](images/Uebersicht-Betreiber.png "Bereits zugeordnete Betreiber")
+![Übersicht der Betreiber](images/overview-operators.png "Bereits zugeordnete Betreiber")
 
 
 
@@ -201,13 +201,13 @@ To invite POSOperators, proceed as follows:
 1. Call up the "Invitations" screen. To do this, click the menu item "PosOperator->Invitations". Here you can prepare the invitations and once ready, send them to your POSOperators by using the portal:
 
 
-![Einladungen der Betreiber](images/Betreiber-Einladungen-Screen.png "Übersicht der Einladungen")
+![Einladungen der Betreiber](images/operator-invitation-screen.png "Übersicht der Einladungen")
 
 
 
 2. Next, configure the invitation email that will later be sent to the invited POSOperators. You can attach a PDF file and write an additional text. These will be included in the invitation email automatically created by fiskaltrust.
 
-![Einladungen der Betreiber](images/Betreiber-Einladungen-vorbereiten.png "Überischt der Einladungen")
+![Einladungen der Betreiber](images/operator-prepare-invitation.png "Überischt der Einladungen")
 
 3. Also, specify which rights **you** would like to have on the operator's account. You have the following options for this:
 
@@ -220,7 +220,7 @@ To invite POSOperators, proceed as follows:
 
 4. Now you can create an invitation list with POSOperators. For this purpose, you can enter POSOperators individually or add many at the same time via a CSV file import.   
 
-![Anlegen der Betreiber](images/Betreibereinladung-anlegen.png "Anlegen der Betreiber-Einladungen")
+![Anlegen der Betreiber](images/add-operator-invitation.png "Anlegen der Betreiber-Einladungen")
 
 
 
@@ -235,16 +235,16 @@ This form is divided into two sections:
 
 First enter the company data of the POSOperator. Important: Make sure to enter the company email address here (e.g. info@...), and not the user's email address (e.g. josef.mayer@...). If the POSOperator has only one email address, you can of course also use it here.
 
-![Betreiber einzeln erfassen](images/Betreiber-einzeln-erfassen-Firmendaten.png "Betreiber einzeln erfassen - Firmendaten")
+![Betreiber einzeln erfassen](images/add-single-operator-company.png "Betreiber einzeln erfassen - Firmendaten")
 
 
 Then enter the user data for the account. Meaning the data of the person who will manage the account on the POSOperator's side. Important: the email address specified here will be used later for logging in, so it should not be the company email address, but the one of the user who will manage the account. If the POSOperator has only one email address, you can of course use it here as well.
 
-![Betreiber einzeln erfassen](images/Betreiber-einzeln-erfassen-Benutzerdaten.png "Betreiber einzeln erfassen - Benutzerdaten")
+![Betreiber einzeln erfassen](images/add-single-operator-contact.png "Betreiber einzeln erfassen - Benutzerdaten")
 
 Press "Save" in the form to create the list entry. The new entry appears in the invitation list:
 
-![Eintrag in Einladungsliste](images/Eintrag-in-Einladungsliste.png "Eintrag in Einladungsliste")
+![Eintrag in Einladungsliste](images/entry-in-invitationlist.png "Eintrag in Einladungsliste")
 
 
 
@@ -252,18 +252,18 @@ Press "Save" in the form to create the list entry. The new entry appears in the 
 
 As an alternative to single entry, you can import a CSV file with multiple entries. To do this, first download the template (button: "Download demo CSV file"). Fill it out analogous to single entry for multiple operators (see above):
 
-![CSV-Einladungsliste](images/CSV-Einladungsliste.png "CSV-Einladungsliste")
+![CSV-Einladungsliste](images/csv-invitationlist.png "CSV-Einladungsliste")
 
 Select the completed file from your computer (button: "Select file") and import the entries by pressing the "Import" button: 
 
-![Mehrere Betreiber einladen](images/Mehrere-Betreiber-einladen.png "Mehrere Betreiber einladen")
+![Mehrere Betreiber einladen](images/invite-multiple-operators.png "Mehrere Betreiber einladen")
 
 The entries read in then appear in the invitation list.
 
 5. After you have added entries to the invitation list (see above), the corresponding POSOperators are not yet invited. You can now invite all POSOperators entered here at once and assign them to you (button: "Assign all cash register operators") or invite individual POSOperators from the list and assign them to you (envelope button in the list entry):
 
 
-![Alle oder einzeln aus der Liste einladen und zuordnen](images/Alle-oder-einzeln-aus-der-Liste-einladen.png "Alle oder einzeln aus der Liste einladen und zuordnen")
+![Alle oder einzeln aus der Liste einladen und zuordnen](images/invite-all-or-single.png "Alle oder einzeln aus der Liste einladen und zuordnen")
 
 
 
@@ -271,39 +271,39 @@ The POSOperator will then receive the invitation email informing him about furth
 
 
 
-![Betreiber bekommt Email](images/Betreiber-bekommt-Email.png "Betreiber bekommt Email")
+![Betreiber bekommt Email](images/operator-receives-mail.png "Betreiber bekommt Email")
 
 
 
 The POSOperator is requested in the email to press a link to complete the registration. He will be redirected to the fiskaltrust.Portal and has to set his password first:
 
-![Betreiber setzt Passwort](images/Betreiber-setzt-Passwort.png "Betreiber setzt Passwort")
+![Betreiber setzt Passwort](images/operator-sets-pwd.png "Betreiber setzt Passwort")
 
 
 
 Next, the user agreement is displayed to the POSOperator. This MUST be signed digitally by the POSOperator, otherwise the fiskaltrust.Middleware cannot be rolled out. 
 
-![Betreiber unterzeichnet Nutzungsvereinbarung](images/Nutzungsvereinbarung-unterschreiben.png "Betreiber unterzeichnet Nutzungsvereinbarung")
+![Betreiber unterzeichnet Nutzungsvereinbarung](images/sign-user-agreement.png "Betreiber unterzeichnet Nutzungsvereinbarung")
 
 
 
 The operator is only considered to be fully assigned to you when the user agreement is signed and then has the status "active" in the fiskaltrust.Portal. He appears in the overview of your POSOperators under PosOperator->Overview. The list is empty when called up. You must display the entries via the search:
 
-![Betreiber zugeordnet und aktiv](images/Betreiber-zugeordnet-und-aktiv.png "Betreiber zugeordnet und aktiv")
+![Betreiber zugeordnet und aktiv](images/operator-active.png "Betreiber zugeordnet und aktiv")
 
 The company name of the POSOperator is displayed in the list as a link (only with the "active" status). Press the link to switch to the account of the POSOperator. This function is called "Surrogate function". You can log in to the account of the POSOperator with this function. You can later use this function to configure the fiskaltrust.Middleware instance to be rolled using the the POSOperator account.
 
 If the entry has the status "inactive", the POSOperator has not yet signed the user agreement. 
 
-![Betreiber inaktiv](images/Betreiber-inaktiv.png "Betreiber zugeordnet aber inaktiv")
+![Betreiber inaktiv](images/operator-inactive.png "Betreiber zugeordnet aber inaktiv")
 
 Ask the POSOperator to digitally sign the user agreement. If the POSOperator has not received the invitation email, you can resend it using the portal. To do this, go to the POSOperator->Invitations section and press the "Protocol" button here. 
 
-![Einladungsprotokoll aufrufen](images/Einladungsprotokol-aufrufen.png "Einladungsprotokoll aufrufen")
+![Einladungsprotokoll aufrufen](images/invitation-protocol.png "Einladungsprotokoll aufrufen")
 
 The history (Protocol) of your invitations sent in the past is displayed. Here you can now resend the invitation email in the associated list entry with the help of a button:
 
-![Einladungs-Email erneut senden lassen](images/Einladungs-Email-erneut-senden-lassen.png "Einladungs-Email erneut senden lassen")
+![Einladungs-Email erneut senden lassen](images/resend-invitation.png "Einladungs-Email erneut senden lassen")
 
 
 ###  Adding outlets for POSOperators
@@ -316,7 +316,7 @@ To add or edit outlets for your POSOperator as a POSDealer, you can proceed as f
 
 1. Log in to the fiskaltrust.Portal with your account (as a POSDealer) and go to POSOperator -> Overview. Press the "Search" button to find the POSOperator:
 
-![Übersicht der Kassenbetreiber](images/Betreiber-suchen.png "Übersicht der Kassenbetreiber")
+![Übersicht der Kassenbetreiber](images/search-operator.png "Übersicht der Kassenbetreiber")
 
 
 
@@ -325,11 +325,11 @@ The POSOperator searched for appears as an entry in the results list. The name o
 2. Press the link to log in to the account of the POSOperator (surrogate function). You will be redirected to the account of the POSOperator. 
 3. In the menu, go to the company name of the cash register operator and press "Outlets". An overview of the cash register operator's outlets appears:
 
-![Übersicht der Standorte](images/Standort-Uebersicht.png "Übersicht der Standorte")
+![Übersicht der Standorte](images/overview-outlets.png "Übersicht der Standorte")
 
 4. You can add new outlets here individually (button "Add a new outlet") or import several outlets at once from a CSV file. After creating, the new outlet will appear in the list. 
 
-![Standort angelegt](images/Standort-angelegt.png "Standort angelegt")
+![Standort angelegt](images/outlet-added.png "Standort angelegt")
 
 5. When you are done, press the "Switch to your account" button in the upper area on the right to switch back to your POSDealer account.
 

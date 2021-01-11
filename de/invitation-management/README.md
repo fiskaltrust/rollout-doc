@@ -45,7 +45,7 @@ Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagem
 
 
 
-![Partner-Rollen](images/Partner-Rollen.png "Rollen der fiskaltrust Partner")
+![Partner-Rollen](images/partner-roles.png "Rollen der fiskaltrust Partner")
 
 
 
@@ -56,7 +56,7 @@ Der Registrierungs- und Einladungs-Prozess sieht wie folgt aus:
 3. Nun kann der KassenHändler seine KassenBetreiber über das Portal einladen und sich zuordnen lassen. Das ist wichtig, denn er muss später den Massenrollout der fiskaltrust.Middleware über das Portal vornehmen.
 4. Der eingeladenen KassenBetreiber erhält daraufhin die Einladung-Email von fiskaltrust, drückt den Link zur Registrierung, setzt sein Passwort und unterschreibt die Nutzungsvereinbarung damit die fiskaltrust.Middleware auf seiner Kasse installiert werden darf.
 
-![Einladungsprozess](images/Einladungsprozess.png "Einladungsprozess")
+![Einladungsprozess](images/invitation-process.png "Einladungsprozess")
 
 Im Folgenden wird im Detail beschrieben wie die einzelnen Schritte im Einladungsprozess vorzunehmen werden und auf welche Aspekte dabei besonders zu 8ten ist. Wir teilen dabei die Beschreibung in folgende zwei Kapitel auf:
 
@@ -82,7 +82,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
    
 
-![Übersicht KassenSysteme](images/Menu-Kassensysteme.png "Übersicht der Kassensysteme")
+![Übersicht KassenSysteme](images/menu-possystems.png "Übersicht der Kassensysteme")
 
 
 
@@ -90,7 +90,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
    
 
-![Kassensystem erfassen](images/Kassensystem-erfassen.png "Kassensystem erfassen")
+![Kassensystem erfassen](images/add-possystem.png "Kassensystem erfassen")
 
 
 
@@ -98,7 +98,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
 
 
-![Kassensystem in Übersicht](images/Kassensystem-in-Ueberischt.png "Kassensystem in Übersicht")
+![Kassensystem in Übersicht](images/possystem-in-overview.png "Kassensystem in Übersicht")
 
 
 
@@ -108,7 +108,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
 
 
-![Übersicht der Händler](images/Uebersicht-Haendler.png "Übersicht der Händler")
+![Übersicht der Händler](images/overview-dealers.png "Übersicht der Händler")
 
 
 
@@ -116,7 +116,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
 
 
-![Ansprechpartner beim Händler](images/Haendler-Ansprechpartner.png "Ansprechpartner beim Händler angeben")
+![Ansprechpartner beim Händler](images/dealer-contact.png "Ansprechpartner beim Händler angeben")
 
 
 
@@ -124,24 +124,24 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
 
 
-![Händler erfassen](images/Haendler-erfassen.png "Händler erfassen")
+![Händler erfassen](images/add-dealer-data.png "Händler erfassen")
 
 
 
 7. Drücken Sie nach der Erfassung der Daten im Formular den "Hinzufügen/Einladen" Button. Das Portal wird daraufhin eine Einladung-Email an den KassenHersteller (an den angegebenen Ansprechpartner) senden. In der Übersicht ist nun der Händler als zugeordnet zu sehen:
 
-![Händler wurde erfasst](images/Haendler-ist-drin.png "Händler wurde erfasst")
+![Händler wurde erfasst](images/dealer-data-added.png "Händler wurde erfasst")
 
 
    Zudem erhält der KassenHändler zwei Emails (eine Einladungs-Email und eine Zuordnung-Email):
 
 **Einladungs-Email an den KassenHändler:**
 
-![Händler bekommt eine Einladungs-Email](images/Haendler-Einladungsmail.png "Händler bekommt eine Einladungs-Email")
+![Händler bekommt eine Einladungs-Email](images/dealer-invitation-mail.png "Händler bekommt eine Einladungs-Email")
 
 **Zuordnungs-Email an den KassenHändler:**
 
-![Händler bekommt eine Zuordnungs-Email](images/Haendler-Zuordnungsemail.png "Händler bekommt eine Zuordnungs-Email")
+![Händler bekommt eine Zuordnungs-Email](images/dealer-connection-mail.png "Händler bekommt eine Zuordnungs-Email")
 
 
 
@@ -149,7 +149,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
    
 
-![Händler setzt Passwort](images/Haendler-setzt-Passwort.png "Händler setzt Passwort um die Registrierung abzuschließen")
+![Händler setzt Passwort](images/dealer-sets-pwd.png "Händler setzt Passwort um die Registrierung abzuschließen")
 
 
 
@@ -157,7 +157,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
    
 
-![Händler aktiviert Rolle](images/Haendler-aktiviert-Rolle.png "Händler aktiviert Rolle")
+![Händler aktiviert Rolle](images/dealer-activates-role.png "Händler aktiviert Rolle")
 
 
 
@@ -165,7 +165,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
     
 
-![Händler unterschreibt Vertrag](images/Haendler-unterschreibt-Vertrag.png "Händler unterschreibt den Kooperationsvertrag mit fiskaltrust")
+![Händler unterschreibt Vertrag](images/dealer-signs-contract.png "Händler unterschreibt den Kooperationsvertrag mit fiskaltrust")
 
 
 
@@ -176,7 +176,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
     
 
 
-![Händler Rolle wurde aktiviert](images/Haendler-hat-unterschrieben.png "Rolle KassenHändler wurde nach Unterschrift aktiviert")
+![Händler Rolle wurde aktiviert](images/dealer-contract-signed.png "Rolle KassenHändler wurde nach Unterschrift aktiviert")
 
 
 
@@ -184,7 +184,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
     
 
-![Händler bekommt Aktivierungsmail](images/Haendler-bekommt-Aktivierungs-Email.png "Aktivierung der Rolle KassenHändler wird dem Händler auch per Email mitgeteilt")
+![Händler bekommt Aktivierungsmail](images/delealer-activation-mail.png "Aktivierung der Rolle KassenHändler wird dem Händler auch per Email mitgeteilt")
 
 
 
@@ -197,7 +197,7 @@ Sie können einzelne KassenBetreiber aber auch viele KassenBetreiber gleichzeiti
 
 Unter dem Menüpunkt "PosOperator -> Überisicht" können Sie sich die Liste der bereits Ihnen zugeordneten KassenBetreiber anzeigen lassen. Diese Liste ist Anfangs leer:
 
-![Übersicht der Betreiber](images/Uebersicht-Betreiber.png "Bereits zugeordnete Betreiber")
+![Übersicht der Betreiber](images/overview-operators.png "Bereits zugeordnete Betreiber")
 
 
 
@@ -206,13 +206,13 @@ Um KassenBetreiber einzuladen, gehen Sie wie folgt vor:
 1. Screen "Einladungen" aufrufen. Klicken Sie dazu den Menüpunkt "PosOperator->Einladungen". Hier können Sie die Einladungen vorbereiten und sobald fertig, an Ihre KassenBetreiber mit Hilfe des Portals versenden:
 
 
-![Einladungen der Betreiber](images/Betreiber-Einladungen-Screen.png "Übersicht der Einladungen")
+![Einladungen der Betreiber](images/operator-invitation-screen.png "Übersicht der Einladungen")
 
 
 
 2. Konfigurieren Sie als nächstes die Einladungs-Email die später an die eingeladenen Betreiber gesendet wird. Sie können hierzu eine PDF Datei anhängen und einen Zusatztext schreiben. Diese werden in die automatisch von fiskaltrust erstellte Einladung-Email übernommen.
 
-![Einladungen der Betreiber](images/Betreiber-Einladungen-vorbereiten.png "Überischt der Einladungen")
+![Einladungen der Betreiber](images/operator-prepare-invitation.png "Überischt der Einladungen")
 
 3. Geben Sie zudem an, welche Rechte **Sie** auf den Account des Betreibers haben möchten. Dazu haben Sie folgende Möglichkeiten:
 
@@ -225,7 +225,7 @@ Um KassenBetreiber einzuladen, gehen Sie wie folgt vor:
 
 4. Nun können Sie eine Einladungsliste mit KassenBetreiber anlegen. Dazu können Sie sowohl einzeln KassenBetreiber erfassen als auch viele geleichzeitig über ein CSV-Datei-Import anlegen.   
 
-![Anlegen der Betreiber](images/Betreibereinladung-anlegen.png "Anlegen der Betreiber-Einladungen")
+![Anlegen der Betreiber](images/add-operator-invitation.png "Anlegen der Betreiber-Einladungen")
 
 
 
@@ -240,16 +240,16 @@ Dieses Formular ist in zwei Bereiche unterteilt:
 
 Geben Sie zuerst die Firmendaten des KassenBetreibers an. Wichtig: Achten Sie darauf hier die Firmen-Emailadresse anzugeben (z.B. info@...), und nicht die Email-Adresse des Benutzers (z.B. josef.mayer@...). Falls der KassenBetreiber nur eine Email-Adresse besitzt, können Sie sie hier natürlich ebenfalls verwenden.
 
-![Betreiber einzeln erfassen](images/Betreiber-einzeln-erfassen-Firmendaten.png "Betreiber einzeln erfassen - Firmendaten")
+![Betreiber einzeln erfassen](images/add-single-operator-company.png "Betreiber einzeln erfassen - Firmendaten")
 
 
 Geben Sie danach die Beutzerdaten für den Account an. D.h. die Daten der Person, die den Account auf Seite des KassenBetreibers verwalten wird. Wichtig: die hier angegebene Email-Adresse wird später zum Einloggen verwendet, es sollte also nicht die Firmen-Email-Adresse sein, sondern die des Benutzers der den Account verwalten wird. Falls der KassenBetreiber nur eine Email-Adresse besitzt, können Sie sie hier natürlich ebenfalls verwenden.
 
-![Betreiber einzeln erfassen](images/Betreiber-einzeln-erfassen-Benutzerdaten.png "Betreiber einzeln erfassen - Benutzerdaten")
+![Betreiber einzeln erfassen](images/add-single-operator-contact.png "Betreiber einzeln erfassen - Benutzerdaten")
 
 Drücken Sie "Speichern" im Formular um den Listeneintrag anzulegen. Der neue Eintrag erscheint in der Einladungsliste:
 
-![Eintrag in Einladungsliste](images/Eintrag-in-Einladungsliste.png "Eintrag in Einladungsliste")
+![Eintrag in Einladungsliste](images/entry-in-invitationlist.png "Eintrag in Einladungsliste")
 
 
 
@@ -257,18 +257,18 @@ Drücken Sie "Speichern" im Formular um den Listeneintrag anzulegen. Der neue Ei
 
 Alternativ zu Einzelerfassung können Sie eine CSV-Datei mit mehreren Einträgen importieren. Laden Sie dazu zuerst die Vorlage herunter (Button: "Demo CSV-Datei herunterladen"). Füllen Sie diese analog zur Einzelerfassung für mehrere Betreiber aus (siehe oben):
 
-![CSV-Einladungsliste](images/CSV-Einladungsliste.png "CSV-Einladungsliste")
+![CSV-Einladungsliste](images/csv-invitationlist.png "CSV-Einladungsliste")
 
 Wählen Sie die ausgefüllte Datei von Ihrem Rechner aus (Button: "Datei auswählen") und importieren Sie die Einträge, indem Sie den Button "Importieren" drücken: 
 
-![Mehrere Betreiber einladen](images/Mehrere-Betreiber-einladen.png "Mehrere Betreiber einladen")
+![Mehrere Betreiber einladen](images/invite-multiple-operators.png "Mehrere Betreiber einladen")
 
 Die eingelesenen Einträge erscheinen daraufhin in der Einladungsliste.
 
 5. Nachdem Sie Einträge in Einladungsliste hinzugefügt haben (siehe oben), sind die dazugehörigen KassenBetreiber noch nicht eingeladen. Sie können nun alle hier erfassten KassenBetreiber auf einmal einladen und Ihnen zuordnen (Button: "Alle KassenBetreiber zuordnen") oder einzelne KassenBetreiber aus der Liste einladen und Ihnen zuordnen (Briefumschalg Button im Listeneintrag):
 
 
-![Alle oder einzeln aus der Liste einladen und zuordnen](images/Alle-oder-einzeln-aus-der-Liste-einladen.png "Alle oder einzeln aus der Liste einladen und zuordnen")
+![Alle oder einzeln aus der Liste einladen und zuordnen](images/invite-all-or-single.png "Alle oder einzeln aus der Liste einladen und zuordnen")
 
 
 
@@ -276,39 +276,39 @@ Der KassenBetreiber bekommt daraufhin die Einladungs-Email, in der er über weit
 
 
 
-![Betreiber bekommt Email](images/Betreiber-bekommt-Email.png "Betreiber bekommt Email")
+![Betreiber bekommt Email](images/operator-receives-mail.png "Betreiber bekommt Email")
 
 
 
 Der KassenBetreiber wird in der Email aufgefordert einen Link zu drücken um die Registrierung abzuschließen. Er wird dadurch zum fiskaltrust.Portal weiter geleitet und muss hier als erstes sein Passwort setzen:
 
-![Betreiber setzt Passwort](images/Betreiber-setzt-Passwort.png "Betreiber setzt Passwort")
+![Betreiber setzt Passwort](images/operator-sets-pwd.png "Betreiber setzt Passwort")
 
 
 
 Als nächstes wird dem KassenBetreiber die Nutzungsvereinbarung angezeigt. Diese MUSS er digital unterschreiben sonst kann die fiskaltrust.Middleware nicht ausgerollt werden. 
 
-![Betreiber unterzeichnet Nutzungsvereinbarung](images/Nutzungsvereinbarung-unterschreiben.png "Betreiber unterzeichnet Nutzungsvereinbarung")
+![Betreiber unterzeichnet Nutzungsvereinbarung](images/sign-user-agreement.png "Betreiber unterzeichnet Nutzungsvereinbarung")
 
 
 
 Der Betreiber gilt erst mit Unterschrift der Nutzungsvereinbarung als vollständig Ihnen zugeordnet und hat dann im fiskaltrust.Portal den Status "aktiv". Er erscheint in der Übersicht Ihrer KassenBetreiber unter PosOperator->Übersicht. Die Liste ist bei Aufruf leer. Sie müssen die Einträge über die Suche anzeigen lassen:
 
-![Betreiber zugeordnet und aktiv](images/Betreiber-zugeordnet-und-aktiv.png "Betreiber zugeordnet und aktiv")
+![Betreiber zugeordnet und aktiv](images/operator-active.png "Betreiber zugeordnet und aktiv")
 
 Der Firmenname des KassenBetreibers wird in der Liste als Link dargestellt (nur bei Status "aktiv"). Drücken Sie den Link um in den Account des KassenBetreibers zu wechseln. Diese Funktion nennen wir "Surrogate-Funktion". Sie loggen sich dadurch in den Account des KassenBetreibers ein. Sie könne später diese Funktion nutzen um die Konfiguration der auszurollenden fiskaltrust.Middleware Instanz im Account des KassenBetreibers vorzunehmen.
 
 Sollte der Eintrag den Status "inaktiv" besitzen, so hat der KassenBetreiber die Nutzungsvereinbarung noch nicht unterschrieben. 
 
-![Betreiber inaktiv](images/Betreiber-inaktiv.png "Betreiber zugeordnet aber inaktiv")
+![Betreiber inaktiv](images/operator-inactive.png "Betreiber zugeordnet aber inaktiv")
 
 Fordern Sie den KassenBetreiber auf, die Nutzungsvereinbarung digital zu unterschreiben. Sollte der KassenBetreiber die Einladung-Email nicht erhalten haben, so können Sie diese mit Hilfe des Portals erneut senden. Gehen Sie dazu in den Bereich POSOperator->Einladungen und drücken Sie hier auf den "Protokoll" Button. 
 
-![Einladungsprotokoll aufrufen](images/Einladungsprotokol-aufrufen.png "Einladungsprotokoll aufrufen")
+![Einladungsprotokoll aufrufen](images/invitation-protocol.png "Einladungsprotokoll aufrufen")
 
 Die Historie (Protokoll) Ihrer in der Vergangenheit versendeten Einladungen wird angezeigt. Hier können Sie nun im dazugehörigen Listeneintrag mit Hilfe eines Buttons die Einladung-Email erneut senden lassen:
 
-![Einladungs-Email erneut senden lassen](images/Einladungs-Email-erneut-senden-lassen.png "Einladungs-Email erneut senden lassen")
+![Einladungs-Email erneut senden lassen](images/resend-invitation.png "Einladungs-Email erneut senden lassen")
 
 
 ###  Standorte für KassenBetreiber anlegen
@@ -321,7 +321,7 @@ Um als KassenHändler Standorte (Outlets) für Ihren KassenBetreiber anzulegen o
 
 1. Loggen Sie sich mit Ihrem Account (als KassenHändler) im fiskaltrust.Portal ein und gehen Sie auf POSOperator -> Übersicht. Drücken Sie hier den "Suchen" Button um dem KassenBetreiber zu finden:
 
-![Übersicht der Kassenbetreiber](images/Betreiber-suchen.png "Übersicht der Kassenbetreiber")
+![Übersicht der Kassenbetreiber](images/search-operator.png "Übersicht der Kassenbetreiber")
 
 
 
@@ -330,11 +330,11 @@ Der gesuchte KassenBetreiber erscheint als Eintrag in der Ergebnisliste. Der Nam
 2. Drücken Sie den Link um sich in den Account des KassenBetreiber einzuloggen (Surrogate-Funktion). Sie werden zu dem Account des KassenBetreiber weitergeleitet. 
 3. Gehen Sie im Menü auf den Firmennamen des KassenBetreiber und drücken Sie auf "Standorte". Eine Übersicht der Standorte des KassenBetreiber erscheint:
 
-![Übersicht der Standorte](images/Standort-Uebersicht.png "Übersicht der Standorte")
+![Übersicht der Standorte](images/overview-outlets.png "Übersicht der Standorte")
 
 4. Sie können hier neue Standorte einzeln anlegen (Button "Fügen Sie einen neuen Standort hinzu") oder mehrer Standorte gelichzeitig aus einer CSV-Datei importieren. Nach dem Anlegen erscheint der neue Standort in der Liste. 
 
-![Standort angelegt](images/Standort-angelegt.png "Standort angelegt")
+![Standort angelegt](images/outlet-added.png "Standort angelegt")
 
 5. Drücken Sie nach getaner Arbeit im oberen Bereich rechts den Button "Zu Ihrem Account wechseln" um wieder zurück zu Ihrem KassenHändler Account zu wechseln.
 

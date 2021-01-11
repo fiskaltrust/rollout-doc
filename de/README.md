@@ -34,7 +34,7 @@ Beim Rolloutprozess unterscheidet fiskaltrust grundsätzlich zwischen drei Partn
 
 
 
-![Partner-Rollen](images/Partner-Rollen.png "Rollen der fiskaltrust Partner")
+![Partner-Rollen](images/partner-roles.png "Rollen der fiskaltrust Partner")
 
 
 
