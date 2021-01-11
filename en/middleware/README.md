@@ -461,27 +461,27 @@ In the upper chapters we have described how the fiskaltrust.Middleware is struct
 ## Rollout scenarios
 
 ### Introduction
-Instanzen der fiskaltrust.Middleware können je nach Gegebenheit bzw. Szenario unterschiedlich konfiguriert werden und zusammenarbeiten. Jedes, in diesem Kapitel vorgestellte Szenario, ist auf einen Standort bezogen. Folgende Grundvoraussetzungen sind dabei unabhängig vom Szenario zu beachten:
+Instances of the fiskaltrust.Middleware can be configured and can work together in different ways depending on the situation or scenario. Each scenario presented in this chapter is related to one outlet. The following basic requirements must be fulfilled, regardless of the scenario:
 
-- Pro Standort muss mindestens eine SCU inkl. TSE zugeordnet sein. Die TSE kann entweder eine Hardware-TSE vor Ort sein, oder eine zertifizierte Cloud-TSE.
-- Eine TSE kann immer nur von einem Unternehmen und daher von einem KassenBetreiber (Account) im fiskaltrust.Portal genutzt werden. Selbst wenn sich zwei Unternehmen einen Standort teilen, müssen trotzdem zwei TSEs genutzt werden.
-- Jede Queue muss dem Finanzamt als elektronisches Kassen- oder Aufzeichnungssystem (Kasse) gemeldet werden.
-- Alle Queues, SCUs und TSEs müssen sich im sogenannten "operational environment" des KassenBetreibers befinden. Eine Ausnahme stellt die Cloud-Komponente einer zertifizierten Cloud-TSE dar. Diese befindet sich im Rechenzentrum des Cloud-TSE Anbieters.
-- Jeder Queue kann nur eine SCU zugeordnet werden und jede SCU kann nur für eine TSE zuständig sein. D.h. jede Kasse kann nur eine TSE verwenden.
-- Pro Kasse können mehrere Terminals betrieben werden. (Ein Terminal ist ein Gerät ohne Kassenfunktion).
+- At least one SCU including TSE must be used per outlet. The TSE can either be an on-site hardware TSE or a certified cloud TSE.
+- A TSE can only be used by one company and therefore by POSOperator (account) in the fiskaltrust.Portal. Even if two companies share an outlet, two TSEs must still be used.
+- Each Queue must be reported to the tax office as an electronic cash or recording system (cash register).
+- All Queues, SCUs and TSEs must be located in the POSOperator's operational environment. The cloud component of a certified cloud TSE is an exception. This is located in the data center of the cloud TSE provider.
+- Only one SCU can be assigned to each Queue and each SCU can only be responsible for one TSE. I.e. each cash register can only use one TSE.
+- Several terminals can be operated per cash register. (A terminal is a device without a cash register function).
 
   
 
-*Info zur Cloud-TSE*
-Bei einer Cloud-TSE läuft eine Komponente im Rechenzentrum des Cloud-TSE Anbieters. Ist diese TSE Komponente nicht mehr erreichbar, wechselt die fiskaltrust.Middleware in den Ausfallsmodus. Bei der Nutzung von Cloud-TSEs möchten wir zusätzlich auf unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/tse-fiskaly-fair-use-policy.md) hinweisen.
+*Cloud TSE Info*
+In a cloud TSE, a component runs in the data center of the cloud TSE provider. If this TSE component is no longer accessible, the fiskaltrust.middleware switches to failure mode. When using cloud TSEs, we would like to additionally refer to our [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/market-de-fair-use-policy.md).
 
- *Info zur Hardware-TSE*
-Grundsätzlich werden Hardware-TSE per micro SD-Karte oder per USB-Anschluss direkt an die Kasse angeschlossen.
+ *Hardware TSE Info*
+ Basically, hardware TSE are connected directly to the cash register via micro SD card or USB port.
 
 
 
 ### A TSE per cash register
-Aus technischer Sicht ist dies das einfachste Szenario, benötigt allerdings eine höhere Anzahl an TSEs, da für jede Kasse eine eigene TSE eingesetzt wird. Ein Vorteil dieser Lösung ist, dass wenn eine TSE ausfällt oder verloren geht, andere Kassen nicht betroffen sind. Ein weiterer Vorteil besteht darin, dass Performanceengpässe vermieden werden, weil jede Kasse ihre eigene TSE nutzt und somit nur die Requests dieser einen Kasse von der TSE verearbeitet bzw. signiert werden müssen.
+From a technical point of view, this is the simplest scenario, but it requires a higher number of TSEs, since a separate TSE is used for each cash register. One advantage of this solution is that if one TSE fails or is lost, other cash registers are not affected. Another advantage is that performance bottlenecks are avoided because each cash register uses its own TSE and thus only the requests of this one cash register have to be processed or signed by the TSE.
 
 ![tse-per-cashregister](images/kasse-queue-scu-tse2.png)
 
@@ -489,254 +489,254 @@ Aus technischer Sicht ist dies das einfachste Szenario, benötigt allerdings ein
 
 ### Hardware TSE(s) at local server for multiple cash registers
 
-Auf jeder Kasse und auf dem lokalen Server läuft die fiskaltrust.Middleware. Die Hardware-TSE wird an den lokalen Server (z.B. per USB) angeschlossen. Die CashBox des Servers konfiguriert die fiskaltrust.Middleware-Instanz mit einer SCU. Die für den Server konfigurierte SCU greift auf eine Hardware-TSE zu. Die CashBoxen der einzelnen Kassen sind so zusammengestellt, dass deren fiskaltrust.Middleware-Instanz nur mit einer Queue ausgestattet wird. Die hier eingesetzten Queues verbinden sich mit der SCU des Server. Dieses Szenario ermöglicht eine Einsparung von TSEs. Da jedoch hierbei alle Requests über die SCU des Server laufen müssen, wird der Server zum Bottleneck. Auch die TSE wird zum Bottleneck. Beim Ausfall des Server oder der TSE sind alle Kassen davon betroffen. Des Weiteren kann es in diesem Szenario zu [Performanceengpässen](#performanceempfehlung) in der Hardware-TSE kommen. 
+The fiskaltrust.Middleware runs on each cash register and on the local server. The hardware TSE is connected to the local server (e.g. via USB). The server's CashBox configures the fiskaltrust.Middleware instance with an SCU. The SCU configured for the server accesses a hardware TSE. The CashBoxes of the individual cash registers are configured in such a way that their fiskaltrust.Middleware instance is equipped with only one Queue. The Queues used here connect to the server's SCU. This scenario enables a saving of TSEs. However, since all requests have to pass through the server's SCU, the server becomes a bottleneck. The TSE also becomes a bottleneck. If the server or the TSE fails, all cash registers are affected. Furthermore, this scenario can lead to [performance bottlenecks](#performance recommendation) in the hardware TSE. 
 
 ![tse-separated](images/server-mit-hw-tse.png)
 
-Sollten Sie sich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz einer oder mehrerer zusätzlichen TSEs. Dies wird im unteren Bild beispielhaft visualisiert.
+If you decide to use this scenario, we recommend using one or more additional TSEs if you have a large number of requests. This is visualized in the image below as an example.
 
 ![tse-separated](images/server-mit-mehreren-hw-tse.png)
 
 ### Hardware TSE at the main cash register for several additional cash registers
-Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox der Hauptkasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer Queue und einer SCU. Die für die Hauptkasse konfigurierte SCU greift auf eine TSE zu. Die CashBoxen der anderen Kassen sind so konfiguriert, dass deren fiskaltrust.Middleware-Instanzen nur mit einer Queue ausgestattet werden. Die hier eingesetzten Queues verbinden sich mit der SCU der Hauptkasse. Dieses Szenario ermöglicht eine Einsparung von TSEs. Da jedoch hierbei alle Requests über die SCU der Hauptkasse laufen müssen, wird die Hauptkasse zum Bottleneck. Auch die Hardware-TSE wird zum Bottleneck. Beim Ausfall der Hauptkasse oder der Hardware-TSE sind alle anderen Kassen davon betroffen. Des Weiteren kann es in diesem Szenario zu [Performanceengpässen](#performanceempfehlung) in der TSE kommen. Sollten Sie sich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz einer oder mehrerer zusätzlichen TSEs.
+The fiskaltrust.Middleware runs on each cash register. The CashBox of the main cash register configures the fiskaltrust.Middleware instance with a Queue and an SCU. The SCU configured for the main cash register accesses a TSE. The CashBoxes of the other cash registers are configured so that their fiskaltrust.Middleware instances are only equipped with a Queue. The Queues used here connect to the SCU of the main cash register. This scenario enables a saving of TSEs. However, since all requests have to run via the SCU of the main checkout, the main checkout becomes a bottleneck. The hardware TSE also becomes a bottleneck. If the main cash register or the hardware TSE fails, all other cash registers are affected. Furthermore, in this scenario, [performance bottlenecks](#performancerecommendation) may occur in the TSE. If you decide to use this scenario, we recommend using one or more additional TSEs if you have a large number of requests.
 
 ![tse-on-cashregister](images/kasse-als-server-mit-hw-tse.png)
 
 ### A cloud TSE for multiple cash registers
-Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer eigenen Queue und einer eigenen SCU. Jede SCU greift auf die gleiche Cloud-TSE zu. Dieses Szenario ermöglicht eine Einsparung von Cloud-TSEs. Ein Vorteil hier ist, dass die SCU nicht zum Bottleneck wird, da jede Kasse ihre eigene SCU hat. Da jedoch hierbei alle Requests an die gleiche Cloud-TSE gesendet werden, wird die TSE zum Bottleneck. Des Weiteren sind hierbei ebenfalls sowohl mögliche [Performanceengpässe](#performanceempfehlung) in der Cloud-TSE zu berücksichtigen als auch unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/tse-fiskaly-fair-use-policy.md).
+The fiskaltrust.Middleware runs on each cash register. The CashBox of each cash register configures the fiskaltrust.Middleware instance with its own queue and its own SCU. Each SCU accesses the same cloud TSE. This scenario enables cloud TSEs to be saved. One advantage here is that the SCU does not become a bottleneck, since each POS has its own SCU. However, since all requests are sent to the same cloud TSE, the TSE becomes a bottleneck. Furthermore, both possible [performance bottlenecks](#performance recommendation) in the cloud TSE and our [fair use policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/tse-fiskaly-fair-use-policy.md) must also be taken into account here.
 
 ![tse-on-cashregister](images/kassen-mit-cloud-tse.png)
 
 ### Rollout scenario with terminals
-Terminals sind Eingabegeräte wie Tablets, Handhelds oder ähnliches (ohne Kassenfunktion), bei denen es nicht möglich ist eine Hardware-TSE anzuschließen bzw. die fiskaltrust.Middleware am Gerät selbst zu installieren. In diesem Fall wird die fiskaltrust.Middleware an einer Kasse oder an einem Server betrieben und ist stets für die Terminals erreichbar. Die Terminals dienen nur als Eingabegeräte und verbinden sich mit dem Server oder mit der Kasse. Bei vielen gleichzeitigen Requests kann es zu [Performanceengpässen](#performanceempfehlung) in der TSE kommen. Sollten Sie ich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz mehrerer Kassen mit zusätzlichen TSEs (alternativ: mehrere fiskaltrust.Middleware-Instanzen mit eigener SCU und TSE auf dem Server).
+Terminals are input devices such as tablets, handhelds or similar (without cash register function), where it is not possible to connect a hardware TSE or to install the fiskaltrust.Middleware on the device itself. In this case the fiskaltrust.Middleware is operated at a cash register or at a server and is always accessible for the terminals. The terminals only serve as input devices and connect to the server or to the cash register. If there are many simultaneous requests, [performance bottlenecks](#performancerecommendation) may occur in the TSE. If you decide to use this scenario, we recommend using multiple cash registers with additional TSEs (alternatively: multiple fiskaltrust.Middleware instances with their own SCU and TSE on a server) if you have a large number of requests.
 
 ![terminals-single-queue](images/terminals-eine-queue.png)
 
-Eine weitere mögliche Variante dieses Szenario ist die Zuordnung jedes Terminals zu einer eigenen Queue.
+Another possible variation of this scenario is to assign each terminal to its own Queue.
 
 ![terminals-mehrere-queues](images/terminals-mehrere-queues.png)
 
 
 ### Data center as operational environment
-Falls die Kasse in einem Rechenzentrum betrieben wird und die Terminals ohne (Internet-)Verbindung zu diesem nicht funktionsfähig sind, kann das Rechenzentrum unter bestimmten Voraussetzungen als "operational environment" angenommen werden. Die fiskaltrust.Middleware sollte in diesem Fall vollständig im Rechenzentrum betrieben werden. In diesem Szenario verbinden sich die Terminals über das Online KassenSystem zur fiskaltrust.Middleware im Rechenzentrum.
-Im Falle eines Ausfalls der (Internet-)Verbindung ist es allerdings so, dass die fiskaltrust.Middleware nicht mehr erreicht werden kann und somit keine von der fiskaltrust.Middleware erzeugten Signaturen auf die Belege gedruckt werden können. Bei Interesse an dieser Lösung (BYOD - Bring your own datacenter), bei der die fiskaltrust.Middleware im Rechenzentrum des KassenBetreibers läuft, finden Sie weitere Informationen in unserem [BYOD github repository](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter). 
+If the cash register is operated in a data center and the terminals cannot function without an (Internet) connection to it, the data center can be assumed to be the "operational environment" under certain conditions. In this case, the fiskaltrust.Middleware should be operated entirely in the data center. In this scenario, the terminals connect to the fiskaltrust.Middleware in the data center via the online POSSystem.
+However, in the event of a failure of the (Internet) connection, the fiskaltrust.Middleware can no longer be reached and therefore no signatures generated by the fiskaltrust.Middleware can be printed on the receipts. If you are interested in this solution (BYOD - Bring your own datacenter), where the fiskaltrust.middleware runs in the datacenter of the cash register operator, you can find more information in our [BYOD github repository](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter). 
 
 ![cloud-middleware](images/terminals-mw-cloud.png)
 
 ### Connection variants of the TSE to the SCU
 
-Für folgende Anbindungsvarianten haben wir eine Legende vorbereitet, die die Bedeutung der einzelnen Pfeile aufzeigt:
+For the following connection variants we have prepared a legend showing the meaning of the individual arrows:
 
 ![anbindungs-varianten-Legende](images/Legende-Varianten.png)
 
 #### Cash register with hardware TSE
-In der klassischen Anbindungsvariante befindet sich das KassenSystem in der lokalen Umgebung des Standorts und eine Hardware-TSE ist direkt mit dem KassenSystem verbunden z.B. über USB oder micro SD.
+In the classic connection variant, the POSSystem is located in the local environment of the outlet and a hardware TSE is connected directly to the POSSystem, e.g. via USB or micro SD.
 
 ![anbindungs-variante-scu-hw-tse](images/anbindung-scu-hw-tse.png)
 
 #### Network printer with hardware TSE
-Eine weitere Variante in der lokalen Umgebung stellt die Verwendung eines Netzwerk-Druckers mit Hardware-TSE dar. Dabei kann die Hardware-TSE direkt in dem Drucker integriert oder per USB angeschlossen sein. Eine oder mehrere Kassen verwenden den Drucker.
+Another variant in the local environment is the use of a network printer with hardware TSE. The hardware TSE can be integrated directly in the printer or connected via USB. One or more cash registers use the printer.
 
 ![anbindungs-variante-drucker](images/anbindungsvariante-drucker.png)
 
 #### Local TSE server with hardware TSEs
-Die dritte Anbindungsvariante in der lokalen Umgebung wird über einen TSE Server im lokalen Netzwerk realisiert. An einen TSE-Server können mehrere Hardware-TSE angeschlossen werden. Mehrere Kassen greifen über Ihre SCU auf den TSE-Server zu.
+The third connection variant in the local environment is implemented via a TSE server in the local network. Several hardware TSEs can be connected to one TSE server. Several cash registers access the TSE server via their SCU.
 
 ![anbindungs-variante-server-lokal](images/anbindung-server-lokal.png)
 
 #### Cash register with cloud TSE
-Auf eine Cloud-TSE muss über das Internet zugegriffen werden. In folgendem Szenario greift eine Kasse mit Hilfe der SCU auf eine Cloud-TSE über das Internet zu.
+A cloud TSE must be accessed over the Internet. In the following scenario, a POSSystem accesses a cloud TSE over the Internet using the SCU.
 
 ![anbindungs-variante-cloud](images/anbindungsvariante-cloud-tse.png)
 
 #### POSSystem in the operator's data center with cloud TSE
 
-Auch hier greift das KassenSystem mit Hilfe der fikalterust SCU über das Internet auf eine Cloud-TSEs zu. In der lokalen Umgebung befinden sich lediglich Terminals ohne Kassenfunktion die über das Internet auf das elektronische KassenSystem im Rechenzentrum des Betreibers zugreifen.
+Here, too, the POSSystem accesses a cloud TSE via the Internet with the help of the fiskaltrust SCU. In the local environment, there are only terminals without a cash register function that access the electronic POSSystem in the POSOperator's data center via the Internet.
 
 ![anbindung-rechenzentrum-cloud-tse](images/anbindung-rechenzentrum-cloud-tse.png)
 
 ### Proposed solutions for virtualization within an outlet
 
-Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnunsgsystem inklusive fiskaltrust.Middleware treten erfahrungsgemäß Probleme bei Zugriff auf eine direkt am lokalen Server angebundene Hardware-TSE über USB oder als micro SD auf. Eine Ausnahme stellt hierbei die Diebold-Nixdorf-TSE dar, da die Kommunikation mit dieser über COM-Port stattfindet. Aufgrund der zuvor genannten Zugriffsprobleme, haben wir in folgenden Skizzen Lösungssvorschläge für dieses Szenario dargestellt. Statt der Anbindung einer Hardware-TSE direkt am lokalen Server empfehlen wir folgende Optionen:
+When virtualizing the electronic cash register or recording system including fiskaltrust.Middleware, experience has shown that problems occur when accessing a hardware TSE directly connected to the local server via USB or as micro SD. An exception to this is the Diebold-Nixdorf TSE, since communication with it takes place via COM port. Due to the aforementioned access problems, we have presented proposed solutions for this scenario in the following sketches. Instead of connecting a hardware TSE directly to the local server, we recommend the following options:
 
 #### SCU is within the virtual instance
 
-- Anbindung an einen lokale Netzwerk-Drucker mit TSE
-- Anbindung an einen TSE-Server im lokalen Netzwerk
-- Anbindung von Cloud-TSEs (sobald zertifiziert)
-- Anbindung an eine Diebold-Nixdorf Hardware-TSE, da die Kommunikation hierbei über COM-Port stattfindet
+- Connection to a local network printer with TSE
+- Connection to a TSE server in the local network
+- Connection of cloud TSEs
+- Connection to a Diebold-Nixdorf hardware TSE, as communication takes place via COM port here
 
 ![virtualisierungs-vorschlag](images/virtualisierungs-vorschlag.png)
 
 #### SCU is outside the virtual instance
 
-Eine fiskaltrust.Middleware läuft bei dieser Option auf einem zweiten lokaler Server. Sie wird nicht in der virtualisierten Umgebung betrieben. Die dazu verwendete CashBox konfiguriert lediglich eine SCU, die auf die Hardware-TSE zugreift. Die Hardware-TSE wiederum, wird direkt an diesen, zweiten Server, per USB oder micro-SD angeschlossen. Im ersten Server, in dem die virtuellen Instanzen laufen, konfigurieren die eingesetzen CashBoxen die fiskaltrust.Middelware-Instanzen so, dass sie jeweils nur eine Queue betreiben, die auf die SCU im zweiten Server zugreift.
+A fiskaltrust.middleware runs on a second local server with this option. It is not operated in the virtualized environment. The CashBox used for this purpose merely configures an SCU that accesses the hardware TSE. The hardware TSE, in turn, is connected directly to this second server via USB or micro-SD. In the first server, in which the virtual instances run, the CashBoxes used configure the fiskaltrust.Middelware instances in such a way that they each operate only one Queue, which accesses the SCU in the second server.
 
 ![virtualisierungs-vorschlag-ausserhalb](images/virtualisierungs-vorschlag-scu-ausserhalb.png)
 
-Eine mögliche Optimierung der oben beschriebenen Option könnte sein, dass die fiskaltrust.Middleware, die die SCU betreibt auf dem gleichen Server läuft wie die virtuellen Instanzen, jedoch nicht virtualisiert ist. Diese kann dann auch auf die Hardware-TSE zugreifen.
+A possible optimization of the option described above could be that the fiskaltrust.Middleware that runs the SCU runs on the same server as the virtual instances, but is not virtualized. This can then also access the hardware TSE.
 
 ![virtualisierungs-vorschlag-ausserhalb](images/virtualisierung-vorschlag-scu-im-server.png)
 
 ### Performance recommendations
-Bei internen Tests haben wir festgestellt, dass 3 Signaturen pro Sekunde von jeder TSE gut verarbeitet werden können. Bei mehr als 3 Signaturen pro Sekunde kommt es zu Verzögerungen. Bitte achten Sie darauf, dass bei einem implicit-Flow 2 Signaturen pro Request abgesetzt werden. Wir empfehlen deshalb bei einer zu erwartenden höheren Menge an Signaturen der TSE pro Sekunde entsprechend zusätzliche TSEs bei der Planung zu berücksichtigen. 
+In internal tests, we have found that 3 signatures per second can be processed well by each TSE. More than 3 signatures per second will cause delays. Please note that 2 signatures per request are sent in an implicit flow. We therefore recommend that if a higher number of signatures per second is expected, additional TSEs should be taken into account in the planning. 
 
 
 
 ## Rollout automation
 
-Dieses Kapitel soll beim Rollout-Prozess unterstützen indem es Möglichkeiten der Vereinfachung und Optimierung des Rollouts durch Automatisierung aufzeigt. 
+This chapter is intended to support the rollout process by showing ways to simplify and optimize the rollout through automation. 
 
 ### Introduction
 
-Jede fiskaltrust.Middleware-Instanz wird mit einer sogenannten CashBox konfiguriert. Dieser Konfigurationscontainer wird zusammen mit der fiskaltrust.Middleware beim KassenBetreiber ausgerollt. Dazu wird zum Beispiel der Launcher aus dem Portal heruntergeladen und in der Kasse gestartet. Der heruntergeladene Launcher beinhaltet die fiskaltrust.Middleware und ihre Konfiguration in Form einer CashBox. Die CashBox beinhaltet hauptsächlich die Konfigurationen der Queue und der SCU kann aber auch Helperkonfigurationen beinhalten. 
+Each fiskaltrust.Middleware instance is configured with a so-called CashBox. This configuration container is rolled out together with the fiskaltrust.Middleware at the POSOperator. For doing so, the launcher can be downloaded from the portal and started in the cash register. The downloaded launcher contains the fiskaltrust.Middleware and its configuration in the form of a CashBox. The CashBox mainly contains the configurations of the Queue and the SCU but can also contain helper configurations. 
 
 
 
-![Massenupdate](images/cashbox.png)
+![Cashbox](images/cashbox.png)
 
 
 
-In den enthaltenen Konfigurationen sind zum Beispiel Kommunikations-Endpunkte, Datenbankzugriff, TSE-Zugriff usw. definiert. Im Normallfall wird eine solche CashBox pro Kasse benötigt. Ein Rollout mit vielen Kassen ist daher bei einer manuellen Vorgehensweise sehr zeitintensiv, da grundsätzlich für jede Kasse eine eigene CashBox im Portal angelegt, zusammengestellt und publiziert werden muss. Des Weiteren muss der Launcher heruntergeladen werden und in der Kasse ausgeführt werden. 
+For example, communication endpoints, database access, TSE access, etc. are defined in the included configurations. Normally, one such CashBox is required per cash register. A rollout with many cash registers is therefore very time-consuming if done manually, since a separate CashBox must basically be created, compiled and published in the portal for each cash register. Furthermore, the launcher must be downloaded and executed in the cash register. 
 
-Um diesen Prozess zu optimieren stellt fiskaltrust diverse Tools zur Verfügung. Eine zentrale Rolle spielen dabei die Möglichkeit des Templating zum Anlegen von CashBoxen und die Möglichkeit zum automatisierten Ausführen der Templates mit Hilfe der fiskaltrust Portal-API. 
+In order to optimize this process, fiskaltrust provides various tools. A central role is played by the possibility of templating for the creation of CashBoxes and the possibility of automated execution of the templates with the help of the fiskaltrust.Portal API. 
 
-Im Folgenden gehen wir auf diese und andere Möglichkeiten der Optimierung ein und zeigen auf, wie Sie als KassenHändler je nach Bedarf davon Gebrauch machen können.
+In the following, we will discuss these and other optimization options and show how you, as a POSDealer, can make use of them as needed.
 
 
 
 
 ### Overview manual process
 
-Wie bereits in der Einleitung erwähnt wird grundsätzlich pro Kasse eine CashBox benötigt. Im Normalfall wird hier die Konfiguration einer Queue und einer SCU vorgenommen und diese werden miteinander verknüpft. 
+As already mentioned in the introduction, basically one CashBox is required per cash register. Normally, the configuration of a queue and a SCU is made here and these are linked with each other. 
 
-Es existieren auch andere Szenarien (siehe dazu [Rollout-Szenarien](./README.md#rollout-szenarien ) auf die wir jedoch erst später eingehen. Die Konfiguration der CashBox ist im Kapitel [Konfiguration der fiskaltrust.Middleware](./README.md#konfiguration-der-fiskaltrustmiddleware) beschrieben.
+There are also other scenarios (see [Rollout scenarios](./README.md#rollout-scenarios ) which we will discuss later. The configuration of the CashBox is described in the chapter [Configuration of the fiskaltrust.Middleware](./README.md#configuration-of-the-fiskaltrustmiddleware).
 
-Sobald die CashBox für die Kasse im Portal angelegt, konfiguriert und zusammengestellt wurde, kann der Launcher aus dem fiskaltrust.Portal bereits heruntergeladen werden und auf der Kasse gestartet werden. Sobald der Launcher zum ersten mal gestartet wird, wird die enthaltene Konfiguration angewendet. Dadurch ist die Middleware bereit und wird im nächsten Schritt vom Launcher gestartet. 
+As soon as the CashBox for the cash register has been created, configured and published in the portal, the Launcher can already be downloaded from the fiskaltrust.Portal and started on the cash register. As soon as the launcher is started for the first time, the included configuration is applied. Thereby the middleware is ready and will be started by the launcher in the next step. 
 
-D.h. im manuellen Prozess sind beim Rollout mindestens folgende initialen Schritte für jede Kasse vorzunehmen:
+This means that in the manual process, at least the following initial steps must be taken for each cash register during the rollout:
 
-1. Anlegen und Konfiguration der Queue
-2. Anlegen und Konfiguration der SCU
-3. Verknüpfen der Queue mit der SCU
-4. Erstellen und konfigurieren der CashBox
-5. Rebuild Configuration für die CashBox (Zusammenbauen/Aktualisieren der CashBox)
-6. Download des Launcher
-7. Starten des Launcher
+1. Creation and configuration of the Queue
+2. Creation and configuration of the SCU
+3. Linking the Queue with the SCU
+4. Create and configure the CashBox
+5. Rebuild configuration for the CashBox (assembling/publishing the CashBox)
+6. Download the Launcher
+7. Start the Launcher
 
-Möchte man später die Konfiguration updaten (z.B. eine neue SCU Package Version verwenden), dann sind folgende Schritte vorzunehmen:
+If you want to update the configuration later (e.g. use a new SCU package version), the following steps must be performed:
 
-1. Update der betroffenen Konfiguration im Portal (z.B. SCU Konfiguration)
-2. Rebuild Configuration für die CashBox im Portal (Zusammenbauen/Aktualisieren der CashBox)
-3. Stoppen der Middleware und Neustart des Launchers an der Kasse. 
+1. Update of the affected configuration in the portal (e.g. SCU configuration).
+2. Rebuild configuration for the CashBox in the portal (assembling/publishing the CashBox)
+3. Stop the middleware and restart the launcher at the cash register. 
 
-Der Launcher lädt daraufhin automatisch die neue Version der CashBox, wendet diese an und startet die fiskaltrust.Middleware mit der neuen Konfiguration.
+The launcher then automatically loads the new version of CashBox, applies it and starts the fiskaltrust.Middleware with the new configuration.
 
-Bei einer großen Menge von Kassen ist der initiale Rollout sehr zeitaufwendig, wenn er mit Hilfe der oben beschriebenen, manuellen Prozessen vorgenommen werden. 
+With a large number of cash registers, the initial rollout is very time-consuming if it is performed using the manual processes described above. 
 
 
 ### Templating to create CashBoxes
 
-Beim Templating besteht die Möglichkeit mit Hilfe eines Konfigurations-Template automatisiert CashBoxen für den KassenBetreiber anzulegen. Es wird dafür ein Template vorbereitet und für den KassenBetreiber im fiskaltrust.Portal hinterlegt. Daraufhin erscheint das Template im fisklatrust.Shop innerhalb des Accounts des KassenBetreibers als kostenloses Produkt. Es kann dort in beliebiger Menge ausgecheckt werden. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom fiskaltrust.Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account des KassenBetreiber hinterlegt. 
+When templating, it is possible to automatically create CashBoxes for the POSOperator with the help of a configuration template. A template is prepared for this and stored for the POSOperator in the fisklatrust.Portal. The template then appears in the fisklatrust.Shop within the POSOperator account as a free product. It can be checked out there in any quantity. The quantity represents the number of CashBoxes that are to be generated automatically. As soon as the checkout process is completed, the fiskaltrust.Portal automatically generates the corresponding number of CashBoxes by applying the template and stores them in the POSOPerators account. 
 
-Im Folgenden werden die einzelnen Schritte des oben beschriebenen Prozess detailliert dargestellt. Zudem stellen wir Ihnen ein [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) zum Thema Tempalting zur Verfügung.
+In the following, the individual steps of the process described above are presented in detail. In addition, we provide a [video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) on the topic of tempalting.
 
 #### Creation and contents of the configuration template
 
-Das Template ist ein JSON String der eine parametrisierbare Variante der CashBox (Konfigurationskontainer als JSON String) darstellt und somit die Konfigurationen von Queues, SCUs und Helper beinhalten kann. Parametrisierbar ist es insofern, dass hier die Struktur für die zu generierende CashBox definiert werden kann (z.B. fünf Queues, eine SCU). Zudem können bei den Werten Variablen als Platzhalter eingesetzt werden können. Sobald die Generierung der daraus resultierenden CashBox stattfindet, werden die Variablen mit konkreten, finalen Werten befüllt.
+The template is a JSON string that represents a parameterizable variant of the CashBox (configuration container as JSON string) and can thus contain the configurations of Queues, SCUs and Helpers. It is parameterizable in that the structure for the CashBox to be generated can be defined here (e.g. five Queues, one SCU). In addition, variables can be used as placeholders for the values. As soon as the resulting CashBox is generated, the variables are filled with concrete, final values.
 
-Im folgenden Bild wird ein Beispiel eines solchen Template visualisiert - download unter [template1.json](raw/template1.json)
+In the following picture an example of such a template is visualized - download under [template1.json](raw/template1.json)
 
 ![Template Beispiel](images/template1.png)
 
-Variablen werden gekennzeichnet indem sie innerhalb von ```|[``` und  ```]|``` angegeben werden. Möglich hierbei ist sowohl die Angabe von [Systemvariablen](#systemvariablen) deren Werte vom fiskaltrust System bei der Generierung erzeugt werden als auch die Angabe eigener Variablen deren Werte später über einen API Aufruf zum Generieren der CashBox übergeben werden können (siehe auch [Parametrisierung des API Aufrufs](#parametrisierung)). 
+Variables are marked by specifying them within ``|[``` and ```]|```. Possible is the specification of [system variables](#system-variables). Their values are generated by the fiskaltrust system during the generation. Also possible is the specification of own variables. Their values can be transferred later via an API call to generate the CashBox (see also [parameterization of the API call](#parameterization)). 
 
-In Zeile 1 des obigen Beispiel wird die Systemvariable: ```|[cashbox_id]|```  als Wert für ```"ftCashBoxId"``` angegeben. Hierbei geht es um die CashBoxID, einem Wert, der automatisch von dem System erzeugt wird und beim Generieren der CashBox an dieser Stelle eingesetzt wird.
+In line 1 of the above example, the system variable: ```|[cashbox_id]|`` is specified as the value for ``"ftCashBoxId"```. This is the CashBoxID, a value that is automatically generated by the system and used when generating the CashBox at this point.
 
-In Zeile 31 werden hingegen eigene Variablen verwendet (```|[my_shopcode]|``` und ```|[my_tillcode]|``` ) deren konkrete Werte später beim API Aufruf übergeben werden können. 
+Line 31, on the other hand, uses its own variables (```|[my_shopcode]|`` and ```|[my_tillcode]|`` ) whose concrete values can be passed later during the API call. 
 
-Wie ebenfalls in Zeile 31 zu sehen ist, können die JSON String Werte aus einer Kombination von Variablen und statischen Teilen bestehen. Sie können aber auch nur statischen "Text" beinhalten oder auch nur eine Variable.
+As can also be seen in line 31, the JSON string values can consist of a combination of variables and static parts. However, they can also contain only static "text" or only one variable.
 
-Folgende Tabellen zeigen die möglichen Inhalte (Datenstruktur) eines Template:
+The following tables show the possible contents (data structure) of a template:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `ftCashBoxId` |ja | ```GUID String``` | Identifiziert die Cashbox im fiskaltrust System und muss daher eindeutig sein. Wird später ein Teil der Authentifizierung der Registrierkasse mit fiskaltrust. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden um den Wert bei Generierung der Cashbox von fiskaltrust automatisch zu erzeugen und einzusetzen. |
-| `ftSignaturCreationDevices` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden SCUs |
-| `ftQueues` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden Queues |
-| `helpers` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden Helper |
-| `TimeStamp` |nein | ```DateTime.UtcNow.Ticks``` | Zeitpunkt der Erstellung des Template|
+| `ftCashBoxId` |yes | ```GUID String``` | Identifies the CashBox in the fiskaltrust system and must therefore be unique. Will later be part of the authentication of the cash register with fiskaltrust. The system variable ```|[cashbox_id]|``` can be used here to automatically generate and use the value when generating the CashBox from fiskaltrust. |
+| `ftSignaturCreationDevices` |no | `PackageConfiguration [ ]` | Array, contains the configurations of the SCUs to be used. |
+| `ftQueues` |no | `PackageConfiguration [ ]` | Array, contains the configurations of the queues to be used. |
+| `helpers` |no | `PackageConfiguration [ ]` | Array, contains the configurations of the helpers to be used. |
+| `TimeStamp` |no | ```DateTime.UtcNow.Ticks``` | Time of creation of the template.|
 
-Ein **`PackageConfiguration`** Objekt ist wie folgt aufgebaut:
+A **`PackageConfiguration`** object is structured as follows:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `Id` |ja |  ```GUID String```  | Identifiziert die Instanz des Elements, das hier konfiguriert wird (SCU, Queue oder Helper). Für die Queue kann die Systemvariable `queue{0-9}_id` verwendet werden. Für die SCU kann hier die Systemvariable `scu{0-9}_id` zum Einsatz kommen. Für Helper  `helper{0-9}_id`. |
-| `Package` |ja | ```String``` | Name des Package das zum Erstellen des Elements verwendet werden soll. Z.B. `fiskaltrust.Middleware.SCU.DE.CryptoVision` für eine SCU, die mit einer Cyptovision-TSE kommunizieren soll. Aktuell unterstützte Packages finden sie weiter unten. |
-| `Description` |nein |  ```String```| Name des Elements. Z.B. der Queue oder SCU |
-| `Version` |nein |  ```String```| Version des Package das zum Erstellen des Elements verwendet werden soll. Wenn keine Version angegeben wird, so wird die neueste Version verwendet.|
-| `Configuration` |nein | `<String, Object>`| Konfigurationsparameter des Elements. Z.B. Laufwerkbuchstabe der TSE bei der Cryptovision SCU, damit der SCU bekannt ist wie sie auf die TSE zugreifen soll. Je nach Element-Typ zu befüllen. Siehe unten. |
-| `URL` |ja | `String []` | Array, Kommunikationsendpunkte des Elements. Z.B. REST Endpunkt für die Kommunikation mit der Queue. |
+| `Id` |yes |  ```GUID String```  | Identifies the instance of the element that is configured here (SCU, Queue or Helper). For the Queue, the system variable `queue{0-9}_id` can be used. For SCU the system variable `scu{0-9}_id` can be used here. For Helper `helper{0-9}_id`. |
+| `Package` |yes | ```String``` | Name of the package that should be used to create the element. E.g. `fiskaltrust.Middleware.SCU.DE.CryptoVision` for a SCU that should communicate with a Cyptovision TSE. Currently supported packages can be found below. |
+| `Description` |no |  ```String```| Name of the element. E.g. the Queue or SCU |
+| `Version` |no |  ```String```| Version of the package to be used for creating the element. If no version is specified, the latest version is used.|
+| `Configuration` |no | `<String, Object>`| Configuration parameters of the element. E.g. drive letter of the TSE for the Cryptovision SCU, so that the SCU knows how to access the TSE. To be filled depending on the element type. See below. |
+| `URL` |yes | `String []` | Array, communication endpoints of the element. E.g. REST endpoint for communication with the Queue. |
 
 **Queue**
-Folgende Packages stehen aktuell für Queues zur Verfügung:
+The following packages are currently available for Queues:
 
-| **Package Name**        | **Beschreibung**          |
+| **Package Name**        | **Description**          |
 |----------------------|----------------------|
-| `fiskaltrust.Middleware.Queue.SQLite` |Eine SQLite Datenbank wird als lokaler Persistenzlayer verwendet. |
-| `fiskaltrust.Middleware.Queue.EF` |Entity Framework wird als lokaler Persistenzlayer verwendet. |
-| `fiskaltrust.Middleware.Queue.MySQL` | Eine MySQL Datenbank wird als lokaler Persistenzlayer verwendet. |
+| `fiskaltrust.Middleware.Queue.SQLite` |A SQLite database is used as a local persistence layer. |
+| `fiskaltrust.Middleware.Queue.EF` |Entity Framework is used as a local persistence layer. |
+| `fiskaltrust.Middleware.Queue.MySQL` | A MySQL database is used as a local persistence layer. |
 
-Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Queue verwendet:
+The following key-value pairs are used in the **`Configuration`** object of a Queue:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `init_ftQueue` |ja |  ```Configuration``` | Initialisierungsparameter für die Queue (allgemeiner Teil der Queue Konfiguration).|
-| `init_ftQueueDE` |ja |  ```Configuration``` | Initialisierungsparameter für die Queue (länderspezifischer Teil der Queue Konfiguration).|
-| `init_ftSignaturCreationUnitDE` |nein |  ```Configuration``` | Initialisierungsparameter zum Verknüpfen der Queue mit einer SCU. Hier werden Verbindungswerte hinterlegt.|
-| `connectionstring` |nein |  ```String``` | Verbindungsstring zum Persistenzlayer. Beispiel siehe unten. Bei SQLite kann dieses Feld weggelassen werden wenn keine eigene Datenbank vorhanden ist. In diesem Fall legt fiskaltrust automatisch eine SQLite Datenbank an. |
+| `init_ftQueue` |yes |  ```Configuration``` | Initialization parameters for the Queue (general part of the Queue configuration).|
+| `init_ftQueueDE` |yes |  ```Configuration``` | Initialization parameters for the Queue (country-specific part of the Queue configuration).|
+| `init_ftSignaturCreationUnitDE` |no |  ```Configuration``` | Initialization parameter for linking the Queue with an SCU. Connection values are stored here.|
+| `connectionstring` |no |  ```String``` | Connection string to the persistence layer. Example see below. With SQLite this field can be omitted if no own database is available. In this case fiskaltrust automatically creates an SQLite database. |
 
-Beispiel für einen `connectionstring` bei Verwendung von Entity Framework:
+Example of a `connectionstring` when using Entity Framework:
 
 `Data Source=.\\!sql-instanz!;Initial Catalog=!fiskaltrust!;User ID=!user!;Password=!password!;MultipleActiveResultSets=True` 
 
-Beispiel für einen `connectionstring` bei Verwendung von MySQL:
+Example of a `connectionstring` when using MySQL:
 
 `Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;` 
 
-Beispiel für einen `connectionstring` bei Verwendung von SQLite:
+Example of a `connectionstring` when using SQLite:
 
 `Data Source=c:\mydb.db;Version=3;Password=myPassword;` 
 
-Folgende Schlüssel-Wert Paare werden in dem **`Configuration` **Objekt einer Queue im Feld **`init_ftQueue`**  verwendet:
+The following key-value pairs are used in the **`Configuration` **object of a queue in the **`init_ftQueue`** field:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `ftQueueId` |ja |  ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden.|
-| `ftCashBoxId` |ja |  ```GUID String``` | Identifikation  der Cashbox. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden.|
-| `CountryCode` |ja |  ```String``` | Länderkürzel. Für Deutschland: "DE".|
-| `Timeout` |nein |  ```Int``` | Timeout in Millisekunden. |
+| `ftQueueId` |yes |  ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden.|
+| `ftCashBoxId` |yes |  ```GUID String``` | Identifikation  der Cashbox. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden.|
+| `CountryCode` |yes |  ```String``` | Länderkürzel. Für Deutschland: "DE".|
+| `Timeout` |no |  ```Int``` | Timeout in Millisekunden. |
 
 Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Queue im Feld **`init_ftQueueDE`**  verwendet:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `ftQueueDEId` |ja |  ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden. (Hier muss der gleiche Wert wie bei `ftQueueId` verwendet werden.) |
-| `CashBoxIdentification` |ja |  ```printable String (20)``` | Kassenseriennummer. Wird auch als Client-ID für die TSE verwendet. Printable String, max. 20 Zeichen.|
-| `ftSignaturCreationUnitDEId` |ja |  ```GUID String```  | Die ID der SCU mit der sich diese Queue verbinden soll.|
+| `ftQueueDEId` |yes |  ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden. (Hier muss der gleiche Wert wie bei `ftQueueId` verwendet werden.) |
+| `CashBoxIdentification` |yes |  ```printable String (20)``` | Kassenseriennummer. Wird auch als Client-ID für die TSE verwendet. Printable String, max. 20 Zeichen.|
+| `ftSignaturCreationUnitDEId` |yes |  ```GUID String```  | Die ID der SCU mit der sich diese Queue verbinden soll.|
 
 Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Queue im Feld **`init_ftSignaturCreationUnitDE`**  verwendet:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `ftSignaturCreationUnitDEId` |ja |  ```GUID String``` | Identifikation der SCU mit der sich diese Queue verbinden soll. Die Systemvariable `scu{0-9}_id` kann verwendet werden. |
-| `Url` |ja |  ```String``` | Kommunikationsendpunkte der SCU. Als Array im String Bsp: ```"[\"grpc://localhost:10081\", \"grpc://localhost:10082\"]"```. Normalerweise wird nur ein Endpunkt benötigt. |
+| `ftSignaturCreationUnitDEId` |yes |  ```GUID String``` | Identifikation der SCU mit der sich diese Queue verbinden soll. Die Systemvariable `scu{0-9}_id` kann verwendet werden. |
+| `Url` |yes |  ```String``` | Kommunikationsendpunkte der SCU. Als Array im String Bsp: ```"[\"grpc://localhost:10081\", \"grpc://localhost:10082\"]"```. Normalerweise wird nur ein Endpunkt benötigt. |
 
 **SCU**
 
 Folgende Packages stehen aktuell für SCUs zur Verfügung:
 
-| **Package Name**        | **Beschreibung**          |
+| **Package Name**        | **Description**          |
 |----------------------|----------------------|
 | `fiskaltrust.Middleware.SCU.DE.CryptoVision` | Dieses Package ermöglicht die Kommunikation mit einer Cryptovision TSE.|
 | `fiskaltrust.Middleware.SCU.DE.DieboldNixdorf` | Dieses Package ermöglicht die Kommunikation mit einer Diebold Nixdorf TSE.|
@@ -748,48 +748,48 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **
 
 **Swissbit TSE**
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `devicePath` |ja |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Swissbit TSE an der Kasse angeschossen wird. |
-| `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |nein |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `devicePath` |yes |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Swissbit TSE an der Kasse angeschossen wird. |
+| `adminPin` |no |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
 
 **Cryptovision TSE**
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `devicePath` |ja |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Cryptovision TSE an der Kasse angeschossen wird. |
-| `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |nein |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `devicePath` |yes |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Cryptovision TSE an der Kasse angeschossen wird. |
+| `adminPin` |no |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
 
 **Diebold Nixdorf**
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `comPort` |ja (nur USB) |  ```String``` | Definiert den Com Anschluß an, an dem die TSE angeschlossen wird. Zum Beispiel `COM6`. Nur zu verwenden wenn es sich um eine USB-TSE ohne Connect Box handelt. |
-| `url` |ja (nur Connect Box) |  ```String``` | Verbindungs-Url falls es sich um eine Diebold Nixdorf Connect Box handelt. |
-| `adminUser` |nein |  ```String``` | Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminUser` |nein |  ```String``` | Time Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |nein |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `slotNumber` |ja (nur Connect Box) |  ```Int``` | Slot-Nummer der TSE falls hierbei eine Diebold Nixdorf Connect Box verwendet wird. |
+| `comPort` |yes (nur USB) |  ```String``` | Definiert den Com Anschluß an, an dem die TSE angeschlossen wird. Zum Beispiel `COM6`. Nur zu verwenden wenn es sich um eine USB-TSE ohne Connect Box handelt. |
+| `url` |yes (nur Connect Box) |  ```String``` | Verbindungs-Url falls es sich um eine Diebold Nixdorf Connect Box handelt. |
+| `adminUser` |no |  ```String``` | Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `adminPin` |no |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `timeAdminUser` |no |  ```String``` | Time Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `timeAdminPin` |no |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `slotNumber` |yes (nur Connect Box) |  ```Int``` | Slot-Nummer der TSE falls hierbei eine Diebold Nixdorf Connect Box verwendet wird. |
 
 **Epson** 
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `tseurl` |ja |  ```String``` | Url zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein |
-| `tseport` |nein |  ```String``` | Port zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein|
-| `deviceid` |nein |  ```String``` | Device Id beim Epson Server.|
-| `timeout` |nein | Int | Timeout in Millisekunden |
+| `tseurl` |yes |  ```String``` | Url zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein |
+| `tseport` |no |  ```String``` | Port zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein|
+| `deviceid` |no |  ```String``` | Device Id beim Epson Server.|
+| `timeout` |no | Int | Timeout in Millisekunden |
 
 **Fiskaly**
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `apiKey` |ja |  ```String``` | Fiskaly API Schlüssel |
-| `apiSecret` |ja |  ```String``` | Fiskaly API Secret |
-| `tssId` |ja |  ```GUID String``` | ID der TSE von Fiskaly |
+| `apiKey` |yes |  ```String``` | Fiskaly API Schlüssel |
+| `apiSecret` |yes |  ```String``` | Fiskaly API Secret |
+| `tssId` |yes |  ```GUID String``` | ID der TSE von Fiskaly |
 
 #### System variables
 
@@ -817,7 +817,7 @@ Beim Anlegen des Template kann gewählt werden an welche Zielgruppe das Template
 
 Optionen für **KassenHersteller**:
 
-| **Option**        | **Beschreibung**          |
+| **Option**        | **Description**          |
 |----------------------|----------------------|
 | `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
 | `Privat (nur Besitzer)` | Freigabe nur für dem Kassenhersteller selbst (z.B. zum Testen) |
@@ -826,7 +826,7 @@ Optionen für **KassenHersteller**:
 
 Optionen für **KassenHändler**:
 
-| **Option**        | **Beschreibung**          |
+| **Option**        | **Description**          |
 |----------------------|----------------------|
 | `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
 | `Privat (nur Besitzer)` | Freigabe nur für dem Kassenhändler selbst (z.B. zum Testen). |
@@ -834,7 +834,7 @@ Optionen für **KassenHändler**:
 
 Optionen für **KassenBetreiber**:
 
-| **Option**        | **Beschreibung**          |
+| **Option**        | **Description**          |
 |----------------------|----------------------|
 | `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
 | `Privat (nur Besitzer)` | Freigabe nur für dem Kassenbetreiber selbst. |

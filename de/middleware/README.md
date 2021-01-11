@@ -552,7 +552,7 @@ Auf eine Cloud-TSE muss über das Internet zugegriffen werden. In folgendem Szen
 
 #### KassenSystem im Rechenzentrum des Betreibers mit Cloud-TSE
 
-Auch hier greift das KassenSystem mit Hilfe der fikalterust SCU über das Internet auf eine Cloud-TSEs zu. In der lokalen Umgebung befinden sich lediglich Terminals ohne Kassenfunktion die über das Internet auf das elektronische KassenSystem im Rechenzentrum des Betreibers zugreifen.
+Auch hier greift das KassenSystem mit Hilfe der fiskaltrust SCU über das Internet auf eine Cloud-TSEs zu. In der lokalen Umgebung befinden sich lediglich Terminals ohne Kassenfunktion die über das Internet auf das elektronische KassenSystem im Rechenzentrum des Betreibers zugreifen.
 
 ![anbindung-rechenzentrum-cloud-tse](images/anbindung-rechenzentrum-cloud-tse.png)
 
@@ -564,7 +564,7 @@ Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnunsgsystem in
 
 - Anbindung an einen lokale Netzwerk-Drucker mit TSE
 - Anbindung an einen TSE-Server im lokalen Netzwerk
-- Anbindung von Cloud-TSEs (sobald zertifiziert)
+- Anbindung von Cloud-TSEs
 - Anbindung an eine Diebold-Nixdorf Hardware-TSE, da die Kommunikation hierbei über COM-Port stattfindet
 
 ![virtualisierungs-vorschlag](images/virtualisierungs-vorschlag.png)
