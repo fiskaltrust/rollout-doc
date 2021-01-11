@@ -77,11 +77,11 @@ Occasionally, fiskaltrust partners do not fit exactly into the partner roles des
 │   └── <a href="./middleware/README.md#rollout-scenarios" title="Rollout scenarios">Rollout scenarios</a>
 │   └── <a href="./middleware/README.md#rollout-automation" title="Rollout automationt">Rollout automation</a>
 ├── <a href="./shop/README.md" title="Buy and resell fiskaltrust products">Buy and resell fiskaltrust products</a>
-│   └── <a href="./shop/README.md" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
-│   └── <a href="./shop/README.md" title="Framework agreements for volume discount">Framework agreements for volume discount</a>
-│   └── <a href="./shop/README.md" title="Buy products via Entitlements">Buy products via Entitlements</a>
-│   └── <a href="./shop/README.md" title="Transfer of purchased entitlements to the POSOperators">Transfer of purchased entitlements to the POSOperators</a>
-│   └── <a href="./shop/README.md" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
-│   └── <a href="./shop/README.md" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
-│   └── <a href="./shop/README.md" title="Fiskaly Cloud TSE  check out and setup">Fiskaly Cloud TSE  check out and setup</a>
+│   └── <a href="./shop/README.md#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
+│   └── <a href="./shop/README.md#framework-agreements-for-volume-discount" title="Framework agreements for volume discount">Framework agreements for volume discount</a>
+│   └── <a href="./shop/README.md#buy-products-via-entitlements" title="Buy products via Entitlements">Buy products via Entitlements</a>
+│   └── <a href="./shop/README.md#transfer-of-purchased-entitlements-to-the-posoperator" title="Transfer of purchased entitlements to the POSOperators">Transfer of purchased entitlements to the POSOperators</a>
+│   └── <a href="./shop/README.md#delivery-options-for-hardware-tses" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
+│   └── <a href="./shop/README.md#swissbit-cloud-tse-check-out-and-setup" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
+│   └── <a href="./shop/README.md#fiskaly-cloud-tse-check-out-and-setup" title="Fiskaly Cloud TSE  check out and setup">Fiskaly Cloud TSE  check out and setup</a>
 </pre>

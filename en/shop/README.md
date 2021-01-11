@@ -18,15 +18,15 @@
 ## Table of contents
 
 <pre>
-├── <a href="#einleitung" title="Einleitung">Einleitung</a>
+├── <a href="#introduction" title="Introduction">Introduction</a>
 ├── <a href="#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
-├── <a href="#rahmenverträge-für-mengenrabatt" title="Rahmenverträge für Mengenrabatt">Rahmenverträge für Mengenrabatt</a>
-├── <a href="#produkte-über-entitlements-kaufen" title="fiskaltrust.Shop">Produkte über Entitlements kaufen</a>
-├── <a href="#übertragung-gekaufter-entitlements-an-die-kassenbetreiber" title="Übertragung gekaufter Entitlements an die KassenBetreiber">Übertargung gekaufter Entitlements an die KassenBetreiber</a>
-├── <a href="#tipps--tricks" title="Tipps & Tricks">Tipps & Tricks</a>
-├── <a href="#lieferoptionen-für-hardware-tses" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
-├── <a href="#swissbit-cloud-tse-auschecken-und-einrichten" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
-├── <a href="#fiskaly-cloud-tse-auschecken-und-einrichten" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
+├── <a href="#framework-agreements-for-volume-discount" title="Framework agreements for volume discount">Framework agreements for volume discount</a>
+├── <a href="#buy-products-via-entitlements" title="Buy products via Entitlements">Buy products via Entitlements</a>
+├── <a href="#transfer-of-purchased-entitlements-to-the-posoperator" title="Transfer of purchased entitlements to the POSOperator">Transfer of purchased entitlements to the POSOperator</a>
+├── <a href="#tips--tricks" title="Tips & Tricks">Tips & Tricks</a>
+├── <a href="#delivery-options-for-hardware-tses" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
+├── <a href="#swissbit-cloud-tse-check-out-and-setup" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
+├── <a href="#fiskaly-cloud-tse-check-out-and-setup" title="Fiskaly Cloud TSE check out and setup">Fiskaly Cloud TSE check out and setup</a>
 
 </pre>
 
@@ -175,55 +175,55 @@ Step 7: Switch back to your own account and check out the shopping cart there an
 The difference to the process described in the above chapter is that the entitlement/claim to the hardware TSE is no longer transferred to the POSOperator and activated under his account, but is activated directly in your own account. Thus, the delivery of the hardware TSE from the carefree package is made directly to you as the POSDealer. However, it is important that you continue to transfer the "fiskaltrust.Sorglos" (carefree package) claim to the POSOperator and activate it in the account of the POSOperator for the correct outlet of the POSOperator.
 
 
-## Swissbit Cloud TSE auschecken und einrichten
+## Swissbit Cloud TSE check out and setup
 
-In diesem Kapitel möchten wir Ihnen anhand eines Beispiels das Auschecken und Einrichten einer Swissbit Cloud TSE als Bestandteil eines Sorglospakets mit TSE-as-a-Service vorführen. Dabei werden wir als Erweiterung zur oben beschriebenen Vorgehensweise das Erwerben des Anspruchs für das Sorglospaket ("fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt") direkt im Account des KassenBetreibers vornehmen. Zudem werden wir für die Einrichtung, also für die Erstellung der Cashbox, das für die Swissbit Cloud TSE von fiskaltrust zur Verfügung gestellte Default-Template im selben Warenkorb auschecken. Diese beiden Erweiterungen/Optimierungen sind auch im Kapitel [Tipps & Tricks](#tipps--tricks) beschrieben.
+In this chapter, we would like to use an example to demonstrate how to check out and set up a Swissbit Cloud TSE as part of a Carefree package with TSE-as-a-Service. As an extension to the procedure described above, we will acquire the entitlement for the carefree package ("fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt") directly in the account of the POSOperator. In addition, for the setup, i.e. for the creation of the cashbox, we will check out the default template provided for the Swissbit Cloud TSE by fiskaltrust in the same shopping cart. These two extensions/optimizations are also described in the chapter [Tips & Tricks](#tips--tricks).
 
-Loggen Sie sich in Ihren KassenHändler Account ein und wechseln Sie im ersten Schritt mit Hilfe der surrogate Funktion in den Account des KassenBetreiber. Suchen Sie dazu unter dem Menüpunkt "POSOperator->Übersicht" den KassenBetreiber für den Sie die Swissbit Cloud TSE auschecken und einrichten möchten:
+Log in to your POSDealer account and change in the first step with the help of the surrogate function in the account of the POSOperator. To do this, search under the menu item "POSOperator->Overview" for the POSOperator for which you want to check out and set up the Swissbit Cloud TSE:
 
 ![kassenbetreiber suchen](images/kassenbetreiber-suchen.png "KassenBetreiber suchen")
 
-Drücken Sie nun auf den Namen des KassenBetreibers, der in der Liste als Link dargestellt wird (sollte hier der Name des KassenBetreibers nicht als Link erscheinen, dann hat er die Nutzungsvereinbarung noch nicht unterschrieben). Dadurch werden Sie zu dem Account des KassenBetreibers weitergeleitet. Das erkennen Sie daran, dass im oberen Bereich rechts ein Button Namens "Zu Ihrem Account wechseln" erscheint und zudem in der Menüleiste nun der Firmenname es KassenBetreibers angezeigt wird.
+Now press on the name of the POSOperator, which is displayed in the list as a link (if the name of the POSOperator does not appear here as a link, then he has not yet signed the user agreement). This will redirect you to the POSOperator's account. You can recognize this by the fact that a button named "Switch to your account" appears in the upper area on the right and the company name of the POSOperator is now displayed in the menu bar.
 
 ![im betreiber account](images/im-kassenbetreiber-account.png "Im Account des KassenBetreiber")
 
-Drücken Sie nun hier im Account des KassenBetreiber auf den Menüpunkt: "Shop->Produkte". Wählen Sie zuerst im oberen Bereich den gewünschten Standort des KassenBetreibers aus.
+Now press the menu item: "Shop->Products" in the account of the POSOperator. First select the desired outlet of the POSOperator in the upper area.
 
 ![swissbit cloud produkte](images/swissbit-cloud-1.png "Swissbit Cloud TSE Produkte")
 
-Legen Sie als Nächstes folgende Produkte in den Warenkorb:
+Next, add the following products to your shopping cart:
 
 - fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt
 - Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen
 - fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen
-- fiskaltrust.Middleware mit Swissbit Cloud TSE (das ist das fiskaltrust Template zum Erstellen der Cashbox)
+- fiskaltrust.Middleware mit Swissbit Cloud TSE (this is the fiskaltrust template to create the CashBox).
 
-Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
+Important: To check out the shopping cart, **you must** now return to your POSDealer account. To do this, press the "Switch to your account" button in the upper area on the right:
 
 ![Zurück zum KassenHändler Account](images/zuruek-zum-hanendler-account.png "Zurück zum KassenHändler Account")
 
 
 
-Zurück in Ihrem Account können sie nun sehen, dass die zuvor gewählten Produkte ebenfalls in Ihrem Warenkorb erscheinen:
+Back in your account, you can now see that the previously selected products also appear in your shopping cart:
 
 ![swissbit cloud checkout](images/swissbit-cloud-2.png "Swissbit Cloud TSE Checkout")
 
-Drücken Sie hier auf "Checkout" und überprüfen Sie dann den Warenkorb bevor Sie die Bestellung abschicken. Überprüfen Sie vor allem die Richtigkeit der Standortangaben.
+Press "Checkout" here and then check the shopping cart before submitting the order. Especially check the correctness of the outlet information.
 
 ![swissbit cloud check](images/swissbit-cloud-3.png "Swissbit Cloud TSE Überprüfen")
 
-Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und Sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
+Next, you will see the successful order and you will also receive a confirmation email about it. You can view your orders at any time in the "Shop->Orders" area. The corresponding invoices are in the area "Shop->Invoices".
 
-Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minuten dauern) können Sie im Account des KassenBetreibers sehen, dass das zuvor bestellte Sorglospaket im Standort des KassenBetreibers aktiviert wurde. Wechseln Sie dafür mit Hilfe der surrogation Funktion in den Account des KassenBetreibers und gehen Sie im Menü auf "[Firmenname] -> Standorte":
+After the order has been processed by the fiskaltrust system (can take 2-3 minutes), you can see in the POSOperator's account that the previously ordered carefree package has been activated in the POSOperator's outlet. To do this, use the surrogation function to switch to the POSOperator's account and go to "[Company name] -> Outlets" in the menu:
 
 ![sorglos aktiv](images/swissbit-cloud-4.png "Sorglos aktiviert")
 
-Zudem wurde die CashBox ebenfalls angelegt, weil wir davor das Template in den Warenkorb gelegt haben und ausgescheckt haben. Um dies zu Überprüfen, gehen Sie im Menü auf "Konfiguration -> Cashbox":
+In addition, the CashBox was also created because before that we added the template to the cart and checked out. To check this, go to "Configuration -> CashBox" in the menu:
 
 ![cashbox angelegt](images/swissbit-cloud-5.png "Cashbox angelegt")
 
-Damit ist die Cashbox für die Swissbit-Cloud TSE eingerichtet. Sie können nun den gewünschten Launcher downloaden und starten, er verwendet zur Konfiguration die zuvor angelegte Cashbox für die Swissbit Cloud TSE.
+This sets up the CashBox for the Swissbit Cloud TSE. You can now download and start the desired launcher, it uses the previously created CashBox for the Swissbit Cloud TSE for configuration.
 
-## Fiskaly Cloud TSE auschecken und einrichten
+## Fiskaly Cloud TSE check out and setup
 
-Der Vorgang zum Auschecken und Einrichten einer Fiskaly Cloud TSE ist analog zu dem oben im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten) beschrieben Vorgang. Der Unterschied ist nur, dass Sie hierbei die Fiskaly Cloud TSE statt der Swissbit Cloud TSE beziehen und einrichten. Legen Sie dazu statt dem Produkt "Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen" das Produkt "Fisklay Cloud TSE-as-a-Service - aus - Anspruch erzeugen" in den Warenkorb. Legen Sie zudem statt dem Template-Produkt "fiskaltrust.Middleware mit Swissbit Cloud TSE" das Template-Produkt "fiskaltrust.Middleware mit Fiskaly Cloud TSE" in den Warenkorb. Ansonsten ist die Vorgehensweise identisch mit der oben beschriebenen für die Swissbit Cloud TSE.
+The process for checking out and setting up a Fiskaly Cloud TSE is analogous to the process described above in chapter [Swissbit Cloud TSE check out and set up](#swissbit-cloud-tse-check-out-and-setup). The only difference is that here you obtain and set up the Fiskaly Cloud TSE instead of the Swissbit Cloud TSE. To do this, place the product "Fisklay Cloud TSE-as-a-Service - aus - Anspruch erzeugen" in the shopping cart instead of the product "Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen". Also, instead of the template product "fiskaltrust.Middleware mit Swissbit Cloud TSE", put the template product "fiskaltrust.Middleware mit Fiskaly Cloud TSE" in the shopping cart. Otherwise, the procedure is identical to the one described above for the Swissbit Cloud TSE.
