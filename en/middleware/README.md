@@ -75,7 +75,7 @@ The fiskaltrust.Middleware is modular and consists of several components. The mo
 
 
 
-![Aufbau der Middleware](images/middleware.png "Aufbau der Middleware")
+![structure of the middleware](images/middleware.png "structure of the middleware")
 
 
 
@@ -96,7 +96,7 @@ The configuration of a fiskaltrust.Middleware instance is done via a so-called *
 
 
 
-![CashBox](images/cashbox.png "CashBox mit Queue und SCU")
+![CashBox](images/cashbox.png "CashBox with Queue and SCU")
 
 
 
@@ -121,7 +121,7 @@ The SCU is responsible for creating the signatures. It receives the data to be s
 
 Now you will surely ask yourself why we have to configure here how the SCU should be reachable by the Queue, if the Queue and SCU are components of the fiskaltrust.Middleware after all. Isn't the Queue already aware of how to reach the SCU? Well, the answer lies in the flexibility of the fiskaltrust.Middleware, because an instance of the fiskaltrust.Middleware operates only exactly those components, which are specified in its CashBox. For example, three cash registers can share one SCU and thus one hardware TSE:
 
-![Flexibilität der Middleware](images/cash-register-as-sever-hw-tse.png "Flexibilität der Middleware")
+![flexibility of the middleware](images/cash-register-as-sever-hw-tse.png "flexibility of the middleware")
 
 Each cash register runs an instance of the fiskaltrust.Middleware, which is configured by its own CashBox. The CashBoxes of the upper and lower cash registers contain only the configuration of a Queue. The CashBox of the middle cash register contains the configuration of a Queue and a SCU. To make the SCU from the middle cash register (e.g. main cash register) reachable for the other two cash registers or Queues, we have to specify in the Queue configuration how and where the SCU is reachable (and of course release the corresponding port). To ensure that a Queue connects to the correct SCU, we must specify this connection when creating the CashBox for the queue. 
 
@@ -137,11 +137,11 @@ Our CashBox shall contain a Queue and a SCU. The SCU accesses a USB TSE. Specifi
 
 In the fiskaltrust.Portal, go to "Configuration -> Signature creation unit". The list of SCUs already created appears. 
 
-![SCU Anlegen 1](images/add-scu-1.png "Liste der SCUs")
+![add-scu-1](images/add-scu-1.png "list of SCUs")
 
 Now press the "+ Create" button. A form for entering the SCU data appears.
 
-![SCU Anlegen 2](images/add-scu-2.png "SCU Anlegen")
+![add-scu-2](images/add-scu-2.png "add SCU")
 
 1. Enter the name of the SCU here (e.g. "TEST SCU").
 2. Depending on the TSE, select the package (module) that the SCU should use (in our example we use a CryptoVision TSE).
@@ -151,7 +151,7 @@ Now press the "+ Create" button. A form for entering the SCU data appears.
 
 The SCU has been created and we are now forwarded to the second configuration form. This form depends on the previously selected package. In our example, we must specify the device path for the Cryptovision TSE. For another package, something else may be required here (e.g. Com-Port for a Diebold TSE). 
 
-![SCU Anlegen 3](images/add-scu-3.png "SCU Konfigurieren")
+![add-scu-3](images/add-scu-3.png "configure SCU")
 
 1. Enter the device path (i.e. `E:` in our case).
 2. Now specify how and where the SCU is to be accessible for a Queue. First press the corresponding button for the type of communication (e.g. `grpc`) and then enter the path (e.g. `localhost:1401`).
@@ -159,7 +159,7 @@ The SCU has been created and we are now forwarded to the second configuration fo
 
 In the list we can now see that our SCU configuration has been successfully created:
 
-![SCU Anlegen 4](images/add-scu-4.png "Liste mit angelegter SCU")
+![add-scu-4](images/add-scu-4.png "List of SCUs")
 
 
 
@@ -169,11 +169,11 @@ In the list we can now see that our SCU configuration has been successfully crea
 
 Next, we create the Queue configuration. To do this, we go to "Configuration -> Queue". The list of already created Queues is displayed.
 
-![Queue Anlegen 1](images/add-queue-1.png "Liste der Queues")
+![add-queue-1](images/add-queue-1.png "List of Queues")
 
 Now press the "+ Create new" button. A form for entering the Queue data appears.
 
-![Queue Anlegen 2](images/add-queue-2.png "Queue anlegen")
+![add-queue-2](images/add-queue-2.png "Add Queue")
 
 1. Enter the name of the Queue here (e.g. "TEST QUEUE"). 2.
 2. Select how the data should be persisted (e.g. SQLite database). 
@@ -187,7 +187,7 @@ Now press the "+ Create new" button. A form for entering the Queue data appears.
 
 The Queue has been created and we are now forwarded to the second configuration form. This form depends on the previously selected persistence package. In our example, we do not have to make any further entries for the SQLite database, because it is automatically created by the fiskaltrust.Middleware. However, if it was a different package, then appropriate connection specifications must be made here. For example, the specification of a connection string for a MySQL database. 
 
-![Queue Anlegen 3](images/add-queue-3.png "Queue konfigurieren")
+![add-queue-3](images/add-queue-3.png "Konfigure Queue")
 
 1. If necessary, enter the database connection details (not necessary in this example, the SQLite DB). 
 2. Now specify how the Queue should be accessible from the POSSystem. First press the corresponding button for the type of communication (e.g. `http(REST)`) and then enter the path (e.g. `localhost:1200/fiskaltrust`).
@@ -195,7 +195,7 @@ The Queue has been created and we are now forwarded to the second configuration 
 
 In the list we can now see that our Queue configuration has been successfully created:
 
-![Queue Anlegen 4](images/add-queue-4.png "Liste mit angelegter Queue")
+![add-queue-4](images/add-queue-4.png "List with added Queue")
 
 
 
@@ -203,11 +203,11 @@ In the list we can now see that our Queue configuration has been successfully cr
 
 After creating the SCU and the Queue, we next create the CashBox, meaning the configuration container for the fiskaltrust.Middleware instance. To do this, go to "Configuration->CashBox". The list of already created CashBoxes will be displayed.
 
-![CashBox Anlegen 1](images/add-cashbox-1.png "Liste der CashBoxen")
+![add-cashbox-1](images/add-cashbox-1.png "List of CashBoxenes")
 
 Now press the "+ Add" button. A form for entering the CashBox data will appear.
 
-![CashBox Anlegen 2](images/add-cashbox-2.png "CashBox Anlegen")
+![add-cashbox-2](images/add-cashbox-2.png "Add CashBox")
 
 1. Enter the name of the CashBox here (e.g. "TEST CASHBOX")
 
@@ -217,37 +217,37 @@ Now press the "+ Add" button. A form for entering the CashBox data will appear.
 
 In the list we can now see that our new CashBox has been successfully created:
 
-![CashBox Anlegen 3](images/add-cashbox-3.png "Liste mit angelegter CashBox")
+![add-cashbox-3](images/add-cashbox-3.png "List with added CashBox")
 
 **Step 4: Fill the CashBox**
 
 After creating the CashBox, it is to be filled next. In our example, we want to put the previously created Queue configuration and the SCU configuration into the CashBox. The list entry with our CashBox can be expanded. Here we can see that it is currently still empty.
 
-![CashBox Füllen 1](images/fill-cashbox-1.png "CashBox aufklappen")
+![fill-cashbox-1](images/fill-cashbox-1.png "CashBox expand")
 
 To fill the newly created CashBox press the "Edit by list" button in the list entry of the CashBox.
 
-![CashBox Füllen 2](images/fill-cashbox-2.png "Bearbeiten per Liste")
+![fill-cashbox-2](images/fill-cashbox-2.png "Edit by list")
 
 The list of existing configurations is displayed.
 
 We can choose here which configurations we want to add to our configuration container so into the CashBox. For our example we select the Queue and the SCU we created before and then press the "Save" button.
 
-![CashBox Füllen 3](images/fill-cashbox-3.png "Queue und SCU in die CashBox")
+![fill-cashbox-3](images/fill-cashbox-3.png "Queue and SCU into the CashBox")
 
 Back in the list, we can expand the list entry of our CashBox again and now see that it contains Queue and SCU.
 
-![CashBox Füllen 4](images/fill-cashbox-4.png "CashBox ist befüllt")
+![fill-cashbox-4](images/fill-cashbox-4.png "CashBox is filled")
 
 **Step 5: Connect the Queue with the SCU**
 
 As described above, we need to tell the Queue which SCU to use to sign the data. So we have to "connect" the Queue with the SCU. In our case, the Queue and SCU are in the same CashBox. Nevertheless, we have to create the connection. To do this, we press the "Connect" button in the expanded list entry of the CashBox, which is displayed to the right of the Queue:
 
-![Queue-SCU Verbinden 1](images/connect-queue-scu-1.png "Verbinden Button")
+![connect-queue-scu-1](images/connect-queue-scu-1.png "connect button")
 
 A popup appears with the available SCUs. From this list we can now select our previously created SCU, save and close the popup.
 
-![Queue-SCU Verbinden 2](images/connect-queue-scu-2.png "SCU wählen")
+![connect-queue-scu-2](images/connect-queue-scu-2.png "select SCU")
 
 The queue now knows with which SCU it has to communicate and where the SCU can be reached.
 
@@ -255,7 +255,7 @@ The queue now knows with which SCU it has to communicate and where the SCU can b
 
 The last step is to publish the created CashBox. This is done with the "Rebuild configuration" button available in the list line of the CasBox.
 
-![CashBox publizieren](images/publish-cashbox.png "Rebuild configuration")
+![Rebuild configuration](images/publish-cashbox.png "Rebuild configuration")
 
 This makes the CashBox available for download as a JSON file. This JSON configuration file can later be downloaded by a fiskaltrust.Middleware instance and used for initial initialization or for an update. In case of an update, for example update of the SCU package version due to a change in the law, the change is only made available in the CashBox after the "Rebuild configuration" button has been pressed. If the fiskaltrust.Middleware instance to which this CashBox is assigned is then restarted, it loads the new configuration and updates itself automatically, e.g. by downloading and using the new package. 
 
@@ -267,7 +267,7 @@ To test the service, meaning a fiskaltrust.Middleware instance, we download the 
 
 You will receive a zip compressed folder that you can unzip on the cash register. Unzip the zip file. 
 
-![Launcher entpacken](images/unzip-launcher.png "Launcher endpacken")
+![Launcher unzip](images/unzip-launcher.png "Launcher unzip")
 
 The resulting folder can also be renamed if necessary. The folder contains the launcher `fiskaltrust.exe`, the service represented by the `.dll` files, a configuration file named `fiskaltrust.exe.config` and three command files:
 
@@ -283,7 +283,7 @@ The command files can be used for parameterized starting or stopping of the serv
 
 Thus `fiskaltrust.exe` is started with the `cashobxid` "259c..". Thus the started fiskaltrust.Middleware instance knows from which configuration container (CashBox) it should initialize itself. The `cashboxid` is the ID of the CashBox and can be seen in the fiskaltrust.Portal in the expanded list entry of the CashBox:
 
-![CashBoxId und AccessToken](images/cashbox-id-and-accesstoken.png "CashBoxId und AccessToken")
+![CashBoxId and AccessToken](images/cashbox-id-and-accesstoken.png "CashBoxId and AccessToken")
 
 To be able to load the CashBox from the fiskaltrust.Portal the service needs an access authorization. This is specified via the `accesstoken` parameter. The value can also be found in the fiskaltrust.Portal in the expanded list entry of the CashBox (see above).
 
@@ -363,7 +363,7 @@ In the fiskaltrust.Portal we can see the above submitted request and the resulti
 
 An overview of the processed receipt requests appears:
 
-![Liste der Belege](images/list-of-receipts.png "Liste der Belege")
+![List of receipts](images/list-of-receipts.png "List of receipts")
 
 Notice: 
 
@@ -371,7 +371,7 @@ If the receipts do not appear here, it is possible that the communication of the
 
 Now press the button with the eye symbol in the line with the previously sent pos-receipt request (see above). You can now view an exemplary representation of the receipt. In addition, the concrete request and the answer to the POS system are displayed:
 
-![Beleg](images/receipt.png "Anzeige des Belegs im Portal")
+![receipt](images/receipt.png "Show receipt in portal")
 
 
 
@@ -431,7 +431,7 @@ To test the data export via the fiskaltrust.Portal you can proceed as follows:
 
 In the fiskaltrust.Portal, go to the menu item "Configuration -> Queue". You will find a list entry for each Queue. The list entry of the Queue contains the buttons for exporting the journals:
 
-![portal-journal-export](images/portal-journal-export.png "Journal Export über das fiskaltrust.Portal")
+![portal-journal-export](images/portal-journal-export.png "Journal Export by the fiskaltrust.Portal")
 
 
 
@@ -441,15 +441,15 @@ In the fiskaltrust.Portal, go to the menu item "Configuration -> Queue". You wil
 
 To do this, first go to the "Configuration -> Queue" menu item in the fiskaltrust.Portal. You will find a list entry for each Queue. In the list entry of the Queue there is an "Export" button:
 
-![portal-queue-export](images/portal-queue-export.png "Export von Queue Daten über das fiskaltrust.Portal")
+![portal-queue-export](images/portal-queue-export.png "Export of Queue Data by the fiskaltrust.Portal")
 
 The export view for the selected Queue appears. Here you can select the type of export and trigger the export:
 
-![portal export wählen](images/portal-export-choose.png "Export wählen über das fiskaltrust.Portal")
+![portal export choose](images/portal-export-choose.png "Choose export in the fiskaltrust.Portal")
 
 Set the desired filters in the upper filter area, then select e.g. "Full export (CSV)" and press the "Start export" button at the bottom. You will be redirected to the list of triggered exports, where you will see that the export is currently being processed. As soon as the desired export is available, you can expand the list entry and download the finished export.
 
-![portal export download](images/portal-export-download.png "Export downloaden über das fiskaltrust.Portal")
+![portal export download](images/portal-export-download.png "Export download from the fiskaltrust.Portal")
 
 The procedure described above can be performed analogously to all export formats offered in the export view. When testing the DSFinV-K and TAR file export, make sure that a corresponding dayly closing receipt has been sent to the fiskaltrust.Middelware from the POSSystem.
 
