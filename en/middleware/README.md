@@ -445,7 +445,7 @@ To do this, first go to the "Configuration -> Queue" menu item in the fiskaltrus
 
 The export view for the selected Queue appears. Here you can select the type of export and trigger the export:
 
-![portal export wählen](images/portal-export-waehlen.png "Export wählen über das fiskaltrust.Portal")
+![portal export wählen](images/portal-export-choose.png "Export wählen über das fiskaltrust.Portal")
 
 Set the desired filters in the upper filter area, then select e.g. "Full export (CSV)" and press the "Start export" button at the bottom. You will be redirected to the list of triggered exports, where you will see that the export is currently being processed. As soon as the desired export is available, you can expand the list entry and download the finished export.
 
