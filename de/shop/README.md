@@ -44,7 +44,7 @@ In diesem Kapitel gehen wir auf die dazugehörigen Vorgänge ein und zeigen wie 
 
 Der Einkauf von fiskaltrust Produkten findet über den fiskaltrust.Shop statt. Dieser ist Bestandteil des fiskaltrust.Portals. Im Bereich "Produkte" werden je nach [Partnerrolle](../README.md#die-unterschiedlichen-rollen-der-fiskaltrust-partner) passende fiskaltrust Produkte zum Kauf angeboten. Für KassenHändler sind das neben diversen TSE sogenannte "Händlereinkaufsprodukte", die sogenannte Entitlements, also Ansprüche darstellen:
 
-![shop-haenlder-produkte](images/shop-haenlder-produkte.png "Produkte für KassenHändler im Shop")
+![shop-haenlder-produkte](images/shop-dealer-products.png "Produkte für KassenHändler im Shop")
 
 
 
@@ -62,38 +62,38 @@ Im folgenden Beispiel zeigen wir Ihnen wie Sie als KassenHändler nach der Unter
 
 Gehen Sie im fiskaltrust.Portal auf den Menüpunkt "Shop->Produkte" und legen Sie hier z.B. 15 Stück der Produkts "fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt" in den Warenkorb:
 
-![entitlements-kaufen-1](images/entitlements-kaufen-1.png "Produkte in den Warenkorb legen")
+![entitlements-kaufen-1](images/buy-entitlements-1.png "Produkte in den Warenkorb legen")
 
 
 
 In der oberen Leiste wird ein Warenkorb-Symbol angezeigt auf das Sie drücken können. Es erscheint ein Popup. Wählen Sie hier "Checkout":
 
-![entitlements-kaufen-2](images/entitlements-kaufen-2.png "Checkout")
+![entitlements-kaufen-2](images/buy-entitlements-2.png "Checkout")
 
 
 
 
 Als Nächstes wird die Zusammenfassung Ihrer Bestellung angezeigt:
 
-![entitlements-kaufen-3](images/entitlements-kaufen-3.png "Bestellung wird angezeigt")
+![entitlements-kaufen-3](images/buy-entitlements-3.png "Bestellung wird angezeigt")
 
 
 
 Überprüfen Sie die Angaben und die dargestellten Preise. Drücken Sie danach den Button: "Verbindlich Bestellen". Sie erhalten daraufhin eine Bestätigung zu Ihrer Bestellung:
 
-![entitlements-kaufen-4](images/entitlements-kaufen-4.png "Bestellung bestätigt")
+![entitlements-kaufen-4](images/buy-entitlements-4.png "Bestellung bestätigt")
 
 Sie erhalten auch eine entsprechende Bestätigung der Bestellung per Email.
 
 Sie können zudem in dem Bereich "Shop->Bestellungen" jederzeit Ihre Bestellungen einsehen:
 
-![entitlements-kaufen-5](images/entitlements-kaufen-5.png "Bestellungen einsehen")
+![entitlements-kaufen-5](images/buy-entitlements-5.png "Bestellungen einsehen")
 
 Die dazugehörige Rechnung finden Sie unter "Shop->Rechnungen".
 
 Nach der Bearbeitung der Bestellung durch das fiskaltrust System, erscheinen im Bereich "Shop->Entitlements" die Ihnen gutgeschriebenen Entitlements. In unserem Beispiel erhalten wir 15 Entitlements zur Einlösung des Sorglospakets und 15 Entitlements zur Einlösung der dazugehörigen TSE-as-a-Service:
 
-![entitlements-kaufen-6](images/entitlements-kaufen-6.png "Entitlements gutgeschrieben")
+![entitlements-kaufen-6](images/buy-entitlements-6.png "Entitlements gutgeschrieben")
 
 ## Übertragung gekaufter Entitlements an die KassenBetreiber
 
@@ -101,19 +101,19 @@ Die Übertragung der gekaufen Ansprüche/Entitlements und die Aktivierung der da
 
 Zur Übertragung der zuvor gekauften Entitlements an den KassenBetreiber wechseln Sie mit Hilfe der surrogate Funktion im fiskaltrust.Portal aus Ihrem Account als KassenHändler heraus in den Account des KassenBetreibers. Gehen Sie dazu in den Bereich "POSOperator->Übersicht" und suchen Sie hier den KassenBetreiber dem Sie das oder die Entitlements übertragen möchten:
 
-![kassenbetreiber suchen](images/kassenbetreiber-suchen.png "KassenBetreiber suchen")
+![kassenbetreiber suchen](images/search-posoperator.png "KassenBetreiber suchen")
 
 Drücken Sie nun auf den Namen des KassenBetreibers, der in der Liste als Link dargestellt wird (sollte hier der Name des KassenBetreibers nicht als Link erscheinen, dann hat er die Nutzungsvereinbarung noch nicht unterschrieben). Wenn Sie auf den Link drücken, werden Sie zu dem Account des KassenBetreibers weitergeleitet. Das erkennen Sie daran, dass im oberen Bereich rechts ein Button Namens "Zu Ihrem Account wechseln" erscheint und zudem in der Menüleiste nun der Firmenname es KassenBetreibers angezeigt wird.
 
-![im betreiber account](images/im-kassenbetreiber-account.png "Im Account des KassenBetreiber")
+![im betreiber account](images/in-posoperator-account.png "Im Account des KassenBetreiber")
 
 Gehen Sie nun im Menü zu "Shop->Produkte". Wählen Sie hier zuerst im oberen Bereich den Standort des KassenBetreibers, welchem Sie die Ansprüche übertragen möchten und legen Sie dann die gewünschten "Übertragungsprodukte" in den Warenkorb. In unseren Beispiel: "TSE-as-a-Service - Anspruch übertragen" und "fiskaltrust.Sorglos -Anspruch übertragen":
 
-![Ansprüche übertragen](images/ansprueche-uebertragen-1.png "Ansprüche übertragen")
+![Ansprüche übertragen](images/transfer-claims-1.png "Ansprüche übertragen")
 
 Legen Sie als nächstes zur Aktivierung beim KassenBetreiber die zu den Ansprüchen dazugehörigen "Erzeugungsprodukte" ebenfalls in den Warenkorb. Wir entscheiden uns nun in diesem Beispiel für eine Swissbit USB Hardware-TSE. In unserem Beispiel sind also die "Erzeugungsprodukte": "Swissbit USB Hardware TSE-as-a-Service - aus - Anspruch erzeugen" und "fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen" in den Warenkorb zu legen. Hinweis: Achten Sie bitte darauf, dass beim Legen in den Warenkorb im oberen Bereich der richtige Standort ausgewählt ist.
 
-![Produkte aktivieren](images/ansprueche-uebertragen-2-2.png "Produkte aktivieren")
+![Produkte aktivieren](images/transfer-claims-2.png "Produkte aktivieren")
 
 Die oben beschriebenen Schritte können Sie, wenn gewünscht, auch für andere Standorte und auch für andere Ihrer KassenBetreiber wiederholen und auch für diese die Ansprüche und Aktivierungen in den Warenkorb legen:
 
@@ -125,25 +125,25 @@ Der 2te und 3te Schritt (aktivieren/erzeugen) bezieht sich immer auf den oben ge
 
 Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
 
-![Zurück zum KassenHändler Account](images/zuruek-zum-hanendler-account.png "Zurück zum KassenHändler Account")
+![Zurück zum KassenHändler Account](images/back-to-posoperator-account.png "Zurück zum KassenHändler Account")
 
 Zürück in Ihrem Account können sie nun sehen, dass die zuvor gewählten Produkte ebenfalls in Ihrem Warenkorb erscheinen:
 
-![Checkout im Händleraccount](images/checkout-im-haendleraccount-2.png "Checkout im KassenHändler Account")
+![Checkout im Händleraccount](images/checkout-in-posoperator-account.png "Checkout im KassenHändler Account")
 
 Drücken Sie hier auf "Checkout" und überprüfen Sie dann den Warenkorb bevor Sie die Bestellung abschicken. Überprüfen Sie vor allem die Richtigkeit der Standortangaben. Diese Übertragungen und Aktivierungen von Produkten für den KassenBetreiber sollten natürlich kostenlos sein.
 
-![Bestellung](images/bestellung-fuer-betreiber-2.png "Bestellung der Übertragungen und Aktivierungen")
+![Bestellung](images/order-for-operator.png "Bestellung der Übertragungen und Aktivierungen")
 
 Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und Sie erhalten auch eine Bestätigung per Email dazu. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen"
 
 Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minuten dauern) werden Ihnen die verbrauchten Ansprüche abgezogen. In unserem Beispiel sind jetzt nur noch 14 von zuvor 15 übrig geblieben.
 
-![Ansprüche verbraucht](images/ansprueche-verbraucht.png "Ansprüche verbraucht")
+![Ansprüche verbraucht](images/claims-consumed.png "Ansprüche verbraucht")
 
 Zudem können wir im Account des KassenBetreibers sehen, dass das Sorglospaket für den zuvor bei der Aktivierung angegebenen Standort aktiviert wurde:
 
-![Produkt Sorglos aktiviert](images/sorglos-aktiviert.png "Produkt Sorglos aktiviert")
+![Produkt Sorglos aktiviert](images/carefree-activated.png "Produkt Sorglos aktiviert")
 
 
 ## Tipps & Tricks
@@ -182,11 +182,11 @@ In diesem Kapitel möchten wir Ihnen anhand eines Beispiels das Auschecken und E
 
 Loggen Sie sich in Ihren KassenHändler Account ein und wechseln Sie im ersten Schritt mit Hilfe der surrogate Funktion in den Account des KassenBetreiber. Suchen Sie dazu unter dem Menüpunkt "POSOperator->Übersicht" den KassenBetreiber für den Sie die Swissbit Cloud TSE auschecken und einrichten möchten:
 
-![kassenbetreiber suchen](images/kassenbetreiber-suchen.png "KassenBetreiber suchen")
+![kassenbetreiber suchen](images/search-posoperator.png "KassenBetreiber suchen")
 
 Drücken Sie nun auf den Namen des KassenBetreibers, der in der Liste als Link dargestellt wird (sollte hier der Name des KassenBetreibers nicht als Link erscheinen, dann hat er die Nutzungsvereinbarung noch nicht unterschrieben). Dadurch werden Sie zu dem Account des KassenBetreibers weitergeleitet. Das erkennen Sie daran, dass im oberen Bereich rechts ein Button Namens "Zu Ihrem Account wechseln" erscheint und zudem in der Menüleiste nun der Firmenname es KassenBetreibers angezeigt wird.
 
-![im betreiber account](images/im-kassenbetreiber-account.png "Im Account des KassenBetreiber")
+![im betreiber account](images/in-posoperator-account.png "Im Account des KassenBetreiber")
 
 Drücken Sie nun hier im Account des KassenBetreiber auf den Menüpunkt: "Shop->Produkte". Wählen Sie zuerst im oberen Bereich den gewünschten Standort des KassenBetreibers aus.
 
@@ -201,7 +201,7 @@ Legen Sie als Nächstes folgende Produkte in den Warenkorb:
 
 Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
 
-![Zurück zum KassenHändler Account](images/zuruek-zum-hanendler-account.png "Zurück zum KassenHändler Account")
+![Zurück zum KassenHändler Account](images/back-to-posoperator-account.png "Zurück zum KassenHändler Account")
 
 
 
