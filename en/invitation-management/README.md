@@ -78,7 +78,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
    
 
-![Übersicht KassenSysteme](images/menu-possystems.png "Übersicht der Kassensysteme")
+![menu-possystems](images/menu-possystems.png "Overview POSSystems")
 
 
 
@@ -86,7 +86,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
    
 
-![Kassensystem erfassen](images/add-possystem.png "Kassensystem erfassen")
+![add POSSystem](images/add-possystem.png "add POSSystem")
 
 
 
@@ -94,7 +94,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
 
 
-![Kassensystem in Übersicht](images/possystem-in-overview.png "Kassensystem in Übersicht")
+![Overview POSSystems](images/possystem-in-overview.png "Overview POSSystems")
 
 
 
@@ -104,7 +104,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
 
 
-![Übersicht der Händler](images/overview-dealers.png "Übersicht der Händler")
+![Overview POSDealers](images/overview-dealers.png "Overview POSDealers")
 
 
 
@@ -112,7 +112,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
 
 
-![Ansprechpartner beim Händler](images/dealer-contact.png "Ansprechpartner beim Händler angeben")
+![contact person at dealer](images/dealer-contact.png "POSDealer contact person")
 
 
 
@@ -120,23 +120,23 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
 
 
-![Händler erfassen](images/add-dealer-data.png "Händler erfassen")
+![add posdealer](images/add-dealer-data.png "Add POSDealer")
 
 
 
 7. After entering the data in the form, press the "Add/Invite" button. The portal will then send an invitation email to the POSDealer (to the specified contact person). In the overview, the POSDealer can now be seen as assigned:
 
-![Händler wurde erfasst](images/dealer-data-added.png "Händler wurde erfasst")
+![pos dealer added](images/dealer-data-added.png "POSDealer added")
 
  In addition, the POSDealer receives two emails (an invitation email and an assignment email):
 
 **Invitation email to the POSDealer:**
 
-![Händler bekommt eine Einladungs-Email](images/dealer-invitation-mail.png "Händler bekommt eine Einladungs-Email")
+![dealer-invitation-mail](images/dealer-invitation-mail.png "POSDealer receives an invitation email")
 
 **Assignment email to the POSDealer:**
 
-![Händler bekommt eine Zuordnungs-Email](images/dealer-connection-mail.png "Händler bekommt eine Zuordnungs-Email")
+![dealer-connection-mail](images/dealer-connection-mail.png "POSDealer receives a connection email")
 
 
 
@@ -144,7 +144,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
    
 
-![Händler setzt Passwort](images/dealer-sets-pwd.png "Händler setzt Passwort um die Registrierung abzuschließen")
+![POSDealer sets password to finish the registration](images/dealer-sets-pwd.png "POSDealer sets password to finish the registration")
 
 
 
@@ -152,7 +152,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
    
 
-![Händler aktiviert Rolle](images/dealer-activates-role.png "Händler aktiviert Rolle")
+![posdealer role activation](images/dealer-activates-role.png "POSDealer activates role")
 
 
 
@@ -160,7 +160,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
     
 
-![Händler unterschreibt Vertrag](images/dealer-signs-contract.png "Händler unterschreibt den Kooperationsvertrag mit fiskaltrust")
+![posdealer signs contract](images/dealer-signs-contract.png "POSDealer signs cooperation agreement with fiskaltrust")
 
 
 
@@ -171,7 +171,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
     
 
 
-![Händler Rolle wurde aktiviert](images/dealer-contract-signed.png "Rolle KassenHändler wurde nach Unterschrift aktiviert")
+![posdealer role activated](images/dealer-contract-signed.png "POSDealer role has been activated")
 
 
 
@@ -179,7 +179,7 @@ As a POSCreator, you can register your POSSystem in the fiskaltrust.Portal as fo
 
     
 
-![Händler bekommt Aktivierungsmail](images/delealer-activation-mail.png "Aktivierung der Rolle KassenHändler wird dem Händler auch per Email mitgeteilt")
+![POSDealer](images/delealer-activation-mail.png "Aktivierung der Rolle KassenHändler wird dem Händler auch per Email mitgeteilt")
 
 
 
@@ -301,7 +301,7 @@ Ask the POSOperator to digitally sign the user agreement. If the POSOperator has
 
 ![Einladungsprotokoll aufrufen](images/invitation-protocol.png "Einladungsprotokoll aufrufen")
 
-The history (Protocol) of your invitations sent in the past is displayed. Here you can now resend the invitation email in the associated list entry with the help of a button:
+The history of your invitations sent in the past is displayed. Here you can now resend the invitation email in the associated list entry with the help of a button:
 
 ![Einladungs-Email erneut senden lassen](images/resend-invitation.png "Einladungs-Email erneut senden lassen")
 
