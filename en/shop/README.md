@@ -44,7 +44,7 @@ In this chapter, we will go into the associated processes and show how they can 
 
 The purchase of fiskaltrust products takes place via the fiskaltrust.Shop. It is part of the fiskaltrust.Portal. In the "Products" area, suitable fiskaltrust products are offered for purchase depending on the [partner role](../README.md#the-different-roles-of-the-fiskaltrust-partners). For POSDealers, these are, in addition to various TSEs, so-called "Händereinkaufsprodukt", which represent entitlements:
 
-![shop-haenlder-produkte](images/shop-dealer-products.png "Produkte für KassenHändler im Shop")
+![shop-dealer-products](images/shop-dealer-products.png "Products for POSDealers in shop")
 
 
 
@@ -62,38 +62,38 @@ In the following example, we show you how you as a POSDealer can purchase entitl
 
 In the fiskaltrust.portal, go to the menu item "Shop->Products" and place e.g. 15 pieces of the product "fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt" (entitlement for a carefree package with TSE-as-a-service) in the shopping cart:
 
-![entitlements-kaufen-1](images/buy-entitlements-1.png "Produkte in den Warenkorb legen")
+![buy-entitlements-1](images/buy-entitlements-1.png "Add products to chart")
 
 
 
 In the top bar you will see a shopping cart icon that you can press. A popup will appear. Select "Checkout" here:
 
-![entitlements-kaufen-2](images/buy-entitlements-2.png "Checkout")
+![buy-entitlements-2](images/buy-entitlements-2.png "Checkout")
 
 
 
 
 Next, the summary of your order will be displayed:
 
-![entitlements-kaufen-3](images/buy-entitlements-3.png "Bestellung wird angezeigt")
+![buy-entitlements-3](images/buy-entitlements-3.png "Order is shown")
 
 
 
 Check the information and the displayed prices. Then press the button: "Binding order". You will receive a confirmation of your order:
 
-![entitlements-kaufen-4](images/buy-entitlements-4.png "Bestellung bestätigt")
+![buy-entitlements-4](images/buy-entitlements-4.png "Order confirmed")
 
 You will also receive a corresponding confirmation of the order by email.
 
 You can also view your orders at any time in the "Shop->Orders" section:
 
-![entitlements-kaufen-5](images/buy-entitlements-5.png "Bestellungen einsehen")
+![buy-entitlements-5](images/buy-entitlements-5.png "Order")
 
 You can find the corresponding invoice under "Shop->Invoices".
 
 After the order has been processed by the fiskaltrust system, the Entitlements credited to you will appear in the "Shop->Entitlements" area. In our example, we receive 15 Entitlements for redeeming the Carefree package and 15 Entitlements for redeeming the associated TSE-as-a-Service:
 
-![entitlements-kaufen-6](images/buy-entitlements-6.png "Entitlements gutgeschrieben")
+![buy-entitlements-6](images/buy-entitlements-6.png "Entitlements received")
 
 ## Transfer of purchased entitlements to the POSOperator
 
@@ -101,19 +101,19 @@ The transfer of the purchased entitlements and the activation of the associated 
 
 To transfer the previously purchased entitlements to the POSOperator, use the surrogate function in the fiskaltrust.Portal to switch from your account as a POSDealer to the account of the POSOperator. To do this, go to the "POSOperator->Overview" area and search for the POSOperator to whom you want to transfer the entitlement(s):
 
-![kassenbetreiber suchen](images/search-posoperator.png "KassenBetreiber suchen")
+![search posoperator](images/search-posoperator.png "Search POSOperator")
 
 Now press on the name of the POSOperator, which is displayed in the list as a link (if the name of the POSOperator does not appear here as a link, then he has not yet signed the user agreement). If you click on the link, you will be redirected to the account of the POSOperator. You can recognize this by the fact that a button named "Switch to your account" appears in the upper area on the right and the company name of the POSOperator is now displayed in the menu bar.
 
-![im betreiber account](images/in-posoperator-account.png "Im Account des KassenBetreiber")
+![in operator account](images/in-posoperator-account.png "In the account of the POSOperator")
 
 Now go to "Shop->Products" in the menu. Here, first select in the upper area the outlet of the POSOperator to which you want to transfer the entitlements and then put the desired "transfer products" in the shopping cart. In our example: "TSE-as-a-Service - Anspruch übertragen" (transfer claim for a TSE-as-a-Service)  and "fiskaltrust.Sorglos - Anspruch übertragen" (transfer claim for the carefree package):
 
-![Ansprüche übertragen](images/transfer-claims-1.png "Ansprüche übertragen")
+![transfer claims](images/transfer-claims-1.png "Transfer claims")
 
 Next, add the "activation products" associated with the claims to the shopping cart for activation at the POSOperator. In this example, we now decide to use a Swissbit USB hardware TSE. In our example, the "activation products": "Swissbit USB Hardware TSE-as-a-Service - aus - Anspruch erzeugen" (activate Swissbit USB TSE-as-a-Service by using the entitlement/claim) and "fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen" (activate the carefree package by using the entitlement/claim) are to be added to the shopping cart. Note: Please make sure that the correct outlet is selected in the upper area before adding to the shopping cart.
 
-![Produkte aktivieren](images/transfer-claims-2.png "Produkte aktivieren")
+![activate products](images/transfer-claims-2.png "activate products")
 
 If desired, you can repeat the steps described above for other outlets and also for other of your POSOperators and add the claims and activations to the shopping cart for them as well:
 
@@ -125,25 +125,25 @@ The 2nd and 3rd step (activate) always refers to the outlet selected above and c
 
 Important: To check out the shopping cart, **you must** now return to your POSDealer account. To do this, press the "Switch to your account" button in the upper area on the right:
 
-![Zurück zum KassenHändler Account](images/back-to-posoperator-account.png "Zurück zum KassenHändler Account")
+![back to the posdealer account](images/back-to-posoperator-account.png "Back to the POSDealer account")
 
 Back in your account you can now see that the previously selected products also appear in your shopping cart:
 
-![Checkout im Händleraccount](images/checkout-in-posoperator-account.png "Checkout im KassenHändler Account")
+![Checkout in the POSDealer account](images/checkout-in-posoperator-account.png "Checkout in the POSDealer account")
 
 Press "Checkout" here and then check the shopping cart before submitting the order. Above all, check the correctness of the outlet information. These transfers and activations of products for the POSOperator should of course be free of charge.
 
-![Bestellung](images/order-for-operator.png "Bestellung der Übertragungen und Aktivierungen")
+![Order](images/order-for-operator.png "Order")
 
 Next, you will see the successful order and you will also receive a confirmation email about it. You can view your orders at any time in the "Shop->Orders" area. The corresponding invoices are in the area "Shop->Invoices".
 
 After the order is processed by the fiskaltrust system (can take 2-3 minutes), the used entitlements will be deducted from you. In our example, there are now only 14 left from 15 before.
 
-![Ansprüche verbraucht](images/claims-consumed.png "Ansprüche verbraucht")
+![claims consumed](images/claims-consumed.png "Claims consumed")
 
 In addition, we can see in the POSOperator's account that the carefree package has been activated for the outlet previously specified during activation:
 
-![Produkt Sorglos aktiviert](images/carefree-activated.png "Produkt Sorglos aktiviert")
+![carefree activated](images/carefree-activated.png "Product carefree activated")
 
 
 ## Tips & Tricks
@@ -181,15 +181,15 @@ In this chapter, we would like to use an example to demonstrate how to check out
 
 Log in to your POSDealer account and change in the first step with the help of the surrogate function in the account of the POSOperator. To do this, search under the menu item "POSOperator->Overview" for the POSOperator for which you want to check out and set up the Swissbit Cloud TSE:
 
-![kassenbetreiber suchen](images/search-posoperator.png "KassenBetreiber suchen")
+![Search POSOperator](images/search-posoperator.png "Search POSOperator")
 
 Now press on the name of the POSOperator, which is displayed in the list as a link (if the name of the POSOperator does not appear here as a link, then he has not yet signed the user agreement). This will redirect you to the POSOperator's account. You can recognize this by the fact that a button named "Switch to your account" appears in the upper area on the right and the company name of the POSOperator is now displayed in the menu bar.
 
-![im betreiber account](images/in-posoperator-account.png "Im Account des KassenBetreiber")
+![In the account of the PosOperator](images/in-posoperator-account.png "In the account of the PosOperator")
 
 Now press the menu item: "Shop->Products" in the account of the POSOperator. First select the desired outlet of the POSOperator in the upper area.
 
-![swissbit cloud produkte](images/swissbit-cloud-1.png "Swissbit Cloud TSE Produkte")
+![swissbit cloud products](images/swissbit-cloud-1.png "Swissbit Cloud TSE products")
 
 Next, add the following products to your shopping cart:
 
@@ -200,7 +200,7 @@ Next, add the following products to your shopping cart:
 
 Important: To check out the shopping cart, **you must** now return to your POSDealer account. To do this, press the "Switch to your account" button in the upper area on the right:
 
-![Zurück zum KassenHändler Account](images/back-to-posoperator-account.png "Zurück zum KassenHändler Account")
+![Back to the POSDealer account](images/back-to-posoperator-account.png "Back to the POSDealer account")
 
 
 
@@ -210,17 +210,17 @@ Back in your account, you can now see that the previously selected products also
 
 Press "Checkout" here and then check the shopping cart before submitting the order. Especially check the correctness of the outlet information.
 
-![swissbit cloud check](images/swissbit-cloud-3.png "Swissbit Cloud TSE Überprüfen")
+![swissbit cloud check](images/swissbit-cloud-3.png "Swissbit Cloud TSE check")
 
 Next, you will see the successful order and you will also receive a confirmation email about it. You can view your orders at any time in the "Shop->Orders" area. The corresponding invoices are in the area "Shop->Invoices".
 
 After the order has been processed by the fiskaltrust system (can take 2-3 minutes), you can see in the POSOperator's account that the previously ordered carefree package has been activated in the POSOperator's outlet. To do this, use the surrogation function to switch to the POSOperator's account and go to "[Company name] -> Outlets" in the menu:
 
-![sorglos aktiv](images/swissbit-cloud-4.png "Sorglos aktiviert")
+![carefee aktiv](images/swissbit-cloud-4.png "Carefree activated")
 
 In addition, the CashBox was also created because before that we added the template to the cart and checked out. To check this, go to "Configuration -> CashBox" in the menu:
 
-![cashbox angelegt](images/swissbit-cloud-5.png "Cashbox angelegt")
+![cashbox created](images/swissbit-cloud-5.png "Cashbox created")
 
 This sets up the CashBox for the Swissbit Cloud TSE. You can now download and start the desired launcher, it uses the previously created CashBox for the Swissbit Cloud TSE for configuration.
 
