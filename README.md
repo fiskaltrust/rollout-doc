@@ -17,7 +17,7 @@
 
 ## Deutsch
 
-Dieses Repository beinhaltet die **Rollout Dokumentation** von fiskaltrust für den deutschen Markt. Es unterstüzt Kassenhersteller und Kassenhändler beim Rolloutprozess der fiskaltrust.Middleware und anderer fiskaltrust Produkte. 
+Dieses Repository beinhaltet die **Rollout Dokumentation** von fiskaltrust für den deutschen Markt. Es unterstüzt KassenHersteller und KassenHändler beim Rolloutprozess der fiskaltrust.Middleware und anderer fiskaltrust Produkte. 
 
 * [zu dem Inhalten auf Deutsch](de/README.md)
 
