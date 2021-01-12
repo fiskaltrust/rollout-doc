@@ -1,7 +1,7 @@
 <div align="center">
 <img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
 <br/>
-<strong>Compliance-As-A-Service for POSSystems</strong>
+<strong>Compliance-as-a-Service for POSSystems</strong>
 <br/>
 <br/>
 <h1>Rollout documentation for Germany</h1>
@@ -22,11 +22,11 @@
 ├── <a href="#configuration-of-the-fiskaltrustmiddleware" title="Configuration of the fiskaltrust.Middleware">Configuration of the fiskaltrust.Middleware</a>
 │   └── <a href="#structure-of-the-fiskaltrustmiddleware" title="Structure of the fiskaltrust.Middleware">Structure of the fiskaltrust.Middleware</a>
 │   └── <a href="##the-cashbox-as-a-configuration-container" title="The CashBox as a configuration container">The CashBox as a configuration container</a>
-│       └── <a href="#configuration-of-the-queue" title="Configuration of the queue">Configuration of the queue</a>
+│       └── <a href="#configuration-of-the-queue" title="Configuration of the queue">Configuration of the Queue</a>
 │       └── <a href="#configuration-of-the-scu" title="Configuration of the SCU">Configuration of the SCU</a>
 │   └── <a href="#create-cashbox-manually-via-the-fiskaltrustportal" title="Create CashBox manually via the fiskaltrust.Portal">Create CashBox manually via the fiskaltrust.Portal</a>
 ├── <a href="#start-and-test-the-service" title="Start and test the service">Start and test the service</a>
-│   └── <a href="#test-the-availability-of-the-queue" title="Test the availability of the queue">Test the availability of the queue</a>
+│   └── <a href="#test-the-availability-of-the-queue" title="Test the availability of the Queue">Test the availability of the Queue</a>
 │   └── <a href="#initialization-of-the-fiskaltrustmiddleware-instance-via-an-initial-operation-receipt" title="Initialization of the fiskaltrust.Middleware instance via an initial-operation receipt">Initialization of the fiskaltrust.Middleware instance via an initial-operation receipt</a>
 │   └── <a href="#send-a-pos-receipt" title="Send a pos-receipt">Send a pos-receipt</a>
 │   └── <a href="#check-connection-with-the-fiskaltrustcloud" title="Check connection with the fiskaltrust.Cloud">Check connection with the fiskaltrust.Cloud</a>
@@ -102,7 +102,7 @@ The configuration of a fiskaltrust.Middleware instance is done via a so-called *
 
 So for the example above we need to configure the Queue and the SCU and then put these two configurations into a configuration container (CashBox). But what exactly do we have to configure for the Queue and for the SCU?
 
-#### Configuration of the queue
+#### Configuration of the Queue
 
 As mentioned above, the Queue is the component of the fiskaltrust.Middleware that is available to the POSSystem for queries via the IPOS Interface. In addition, the Queue is responsible for the persistence of the processed data. And these are exactly the two points that we have to configure here:
 
@@ -123,7 +123,7 @@ Now you will surely ask yourself why we have to configure here how the SCU shoul
 
 ![flexibility of the middleware](images/cash-register-as-sever-hw-tse.png "flexibility of the middleware")
 
-Each cash register runs an instance of the fiskaltrust.Middleware, which is configured by its own CashBox. The CashBoxes of the upper and lower cash registers contain only the configuration of a Queue. The CashBox of the middle cash register contains the configuration of a Queue and a SCU. To make the SCU from the middle cash register (e.g. main cash register) reachable for the other two cash registers or Queues, we have to specify in the Queue configuration how and where the SCU is reachable (and of course release the corresponding port). To ensure that a Queue connects to the correct SCU, we must specify this connection when creating the CashBox for the queue. 
+Each cash register runs an instance of the fiskaltrust.Middleware, which is configured by its own CashBox. The CashBoxes of the upper and lower cash registers contain only the configuration of a Queue. The CashBox of the middle cash register contains the configuration of a Queue and a SCU. To make the SCU from the middle cash register (e.g. main cash register) reachable for the other two cash registers or Queues, we have to specify in the Queue configuration how and where the SCU is reachable (and of course release the corresponding port). To ensure that a Queue connects to the correct SCU, we must specify this connection when creating the CashBox for the Queue. 
 
 ### Create CashBox manually via the fiskaltrust.Portal
 
@@ -313,17 +313,17 @@ A console appears in which the fisklatrust.Middleware instance is started. We ca
 
 Now you can try to send requests from the POSSystem to the started fiskaltrust.Middleware instance. As a POSDealer, corresponding buttons will be available to you in the POSSystem UI. 
 
-In our example we simulate a POSSystem using [Postman](https://www.postman.com/). Postman can send requests to the queue via `REST`. For this we use our collection from the fiskaltrust [middleware-demo-postman github repository](https://github.com/fiskaltrust/middleware-demo-postman). The repository also contains the instructions for configuring the Postman collection. Important here is the specification of the endpoint at which the Queue is accessible and the specification of the CashBoxId as values for the already created variables:
+In our example we simulate a POSSystem using [Postman](https://www.postman.com/). Postman can send requests to the Queue via `REST`. For this we use our collection from the fiskaltrust [middleware-demo-postman github repository](https://github.com/fiskaltrust/middleware-demo-postman). The repository also contains the instructions for configuring the Postman collection. Important here is the specification of the endpoint at which the Queue is accessible and the specification of the CashBoxId as values for the already created variables:
 
 ![postman config](images/postman-config.png "postman config")
 
-### Test the availability of the queue
+### Test the availability of the Queue
 
 First we send a `echo` request to check the availability of the Queue. As a POSDealer, you will have a corresponding button available in the POSSystem. In our example we use the "Echo" request from the Postman collection described above:
 
 ![postman echo](images/postman-echo.png "postman echo request")
 
-The queue responds and we now know that the fiskaltrust.Middleware instance is reachable and available for further requests. We can also see the request and its processing in the previously started console as a log message:
+The Queue responds and we now know that the fiskaltrust.Middleware instance is reachable and available for further requests. We can also see the request and its processing in the previously started console as a log message:
 
 ![Terminal echo](images/terminal-echo.png "terminal echo")
 
@@ -357,7 +357,7 @@ The fiskaltrust.Middleware processes the request and sends back a response conta
 
 ### Check connection with the fiskaltrust.Cloud
 
-In the fiskaltrust.Portal we can see the above submitted request and the resulting receipt, because they are uploaded via the Helipad Helper every 5 minutes. To do this, go to "Configuration->Queue" and press the "ReceiptJournal" button in the list entry of the queue.
+In the fiskaltrust.Portal we can see the above submitted request and the resulting receipt, because they are uploaded via the Helipad Helper every 5 minutes. To do this, go to "Configuration->Queue" and press the "ReceiptJournal" button in the list entry of the Queue.
 
 ![ReceiptJournal](images/receipt-journal.png "ReceiptJournal")
 
@@ -416,7 +416,7 @@ As a POSDealer, you should also have corresponding buttons available in the POSS
 
 #### Data export via the fiskaltrust.Portal
 
-The following data can be exported per queue:
+The following data can be exported per Queue:
 
 - Full export (XML or CSV) - export of all data sent to the Queue. The data is aggregated in the form of an XML file or CSV file.
 - Action journal in internal fiskaltrust format (JSON)
@@ -503,7 +503,7 @@ The fiskaltrust.Middleware runs on each cash register. The CashBox of the main c
 ![tse-on-cashregister](images/cash-register-as-sever-hw-tse.png)
 
 ### A cloud TSE for multiple cash registers
-The fiskaltrust.Middleware runs on each cash register. The CashBox of each cash register configures the fiskaltrust.Middleware instance with its own queue and its own SCU. Each SCU accesses the same cloud TSE. This scenario enables cloud TSEs to be saved. One advantage here is that the SCU does not become a bottleneck, since each POS has its own SCU. However, since all requests are sent to the same cloud TSE, the TSE becomes a bottleneck. Furthermore, both possible [performance bottlenecks](#performance recommendation) in the cloud TSE and our [fair use policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/tse-fiskaly-fair-use-policy.md) must also be taken into account here.
+The fiskaltrust.Middleware runs on each cash register. The CashBox of each cash register configures the fiskaltrust.Middleware instance with its own Queue and its own SCU. Each SCU accesses the same cloud TSE. This scenario enables cloud TSEs to be saved. One advantage here is that the SCU does not become a bottleneck, since each POS has its own SCU. However, since all requests are sent to the same cloud TSE, the TSE becomes a bottleneck. Furthermore, both possible [performance bottlenecks](#performance recommendation) in the cloud TSE and our [fair use policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/tse-fiskaly-fair-use-policy.md) must also be taken into account here.
 
 ![tse-on-cashregister](images/cash-register-with-cloud-tse.png)
 
@@ -608,7 +608,7 @@ In the following, we will discuss these and other optimization options and show 
 
 ### Overview manual process
 
-As already mentioned in the introduction, basically one CashBox is required per cash register. Normally, the configuration of a queue and a SCU is made here and these are linked with each other. 
+As already mentioned in the introduction, basically one CashBox is required per cash register. Normally, the configuration of a Queue and a SCU is made here and these are linked with each other. 
 
 There are also other scenarios (see [Rollout scenarios](./README.md#rollout-scenarios ) which we will discuss later. The configuration of the CashBox is described in the chapter [Configuration of the fiskaltrust.Middleware](./README.md#configuration-of-the-fiskaltrustmiddleware).
 
@@ -663,8 +663,8 @@ The following tables show the possible contents (data structure) of a template:
 |----------------------|--------------------------|--------------------------|---------------------|
 | `ftCashBoxId` |yes | ```GUID String``` | Identifies the CashBox in the fiskaltrust system and must therefore be unique. Will later be part of the authentication of the cash register with fiskaltrust. The system variable ```|[cashbox_id]|``` can be used here to automatically generate and use the value when generating the CashBox from fiskaltrust. |
 | `ftSignaturCreationDevices` |no | `PackageConfiguration [ ]` | Array, contains the configurations of the SCUs to be used. |
-| `ftQueues` |no | `PackageConfiguration [ ]` | Array, contains the configurations of the queues to be used. |
-| `helpers` |no | `PackageConfiguration [ ]` | Array, contains the configurations of the helpers to be used. |
+| `ftQueues` |no | `PackageConfiguration [ ]` | Array, contains the configurations of the Queues to be used. |
+| `helpers` |no | `PackageConfiguration [ ]` | Array, contains the configurations of the Helpers to be used. |
 | `TimeStamp` |no | ```DateTime.UtcNow.Ticks``` | Time of creation of the template.|
 
 A **`PackageConfiguration`** object is structured as follows:
@@ -708,7 +708,7 @@ Example of a `connectionstring` when using SQLite:
 
 `Data Source=c:\mydb.db;Version=3;Password=myPassword;` 
 
-The following key-value pairs are used in the **`Configuration` **object of a queue in the **`init_ftQueue`** field:
+The following key-value pairs are used in the **`Configuration` **object of a Queue in the **`init_ftQueue`** field:
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
@@ -717,15 +717,15 @@ The following key-value pairs are used in the **`Configuration` **object of a qu
 | `CountryCode` |yes |  ```String``` | Country code. For Germany: "DE".|
 | `Timeout` |no |  ```Int``` | Timeout in milliseconds. |
 
-The following key-value pairs are used in the **`Configuration`** object of a queue in the **`init_ftQueueDE`** field:
+The following key-value pairs are used in the **`Configuration`** object of a Queue in the **`init_ftQueueDE`** field:
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `ftQueueDEId` |yes |  ```GUID String``` | Identification of the queue. The system variable `queue{0-9}_id` can be used. (Here the same value must be used as for `ftQueueId`). |
+| `ftQueueDEId` |yes |  ```GUID String``` | Identification of the Queue. The system variable `queue{0-9}_id` can be used. (Here the same value must be used as for `ftQueueId`). |
 | `CashBoxIdentification` |yes |  ```printable String (20)``` | Cash register serial number. Also used as client ID for the TSE. Printable string, max. 20 characters.|
-| `ftSignaturCreationUnitDEId` |yes |  ```GUID String```  | The ID of the SCU this queue should connect to.
+| `ftSignaturCreationUnitDEId` |yes |  ```GUID String```  | The ID of the SCU this Queue should connect to.
 
-The following key-value pairs are used in the **`Configuration`** object of a queue in the **`init_ftSignatureCreationUnitDE`** field:
+The following key-value pairs are used in the **`Configuration`** object of a Queue in the **`init_ftSignatureCreationUnitDE`** field:
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
@@ -895,16 +895,16 @@ Furthermore, it is possible to pass the following additional (optional) paramete
 | `outlet_number`          | Outlet number                                         | `{max(outlets used in account's existing cashboxes) + 1}` |
 | `description`            | General name. Used for the CashBox, contained Queues and SCUs, if not individually overwritten with its own parameter. | `ft{yyyyMMddHHmmss}`                                      |
 | `cashbox_description`    | Name for the cashBox. Overwrites `description `           | `ft{yyyyMMddHHmmss}`                                      |
-| `cashbox_id`             | ID of the cashbox. Can be used for new creation and for modification. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field `ftCashBoxId`. | Random GUID                                               |
+| `cashbox_id`             | ID of the CashBox. Can be used for new creation and for modification. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field `ftCashBoxId`. | Random GUID                                               |
 | `cashbox_ipaddress`      | IP address of the CashBox.                                      | Empty string                                              |
 | `cashbox_producttype`    | CashBox Product Type                                         | Empty string                                              |
-| `queue{0-9}_id`          | ID of the queue. This parameter can be used for new queues and for changes. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field `PackageConfiguration.Id`. | Random GUID                                               |
-| `queue{0-9}_description` | Name for the queue. Overwrites `description`. Warning: will be overwritten by `PackageConfiguration.Description`. | `{description}` |
+| `queue{0-9}_id`          | ID of the Queue. This parameter can be used for new Queues and for changes. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field `PackageConfiguration.Id`. | Random GUID                                               |
+| `queue{0-9}_description` | Name for the Queue. Overwrites `description`. Warning: will be overwritten by `PackageConfiguration.Description`. | `{description}` |
 |`queue{0-9}_package` |  Name of the package to create the Queue. Attention: will be overwritten by `PackageConfiguration.Package`. | Empty String |
-|`queue{0-9}_version` |  Version of the package to create the queue. Attention: will be overwritten by `PackageConfiguration.Version`. | Empty String |
-| `queue{0-9}_url` | JSON array with URLs (strings) for the queue. Attention: will be overwritten by `PackageConfiguration.Url`.  | `http://localhost:1200/fiskaltrust` for the first queue, `http://localhost:1200/fiskaltrust{1-9}` for others |
-| `queue{0-9}_configuration` | JSON element to configure the queue. Like `PackageConfiguration.Configuration` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration`. | Empty |
-| `queue{0-9}_countrycode` | Country code for the queue. Like `PackageConfiguration.Configuration.CountryCode` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration.CountryCode`.  | Empty |
+|`queue{0-9}_version` |  Version of the package to create the Queue. Attention: will be overwritten by `PackageConfiguration.Version`. | Empty String |
+| `queue{0-9}_url` | JSON array with URLs (strings) for the Queue. Attention: will be overwritten by `PackageConfiguration.Url`.  | `http://localhost:1200/fiskaltrust` for the first Queue, `http://localhost:1200/fiskaltrust{1-9}` for others |
+| `queue{0-9}_configuration` | JSON element to configure the Queue. Like `PackageConfiguration.Configuration` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration`. | Empty |
+| `queue{0-9}_countrycode` | Country code for the Queue. Like `PackageConfiguration.Configuration.CountryCode` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration.CountryCode`.  | Empty |
 | `queue{0-9}_timeout` | Timeout for the Queue. Like `PackageConfiguration.Configuration.Timeout` from the template. Attention: will be overwritten by `PackageConfiguration.Configuration.Timeout`.  | 15000 |
 | `scu{0-9}_id`                            | ID of the SCU. Can be used for new creation and for changes. In case of new creation we recommend not to specify this parameter and to leave its automatic generation to the fiskaltrust system. Attention: will be overwritten by the template field 'PackageConfiguration.Id'. | Random GUID                                                  |
 | `scu{0-9}_description`                   | Name for the SCU. Overwrites `description` . Attention: will be overwritten by `PackageConfiguration.Description`. | `{description}`                                              |

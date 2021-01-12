@@ -1,9 +1,9 @@
 <div align="center">
 <img alt="fiskaltrust" src="./images/fiskaltrust-icon.png" width="450" />
 <br/>
-<strong>Compliance-As-A-Service for POSSystems</strong>
+<strong>Compliance-as-a-Service for POSSystems</strong>
 <br/>
-<strong>Compliance-As-A-Service für Kassensysteme</strong>
+<strong>Compliance-as-a-Service für KassenSysteme</strong>
 <br/>
 <br/>
 <h1>Rollout Documentation for Germany</h1>

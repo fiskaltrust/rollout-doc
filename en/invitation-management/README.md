@@ -1,7 +1,7 @@
 <div align="center">
 <img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
 <br/>
-<strong>Compliance-As-A-Service for POSSystems</strong>
+<strong>Compliance-as-a-Service for POSSystems</strong>
 <br/>
 <br/>
 <h1>Rollout documentation for Germany</h1>
@@ -339,3 +339,5 @@ The POSOperator searched for appears as an entry in the results list. The name o
 ### Closing words
 
 We hope that the above guide regarding invitation management has been helpful to you. If you have any questions, please visit our [FAQ list](https://docs.fiskaltrust.cloud/doc/faq/qna/market-de.html). If you do not find what you are looking for here, please feel free to contact us at info@fiskaltrust.de.
+
+Continue to [Rollout of the fiskaltrust.Middleware](../middleware/README.md)

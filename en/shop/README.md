@@ -1,7 +1,7 @@
 <div align="center">
 <img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
 <br/>
-<strong>Compliance-As-A-Service for POSSystems</strong>
+<strong>Compliance-as-a-Service for POSSystems</strong>
 <br/>
 <br/>
 <h1>Rollout documentation for Germany</h1>
