@@ -371,7 +371,7 @@ If the receipts do not appear here, it is possible that the communication of the
 
 Now press the button with the eye symbol in the line with the previously sent pos-receipt request (see above). You can now view an exemplary representation of the receipt. In addition, the concrete request and the answer to the POS system are displayed:
 
-![receipt](images/receipt.png "Show receipt in portal")
+![receipt](images/display-receipt.png "Show receipt in portal")
 
 
 

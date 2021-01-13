@@ -371,7 +371,7 @@ Sollten die Belege hier nicht erscheinen, kann es sein, dass die Kommunikation d
 
 Drücken Sie nun als nächstes auf den Button mit dem Auge-Symbol in der Zeile mit dem zuvor gesendeten Abrechnungs-Beleg (s.o.). Sie können nun eine beispielhafte Darstellung des Belegs einsehen. Zudem werden die konkrete Anfrage und die Antwort an das KassenSystem angezeigt:
 
-![Beleg](images/receipt.png "Anzeige des Belegs im Portal")
+![Beleg](images/display-receipt.png "Anzeige des Belegs im Portal")
 
 
 
