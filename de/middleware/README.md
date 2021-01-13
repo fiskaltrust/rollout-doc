@@ -779,9 +779,9 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **
 
 | **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `tseurl` |ja |  ```String``` | Url zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein |
-| `tseport` |nein |  ```String``` | Port zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein|
-| `deviceid` |nein |  ```String``` | Device Id beim Epson Server.|
+| `host` |ja |  ```String``` | Url zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein |
+| `port` |nein |  ```String``` | Port zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein|
+| `deviceId` |nein |  ```String``` | Device Id beim Epson Server.|
 | `timeout` |nein | Int | Timeout in Millisekunden |
 
 **Fiskaly**

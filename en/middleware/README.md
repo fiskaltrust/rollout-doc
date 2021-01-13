@@ -778,9 +778,9 @@ The following key-value pairs are used in the **`Configuration`** object of a **
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `tseurl` |yes |  ```String``` | Url to connect to the TSE. Here the TSE will be reachable. |
-| `tseport` |no |  ```String``` | Port to connect to the TSE. Here the TSE will be reachable.|
-| `deviceid` |no |  ```String``` | Device Id if Epson Server.|
+| `host` |yes |  ```String``` | Url to connect to the TSE. Here the TSE will be reachable. |
+| `port` |no |  ```String``` | Port to connect to the TSE. Here the TSE will be reachable.|
+| `deviceId` |no |  ```String``` | Device Id if Epson Server.|
 | `timeout` |no | Int | Timeout in milliseconds |
 
 **Fiskaly**
