@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" className="hide-in-docs">
 <img alt="fiskaltrust" src="../images/fiskaltrust-icon.png" width="450" />
 <br/>
 <strong>Compliance-as-a-Service für KassenSysteme</strong>
@@ -7,7 +7,7 @@
 <h1>Rollout Dokumentation für Deutschland</h1>
 <br/>
 </div>
-<p align="center">
+<p align="center" className="hide-in-docs">
 <a href="README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
 <a href="../en/README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
 </p>
@@ -64,7 +64,7 @@ Diese Dokumentation ist auf Grundlage der oben beschriebenen Prozesse in folgend
 
 Es kommt gelegentlich vor, dass fiskaltrust Partner nicht exakt in die oben beschrieben Partnerrollen hineinpassen, weil sie zum Beispiel KassenHersteller und KassenHändler in einem sind (z.B. KassenHersteller, der selbst den Vertrieb an die Endkunden übernimmt) oder sowohl KassenHersteller als auch KassenBetreiber sind (z.B. ein Franchise Unternehmen). Sollten Sie einer dieser Partner sein und sich nicht vollständig in den hier beschriebenen Partnerrollen wiederfinden, empfehlen wir Ihnen sich dennoch an den beschriebenen Prozess zu halten, indem sie sich selbst im fiskaltrust.Portal einladen, um die fehlende(n) Partnerrolle(n) zu übernehmen und zu kompensieren. Sollten Sie weitere Fragen dazu haben, steht Ihnen gerne unser Support- und Sales-Team unter info@fiskaltrust.de zur Verfügung.
 
-
+<div className="hide-in-docs">
 
 ## Inhalte
 <pre>
@@ -87,4 +87,5 @@ Es kommt gelegentlich vor, dass fiskaltrust Partner nicht exakt in die oben besc
 │   └── <a href="./shop/README.md#fiskaly-cloud-tse-auschecken-und-einrichten" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
 
 </pre>
+</div>
 

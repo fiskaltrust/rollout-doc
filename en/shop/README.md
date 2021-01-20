@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" className="hide-in-docs">
 <img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
 <br/>
 <strong>Compliance-as-a-Service for POSSystems</strong>
@@ -7,13 +7,15 @@
 <h1>Rollout documentation for Germany</h1>
 <br/>
 </div>
-<p align="center">
+<p align="center" className="hide-in-docs">
 <a href="../../de/README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
 <a href="../README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
 </p>
 <br/>
 
 ## Buying and reselling fiskaltrust products
+
+<div className="hide-in-docs">
 
 ## Table of contents
 
@@ -29,6 +31,7 @@
 ├── <a href="#fiskaly-cloud-tse-check-out-and-setup" title="Fiskaly Cloud TSE check out and setup">Fiskaly Cloud TSE check out and setup</a>
 
 </pre>
+</div>
 
 ## Introduction
 

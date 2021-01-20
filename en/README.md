@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" className="hide-in-docs">
 <img alt="fiskaltrust" src="../images/fiskaltrust-icon.png" width="450" />
 <br/>
 <strong>Compliance-as-a-Service for POSSystems</strong>
@@ -7,7 +7,7 @@
 <h1>Rollout Documentation for Germany</h1>
 <br/>
 </div>
-<p align="center">
+<p align="center" className="hide-in-docs">
 <a href="../de/README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
 <a href="README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
 </p>
@@ -63,6 +63,7 @@ This documentation is divided into the following main elements based on the proc
 
 Occasionally, fiskaltrust partners do not fit exactly into the partner roles described above, for example because they are a POSCreator and a POSDealer in one (e.g. a POSCreator that distributes to end customers) or because they are both a POSCreator and a POSOperator (e.g. a franchise company). If you are one of these partners and do not completely fit into the partner roles described here, we recommend that you still follow the described process by inviting yourself to the fiskaltrust.Portal to take over and compensate for the missing partner role(s). If you have any further questions about this, please do not hesitate to contact our support and sales team at info@fiskaltrust.de.
 
+<div className="hide-in-docs">
 
 ## Table of contents
 
@@ -85,3 +86,4 @@ Occasionally, fiskaltrust partners do not fit exactly into the partner roles des
 │   └── <a href="./shop/README.md#swissbit-cloud-tse-check-out-and-setup" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
 │   └── <a href="./shop/README.md#fiskaly-cloud-tse-check-out-and-setup" title="Fiskaly Cloud TSE  check out and setup">Fiskaly Cloud TSE  check out and setup</a>
 </pre>
+</div>

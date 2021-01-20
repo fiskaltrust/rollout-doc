@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" className="hide-in-docs">
 <img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
 <br/>
 <strong>Compliance-as-a-Service für KassenSysteme</strong>
@@ -7,13 +7,16 @@
 <h1>Rollout Dokumentation für Deutschland</h1>
 <br/>
 </div>
-<p align="center">
+<p align="center" className="hide-in-docs">
 <a href="../README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
 <a href="../../en/README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
 </p>
 <br/>
 
 # Rollout der fiskaltrust.Middleware
+
+<div className="hide-in-docs">
+
 ## Inhalte
 
 <pre>
@@ -53,6 +56,7 @@
 │   └── <a href="#hoher-automatisierungsgrad" title="Hoher Automatisierungsgrad">Hoher Automatisierungsgrad</a>
 
 </pre>
+</div>
 
 ## Einleitung
 
@@ -646,9 +650,58 @@ Im Folgenden werden die einzelnen Schritte des oben beschriebenen Prozess detail
 
 Das Template ist ein JSON String der eine parametrisierbare Variante der CashBox (Konfigurationskontainer als JSON String) darstellt und somit die Konfigurationen von Queues, SCUs und Helper beinhalten kann. Parametrisierbar ist es insofern, dass hier die Struktur für die zu generierende CashBox definiert werden kann (z.B. fünf Queues, eine SCU). Zudem können bei den Werten Variablen als Platzhalter eingesetzt werden können. Sobald die Generierung der daraus resultierenden CashBox stattfindet, werden die Variablen mit konkreten, finalen Werten befüllt.
 
-Im folgenden Bild wird ein Beispiel eines solchen Template visualisiert - download unter [template1.json](images/template1.json)
+Im folgenden Snippet wird ein Beispiel eines solchen Template visualisiert:
 
-![Template Beispiel](images/template1.png)
+```json
+{
+    "ftCashBoxId": "|[cashbox_id]|",
+    "ftSignaturCreationDevices": [
+        {
+            "Id": "|[scu0_id]|",
+            "Package": "fiskaltrust.Middleware.SCU.DE.CryptoVision",
+            "Url": [
+                "grpc://localhost:10081"
+            ],
+            "Configuration": {
+                "devicePath": "t:"
+            }
+        }
+    ],
+    "ftQueues": [
+        {
+            "Id": "|[queue0_id]|",
+            "Package": "fiskaltrust.Middleware.Queue.SQLite",
+            "Configuration": {
+                "init_ftQueue": [
+                    {
+                        "ftQueueId": "|[queue0_id]|",
+                        "ftCashBoxId": "|[cashbox_id]|",
+                        "CountryCode": "DE",
+                        "Timeout": 15000
+                    }
+                ],
+                "init_ftQueueDE": [
+                    {
+                        "ftQueueDEId": "|[queue0_id]|",
+                        "CashBoxIdentification": "|[my_shopcode]|-|[my_tillcode]|",
+                        "ftSignaturCreationUnitDEId": "|[scu0_id]|"
+                    }
+                ],
+                "init_ftSignaturCreationUnitDE": [
+                    {
+                        "ftSignaturCreationUnitDEId": "|[scu0_id]|",
+                        "Url": "[\"grpc://localhost:10081\"]"
+                    }
+                ]
+            },
+            "Url": [
+                "grpc://localhost:10082"
+            ]
+        }
+    ]
+}
+```
+
 
 Variablen werden gekennzeichnet indem sie innerhalb von ```|[``` und  ```]|``` angegeben werden. Möglich hierbei ist sowohl die Angabe von [Systemvariablen](#systemvariablen) deren Werte vom fiskaltrust System bei der Generierung erzeugt werden als auch die Angabe eigener Variablen deren Werte später über einen API Aufruf zum Generieren der CashBox übergeben werden können (siehe auch [Parametrisierung des API Aufrufs](#parametrisierung)). 
 
@@ -991,7 +1044,7 @@ LocationId;OutletNumber;Name;Address;ContactName;Telephone;Fax;PostalCode;City;C
 
 Schritt 3: Iteration über die eingelesenen Zeilen aus der Outlet Datei.
 
-Schritt 4: für jede eingelesene Zeile wird das entsprechende Template eingelesen und vorbereitet. Z.B. für Zeile 1 wird der Inhalt der Datei [`template1.json`](images/template1.json) eingelesen. In Zeile 2 wird für ein anderes Outlet ein anderes Template [`template2.json`](images/template2.json) benötigt.
+Schritt 4: für jede eingelesene Zeile wird das entsprechende Template eingelesen und vorbereitet. Z.B. für Zeile 1 wird der Inhalt der Datei [`template1.json`](images/templates.zip) eingelesen. In Zeile 2 wird für ein anderes Outlet ein anderes Template [`template2.json`](pathname://images/template2.json) benötigt.
 
 Schritt 5: für jede eingelesene Zeile wird die Uri für den API Aufruf aufgebaut. Hierbei wird die Outlet Nummer als Parameter im Query-String übergeben.
 

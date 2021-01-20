@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" className="hide-in-docs">
 <img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
 <br/>
 <strong>Compliance-as-a-Service für KassenSysteme</strong>
@@ -7,7 +7,7 @@
 <h1>Rollout Dokumentation für Deutschland</h1>
 <br/>
 </div>
-<p align="center">
+<p align="center" className="hide-in-docs">
 <a href="./de/README.md"><img alt="Docs: CAPs" src="https://img.shields.io/badge/docs-DE-blue" /></a>
 <a href="../en/README.md"><img alt="Docs: SEPs" src="https://img.shields.io/badge/docs-EN-blue" /></a>
 </p>
@@ -16,6 +16,7 @@
 
 # Einladungsmanagement
 
+<div className="hide-in-docs">
 
 ## Inhalte
 
@@ -29,6 +30,7 @@
 ├── <a href="#schlusswort" title="Schlusswort">Schlusswort</a>
 
 </pre>
+</div>
 
 ## Einleitung
 

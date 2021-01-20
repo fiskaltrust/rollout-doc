@@ -4,34 +4,27 @@ module.exports = {
       type: 'category',
       label: 'Get started',
       items: [
-        'rollout-doc/de/README',
         'rollout-doc/en/README',
+        'rollout-doc/de/README',
       ]
     },
     {
       type: 'category',
       collapsed: false,
-      label: 'Rollout Docs',
+      label: 'Rollout documentation',
       items: [
+        {
+          type: 'category',
+          label: 'Invitation management (EN)',
+          items: [
+            'rollout-doc/en/invitation-management/README',
+          ]
+        },
         {
           type: 'category',
           label: 'Einladungsmanagement (DE)',
           items: [
             'rollout-doc/de/invitation-management/README',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Invitation management (EN)',
-          items: [
-            'rollout-doc/de/invitation-management/README',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Rollout der fiskaltrust.Middleware (DE)',
-          items: [
-            'rollout-doc/de/middleware/README',
           ]
         },
         {
@@ -43,9 +36,9 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'fiskaltrust Produkte kaufen und weiter verkaufen (DE)',
+          label: 'Rollout der fiskaltrust.Middleware (DE)',
           items: [
-            'rollout-doc/de/shop/README',
+            'rollout-doc/de/middleware/README',
           ]
         },
         {
@@ -55,6 +48,13 @@ module.exports = {
             'rollout-doc/en/shop/README',
           ]
         },
+        {
+          type: 'category',
+          label: 'fiskaltrust Produkte kaufen und weiter verkaufen (DE)',
+          items: [
+            'rollout-doc/de/shop/README',
+          ]
+        }
       ]
     }
   ]
