@@ -263,7 +263,7 @@ Dadurch wird die CashBox als JSON-File zum Download verfügbar gemacht. Dieses J
 
 Zum Testen des Service, also einer fiskaltrust.Middleware-Instanz, laden wir den sogenannten "Launcher" herunter. Dies können wir in dem Listeneintrag der zuvor angelegten CashBox tun. Drücken Sie dazu den "Download .NET Launcher" Button. 
 
-![Download Launcher](images/download-launcher.png "Download Launcher")
+![Download Launcher](images/download-launcher-sc.png "Download Launcher")
 
 Sie erhalten ein Zip-komprimierten Ordner, den sie auf der Kasse entpacken können. Entpacken Sie das Zip-File. 
 
