@@ -42,7 +42,7 @@ Wie in der [allgemeinen Rollout-Einleitung](../README.md) beschrieben, werden vo
 
 
 
-Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagement-Tool ist die Registrierung und Zuordnung der oben genannten Partner im fiskaltrust.Portal. Hierzu registriert sich als erster der KassenHersteller selbständig und erfasst sein(e) KassenSystem(e) im Portal. Danach lädt er pro KassenSystem seine dazugehörigen KassenHändler zur Registrierung ein. Für die Einladung verwendet er die Einladungsfunktion im Portal. Die registrierten KassenHändler laden dann als nächstes ihre KassenBetreiber ebenfalls über das Portal ein. Dadurch entsteht die eindeutige, systemweite Zuordnung der KassenBetreiber zu ihren KassenHändler und der KassenHändler zum KassenSystem des KassenHersteller:
+Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagement-Tool ist die Registrierung und Zuordnung der oben genannten Partner im fiskaltrust.Portal (https://portal.fiskaltrust.de/). Hierzu registriert sich als erster der KassenHersteller selbständig und erfasst sein(e) KassenSystem(e) im Portal. Danach lädt er pro KassenSystem seine dazugehörigen KassenHändler zur Registrierung ein. Für die Einladung verwendet er die Einladungsfunktion im Portal. Die registrierten KassenHändler laden dann als nächstes ihre KassenBetreiber ebenfalls über das Portal ein. Dadurch entsteht die eindeutige, systemweite Zuordnung der KassenBetreiber zu ihren KassenHändler und der KassenHändler zum KassenSystem des KassenHersteller:
 
 
 
@@ -53,14 +53,14 @@ Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagem
 
 Der Registrierungs- und Einladungs-Prozess sieht wie folgt aus:
 
-1. Der KassenHersteller registriert sich im fiskaltrust.Portal, aktiviert die Rolle "KassenHersteller" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust. Dann erfasst er seine KassenSysteme im Portal und sendet mit Hilfe des Portals pro KassenSystem Einladungen zur Zuordnung an seine KassenHändler. Dabei sendet das fisklatrust.Portal automatisiert die Einladungs-Emails an die KassenHändler.
+1. Der KassenHersteller registriert sich im fiskaltrust.Portal, aktiviert die Rolle "KassenHersteller" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust. Dann erfasst er seine KassenSysteme im Portal und sendet mit Hilfe des Portals pro KassenSystem Einladungen zur Zuordnung an seine KassenHändler. Dabei sendet das fiskaltrust.Portal automatisiert die Einladungs-Emails an die KassenHändler.
 2. Der KassenHändler erhält die Einladungen-Email und klickt auf den Link zur Registrierung. Als erstes setzt er sein Passwort, wählt die Partnerrolle: "KassenHändler" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust.
 3. Nun kann der KassenHändler seine KassenBetreiber über das Portal einladen und sich zuordnen lassen. Das ist wichtig, denn er muss später den Massenrollout der fiskaltrust.Middleware über das Portal vornehmen.
 4. Der eingeladenen KassenBetreiber erhält daraufhin die Einladung-Email von fiskaltrust, drückt den Link zur Registrierung, setzt sein Passwort und unterschreibt die Nutzungsvereinbarung damit die fiskaltrust.Middleware auf seiner Kasse installiert werden darf.
 
 ![Einladungsprozess](images/invitation-process.png "Einladungsprozess")
 
-Im Folgenden wird im Detail beschrieben wie die einzelnen Schritte im Einladungsprozess vorzunehmen werden und auf welche Aspekte dabei besonders zu 8ten ist. Wir teilen dabei die Beschreibung in folgende zwei Kapitel auf:
+Im Folgenden wird im Detail beschrieben wie die einzelnen Schritte im Einladungsprozess vorzunehmen werden und auf welche Aspekte dabei besonders zu achten ist. Wir teilen dabei die Beschreibung in folgende zwei Kapitel auf:
 
 -  [KassenHersteller laden KassenHändler ein](README.md#kassenhersteller-laden-kassenhändler-ein)
 
@@ -78,9 +78,9 @@ Als erstes müssen Sie dazu Ihr(e) KassenSystem(e) im fiskaltrust.Portal eintrag
 
 ### KassenSystem (POSSystem) eintragen
 
-Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskaltrust.Portal registrieren:
+Als KassenHersteller können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskaltrust.Portal registrieren:
 
-1. Klicken Sie den Menüpunkt "POSSystems" an. Sie gelangen zur Übersicht Ihrer registrieren KassenSysteme:
+1. Klicken Sie den Menüpunkt "KassenSysteme" an. Sie gelangen zur Übersicht Ihrer registrierten KassenSysteme:
 
    
 
@@ -130,7 +130,7 @@ Als KassenHändler können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskalt
 
 
 
-7. Drücken Sie nach der Erfassung der Daten im Formular den "Hinzufügen/Einladen" Button. Das Portal wird daraufhin eine Einladung-Email an den KassenHersteller (an den angegebenen Ansprechpartner) senden. In der Übersicht ist nun der Händler als zugeordnet zu sehen:
+7. Drücken Sie nach der Erfassung der Daten im Formular den "Hinzufügen/Einladen" Button. Das Portal wird daraufhin eine Einladungs-Email an den KassenHersteller (an den angegebenen Ansprechpartner) senden. In der Übersicht ist nun der Händler als zugeordnet zu sehen:
 
 ![Händler wurde erfasst](images/dealer-data-added.png "Händler wurde erfasst")
 
@@ -197,7 +197,7 @@ Als KassenHändler müssen Sie Ihre KassenBetreiber (POSOperator) im fiskaltrust
 
 Sie können einzelne KassenBetreiber aber auch viele KassenBetreiber gleichzeitig einladen (CSV-Import).
 
-Unter dem Menüpunkt "PosOperator -> Überisicht" können Sie sich die Liste der bereits Ihnen zugeordneten KassenBetreiber anzeigen lassen. Diese Liste ist Anfangs leer:
+Unter dem Menüpunkt "PosOperator -> Übersicht" können Sie sich die Liste der bereits Ihnen zugeordneten KassenBetreiber anzeigen lassen. Diese Liste ist Anfangs leer:
 
 ![Übersicht der Betreiber](images/overview-operators.png "Bereits zugeordnete Betreiber")
 
