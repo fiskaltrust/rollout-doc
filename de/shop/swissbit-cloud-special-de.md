@@ -11,6 +11,7 @@ Die Swissbit Cloud TSE installiert eine eigene Java Umgebung auf dem Computer
 Bei der Installation der Swissbit Cloud TSE wird im AppData Verzeichnis des aktuellen Benutzers eine eigene Java Umgebung (genannt FCC) eingerichtet. Bei fiskaltrust wird diese Installation beim ersten Start der Cashbox auf einem Computer durchgeführt. Dies führt zu zwei Einschränkungen. Erstens muss die Installation unter dem Benutzer ausgeführt werden, unter dem sie auch später ausgeführt wird. Es ist nicht möglich wie bei anderen fiskaltrust Installationen den Benutzer zu wechseln. Zweitens kann die fiskaltrust.Middleware nicht mit dem lokalen Systemkonto ausgeführt werden. Daher muss der Anmeldeaccount des Windows Dienstes nach ausführen von install-service.cmd manuell geändert werden, BEVOR die fiskaltrust.Middleware das erste Mal gestartet wird.
 
 ![ServiceAccount1](../shop/images/ServiceAccount1.png)
+
 ![ServiceAccount2](../shop/images/ServiceAccount2.png)
  
 Der verwendete Account muss ein lokales, oder ein Domänenkonto mit lokalen Administratorrechten sein und er muss Zugriff auf das Internet haben. Das lokale Systemkonto und der Netzwerkdienst können nicht verwendet werden. Ein einmal verwendetes Konto kann später nicht mehr gewechselt werden.
