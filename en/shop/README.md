@@ -227,6 +227,8 @@ In addition, the CashBox was also created because before that we added the templ
 
 This sets up the CashBox for the Swissbit Cloud TSE. You can now download and start the desired launcher, it uses the previously created CashBox for the Swissbit Cloud TSE for configuration.
 
+Please also refer to the document [Technical specials of the Swissbit Cloud](../shop/SwissbitCloudSpecialsEN.md)
+
 ## Fiskaly Cloud TSE check out and setup
 
 The process for checking out and setting up a Fiskaly Cloud TSE is analogous to the process described above in chapter [Swissbit Cloud TSE check out and set up](#swissbit-cloud-tse-check-out-and-setup). The only difference is that here you obtain and set up the Fiskaly Cloud TSE instead of the Swissbit Cloud TSE. To do this, place the product "Fisklay Cloud TSE-as-a-Service - aus - Anspruch erzeugen" in the shopping cart instead of the product "Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen". Also, instead of the template product "fiskaltrust.Middleware mit Swissbit Cloud TSE", put the template product "fiskaltrust.Middleware mit Fiskaly Cloud TSE" in the shopping cart. Otherwise, the procedure is identical to the one described above for the Swissbit Cloud TSE.
