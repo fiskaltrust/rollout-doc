@@ -227,7 +227,7 @@ In addition, the CashBox was also created because before that we added the templ
 
 This sets up the CashBox for the Swissbit Cloud TSE. You can now download and start the desired launcher, it uses the previously created CashBox for the Swissbit Cloud TSE for configuration.
 
-Please also refer to the document [Technical specials of the Swissbit Cloud](../shop/SwissbitCloudSpecialsEN.md)
+Please also refer to the document [Technical specials of the Swissbit Cloud](swissbit-cloud-special.md)
 
 ## Fiskaly Cloud TSE check out and setup
 
