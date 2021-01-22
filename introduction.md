@@ -1,10 +1,14 @@
+---
+slug: /posdealers/rollout-doc
+title: Introduction
+---
+
 <div align="center" className="hide-in-docs">
 <img alt="fiskaltrust" src="../images/fiskaltrust-icon.png" width="450" />
 <br/>
 <strong>Compliance-as-a-Service for POSSystems</strong>
 <br/>
 <br/>
-<h1>Rollout Documentation for Germany</h1>
 <br/>
 </div>
 <p align="center" className="hide-in-docs">
@@ -13,7 +17,9 @@
 </p>
 <br/>
 
-This repository is home to **Rollout Documentation** of fiskaltrust for the german market. It supports POSCreators (cash register manufacturers) and POSDealers (cash register dealers) in the rollout process of the fiskaltrust.Middleware and other fiskaltrust products. 
+# fiskaltrust Rollout documentation
+
+This documentation is meant to support POSDealers (cash register dealers), and to some extend also POSCreators (cash register manufacturers) in planning and executing the rollout process of the fiskaltrust.Middleware and other fiskaltrust products. 
 
 ## Getting started
 

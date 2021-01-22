@@ -1,3 +1,8 @@
+---
+slug: /posdealers/rollout-doc/middleware
+title: Rollout der fiskaltrust.Middleware
+---
+
 <div align="center" className="hide-in-docs">
 <img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
 <br/>

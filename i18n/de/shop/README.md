@@ -1,3 +1,8 @@
+---
+slug: /posdealers/rollout-doc/shop
+title: fiskaltrust-Produkte kaufen und weiterverkaufen
+---
+
 <div align="center" className="hide-in-docs">
 <img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
 <br/>
@@ -13,7 +18,7 @@
 </p>
 <br/>
 
-# fiskaltrust Produkte kaufen und weiter verkaufen
+# fiskaltrust-Produkte kaufen und weiter verkaufen
 
 <div className="hide-in-docs">
 
