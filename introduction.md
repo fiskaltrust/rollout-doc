@@ -76,6 +76,6 @@ Occasionally, fiskaltrust partners do not fit exactly into the partner roles des
 │   └── <a href="shop/README.md#transfer-of-purchased-entitlements-to-the-posoperator" title="Transfer of purchased entitlements to the POSOperators">Transfer of purchased entitlements to the POSOperators</a>
 │   └── <a href="shop/README.md#delivery-options-for-hardware-tses" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
 │   └── <a href="shop/README.md#swissbit-cloud-tse-check-out-and-setup" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
-│   └── <a href="shop/README.md#fiskaly-cloud-tse-check-out-and-setup" title="Fiskaly Cloud TSE  check out and setup">Fiskaly Cloud TSE  check out and setup</a>
+│   └── <a href="shop/README.md#fiskaly-cloud-tse-check-out-and-setup" title="Fiskaly Cloud TSE  check out and setup">Fiskaly Cloud TSE check out and setup</a>
 </pre>
 </div>
