@@ -3,24 +3,9 @@ slug: /posdealers/rollout-doc
 title: Übersicht
 ---
 
-<div align="center" className="hide-in-docs">
-<img alt="fiskaltrust" src="../images/fiskaltrust-icon.png" width="450" />
-<br/>
-<strong>Compliance-as-a-Service für KassenSysteme</strong>
-<br/>
-<br/>
-</div>
-
-<p align="center" className="hide-in-docs">
-<a href="README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
-<a href="../en/README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
-</p>
-<br/>
-
 # fiskaltrust Rollout-Dokumentation
 
 Diese Dokumentation unterstüzt KassenHändler (und in Teilen auch KassenHersteller) beim Rolloutprozess der fiskaltrust.Middleware und anderer fiskaltrust-Produkte. 
-
 
 ## Getting started
 
@@ -52,19 +37,19 @@ KassenHersteller implementieren KassenSysteme und vertreiben diese über Ihre Ka
 
 KassenHersteller, die sich für fiskaltrust entschieden haben, integrieren die fiskaltrust.Middleware in ihr KassenSystem, d.h. sie implementieren ihr KassenSystem so, dass es mit der fiskaltrust.Middleware kommunizieren kann, die als eigenständiger Service läuft. Voraussetzung hierfür ist die eigenständige Registrierung des KassenHerstellers im fiskaltrust.Portal. Dabei unterschreiben KassenHersteller digital einen Kooperationsvertrag mit fiskaltrust und können dadurch die fiskaltrust.Middleware lizenzkostenfrei nutzen. Während der Integration der fiskaltrust.Middleware setzen sich KassenHersteller auch damit auseinander, wie die fiskaltrust.Middleware später auf die Kassen der KassenBetreiber ausgerollt werden soll. Sie treffen dabei Vorbereitungen um ihre KassenHändler beim Rolloutprozess ihres KassenSystems und der fiskaltrust.Middleware unterstützen zu können. Je nach Umfang (Anzahl der Kassen auf die die fiskaltrust.Middleware später ausgeliefert werden soll) analysieren sie auch Automatisierungsoptionen für einen Massenrollout. Dabei kommt es oft vor, dass KassenHersteller sogenannte Konfiguration-Templates für ihre KassenHändler vorbereiten.
 
-KassenHersteller sollten möglichst früh Ihre KassenHändler zur Registrierung im fiskaltrust.Portal einladen, damit sie sich gemeinsam auf den Rollout der fiskaltrust.Middleware vorbereiten können und damit die KassenHändler wiederum ihre KassenBetreiber rechtzeitig im fiskaltrust.Portal zur Registrierung einladen können, denn diese müssen dort eine Nutzungsvereinbarung digital unterschreiben, damit die fiskaltrust.Middleware auf ihre Kasse installiert und betrieben werden darf. Diese Einladungen werden über das fiskaltrust.Portal vorgenommen. Der Einladungsprozess mit den dazugehörigen Details wird im Kapitel [Einladungsmanagement](./invitation-management/README.md) beschrieben.
+KassenHersteller sollten möglichst früh Ihre KassenHändler zur Registrierung im fiskaltrust.Portal einladen, damit sie sich gemeinsam auf den Rollout der fiskaltrust.Middleware vorbereiten können und damit die KassenHändler wiederum ihre KassenBetreiber rechtzeitig im fiskaltrust.Portal zur Registrierung einladen können, denn diese müssen dort eine Nutzungsvereinbarung digital unterschreiben, damit die fiskaltrust.Middleware auf ihre Kasse installiert und betrieben werden darf. Diese Einladungen werden über das fiskaltrust.Portal vorgenommen. Der Einladungsprozess mit den dazugehörigen Details wird im Kapitel [Einladungsmanagement](invitation-management/README.md) beschrieben.
 
-KassenHersteller besprechen daraufhin mit ihren KassenHändler wie die Konfiguration der auszuliefernden fiskaltrust.Middleware Instanzen vorzunehmen ist und führen eine gemeinsame Pilotinstallation bei einem KassenBetreiber durch. Wie die Konfiguration der fiskaltrust.Middleware vorgenommen werden kann, was genau konfiguriert werden muss und welche Automatisierungsoptionen für Massenrollouts zur Verfügung stehen lesen Sie im Kapitel [Rollout der fiskaltrust.Middleware](./middleware/README.md). Nach erfolgreicher Pilotinstallation und Vorbereitung für den Massenrollout übernehmen die KassenHändler das Zepter und führen den Massenrollout selbständig durch.
+KassenHersteller besprechen daraufhin mit ihren KassenHändler wie die Konfiguration der auszuliefernden fiskaltrust.Middleware Instanzen vorzunehmen ist und führen eine gemeinsame Pilotinstallation bei einem KassenBetreiber durch. Wie die Konfiguration der fiskaltrust.Middleware vorgenommen werden kann, was genau konfiguriert werden muss und welche Automatisierungsoptionen für Massenrollouts zur Verfügung stehen lesen Sie im Kapitel [Rollout der fiskaltrust.Middleware](middleware/README.md). Nach erfolgreicher Pilotinstallation und Vorbereitung für den Massenrollout übernehmen die KassenHändler das Zepter und führen den Massenrollout selbständig durch.
 
-KassenHändler haben zudem die Möglichkeit im fiskaltrust.Portal Add-On Produkte und Einzelprodukte von fiskaltrust zu erwerben und als Bestandteil Ihrer Serviceleistung an die KassenBetreiber weiter zu verkaufen. Zur Freischaltung von Mengenrabatten, vereinbaren KassenHändler mit fiskaltrust die Konditionen mit Hilfe von Rahmenverträgen und können daraufhin sogenannte Entitlements im fiskaltrust.Shop (Bestandteil des fiskaltrust.Portal) erwerben. Diese übertragen sie im Rahmen des Rollouts an ihre Kunden, den KassenBetreiber, und aktivieren die dazugehörigen Produkte über das fiskaltrust.Portal. Die genaue Vorgehensweise dazu wird im Kapitel [fiskaltrust Produkte kaufen und weiter verkaufen](./shop/README.md) beschrieben.
+KassenHändler haben zudem die Möglichkeit im fiskaltrust.Portal Add-On Produkte und Einzelprodukte von fiskaltrust zu erwerben und als Bestandteil Ihrer Serviceleistung an die KassenBetreiber weiter zu verkaufen. Zur Freischaltung von Mengenrabatten, vereinbaren KassenHändler mit fiskaltrust die Konditionen mit Hilfe von Rahmenverträgen und können daraufhin sogenannte Entitlements im fiskaltrust.Shop (Bestandteil des fiskaltrust.Portal) erwerben. Diese übertragen sie im Rahmen des Rollouts an ihre Kunden, den KassenBetreiber, und aktivieren die dazugehörigen Produkte über das fiskaltrust.Portal. Die genaue Vorgehensweise dazu wird im Kapitel [fiskaltrust Produkte kaufen und weiter verkaufen]shop/README.md) beschrieben.
 
 ### Aufbau der Rolloutdokumentation
 
 Diese Dokumentation ist auf Grundlage der oben beschriebenen Prozesse in folgende Hauptelemente aufgeteilt:
 
-1. [Einladungsmanagement](./invitation-management/README.md) - wichtig für KassenHersteller und für KassenHändler
-2. [Rollout der fiskaltrust.Middleware](./middleware/README.md) - wichtig für KassenHersteller und für KassenHändler
-3. [fiskaltrust Produkte kaufen und weiter verkaufen](./shop/README.md)  - wichtig vor allem für KassenHändler
+1. [Einladungsmanagement](invitation-management/README.md) - wichtig für KassenHersteller und für KassenHändler
+2. [Rollout der fiskaltrust.Middleware](middleware/README.md) - wichtig für KassenHersteller und für KassenHändler
+3. [fiskaltrust Produkte kaufen und weiter verkaufen](shop/README.md)  - wichtig vor allem für KassenHändler
 
 ### Weiteres
 
@@ -74,23 +59,23 @@ Es kommt gelegentlich vor, dass fiskaltrust Partner nicht exakt in die oben besc
 
 ## Inhalte
 <pre>
-├── <a href="./invitation-management/README.md" title="Einladungsmanagement">Einladungsmanagement</a>
-│   └── <a href="./invitation-management/README.md#kassenhersteller-laden-kassenhändler-ein" title="KassenHersteller laden KassenHändler ein">KassenHersteller laden KassenHändler ein</a>
-│   └── <a href="./invitation-management/README.md#kassenhändler-laden-kassenbetreiber-ein" title="KassenHändler laden KassenBetreiber ein">KassenHändler laden KassenBetreiber ein</a>
-├── <a href="./middleware/README.md" title="Middleware">Rollout der fiskaltrust.Middleware</a>
-│   └── <a href="./middleware/README.md#konfiguration-der-fiskaltrustmiddleware" title="Konfiguration der Middleware">Konfiguration der Middleware</a>
-│   └── <a href="./middleware/README.md#service-starten-und-testen" title="Service testen">Service testen</a>
-│   └── <a href="./middleware/README.md#datenexport-testen" title="Datenexport testen">Datenexport testen</a>
-│   └── <a href="./middleware/README.md#rollout-szenarien" title="Rollout Szenarien">Rollout Szenarien</a>
-│   └── <a href="./middleware/README.md#automatisierung-des-rollout" title="Automatisierung des Rollout">Automatisierung des Rollout</a>
-├── <a href="./shop/README.md" title="Shop">fiskaltrust Produkte kaufen und weiter verkaufen</a>
-│   └── <a href="./shop/README.md#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
-│   └── <a href="./shop/README.md#rahmenverträge-für-mengenrabatt" title="Rahmenverträge für Mengenrabatt">Rahmenverträge für Mengenrabatt</a>
-│   └── <a href="./shop/README.md#produkte-über-entitlements-kaufen" title="Produkte über Entitlements kaufen">Produkte über Entitlements kaufen</a>
-│   └── <a href="./shop/README.md#übertragung-gekaufter-entitlements-an-die-kassenbetreiber" title="Übertragung gekaufter Entitlements an die KassenBetreiber">Übertragung gekaufter Entitlements an die KassenBetreiber</a>
-│   └── <a href="./shop/README.md#lieferoptionen-für-hardware-tses" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
-│   └── <a href="./shop/README.md#swissbit-cloud-tse-auschecken-und-einrichten" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
-│   └── <a href="./shop/README.md#fiskaly-cloud-tse-auschecken-und-einrichten" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
+├── <a href="invitation-management/README.md" title="Einladungsmanagement">Einladungsmanagement</a>
+│   └── <a href="invitation-management/README.md#kassenhersteller-laden-kassenh%C3%A4ndler-ein" title="KassenHersteller laden KassenHändler ein">KassenHersteller laden KassenHändler ein</a>
+│   └── <a href="invitation-management/README.md#kassenh%C3%A4ndler-laden-kassenbetreiber-ein" title="KassenHändler laden KassenBetreiber ein">KassenHändler laden KassenBetreiber ein</a>
+├── <a href="middleware/README.md" title="Middleware">Rollout der fiskaltrust.Middleware</a>
+│   └── <a href="middleware/README.md#konfiguration-der-fiskaltrustmiddleware" title="Konfiguration der Middleware">Konfiguration der Middleware</a>
+│   └── <a href="middleware/README.md#service-starten-und-testen" title="Service testen">Service testen</a>
+│   └── <a href="middleware/README.md#datenexport-testen" title="Datenexport testen">Datenexport testen</a>
+│   └── <a href="middleware/README.md#rollout-szenarien" title="Rollout Szenarien">Rollout Szenarien</a>
+│   └── <a href="middleware/README.md#automatisierung-des-rollout" title="Automatisierung des Rollout">Automatisierung des Rollout</a>
+├── <a href="shop/README.md" title="Shop">fiskaltrust Produkte kaufen und weiter verkaufen</a>
+│   └── <a href="shop/README.md#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
+│   └── <a href="shop/README.md#rahmenvertr%C3%A4ge-f%C3%BCr-mengenrabatt" title="Rahmenverträge für Mengenrabatt">Rahmenverträge für Mengenrabatt</a>
+│   └── <a href="shop/README.md#produkte-%C3%BCber-entitlements-kaufen" title="Produkte über Entitlements kaufen">Produkte über Entitlements kaufen</a>
+│   └── <a href="shop/README.md#%C3%BCbertragung-gekaufter-entitlements-an-die-kassenbetreiber" title="Übertragung gekaufter Entitlements an die KassenBetreiber">Übertragung gekaufter Entitlements an die KassenBetreiber</a>
+│   └── <a href="shop/README.md#lieferoptionen-f%C3%BCr-hardware-tses" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
+│   └── <a href="shop/README.md#swissbit-cloud-tse-auschecken-und-einrichten" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
+│   └── <a href="shop/README.md#fiskaly-cloud-tse-auschecken-und-einrichten" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
 
 </pre>
 </div>

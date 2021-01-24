@@ -3,21 +3,6 @@ slug: /posdealers/rollout-doc/shop
 title: fiskaltrust-Produkte kaufen und weiterverkaufen
 ---
 
-<div align="center" className="hide-in-docs">
-<img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
-<br/>
-<strong>Compliance-as-a-Service für KassenSysteme</strong>
-<br/>
-<br/>
-<h1>Rollout Dokumentation für Deutschland</h1>
-<br/>
-</div>
-<p align="center" className="hide-in-docs">
-<a href="../README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
-<a href="../../en/README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
-</p>
-<br/>
-
 # fiskaltrust-Produkte kaufen und weiter verkaufen
 
 <div className="hide-in-docs">
@@ -50,7 +35,7 @@ In diesem Kapitel gehen wir auf die dazugehörigen Vorgänge ein und zeigen wie 
 
 ## fiskaltrust.Shop
 
-Der Einkauf von fiskaltrust Produkten findet über den fiskaltrust.Shop statt. Dieser ist Bestandteil des fiskaltrust.Portals. Im Bereich "Produkte" werden je nach [Partnerrolle](../README.md#die-unterschiedlichen-rollen-der-fiskaltrust-partner) passende fiskaltrust Produkte zum Kauf angeboten. Für KassenHändler sind das neben diversen TSE sogenannte "Händlereinkaufsprodukte", die sogenannte Entitlements, also Ansprüche darstellen:
+Der Einkauf von fiskaltrust Produkten findet über den fiskaltrust.Shop statt. Dieser ist Bestandteil des fiskaltrust.Portals. Im Bereich "Produkte" werden je nach [Partnerrolle](../introduction.md#die-unterschiedlichen-rollen-der-fiskaltrust-partner) passende fiskaltrust Produkte zum Kauf angeboten. Für KassenHändler sind das neben diversen TSE sogenannte "Händlereinkaufsprodukte", die sogenannte Entitlements, also Ansprüche darstellen:
 
 ![shop-haenlder-produkte](images/shop-dealer-products.png "Produkte für KassenHändler im Shop")
 

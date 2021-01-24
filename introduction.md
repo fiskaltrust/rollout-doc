@@ -3,20 +3,6 @@ slug: /posdealers/rollout-doc
 title: Introduction
 ---
 
-<div align="center" className="hide-in-docs">
-<img alt="fiskaltrust" src="../images/fiskaltrust-icon.png" width="450" />
-<br/>
-<strong>Compliance-as-a-Service for POSSystems</strong>
-<br/>
-<br/>
-<br/>
-</div>
-<p align="center" className="hide-in-docs">
-<a href="../de/README.md"><img alt="Docs: DE" src="https://img.shields.io/badge/docs-DE-blue" /></a>
-<a href="README.md"><img alt="Docs: EN" src="https://img.shields.io/badge/docs-EN-blue" /></a>
-</p>
-<br/>
-
 # fiskaltrust Rollout documentation
 
 This documentation is meant to support POSDealers (cash register dealers), and to some extend also POSCreators (cash register manufacturers) in planning and executing the rollout process of the fiskaltrust.Middleware and other fiskaltrust products. 
@@ -51,19 +37,19 @@ POSCreators implement POSSystems and sell them via their POSDealers. The POSDeal
 
 POSCreators who have opted for fiskaltrust, integrate the fiskaltrust.Middleware into their POSSystems, this means that they implement their POSSystem in such a way that it can communicate with the fiskaltrust.Middleware, which runs as an independent service. The prerequisite for this is the independent registration of the POSCreator in the fiskaltrust.Portal. In doing so, POSCreators digitally sign a cooperation agreement with fiskaltrust and can thus use the fiskaltrust.Middleware free of license costs. During the integration of the fiskaltrust.Middleware, POSCreators also deal with how the fiskaltrust.Middleware will later be rolled out to the cash registers of the POSOperators. They make preparations to be able to support their POSDealers in the rollout process of their POSSystem and the fiskaltrust.Middleware. Depending on the circumstances (number of cash registers to which the fiskaltrust.Middleware is to be delivered later), they also analyze automation options for a mass rollout. It is often the case that POSCreators prepare so-called configuration templates for their POSDealers.
 
-POSCreators should invite their POSDealers to register on the fiskaltrust.Portal as early as possible so that they can prepare together for the rollout of the fiskaltrust.Middleware and so that the POSDealers in turn can invite their POSOperators to register on the fiskaltrust.Portal in good time, because they must digitally sign a user agreement there so that the fiskaltrust.Middleware can be installed and operated on their cash register. These invitations are made via the fiskaltrust.Portal. The invitation process with the associated details is described in the chapter [Invitation management](./invitation-management/README.md).
+POSCreators should invite their POSDealers to register on the fiskaltrust.Portal as early as possible so that they can prepare together for the rollout of the fiskaltrust.Middleware and so that the POSDealers in turn can invite their POSOperators to register on the fiskaltrust.Portal in good time, because they must digitally sign a user agreement there so that the fiskaltrust.Middleware can be installed and operated on their cash register. These invitations are made via the fiskaltrust.Portal. The invitation process with the associated details is described in the chapter [Invitation management](invitation-management/README.md).
 
-POSCreators then discuss with their POSDealers how to configure the fiskaltrust.Middleware instances to be delivered and carry out a joint pilot installation at a POSOperator. How to configure the fiskaltrust.Middleware, what exactly has to be configured and which automation options are available for mass rollouts can be read in the chapter [Rollout of the fiskaltrust.Middleware](./middleware/README.md). After successful pilot installation and preparation for the mass rollout, the POSDealers take over and perform the mass rollout independently.
+POSCreators then discuss with their POSDealers how to configure the fiskaltrust.Middleware instances to be delivered and carry out a joint pilot installation at a POSOperator. How to configure the fiskaltrust.Middleware, what exactly has to be configured and which automation options are available for mass rollouts can be read in the chapter [Rollout of the fiskaltrust.Middleware](middleware/README.md). After successful pilot installation and preparation for the mass rollout, the POSDealers take over and perform the mass rollout independently.
 
-In addition, POSDealers have the possibility to purchase add-on products and individual products from fiskaltrust in the fiskaltrust.Portal and to resell them to the POSDealers as part of their service. For the activation of volume discounts, POSDealers agree on the conditions with fiskaltrust with the help of framework agreements/contracts and can then purchase so-called Entitlements in the fiskaltrust.Shop (part of the fiskaltrust.Portal). As part of the rollout, they transfer these to their customers, the POSOPerators, and activate the associated products via the fiskaltrust.Portal. The exact procedure for this is described in the chapter [Buying and reselling fiskaltrust products](./shop/README.md).
+In addition, POSDealers have the possibility to purchase add-on products and individual products from fiskaltrust in the fiskaltrust.Portal and to resell them to the POSDealers as part of their service. For the activation of volume discounts, POSDealers agree on the conditions with fiskaltrust with the help of framework agreements/contracts and can then purchase so-called Entitlements in the fiskaltrust.Shop (part of the fiskaltrust.Portal). As part of the rollout, they transfer these to their customers, the POSOPerators, and activate the associated products via the fiskaltrust.Portal. The exact procedure for this is described in the chapter [Buying and reselling fiskaltrust products](shop/README.md).
 
 ### Structure of the rollout documentation
 
 This documentation is divided into the following main elements based on the processes described above:
 
-1. [Invitation management](./invitation-management/README.md) - important for POSCreators and for POSDealers
-2. [Rollout of the fiskaltrust.Middleware](./middleware/README.md) - important for POSCreators and for POSDealers
-3. [Buying and reselling fiskaltrust products](./shop/README.md) - important especially for POSDealers
+1. [Invitation management](invitation-management/README.md) - important for POSCreators and for POSDealers
+2. [Rollout of the fiskaltrust.Middleware](middleware/README.md) - important for POSCreators and for POSDealers
+3. [Buying and reselling fiskaltrust products](shop/README.md) - important especially for POSDealers
 
 ### Further
 
@@ -74,22 +60,22 @@ Occasionally, fiskaltrust partners do not fit exactly into the partner roles des
 ## Table of contents
 
 <pre>
-├── <a href="./invitation-management/README.md" title="Invitation management">Invitation management</a>
-│   └── <a href="./invitation-managemen/README.md#poscreators-invite-posdealers" title="POSCreators invite POSDealers">POSCreators invite POSDealers</a>
-│   └── <a href="./invitation-managemen/README.md#posdealers-invite-posoperators" title="POSDealers invite POSOperators">POSDealers invite POSOperators</a>
-├── <a href="./middleware/README.md" title="Middleware">Rollout of the fiskaltrust.Middleware</a>
-│   └── <a href="./middleware/README.md#configuration-of-the-fiskaltrustmiddleware" title="Configuration of the fiskaltrust.Middleware">Configuration of the fiskaltrust.Middleware</a>
-│   └── <a href="./middleware/README.md#start-and-test-the-service" title="Start and test the service">Start and test the service</a>
-│   └── <a href="./middleware/README.md#test-data-export" title="Test data export">Test data export</a>
-│   └── <a href="./middleware/README.md#rollout-scenarios" title="Rollout scenarios">Rollout scenarios</a>
-│   └── <a href="./middleware/README.md#rollout-automation" title="Rollout automationt">Rollout automation</a>
-├── <a href="./shop/README.md" title="Buy and resell fiskaltrust products">Buy and resell fiskaltrust products</a>
-│   └── <a href="./shop/README.md#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
-│   └── <a href="./shop/README.md#framework-agreements-for-volume-discount" title="Framework agreements for volume discount">Framework agreements for volume discount</a>
-│   └── <a href="./shop/README.md#buy-products-via-entitlements" title="Buy products via Entitlements">Buy products via Entitlements</a>
-│   └── <a href="./shop/README.md#transfer-of-purchased-entitlements-to-the-posoperator" title="Transfer of purchased entitlements to the POSOperators">Transfer of purchased entitlements to the POSOperators</a>
-│   └── <a href="./shop/README.md#delivery-options-for-hardware-tses" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
-│   └── <a href="./shop/README.md#swissbit-cloud-tse-check-out-and-setup" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
-│   └── <a href="./shop/README.md#fiskaly-cloud-tse-check-out-and-setup" title="Fiskaly Cloud TSE  check out and setup">Fiskaly Cloud TSE  check out and setup</a>
+├── <a href="invitation-management/README.md" title="Invitation management">Invitation management</a>
+│   └── <a href="invitation-managemen/README.md#poscreators-invite-posdealers" title="POSCreators invite POSDealers">POSCreators invite POSDealers</a>
+│   └── <a href="invitation-managemen/README.md#posdealers-invite-posoperators" title="POSDealers invite POSOperators">POSDealers invite POSOperators</a>
+├── <a href="middleware/README.md" title="Middleware">Rollout of the fiskaltrust.Middleware</a>
+│   └── <a href="middleware/README.md#configuration-of-the-fiskaltrustmiddleware" title="Configuration of the fiskaltrust.Middleware">Configuration of the fiskaltrust.Middleware</a>
+│   └── <a href="middleware/README.md#start-and-test-the-service" title="Start and test the service">Start and test the service</a>
+│   └── <a href="middleware/README.md#test-data-export" title="Test data export">Test data export</a>
+│   └── <a href="middleware/README.md#rollout-scenarios" title="Rollout scenarios">Rollout scenarios</a>
+│   └── <a href="middleware/README.md#rollout-automation" title="Rollout automationt">Rollout automation</a>
+├── <a href="shop/README.md" title="Buy and resell fiskaltrust products">Buy and resell fiskaltrust products</a>
+│   └── <a href="shop/README.md#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
+│   └── <a href="shop/README.md#framework-agreements-for-volume-discount" title="Framework agreements for volume discount">Framework agreements for volume discount</a>
+│   └── <a href="shop/README.md#buy-products-via-entitlements" title="Buy products via Entitlements">Buy products via Entitlements</a>
+│   └── <a href="shop/README.md#transfer-of-purchased-entitlements-to-the-posoperator" title="Transfer of purchased entitlements to the POSOperators">Transfer of purchased entitlements to the POSOperators</a>
+│   └── <a href="shop/README.md#delivery-options-for-hardware-tses" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
+│   └── <a href="shop/README.md#swissbit-cloud-tse-check-out-and-setup" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
+│   └── <a href="shop/README.md#fiskaly-cloud-tse-check-out-and-setup" title="Fiskaly Cloud TSE  check out and setup">Fiskaly Cloud TSE  check out and setup</a>
 </pre>
 </div>
