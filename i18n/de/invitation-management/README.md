@@ -1,18 +1,7 @@
-<div align="center" className="hide-in-docs">
-<img alt="fiskaltrust" src="../../images/fiskaltrust-icon.png" width="450" />
-<br/>
-<strong>Compliance-as-a-Service für KassenSysteme</strong>
-<br/>
-<br/>
-<h1>Rollout Dokumentation für Deutschland</h1>
-<br/>
-</div>
-<p align="center" className="hide-in-docs">
-<a href="./de/README.md"><img alt="Docs: CAPs" src="https://img.shields.io/badge/docs-DE-blue" /></a>
-<a href="../en/README.md"><img alt="Docs: SEPs" src="https://img.shields.io/badge/docs-EN-blue" /></a>
-</p>
-<br/>
-
+---
+slug: /posdealers/rollout-doc/invitation-management
+title: Einladungsmanagement
+---
 
 # Einladungsmanagement
 
