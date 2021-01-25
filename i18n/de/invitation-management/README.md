@@ -12,7 +12,7 @@ title: Einladungsmanagement
 <pre>
 ├── <a href="#einleitung" title="Einleitung">Einleitung</a>
 ├── <a href="#kassenhersteller-laden-kassenhändler-ein" title="KassenHersteller laden KassenHändler ein">KassenHersteller laden KassenHändler ein</a>
-│   └── <a href="#kassensystem-possystem-eintragen" title="KassenSystem (POSSystem) eintragen">KassenSystem (POSSystem) eintragen</a>
+│   └── <a href="#kassensystem-possystem-eintragen" title="KassenSystem (PosSystem) eintragen">KassenSystem (PosSystem) eintragen</a>
 │   └── <a href="#kassenhändler-einladen" title="KassenHändler einladen">KassenHändler einladen</a>
 ├── <a href="#kassenhändler-laden-kassenbetreiber-ein" title="KassenHändler laden KassenBetreiber ein">KassenHändler laden KassenBetreiber ein</a>
 │   └── <a href="#standorte-für-kassenbetreiber-anlegen" title="Standorte für KassenBetreiber anlegen">Standorte für KassenBetreiber anlegen</a>
@@ -25,13 +25,13 @@ title: Einladungsmanagement
 
 Wie in der [allgemeinen Rollout-Einleitung](../README.md) beschrieben, werden von fiskaltrust beim Rollout der fiskaltrust.Middleware drei Partnerrollen unterschieden: 
 
-- KassenHersteller (POSCreator)
-- KassenHändler (POSDealer)
-- und KassenBetreiber (POSOperator)
+- KassenHersteller (PosCreator)
+- KassenHändler (PosDealer)
+- und KassenBetreiber (PosOperator)
 
 
 
-Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagement-Tool ist die Registrierung und Zuordnung der oben genannten Partner im fiskaltrust.Portal (https://portal.fiskaltrust.de/). Hierzu registriert sich als erster der KassenHersteller selbständig und erfasst sein(e) KassenSystem(e) im Portal. Danach lädt er pro KassenSystem seine dazugehörigen KassenHändler zur Registrierung ein. Für die Einladung verwendet er die Einladungsfunktion im Portal. Die registrierten KassenHändler laden dann als nächstes ihre KassenBetreiber ebenfalls über das Portal ein. Dadurch entsteht die eindeutige, systemweite Zuordnung der KassenBetreiber zu ihren KassenHändler und der KassenHändler zum KassenSystem des KassenHersteller:
+Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagement-Tool ist die Registrierung und Zuordnung der oben genannten Partner im fiskaltrust.Portal (https://portal.fiskaltrust.de/). Hierzu registriert sich als erster der KassenHersteller selbständig und erfasst sein(e) KassenSystem(e) (PosSystem) im Portal. Danach lädt er pro KassenSystem seine dazugehörigen KassenHändler zur Registrierung ein. Für die Einladung verwendet er die Einladungsfunktion im Portal. Die registrierten KassenHändler laden dann als nächstes ihre KassenBetreiber ebenfalls über das Portal ein. Dadurch entsteht die eindeutige, systemweite Zuordnung der KassenBetreiber zu ihren KassenHändler und der KassenHändler zum KassenSystem des KassenHersteller:
 
 
 
@@ -59,15 +59,15 @@ Im Folgenden wird im Detail beschrieben wie die einzelnen Schritte im Einladungs
 
 ## KassenHersteller laden KassenHändler ein
 
-Die KassenHersteller integrieren die fiskaltrust.Middleware in ihr Kassensystem (POSSystem). Sie müssen sich dafür im fiskaltrust.Portal selbständig registrieren. Des Weiteren müssen KassenHersteller bei der Registrierung im fiskaltrust.Portal, die Rolle "KassenHersteller" (POSCreator) wählen, den Kooperationsvertrag mit fiskaltrust digital unterzeichnen und Ihr Kassensystem (POSSystem) im fiskaltrust.Portal eintragen. Die Registrierung des KassenSystems ist die Voraussetzung zur Einladung der KassenHändler. Bitte laden Sie so früh wie möglich Ihre KassenHändler ein, denn die KassenHändler benötigen genügend Zeit zum Einladen der KassenBetreiber und zum Vorbereiten und Testen des Massenrollout. 
+Die KassenHersteller integrieren die fiskaltrust.Middleware in ihr Kassensystem (PosSystem). Sie müssen sich dafür im fiskaltrust.Portal selbständig registrieren. Des Weiteren müssen KassenHersteller bei der Registrierung im fiskaltrust.Portal, die Rolle "KassenHersteller" (PosCreator) wählen, den Kooperationsvertrag mit fiskaltrust digital unterzeichnen und Ihr Kassensystem (PosSystem) im fiskaltrust.Portal eintragen. Die Registrierung des KassenSystems ist die Voraussetzung zur Einladung der KassenHändler. Bitte laden Sie so früh wie möglich Ihre KassenHändler ein, denn die KassenHändler benötigen genügend Zeit zum Einladen der KassenBetreiber und zum Vorbereiten und Testen des Massenrollout. 
 
 Als erstes müssen Sie dazu Ihr(e) KassenSystem(e) im fiskaltrust.Portal eintragen/registrieren.  Danach können Sie über das eingetragene KassenSystem die dazugehörigen KassenHändler einladen und somit dem KassenSystem zuordnen.
 
 
 
-### KassenSystem (POSSystem) eintragen
+### KassenSystem (PosSystem) eintragen
 
-Als KassenHersteller können Sie wie folgt Ihr KassenSystem (POSSystem) im fiskaltrust.Portal registrieren:
+Als KassenHersteller können Sie wie folgt Ihr KassenSystem (PosSystem) im fiskaltrust.Portal registrieren:
 
 1. Klicken Sie den Menüpunkt "KassenSysteme" an. Sie gelangen zur Übersicht Ihrer registrierten KassenSysteme:
 
@@ -182,7 +182,7 @@ Als KassenHersteller können Sie wie folgt Ihr KassenSystem (POSSystem) im fiska
 Damit ist der KassenHändler eingeladen und dem KassenSystem zugeordnet. Er kann nun mit der Einladung seiner KassenBetreiber beginnen.
 
 ## KassenHändler laden KassenBetreiber ein
-Als KassenHändler müssen Sie Ihre KassenBetreiber (POSOperator) im fiskaltrust.Portal einladen um das Portal als Rolloutmanagement-Tool für die fiskaltrust.Middleware und für andere fiskaltrust Produkte nutzen zu können. 
+Als KassenHändler müssen Sie Ihre KassenBetreiber (PosOperator) im fiskaltrust.Portal einladen um das Portal als Rolloutmanagement-Tool für die fiskaltrust.Middleware und für andere fiskaltrust Produkte nutzen zu können. 
 
 Sie können einzelne KassenBetreiber aber auch viele KassenBetreiber gleichzeitig einladen (CSV-Import).
 
@@ -234,7 +234,7 @@ Geben Sie zuerst die Firmendaten des KassenBetreibers an. Wichtig: Achten Sie da
 ![Betreiber einzeln erfassen](images/add-single-operator-company.png "Betreiber einzeln erfassen - Firmendaten")
 
 
-Geben Sie danach die Beutzerdaten für den Account an. D.h. die Daten der Person, die den Account auf Seite des KassenBetreibers verwalten wird. Wichtig: die hier angegebene Email-Adresse wird später zum Einloggen verwendet, es sollte also nicht die Firmen-Email-Adresse sein, sondern die des Benutzers der den Account verwalten wird. Falls der KassenBetreiber nur eine Email-Adresse besitzt, können Sie sie hier natürlich ebenfalls verwenden.
+Geben Sie danach die Benutzerdaten für den Account an. D.h. die Daten der Person, die den Account auf Seite des KassenBetreibers verwalten wird. Wichtig: die hier angegebene Email-Adresse wird später zum Einloggen verwendet, es sollte also nicht die Firmen-Email-Adresse sein, sondern die des Benutzers der den Account verwalten wird. Falls der KassenBetreiber nur eine Email-Adresse besitzt, können Sie sie hier natürlich ebenfalls verwenden.
 
 ![Betreiber einzeln erfassen](images/add-single-operator-contact.png "Betreiber einzeln erfassen - Benutzerdaten")
 
@@ -256,7 +256,7 @@ Wählen Sie die ausgefüllte Datei von Ihrem Rechner aus (Button: "Datei auswäh
 
 Die eingelesenen Einträge erscheinen daraufhin in der Einladungsliste.
 
-5. Nachdem Sie Einträge in Einladungsliste hinzugefügt haben (siehe oben), sind die dazugehörigen KassenBetreiber noch nicht eingeladen. Sie können nun alle hier erfassten KassenBetreiber auf einmal einladen und Ihnen zuordnen (Button: "Alle KassenBetreiber zuordnen") oder einzelne KassenBetreiber aus der Liste einladen und Ihnen zuordnen (Briefumschalg Button im Listeneintrag):
+5. Nachdem Sie Einträge in Einladungsliste hinzugefügt haben (siehe oben), sind die dazugehörigen KassenBetreiber noch nicht eingeladen. Sie können nun alle hier erfassten KassenBetreiber auf einmal einladen und Ihnen zuordnen (Button: "Alle KassenBetreiber zuordnen") oder einzelne KassenBetreiber aus der Liste einladen und Ihnen zuordnen (Briefumschlag Button im Listeneintrag):
 
 
 ![Alle oder einzeln aus der Liste einladen und zuordnen](images/invite-all-or-single.png "Alle oder einzeln aus der Liste einladen und zuordnen")
@@ -293,24 +293,33 @@ Sollte der Eintrag den Status "inaktiv" besitzen, so hat der KassenBetreiber die
 
 ![Betreiber inaktiv](images/operator-inactive.png "Betreiber zugeordnet aber inaktiv")
 
-Fordern Sie den KassenBetreiber auf, die Nutzungsvereinbarung digital zu unterschreiben. Sollte der KassenBetreiber die Einladung-Email nicht erhalten haben, so können Sie diese mit Hilfe des Portals erneut senden. Gehen Sie dazu in den Bereich POSOperator->Einladungen und drücken Sie hier auf den "Protokoll" Button. 
+Fordern Sie den KassenBetreiber auf, die Nutzungsvereinbarung digital zu unterschreiben. 
+
+6. Wiederholen der Einladung eines KassenBetreibers durch einen KassenHändler
+
+6.1. Sollte der KassenBetreiber die Einladung-Email nicht erhalten haben, so können Sie diese mit Hilfe der Funktion zur individuellen Einladung eines KassenBetreibers erneut auslösen, wie unter Punkt 5. <a href="#KassenHändler laden KassenBetreiber ein" title="KassenHändler laden KassenBetreiber ein">KassenHändler laden KassenBetreiber ein</a> beschrieben. 
+
+6.2. Eine weitere Möglichkeit ist, den "Protokoll"-Button zu verwenden. 
 
 ![Einladungsprotokoll aufrufen](images/invitation-protocol.png "Einladungsprotokoll aufrufen")
 
-Die Historie (Protokoll) Ihrer in der Vergangenheit versendeten Einladungen wird angezeigt. Hier können Sie nun im dazugehörigen Listeneintrag mit Hilfe eines Buttons die Einladung-Email erneut senden lassen:
+Das Protokoll der, in der Vergangenheit versendeten Einladungen, wird angezeigt. Hier können Sie nun im dazugehörigen Listeneintrag mit Hilfe eines Buttons die Einladung-E-Mail erneut senden lassen:
 
 ![Einladungs-Email erneut senden lassen](images/resend-invitation.png "Einladungs-Email erneut senden lassen")
 
+6.3. Es kann auch eine manuelle Mail mit dem Link versendet werden:
+
+Durch Klick auf den Button "Link in die Zwischenablage kopieren"![image-20210125005536275](C:\Users\axelk\AppData\Roaming\Typora\typora-user-images\image-20210125005536275.png) wird der Link um den KassenBetreiber zum KassenHändler zuzuordnen. Danach kann der Link durch den KassenHändler mit eine individuelle Methode (z.B. durch eine Mail aus dem privaten E-Mail-Account des Mitarbeiters des KassenHändlers) an den KassenBetreiber gesendet werden.
 
 ###  Standorte für KassenBetreiber anlegen
 
-Soblad sich ein KassenBetreiber über die Einladung eines KassenHändlers im fiskaltrust.Portal registriert hat und die Nutzungsvereinbarung digital unterschrieben hat, legt das fiskaltrust.Portal automatisch einen Standort (Hauptstandort) mit den Stammdaten der Firma an. Sollte der KassenBetreiber mehrere Standort betreiben, so müssen diese im fiskaltrust.Portal angelegt werden, denn bei der Konfiguration der fiskaltrust.Middleware muss der genaue Standort (Outlet-Nummer) angegeben werden damit die Daten separiert werden können. Im Falle einer Finanzprüfung ist der Standort die prüfbare Einheit. 
+Sobald sich ein KassenBetreiber über die Einladung eines KassenHändlers im fiskaltrust.Portal registriert hat und die Nutzungsvereinbarung digital unterschrieben hat, legt das fiskaltrust.Portal automatisch einen Standort (Hauptstandort) mit den Stammdaten der Firma an. Sollte der KassenBetreiber mehrere Standort betreiben, so müssen diese im fiskaltrust.Portal angelegt werden, denn bei der Konfiguration der fiskaltrust.Middleware muss der genaue Standort (Outlet-Nummer) angegeben werden damit die Daten separiert werden können. Im Falle einer Finanzprüfung ist der Standort die prüfbare Einheit. 
 
 KassenHändler können Standorte für Ihre KassenBetreiber über die Surrogate-Funktion anlegen und editieren. Dazu benötigen Sie zumindest Schreibrechte auf den Account des KassenBetreiber. Sollte Sie als KassenHändler diese Rechte nicht besitzen, so können Sie alternativ den KassenBetreiber bitten die benötigten Standorte selbst anzulegen.
 
 Um als KassenHändler Standorte (Outlets) für Ihren KassenBetreiber anzulegen oder zu editieren, können Sie wie folgt vorgehen:
 
-1. Loggen Sie sich mit Ihrem Account (als KassenHändler) im fiskaltrust.Portal ein und gehen Sie auf POSOperator -> Übersicht. Drücken Sie hier den "Suchen" Button um dem KassenBetreiber zu finden:
+1. Loggen Sie sich mit Ihrem Account (als KassenHändler) im fiskaltrust.Portal ein und gehen Sie auf PosOperator -> Übersicht. Drücken Sie hier den "Suchen" Button um dem KassenBetreiber zu finden:
 
 ![Übersicht der Kassenbetreiber](images/search-operator.png "Übersicht der Kassenbetreiber")
 
