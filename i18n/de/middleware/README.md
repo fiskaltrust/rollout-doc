@@ -54,7 +54,7 @@ Die fiskaltrust.Middleware ist das lizenzkostenfreie Basisprodukt von fiskaltrus
 
 Da die fiskaltrust.Middleware als eigenständiger Service läuft, muss sie auf die Kasse des KassenBetreibers ausgerollt werden. Je nach Gegebenheit muss die jeweilige fiskaltrust.Middleware-Instanz vor der Inbetriebnahme entsprechend konfiguriert werden. So muss zum Beispiel angegeben werden, wo das KassenSystem den Service erreichen kann, in welche Datenbank die verarbeiteten Daten vom Service gespeichert werden sollen, welche TSE für die Signaturen verwendet werden soll und wie die TSE für den Service erreichbar ist. 
 
-In den folgenden Kapitel werden wir erläutern wie die Konfiguration der fiskaltrust.Middleware für den Rollout vorgenommen wird. Zudem zeigen wir Ihnen wie der Service installiert und getestet werden kann und gehen auf diverse Rolloutszenarien ein. Zum Schuss zeigen wir Ihnen welche Automatisierungsmöglichkeiten fiskaltrust für einen Massenrollout zur Verfügung stellt.
+In den folgenden Kapiteln werden wir erläutern, wie die Konfiguration der fiskaltrust.Middleware für den Rollout vorgenommen wird. Zudem zeigen wir Ihnen wie der Service installiert und getestet werden kann und gehen auf diverse Rolloutszenarien ein. Zum Schuss zeigen wir Ihnen, welche Automatisierungsmöglichkeiten fiskaltrust für einen Massenrollout zur Verfügung stellt.
 
 
 
@@ -81,7 +81,7 @@ Die Queue ist die Komponente der fiskaltrust.Middleware, mit der das KassenSyste
 
 Die Queue erhält also Anfragen vom KassenSystem und verarbeitet diese. Sie ist verantwortlich für die Erstellung der Belegnummer, für die Verkettung der Anfragen und für die Persistenz der Daten.
 
-Für die Signierung der Daten ist die fiskaltrust.Middleware-Komponente SCU (Signaturerstellungseinheit) verantwortlich. Dabei werden die zu signierenden Daten von der Queue an die SCU gesendet, die wiederum, in der deutschen Variante, mit einer TSE kommuniziert. Die TSE nimmt schlussendlich die Signierung der Daten vor. Die signierten Daten und alle dazugehörigen Informationen werden dann von der SCU zurück an die Queue gesendet. Die Queue persistiert die Daten und baut die Antwort auf, die an das KassenSystem zurückgegeben wird. In dieser Antwort befinden sich wichtige Angaben, die vom KassenSystem auf den Beleg gedruckt werden müssen.
+Für die Signierung der Daten ist die fiskaltrust.Middleware-Komponente SCU (Signaturerstellungseinheit) verantwortlich. Dabei werden die zu signierenden Daten von der Queue an die SCU gesendet, die, in der deutschen Variante, wiederum mit einer TSE kommuniziert. Die TSE nimmt schlussendlich die Signierung der Daten vor. Die signierten Daten und alle dazugehörigen Informationen werden dann von der SCU zurück an die Queue gesendet. Die Queue persistiert die Daten und baut die Antwort auf, die an das KassenSystem zurückgegeben wird. In dieser Antwort befinden sich wichtige Angaben, die vom KassenSystem auf den Beleg gedruckt werden müssen.
 
 ### Die CashBox als Konfigurationscontainer
 
@@ -94,7 +94,8 @@ Die Konfiguration einer fiskaltrust.Middleware-Instanz wird über eine sogenannt
 
 
 
-Für das obere Beispiel müssen wir also die Konfiguration der Queue und der SCU vornehmen und danach diese beiden Konfigurationen in einen Konfigurationscontainer (CashBox) ablegen. Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
+Für das obere Beispiel müssen wir also die Konfiguration der Queue und der SCU vornehmen und danach diese beiden Konfigurationen in einen Konfigurationscontainer (CashBox) ablegen. 
+Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
 
 #### Konfiguration der Queue
 
@@ -552,7 +553,7 @@ Auch hier greift das KassenSystem mit Hilfe der fiskaltrust SCU über das Intern
 
 ### Lösungsvorschläge zur Virtualisierung innerhalb eines Standortes
 
-Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnunsgsystem inklusive fiskaltrust.Middleware treten erfahrungsgemäß Probleme bei Zugriff auf eine direkt am lokalen Server angebundene Hardware-TSE über USB oder als micro SD auf. Eine Ausnahme stellt hierbei die Diebold-Nixdorf-TSE dar, da die Kommunikation mit dieser über COM-Port stattfindet. Aufgrund der zuvor genannten Zugriffsprobleme, haben wir in folgenden Skizzen Lösungssvorschläge für dieses Szenario dargestellt. Statt der Anbindung einer Hardware-TSE direkt am lokalen Server empfehlen wir folgende Optionen:
+Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnunsgsystem inklusive fiskaltrust.Middleware treten erfahrungsgemäß Probleme beim Zugriff auf eine direkt am lokalen Server angebundene Hardware-TSE über USB oder micro SD auf. Eine Ausnahme stellt hierbei die Diebold-Nixdorf-TSE dar, da die Kommunikation mit dieser über COM-Port stattfindet. Aufgrund der zuvor genannten Zugriffsprobleme, haben wir in folgenden Skizzen Lösungssvorschläge für dieses Szenario dargestellt. Statt der Anbindung einer Hardware-TSE direkt am lokalen Server empfehlen wir folgende Optionen:
 
 #### SCU ist innerhalb der virtuellen Instanz
 
@@ -627,18 +628,18 @@ Möchte man später die Konfiguration updaten (z.B. eine neue SCU Package Versio
 
 Der Launcher lädt daraufhin automatisch die neue Version der CashBox, wendet diese an und startet die fiskaltrust.Middleware mit der neuen Konfiguration.
 
-Bei einer großen Menge von Kassen ist der initiale Rollout sehr zeitaufwendig, wenn er mit Hilfe der oben beschriebenen, manuellen Prozessen vorgenommen werden. 
+Bei einer großen Menge von Kassen ist der initiale Rollout sehr zeitaufwendig, wenn er mit Hilfe der oben beschriebenen, manuellen Prozessen vorgenommen wird. 
 
 
 ### Templating zum Anlegen von CashBoxen
 
-Beim Templating besteht die Möglichkeit mit Hilfe eines Konfigurations-Template automatisiert CashBoxen für den KassenBetreiber anzulegen. Es wird dafür ein Template vorbereitet und für den KassenBetreiber im fiskaltrust.Portal hinterlegt. Daraufhin erscheint das Template im fisklatrust.Shop innerhalb des Accounts des KassenBetreibers als kostenloses Produkt. Es kann dort in beliebiger Menge ausgecheckt werden. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom fiskaltrust.Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account des KassenBetreiber hinterlegt. 
+Beim Templating besteht die Möglichkeit mit Hilfe eines Konfigurations-Template automatisiert CashBoxen für den KassenBetreiber anzulegen. Es wird dafür ein Template vorbereitet und für den KassenBetreiber im fiskaltrust.Portal hinterlegt. Daraufhin erscheint das Template im fiskaltrust.Shop innerhalb des Accounts des KassenBetreibers als kostenloses Produkt. Es kann dort in beliebiger Menge ausgecheckt werden. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom fiskaltrust.Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account des KassenBetreiber hinterlegt. 
 
-Im Folgenden werden die einzelnen Schritte des oben beschriebenen Prozess detailliert dargestellt. Zudem stellen wir Ihnen ein [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) zum Thema Tempalting zur Verfügung.
+Im Folgenden werden die einzelnen Schritte des oben beschriebenen Prozess detailliert dargestellt. Zudem stellen wir Ihnen ein [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) zum Thema Templating zur Verfügung.
 
 #### Erstellung und Inhalte des Konfigurations-Template
 
-Das Template ist ein JSON String der eine parametrisierbare Variante der CashBox (Konfigurationskontainer als JSON String) darstellt und somit die Konfigurationen von Queues, SCUs und Helper beinhalten kann. Parametrisierbar ist es insofern, dass hier die Struktur für die zu generierende CashBox definiert werden kann (z.B. fünf Queues, eine SCU). Zudem können bei den Werten Variablen als Platzhalter eingesetzt werden können. Sobald die Generierung der daraus resultierenden CashBox stattfindet, werden die Variablen mit konkreten, finalen Werten befüllt.
+Das Template ist ein JSON String der eine parametrisierbare Variante der CashBox (Konfigurationscontainer als JSON String) darstellt und somit die Konfigurationen von Queues, SCUs und Helper beinhalten kann. Parametrisierbar ist es insofern, dass hier die Struktur für die zu generierende CashBox definiert werden kann (z.B. fünf Queues, eine SCU). Zudem können bei den Werten Variablen als Platzhalter eingesetzt werden können. Sobald die Generierung der daraus resultierenden CashBox stattfindet, werden die Variablen mit konkreten, finalen Werten befüllt.
 
 Im folgenden Snippet wird ein Beispiel eines solchen Template visualisiert:
 
@@ -716,11 +717,11 @@ Ein **`PackageConfiguration`** Objekt ist wie folgt aufgebaut:
 | **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
 |----------------------|--------------------------|--------------------------|---------------------|
 | `Id` |ja |  ```GUID String```  | Identifiziert die Instanz des Elements, das hier konfiguriert wird (SCU, Queue oder Helper). Für die Queue kann die Systemvariable `queue{0-9}_id` verwendet werden. Für die SCU kann hier die Systemvariable `scu{0-9}_id` zum Einsatz kommen. Für Helper  `helper{0-9}_id`. |
-| `Package` |ja | ```String``` | Name des Package das zum Erstellen des Elements verwendet werden soll. Z.B. `fiskaltrust.Middleware.SCU.DE.CryptoVision` für eine SCU, die mit einer Cyptovision-TSE kommunizieren soll. Aktuell unterstützte Packages finden sie weiter unten. |
-| `Description` |nein |  ```String```| Name des Elements. Z.B. der Queue oder SCU |
+| `Package` |ja | ```String``` | Name des Package das zum Erstellen des Elements verwendet werden soll, z.B. `fiskaltrust.Middleware.SCU.DE.CryptoVision` für eine SCU, die mit einer Cyptovision-TSE kommunizieren soll. Aktuell unterstützte Packages finden sie weiter unten. |
+| `Description` |nein |  ```String```| Name des Elements, z.B. der Queue oder SCU |
 | `Version` |nein |  ```String```| Version des Package das zum Erstellen des Elements verwendet werden soll. Wenn keine Version angegeben wird, so wird die neueste Version verwendet.|
-| `Configuration` |nein | `<String, Object>`| Konfigurationsparameter des Elements. Z.B. Laufwerkbuchstabe der TSE bei der Cryptovision SCU, damit der SCU bekannt ist wie sie auf die TSE zugreifen soll. Je nach Element-Typ zu befüllen. Siehe unten. |
-| `URL` |ja | `String []` | Array, Kommunikationsendpunkte des Elements. Z.B. REST Endpunkt für die Kommunikation mit der Queue. |
+| `Configuration` |nein | `<String, Object>`| Konfigurationsparameter des Elements, z.B. Laufwerkbuchstabe der TSE bei der Cryptovision SCU, damit der SCU bekannt ist wie sie auf die TSE zugreifen soll. Je nach Element-Typ zu befüllen. Siehe unten. |
+| `URL` |ja | `String []` | Array, Kommunikationsendpunkte des Elements, z.B. REST Endpunkt für die Kommunikation mit der Queue. |
 
 **Queue**
 Folgende Packages stehen aktuell für Queues zur Verfügung:
@@ -853,7 +854,7 @@ _Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
 
 #### Zur Verfügung stellen des Konfigurations-Template über das Portal
 
-KassenHersteller, KassenHändler und KassebBetreiber können Konfigurations-Templates im fiskaltrust.Portal ablegen und freigeben. Dies können sie unter dem Menüpunkt `Konfiguration->Templates` vornehmen. 
+KassenHersteller, KassenHändler und KassenBetreiber können Konfigurations-Templates im fiskaltrust.Portal ablegen und freigeben. Dies können sie unter dem Menüpunkt `Konfiguration->Templates` vornehmen. 
 
 Das Template selbst (JSON String) wird dabei im das Formularfeld `Content`  hinterlegt.
 
@@ -890,7 +891,7 @@ Stellt der KassenHersteller ein Template für seine KassenHändler zur Verfügun
 
 #### Manuelles Ausführen des Konfigurations-Template
 
-Sobald ein Template für einen Account freigeben wurde, so erscheint dieses als kostenloses Produkt im fiskaltrust.Shop innerhalb des freigegebenen Account. Der Account-Besitzer kann das Template nun in beliebiger Menge auschecken. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account bei den Konfigurationen hinterlegt (Menüpunkt: `Konfiguration->CashBox`). 
+Sobald ein Template für einen Account freigeben wurde, so erscheint dieses als kostenloses Produkt im fiskaltrust.Shop innerhalb des freigegebenen Accounts. Der Account-Besitzer kann das Template nun in beliebiger Menge auschecken. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account bei den Konfigurationen hinterlegt (Menüpunkt: `Konfiguration->CashBox`). 
 
 Handelt es sich hierbei um den Account eines KassenBetreibers, besteht die Möglichkeit je nach Outlet unterschiedliche Templates auszuchecken. Deshalb sollte vor der Übernahme des Templates in den Warenkorb auf die Standortauswahl geachtet werden (Auswahl: Standort-Dropdown oben links im Shop).
 
@@ -992,7 +993,7 @@ Wie weiter oben bereits erwähnt, kann das Auschecken von Templates mit dem Stan
 
 ##### Anlegen oder Importieren der Outlets im Portal
 
-Standorte (sogenannte Outlets) können manuell über das Portal im Account des KassenBetreibers angelegt werden. Siehe Menüpunkt `Outlets` . Des Weiteren kann als Optimierungsvariante unter dem selben Menüpunkt mit Hilfe einer csv. Datei eine ganze Liste von Standorten importiert werden. Der Aufbau einer solchen Liste ist im Portal beschrieben.
+Standorte (sogenannte Outlets) können manuell über das Portal im Account des KassenBetreibers angelegt werden. Siehe Menüpunkt `Outlets`. Des Weiteren kann als Optimierungsvariante unter dem selben Menüpunkt mit Hilfe einer csv. Datei eine ganze Liste von Standorten importiert werden. Der Aufbau einer solchen Liste ist im Portal beschrieben.
 
 Das Anlegen der Standorte ist nur über das Portal möglich und kann nicht über die API erfolgen.
 
@@ -1034,7 +1035,7 @@ LocationId;OutletNumber;Name;Address;ContactName;Telephone;Fax;PostalCode;City;C
 
 Schritt 3: Iteration über die eingelesenen Zeilen aus der Outlet Datei.
 
-Schritt 4: für jede eingelesene Zeile wird das entsprechende Template eingelesen und vorbereitet. Z.B. für Zeile 1 wird der Inhalt der Datei [`template1.json`](images/templates.zip) eingelesen. In Zeile 2 wird für ein anderes Outlet ein anderes Template [`template2.json`](pathname://images/template2.json) benötigt.
+Schritt 4: für jede eingelesene Zeile wird das entsprechende Template eingelesen und vorbereitet, z.B. für Zeile 1 wird der Inhalt der Datei [`template1.json`](images/templates.zip) eingelesen. In Zeile 2 wird für ein anderes Outlet ein anderes Template [`template2.json`](pathname://images/template2.json) benötigt.
 
 Schritt 5: für jede eingelesene Zeile wird die Uri für den API Aufruf aufgebaut. Hierbei wird die Outlet Nummer als Parameter im Query-String übergeben.
 
