@@ -31,7 +31,7 @@ Wie in der [allgemeinen Rollout-Einleitung](../README.md) beschrieben, werden vo
 
 
 
-Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagement-Tool ist die Registrierung und Zuordnung der oben genannten Partner im fiskaltrust.Portal (https://portal.fiskaltrust.de/). Hierzu registriert sich als erster der KassenHersteller selbständig und erfasst sein(e) KassenSystem(e) (PosSystem) im Portal. Danach lädt er pro KassenSystem seine dazugehörigen KassenHändler zur Registrierung ein. Für die Einladung verwendet er die Einladungsfunktion im Portal. Die registrierten KassenHändler laden dann als nächstes ihre KassenBetreiber ebenfalls über das Portal ein. Dadurch entsteht die eindeutige, systemweite Zuordnung der KassenBetreiber zu ihren KassenHändler und der KassenHändler zum KassenSystem des KassenHersteller:
+Grundvoraussetzung für die Verwendung des fiskaltrust.Portals als Rolloutmanagement-Tool ist die Registrierung und Zuordnung der oben genannten Partner im fiskaltrust.Portal (https://portal.fiskaltrust.de/). Hierzu registriert sich als erster der KassenHersteller selbständig und erfasst sein(e) KassenSystem(e) (PosSystem) im Portal. Danach lädt er pro KassenSystem seine dazugehörigen KassenHändler zur Registrierung ein. Für die Einladung verwendet er die Einladungsfunktion im Portal. Die registrierten KassenHändler laden dann als nächstes ebenfalls über das Portal ihre KassenBetreiber ein. Dadurch entsteht die eindeutige, systemweite Zuordnung der KassenBetreiber zu ihrem KassenHändler und der KassenHändler zum KassenSystem des KassenHersteller:
 
 
 
@@ -43,13 +43,14 @@ Grundvoraussetzung für die Verwendung des fiskaltrust.Portal als Rolloutmanagem
 Der Registrierungs- und Einladungs-Prozess sieht wie folgt aus:
 
 1. Der KassenHersteller registriert sich im fiskaltrust.Portal, aktiviert die Rolle "KassenHersteller" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust. Dann erfasst er seine KassenSysteme im Portal und sendet mit Hilfe des Portals pro KassenSystem Einladungen zur Zuordnung an seine KassenHändler. Dabei sendet das fiskaltrust.Portal automatisiert die Einladungs-Emails an die KassenHändler.
-2. Der KassenHändler erhält die Einladungen-Email und klickt auf den Link zur Registrierung. Als erstes setzt er sein Passwort, wählt die Partnerrolle: "KassenHändler" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust.
+2. Der KassenHändler erhält die Einladungs-Email und klickt auf den Link zur Registrierung. Als erstes setzt er sein Passwort, wählt die Partnerrolle: "KassenHändler" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust.
 3. Nun kann der KassenHändler seine KassenBetreiber über das Portal einladen und sich zuordnen lassen. Das ist wichtig, denn er muss später den Massenrollout der fiskaltrust.Middleware über das Portal vornehmen.
-4. Der eingeladenen KassenBetreiber erhält daraufhin die Einladung-Email von fiskaltrust, drückt den Link zur Registrierung, setzt sein Passwort und unterschreibt die Nutzungsvereinbarung damit die fiskaltrust.Middleware auf seiner Kasse installiert werden darf.
+4. Der eingeladene KassenBetreiber erhält daraufhin die Einladungs-Email von fiskaltrust, drückt den Link zur Registrierung, setzt sein Passwort und unterschreibt die Nutzungsvereinbarung, damit die fiskaltrust.Middleware auf seiner Kasse installiert werden darf.
 
 ![Einladungsprozess](images/invitation-process.png "Einladungsprozess")
 
-Im Folgenden wird im Detail beschrieben wie die einzelnen Schritte im Einladungsprozess vorzunehmen werden und auf welche Aspekte dabei besonders zu achten ist. Wir teilen dabei die Beschreibung in folgende zwei Kapitel auf:
+Im Folgenden wird im Detail beschrieben, wie die einzelnen Schritte im Einladungsprozess vorzunehmen werden und auf welche Aspekte dabei besonders zu achten ist. 
+Wir teilen dabei die Beschreibung in folgende zwei Kapitel auf:
 
 -  [KassenHersteller laden KassenHändler ein](README.md#kassenhersteller-laden-kassenhändler-ein)
 
@@ -271,13 +272,13 @@ Der KassenBetreiber bekommt daraufhin die Einladungs-Email, in der er über weit
 
 
 
-Der KassenBetreiber wird in der Email aufgefordert einen Link zu drücken um die Registrierung abzuschließen. Er wird dadurch zum fiskaltrust.Portal weiter geleitet und muss hier als erstes sein Passwort setzen:
+Der KassenBetreiber wird in der Email aufgefordert einen Link zu drücken um die Registrierung abzuschließen. Er wird dadurch zum fiskaltrust.Portal weitergeleitet und muss hier als erstes sein Passwort setzen:
 
 ![Betreiber setzt Passwort](images/operator-sets-pwd.png "Betreiber setzt Passwort")
 
 
 
-Als nächstes wird dem KassenBetreiber die Nutzungsvereinbarung angezeigt. Diese MUSS er digital unterschreiben sonst kann die fiskaltrust.Middleware nicht ausgerollt werden. 
+Als nächstes wird dem KassenBetreiber die Nutzungsvereinbarung angezeigt. Diese MUSS er digital unterschreiben, sonst kann die fiskaltrust.Middleware nicht ausgerollt werden. 
 
 ![Betreiber unterzeichnet Nutzungsvereinbarung](images/sign-user-agreement.png "Betreiber unterzeichnet Nutzungsvereinbarung")
 
@@ -287,9 +288,9 @@ Der Betreiber gilt erst mit Unterschrift der Nutzungsvereinbarung als vollständ
 
 ![Betreiber zugeordnet und aktiv](images/operator-active.png "Betreiber zugeordnet und aktiv")
 
-Der Firmenname des KassenBetreibers wird in der Liste als Link dargestellt (nur bei Status "aktiv"). Drücken Sie den Link um in den Account des KassenBetreibers zu wechseln. Diese Funktion nennen wir "Surrogate-Funktion". Sie loggen sich dadurch in den Account des KassenBetreibers ein. Sie könne später diese Funktion nutzen um die Konfiguration der auszurollenden fiskaltrust.Middleware Instanz im Account des KassenBetreibers vorzunehmen.
+Der Firmenname des KassenBetreibers wird in der Liste der Benutzer mit einem Link hinterlegt, sobald der Status "aktiv" gesetzt ist. Drücken Sie den Link, um in den Account des KassenBetreibers zu wechseln. Diese Funktion nennen wir "Surrogate-Funktion". Sie loggen sich dadurch in den Account des KassenBetreibers ein. Sie können später diese Funktion nutzen, um die Konfiguration der auszurollenden fiskaltrust.Middleware Instanz im Account des KassenBetreibers vorzunehmen.
 
-Sollte der Eintrag den Status "inaktiv" besitzen, so hat der KassenBetreiber die Nutzungsvereinbarung noch nicht unterschrieben. 
+Sollte der Eintrag noch den Status "inaktiv" haben, so wurde die Nutzungsvereinbarung noch nicht vom KassenBetreiber unterschrieben. 
 
 ![Betreiber inaktiv](images/operator-inactive.png "Betreiber zugeordnet aber inaktiv")
 
@@ -297,7 +298,7 @@ Fordern Sie den KassenBetreiber auf, die Nutzungsvereinbarung digital zu untersc
 
 6. Wiederholen der Einladung eines KassenBetreibers durch einen KassenHändler
 
-6.1. Sollte der KassenBetreiber die Einladung-Email nicht erhalten haben, so können Sie diese mit Hilfe der Funktion zur individuellen Einladung eines KassenBetreibers erneut auslösen, wie unter Punkt 5. <a href="#KassenHändler laden KassenBetreiber ein" title="KassenHändler laden KassenBetreiber ein">KassenHändler laden KassenBetreiber ein</a> beschrieben. 
+6.1. Sollte der KassenBetreiber die Einladungs-Email nicht erhalten haben, so können Sie diese mit Hilfe der Funktion zur individuellen Einladung eines KassenBetreibers erneut auslösen, wie unter Punkt 5. <a href="#KassenHändler laden KassenBetreiber ein" title="KassenHändler laden KassenBetreiber ein">KassenHändler laden KassenBetreiber ein</a> beschrieben. 
 
 6.2. Eine weitere Möglichkeit ist, den "Protokoll"-Button zu verwenden. 
 
@@ -309,11 +310,13 @@ Das Protokoll der, in der Vergangenheit versendeten Einladungen, wird angezeigt.
 
 6.3. Es kann auch eine manuelle Mail mit dem Link versendet werden:
 
+
 Durch Klick auf den Button "Link in die Zwischenablage kopieren"![operator-invitation-button-copy_link](images/operator-invitation-button-copy_link.png) wird der Link um den KassenBetreiber zum KassenHändler zuzuordnen. Danach kann der Link durch den KassenHändler mit eine individuelle Methode (z.B. durch eine Mail aus dem privaten E-Mail-Account des Mitarbeiters des KassenHändlers) an den KassenBetreiber gesendet werden.
+
 
 ###  Standorte für KassenBetreiber anlegen
 
-Sobald sich ein KassenBetreiber über die Einladung eines KassenHändlers im fiskaltrust.Portal registriert hat und die Nutzungsvereinbarung digital unterschrieben hat, legt das fiskaltrust.Portal automatisch einen Standort (Hauptstandort) mit den Stammdaten der Firma an. Sollte der KassenBetreiber mehrere Standort betreiben, so müssen diese im fiskaltrust.Portal angelegt werden, denn bei der Konfiguration der fiskaltrust.Middleware muss der genaue Standort (Outlet-Nummer) angegeben werden damit die Daten separiert werden können. Im Falle einer Finanzprüfung ist der Standort die prüfbare Einheit. 
+Sobald sich ein KassenBetreiber über die Einladung eines KassenHändlers im fiskaltrust.Portal registriert hat und die Nutzungsvereinbarung digital unterschrieben hat, legt das fiskaltrust.Portal automatisch einen Standort (Hauptstandort) mit den Stammdaten der Firma an. Sollte der KassenBetreiber mehrere Standort betreiben, so müssen diese im fiskaltrust.Portal angelegt werden, denn bei der Konfiguration der fiskaltrust.Middleware muss der genaue Standort (Outlet-Nummer) angegeben werden, damit die Daten separiert werden können. Im Falle einer Finanzprüfung ist der Standort die prüfbare Einheit. 
 
 KassenHändler können Standorte für Ihre KassenBetreiber über die Surrogate-Funktion anlegen und editieren. Dazu benötigen Sie zumindest Schreibrechte auf den Account des KassenBetreiber. Sollte Sie als KassenHändler diese Rechte nicht besitzen, so können Sie alternativ den KassenBetreiber bitten die benötigten Standorte selbst anzulegen.
 
@@ -332,7 +335,7 @@ Der gesuchte KassenBetreiber erscheint als Eintrag in der Ergebnisliste. Der Nam
 
 ![Übersicht der Standorte](images/overview-outlets.png "Übersicht der Standorte")
 
-4. Sie können hier neue Standorte einzeln anlegen (Button "Fügen Sie einen neuen Standort hinzu") oder mehrer Standorte gelichzeitig aus einer CSV-Datei importieren. Nach dem Anlegen erscheint der neue Standort in der Liste. 
+4. Sie können hier neue Standorte einzeln anlegen (Button "Fügen Sie einen neuen Standort hinzu") oder mehrere Standorte gleichzeitig aus einer CSV-Datei importieren. Nach dem Anlegen erscheint der neue Standort in der Liste. 
 
 ![Standort angelegt](images/outlet-added.png "Standort angelegt")
 
