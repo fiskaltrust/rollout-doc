@@ -54,7 +54,7 @@ Die fiskaltrust.Middleware ist das lizenzkostenfreie Basisprodukt von fiskaltrus
 
 Da die fiskaltrust.Middleware als eigenständiger Service läuft, muss sie auf die Kasse des KassenBetreibers ausgerollt werden. Je nach Gegebenheit muss die jeweilige fiskaltrust.Middleware-Instanz vor der Inbetriebnahme entsprechend konfiguriert werden. So muss zum Beispiel angegeben werden, wo das KassenSystem den Service erreichen kann, in welche Datenbank die verarbeiteten Daten vom Service gespeichert werden sollen, welche TSE für die Signaturen verwendet werden soll und wie die TSE für den Service erreichbar ist. 
 
-In den folgenden Kapitel werden wir erläutern wie die Konfiguration der fiskaltrust.Middleware für den Rollout vorgenommen wird. Zudem zeigen wir Ihnen wie der Service installiert und getestet werden kann und gehen auf diverse Rolloutszenarien ein. Zum Schuss zeigen wir Ihnen welche Automatisierungsmöglichkeiten fiskaltrust für einen Massenrollout zur Verfügung stellt.
+In den folgenden Kapiteln werden wir erläutern, wie die Konfiguration der fiskaltrust.Middleware für den Rollout vorgenommen wird. Zudem zeigen wir Ihnen wie der Service installiert und getestet werden kann und gehen auf diverse Rolloutszenarien ein. Zum Schuss zeigen wir Ihnen, welche Automatisierungsmöglichkeiten fiskaltrust für einen Massenrollout zur Verfügung stellt.
 
 
 
@@ -81,7 +81,7 @@ Die Queue ist die Komponente der fiskaltrust.Middleware, mit der das KassenSyste
 
 Die Queue erhält also Anfragen vom KassenSystem und verarbeitet diese. Sie ist verantwortlich für die Erstellung der Belegnummer, für die Verkettung der Anfragen und für die Persistenz der Daten.
 
-Für die Signierung der Daten ist die fiskaltrust.Middleware-Komponente SCU (Signaturerstellungseinheit) verantwortlich. Dabei werden die zu signierenden Daten von der Queue an die SCU gesendet, die wiederum, in der deutschen Variante, mit einer TSE kommuniziert. Die TSE nimmt schlussendlich die Signierung der Daten vor. Die signierten Daten und alle dazugehörigen Informationen werden dann von der SCU zurück an die Queue gesendet. Die Queue persistiert die Daten und baut die Antwort auf, die an das KassenSystem zurückgegeben wird. In dieser Antwort befinden sich wichtige Angaben, die vom KassenSystem auf den Beleg gedruckt werden müssen.
+Für die Signierung der Daten ist die fiskaltrust.Middleware-Komponente SCU (Signaturerstellungseinheit) verantwortlich. Dabei werden die zu signierenden Daten von der Queue an die SCU gesendet, die, in der deutschen Variante, wiederum mit einer TSE kommuniziert. Die TSE nimmt schlussendlich die Signierung der Daten vor. Die signierten Daten und alle dazugehörigen Informationen werden dann von der SCU zurück an die Queue gesendet. Die Queue persistiert die Daten und baut die Antwort auf, die an das KassenSystem zurückgegeben wird. In dieser Antwort befinden sich wichtige Angaben, die vom KassenSystem auf den Beleg gedruckt werden müssen.
 
 ### Die CashBox als Konfigurationscontainer
 
@@ -94,11 +94,13 @@ Die Konfiguration einer fiskaltrust.Middleware-Instanz wird über eine sogenannt
 
 
 
-Für das obere Beispiel müssen wir also die Konfiguration der Queue und der SCU vornehmen und danach diese beiden Konfigurationen in einen Konfigurationscontainer (CashBox) ablegen. Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
+Für das obere Beispiel müssen wir also die Konfiguration der Queue und der SCU vornehmen und danach diese beiden Konfigurationen in einen Konfigurationscontainer (CashBox) ablegen. 
+Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
 
 #### Konfiguration der Queue
 
-Wie bereits vorhin erwähnt, ist die Queue die Komponente der fiskaltrust.Middleware die über die IPOS Schnittstelle dem KassenSystem für Anfragen zur Verfügung steht. Zudem ist die Queue für die Persistenz der verarbeiteten Daten verantwortlich. Und genau das sind die zwei Punkte, die wir hier konfigurieren müssen:
+Wie bereits vorhin erwähnt, ist die Queue die Komponente der fiskaltrust.Middleware, welche über die IPOS Schnittstelle dem KassenSystem für Anfragen zur Verfügung steht. Zudem ist die Queue für die Persistenz der verarbeiteten Daten verantwortlich. 
+Und genau das sind die zwei Punkte, die wir hier konfigurieren müssen:
 
 1. wie und wo genau soll die Queue für das KassenSystem erreichbar sein? (also z.B. per `grpc` auf `localhost:1234`)
 2. wo genau soll die Queue die Daten speichern? (also z.B. in eine MySql Datenbank mit dem connectionstring: "xyz")
@@ -109,9 +111,11 @@ Wie die Kommunikation stattfinden soll, also z.B. per `grpc`, entscheidet der Ka
 
 Die SCU ist für die Erstellung der Signaturen verantwortlich. Sie bekommt dabei die zu signierenden Daten von der Queue und übernimmt die Kommunikation mit einer TSE um die Daten signieren zu lassen. Auch bei der SCU sind also zwei Konfigurationsangaben vorzunehmen:
 
-1. zum einen muss die Queue wissen, wie und wo sie die SCU erreichen kann (also z.B. über `grpc` auf `localhost:5678`).
+1. zum einen muss die Queue wissen, wie und wo sie die SCU erreichen kann
+ (also z.B. über `grpc` auf `localhost:5678`).
 
-2. und zum anderen muss die SCU wissen auf welche TSE sie zugreifen soll und wo sich diese befindet (z.B. Swissbit - USB - TSE im Laufwerk `E:`).
+2. und zum anderen muss die SCU wissen auf welche TSE sie zugreifen soll und wo sich diese befindet
+ (z.B. Swissbit - USB - TSE im Laufwerk `E:`).
 
 Sie werden sich nun sicherlich fragen, warum wir hier konfigurieren müssen, wie die SCU von der Queue erreichbar sein soll, wenn die Queue und SCU doch Komponenten der fiskaltrust.Middleware sind. Ist der Queue nicht schon bekannt, wie sie die SCU erreichen kann? Nun, die Antwort liegt in der Flexibilität des fiskaltrust.Middleware, denn eine Instanz der fiskaltrust.Middleware betreibt nur genau die Komponenten, die in ihrer CashBox angegeben werden. So kann zum Beispiel erreicht werden dass sich drei Kassen eine SCU und damit eine Hardware-TSE teilen können:
 
@@ -140,10 +144,10 @@ Drücken Sie nun auf den Button "+ Erstellen". Es erscheint ein Formular zum Erf
 1. Geben Sie hier den Namen der SCU an (z.B. "TEST SCU")
 2. Wählen Sie je nach TSE das Package (Modul) aus, das die SCU verwenden soll (in unserem Beispiel verwenden wir eine CryptoVision TSE)
 3. Bei der Package-Version wird automatisch die neueste gewählt
-4. Geben Sie den Standort an, es wird standardmäßig automatisch der Hauptstandort vorselektiert
+4. Geben Sie den Standort an, standardmäßig ist der Hauptstandort vorselektiert
 5. Drücken Sie "Speichern"
 
-Die SCU wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weitergeleitet. Diese richtet sich nach dem zuvor ausgewählten Package. In unserem Beispiel müssen wir für die Cryptovision TSE den Gerätepfad angeben. Für ein anderes Package kann hier auch was anderes verlangt werden (z.B. Com-Port für eine Diebold-TSE). 
+Die SCU wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weitergeleitet. Diese richtet sich nach dem zuvor ausgewählten Package. In unserem Beispiel müssen wir für die Cryptovision TSE den Gerätepfad angeben. Für ein anderes Package können auch andere Angaben verlangt werden (z.B. Com-Port für eine Diebold-TSE). 
 
 ![SCU Anlegen 3](images/add-scu-3.png "SCU Konfigurieren")
 
@@ -175,15 +179,15 @@ Drücken Sie nun auf den Button "Neu erstellen". Es erscheint ein Formular zum E
 
 4. Geben Sie im Feld "CashBox Identification" die **Kassenseriennummer** an. Achten Sie darauf, dass diese weltweit eindeutig ist und dass es sich um einen [printable string](https://en.wikipedia.org/wiki/PrintableString) mit max. 20 Zeichen länge handelt. Die hier angegebene Kassenseriennummer wird später auch als ClientId in der TSE registriert, um die Signaturen eindeutig der Kasse zuzuordnen. Da die unterschiedlichen TSE Hersteller jeweils andere Vorgaben zur Formatierung und zur Länge der ClientId machen, haben wir uns hier auf den kleinsten gemeinsamen Nenner geeinigt ([printable string](https://en.wikipedia.org/wiki/PrintableString), max. 20 Zeichen)
 
-5. Geben Sie den Standort an, es wird standardmäßig automatisch der Hauptstandort vorselektiert
+5. Geben Sie den Standort an, standardmäßig ist der Hauptstandort vorselektiert
 
 6. Drücken Sie "Speichern"
 
-Die Queue wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weitergeleitet. Diese richtet sich nach dem zuvor ausgewählten Persitenz-Package. In unserem Beispiel müssen wir für die SQLite Datenbank keine weiteren Angaben vornehmen, denn sie wird automatisch von der fiskaltrust.Middleware angelegt. Handelt es sich jedoch um ein anderes Package, so müssen hier entsprechende Verbindungsangaben gemacht werden. Zum Beispiel die Angabe eines Connection-String für eine MySQL Datenbank. 
+Die Queue wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weitergeleitet. Diese richtet sich nach dem zuvor ausgewählten Persistenz-Package. In unserem Beispiel müssen wir für die SQLite Datenbank keine weiteren Angaben vornehmen, denn sie wird automatisch von der fiskaltrust.Middleware angelegt. Handelt es sich jedoch um ein anderes Package, so müssen hier entsprechende Verbindungsangaben gemacht werden. Zum Beispiel die Angabe eines Connection-String für eine MySQL Datenbank. 
 
 ![Queue Anlegen 3](images/add-queue-3.png "Queue konfigurieren")
 
-1. Tragen Sie bei Bedarf die Verbindungsangaben ein (in diesem Besipiel nicht notwendig, das SQLite DB)
+1. Tragen Sie bei Bedarf die Verbindungsangaben ein (in diesem Beispiel nicht notwendig, da SQLite DB)
 2. Geben Sie nun an, wie die Queue von dem KassenSystem erreichbar sein soll. Drücken Sie dazu zuerst den entsprechenden Button für die Art der Kommunikation (z.B. `http(REST)`) und tragen Sie danach den Pfad ein (z.B. `localhost:1200/fiskaltrust`).
 3. Drücken Sie auf "Speichern und schließen" um die Angaben zu speichern und zurück zur Liste zu gelangen.
 
@@ -195,7 +199,7 @@ In der Liste können wir nun sehen, dass unsere Queue Konfiguration erfolgreich 
 
 **Schritt 3: Anlegen der CashBox**
 
-Nach dem Anlegen der SCU und der Queue legen wir als nächstes die CashBox, also den Konfigurationscontainer für die fiskaltrust.Middleware-Instanz, an. Gehen Sie dazu auf "Konfiguration->CashBox". Die Liste der bereits angelegten CashBoxen wird angezeigt.
+Nach dem Anlegen der SCU und der Queue legen wir als nächstes die CashBox an, also den Konfigurationscontainer für die fiskaltrust.Middleware-Instanz. Gehen Sie dazu auf "Konfiguration->CashBox". Die Liste der bereits angelegten CashBoxen wird angezeigt.
 
 ![CashBox Anlegen 1](images/add-cashbox-1.png "Liste der CashBoxen")
 
@@ -205,7 +209,7 @@ Drücken Sie nun auf den Button "+ Hinzufügen". Es erscheint ein Formular zum E
 
 1. Geben Sie hier den Namen der CashBox an (z.B. "TEST CASHBOX")
 
-2. Geben Sie den Standort an, es wird standardmäßig automatisch der Hauptstandort vorselektiert
+2. Geben Sie den Standort an, standardmäßig ist der Hauptstandort vorselektiert
 
 3. Drücken Sie "Speichern" um die Angaben zu speichern und zurück zur Liste zu gelangen.
 
@@ -275,7 +279,7 @@ Die Command-Files können zum parametrisierten Starten oder Stoppen des Service 
 `fiskaltrust -cashboxid=259c5a7b-fc44-40d6-af7b-73fde0943ec4 -accesstoken=BL...8D6o= -sandbox -i -servicename=fiskaltrust-259c5a7b-fc44-40d6-af7b-73fde0943ec4`
 `timeout 15`
 
-`fiskaltrust.exe` wird also mit der `cashobxid` "259c.." gestartet. Dadurch weiß die gestartete fiskaltrust.Middleware-Instanz aus welchem Konfigurationscontainer (CashBox) sie sich initialisieren soll. Die `cashboxid` ist die ID der CashBox und kann im fiskaltrust.Portal im aufgeklappten Listeneintrag der CashBox eingesehen werden:
+`fiskaltrust.exe` wird also mit der `cashboxid` "259c.." gestartet. Dadurch weiß die gestartete fiskaltrust.Middleware-Instanz, aus welchem Konfigurationscontainer (CashBox) sie sich initialisieren soll. Die `cashboxid` ist die ID der CashBox und kann im fiskaltrust.Portal im aufgeklappten Listeneintrag der CashBox eingesehen werden:
 
 ![CashBoxId und AccessToken](images/cashbox-id-and-accesstoken.png "CashBoxId und AccessToken")
 
@@ -299,13 +303,13 @@ Speichern und als Administrator starten:
 
 ![Test starten](images/run-test-cmd.png "Test starten")
 
-Es erscheint eine Konsole, in der die fisklatrust.Middleware Instanz gestartet wird. Wir können hier sehen, was genau beim Start passiert und bei etwaigen Fehler entsprechende Korrekturen (z.B. in der CashBox oder in beim Anschluss der TSE) vornehmen.
+Es erscheint eine Konsole, in der die fiskaltrust.Middleware Instanz gestartet wird. Wir können hier sehen, was genau beim Start passiert und bei etwaigen Fehler entsprechende Korrekturen (z.B. in der CashBox oder in beim Anschluss der TSE) vornehmen.
 
 ![Konsole](images/cmd-terminal.png "Konsole")
 
 
 
-Nun können Sie versuchen aus dem KassenSystem Anfragen an die gestartete fiskaltrust.Middleware-Instanz zu senden. Als KassenHändler werden Ihnen im KassenSystem entsprechende Knöpfe zur Verfügung stehen. 
+Nun können Sie versuchen, aus dem KassenSystem Anfragen an die gestartete fiskaltrust.Middleware-Instanz zu senden. Als KassenHändler werden Ihnen im KassenSystem entsprechende Knöpfe zur Verfügung stehen. 
 
 In unserem Beispiel simulieren wir ein KassenSystem mit Hilfe von [Postman](https://www.postman.com/). Postman kann Anfragen an die Queue über `REST` senden. Dazu verwenden wir unsere Collection aus dem fiskaltrust [middleware-demo-postman github repository](https://github.com/fiskaltrust/middleware-demo-postman). In dem Repository findet sich auch die Anleitung zur Konfiguration der Postman-Collection. Wichtig hierbei ist die Angabe des Endpoint an der die Queue erreichbar ist und die Angabe der CashBoxId als Werte für die bereits angelegten Variablen:
 
@@ -347,7 +351,7 @@ Als nächste können wir einen Beleg zum Abrechnen eines Einkaufs senden. Als Ka
 
 
 
-Die fiskaltrust.Middleware bearbeitet die Anfrage, und sendet eine Antwort zurück, die wichtige Belegdaten, inklusive der benötigten Signaturen enthält. Im Erfolgfall werden diese vom KassenSystem auf den Beleg gedruckt.
+Die fiskaltrust.Middleware bearbeitet die Anfrage, und sendet eine Antwort zurück, die wichtige Belegdaten, inklusive der benötigten Signaturen enthält. Im Erfolgsfall werden diese vom KassenSystem auf den Beleg gedruckt.
 
 ### Verbindung mit der fiskaltrust.Cloud überprüfen
 
@@ -361,7 +365,7 @@ Es erscheint eine Übersicht der verarbeiteten Beleganfragen:
 
 Hinweis: 
 
-Sollten die Belege hier nicht erscheinen, kann es sein, dass die Kommunikation der fiskaltrust.Middleware mit dem Server nicht geklappt hat. Überprüfen Sie in diesem Fall zuerst ob bereits 5 Minuten seit dem Absetzen der Anfragen vergangen sind. Sollte dies der Fall sein, so überprüfen Sie bitte die Logmeldungen in der Konsole. Es kann sein, dass Sie zuerst entsprechende Firewall Ports freigeben müssen.
+Sollten die Belege hier nicht erscheinen, kann es sein, dass die Kommunikation der fiskaltrust.Middleware mit dem Server nicht geklappt hat. Überprüfen Sie in diesem Fall zuerst, ob bereits 5 Minuten seit dem Absetzen der Anfragen vergangen sind. Sollte dies der Fall sein, so überprüfen Sie bitte die Logmeldungen in der Konsole. Es kann sein, dass Sie zuerst entsprechende Firewall Ports freigeben müssen.
 
 Drücken Sie nun als nächstes auf den Button mit dem Auge-Symbol in der Zeile mit dem zuvor gesendeten Abrechnungs-Beleg (s.o.). Sie können nun eine beispielhafte Darstellung des Belegs einsehen. Zudem werden die konkrete Anfrage und die Antwort an das KassenSystem angezeigt:
 
@@ -371,7 +375,7 @@ Drücken Sie nun als nächstes auf den Button mit dem Auge-Symbol in der Zeile m
 
 ### Datenexport testen
 
-Ein Datenexport kann lokal über die fiskaltrust.Middleware oder über das fiskaltrust.Portal vorgenommen werden. Der lokale Export von Daten direkt aus der fiskaltrust.Middleware ist lizenzkostenfrei. Der Export über das fiskaltrust.Portal ist kostenpflichtig und wir über das fiskaltrust Produkt POSArchiv pro KassenBetreiber und Kasse freigeschalten Das Produkt POSArchiv ist auch in unseren Sorglos-Paketen enthalten und bezieht sich dort auf alle Kassen des Standorts (ist jedoch auf eine Maximalanzahl an Kassen limitiert - siehe dazu auch die aktuelle Produktbeschreibung).
+Ein Datenexport kann lokal über die fiskaltrust.Middleware oder über das fiskaltrust.Portal vorgenommen werden. Der lokale Export von Daten direkt aus der fiskaltrust.Middleware ist lizenzkostenfrei. Der Export über das fiskaltrust.Portal ist kostenpflichtig und wird über das fiskaltrust Produkt POSArchiv pro KassenBetreiber und Kasse freigeschalten Das Produkt POSArchiv ist auch in unseren Sorglos-Paketen enthalten und bezieht sich dort auf alle Kassen des Standorts (ist jedoch auf eine Maximalanzahl an Kassen limitiert - siehe dazu auch die aktuelle Produktbeschreibung).
 
 #### Datenexport lokal
 
@@ -379,32 +383,32 @@ Es können folgende Daten direkt lokal über die fiskaltrust.Middleware exportie
 
 - Aktionsjournal im internen fiskaltrust Format (JSON)
 - Belegjournal im internen fiskaltrust Format (JSON)
-- QueueItemesjournal im internen fiskaltrust Format (JSON)
-- DSFinV-K- Ein DSFinV-K (Digitale Schnittstelle der Finanzverwaltung für Kassensysteme) kompatibler Export der an die Queue gesendeten Daten. Die Daten werden in mehreren CSV-Dateien aggregiert, nach DSFinV-K 2.2
+- QueueItemsjournal im internen fiskaltrust Format (JSON)
+- DSFinV-K- Ein DSFinV-K (Digitale Schnittstelle der Finanzverwaltung für Kassensysteme) kompatibler Export der an die Queue gesendeten Daten. Die Daten werden gemäß den Vorgaben der DSFinV-K 2.2 in mehreren CSV-Dateien aggregiert 
 - TAR-File Export der TSE Daten in der TAR-Datei (einem Archiv zum Verpacken von Dateien) aggregiert, dass z.B. mit 7-zip geöffnet werden kann.
 
-Der Export bezieht sich immer auf eine Queue (mit Ausnahme des TSE-TAR, siehe Hinweis weiter unten). Der Datenexport aus der fiskaltrust.Middleware wird vom KassenHersteller über das KassenSystem zur Verfügung gestellt. Dazu verwendet das KassenSystem die `journal` Funktion der IPOS Schnittstelle, die von der fiskaltrust.Middleware zur Verfügung gestellt wird. Als KassenHändler stehen Ihnen dann entsprechende Funktionalität an der Kasse zur Verfügung. Bitte testen Sie den Datenexport in diesem Fall direkt mit dem KassenSystem. Beachten Sie bitte dabei auch die weiter unten dargestellten Hinweise zum DSFinV-K Export und zu dem TAR-File Export.
+Der Export bezieht sich immer auf eine Queue (mit Ausnahme des TSE-TAR, siehe Hinweis weiter unten). Der Datenexport aus der fiskaltrust.Middleware wird vom KassenHersteller über das KassenSystem zur Verfügung gestellt. Dazu verwendet das KassenSystem die `journal` Funktion der IPOS Schnittstelle, die von der fiskaltrust.Middleware zur Verfügung gestellt wird. Als KassenHändler stellt Ihnen das KassenSystem einen entsprechenden Knopf zur Verfügung. Bitte testen Sie den Datenexport in diesem Fall direkt mit dem KassenSystem. Beachten Sie bitte dabei auch die weiter unten dargestellten Hinweise zum DSFinV-K Export und zu dem TAR-File Export.
 
 #### Hinweise zum DSFinV-K Export
 
-Der DSFinV-K Export bezieht sich immer auf einen abgeschossenen Tag. Er erfordert, dass jeder Tag mit einen sogenannten Tagesabschlußbeleg abegeschlossen wird. Der Tagesabschlußbelegt muss an die fiskaltrust.Middleware über das KassenSystem gesendet werden. Als KassenHändler stellt Ihnen das KassenSystem einen entsprechenden Knopf zur Verfügung.  
+Der DSFinV-K Export bezieht sich immer auf einen abgeschossenen Tag. Er erfordert, dass jeder Tag mit einen sogenannten Tagesabschlußbeleg abgeschlossen wird. Der Tagesabschlußbelegt muss an die fiskaltrust.Middleware über das KassenSystem gesendet werden. Als KassenHändler stellt Ihnen das KassenSystem einen entsprechenden Knopf zur Verfügung.  
 
 #### Hinweise zum TAR-File Export
 
 Der Tar-File Export bezieht sich auf alle Daten der TSE, auch wenn die TSE von mehreren Queues verwendet wird. Der TSE-TAR Export beinhaltet also die Daten aller Queues, die die selbe TSE verwenden. 
 
-Der TAR Export wird beim daily-closing Beleg (Tagesabschlußbeleg) automatisch von der fiskaltrust.Middleware getriggert. Die Daten werden dabei in Datenbank der ausführenden Queue übertragen und aus der TSE gelöscht.  Des Weiteren werden die Daten in die fiskaltrust.Cloud hochgeladen wo sie dann im fiskaltrust.Portal nach Aktivierung des Produkts POSArchiv zur Verfügung stehen.
+Der TAR Export wird beim daily-closing Beleg (Tagesabschlußbeleg) automatisch von der fiskaltrust.Middleware getriggert. Die Daten werden dabei in Datenbank der ausführenden Queue übertragen und aus der TSE gelöscht.  Des Weiteren werden die Daten in die fiskaltrust.Cloud hochgeladen, wo sie nach Aktivierung des Produkts POSArchiv im fiskaltrust.Portal zur Verfügung stehen.
 
-Deshalb empfehlen wir, im Falle, dass mehrere Queues die selbe TSE verwenden, eine "führende Queue" zu definieren, die beim daily-closing Beleg die TSE Daten bekommt. Für die anderen Queues die auf die selbe TSE zugreifen, sollten KassenHersteller dafür sorgen, dass das KassenSystem beim daily-closing Beleg das receipt case flag [0x0000000004000000](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-receipt-ftreceiptcase.html#ftreceiptcaseflag) verwenden. Das verhindert den automatischen TAR Export durch die fiskaltrust.Middleware und damit sind die Daten nicht auf unterschiedliche Queues verteilt, sondern landen immer nur in der führenden Queue. Als KassenHändler sollten Ihnen für diesen Fall zwei unterschiedliche Funktionen im KassenSystem zur Verfügung stehen (z.B. Tagesabschluß mit automatischem TAR-File Export - für die führende Queue - und Tagesabschuß ohne automatischem TAR-File Export für die anderen Queues, die dieselbe TSE verwenden).
+Deshalb empfehlen wir, falls mehrere Queues die selbe TSE verwenden, eine "führende Queue" zu definieren, die beim daily-closing Beleg die TSE Daten bekommt. Für die anderen Queues die auf dieselbe TSE zugreifen, sollten KassenHersteller dafür sorgen, dass das KassenSystem beim daily-closing Beleg das receipt case flag [0x0000000004000000](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-receipt-ftreceiptcase.html#ftreceiptcaseflag) verwendet. Das verhindert den automatischen TAR Export durch die fiskaltrust.Middleware und damit sind die Daten nicht auf unterschiedliche Queues verteilt, sondern landen immer nur in der führenden Queue. Als KassenHändler sollten Ihnen für diesen Fall zwei unterschiedliche Funktionen im KassenSystem zur Verfügung stehen (z.B. Tagesabschluß mit automatischem TAR-File Export - für die führende Queue - und Tagesabschuß ohne automatischem TAR-File Export für die anderen Queues, die dieselbe TSE verwenden).
 
-Wir arbeiten außerdem gerade an einem Standortbasierten Export im fiskaltrust.Portal, der dann zu einer Handling-Vereinfachung führen wird.
+Wir arbeiten außerdem gerade an einem standortbasierten Export im fiskaltrust.Portal, der dann zu einem vereinfachten Handling führen wird.
 
 Der direkte Export der TSE-TAR Daten kann vom KassenSystem über die Journalfunktion der IPOS-Schnittstelle von der Kasse aufgerufen werden.
 
 Über den ftJournalType kann dabei zwischen zwei Varianten unterschieden werden:
 
-[0x4445000000000001](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-journal-ftjournaltype.html) - exportiert die TAR-TSE Daten, die sich aktuell in der TSE befinden (D.h. vom letzten daily-closing bis zum Zeitpunkt des Aufrufs)
-[0x4445000000000003](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-journal-ftjournaltype.html) - exportiert die TAR-TSE Daten, die sich in der Datenbank der Queue befinden.
+- [0x4445000000000001](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-journal-ftjournaltype.html) - exportiert die TAR-TSE Daten, die sich aktuell in der TSE befinden (D.h. vom letzten daily-closing bis zum Zeitpunkt des Aufrufs)
+- [0x4445000000000003](https://docs.fiskaltrust.cloud/doc/interface-doc/doc/appendix-de-kassensichv/reference-tables/type-of-journal-ftjournaltype.html) - exportiert die TAR-TSE Daten, die sich in der Datenbank der Queue befinden.
 
  Als KassenHändler sollten Ihnen auch hierzu entsprechende Knöpfe im KassenSystem zur Verfügung stehen.
 
@@ -420,7 +424,7 @@ Es können folgende Daten pro Queue exportiert werden:
 
 
 
-Um den Datenexport über das fiskaltrust.Portal zu testen können Sie wie folgt vorgehen:
+Zum Test des Datenexports über das fiskaltrust.Portal können Sie wie folgt vorgehen:
 
 ##### Belegjournal oder Actionjournal exportieren
 
@@ -442,16 +446,16 @@ Sie gelangen zur Export-Ansicht für die gewählte Queue. Hier können Sie die A
 
 ![portal export wählen](images/portal-export-choose.png "Export wählen über das fiskaltrust.Portal")
 
-Setzen Sie in dem oberen Filterbereich die gewünschten Filter, wählen Sie danach z.B. "Vollständiger Export (CSV)" und drücken Sie im Anschluss den "Export starten" Button ganz unten. Sie werden zur Liste der angetriggerten Exports weitergeleitet, wo ihnen angezeigt wird, dass der Export sich gerade in Bearbeitung befindet. Sobald der gewünschte Export zur Verfügung steht können Sie den Listeneintrag aufklappen und den fertigen Export downloaden.
+Setzen Sie in dem oberen Filterbereich die gewünschten Filter, wählen Sie danach z.B. "Vollständiger Export (CSV)" und drücken Sie im Anschluss den "Export starten" Button ganz unten. Sie werden zur Liste der angetriggerten Exports weitergeleitet, wo ihnen angezeigt wird, dass der Export sich gerade in Bearbeitung befindet. Sobald der gewünschte Export zur Verfügung steht, können Sie den Listeneintrag aufklappen und den fertigen Export downloaden.
 
 ![portal export download](images/portal-export-download.png "Export downloaden über das fiskaltrust.Portal")
 
-Die oben beschriebene Vorgehensweise kann analog zu allen der Export-Ansicht angebotenen Export-Formate durchgeführt werden. Achten Sie beim Testen des DSFinV-K und TAR-File Export darauf, dass auch ein dazugehöriger Tagesabschlußbeleg an die fiskaltrust.Middelware vom KassenSystem gesendet wurde.
+Die oben beschriebene Vorgehensweise kann analog zu allen der Export-Ansicht angebotenen Export-Formate durchgeführt werden. Achten Sie beim Testen des DSFinV-K und TAR-File Export darauf, dass zuvor ein Tagesabschlußbeleg vom KassenSystem an die fiskaltrust.Middelware gesendet wurde.
 
 
 ### Schlußwort
 
-In den oberen Kapitel haben wir beschrieben wie die fiskaltrust.Middleware aufgebaut ist, wie die einzelnen Instanzen manuell über das fiskaltrust.Portal konfiguriert werden können und wie der Service gestartet und getestet werden kann. Als nächstes möchten wir Ihnen als Inspiration für den Rollout ein einige mögliche Rollout-Szenarien vorstellen. Diese zeigen, wie flexibel die fiskaltrust.Middleware am Standort des Betreibers eingesetzt werden kann. Nach der Präsentation verschiedener Rollout-Szenarien gehen wir dann auf mögliche Automatisierungsoptionen für den Massenrollout ein. 
+In den oberen Kapitel haben wir beschrieben wie die fiskaltrust.Middleware aufgebaut ist, wie die einzelnen Instanzen manuell über das fiskaltrust.Portal konfiguriert werden können und wie der Service gestartet und getestet werden kann. Als nächstes möchten wir Ihnen als Inspiration für den Rollout ein einige mögliche Rollout-Szenarien vorstellen. Diese zeigen, wie flexibel die fiskaltrust.Middleware am Standort des Betreibers eingesetzt werden kann. Nach der Präsentation verschiedener Rollout-Szenarien gehen wir dann auf mögliche Automatisierungsoptionen für den Massenrollout ein.
 
 ## Rollout Szenarien
 
@@ -463,7 +467,8 @@ Instanzen der fiskaltrust.Middleware können je nach Gegebenheit bzw. Szenario u
 - Jede Queue muss dem Finanzamt als elektronisches Kassen- oder Aufzeichnungssystem (Kasse) gemeldet werden.
 - Alle Queues, SCUs und TSEs müssen sich im sogenannten "operational environment" des KassenBetreibers befinden. Eine Ausnahme stellt die Cloud-Komponente einer zertifizierten Cloud-TSE dar. Diese befindet sich im Rechenzentrum des Cloud-TSE Anbieters.
 - Jeder Queue kann nur eine SCU zugeordnet werden und jede SCU kann nur für eine TSE zuständig sein. D.h. jede Kasse kann nur eine TSE verwenden.
-- Pro Kasse können mehrere Terminals betrieben werden. (Ein Terminal ist ein Gerät ohne Kassenfunktion).
+- Pro Kasse können mehrere Terminals betrieben werden.
+ (Ein Terminal ist ein Gerät ohne Kassenfunktion).
 
   
 
@@ -476,7 +481,7 @@ Grundsätzlich werden Hardware-TSE per micro SD-Karte oder per USB-Anschluss dir
 
 
 ### Eine TSE pro Kasse
-Aus technischer Sicht ist dies das einfachste Szenario, benötigt allerdings eine höhere Anzahl an TSEs, da für jede Kasse eine eigene TSE eingesetzt wird. Ein Vorteil dieser Lösung ist, dass wenn eine TSE ausfällt oder verloren geht, andere Kassen nicht betroffen sind. Ein weiterer Vorteil besteht darin, dass Performanceengpässe vermieden werden, weil jede Kasse ihre eigene TSE nutzt und somit nur die Requests dieser einen Kasse von der TSE verearbeitet bzw. signiert werden müssen.
+Aus technischer Sicht ist dies das einfachste Szenario, benötigt allerdings eine höhere Anzahl an TSEs, da für jede Kasse eine eigene TSE eingesetzt wird. Ein Vorteil dieser Lösung ist, dass wenn eine TSE ausfällt oder verloren geht, andere Kassen nicht betroffen sind. Ein weiterer Vorteil besteht darin, dass Performanceengpässe vermieden werden, weil jede Kasse ihre eigene TSE nutzt und somit nur die Requests dieser einen Kasse von der TSE verarbeitet bzw. signiert werden müssen.
 
 ![tse-per-cashregister](images/cash-register-queue-scu-tse2.png)
 
@@ -503,7 +508,7 @@ Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfi
 ![tse-on-cashregister](images/cash-register-with-cloud-tse.png)
 
 ### Rollout-Szenario mit Terminals
-Terminals sind Eingabegeräte wie Tablets, Handhelds oder ähnliches (ohne Kassenfunktion), bei denen es nicht möglich ist eine Hardware-TSE anzuschließen bzw. die fiskaltrust.Middleware am Gerät selbst zu installieren. In diesem Fall wird die fiskaltrust.Middleware an einer Kasse oder an einem Server betrieben und ist stets für die Terminals erreichbar. Die Terminals dienen nur als Eingabegeräte und verbinden sich mit dem Server oder mit der Kasse. Bei vielen gleichzeitigen Requests kann es zu [Performanceengpässen](#performanceempfehlung) in der TSE kommen. Sollten Sie ich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz mehrerer Kassen mit zusätzlichen TSEs (alternativ: mehrere fiskaltrust.Middleware-Instanzen mit eigener SCU und TSE auf dem Server).
+Terminals sind Eingabegeräte ohne Kassenfunktion wie Tablets, Handhelds oder ähnliches, bei denen es nicht möglich ist, eine Hardware-TSE anzuschließen bzw. die fiskaltrust.Middleware am Gerät selbst zu installieren. In diesem Fall wird die fiskaltrust.Middleware an einer Kasse oder an einem Server betrieben und ist stets für die Terminals erreichbar. Die Terminals dienen nur als Eingabegeräte und verbinden sich mit dem Server oder mit der Kasse. Bei vielen gleichzeitigen Requests kann es zu [Performanceengpässen](#performanceempfehlung) in der TSE kommen. Sollten Sie sich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz mehrerer Kassen mit zusätzlichen TSEs (alternativ: mehrere fiskaltrust.Middleware-Instanzen mit eigener SCU und TSE auf dem Server).
 
 ![terminals-single-queue](images/terminals-one-queue.png)
 
@@ -520,7 +525,7 @@ Im Falle eines Ausfalls der (Internet-)Verbindung ist es allerdings so, dass die
 
 ### Anbindungsvarianten der TSE an die SCU
 
-Für folgende Anbindungsvarianten haben wir eine Legende vorbereitet, die die Bedeutung der einzelnen Pfeile aufzeigt:
+Für folgende Anbindungsvarianten haben wir eine Legende vorbereitet, welche die Bedeutung der einzelnen Pfeile aufzeigt:
 
 ![anbindungs-varianten-Legende](images/legend-variants.png)
 
@@ -530,7 +535,7 @@ In der klassischen Anbindungsvariante befindet sich das KassenSystem in der loka
 ![anbindungs-variante-scu-hw-tse](images/connection-scu-hw-tse.png)
 
 #### Netzwerk-Drucker mit Hardware-TSE
-Eine weitere Variante in der lokalen Umgebung stellt die Verwendung eines Netzwerk-Druckers mit Hardware-TSE dar. Dabei kann die Hardware-TSE direkt in dem Drucker integriert oder per USB angeschlossen sein. Eine oder mehrere Kassen verwenden den Drucker.
+Eine weitere Variante in der lokalen Umgebung stellt die Verwendung eines Netzwerk-Druckers mit Hardware-TSE dar. Dabei kann die Hardware-TSE direkt in dem Drucker integriert oder per USB angeschlossen sein. Eine oder mehrere Kassen verwenden denselben Drucker.
 
 ![anbindungs-variante-drucker](images/connection-printer.png)
 
@@ -552,7 +557,7 @@ Auch hier greift das KassenSystem mit Hilfe der fiskaltrust SCU über das Intern
 
 ### Lösungsvorschläge zur Virtualisierung innerhalb eines Standortes
 
-Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnunsgsystem inklusive fiskaltrust.Middleware treten erfahrungsgemäß Probleme bei Zugriff auf eine direkt am lokalen Server angebundene Hardware-TSE über USB oder als micro SD auf. Eine Ausnahme stellt hierbei die Diebold-Nixdorf-TSE dar, da die Kommunikation mit dieser über COM-Port stattfindet. Aufgrund der zuvor genannten Zugriffsprobleme, haben wir in folgenden Skizzen Lösungssvorschläge für dieses Szenario dargestellt. Statt der Anbindung einer Hardware-TSE direkt am lokalen Server empfehlen wir folgende Optionen:
+Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnungssystem inklusive fiskaltrust.Middleware treten erfahrungsgemäß Probleme beim Zugriff auf eine direkt am lokalen Server angebundene Hardware-TSE über USB oder micro SD auf. Eine Ausnahme stellt hierbei die Diebold-Nixdorf-TSE dar, da die Kommunikation mit dieser über COM-Port stattfindet. Aufgrund der zuvor genannten Zugriffsprobleme, haben wir in folgenden Skizzen Lösungsvorschläge für dieses Szenario dargestellt. Statt der Anbindung einer Hardware-TSE direkt am lokalen Server empfehlen wir folgende Optionen:
 
 #### SCU ist innerhalb der virtuellen Instanz
 
@@ -569,7 +574,7 @@ Eine fiskaltrust.Middleware läuft bei dieser Option auf einem zweiten lokaler S
 
 ![virtualisierungs-vorschlag-ausserhalb](images/virtualization-proposal-scu-outside.png)
 
-Eine mögliche Optimierung der oben beschriebenen Option könnte sein, dass die fiskaltrust.Middleware, die die SCU betreibt auf dem gleichen Server läuft wie die virtuellen Instanzen, jedoch nicht virtualisiert ist. Diese kann dann auch auf die Hardware-TSE zugreifen.
+Eine mögliche Optimierung der oben beschriebenen Option könnte sein, dass die fiskaltrust.Middleware, die die SCU betreibt auf dem gleichen Server läuft, wie die virtuellen Instanzen, jedoch nicht virtualisiert ist. Diese kann dann auch auf die Hardware-TSE zugreifen.
 
 ![virtualisierungs-vorschlag-ausserhalb](images/virtualization-proposal-scu-in-server.png)
 
@@ -605,9 +610,9 @@ Im Folgenden gehen wir auf diese und andere Möglichkeiten der Optimierung ein u
 
 Wie bereits in der Einleitung erwähnt wird grundsätzlich pro Kasse eine CashBox benötigt. Im Normalfall wird hier die Konfiguration einer Queue und einer SCU vorgenommen und diese werden miteinander verknüpft. 
 
-Es existieren auch andere Szenarien (siehe dazu [Rollout-Szenarien](./README.md#rollout-szenarien ) auf die wir jedoch erst später eingehen. Die Konfiguration der CashBox ist im Kapitel [Konfiguration der fiskaltrust.Middleware](./README.md#konfiguration-der-fiskaltrustmiddleware) beschrieben.
+Es existieren auch andere Szenarien (siehe dazu [Rollout-Szenarien](./README.md#rollout-szenarien )) auf die wir jedoch erst später eingehen. Die Konfiguration der CashBox ist im Kapitel [Konfiguration der fiskaltrust.Middleware](./README.md#konfiguration-der-fiskaltrustmiddleware) beschrieben.
 
-Sobald die CashBox für die Kasse im Portal angelegt, konfiguriert und zusammengestellt wurde, kann der Launcher aus dem fiskaltrust.Portal bereits heruntergeladen werden und auf der Kasse gestartet werden. Sobald der Launcher zum ersten mal gestartet wird, wird die enthaltene Konfiguration angewendet. Dadurch ist die Middleware bereit und wird im nächsten Schritt vom Launcher gestartet. 
+Sobald die CashBox für die Kasse im Portal angelegt, konfiguriert und zusammengestellt wurde, kann der Launcher aus dem fiskaltrust.Portal bereits heruntergeladen werden und auf der Kasse gestartet werden. Sobald der Launcher zum ersten Mal gestartet wird, wird die enthaltene Konfiguration angewendet. Dadurch ist die Middleware bereit und wird im nächsten Schritt vom Launcher gestartet.
 
 D.h. im manuellen Prozess sind beim Rollout mindestens folgende initialen Schritte für jede Kasse vorzunehmen:
 
@@ -615,30 +620,33 @@ D.h. im manuellen Prozess sind beim Rollout mindestens folgende initialen Schrit
 2. Anlegen und Konfiguration der SCU
 3. Verknüpfen der Queue mit der SCU
 4. Erstellen und konfigurieren der CashBox
-5. Rebuild Configuration für die CashBox (Zusammenbauen/Aktualisieren der CashBox)
+5. Rebuild Configuration für die CashBox 
+(Zusammenbauen/Aktualisieren der CashBox)
 6. Download des Launcher
 7. Starten des Launcher
 
 Möchte man später die Konfiguration updaten (z.B. eine neue SCU Package Version verwenden), dann sind folgende Schritte vorzunehmen:
 
-1. Update der betroffenen Konfiguration im Portal (z.B. SCU Konfiguration)
-2. Rebuild Configuration für die CashBox im Portal (Zusammenbauen/Aktualisieren der CashBox)
+1. Update der betroffenen Konfiguration im Portal
+ (z.B. SCU Konfiguration)
+2. Rebuild Configuration für die CashBox im Portal 
+(Zusammenbauen/Aktualisieren der CashBox)
 3. Stoppen der Middleware und Neustart des Launchers an der Kasse. 
 
 Der Launcher lädt daraufhin automatisch die neue Version der CashBox, wendet diese an und startet die fiskaltrust.Middleware mit der neuen Konfiguration.
 
-Bei einer großen Menge von Kassen ist der initiale Rollout sehr zeitaufwendig, wenn er mit Hilfe der oben beschriebenen, manuellen Prozessen vorgenommen werden. 
+Bei einer großen Menge von Kassen ist der initiale Rollout sehr zeitaufwendig, wenn er mit Hilfe der oben beschriebenen, manuellen Prozessen vorgenommen wird. 
 
 
 ### Templating zum Anlegen von CashBoxen
 
-Beim Templating besteht die Möglichkeit mit Hilfe eines Konfigurations-Template automatisiert CashBoxen für den KassenBetreiber anzulegen. Es wird dafür ein Template vorbereitet und für den KassenBetreiber im fiskaltrust.Portal hinterlegt. Daraufhin erscheint das Template im fisklatrust.Shop innerhalb des Accounts des KassenBetreibers als kostenloses Produkt. Es kann dort in beliebiger Menge ausgecheckt werden. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom fiskaltrust.Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account des KassenBetreiber hinterlegt. 
+Beim Templating besteht die Möglichkeit mit Hilfe eines Konfigurations-Template automatisiert CashBoxen für den KassenBetreiber anzulegen. Es wird dafür ein Template vorbereitet und für den KassenBetreiber im fiskaltrust.Portal hinterlegt. Daraufhin erscheint das Template im fiskaltrust.Shop als kostenloses Produkt innerhalb des Accounts des KassenBetreibers . Es kann dort in beliebiger Menge ausgecheckt werden. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom fiskaltrust.Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account des KassenBetreiber hinterlegt. 
 
-Im Folgenden werden die einzelnen Schritte des oben beschriebenen Prozess detailliert dargestellt. Zudem stellen wir Ihnen ein [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) zum Thema Tempalting zur Verfügung.
+Im Folgenden werden die einzelnen Schritte des oben beschriebenen Prozess detailliert dargestellt. Zudem stellen wir Ihnen ein [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) zum Thema Templating zur Verfügung.
 
 #### Erstellung und Inhalte des Konfigurations-Template
 
-Das Template ist ein JSON String der eine parametrisierbare Variante der CashBox (Konfigurationskontainer als JSON String) darstellt und somit die Konfigurationen von Queues, SCUs und Helper beinhalten kann. Parametrisierbar ist es insofern, dass hier die Struktur für die zu generierende CashBox definiert werden kann (z.B. fünf Queues, eine SCU). Zudem können bei den Werten Variablen als Platzhalter eingesetzt werden können. Sobald die Generierung der daraus resultierenden CashBox stattfindet, werden die Variablen mit konkreten, finalen Werten befüllt.
+Das Template ist ein JSON String, der eine parametrisierbare Variante der CashBox (Konfigurationscontainer als JSON String) darstellt und somit die Konfigurationen von Queues, SCUs und Helper beinhalten kann. Parametrisierbar ist es insofern, dass hier die Struktur für die zu generierende CashBox definiert werden kann (z.B. fünf Queues, eine SCU). Zudem können bei den Werten Variablen als Platzhalter eingesetzt werden. Sobald die Generierung der daraus resultierenden CashBox stattfindet, werden die Variablen mit konkreten, finalen Werten befüllt.
 
 Im folgenden Snippet wird ein Beispiel eines solchen Template visualisiert:
 
@@ -693,19 +701,19 @@ Im folgenden Snippet wird ein Beispiel eines solchen Template visualisiert:
 ```
 
 
-Variablen werden gekennzeichnet indem sie innerhalb von ```|[``` und  ```]|``` angegeben werden. Möglich hierbei ist sowohl die Angabe von [Systemvariablen](#systemvariablen) deren Werte vom fiskaltrust System bei der Generierung erzeugt werden als auch die Angabe eigener Variablen deren Werte später über einen API Aufruf zum Generieren der CashBox übergeben werden können (siehe auch [Parametrisierung des API Aufrufs](#parametrisierung)). 
+Variablen werden gekennzeichnet, indem sie innerhalb von ```|[``` und  ```]|``` angegeben werden. Möglich hierbei ist sowohl die Angabe von [Systemvariablen](#systemvariablen), deren Werte vom fiskaltrust System bei der Generierung erzeugt werden als auch die Angabe eigener Variablen, deren Werte später über einen API Aufruf zum Generieren der CashBox übergeben werden können (siehe auch [Parametrisierung des API Aufrufs](#parametrisierung)). 
 
 In Zeile 1 des obigen Beispiel wird die Systemvariable: ```|[cashbox_id]|```  als Wert für ```"ftCashBoxId"``` angegeben. Hierbei geht es um die CashBoxID, einem Wert, der automatisch von dem System erzeugt wird und beim Generieren der CashBox an dieser Stelle eingesetzt wird.
 
 In Zeile 31 werden hingegen eigene Variablen verwendet (```|[my_shopcode]|``` und ```|[my_tillcode]|``` ) deren konkrete Werte später beim API Aufruf übergeben werden können. 
 
-Wie ebenfalls in Zeile 31 zu sehen ist, können die JSON String Werte aus einer Kombination von Variablen und statischen Teilen bestehen. Sie können aber auch nur statischen "Text" beinhalten oder auch nur eine Variable.
+Wie ebenfalls in Zeile 31 zu sehen ist, können die JSON String Werte aus einer Kombination von variablen und statischen Teilen bestehen. Sie können aber auch nur statischen "Text" beinhalten oder auch nur eine Variable.
 
 Folgende Tabellen zeigen die möglichen Inhalte (Datenstruktur) eines Template:
 
 | **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `ftCashBoxId` |ja | ```GUID String``` | Identifiziert die Cashbox im fiskaltrust System und muss daher eindeutig sein. Wird später ein Teil der Authentifizierung der Registrierkasse mit fiskaltrust. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden um den Wert bei Generierung der Cashbox von fiskaltrust automatisch zu erzeugen und einzusetzen. |
+| `ftCashBoxId` |ja | ```GUID String``` | Identifiziert die Cashbox im fiskaltrust System und muss daher eindeutig sein. Wird später ein Teil der Authentifizierung der Registrierkasse mit fiskaltrust. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden, um den Wert bei der Generierung der Cashbox von fiskaltrust automatisch zu erzeugen und einzusetzen. |
 | `ftSignaturCreationDevices` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden SCUs |
 | `ftQueues` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden Queues |
 | `helpers` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden Helper |
@@ -716,11 +724,11 @@ Ein **`PackageConfiguration`** Objekt ist wie folgt aufgebaut:
 | **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
 |----------------------|--------------------------|--------------------------|---------------------|
 | `Id` |ja |  ```GUID String```  | Identifiziert die Instanz des Elements, das hier konfiguriert wird (SCU, Queue oder Helper). Für die Queue kann die Systemvariable `queue{0-9}_id` verwendet werden. Für die SCU kann hier die Systemvariable `scu{0-9}_id` zum Einsatz kommen. Für Helper  `helper{0-9}_id`. |
-| `Package` |ja | ```String``` | Name des Package das zum Erstellen des Elements verwendet werden soll. Z.B. `fiskaltrust.Middleware.SCU.DE.CryptoVision` für eine SCU, die mit einer Cyptovision-TSE kommunizieren soll. Aktuell unterstützte Packages finden sie weiter unten. |
-| `Description` |nein |  ```String```| Name des Elements. Z.B. der Queue oder SCU |
-| `Version` |nein |  ```String```| Version des Package das zum Erstellen des Elements verwendet werden soll. Wenn keine Version angegeben wird, so wird die neueste Version verwendet.|
-| `Configuration` |nein | `<String, Object>`| Konfigurationsparameter des Elements. Z.B. Laufwerkbuchstabe der TSE bei der Cryptovision SCU, damit der SCU bekannt ist wie sie auf die TSE zugreifen soll. Je nach Element-Typ zu befüllen. Siehe unten. |
-| `URL` |ja | `String []` | Array, Kommunikationsendpunkte des Elements. Z.B. REST Endpunkt für die Kommunikation mit der Queue. |
+| `Package` |ja | ```String``` | Name des Packages, das zum Erstellen des Elements verwendet werden soll, z.B. `fiskaltrust.Middleware.SCU.DE.CryptoVision` für eine SCU, die mit einer Cyptovision-TSE kommunizieren soll. Aktuell unterstützte Packages finden sie weiter unten. |
+| `Description` |nein |  ```String```| Name des Elements, z.B. der Queue oder SCU |
+| `Version` |nein |  ```String```| Version des Packages, das zum Erstellen des Elements verwendet werden soll. Wenn keine Version angegeben wird, so wird die neueste Version verwendet.|
+| `Configuration` |nein | `<String, Object>`| Konfigurationsparameter des Elements, z.B. Laufwerkbuchstabe der TSE bei der Cryptovision SCU, damit der SCU bekannt ist wie sie auf die TSE zugreifen soll. Je nach Element-Typ zu befüllen. Siehe unten. |
+| `URL` |ja | `String []` | Array, Kommunikationsendpunkte des Elements, z.B. REST Endpunkt für die Kommunikation mit der Queue. |
 
 **Queue**
 Folgende Packages stehen aktuell für Queues zur Verfügung:
@@ -738,17 +746,17 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Qu
 | `init_ftQueue` |ja |  ```Configuration``` | Initialisierungsparameter für die Queue (allgemeiner Teil der Queue Konfiguration).|
 | `init_ftQueueDE` |ja |  ```Configuration``` | Initialisierungsparameter für die Queue (länderspezifischer Teil der Queue Konfiguration).|
 | `init_ftSignaturCreationUnitDE` |nein |  ```Configuration``` | Initialisierungsparameter zum Verknüpfen der Queue mit einer SCU. Hier werden Verbindungswerte hinterlegt.|
-| `connectionstring` |nein |  ```String``` | Verbindungsstring zum Persistenzlayer. Beispiel siehe unten. Bei SQLite kann dieses Feld weggelassen werden wenn keine eigene Datenbank vorhanden ist. In diesem Fall legt fiskaltrust automatisch eine SQLite Datenbank an. |
+| `connectionstring` |nein |  ```String``` | Verbindungsstring zum Persistenzlayer. Beispiel siehe unten. Bei SQLite kann dieses Feld weggelassen werden, falls keine eigene Datenbank vorhanden ist. In diesem Fall legt fiskaltrust automatisch eine SQLite Datenbank an. |
 
-Beispiel für einen `connectionstring` bei Verwendung von Entity Framework:
+- Beispiel für einen `connectionstring` bei Verwendung von Entity Framework:
 
 `Data Source=.\\!sql-instanz!;Initial Catalog=!fiskaltrust!;User ID=!user!;Password=!password!;MultipleActiveResultSets=True` 
 
-Beispiel für einen `connectionstring` bei Verwendung von MySQL:
+- Beispiel für einen `connectionstring` bei Verwendung von MySQL:
 
 `Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;` 
 
-Beispiel für einen `connectionstring` bei Verwendung von SQLite:
+- Beispiel für einen `connectionstring` bei Verwendung von SQLite:
 
 `Data Source=c:\mydb.db;Version=3;Password=myPassword;` 
 
@@ -803,7 +811,7 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **
 | **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
 |----------------------|--------------------------|--------------------------|---------------------|
 | `devicePath` |ja |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Cryptovision TSE an der Kasse angeschossen wird. |
-| `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben, wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
 | `timeAdminPin` |nein |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
 
 **Diebold Nixdorf**
@@ -811,7 +819,7 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **
 | **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
 |----------------------|--------------------------|--------------------------|---------------------|
 | `comPort` |ja (nur USB) |  ```String``` | Definiert den Com Anschluß an, an dem die TSE angeschlossen wird. Zum Beispiel `COM6`. Nur zu verwenden wenn es sich um eine USB-TSE ohne Connect Box handelt. |
-| `url` |ja (nur Connect Box) |  ```String``` | Verbindungs-Url falls es sich um eine Diebold Nixdorf Connect Box handelt. |
+| `url` |ja (nur Connect Box) |  ```String``` | Verbindungs-Url, falls es sich um eine Diebold Nixdorf Connect Box handelt. |
 | `adminUser` |nein |  ```String``` | Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
 | `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
 | `timeAdminUser` |nein |  ```String``` | Time Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
@@ -853,11 +861,10 @@ _Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
 
 #### Zur Verfügung stellen des Konfigurations-Template über das Portal
 
-KassenHersteller, KassenHändler und KassebBetreiber können Konfigurations-Templates im fiskaltrust.Portal ablegen und freigeben. Dies können sie unter dem Menüpunkt `Konfiguration->Templates` vornehmen. 
+KassenHersteller, KassenHändler und KassenBetreiber können Konfigurations-Templates im fiskaltrust.Portal ablegen und freigeben. Dies können sie unter dem Menüpunkt `Konfiguration->Templates` vornehmen. 
 
 Das Template selbst (JSON String) wird dabei im das Formularfeld `Content`  hinterlegt.
-
-Beim Anlegen des Template kann gewählt werden an welche Zielgruppe das Template freigegeben werden soll. 
+Beim Anlegen des Template kann gewählt werden, an welche Zielgruppe das Template freigegeben werden soll. 
 
 Optionen für **KassenHersteller**:
 
@@ -866,7 +873,7 @@ Optionen für **KassenHersteller**:
 | `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
 | `Privat (nur Besitzer)` | Freigabe nur für dem Kassenhersteller selbst (z.B. zum Testen) |
 | `Geteilt mit Händler` | Freigabe für den Kassenhersteller selbst und für alle mit ihm verbundenen Kassenhändler. |
-| `Getielt mit Betreiber` | Freigabe für den Kassenhersteller selbst und für alle mit seinen Kassenhändler verbundenen Kassenbetreiber.|
+| `Geteilt mit Betreiber` | Freigabe für den Kassenhersteller selbst und für alle mit seinen Kassenhändler verbundenen Kassenbetreiber.|
 
 Optionen für **KassenHändler**:
 
@@ -874,7 +881,7 @@ Optionen für **KassenHändler**:
 |----------------------|----------------------|
 | `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
 | `Privat (nur Besitzer)` | Freigabe nur für dem Kassenhändler selbst (z.B. zum Testen). |
-| `Getielt mit Betreiber` | Freigabe für den Kassenhändler selbst und für alle mit ihm verbundenen Kassenbetreiber.|
+| `Geteilt mit Betreiber` | Freigabe für den Kassenhändler selbst und für alle mit ihm verbundenen Kassenbetreiber.|
 
 Optionen für **KassenBetreiber**:
 
@@ -890,11 +897,13 @@ Stellt der KassenHersteller ein Template für seine KassenHändler zur Verfügun
 
 #### Manuelles Ausführen des Konfigurations-Template
 
-Sobald ein Template für einen Account freigeben wurde, so erscheint dieses als kostenloses Produkt im fiskaltrust.Shop innerhalb des freigegebenen Account. Der Account-Besitzer kann das Template nun in beliebiger Menge auschecken. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account bei den Konfigurationen hinterlegt (Menüpunkt: `Konfiguration->CashBox`). 
+Sobald ein Template für einen Account freigeben wurde, so erscheint dieses innerhalb des freigegebenen Accounts als kostenloses Produkt im fiskaltrust.Shop. Der Account-Besitzer kann das Template nun in beliebiger Menge auschecken. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account bei den Konfigurationen hinterlegt
+(Menüpunkt: `Konfiguration->CashBox`). 
 
-Handelt es sich hierbei um den Account eines KassenBetreibers, besteht die Möglichkeit je nach Outlet unterschiedliche Templates auszuchecken. Deshalb sollte vor der Übernahme des Templates in den Warenkorb auf die Standortauswahl geachtet werden (Auswahl: Standort-Dropdown oben links im Shop).
+Handelt es sich hierbei um den Account eines KassenBetreibers, besteht die Möglichkeit, je nach Outlet unterschiedliche Templates auszuchecken. Deshalb sollte vor der Übernahme des Templates in den Warenkorb auf die Standortauswahl geachtet werden
+ (Auswahl: Standort-Dropdown oben links im Shop).
 
-Unter bestimmten Umständen kann der KassenHändler selbst für den KassenBetreiber das Auschecken des Template vornehmen. Dies stellt eine zeitsparende Optimierung dar, die es KassenHändlern ermöglicht beim Rollout ohne das Zutun des KassenBetreibers zu operieren. Dafür benötig jedoch der KassenHändler eine generelle Erlaubnis des KassenBetreibers zur sog. "Surrogating Funktion". Mit dieser Funktion kann der KassenHändler in den Account des KassenBetreiber switchen.
+Unter bestimmten Umständen kann der KassenHändler selbst für den KassenBetreiber das Auschecken des Template vornehmen. Dies stellt eine zeitsparende Optimierung dar, die es KassenHändlern  beim Rollout ermöglicht ohne das Zutun des KassenBetreibers zu operieren. Dafür benötig jedoch der KassenHändler eine generelle Erlaubnis des KassenBetreibers zur sog. "Surrogating Funktion". Mit dieser Funktion kann der KassenHändler in den Account des KassenBetreiber switchen.
 
 #### FAQ: Template nur für einen Kunden
 
@@ -904,10 +913,11 @@ Eine häufig gestellte Frage in diesem Kontext ist, ob ein Template auch nur fü
 #### Nutzung von API und PowerShell zum automatisierten Ausführen der Templates
 
 
-fiskaltrust stelle eine HTTP-API zur Verfügung mit der Sie die Automatisierung der CashBoxgenerierung mit Hilfe von Konfigurations-Templates vornehmen können. Im diesem Kapitel wird die API beschrieben und ein Aufruf am Beispiel PowerShell vorgeführt.
+fiskaltrust stellt eine HTTP-API zur Verfügung, mit der Sie die Automatisierung der CashBoxgenerierung mit Hilfe von Konfigurations-Templates vornehmen können. Im diesem Kapitel wird die API beschrieben und ein Aufruf am Beispiel PowerShell vorgeführt.
 
 #### API
-Die Ausführung von Templates kann über unsere HTTP-API leicht automatisiert werden. Sie benötigen dazu das Template als JSON String, die AccountId und den AccessToken des Accounts (z.B. des KassenBetreibers) für den das Template ausgeführt werden soll. AccountId und Accesstoken finden Sie im fiskaltrust.Portal innerhalb des entsprechenden Account (Menüpunkt: [`Firmanname -> Übersicht`](https://portal.fiskaltrust.de/AccountProfile) im unteren Bereich befindet sich die Sektion `API Zugriff`).
+Die Ausführung von Templates kann über unsere HTTP-API leicht automatisiert werden. Sie benötigen dazu das Template als JSON String, die AccountId und den AccessToken des Accounts (z.B. des KassenBetreibers) für den das Template ausgeführt werden soll. AccountId und Accesstoken finden Sie im fiskaltrust.Portal innerhalb des entsprechenden Account 
+(Sie finden die Sektion `API Zugriff` beim Menüpunkt [`Firmennname -> Übersicht`](https://portal.fiskaltrust.de/AccountProfile) **unter** den Rollenrechten).
 
 ![Authentifizierung](images/accesstoken.png)
 
@@ -988,17 +998,17 @@ Invoke-WebRequest -uri  $uri -Headers $headers -Method POST -ContentType "applic
 
 #### Handling von Standorten/Outlets
 
-Wie weiter oben bereits erwähnt, kann das Auschecken von Templates mit dem Standort des KassenBetreibers verknüpft werden. In diese Kapitel wird aufgezeigt wie diese Funktion automatisiert über die API vrogenommen werden kann.
+Wie weiter oben bereits erwähnt, kann das Auschecken von Templates mit dem Standort des KassenBetreibers verknüpft werden. In diesem Kapitel wird aufgezeigt, wie diese Funktion automatisiert über die API vorgenommen werden kann.
 
 ##### Anlegen oder Importieren der Outlets im Portal
 
-Standorte (sogenannte Outlets) können manuell über das Portal im Account des KassenBetreibers angelegt werden. Siehe Menüpunkt `Outlets` . Des Weiteren kann als Optimierungsvariante unter dem selben Menüpunkt mit Hilfe einer csv. Datei eine ganze Liste von Standorten importiert werden. Der Aufbau einer solchen Liste ist im Portal beschrieben.
+Standorte (sogenannte Outlets) können manuell über das Portal im Account des KassenBetreibers angelegt werden. Siehe Menüpunkt `Outlets`. Des Weiteren kann als Optimierungsvariante unter demselben Menüpunkt mit Hilfe einer csv. Datei eine ganze Liste von Standorten importiert werden. Der Aufbau einer solchen Liste ist im Portal beschrieben.
 
 Das Anlegen der Standorte ist nur über das Portal möglich und kann nicht über die API erfolgen.
 
 ##### Angabe des Outlets im API Aufruf
 
-Über den Parameter `outlet_number` kann im Query-String die Outlet-Nummer angebenen werden für die das Template ausgeführt werden soll:
+Über den Parameter `outlet_number` kann im Query-String die Outlet-Nummer angegeben werden für die das Template ausgeführt werden soll:
 
 `https://helipad-sandbox.fiskaltrust.cloud/api/configuration?outlet_number=12`
 
@@ -1034,19 +1044,20 @@ LocationId;OutletNumber;Name;Address;ContactName;Telephone;Fax;PostalCode;City;C
 
 Schritt 3: Iteration über die eingelesenen Zeilen aus der Outlet Datei.
 
-Schritt 4: für jede eingelesene Zeile wird das entsprechende Template eingelesen und vorbereitet. Z.B. für Zeile 1 wird der Inhalt der Datei [`template1.json`](images/templates.zip) eingelesen. In Zeile 2 wird für ein anderes Outlet ein anderes Template [`template2.json`](pathname://images/template2.json) benötigt.
+Schritt 4: für jede eingelesene Zeile wird das entsprechende Template eingelesen und vorbereitet, z.B. für Zeile 1 wird der Inhalt der Datei [`template1.json`](images/templates.zip) eingelesen. In Zeile 2 wird für ein anderes Outlet ein anderes Template [`template2.json`](pathname://images/template2.json) benötigt.
 
 Schritt 5: für jede eingelesene Zeile wird die Uri für den API Aufruf aufgebaut. Hierbei wird die Outlet Nummer als Parameter im Query-String übergeben.
 
 Schritt 6: für jede eingelesene Zeile wird ein Aufruf der HTTP-API mit dem zuvor vorbereiteten Header, Uri und Template abgesetzt.
 
-Zusammenfassung: In dem obigen Beispiel wurden mit Hilfe der [`fiskaltrustOutletsWithTemplateFile.csv`](images/fiskaltrustOutletsWithTemplateFile.csv) Datei sowohl die Outlets im Portal angelegt (Bulk-Import) als auch für jedes Outlet das dazugehörige Template (einmalig - als Beispiel) ausgeführt.
+Zusammenfassung:
+ In dem obigen Beispiel wurden mit Hilfe der [`fiskaltrustOutletsWithTemplateFile.csv`](images/fiskaltrustOutletsWithTemplateFile.csv) Datei sowohl die Outlets im Portal angelegt (Bulk-Import) als auch für jedes Outlet das dazugehörige Template (einmalig - als Beispiel) ausgeführt.
 
 ### Automatisierter Rollout der fiskaltrust.Middleware
 
-Über das fiskaltrust.Portal haben Sie die Möglichkeit den Launcher herunterzuladen. Drücken Sie dazu den "Download online Launcher" Button einer beliebigen Cahsbox im Portal. Den heruntergeladenen Launcher können Sie nun als Teil Ihres Rollouts automatisiert auf alle Kassen der Betreiber ausliefern und starten. 
+Über das fiskaltrust.Portal haben Sie die Möglichkeit, den Launcher herunterzuladen. Drücken Sie dazu den "Download online Launcher" Button einer beliebigen Cashbox im Portal. Den heruntergeladenen Launcher können Sie nun als Teil Ihres Rollouts automatisiert auf alle Kassen der Betreiber ausliefern und starten. 
 
-Wichtig ist es hierbei beim ersten Start darauf zu achten, dass die fiskaltrust.Middleware richtig, d.h. mit der dazugehörigen CashBox initialisiert wird. Dafür stellt der Launcher ein Konfigurationsfile (fiskaltrust.exe.config) zur Verfügung. Dieses können Sie vor dem Ausrollen des Launcher auf die Kasse des Betreibers entsprechend anpassen. 
+Wichtig ist es hierbei, beim ersten Start darauf zu achten, dass die fiskaltrust.Middleware richtig, d.h. mit der dazugehörigen CashBox initialisiert wird. Dafür stellt der Launcher ein Konfigurationsfile (fiskaltrust.exe.config) zur Verfügung. Dieses können Sie vor dem Ausrollen des Launcher auf die Kasse des Betreibers entsprechend anpassen. 
 
 Bitte geben Sie dazu in dem Bereich `appSetting` die Werte für `cashboxid` und `accesstoken` an. Diese Werte erhalten Sie als Rückgabewerte des [API Aufruf](#antwort) zum Ausführen des Konfigurations-Template.
 
@@ -1058,7 +1069,7 @@ Bitte geben Sie dazu in dem Bereich `appSetting` die Werte für `cashboxid` und 
 ```
 Nun können Sie den Launcher mit der angepassten Konfigurationsdatei auf die Kasse des Betreibers ausliefern und mit `fiskaltrust.exe` starten. Der Launcher wird sich automatisch die CashBox (Konfigurationscontainer) zur in `fiskaltrust.exe.config` angegebenen `cashboxid`  vom fiskaltrust Server herunterladen und die fiskaltrust.Middleware entsprechend konfigurieren und starten.
 
-Alternativ zur Anpassung der Konfiguration in der`fiskaltrust.exe.config` Datei können Sie beim Starten des Launcher (`fiskaltrust.exe` ) die `cashboxid` und den `accesstoken` als Parameter übergeben. Diese Angabe überschreibt die vorhandene Konfiguration. Die Beschreibung der möglichen Start-Parameter fnden sie [hier](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
+Alternativ zur Anpassung der Konfiguration in der`fiskaltrust.exe.config` Datei können Sie beim Starten des Launcher (`fiskaltrust.exe` ) die `cashboxid` und den `accesstoken` als Parameter übergeben. Diese Angabe überschreibt die vorhandene Konfiguration. Die Beschreibung der möglichen Start-Parameter finden sie [hier](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
 
 ### Hoher Automatisierungsgrad
 
