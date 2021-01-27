@@ -312,6 +312,7 @@ Das Protokoll der, in der Vergangenheit versendeten Einladungen, wird angezeigt.
 
 Mit Klick auf den Button "Link in die Zwischenablage kopieren" ![operator-invitation-button-copy_link](images/operator-invitation-button-copy_link.png) wird der Link kopiert, mit welchem der KassenBetreiber dem KassenHändler zuzuordnen ist. Danach kann der Link durch den KassenHändler mit eine individuellen Methode (z.B. durch eine Mail aus dem privaten E-Mail-Account eines Mitarbeiters des KassenHändlers) an den KassenBetreiber gesendet werden.
 
+
 ###  Standorte für KassenBetreiber anlegen
 
 Sobald sich ein KassenBetreiber über die Einladung eines KassenHändlers im fiskaltrust.Portal registriert hat und die Nutzungsvereinbarung digital unterschrieben hat, legt das fiskaltrust.Portal automatisch einen Standort (Hauptstandort) mit den Stammdaten der Firma an. Sollte der KassenBetreiber mehrere Standort betreiben, so müssen diese im fiskaltrust.Portal angelegt werden, denn bei der Konfiguration der fiskaltrust.Middleware muss der genaue Standort (Outlet-Nummer) angegeben werden, damit die Daten separiert werden können. Im Falle einer Finanzprüfung ist der Standort die prüfbare Einheit. 
