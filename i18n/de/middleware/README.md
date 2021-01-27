@@ -391,11 +391,11 @@ Der Export bezieht sich immer auf eine Queue (mit Ausnahme des TSE-TAR, siehe Hi
 
 #### Hinweise zum DSFinV-K Export
 
-Der DSFinV-K Export bezieht sich immer auf einen abgeschossenen Tag. Er erfordert, dass jeder Tag mit einen sogenannten Tagesabschlußbeleg abgeschlossen wird. Der Tagesabschlußbelegt muss an die fiskaltrust.Middleware über das KassenSystem gesendet werden. Als KassenHändler stellt Ihnen das KassenSystem einen entsprechenden Knopf zur Verfügung.  
+Der DSFinV-K Export bezieht sich immer auf einen abgeschossenen Tag. Er erfordert, dass jeder Tag mit einen sogenannten Tagesabschlußbeleg abgeschlossen wird. Der Tagesabschlußbeleg muss an die fiskaltrust.Middleware über das KassenSystem gesendet werden. Als KassenHändler stellt Ihnen das KassenSystem einen entsprechenden Knopf zur Verfügung.  
 
 #### Hinweise zum TAR-File Export
 
-Der Tar-File Export bezieht sich auf alle Daten der TSE, auch wenn die TSE von mehreren Queues verwendet wird. Der TSE-TAR Export beinhaltet also die Daten aller Queues, die die selbe TSE verwenden. 
+Der Tar-File Export bezieht sich auf alle Daten der TSE, auch wenn die TSE von mehreren Queues verwendet wird. Der TSE-TAR Export beinhaltet also die Daten aller Queues, die dieselbe TSE verwenden. 
 
 Der TAR Export wird beim daily-closing Beleg (Tagesabschlußbeleg) automatisch von der fiskaltrust.Middleware getriggert. Die Daten werden dabei in Datenbank der ausführenden Queue übertragen und aus der TSE gelöscht.  Des Weiteren werden die Daten in die fiskaltrust.Cloud hochgeladen, wo sie nach Aktivierung des Produkts POSArchiv im fiskaltrust.Portal zur Verfügung stehen.
 
