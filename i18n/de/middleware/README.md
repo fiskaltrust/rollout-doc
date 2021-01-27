@@ -180,11 +180,11 @@ Drücken Sie nun auf den Button "Neu erstellen". Es erscheint ein Formular zum E
 
 6. Drücken Sie "Speichern"
 
-Die Queue wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weitergeleitet. Diese richtet sich nach dem zuvor ausgewählten Persitenz-Package. In unserem Beispiel müssen wir für die SQLite Datenbank keine weiteren Angaben vornehmen, denn sie wird automatisch von der fiskaltrust.Middleware angelegt. Handelt es sich jedoch um ein anderes Package, so müssen hier entsprechende Verbindungsangaben gemacht werden. Zum Beispiel die Angabe eines Connection-String für eine MySQL Datenbank. 
+Die Queue wurde angelegt und wir werden nun zur zweiten Konfigurationsmaske weitergeleitet. Diese richtet sich nach dem zuvor ausgewählten Persistenz-Package. In unserem Beispiel müssen wir für die SQLite Datenbank keine weiteren Angaben vornehmen, denn sie wird automatisch von der fiskaltrust.Middleware angelegt. Handelt es sich jedoch um ein anderes Package, so müssen hier entsprechende Verbindungsangaben gemacht werden. Zum Beispiel die Angabe eines Connection-String für eine MySQL Datenbank. 
 
 ![Queue Anlegen 3](images/add-queue-3.png "Queue konfigurieren")
 
-1. Tragen Sie bei Bedarf die Verbindungsangaben ein (in diesem Besipiel nicht notwendig, das SQLite DB)
+1. Tragen Sie bei Bedarf die Verbindungsangaben ein (in diesem Beispiel nicht notwendig, das SQLite DB)
 2. Geben Sie nun an, wie die Queue von dem KassenSystem erreichbar sein soll. Drücken Sie dazu zuerst den entsprechenden Button für die Art der Kommunikation (z.B. `http(REST)`) und tragen Sie danach den Pfad ein (z.B. `localhost:1200/fiskaltrust`).
 3. Drücken Sie auf "Speichern und schließen" um die Angaben zu speichern und zurück zur Liste zu gelangen.
 
@@ -300,7 +300,7 @@ Speichern und als Administrator starten:
 
 ![Test starten](images/run-test-cmd.png "Test starten")
 
-Es erscheint eine Konsole, in der die fisklatrust.Middleware Instanz gestartet wird. Wir können hier sehen, was genau beim Start passiert und bei etwaigen Fehler entsprechende Korrekturen (z.B. in der CashBox oder in beim Anschluss der TSE) vornehmen.
+Es erscheint eine Konsole, in der die fiskaltrust.Middleware Instanz gestartet wird. Wir können hier sehen, was genau beim Start passiert und bei etwaigen Fehler entsprechende Korrekturen (z.B. in der CashBox oder in beim Anschluss der TSE) vornehmen.
 
 ![Konsole](images/cmd-terminal.png "Konsole")
 
@@ -348,7 +348,7 @@ Als nächste können wir einen Beleg zum Abrechnen eines Einkaufs senden. Als Ka
 
 
 
-Die fiskaltrust.Middleware bearbeitet die Anfrage, und sendet eine Antwort zurück, die wichtige Belegdaten, inklusive der benötigten Signaturen enthält. Im Erfolgfall werden diese vom KassenSystem auf den Beleg gedruckt.
+Die fiskaltrust.Middleware bearbeitet die Anfrage, und sendet eine Antwort zurück, die wichtige Belegdaten, inklusive der benötigten Signaturen enthält. Im Erfolgsfall werden diese vom KassenSystem auf den Beleg gedruckt.
 
 ### Verbindung mit der fiskaltrust.Cloud überprüfen
 
@@ -388,7 +388,7 @@ Der Export bezieht sich immer auf eine Queue (mit Ausnahme des TSE-TAR, siehe Hi
 
 #### Hinweise zum DSFinV-K Export
 
-Der DSFinV-K Export bezieht sich immer auf einen abgeschossenen Tag. Er erfordert, dass jeder Tag mit einen sogenannten Tagesabschlußbeleg abegeschlossen wird. Der Tagesabschlußbelegt muss an die fiskaltrust.Middleware über das KassenSystem gesendet werden. Als KassenHändler stellt Ihnen das KassenSystem einen entsprechenden Knopf zur Verfügung.  
+Der DSFinV-K Export bezieht sich immer auf einen abgeschossenen Tag. Er erfordert, dass jeder Tag mit einen sogenannten Tagesabschlußbeleg abgeschlossen wird. Der Tagesabschlußbelegt muss an die fiskaltrust.Middleware über das KassenSystem gesendet werden. Als KassenHändler stellt Ihnen das KassenSystem einen entsprechenden Knopf zur Verfügung.  
 
 #### Hinweise zum TAR-File Export
 
@@ -553,7 +553,7 @@ Auch hier greift das KassenSystem mit Hilfe der fiskaltrust SCU über das Intern
 
 ### Lösungsvorschläge zur Virtualisierung innerhalb eines Standortes
 
-Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnunsgsystem inklusive fiskaltrust.Middleware treten erfahrungsgemäß Probleme beim Zugriff auf eine direkt am lokalen Server angebundene Hardware-TSE über USB oder micro SD auf. Eine Ausnahme stellt hierbei die Diebold-Nixdorf-TSE dar, da die Kommunikation mit dieser über COM-Port stattfindet. Aufgrund der zuvor genannten Zugriffsprobleme, haben wir in folgenden Skizzen Lösungssvorschläge für dieses Szenario dargestellt. Statt der Anbindung einer Hardware-TSE direkt am lokalen Server empfehlen wir folgende Optionen:
+Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnungssystem inklusive fiskaltrust.Middleware treten erfahrungsgemäß Probleme beim Zugriff auf eine direkt am lokalen Server angebundene Hardware-TSE über USB oder micro SD auf. Eine Ausnahme stellt hierbei die Diebold-Nixdorf-TSE dar, da die Kommunikation mit dieser über COM-Port stattfindet. Aufgrund der zuvor genannten Zugriffsprobleme, haben wir in folgenden Skizzen Lösungsvorschläge für dieses Szenario dargestellt. Statt der Anbindung einer Hardware-TSE direkt am lokalen Server empfehlen wir folgende Optionen:
 
 #### SCU ist innerhalb der virtuellen Instanz
 
@@ -989,7 +989,7 @@ Invoke-WebRequest -uri  $uri -Headers $headers -Method POST -ContentType "applic
 
 #### Handling von Standorten/Outlets
 
-Wie weiter oben bereits erwähnt, kann das Auschecken von Templates mit dem Standort des KassenBetreibers verknüpft werden. In diese Kapitel wird aufgezeigt wie diese Funktion automatisiert über die API vrogenommen werden kann.
+Wie weiter oben bereits erwähnt, kann das Auschecken von Templates mit dem Standort des KassenBetreibers verknüpft werden. In diese Kapitel wird aufgezeigt wie diese Funktion automatisiert über die API vorgenommen werden kann.
 
 ##### Anlegen oder Importieren der Outlets im Portal
 
@@ -999,7 +999,7 @@ Das Anlegen der Standorte ist nur über das Portal möglich und kann nicht über
 
 ##### Angabe des Outlets im API Aufruf
 
-Über den Parameter `outlet_number` kann im Query-String die Outlet-Nummer angebenen werden für die das Template ausgeführt werden soll:
+Über den Parameter `outlet_number` kann im Query-String die Outlet-Nummer angegeben werden für die das Template ausgeführt werden soll:
 
 `https://helipad-sandbox.fiskaltrust.cloud/api/configuration?outlet_number=12`
 
@@ -1045,7 +1045,7 @@ Zusammenfassung: In dem obigen Beispiel wurden mit Hilfe der [`fiskaltrustOutlet
 
 ### Automatisierter Rollout der fiskaltrust.Middleware
 
-Über das fiskaltrust.Portal haben Sie die Möglichkeit den Launcher herunterzuladen. Drücken Sie dazu den "Download online Launcher" Button einer beliebigen Cahsbox im Portal. Den heruntergeladenen Launcher können Sie nun als Teil Ihres Rollouts automatisiert auf alle Kassen der Betreiber ausliefern und starten. 
+Über das fiskaltrust.Portal haben Sie die Möglichkeit den Launcher herunterzuladen. Drücken Sie dazu den "Download online Launcher" Button einer beliebigen Cashbox im Portal. Den heruntergeladenen Launcher können Sie nun als Teil Ihres Rollouts automatisiert auf alle Kassen der Betreiber ausliefern und starten. 
 
 Wichtig ist es hierbei beim ersten Start darauf zu achten, dass die fiskaltrust.Middleware richtig, d.h. mit der dazugehörigen CashBox initialisiert wird. Dafür stellt der Launcher ein Konfigurationsfile (fiskaltrust.exe.config) zur Verfügung. Dieses können Sie vor dem Ausrollen des Launcher auf die Kasse des Betreibers entsprechend anpassen. 
 
@@ -1059,7 +1059,7 @@ Bitte geben Sie dazu in dem Bereich `appSetting` die Werte für `cashboxid` und 
 ```
 Nun können Sie den Launcher mit der angepassten Konfigurationsdatei auf die Kasse des Betreibers ausliefern und mit `fiskaltrust.exe` starten. Der Launcher wird sich automatisch die CashBox (Konfigurationscontainer) zur in `fiskaltrust.exe.config` angegebenen `cashboxid`  vom fiskaltrust Server herunterladen und die fiskaltrust.Middleware entsprechend konfigurieren und starten.
 
-Alternativ zur Anpassung der Konfiguration in der`fiskaltrust.exe.config` Datei können Sie beim Starten des Launcher (`fiskaltrust.exe` ) die `cashboxid` und den `accesstoken` als Parameter übergeben. Diese Angabe überschreibt die vorhandene Konfiguration. Die Beschreibung der möglichen Start-Parameter fnden sie [hier](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
+Alternativ zur Anpassung der Konfiguration in der`fiskaltrust.exe.config` Datei können Sie beim Starten des Launcher (`fiskaltrust.exe` ) die `cashboxid` und den `accesstoken` als Parameter übergeben. Diese Angabe überschreibt die vorhandene Konfiguration. Die Beschreibung der möglichen Start-Parameter finden sie [hier](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
 
 ### Hoher Automatisierungsgrad
 
