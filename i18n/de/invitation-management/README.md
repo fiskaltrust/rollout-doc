@@ -309,7 +309,7 @@ Das Protokoll der, in der Vergangenheit versendeten Einladungen, wird angezeigt.
 
 6.3. Es kann auch eine manuelle Mail mit dem Link versendet werden:
 
-Durch Klick auf den Button "Link in die Zwischenablage kopieren"![image-20210125005536275](C:\Users\axelk\AppData\Roaming\Typora\typora-user-images\image-20210125005536275.png) wird der Link um den KassenBetreiber zum KassenHändler zuzuordnen. Danach kann der Link durch den KassenHändler mit eine individuelle Methode (z.B. durch eine Mail aus dem privaten E-Mail-Account des Mitarbeiters des KassenHändlers) an den KassenBetreiber gesendet werden.
+Durch Klick auf den Button "Link in die Zwischenablage kopieren"![operator-invitation-button-copy_link](images/operator-invitation-button-copy_link.png) wird der Link um den KassenBetreiber zum KassenHändler zuzuordnen. Danach kann der Link durch den KassenHändler mit eine individuelle Methode (z.B. durch eine Mail aus dem privaten E-Mail-Account des Mitarbeiters des KassenHändlers) an den KassenBetreiber gesendet werden.
 
 ###  Standorte für KassenBetreiber anlegen
 
