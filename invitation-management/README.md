@@ -303,7 +303,7 @@ The history of your invitations sent in the past is displayed. Here you can now 
 
 Sending a manual e-mail by using the link:
 
-6.3. By clicking on "Copy link to clipboard" button ![image-20210125005536275](C:\Users\axelk\AppData\Roaming\Typora\typora-user-images\image-20210125005536275.png), the link to assign the PosOperator is copied to the clipboard. Subsequently, this link can be sent from the PosDealer to the PosOperator via another method - e.g. with an individual e-mail from the private e-mail-account of the PosDealer-employee.
+6.3. By clicking on "Copy link to clipboard" button ![operator-invitation-button-copy_link](images/operator-invitation-button-copy_link.png) , the link to assign the PosOperator is copied to the clipboard. Subsequently, this link can be sent from the PosDealer to the PosOperator via another method - e.g. with an individual e-mail from the private e-mail-account of the PosDealer-employee.
 
 ###  Adding outlet for PosOperator
 
