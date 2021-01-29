@@ -110,11 +110,17 @@ Drücken Sie nun auf den Namen des KassenBetreibers, der in der Liste als Link d
 
 ![im betreiber account](images/in-posoperator-account.png "Im Account des KassenBetreiber")
 
-Gehen Sie nun im Menü zu "Shop->Produkte". Wählen Sie hier zuerst im oberen Bereich den Standort des KassenBetreibers, welchem Sie die Ansprüche übertragen möchten und legen Sie dann die gewünschten "Übertragungsprodukte" in den Warenkorb. In unseren Beispiel: "TSE-as-a-Service - Anspruch übertragen" und "fiskaltrust.Sorglos -Anspruch übertragen":
+Gehen Sie nun im Menü zu "Shop->Produkte". Wählen Sie hier zuerst im oberen Bereich den Standort des KassenBetreibers, welchem Sie die Ansprüche übertragen möchten und legen Sie dann die gewünschten "Übertragungsprodukte" in den Warenkorb. In unseren Beispiel:
+- TSE-as-a-Service - Anspruch übertragen
+- fiskaltrust.Sorglos -Anspruch übertragen
 
 ![Ansprüche übertragen](images/transfer-claims-1.png "Ansprüche übertragen")
 
-Legen Sie zur Aktivierung beim KassenBetreiber als nächstes die entsprechenden "Erzeugungsprodukte" ebenfalls in den Warenkorb. Wir entscheiden uns in diesem Beispiel für eine Swissbit USB Hardware-TSE. In unserem Beispiel sind also die "Erzeugungsprodukte": "Swissbit USB Hardware TSE-as-a-Service - aus - Anspruch erzeugen" und "fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen" in den Warenkorb zu legen. 
+Legen Sie zur Aktivierung beim KassenBetreiber als nächstes die entsprechenden "Erzeugungsprodukte" in den Warenkorb. Wir zeigen in diesem Beispiel den Vorgang für eine eine Swissbit USB Hardware-TSE. Daher wählen Sie die "Erzeugungsprodukte": 
+- Swissbit USB Hardware TSE-as-a-Service - aus - Anspruch erzeugen
+- fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen 
+
+> Hinweis: Die Reihenfolge der Produkte ist wichtig für die korrekte Durchführung des Prozesses. 
 Hinweis: Achten Sie bitte darauf, dass beim Legen in den Warenkorb im oberen Bereich der richtige Standort ausgewählt ist.
 
 ![Produkte aktivieren](images/transfer-claims-2.png "Produkte aktivieren")
@@ -125,10 +131,12 @@ Die oben beschriebenen Schritte können Sie, wenn gewünscht, auch für andere S
 2. Schritt: Ansprüche übertragen - (in Warenkorb legen)
 3. Schritt: Produkt in dem oben gewählten Standort aktivieren/aus Anspruch erzeugen - (in Warenkorb legen)
 
-Hinweis: Der dritte Schritt (aktivieren/erzeugen) bezieht sich immer auf den zuvor von Ihnen oben gewählten Standort. Dieser kann nach dem auschecken nicht mehr geändert werden. Handelt es sich im dritten Schritt um die Aktivierung eine Hardware TSE, so wird diese in der Folge an den angegebenen Standort des KassenBetreibers geliefert. 
+>Hinweis: Der dritte Schritt (aktivieren/erzeugen) bezieht sich immer auf den zuvor von Ihnen oben gewählten Standort. Dieser kann nach dem auschecken nicht mehr geändert werden.
+
+Handelt es sich im dritten Schritt um die Aktivierung eine Hardware TSE, so wird diese in der Folge an den angegebenen Standort des KassenBetreibers geliefert. 
 Wenn Sie als KassenHändler jedoch möchten, dass die Hardware TSE an ihren eigenen Standort gesendet wird, so folgen Sie bitte der Anleitung im Kapitel [Lieferoptionen für Hardware TSEs](#lieferoptionen-für-hardware-tses).
 
-Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
+> Hinweis: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
 
 ![Zurück zum KassenHändler Account](images/back-to-posoperator-account.png "Zurück zum KassenHändler Account")
 
@@ -198,14 +206,16 @@ Drücken Sie nun hier im Account des KassenBetreiber auf den Menüpunkt: "Shop->
 
 ![swissbit cloud produkte](images/swissbit-cloud-1.png "Swissbit Cloud TSE Produkte")
 
-Legen Sie als Nächstes folgende Produkte in den Warenkorb:
+Legen Sie als nächstes folgende Produkte in der genannten Reihenfolge in den Warenkorb:
 
-- fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt
 - Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen
+- fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt
 - fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen
-- fiskaltrust.Middleware mit Swissbit Cloud TSE (das ist das fiskaltrust Template zum Erstellen der Cashbox)
+- fiskaltrust.Middleware mit Swissbit Cloud TSE 
+(also das fiskaltrust Template zum Erstellen der Cashbox)
 
-Wichtig: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
+> Hinweis: Die Reihenfolge der Produkte ist wichtig für die korrekte Durchführung des Prozesses.
+> Hinweis: Um den zusammengestellten Warenkorb auszuchecken, **müssen** Sie nun in Ihren KassenHändler Account zurückkehren. Drücken Sie hierzu den "Zu Ihrem Account wechseln" Knopf im oberen Bereich rechts:
 
 ![Zurück zum KassenHändler Account](images/back-to-posoperator-account.png "Zurück zum KassenHändler Account")
 
@@ -233,4 +243,4 @@ Damit ist die Cashbox für die Swissbit-Cloud TSE eingerichtet. Sie können nun 
 
 ## Fiskaly Cloud TSE auschecken und einrichten
 
-Der Vorgang zum Auschecken und Einrichten einer Fiskaly Cloud TSE ist analog zu dem oben im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten) beschrieben Vorgang. Der Unterschied ist nur, dass Sie hierbei die Fiskaly Cloud TSE statt der Swissbit Cloud TSE beziehen und einrichten. Legen Sie dazu statt dem Produkt "Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen" das Produkt "Fisklay Cloud TSE-as-a-Service - aus - Anspruch erzeugen" in den Warenkorb. Legen Sie zudem statt dem Template-Produkt "fiskaltrust.Middleware mit Swissbit Cloud TSE" das Template-Produkt "fiskaltrust.Middleware mit Fiskaly Cloud TSE" in den Warenkorb. Ansonsten ist die Vorgehensweise identisch mit der oben beschriebenen für die Swissbit Cloud TSE.
+Der Vorgang zum Auschecken und Einrichten einer Fiskaly Cloud TSE ist analog zu dem oben im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten) beschriebenen Vorgang. Der Unterschied ist nur, dass Sie hierbei die Fiskaly Cloud TSE statt der Swissbit Cloud TSE beziehen und einrichten. Legen Sie dazu statt dem Produkt "Swissbit Cloud TSE-as-a-Service - aus - Anspruch erzeugen" das Produkt "Fisklay Cloud TSE-as-a-Service - aus - Anspruch erzeugen" in den Warenkorb. Legen Sie zudem statt dem Template-Produkt "fiskaltrust.Middleware mit Swissbit Cloud TSE" das Template-Produkt "fiskaltrust.Middleware mit Fiskaly Cloud TSE" in den Warenkorb. Ansonsten ist die Vorgehensweise identisch mit der oben beschriebenen für die Swissbit Cloud TSE.
