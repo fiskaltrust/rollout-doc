@@ -143,8 +143,8 @@ Zudem können wir im Account des KassenBetreibers unter "Firmenname &rarr; Stand
 
 ## Tipps & Tricks
 ### Bestellungen vereinfachen
-Wählen Sie den eigenen Account und "Shop &rarr; Warenkorb".
-Sie finden nach der Auswahl von gewünschten Produkten  rechts bei der Warenkorbübersicht die Option, Bestell-Vorlagen anzulegen. Tragen Sie dazu bei "Angebotsbezeichnung" einen Namen für Ihre Auswahl ein und wählen Sie Speichern. Damit können Sie später in den Warenkörben Ihrer Kassenbetreiber auf diese Auswahl zugreifen. 
+Bei "PosOperator &rarr; Übersicht" finden Sie die Übersicht über Ihre KassenBetreiber. Mit einem Klick auf "Suchen" zeigt das Portal alle KassenBetreiber an.
+Stellen Sie zuvor bei "[Firmenname] &rarr; Kontoeinstellungen" bei "Nummerierung" einen bestimmten Wert ein, wird beim Aufruf von der Übersicht über Ihre KassenBetreiber sofort die angegebene Anzahl von Datensätzen gezeigt. 
 
 ### Konfiguration Cashbox vereinfachen 
 Neben der Auswahl von "Übertragungsprodukten" und "Erzeugungsprodukten" für KassenBetreiber können Sie den Bestellvorgang nutzen, um die Konfiguration der Kassensysteme zu vereinfachen. Dazu finden Sie Templates bei den Produkten, welche der automatischen Generierung der Cashboxen (Konfigurationscontainer) dienen. 
