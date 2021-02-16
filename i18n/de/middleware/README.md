@@ -363,8 +363,7 @@ Es erscheint eine Übersicht der verarbeiteten Beleganfragen:
 
 ![Liste der Belege](images/list-of-receipts.png "Liste der Belege")
 
-Hinweis: 
-
+>Hinweis:
 Sollten die Belege hier nicht erscheinen, kann es sein, dass die Kommunikation der fiskaltrust.Middleware mit dem Server nicht geklappt hat. Überprüfen Sie in diesem Fall zuerst, ob bereits 5 Minuten seit dem Absetzen der Anfragen vergangen sind. Sollte dies der Fall sein, so überprüfen Sie bitte die Logmeldungen in der Konsole. Es kann sein, dass Sie zuerst entsprechende Firewall Ports freigeben müssen.
 
 Drücken Sie nun als nächstes auf den Button mit dem Auge-Symbol in der Zeile mit dem zuvor gesendeten Abrechnungs-Beleg (s.o.). Sie können nun eine beispielhafte Darstellung des Belegs einsehen. Zudem werden die konkrete Anfrage und die Antwort an das KassenSystem angezeigt:
@@ -570,7 +569,7 @@ Bei einer Virtualisierung des elektronischen Kassen- oder Aufzeichnungssystem in
 
 #### SCU ist außerhalb der virtuellen Instanz
 
-Eine fiskaltrust.Middleware läuft bei dieser Option auf einem zweiten lokaler Server. Sie wird nicht in der virtualisierten Umgebung betrieben. Die dazu verwendete CashBox konfiguriert lediglich eine SCU, die auf die Hardware-TSE zugreift. Die Hardware-TSE wiederum, wird direkt an diesen, zweiten Server, per USB oder micro-SD angeschlossen. Im ersten Server, in dem die virtuellen Instanzen laufen, konfigurieren die eingesetzen CashBoxen die fiskaltrust.Middelware-Instanzen so, dass sie jeweils nur eine Queue betreiben, die auf die SCU im zweiten Server zugreift.
+Eine fiskaltrust.Middleware läuft bei dieser Option auf einem zweiten lokaler Server. Sie wird nicht in der virtualisierten Umgebung betrieben. Die dazu verwendete CashBox konfiguriert lediglich eine SCU, die auf die Hardware-TSE zugreift. Die Hardware-TSE wiederum, wird direkt an diesen, zweiten Server, per USB oder micro-SD angeschlossen. Im ersten Server, in dem die virtuellen Instanzen laufen, konfigurieren die eingesetzten CashBoxen die fiskaltrust.Middelware-Instanzen so, dass sie jeweils nur eine Queue betreiben, die auf die SCU im zweiten Server zugreift.
 
 ![virtualisierungs-vorschlag-ausserhalb](images/virtualization-proposal-scu-outside.png)
 
@@ -635,7 +634,7 @@ Möchte man später die Konfiguration updaten (z.B. eine neue SCU Package Versio
 
 Der Launcher lädt daraufhin automatisch die neue Version der CashBox, wendet diese an und startet die fiskaltrust.Middleware mit der neuen Konfiguration.
 
-Bei einer großen Menge von Kassen ist der initiale Rollout sehr zeitaufwendig, wenn er mit Hilfe der oben beschriebenen, manuellen Prozessen vorgenommen wird. 
+Bei einer großen Menge von Kassen ist der initiale Rollout sehr zeitaufwendig, wenn er mit Hilfe der oben beschriebenen, manuellen Prozesse vorgenommen sollte. 
 
 
 ### Templating zum Anlegen von CashBoxen
