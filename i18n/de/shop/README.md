@@ -5,8 +5,6 @@ title: fiskaltrust-Produkte kaufen und weiter verkaufen
 
 # fiskaltrust-Produkte kaufen und weiter verkaufen
 
-<div className="hide-in-docs">
-
 
 ## Einleitung
 
