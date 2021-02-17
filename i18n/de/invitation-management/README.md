@@ -70,7 +70,7 @@ Als erstes müssen Sie dazu Ihr(e) KassenSystem(e) im fiskaltrust.Portal eintrag
 
 Als KassenHersteller können Sie wie folgt Ihr KassenSystem (PosSystem) im fiskaltrust.Portal registrieren:
 
-1. Klicken Sie den Menüpunkt Menüpunkt <kbd>KassenSysteme</kbd> an. Sie gelangen zur Übersicht Ihrer registrierten KassenSysteme:
+1. Klicken Sie den Menüpunkt <kbd>KassenSysteme</kbd> an. Sie gelangen zur Übersicht Ihrer registrierten KassenSysteme:
 
    
 
