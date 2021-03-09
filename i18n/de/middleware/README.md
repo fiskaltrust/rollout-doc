@@ -22,6 +22,7 @@ title: Rollout der fiskaltrust.Middleware
 │   └── <a href="#initialisierung-der-fiskaltrustmiddleware-instanz-über-einen-initialisierungs-beleg" title="Initialisierung der fiskaltrust.Middleware-Instanz über einen Initialisierungs-Beleg">Initialisierung der fiskaltrust.Middleware-Instanz über einen Initialisierungs-Beleg</a>
 │   └── <a href="#abrechnungs-beleg-senden" title="Abrechnungs-Beleg senden">Abrechnungs-Beleg senden</a>
 │   └── <a href="#verbindung-mit-der-fiskaltrustcloud-überprüfen" title="Verbindung mit der fiskaltrust.Cloud überprüfen">Verbindung mit der fiskaltrust.Cloud überprüfen</a>
+│   └── <a href="#firewall-troubleshooting" title="Firewall troubleshooting">Firewall troubleshooting</a>
 │   └── <a href="#datenexport-testen" title="Datenexport testen">Datenexport testen</a>
 │       └── <a href="#datenexport-lokal" title="Datenexport lokal">Datenexport lokal</a>
 │       └── <a href="#hinweise-zum-dsfinv-k-export" title="Hinweise zum DSFinV-K Export">Hinweise zum DSFinV-K Export</a>
@@ -370,7 +371,57 @@ Drücken Sie nun als nächstes auf den Button mit dem Auge-Symbol in der Zeile m
 
 ![Beleg](images/display-receipt.png "Anzeige des Belegs im Portal")
 
+### Firewall troubleshooting
 
+Sollten Fehler bei der Verbindung der fiskaltrust.Middleware nach Außen auftreten, so kann es sein, dass Ihre Firewall die Verbindung nicht zulässt. Überprüfen Sie je nach verwendeter TSE folgende Freigaben:
+
+#### Es wird keine Cloud TSE verwendet
+
+In diesem Fall müssen nur die Freigaben für die benötigten fiskaltrust Server überprüft werden:
+
+- https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
+- https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
+
+müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
+
+#### Es wird die fiskaly Cloud TSE verwendet
+
+In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und die Freigabe für den fiskaly Server überprüft werden:
+
+- https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
+- https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
+- https://kassensichv.io (zur Verbindung der SCU mit der fiskaly Cloud TSE)
+
+müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
+
+#### Es wird die swissbit Cloud TSE verwendet
+
+In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und die Freigabe für den swissbit Server überprüft werden:
+
+- https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
+- https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
+- https://link.fiskaltrust.cloud/release-notes (zum Download des FCC, der für die Verbindung zur swissbit Cloud TSE benötigt wird)
+- https://fiskal.cloud (zur Verbindung des FCC mit der swissbit Cloud TSE)
+
+müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
+
+#### Script zum Überprüfen der Firewall Freigaben
+
+Unser PowerShell Script zur Überprüfung der Firewall Freigaben können Sie [hier](images/fw-script.zip) herunterladen. Entpacken Sie das Zip-File und navigieren Sie mit einem PowerShell Fenster zu dem Verzeichniss in dem Sie es entpackt haben. Geben Sie zum Ausführen des PowerShell Scripts beim Start mit `.\CheckFirewall.ps1`  je nach verwendeter TSE das dazugehörige csv File an (beinhaltet die oben beschriebenen URLs):
+
+**Es wird keine Cloud TSE verwendet:**
+
+`.\CheckFirewall.ps1 FirewallTests-ft.csv`
+
+**Es wird die fiskaly Cloud TSE verwendet:**
+
+`.\CheckFirewall.ps1 FirewallTests-FiskalyCloud.csv `
+
+**Es wird die swissbit Cloud TSE verwendet:**
+
+`.\CheckFirewall.ps1 FirewallTests-SwissbitCloud.csv`
+
+Das Script muss fehlerfrei durchlaufen.
 
 ### Datenexport testen
 
