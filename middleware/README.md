@@ -22,6 +22,7 @@ title: Rollout of the fiskaltrust.Middleware
 │   └── <a href="#initialization-of-the-fiskaltrustmiddleware-instance-via-an-initial-operation-receipt" title="Initialization of the fiskaltrust.Middleware instance via an initial-operation receipt">Initialization of the fiskaltrust.Middleware instance via an initial-operation receipt</a>
 │   └── <a href="#send-a-pos-receipt" title="Send a pos-receipt">Send a pos-receipt</a>
 │   └── <a href="#check-connection-with-the-fiskaltrustcloud" title="Check connection with the fiskaltrust.Cloud">Check connection with the fiskaltrust.Cloud</a>
+│   └── <a href="#firewall-troubleshooting" title="Firewall troubleshooting">Firewall troubleshooting</a>
 │   └── <a href="#test-data-export" title="Test data export">Test data export</a>
 │       └── <a href="#local-data-export" title="Local data export ">Local data export </a>
 │       └── <a href="#notes-on-the-dsfinv-k-export" title="Notes on the DSFinV-K export">Notes on the DSFinV-K export</a>
@@ -367,7 +368,54 @@ Now press the button with the eye symbol in the line with the previously sent po
 
 ![receipt](images/display-receipt.png "Show receipt in portal")
 
+### Firewall troubleshooting
 
+If errors occur when connecting fiskaltrust.Middleware to the outside world, it is possible that your firewall does not allow the connection. Check the following permissions depending on the TSE you are using:
+
+#### No cloud TSE is used
+
+In this case, only the permissions for the required fiskaltrust servers need to be checked:
+
+- https://helipad.fiskaltrust.cloud/version (for downloading the cashbox and uploading the receipt data)
+- https://packages.fiskaltrust.cloud/version (for downloading the required software packages)
+
+must be reachable. To assist you in troubleshooting, we provide a [PowerShell Script](#script-to-check-the-firewall-permissions). The script must run without errors.
+
+#### The fiskaly Cloud TSE is used
+
+In this case, the permissions for the required fiskaltrust servers and the permissions for the fiskaly server must be checked:
+
+- https://helipad.fiskaltrust.cloud/version (to download the cashbox and upload the receipt data).
+- https://packages.fiskaltrust.cloud/version (to download the required software packages)
+- https://kassensichv.io (to connect the SCU to the fiskaly Cloud TSE)
+
+must be reachable. To assist with troubleshooting, we provide a [PowerShell Script](#script-to-check-the-firewall-permissions) for you. The script must run without errors.
+
+#### The swissbit Cloud TSE is used
+
+In this case, the permissions for the required fiskaltrust servers and the permissions for the swissbit server must be checked:
+
+- https://helipad.fiskaltrust.cloud/version (for downloading the cashbox and uploading the receipt data).
+- https://packages.fiskaltrust.cloud/version (to download the required software packages)
+- https://link.fiskaltrust.cloud/release-notes (to download the FCC needed to connect to the swissbit Cloud TSE)
+- https://fiskal.cloud (for the FCC to connect to the swissbit Cloud TSE)
+
+must be reachable. To assist you in troubleshooting, we provide a [PowerShell Script](#script-to-check-the-firewall-permissions). The script must run without errors.
+
+#### Script to check the firewall permissions
+
+You can download our PowerShell script to check the firewall permissions [here](images/fw-script.zip). Unzip the zip-file and navigate with a PowerShell window to the directory where you unzipped it. To run the PowerShell script with `.\CheckFirewall.ps1` specify on startup the associated csv file (includes the URLs described above) depending on the TSE you are using:
+
+**No cloud TSE is used**.
+`.\CheckFirewall.ps1 FirewallTests-ft.csv`
+
+**The fiskaly Cloud TSE is used**
+`.\CheckFirewall.ps1 FirewallTests-FiskalyCloud.csv`
+
+**The swissbit Cloud TSE is used**
+`.\CheckFirewall.ps1 FirewallTests-SwissbitCloud.csv`
+
+The script must run without errors.
 
 ### Test data export
 
