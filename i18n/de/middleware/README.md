@@ -382,7 +382,7 @@ In diesem Fall müssen nur die Freigaben für die benötigten fiskaltrust Server
 - https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
 
-müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein [PowerShell Script](#script-zum-uberprufen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
+müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
 #### Es wird die fiskaly Cloud TSE verwendet
 
@@ -392,7 +392,7 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
 - https://kassensichv.io (zur Verbindung der SCU mit der fiskaly Cloud TSE)
 
-müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-uberprufen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
+müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
 #### Es wird die swissbit Cloud TSE verwendet
 
@@ -403,19 +403,22 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 - https://link.fiskaltrust.cloud/release-notes (zum Download des FCC, der für die Verbindung zur swissbit Cloud TSE benötigt wird)
 - https://fiskal.cloud (zur Verbindung des FCC mit der swissbit Cloud TSE)
 
-müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-uberprufen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
+müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
 #### Script zum Überprüfen der Firewall Freigaben
 
 Unser PowerShell Script zur Überprüfung der Firewall Freigaben können Sie [hier](images/fw-script.zip) herunterladen. Entpacken Sie das Zip-File und navigieren Sie mit einem PowerShell Fenster zu dem Verzeichniss in dem Sie es entpackt haben. Geben Sie zum Ausführen des PowerShell Scripts beim Start mit `.\CheckFirewall.ps1`  je nach verwendeter TSE das dazugehörige csv File an (beinhaltet die oben beschriebenen URLs):
 
-**Es wird keine Cloud TSE verwendet**
+**Es wird keine Cloud TSE verwendet:**
+
 `.\CheckFirewall.ps1 FirewallTests-ft.csv`
 
-**Es wird die fiskaly Cloud TSE verwendet**
+**Es wird die fiskaly Cloud TSE verwendet:**
+
 `.\CheckFirewall.ps1 FirewallTests-FiskalyCloud.csv `
 
-**Es wird die swissbit Cloud TSE verwendet**
+**Es wird die swissbit Cloud TSE verwendet:**
+
 `.\CheckFirewall.ps1 FirewallTests-SwissbitCloud.csv`
 
 Das Script muss fehlerfrei durchlaufen.

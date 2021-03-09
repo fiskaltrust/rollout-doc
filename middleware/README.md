@@ -406,13 +406,16 @@ must be reachable. To assist you in troubleshooting, we provide a [PowerShell Sc
 
 You can download our PowerShell script to check the firewall permissions [here](images/fw-script.zip). Unzip the zip-file and navigate with a PowerShell window to the directory where you unzipped it. To run the PowerShell script with `.\CheckFirewall.ps1` specify on startup the associated csv file (includes the URLs described above) depending on the TSE you are using:
 
-**No cloud TSE is used**.
+**No cloud TSE is used:**
+
 `.\CheckFirewall.ps1 FirewallTests-ft.csv`
 
-**The fiskaly Cloud TSE is used**
+**The fiskaly Cloud TSE is used:**
+
 `.\CheckFirewall.ps1 FirewallTests-FiskalyCloud.csv`
 
-**The swissbit Cloud TSE is used**
+**The swissbit Cloud TSE is used:**
+
 `.\CheckFirewall.ps1 FirewallTests-SwissbitCloud.csv`
 
 The script must run without errors.
