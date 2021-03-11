@@ -397,7 +397,8 @@ In this case, the permissions for the required fiskaltrust servers and the permi
 
 - https://helipad.fiskaltrust.cloud/version (for downloading the cashbox and uploading the receipt data).
 - https://packages.fiskaltrust.cloud/version (to download the required software packages)
-- https://link.fiskaltrust.cloud/release-notes (to download the FCC needed to connect to the swissbit Cloud TSE)
+- https://link.fiskaltrust.cloud/release-notes (redirect for the ft.Middleware to the FCC download)
+- https://downloads.fiskaltrust.cloud/downloads/info.html (to download the FCC needed to connect to the swissbit Cloud TSE)
 - https://fiskal.cloud (for the FCC to connect to the swissbit Cloud TSE)
 
 must be reachable. To assist you in troubleshooting, we provide a [PowerShell Script](#script-to-check-the-firewall-permissions). The script must run without errors.
