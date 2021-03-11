@@ -400,7 +400,8 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 
 - https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
-- https://link.fiskaltrust.cloud/release-notes (zum Download des FCC, der für die Verbindung zur swissbit Cloud TSE benötigt wird)
+- https://link.fiskaltrust.cloud/release-notes (redirect für die ft.Middleware zum FCC download)
+- https://downloads.fiskaltrust.cloud/downloads/info.html (zum Download des FCC, der für die Verbindung zur swissbit Cloud TSE benötigt wird)
 - https://fiskal.cloud (zur Verbindung des FCC mit der swissbit Cloud TSE)
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
