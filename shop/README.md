@@ -158,11 +158,17 @@ However, if you want the hardware TSE from the carefree package to be sent to yo
 Referring to the example above, the steps would then be as follows:
 
 Step 1: Go to the fisklatrtust.Shop in your own account and select your own desired outlet in the upper area.
+
 Step 2: In your own account, add the hardware TSE activation product, e.g. the product "Swissbit USB Hardware TSE-as-a-Service - aus Anspruch erzeugen", to the shopping cart - this will ensure that the hardware TSE is sent directly to you.
+
 Step 3: Switch to the account of the POSOperator using the surrogate function (as described above).
+
 Step 4: Go to the fiskaltrust.Shop in the POSOperator's account and select the desired outlet of the POSOperator in the upper area.
+
 Step 5: In the POSOperator's account, transfer the entitlement to the carefree package to the POSOperator, i.e. place the product "fiskaltrust.Sorglos -Anspruch übertragen" in the shopping cart.
+
 Step 6: Activate the carefree package in the account of the POSOperator in the shop, i.e. add the product "fiskaltrust.Sorglos Betreiber-Abo - aus Anspruch erzeugen" to the shopping cart.
+
 Step 7: Switch back to your own account and check out the shopping cart there and place the order.
 
 The difference to the process described in the above chapter is that the entitlement/claim to the hardware TSE is no longer transferred to the POSOperator and activated under his account, but is activated directly in your own account. Thus, the delivery of the hardware TSE from the carefree package is made directly to you as the POSDealer. However, it is important that you continue to transfer the "fiskaltrust.Sorglos" (carefree package) claim to the POSOperator and activate it in the account of the POSOperator for the correct outlet of the POSOperator.
