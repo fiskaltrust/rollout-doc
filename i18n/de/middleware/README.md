@@ -408,7 +408,13 @@ müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für
 
 #### Script zum Überprüfen der Firewall Freigaben
 
-Unser PowerShell Script zur Überprüfung der Firewall Freigaben können Sie [hier](images/fw-script.zip) herunterladen. Entpacken Sie das Zip-File und navigieren Sie mit einem PowerShell Fenster zu dem Verzeichniss in dem Sie es entpackt haben. Geben Sie zum Ausführen des PowerShell Scripts beim Start mit `.\CheckFirewall.ps1`  je nach verwendeter TSE das dazugehörige csv File an (beinhaltet die oben beschriebenen URLs):
+Unser PowerShell Script zur Überprüfung der Firewall Freigaben können Sie [hier](images/fw-script.zip) herunterladen. Entpacken Sie das Zip-File und navigieren Sie mit einem PowerShell Fenster zu dem Verzeichniss in dem Sie es entpackt haben. Sie müssen als Administartor die PowerShell starten.
+
+Wenn noch nicht gesetzt, dann setzen Sie bitte die Execution Policy auf RemoteSigned bevor Sie das Script ausführen:
+
+`Set-ExecutionPolicy RemoteSigned`
+
+Geben Sie zum Ausführen des PowerShell Scripts beim Start mit `.\CheckFirewall.ps1`  je nach verwendeter TSE das dazugehörige csv File an (beinhaltet die oben beschriebenen URLs):
 
 **Es wird keine Cloud TSE verwendet:**
 
@@ -423,6 +429,10 @@ Unser PowerShell Script zur Überprüfung der Firewall Freigaben können Sie [hi
 `.\CheckFirewall.ps1 FirewallTests-SwissbitCloud.csv`
 
 Das Script muss fehlerfrei durchlaufen.
+
+Wenn Sie die Ausgabe des Scripts in eine Datei schreiben lassen möchten, dann können Sie es wie im folgenden Beispiel tun:
+
+`.\CheckFirewall.ps1 .\FirewallTests-SwissbitCloud.csv | Out-File -FilePath C:\test\fw-script\output.txt -Width 1600`
 
 ### Datenexport testen
 
@@ -524,7 +534,7 @@ Instanzen der fiskaltrust.Middleware können je nach Gegebenheit bzw. Szenario u
   
 
 *Info zur Cloud-TSE*
-Bei einer Cloud-TSE läuft eine Komponente im Rechenzentrum des Cloud-TSE Anbieters. Ist diese TSE Komponente nicht mehr erreichbar, wechselt die fiskaltrust.Middleware in den Ausfallsmodus. Bei der Nutzung von Cloud-TSEs möchten wir zusätzlich auf unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/tse-fiskaly-fair-use-policy.md) hinweisen.
+Bei einer Cloud-TSE läuft eine Komponente im Rechenzentrum des Cloud-TSE Anbieters. Ist diese TSE Komponente nicht mehr erreichbar, wechselt die fiskaltrust.Middleware in den Ausfallsmodus. Bei der Nutzung von Cloud-TSEs möchten wir zusätzlich auf unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md) hinweisen.
 
  *Info zur Hardware-TSE*
 Grundsätzlich werden Hardware-TSE per micro SD-Karte oder per USB-Anschluss direkt an die Kasse angeschlossen.
@@ -554,7 +564,7 @@ Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox der Hauptkasse ko
 ![tse-on-cashregister](images/cash-register-as-sever-hw-tse.png)
 
 ### Eine Cloud-TSE für mehrere Kassen
-Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer eigenen Queue und einer eigenen SCU. Jede SCU greift auf die gleiche Cloud-TSE zu. Dieses Szenario ermöglicht eine Einsparung von Cloud-TSEs. Ein Vorteil hier ist, dass die SCU nicht zum Bottleneck wird, da jede Kasse ihre eigene SCU hat. Da jedoch hierbei alle Requests an die gleiche Cloud-TSE gesendet werden, wird die TSE zum Bottleneck. Des Weiteren sind hierbei ebenfalls sowohl mögliche [Performanceengpässe](#performanceempfehlung) in der Cloud-TSE zu berücksichtigen als auch unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/for-posoperators/tse-fiskaly-fair-use-policy.md).
+Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer eigenen Queue und einer eigenen SCU. Jede SCU greift auf die gleiche Cloud-TSE zu. Dieses Szenario ermöglicht eine Einsparung von Cloud-TSEs. Ein Vorteil hier ist, dass die SCU nicht zum Bottleneck wird, da jede Kasse ihre eigene SCU hat. Da jedoch hierbei alle Requests an die gleiche Cloud-TSE gesendet werden, wird die TSE zum Bottleneck. Des Weiteren sind hierbei ebenfalls sowohl mögliche [Performanceengpässe](#performanceempfehlung) in der Cloud-TSE zu berücksichtigen als auch unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md).
 
 ![tse-on-cashregister](images/cash-register-with-cloud-tse.png)
 
