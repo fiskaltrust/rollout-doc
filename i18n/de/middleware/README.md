@@ -408,7 +408,13 @@ müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für
 
 #### Script zum Überprüfen der Firewall Freigaben
 
-Unser PowerShell Script zur Überprüfung der Firewall Freigaben können Sie [hier](images/fw-script.zip) herunterladen. Entpacken Sie das Zip-File und navigieren Sie mit einem PowerShell Fenster zu dem Verzeichniss in dem Sie es entpackt haben. Geben Sie zum Ausführen des PowerShell Scripts beim Start mit `.\CheckFirewall.ps1`  je nach verwendeter TSE das dazugehörige csv File an (beinhaltet die oben beschriebenen URLs):
+Unser PowerShell Script zur Überprüfung der Firewall Freigaben können Sie [hier](images/fw-script.zip) herunterladen. Entpacken Sie das Zip-File und navigieren Sie mit einem PowerShell Fenster zu dem Verzeichniss in dem Sie es entpackt haben. Sie müssen als Administartor die PowerShell starten.
+
+Wenn noch nicht gesetzt, dann setzen Sie bitte die Execution Policy auf RemoteSigned bevor Sie das Script ausführen:
+
+`Set-ExecutionPolicy RemoteSigned`
+
+Geben Sie zum Ausführen des PowerShell Scripts beim Start mit `.\CheckFirewall.ps1`  je nach verwendeter TSE das dazugehörige csv File an (beinhaltet die oben beschriebenen URLs):
 
 **Es wird keine Cloud TSE verwendet:**
 
@@ -423,6 +429,10 @@ Unser PowerShell Script zur Überprüfung der Firewall Freigaben können Sie [hi
 `.\CheckFirewall.ps1 FirewallTests-SwissbitCloud.csv`
 
 Das Script muss fehlerfrei durchlaufen.
+
+Wenn Sie die Ausgabe des Scripts in eine Datei schreiben lassen möchten, dann können Sie es wie im folgenden Beispiel tun:
+
+`.\CheckFirewall.ps1 .\FirewallTests-SwissbitCloud.csv | Out-File -FilePath C:\test\fw-script\output.txt -Width 1600`
 
 ### Datenexport testen
 

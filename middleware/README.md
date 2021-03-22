@@ -405,7 +405,13 @@ must be reachable. To assist you in troubleshooting, we provide a [PowerShell Sc
 
 #### Script to check the firewall permissions
 
-You can download our PowerShell script to check the firewall permissions [here](images/fw-script.zip). Unzip the zip-file and navigate with a PowerShell window to the directory where you unzipped it. To run the PowerShell script with `.\CheckFirewall.ps1` specify on startup the associated csv file (includes the URLs described above) depending on the TSE you are using:
+You can download our PowerShell script to check the firewall permissions [here](images/fw-script.zip). Unzip the zip-file and navigate with a PowerShell window to the directory where you unzipped it. You need to run the PowerShell window as an administrator.
+
+If not already done, please set the execution policy to RemoteSigned:
+
+`Set-ExecutionPolicy RemoteSigned`
+
+To run the PowerShell script with `.\CheckFirewall.ps1` specify on startup the associated csv file (includes the URLs described above) depending on the TSE you are using:
 
 **No cloud TSE is used:**
 
@@ -420,6 +426,11 @@ You can download our PowerShell script to check the firewall permissions [here](
 `.\CheckFirewall.ps1 FirewallTests-SwissbitCloud.csv`
 
 The script must run without errors.
+
+If you like to send the output of the script to a file you can do it like in the following example:
+
+`.\CheckFirewall.ps1 .\FirewallTests-SwissbitCloud.csv | Out-File -FilePath C:\test\fw-script\output.txt -Width 1600`
+
 
 ### Test data export
 
