@@ -900,9 +900,9 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **
 
 | **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `apiKey` |ja |  ```String``` | Fiskaly API Schlüssel |
-| `apiSecret` |ja |  ```String``` | Fiskaly API Secret |
-| `tssId` |ja |  ```GUID String``` | ID der TSE von Fiskaly |
+| `ApiKey` |ja |  ```String``` | Fiskaly API Schlüssel |
+| `ApiSecret` |ja |  ```String``` | Fiskaly API Secret |
+| `TssId` |ja |  ```GUID String``` | ID der TSE von Fiskaly |
 
 #### Systemvariablen
 
