@@ -892,9 +892,9 @@ The following key-value pairs are used in the **`Configuration`** object of a **
 
 | **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
 |----------------------|--------------------------|--------------------------|---------------------|
-| `apiKey` |yes |  ```String``` | Fiskaly API Key |
-| `apiSecret` |yes |  ```String``` | Fiskaly API Secret |
-| `tssId` |yes |  ```GUID String``` | ID of the TSE from Fiskaly |
+| `ApiKey` |yes |  ```String``` | Fiskaly API Key |
+| `ApiSecret` |yes |  ```String``` | Fiskaly API Secret |
+| `TssId` |yes |  ```GUID String``` | ID of the TSE from Fiskaly |
 
 #### System variables
 
