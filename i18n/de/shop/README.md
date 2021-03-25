@@ -156,7 +156,7 @@ Mit dem Rollout Management können analog zum bisher beschriebenen Prozess auf v
 
 > ![Rollout Plan](images/portal_plans.png "rollout-management  &rarr; plan")
 
-Wählen Sie im fiskaltrust.portal den Eintrag <kbd>Rollout-Management</kbd>und danach <kbd>Plan</kbd>.
+Wählen Sie im fiskaltrust.portal den Eintrag <kbd>Rollout-Management</kbd> und danach <kbd>Plan</kbd>.
 Verringern Sie die Anzahl der Pläne durch die Eingabe von Filterkriterien oder mit der Auswahlleiste.
 Markieren Sie einen der Pläne.
 >Hinweis: 
@@ -164,14 +164,14 @@ Sollten Sie den gewählten Plan häufiger anwenden wollen, empfiehlt sich, ein L
 
 ### Select a PosOperator
 
->![Select a PosOperator](images\portal_operators.png "Select a PosOperator")
+> ![Select a PosOperator](images/portal_operators.png "Select a PosOperator")
 
 Verringern Sie die Anzahl der Kassenbetreiber durch die Eingabe von Filterkriterien, falls gewünscht.
 
 Markieren Sie einen der Kassenbetreiber oder gehen Sie mit <kbd>Suche</kbd> zurück zur Auswahl eines Plans.
 ### Select Outlets
 
-> ![Select Outlets](images\portal_POSOUTLETS.png "Select Outlets")
+> ![Select Outlets](images/portal_POSOUTLETS.png "Select Outlets")
 
 Verringern Sie die Anzahl der Outlets durch die Eingabe von Filterkriterien.
 
@@ -185,7 +185,7 @@ Mit der Zurück-Schaltfläche des Browsers können Sie einzelne Schritte zurück
 
 ### Create Quote
 
-> ![Create Quote](images\portal_create_quote.png "Create Quote")
+> ![Create Quote](images/portal_create_quote.png "Create Quote")
 
 Kontrollieren Sie die gewählten Angaben wie Plan, Kassenbetreiber und Outlet(s).
 Falls gewünscht, können Sie den namen des Angebotes an Ihre Wünsche anpassen.
@@ -200,7 +200,7 @@ Mit der Zurück-Schalfläche des Browsers können Sie einzelne Schritte zurück 
 
 ### Shopping Cart
 
-> ![Shopping Cart](images\portal_cart.png "Shopping Cart")
+> ![Shopping Cart](images/portal_cart.png "Shopping Cart")
 
 Sie können Ihre Auswahl im Warenkorb nochmals kontrollieren. 
 Die Anzahl der Artikel, Detailbeschreibungen, Outlet(s) und die Kosten werden aufgelistet. 
@@ -214,7 +214,7 @@ Im Account des Kassenbetreibers ist die gewählte Konfiguration innerhalb wenige
 #### Kontrolle 
 Sie können den Vorgang Im Account des Kassenbetreibers kontrollieren. Dazu nutzen Sie die Surrogatefunktion, im den Account zu wechseln. Anschließend wechseln Sie wieder in den eigenen Account
 
-> ![Kontrolle](images\portal_POSOperator.png "POSOperator &rarr; Übersicht")
+> ![Kontrolle](images/portal_POSOperator.png "POSOperator &rarr; Übersicht")
 
 Wählen Sie <kbd>PosOperator</kbd>  &rarr; <kbd>Übersicht</kbd>. 
 Dort suchen Sie den Datensatz des zuvor gewählten Kassenbetreibers. Wählen Sie den Link.
