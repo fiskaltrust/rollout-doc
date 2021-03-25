@@ -145,7 +145,6 @@ Zudem können wir im Account des Kassenbetreibers unter "Firmenname &rarr; Stand
 
 ![Produkt Sorglos aktiviert](images/carefree-activated.png "Produkt Sorglos aktiviert")
  
- [comment]: <> (added with the information for new rollout Management)
 ## Rollout Management
 Mit dem Rollout Management können analog zum bisher beschriebenen Prozess auf von der fiskaltrust gmbH vorgefertigte Pläne zurück. Diese bereiten die Daten für die Produktion einer kompletten Konfiguration in einem oder mehreren Outlet auf. 
 
