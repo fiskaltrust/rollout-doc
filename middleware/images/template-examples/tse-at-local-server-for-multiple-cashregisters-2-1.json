@@ -1,0 +1,28 @@
+{
+    "ftCashBoxId": "|[cashbox_id]|",
+    "ftSignaturCreationDevices": [
+        {
+            "Id": "|[scu0_id]|",
+            "Package": "fiskaltrust.Middleware.SCU.DE.CryptoVision",
+            "Url": [
+                "grpc://localhost:10081"
+            ],
+            "Configuration": {
+                "devicePath": "E:",
+                "Counter": 1
+            }
+        },
+        {
+            "Id": "|[scu1_id]|",
+            "Package": "fiskaltrust.Middleware.SCU.DE.CryptoVision",
+            "Url": [
+                "grpc://localhost:10082"
+            ],
+            "Configuration": {
+                "devicePath": "T:",
+                "Counter": 2
+            }
+        }
+    ],
+    "ftQueues": []
+}
