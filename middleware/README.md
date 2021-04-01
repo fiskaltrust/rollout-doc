@@ -958,7 +958,7 @@ In the template that is to reference the SCU, the following specifications can n
   }
 ]
 ```
-Depending on the type, **`Id`** uses the corresponding [system variable](#systemvariables). In the above example it is the variable `reference_scu_swissbit_counter_{0-n}_id`. The value `{0-n}` specifies which SCU should be referenced. In our example it is 1, i.e.: reference_scu_swissbit_counter_**1**_id.
+Depending on the type, **`Id`** uses the corresponding [system variable](#system-variables). In the above example it is the variable `reference_scu_swissbit_counter_{0-n}_id`. The value `{0-n}` specifies which SCU should be referenced. In our example it is 1, i.e.: reference_scu_swissbit_counter_**1**_id.
 
 Furthermore, the package of the SCU to be referenced must be specified for **`Package`**. In our example it is for the swissbit usb the package `fiskaltrust.Middleware.SCU.DE.Swissbit`.
 
