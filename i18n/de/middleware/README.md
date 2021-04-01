@@ -904,19 +904,102 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **
 | `ApiSecret` |ja |  ```String``` | Fiskaly API Secret |
 | `TssId` |ja |  ```GUID String``` | ID der TSE von Fiskaly |
 
+Folgende Schlüssel-Wert Paare können in dem **`Configuration`** Objekt einer **SCU**  unabhängig vom Hersteller der TSE verwendet werden:
+
+| **Fieldname**        | **Pflicht**   | **Inhalt** | **Beschreibung** |
+|----------------------|--------------------------|--------------------------|---------------------|
+| `Counter` |nein |  ```Integer``` | Wenn der Counter für eine SCU in deren Konfiguration gesetzt ist, kann diese, bereits existierende SCU in einem Template referenziert werden. Siehe dazu auch das Kapitel [Referenzierung vorhandener SCUs in einem Template](#referenzierung-vorhandener-scus-in-einem-template). |
+
 #### Systemvariablen
 
 Folgende Systemvariablen stehen Ihnen zur Verwendung im Template zur Verfügung:
 
-| Variable                                  | Wert                                                         |
-| ----------------------------------------- | ------------------------------------------------------------ |
-| `cashbox_id`                              | Random GUID                                                  |
-| `scu{0-9}_id`                             | Random GUID                                                  |
-| `helper{0-9}_id`                          | Random GUID                                                  |
-| `queue{0-9}_id`                           | Random GUID                                                  |
-| `queue{0-9}_id_base64withoutspecialchars` | `{queue_id}`, converted to Base64 without special characters |
+| Variable                                         | Wert                                                         |
+| ------------------------------------------------ | ------------------------------------------------------------ |
+| `cashbox_id`                                     | Random GUID                                                  |
+| `scu{0-9}_id`                                    | Random GUID                                                  |
+| `helper{0-9}_id`                                 | Random GUID                                                  |
+| `queue{0-9}_id`                                  | Random GUID                                                  |
+| `queue{0-9}_id_base64withoutspecialchars`        | `{queue_id}`, converted to Base64 without special characters. Wird oft als Kassenseriennummer verwendet (CashboxIdentification) |
+| `reference_scu_fiskaly_counter_{0-n}_id`         | wird verwendet um eine bereits vorhandene fiskaly cloud SCU zu referenzieren (z.B. die automatisch beim checkout erstellt wurde) |
+| `reference_scu_swissbitcloud_counter_{0-n}_id`   | wird verwendet um eine bereits vorhandene swissbit cloud SCU zu referenzieren (z.B. die automatisch beim checkout erstellt wurde) |
+| `reference_scu_swissbit_counter_{0-n}_id`        | wird verwendet um eine bereits vorhandene swissbit usb SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
+| `reference_scu_cryptovision_counter_{0-n}_id`    | wird verwendet um eine bereits vorhandene cryptovision SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
+| `reference_scu_dieboldnixdorf_counter_{0-n}_id`  | wird verwendet um eine bereits vorhandene diebold SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
+| `reference_scu_epson_counter_{0-n}_id`           | wird verwendet um eine bereits vorhandene epson SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
+| `reference_scu_atrust_counter_{0-n}_id`          | wird verwendet um eine bereits vorhandene atrust SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
+| `reference_scu_fiskaly_counter_{0-n}_url`        | wird verwendet um die Url einer bereits vorhandenen fiskaly cloud SCU zu erhalten |
+| `reference_scu_swissbitcloud_counter_{0-n}_url`  | wird verwendet um die Url einer bereits vorhandenen swissbit cloud SCU zu erhalten |
+| `reference_scu_swissbit_counter_{0-n}_url`       | wird verwendet um die Url einer bereits vorhandenen swissbit usb SCU zu erhalten |
+| `reference_scu_cryptovision_counter_{0-n}_url`   | wird verwendet um die Url einer bereits vorhandenen cryptovision SCU zu erhalten |
+| `reference_scu_dieboldnixdorf_counter_{0-n}_url` | wird verwendet um die Url einer bereits vorhandenen diebold SCU zu erhalten |
+| `reference_scu_epson_counter_{0-n}_url`          | wird verwendet um die Url einer bereits vorhandenen epson SCU zu erhalten |
+| `reference_scu_atrust_counter_{0-n}_url`         | wird verwendet um die Url einer bereits vorhandenen atrust SCU zu erhalten |
 
 _Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
+
+#### Referenzierung vorhandener SCUs in einem Template
+
+Eine bereits zuvor angelegte SCU kann in einem Template referenziert werden. Dies ist zum Beispiel für den Fall wichtig, dass eine Queue der neu zu erstellenden Cashbox, auf eine bereits vorhandene SCU zugreifen soll, die sich Außerhalb der neuen Cashbox befindet.
+
+Die zu referenzierende SCU wird über die Kombination aus ihrem Typ (z.B. swissbit) und ihrem  `Counter`  im Template identifiziert. Voraussetzung ist also, dass die zu referenzierende SCU einen sogenannten  `Counter`  als Schlüssel-Wert Paar in ihrer Konfiguration hat. Die von fiskaltrust automatisch angelegten SCUs (also z.B. fiskaly oder swissbit cloud bei Checkout) haben den  `Counter`  bereits gesetzt. Bei manuell oder durch ein Template angelegte SCUs wird das Setzen des Counter über das Portal im Bereich Konfiguration vorgenommen. Legen Sie dazu in der Konfiguration der SCU das Schlüssel-Wert Paar `Counter` wie folgt  an:
+
+![counter-anlegen](images/ref-scu-1.png)
+
+
+
+Beim Initialen Anlegen einer neuen SCU über ein Template kann der `Counter` im Bereich **`Configuration`** gesetzt werden. Beispiel:
+
+```json
+"Configuration": {
+    "devicePath": "E:",
+    "Counter": 1
+}
+```
+
+
+Im dem Template, dass die SCU referenzieren soll, können nun folgende Angaben gemacht werden:
+
+1. Im Bereich **`ftSignaturCreationDevices`** die zu referenzierende SCU wie folgt angeben:
+
+```json
+"ftSignaturCreationDevices":[
+  {
+     "Id":"|[reference_scu_swissbit_counter_1_id]|",
+     "Package":"fiskaltrust.Middleware.SCU.DE.Swissbit"
+  }
+]
+```
+Je nach Typ wird bei **`Id`** die dazugehörige [Systemvariable](#systemvariablen) verwendet. In obigen Beispiel ist es die Variable `reference_scu_swissbit_counter_{0-n}_id`. Der Wert {0-n} gibt konkret an, welche SCU referenziert werden soll. In unserem Beispiel ist es die 1 also: reference_scu_swissbit_counter_**1**_id.
+
+Des Weiteren muss bei **`Package`** das Package der zu referenzierenden SCU angegeben werden. In unserem Beispiel ist es für die swissbit usb das Package `fiskaltrust.Middleware.SCU.DE.Swissbit`.
+
+2. Die Verbindung einer Queue mit der SCU wird im Template am folgenden beiden Stellen angegeben:
+
+**`init_ftQueueDE`** :
+```json
+"init_ftQueueDE":[
+  {
+     "ftQueueDEId":"|[queue0_id]|",
+     "ftSignaturCreationUnitDEId":"|[reference_scu_swissbit_counter_1_id]|",
+     "CashBoxIdentification":"|[queue0_id_base64withoutspecialchars]|"
+  }
+]
+```
+und
+
+**`init_ftSignaturCreationUnitDE`** :
+
+```json
+"init_ftSignaturCreationUnitDE":[
+   {
+      "ftSignaturCreationUnitDEId":"|[reference_scu_swissbit_counter_1_id]|",
+      "Url":"[\"|[reference_scu_swissbit_counter_1_url]|\"]"
+   }
+]
+```
+Hier finden Sie ein solches Template als Beispiel zum Download: [`ref-template-example`](images/ref-template-example.zip) 
+
 
 
 
