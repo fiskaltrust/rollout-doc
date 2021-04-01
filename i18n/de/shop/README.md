@@ -142,22 +142,22 @@ Zudem können wir im Account des Kassenbetreibers unter <kbd>Firmenname</kbd> &r
 ![Produkt Sorglos aktiviert](images/carefree-activated.png "Produkt Sorglos aktiviert")
  
  [comment]: <> (added with the information for new rollout Management)
-## Rollout Management
+## Rollout Management mit Plänen
 Wie zuvor erläutert, führen Kassenhändler im Rahmen des Rollouts folgende Schritte durch:
 - Anzahl der Produkte kalkulieren
 - Einkäufe im [fiskaltrust.Portal](https://portal.fiskaltrust.de/) vorbereiten
 - Produkte erwerben
 - Produkte als Ansprüche an Kassenbetreiber übertragen
 - Ansprüche des Kassenbetreibers aktivieren  
-Mit dem neu eingeführten Rollout Management greifen Kassenhändler auf von der fiskaltrust gmbH vorgefertigte Pläne zurück. Damit werden die letzten Schritte zusammengefasst und vereinfacht. Erläuterung dazu finden Sie im [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) zum Thema. 
+Kassenhändler können mit den neu eingeführten Rollout-Plänen Produktzusammenstellungen erwerben, an Kassenbetreiber und diese aktivieren. Damit werden die letzten Schritte zusammengefasst und vereinfacht. Erläuterung dazu finden Sie im [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) zum Thema. 
 
->![rolloutplan](images/process-MGMT_DE.drawio.svg
+![rolloutplan](images/process-MGMT_DE.drawio.svg
  "rollout-plans-overview")
 
 
 ### Auswahl eines Rolloutplans
 
-> ![Rollout Plan](images/portal_plans.png "rollout-management  &rarr; plan")
+![Rollout Plan](images/portal_plans.png "rollout-management  &rarr; plan")
 
 Wählen Sie im fiskaltrust.portal den Eintrag <kbd>Rollout-Management</kbd> und danach <kbd>Plan</kbd>.
 Reduzieren Sie durch die Eingabe von Filterkriterien oder mit der Auswahlleiste die angezeigten Pläne.
@@ -167,14 +167,14 @@ Sollten Sie den gewählten Plan häufiger anwenden wollen, empfiehlt sich, ein L
 
 ### Wählen Sie einen PosOperator
 
-> ![Select a PosOperator](images/portal_operators.png "Select a PosOperator")
+![Select a PosOperator](images/portal_operators.png "Select a PosOperator")
 
 Verringern Sie die angezeigten Datensätze durch die Eingabe von Filterkriterien, falls gewünscht.
 
 Markieren Sie einen der Kassenbetreiber oder gehen Sie mit <kbd>Suche</kbd> zurück zur Auswahl eines Plans.
 ### Wählen Sie eine Niederlassung
 
-> ![Select Outlets](images/portal_POSOUTLETS.png "Select Outlets")
+![Select Outlets](images/portal_POSOUTLETS.png "Select Outlets")
 
 Verringern Sie die angezeigten Datensätze durch die Eingabe von Filterkriterien.
 
@@ -188,7 +188,7 @@ Mit der Zurück-Schaltfläche des Browsers können Sie einzelne Schritte zurück
 
 ### Erstellung eines Angebots
 
-> ![Create Quote](images/portal_create_quote.png "Create Quote")
+![Create Quote](images/portal_create_quote.png "Create Quote")
 
 Kontrollieren Sie die Angaben wie den gewählten Plan, den Kassenbetreiber und das oder die Outlet(s).
 Falls gewünscht, können Sie den Namen des Angebotes an Ihre Wünsche anpassen.
@@ -202,7 +202,7 @@ Korrekturen nehmen Sie vor, indem Sie mit der Zurück-Schalfläche des Browsers 
 
 ### Warenkorb
 
-> ![Shopping Cart](images/portal_cart.png "Shopping Cart")
+![Shopping Cart](images/portal_cart.png "Shopping Cart")
 
 Sie können Ihre Auswahl im Warenkorb nochmals kontrollieren. 
 Die Anzahl der Artikel, Detailbeschreibungen, Outlet(s) und die Kosten werden aufgelistet. 
@@ -216,7 +216,7 @@ Im Account des Kassenbetreibers ist die gewählte Konfiguration innerhalb wenige
 #### Kontrolle 
 Sie können den Vorgang Im Account des Kassenbetreibers kontrollieren. Dazu nutzen Sie die Surrogatefunktion, im den Account zu wechseln. Anschließend wechseln Sie wieder in den eigenen Account
 
-> ![Kontrolle](images/portal_POSOperator.png "POSOperator &rarr; Übersicht")
+![Kontrolle](images/portal_POSOperator.png "POSOperator &rarr; Übersicht")
 
 Wählen Sie <kbd>PosOperator</kbd>  &rarr; <kbd>Übersicht</kbd>. 
 Dort suchen Sie den Datensatz des zuvor gewählten Kassenbetreibers. Wählen Sie den Link.
