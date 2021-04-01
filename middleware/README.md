@@ -896,6 +896,12 @@ The following key-value pairs are used in the **`Configuration`** object of a **
 | `ApiSecret` |yes |  ```String``` | Fiskaly API Secret |
 | `TssId` |yes |  ```GUID String``` | ID of the TSE from Fiskaly |
 
+The following key-value pairs can be used in the **`Configuration`** object of a **SCU** independent of the manufacturer of the TSE:
+
+| **Fieldname**        | **Mandatory**              | **Content**          | **Description**          |
+|----------------------|--------------------------|--------------------------|---------------------|
+| `Counter` |no |  ```Integer``` | If the counter is set for an SCU in it's configuration, than the counter can later be used in a template to create a cashbox that doese not include, but needs to reference this SCU. See also chapter [Referencing an existing SCU in a template](#referencing-an-existing-scu-in-a-template).|
+
 #### System variables
 
 The following system variables are available for use in the template:
@@ -907,8 +913,81 @@ The following system variables are available for use in the template:
 | `helper{0-9}_id`                          | Random GUID                                                  |
 | `queue{0-9}_id`                           | Random GUID                                                  |
 | `queue{0-9}_id_base64withoutspecialchars` | `{queue_id}`, converted to Base64 without special characters |
+| `reference_scu_fiskaly_counter_{0-n}_id` | used to reference an existing fiscaly cloud scu (e.g. that was automatically created by checkout)|
+| `reference_scu_swissbitcloud_counter_{0-n}_id` | used to reference an existing swissbit cloud scu (e.g. that was automatically created by checkout)|
+| `reference_scu_swissbit_counter_{0-n}_id` | used to reference an existing swissbit usb scu that has a counter set in it's configuration|
+| `reference_scu_cryptovision_counter_{0-n}_id` | used to reference an existing cryptovision scu that has a counter set in it's configuration|
+| `reference_scu_dieboldnixdorf_counter_{0-n}_id` | used to reference an existing diebold scu that has a counter set in it's configuration|
+| `reference_scu_epson_counter_{0-n}_id` | used to reference an existing epson scu that has a counter set in it's configuration|
+| `reference_scu_atrust_counter_{0-n}_id` | used to reference an existing atrust scu that has a counter set in it's configuration|
+| `reference_scu_fiskaly_counter_{0-n}_url` | used to obtain the url of an existing fiscaly cloud scu that has a counter set in it's configuration|
+| `reference_scu_swissbitcloud_counter_{0-n}_url` | used to obtain the url of an existing swissbit cloud scu that has a counter set in it's configuration|
+| `reference_scu_swissbit_counter_{0-n}_url` | used to obtain the url of an existing swissbit usb scu that has a counter set in it's configuration|
+| `reference_scu_cryptovision_counter_{0-n}_url` | used to obtain the url of an existing cryptovision scu that has a counter set in it's configuration|
+| `reference_scu_dieboldnixdorf_counter_{0-n}_url` | used to obtain the url of an existing diebold scu that has a counter set in it's configuration|
+| `reference_scu_epson_counter_{0-n}_url` | used to obtain the url of an existing epson scu that has a counter set in it's configuration|
+| `reference_scu_atrust_counter_{0-n}_url` | used to obtain the url of an existing atrust scu that has a counter set in it's configuration|
 
 _Dynamic values are highlighted by {} in this table._
+
+#### Referencing an existing SCU in a template
+
+A previously created SCU can be referenced in a template. This is important, for example, in the case that a queue of the new cashbox to be created has to access an already existing SCU that is located outside the new cashbox.
+
+The SCU to be referenced is identified by the combination of its type (e.g. swissbit) and its `Counter` in the template. The prerequisite is that the SCU to be referenced has a so-called `Counter` as a key-value pair in its configuration. SCUs created automatically by fiskaltrust (e.g. fiskaly or swissbit cloud at checkout) already have the `Counter` set. For SCUs created manually or by a template, the `Counter` is set via the portal in the configuration area. To do this, create the key-value pair `Counter` in the configuration of the SCU as follows:
+
+![counter-anlegen](images/ref-scu-1.png)
+
+When initially creating a new SCU via a template, the `Counter` can be set in the **`Configuration`** area. Example:
+
+```json
+"Configuration": {
+    "devicePath": "E:",
+    "Counter": 1
+}
+```
+In the template that is to reference the SCU, the following specifications can now be made:
+
+1.  In the **`ftSignatureCreationDevices`** section, specify the SCU to reference as follows:
+
+```json
+"ftSignaturCreationDevices":[
+  {
+     "Id":"|[reference_scu_swissbit_counter_1_id]|",
+     "Package":"fiskaltrust.Middleware.SCU.DE.Swissbit"
+  }
+]
+```
+Depending on the type, **`Id`** uses the corresponding [system variable](#system-variables). In the above example it is the variable `reference_scu_swissbit_counter_{0-n}_id`. The value `{0-n}` specifies which SCU should be referenced. In our example it is 1, i.e.: reference_scu_swissbit_counter_**1**_id.
+
+Furthermore, the package of the SCU to be referenced must be specified for **`Package`**. In our example it is for the swissbit usb the package `fiskaltrust.Middleware.SCU.DE.Swissbit`.
+
+2. The connection of a Queue with the SCU is specified in the template at the following two places:
+
+**`init_ftQueueDE`** :
+```json
+"init_ftQueueDE":[
+  {
+     "ftQueueDEId":"|[queue0_id]|",
+     "ftSignaturCreationUnitDEId":"|[reference_scu_swissbit_counter_1_id]|",
+     "CashBoxIdentification":"|[queue0_id_base64withoutspecialchars]|"
+  }
+]
+```
+and
+
+**`init_ftSignaturCreationUnitDE`** :
+
+```json
+"init_ftSignaturCreationUnitDE":[
+   {
+      "ftSignaturCreationUnitDEId":"|[reference_scu_swissbit_counter_1_id]|",
+      "Url":"[\"|[reference_scu_swissbit_counter_1_url]|\"]"
+   }
+]
+```
+
+Here you can find such a template as an example for download: [`ref-template-example`](images/ref-template-example.zip) 
 
 
 

@@ -141,7 +141,7 @@ Zudem können wir im Account des Kassenbetreibers unter <kbd>Firmenname</kbd> &r
 
 ![Produkt Sorglos aktiviert](images/carefree-activated.png "Produkt Sorglos aktiviert")
  
- [comment]: <> (added with the information for new rollout Management)
+
 ## Rollout Management mit Plänen
 Wie zuvor erläutert, führen Kassenhändler im Rahmen des Rollouts folgende Schritte durch:
 - Anzahl der Produkte kalkulieren
@@ -150,6 +150,7 @@ Wie zuvor erläutert, führen Kassenhändler im Rahmen des Rollouts folgende Sch
 - Produkte als Ansprüche an Kassenbetreiber übertragen
 - Ansprüche des Kassenbetreibers aktivieren  
 Kassenhändler können mit den neu eingeführten Rollout-Plänen Produktzusammenstellungen erwerben, an Kassenbetreiber und diese aktivieren. Damit werden die letzten Schritte zusammengefasst und vereinfacht. Erläuterung dazu finden Sie im [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) zum Thema. 
+
 
 ![rolloutplan](images/process-MGMT_DE.drawio.svg
  "rollout-plans-overview")
