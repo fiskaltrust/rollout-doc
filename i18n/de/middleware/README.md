@@ -546,7 +546,7 @@ Aus technischer Sicht ist dies das einfachste Szenario, benötigt allerdings ein
 
 ![tse-per-cashregister](images/cash-register-queue-scu-tse2.png)
 
-
+Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
 ### Hardware-TSE(s) am lokalen Server für mehrere Kassen
 
@@ -554,19 +554,27 @@ Auf jeder Kasse und auf dem lokalen Server läuft die fiskaltrust.Middleware. Di
 
 ![tse-separated](images/server-width-hw-tse.png)
 
+Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
+
 Sollten Sie sich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz einer oder mehrerer zusätzlichen TSEs. Dies wird im unteren Bild beispielhaft visualisiert.
 
 ![tse-separated](images/server-with-multiple-hw-tse.png)
+
+Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
 ### Hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen
 Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox der Hauptkasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer Queue und einer SCU. Die für die Hauptkasse konfigurierte SCU greift auf eine TSE zu. Die CashBoxen der anderen Kassen sind so konfiguriert, dass deren fiskaltrust.Middleware-Instanzen nur mit einer Queue ausgestattet werden. Die hier eingesetzten Queues verbinden sich mit der SCU der Hauptkasse. Dieses Szenario ermöglicht eine Einsparung von TSEs. Da jedoch hierbei alle Requests über die SCU der Hauptkasse laufen müssen, wird die Hauptkasse zum Bottleneck. Auch die Hardware-TSE wird zum Bottleneck. Beim Ausfall der Hauptkasse oder der Hardware-TSE sind alle anderen Kassen davon betroffen. Des Weiteren kann es in diesem Szenario zu [Performanceengpässen](#performanceempfehlung) in der TSE kommen. Sollten Sie sich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz einer oder mehrerer zusätzlichen TSEs.
 
 ![tse-on-cashregister](images/cash-register-as-sever-hw-tse.png)
 
+Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
+
 ### Eine Cloud-TSE für mehrere Kassen
 Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer eigenen Queue und einer eigenen SCU. Jede SCU greift auf die gleiche Cloud-TSE zu. Dieses Szenario ermöglicht eine Einsparung von Cloud-TSEs. Ein Vorteil hier ist, dass die SCU nicht zum Bottleneck wird, da jede Kasse ihre eigene SCU hat. Da jedoch hierbei alle Requests an die gleiche Cloud-TSE gesendet werden, wird die TSE zum Bottleneck. Des Weiteren sind hierbei ebenfalls sowohl mögliche [Performanceengpässe](#performanceempfehlung) in der Cloud-TSE zu berücksichtigen als auch unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md).
 
 ![tse-on-cashregister](images/cash-register-with-cloud-tse.png)
+
+Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
 ### Rollout-Szenario mit Terminals
 Terminals sind Eingabegeräte ohne Kassenfunktion wie Tablets, Handhelds oder ähnliches, bei denen es nicht möglich ist, eine Hardware-TSE anzuschließen bzw. die fiskaltrust.Middleware am Gerät selbst zu installieren. In diesem Fall wird die fiskaltrust.Middleware an einer Kasse oder an einem Server betrieben und ist stets für die Terminals erreichbar. Die Terminals dienen nur als Eingabegeräte und verbinden sich mit dem Server oder mit der Kasse. Bei vielen gleichzeitigen Requests kann es zu [Performanceengpässen](#performanceempfehlung) in der TSE kommen. Sollten Sie sich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz mehrerer Kassen mit zusätzlichen TSEs (alternativ: mehrere fiskaltrust.Middleware-Instanzen mit eigener SCU und TSE auf dem Server).
@@ -577,12 +585,16 @@ Eine weitere mögliche Variante dieses Szenario ist die Zuordnung jedes Terminal
 
 ![terminals-mehrere-queues](images/terminals-multiple-queues.png)
 
+Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
+
 
 ### Rechenzentrum als operational environment
 Falls die Kasse in einem Rechenzentrum betrieben wird und die Terminals ohne (Internet-)Verbindung zu diesem nicht funktionsfähig sind, kann das Rechenzentrum unter bestimmten Voraussetzungen als "operational environment" angenommen werden. Die fiskaltrust.Middleware sollte in diesem Fall vollständig im Rechenzentrum betrieben werden. In diesem Szenario verbinden sich die Terminals über das Online KassenSystem zur fiskaltrust.Middleware im Rechenzentrum.
 Im Falle eines Ausfalls der (Internet-)Verbindung ist es allerdings so, dass die fiskaltrust.Middleware nicht mehr erreicht werden kann und somit keine von der fiskaltrust.Middleware erzeugten Signaturen auf die Belege gedruckt werden können. Bei Interesse an dieser Lösung (BYOD - Bring your own datacenter), bei der die fiskaltrust.Middleware im Rechenzentrum des KassenBetreibers läuft, finden Sie weitere Informationen in unserem [BYOD github repository](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter). 
 
 ![cloud-middleware](images/terminals-mw-cloud.png)
+
+Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
 ### Anbindungsvarianten der TSE an die SCU
 
@@ -1000,7 +1012,23 @@ und
 ```
 Hier finden Sie ein solches Template als Beispiel zum Download: [`ref-template-example`](images/ref-template-example.zip) 
 
+#### Template Beispiele
 
+Unsere Template Beispiele können Sie gebündelt als [Zip-Datei herunterladen](images/template-examples.zip). Im Folgenden werden die einzelnen Bespiele und die dazugehörigen Dateien beschrieben. In dem Ordner befindet sich auch eine Postmancollection, die zum Testen der Ausführung über die unten beschriebene API verwendet werden kann.
+
+| **Name**        | **Dateien**              | **Beschreibung**          |
+|----------------------|--------------------------|--------------------------|
+| Eine TSE pro Kasse| `a-tse-per-cashregister.json` | Bezieht sich auf das oben beschriebene Rollout Szenario "[Eine TSE pro Kasse"](#eine-tse-pro-kasse). Das Template erzeugt eine Cashbox mit einer Queue und einer SCU die auf eine hardware TSE zugreift, die sich im Laufwerk E: befindet. Die Queue ist über ein REST Endpunkt erreichbar. |
+| Eine hardware TSE am lokalen Server für mehrere Kassen| `tse-at-local-server-for-multiple-cashregisters-1-1.json` und `tse-at-local-server-for-multiple-cashregisters-1-2.json`  | Bezieht sich auf den ersten Teil des oben beschriebene Rollout Szenario "[Hardware-TSE(s) am lokalen Server für mehrere Kassen"](#hardware-tses-am-lokalen-server-für-mehrere-kassen). Das Template in der Datei `tse-at-local-server-for-multiple-cashregisters-1-1.json` wird als erstes ausgeführt. Es erzeugt die Cashbox für den Server mit einer SCU die auf eine hardware TSE zugreift. Die SCU erhält einen Counter, damit sie später aus den Cashboxen der Kassen referenziert werden kann. Für jede Kasse wird daraufhin das Template aus der Datei `tse-at-local-server-for-multiple-cashregisters-1-2.json` ausgeführt. Es erzeugt eine Cashbox, die die SCU aus dem Server referenziert und eine Queue anlegt, die auf die SCU des Servers zugreift. |
+| Mehrere hardware TSEs am lokalen Server für mehrere Kassen| `tse-at-local-server-for-multiple-cashregisters-2-1.json` ,  `tse-at-local-server-for-multiple-cashregisters-2-2.json` und  `tse-at-local-server-for-multiple-cashregisters-2-3.json`  | Bezieht sich auf den zweiten Teil des oben beschriebene Rollout Szenario "[Hardware-TSE(s) am lokalen Server für mehrere Kassen"](#hardware-tses-am-lokalen-server-für-mehrere-kassen). Das Template in der Datei `tse-at-local-server-for-multiple-cashregisters-2-1.json` wird als erstes ausgeführt. Es erzeugt die Cashbox für den Server mit zwei SCUs die auf jeweils eine hardware TSE zugreifen. Die SCUs erhalten einen Counter, damit sie später aus den Cashboxen der Kassen referenziert werden können. Für jede Kasse, die die erste SCU verwenden soll, wird daraufhin das Template aus der Datei `tse-at-local-server-for-multiple-cashregisters-2-2.json` ausgeführt. Es erzeugt eine Cashbox, die die erste SCU aus dem Server referenziert und eine Queue anlegt, die auf die erste SCU des Servers zugreift. |
+| Eine hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen| `hw-tse-at-main-cashregister-1.json` und `hw-tse-at-main-cashregister-2.json`  | Bezieht sich auf das oben beschriebene Rollout Szenario "[Hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen"](#hardware-tse-an-der-hauptkasse-für-mehrere-zusätzliche-kassen). Das Template in der Datei `hw-tse-at-main-cashregister-1.json` wird als erstes ausgeführt. Es erzeugt die Cashbox für die Hauptkasse mit einer eigenen Queue und einer SCU die auf eine hardware TSE zugreift. Die SCU erhält einen Counter, damit sie später aus den Cashboxen der anderen Kassen referenziert werden kann. Für jede andere Kasse wird daraufhin das Template aus der Datei `hw-tse-at-main-cashregister-2.json` ausgeführt. Es erzeugt eine Cashbox, die die SCU aus der Hauptkasse referenziert und eine Queue anlegt, die auf die SCU der Hauptkasse zugreift. |
+| Eine Cloud-TSE für mehrere Kassen| `a-cloud-tse-for-multiple-cashregisters-1.json` oder `a-cloud-tse-for-multiple-cashregisters-2.json`  | Bezieht sich auf das oben beschriebene Rollout Szenario "[Eine Cloud-TSE für mehrere Kassen"](#eine-cloud-tse-für-mehrere-kassen). Das Template in der Datei `a-cloud-tse-for-multiple-cashregisters-1.json` wird pro Kasse ausgeführt. Voraussetzung hierbei ist, dass eine SCU bereits existiert, denn sie wird beim Erzeugen der Cashbox nicht angelegt sondern nur referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `a-cloud-tse-for-multiple-cashregisters-2.json` zeigt ein Beispiel bei dem auch die SCU in der Cashbox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Dieses zweite Beispiel legt außerdem eine Queue an, die ihre Daten in einer MySQL Datenbank abspeichert. Dies kann vor allem in einer [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter) von Nutzen sein. |
+| Eine Cashbox mit mehreren Queues| `multiple-queues-same-scu.json` | Mit diesem Template wird eine Cashbox erzeugt, die mehrere Queues beinhaltet, die wiederum auf die gleiche SCU zugreifen. Es wird in dem oben beschriebenen "[Rollout-Szenario mit Terminals"](#rollout-szenario-mit-terminals) dargestellt, kann aber auch für den Fall verwendet werden in dem für mehrere Kassen nur eine fiskaltrust.Middleware Instanz verwendet werden soll. Jede Queue hat einen anderen Endpunkt (Port ist unterschiedlich) und kann so individuell angesprochen werden. |
+| Rechenzentrum als operational environment (BYODC)| `byodc-1.json` oder  `byodc-2.json`| Bezieht sich auf das oben beschriebene Rollout Szenario "[Rechenzentrum als operational environment"](#rechenzentrum-als-operational-environment). Mit Hilfe des Templates aus der Datei `byodc-1.json`  wird eine Cashbox angelegt, die eine bereits vorhandene SCU referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `byodc-2.json` zeigt ein Beispiel bei dem auch die SCU in der Cashbox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Die Queue die von dem Template angelegt wird speichert ihre Daten in einer MySQL Datenbank. Dies ist spezifisch for eine [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter). | 
+
+Hinweise zur Postmancollection:
+
+Die Collection befindet sich in der Datei `fiskaltrust templates.postman_collection.json` . Diese muss mit Postman importiert werden. DIe Collection beinhaltet zwei Request Einträge. Einen für die Sandbox und einen für die Produktion. Der Unterschied zwischen den beiden ist nur die URL der API die über POST angesprochen wird. Die API ist im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) beschrieben. Vor dem Ausführen des Template ist es wichtig in dem Request die korrekten Werte einzusetzten. Im Header müssen die AccountId und der AccessToken des Accounts angegeben werden für den das Template ausgeführt werden soll. Im Body muss der Inhalt des Templates (json) zwischen den Hochkommas platziert werden - Wichtig: der Inhalt muss "escaped" sein (Suche nach "online json escape" im Internet zur schnellen Konvertierung). Im Aufruf (URL) muss im Query String die Standortnummer als Parameter übergeben werden (z.B. outlet_number=1). Je nach Bedarf können optional weitere Parameter über den Query-String übergeben werden (z.B. konkrete Werte für individuelle Variablen im Template).
 
 
 #### Zur Verfügung stellen des Konfigurations-Template über das Portal
