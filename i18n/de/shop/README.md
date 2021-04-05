@@ -7,7 +7,7 @@ title: fiskaltrust-Produkte kaufen und weiter verkaufen
 
 ## Einleitung
 
-fiskaltrust bietet für KassenHersteller eine lizenzkostenfreie fiskaltrust.Middleware an und kostenpflichtige Add-On Produkte (die auf die fiskaltrust.Middleware aufbauen) sowie Einzelprodukte (unabhängig von der fiskaltrust.Middleware) für Kassenbetreiber an.
+fiskaltrust bietet für Kassenhersteller eine lizenzkostenfreie fiskaltrust.Middleware an und kostenpflichtige Add-On Produkte (die auf die fiskaltrust.Middleware aufbauen) sowie Einzelprodukte (unabhängig von der fiskaltrust.Middleware) für Kassenbetreiber an.
 Diese fiskaltrust Produkte werden ausschließlich über unsere Kassenhändler-Partner als Bestandteil ihrer Produkt- bzw. Ihrer Service-Palette an Kassenbetreiber vertrieben. Hierbei handelt es sich um Archivierungsprodukte, automatisierte Meldungen an das Finanzamt, Technische Sicherheitseinrichtungen (TSE) diverser Hersteller und auch um Sorglospakete mit und ohne TSE-as-a-Service. Eine aktuelle Auflistung unserer Produkte finden Sie in unserer [Produkt-Dokumentation](https://docs.fiskaltrust.cloud/docs/posdealers/get-started/products).  
 
 Im Rahmen des Rollouts führt der Kassenhändler folgende Schritte durch:
@@ -21,13 +21,13 @@ In diesem Kapitel gehen wir auf diese Schritte ein und zeigen wie diese mit Hilf
 
 ### Anzahl der Produkte kalkulieren
 
-Bevor Sie fiskaltrust kontaktieren, recherchieren Sie, wie viele Kunden und wie viele Kassensysteme diese wiederum haben. Schätzen Sie dann, welche Kunden eher ein fiskaltrust.Sorglos-Bundle erwerben oder eine günstigere Lösung bevorzugen werden. Zu guter Letzt sollten Sie abschätzen, wie viele Kunden eine TSE benötigen werden.     
+Bevor Sie fiskaltrust kontaktieren, recherchieren Sie, wie viele Kunden Sie haben und wie viele Kassensysteme diese verwenden. Schätzen Sie dann, welche Kunden eher ein fiskaltrust.Sorglos-Bundle erwerben oder eine günstigere Lösung bevorzugen werden. Zu guter Letzt sollten Sie abschätzen, wie viele Kunden eine TSE benötigen werden.     
 
-Der Einkauf von fiskaltrust Produkten findet über den fiskaltrust.Shop statt. Dieser ist Bestandteil des fiskaltrust.Portals. Im Bereich "Produkte" werden je nach [Partnerrolle](../introduction.md#die-unterschiedlichen-rollen-der-fiskaltrust-partner) ausgewählte fiskaltrust Produkte zum Kauf angeboten. Für Kassenhändler sind das neben diversen TSE sogenannte "Händlereinkaufsprodukte", die sogenannte Entitlements, also Ansprüche darstellen:
+Der Einkauf von fiskaltrust Produkten findet über den fiskaltrust.Shop statt. Dieser ist Bestandteil des fiskaltrust.Portals. Im Bereich "Produkte" werden je nach [Partnerrolle](../introduction.md#die-unterschiedlichen-rollen-der-fiskaltrust-partner) ausgewählte fiskaltrust Produkte zum Kauf angeboten. Für Kassenhändler sind das neben diversen TSE sogenannte "Händlereinkaufsprodukte", die sogenannte Entitlements, also Ansprüche darstellen.
 
 Nach Ihrer Registrierung im [fiskaltrust.Portal](https://portal.fiskaltrust.de/) ist die Unterzeichnung der Nutzungsvereinbarung notwendig. Wir empfehlen, auch die hinterlegten Daten, wie Namen, Anschrift und Mailadressen zu prüfen. 
-Kontaktieren Sie dann unser Sales Team unter sales@fiskaltrust.de. Vereinbaren Sie entsprechend Ihrer Kalkulation Mengenrabatt und Kreditrahmen. 
-Im fiskaltrust.Portal finden Sie unter "Shop &rarr; Produkte" je nach [Partnerrolle](../introduction.md#die-unterschiedlichen-rollen-der-fiskaltrust-partner) passende fiskaltrust Produkte. Für Kassenhändler sind das neben diversen TSE sogenannte "Händlereinkaufsprodukte", die sogenannte Entitlements, also Ansprüche darstellen:
+Kontaktieren Sie dann unser Sales Team unter sales@fiskaltrust.de. Vereinbaren Sie entsprechend Ihrer Kalkulation Mengenrabatte und Kreditrahmen. 
+Im fiskaltrust.Portal finden Sie unter <kbd>Shop</kbd> &rarr; <kbd>Produkte</kbd> je nach [Partnerrolle](../introduction.md#die-unterschiedlichen-rollen-der-fiskaltrust-partner) passende fiskaltrust Produkte. Für Kassenhändler sind das neben diversen TSE sogenannte "Händlereinkaufsprodukte", die sogenannte Entitlements, also Ansprüche darstellen:
 
 
 ![shop-haendler-produkte](images/shop-dealer-products.png "Produkte für Kassenhändler im Shop")
@@ -35,21 +35,17 @@ Im fiskaltrust.Portal finden Sie unter "Shop &rarr; Produkte" je nach [Partnerro
 
 ### Produkte erwerben
 
-Kassenhändler kaufen im fiskaltrust.Portal sogenannte "Entitlements", also Ansprüche auf die fiskaltrust Produkte, nicht die Produkte selbst.
-Diese Ansprüche werden auf die Kassenbetreiber übertragen und für die Kassenbetreiber pro Standort aktiviert. Mit der Aktivierung der Ansprüche wird das Produkt eindeutig dem Kassenbetreiber und seinem Kassensystem zugeordnet.
-
-
 Kassenhändler kaufen im fiskaltrust.Portal nicht die fiskaltrust Produkte selbst, sondern sogenannte "Entitlements" also Ansprüche auf die Produkte, die sie dann an die Kassenbetreiber einzeln übertragen und für diese pro Standort aktivieren können. Die Entitlements werden im fiskaltrust.Shop auch unter dem Namen "Händlereinkaufsprodukte" geführt.
 
-Im folgenden Beispiel zeigen wir Ihnen wie Sie als Kassenhändler **nach** der Unterzeichnung eines Rahmenvertrags mit entsprechenden Mengenrabatten und Kreditlimitfreigabe im fiskaltrust.Shop Entitlements erwerben können. 
+Im folgenden Beispiel zeigen wir Ihnen, wie Sie als Kassenhändler **nach** der Unterzeichnung eines Rahmenvertrags mit entsprechenden Mengenrabatten und Kreditlimitfreigabe im fiskaltrust.Shop Entitlements erwerben können. 
 
-Gehen Sie im fiskaltrust.Portal auf den Menüpunkt "Shop &rarr; Produkte" und legen Sie hier z.B. 15 Stück der Produkts "fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt" in den Warenkorb:
+Gehen Sie im fiskaltrust.Portal auf den Menüpunkt <kbd>Shop</kbd> &rarr; <kbd>Produkte</kbd> und legen Sie hier z.B. 15 Stück der Produkts "fiskaltrust.Sorglos mit TSE Händlereinkaufsprodukt" in den Warenkorb:
 
 ![entitlements-kaufen-1](images/buy-entitlements-1.png "Produkte in den Warenkorb legen")
 
 
 
-In der oberen Leiste wird ein Warenkorb-Symbol angezeigt. Mit Klick darauf erscheint ein Popup. Wählen Sie hier "Checkout":
+In der oberen Leiste wird ein Warenkorb-Symbol angezeigt. Mit Klick darauf erscheint ein Popup. Wählen Sie hier <kbd>Checkout</kbd>:
 
 ![entitlements-kaufen-2](images/buy-entitlements-2.png "Checkout")
 
@@ -62,17 +58,17 @@ Als Nächstes wird die Zusammenfassung Ihrer Bestellung angezeigt:
 
 
 
-Überprüfen Sie die Daten wie Produktbeschreibung, deren Anzahl sowie die dargestellten Preise. Mit dem Button: "Verbindlich Bestellen" erhalten Sie eine Bestätigung zu Ihrer Bestellung:
+Überprüfen Sie die Daten wie Produktbeschreibung, deren Anzahl sowie die dargestellten Preise. Mit dem Button: <kbd>Verbindlich Bestellen</kbd> erhalten Sie eine Bestätigung zu Ihrer Bestellung:
 
 ![entitlements-kaufen-4](images/buy-entitlements-4.png "Bestellung bestätigt")
 
-Diese Bestätigung Ihrer Bestellung wird auch per Email an die hinterlegte Mailadresse versandt. Sie können zudem Ihre Bestellungen in dem Bereich "Shop &rarr; Bestellungen" einsehen:
+Diese Bestätigung Ihrer Bestellung wird auch per Email an die hinterlegte Mailadresse versandt. Sie können zudem Ihre Bestellungen in dem Bereich <kbd>Shop</kbd> &rarr; <kbd>Bestellungen</kbd> einsehen:
 
 ![entitlements-kaufen-5](images/buy-entitlements-5.png "Bestellungen einsehen")
 
-Die dazugehörige Rechnung finden Sie unter "Shop &rarr; Rechnungen".
+Die dazugehörige Rechnung finden Sie unter <kbd>Shop</kbd> &rarr; <kbd>Rechnungen</kbd>.
 
-Nach der Bearbeitung der Bestellung durch das fiskaltrust System, erscheinen im Bereich "Shop &rarr; Entitlements" die Ihnen gutgeschriebenen Ansprüche. In unserem Beispiel erhalten wir 15 Entitlements zur Einlösung des Sorglospakets und 15 Ansprüche auf Einlösung einer  TSE-as-a-Service:
+Nach der Bearbeitung der Bestellung durch das fiskaltrust System, erscheinen im Bereich<kbd>Shop</kbd> &rarr; <kbd>Entitlements</kbd> die Ihnen gutgeschriebenen Ansprüche. In unserem Beispiel erhalten wir 15 Entitlements zur Einlösung des Sorglospakets und 15 Ansprüche auf Einlösung einer  TSE-as-a-Service:
 
 ![entitlements-kaufen-6](images/buy-entitlements-6.png "Entitlements gutgeschrieben")
 
@@ -81,19 +77,19 @@ Nach der Bearbeitung der Bestellung durch das fiskaltrust System, erscheinen im 
 
 ![Kassenbetreiber suchen](images/search-posoperator.png "Kassenbetreiber suchen")
 
-Drücken Sie nun auf den Namen des Kassenbetreibers, der in der Liste als Link dargestellt wird (sollte hier der Name des Kassenbetreibers nicht als Link erscheinen, dann hat dieser die Nutzungsvereinbarung noch nicht unterschrieben). Mit dem Link werden Sie zum Account des Kassenbetreibers weitergeleitet. Den Wechsel erkennen Sie am Button namens "Zu Ihrem Account wechseln" im oberen Bereich rechts.  Weiter zeigt die Menüleiste den Firmenname des Kassenbetreibers.
+Drücken Sie nun auf den Namen des Kassenbetreibers, der in der Liste als Link dargestellt wird (sollte hier der Name des Kassenbetreibers nicht als Link erscheinen, dann hat dieser die Nutzungsvereinbarung noch nicht unterschrieben). Mit dem Link werden Sie zum Account des Kassenbetreibers weitergeleitet. Den Wechsel erkennen Sie am Button namens <kbd>Zu Ihrem Account wechseln</kbd> im oberen Bereich rechts.  Weiter zeigt die Menüleiste den Firmenname des Kassenbetreibers.
 
 Die Übertragung der gekauften Ansprüche/Entitlements und die Aktivierung der dazugehörigen Produkte für den Kassenbetreiber wird bei fiskaltrust ebenfalls mit der Hilfe des Shops im fiskaltrust.Portal abgebildet.
 
-Zur Übertragung der zuvor gekauften Entitlements an den Kassenbetreiber wechseln Sie mit Hilfe der surrogate-Funktion im fiskaltrust.Portal aus Ihrem Account als Kassenhändler heraus in den Account des Kassenbetreibers. Gehen Sie dazu in den Bereich "POSOperator->Übersicht" und suchen Sie hier den Kassenbetreiber dem Sie das oder die Entitlements übertragen möchten:
+Zur Übertragung der zuvor gekauften Entitlements an den Kassenbetreiber wechseln Sie mit Hilfe der surrogate-Funktion im fiskaltrust.Portal aus Ihrem Account als Kassenhändler heraus in den Account des Kassenbetreibers. Gehen Sie dazu in den Bereich <kbd>POSOperator</kbd> &rarr; <kbd>Übersicht</kbd> und suchen Sie hier den Kassenbetreiber dem Sie Entitlements übertragen möchten:
 
 ![Kassenbetreiber suchen](images/search-posoperator.png "Kassenbetreiber suchen")
 
-Drücken Sie nun auf den Namen des Kassenbetreibers, der in der Liste als Link dargestellt wird (sollte hier der Name des Kassenbetreibers nicht als Link erscheinen, dann hat er die Nutzungsvereinbarung noch nicht unterschrieben). Wenn Sie auf den Link drücken, werden Sie zu dem Account des Kassenbetreibers weitergeleitet. Das erkennen Sie daran, dass im oberen Bereich rechts ein Button namens "Zu Ihrem Account wechseln" erscheint und zudem daran, dass in der Menüleiste nun der Firmenname des Kassenbetreibers angezeigt wird.
+Drücken Sie nun auf den Namen des Kassenbetreibers, der in der Liste als Link dargestellt wird (sollte hier der Name des Kassenbetreibers nicht als Link erscheinen, dann hat er die Nutzungsvereinbarung noch nicht unterschrieben). Wenn Sie auf den Link drücken, werden Sie zu dem Account des Kassenbetreibers weitergeleitet. Das erkennen Sie daran, dass im oberen Bereich rechts ein Button namens <kbd>Zu Ihrem Account wechseln</kbd>  erscheint und zudem daran, dass in der Menüleiste nun der Firmenname des Kassenbetreibers angezeigt wird.
 
 ![im betreiber account](images/in-posoperator-account.png "Im Account des Kassenbetreiber")
 
-Wechseln Sie im Menü zu "Shop &rarr; Produkte". 
+Wechseln Sie im Menü zu <kbd>Shop</kbd> &rarr; <kbd>Produkte</kbd>. 
 Beachten Sie, zuerst im oberen Bereich den gewünschten Standort des Kassenbetreibers zu wählen.
 
 >Hinweis: Die Auswahl eines falschen Standortes kann nachträglich nicht korrigiert werden.
@@ -126,106 +122,136 @@ Wenn Sie als Kassenhändler jedoch möchten, dass die Hardware TSE an ihren eige
 ![Zurück zum Kassenhändler Account](images/back-to-posoperator-account.png "Zurück zum Kassenhändler Account")
 
 ### Ansprüche des Kassenbetreibers aktivieren
-In Ihrem Account finden sie unter Shop &rarr; Warenkorb in der Warenkorbübersicht die zuvor gewählten Ansprüche oder Produkte. In unserem Beispiel sind das je zwei "Übertragungsprodukte" und "Erzeugungsprodukte":
+In Ihrem Account finden sie unter <kbd>Shop</kbd> &rarr; <kbd>Warenkorb</kbd> in der Warenkorbübersicht die zuvor gewählten Ansprüche oder Produkte. In unserem Beispiel sind das je zwei "Übertragungsprodukte" und "Erzeugungsprodukte":
 
 ![Checkout im Händleraccount](images/checkout-in-posoperator-account.png "Checkout im Kassenhändler Account")
 
-Nach der Prüfung von Auswahl, Anzahl und Empfänger wählen Sie "Checkout".  
-Die Übertragungen und Aktivierungen von Produkten für den Kassenbetreiber sollten kostenlos sein. Nach der Kontrolle Ihrer Bestellung, vor allem den korrekten Standorten wählen Sie "Verbindlich bestellen".  
+Nach der Prüfung von Auswahl, Anzahl und Empfänger wählen Sie <kbd>Checkout</kbd>.  
+Die Übertragungen und Aktivierungen von Produkten für den Kassenbetreiber sollten kostenlos sein. Nach der Kontrolle Ihrer Bestellung, vor allem den korrekten Standorten wählen Sie <kbd>Verbindlich bestellen</kbd>.  
 
 ![Bestellung](images/order-for-operator.png "Bestellung der Übertragungen und Aktivierungen")
 
-Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und eine Bestätigung per Email versandt. Ihre Bestellungen können Sie jederzeit im Bereich "Shop->Bestellungen" einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich "Shop->Rechnungen".
+Als Nächstes wird Ihnen die erfolgreiche Bestellung angezeigt und eine Bestätigung per Email versandt. Ihre Bestellungen können Sie jederzeit im Bereich <kbd>Shop</kbd> &rarr; <kbd>Bestellungen</kbd> einsehen. Die dazugehörigen Rechnungen befinden sich im Bereich <kbd>Shop</kbd> &rarr; <kbd>Rechnungen</kbd>.
 
-Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minuten dauern) werden Ihnen die verbrauchten Ansprüche abgezogen. In unserem Beispiel sind unter "Shop &rarr; Entitlements" noch 14 von zuvor 15 übrig.
+Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minuten dauern) werden Ihnen die verbrauchten Ansprüche abgezogen. In unserem Beispiel sind unter <kbd>Shop</kbd> &rarr; <kbd>Entitlements</kbd> noch 14 von zuvor 15 übrig.
 
 ![Ansprüche verbraucht](images/claims-consumed.png "Ansprüche verbraucht")
 
-Zudem können wir im Account des Kassenbetreibers unter "Firmenname &rarr; Standorte" sehen, dass für den zuvor bei der Aktivierung angegebenen Standort das Sorglospaket aktiviert wurde:
+Zudem können wir im Account des Kassenbetreibers unter <kbd>Firmenname</kbd> &rarr; <kbd>Standorte</kbd> sehen, dass für den zuvor bei der Aktivierung angegebenen Standort das Sorglospaket aktiviert wurde:
 
 ![Produkt Sorglos aktiviert](images/carefree-activated.png "Produkt Sorglos aktiviert")
- 
-## Rollout Management
-Mit dem Rollout Management können analog zum bisher beschriebenen Prozess auf von der fiskaltrust gmbH vorgefertigte Pläne zurück. Diese bereiten die Daten für die Produktion einer kompletten Konfiguration in einem oder mehreren Outlet auf. 
-
->![rolloutplan](images/process-MGMT.drawio.svg "rollout-plans-overview")
 
 
-### Select a Rollout Plan
 
-> ![Rollout Plan](images/portal_plans.png "rollout-management  &rarr; plan")
+## Einkaufspläne
 
-Wählen Sie im fiskaltrust.portal den Eintrag <kbd>Rollout-Management</kbd> und danach <kbd>Plan</kbd>.
-Verringern Sie die Anzahl der Pläne durch die Eingabe von Filterkriterien oder mit der Auswahlleiste.
-Markieren Sie einen der Pläne.
+Einkaufspäne simplifizieren den oben beschriebenen Prozess zum Erwerb der Ansprüche, Ihrer Übertragung an die Kassenbetreiber und Ihrer Aktivierung (Erzeugung) für den Kassenbetreiber. Im Gegensatz zum dem oben beschriebenen Prozess haben Einkauspläne den Vorteil, dass Sie zur Übertragung und Aktivierung der Produkte nicht in den Account des Kassenbetreibers wechseln müssen. Zudem selektiert bei der Auswahl eines Einkaufsplans das System für Sie automatisch die benötigten Produkte. Damit wird das Risko einer falsche Zusammensetzung des Warenkorbs reduziert.
+
+Kassenhändler finden dieses neue Feature im fiskaltrust.Portal unter dem Menüpunkt "Rolloutmanagement -> Plan". Erläuterung dazu finden Sie auch in unserem dafür vorbereiteten [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk). 
+
+Der Ablauf wird in folgender Skizze dargestellt:
+
+![Plan](images/plan.png
+ "Prozess")
+
+
+
+### Plan auswählen
+
+![Plan](images/portal-plans.png "rollout-management  &rarr; plan")
+
+Wählen Sie im fiskaltrust.Portal den Menüpunkt <kbd>Rollout-Management</kbd> und danach <kbd>Plan</kbd>.
+Reduzieren Sie durch Setzen von Filterkriterien oder mit der Auswahlleiste die Anzahl der angezeigten Pläne.
+Wählen Sie einen der Pläne aus.
+
 >Hinweis: 
 Sollten Sie den gewählten Plan häufiger anwenden wollen, empfiehlt sich, ein Lesezeichen zu setzen (<kbd>Strg</kbd> & D)
 
-### Select a PosOperator
 
-> ![Select a PosOperator](images/portal_operators.png "Select a PosOperator")
 
-Verringern Sie die Anzahl der Kassenbetreiber durch die Eingabe von Filterkriterien, falls gewünscht.
+### Kassenbetreiber auswählen
 
-Markieren Sie einen der Kassenbetreiber oder gehen Sie mit <kbd>Suche</kbd> zurück zur Auswahl eines Plans.
-### Select Outlets
+![Select a PosOperator](images/portal-operators.png "Select a PosOperator")
 
-> ![Select Outlets](images/portal_POSOUTLETS.png "Select Outlets")
+Sie können die Anzahl der angezeigten Datensätze durch Setzen von Filterkriterien reduzieren.
 
-Verringern Sie die Anzahl der Outlets durch die Eingabe von Filterkriterien.
+Wählen Sie einen der Kassenbetreiber.
 
-Markieren Sie eines oder mehrere der Outlets.
-Alternativ verwenden Sie die Auswahlleiste und <kbd>Select all</kbd>.
-Wurde eines oder mehrere der Outlets markiert, wird aus <kbd>Nothing selected yet...</kbd> die Schaltfläche <kbd>Submit Selection</kbd>. Damit bestätigen Sie Ihre Auswahl. 
 
->Hinweis: 
-Mit <kbd>Clear selection</kbd> wird ihre Auswahl von Outlets verworfen.
-Mit der Zurück-Schaltfläche des Browsers können Sie einzelne Schritte zurück gehen und Ihre Auswahl wiederholen.
 
-### Create Quote
+### Wählen Sie einen Standort
 
-> ![Create Quote](images/portal_create_quote.png "Create Quote")
+![Select Outlets](images/portal-plan-outlets.png "Select Outlets")
 
-Kontrollieren Sie die gewählten Angaben wie Plan, Kassenbetreiber und Outlet(s).
-Falls gewünscht, können Sie den namen des Angebotes an Ihre Wünsche anpassen.
-Bestätigen Sie Ihre Auswahl mit <kbd>Create quote</kbd>.
+Sie können die Anzahl der angezeigten Datensätze durch Setzen von Filterkriterien reduzieren.
+
+Wählen Sie einen oder mehrere Standorte (Outlets).
+Alternativ verwenden Sie die Auswahlleiste und <kbd>Select all</kbd> um alle zu wählen.
+Wurde einer oder mehrere der Standorte (Outlets) markiert, wird aus <kbd>Nothing selected yet...</kbd> die Schaltfläche <kbd>Submit Selection</kbd>. Damit bestätigen Sie Ihre Auswahl. 
+
+
 
 >Hinweis: 
-Sollten bei der folgenden Überprüfung von Kreditlimit, Anzahl der zur Verfügung stehenden Entitlements oder ähnlichem Probleme auftreten, werden Sie mit nachvollziehbaren Fehlermeldungen informiert.
-Korrekturen nehmen Sie vor, indem Sie mit <kbd>Suche </kbd> zurück zum Anfang, zur Auswahl eines Plans gehen. 
-Mit der Zurück-Schalfläche des Browsers können Sie einzelne Schritte zurück gehen und Ihre Auswahl wiederholen.
+>Mit <kbd>Clear selection</kbd> wird ihre Auswahl der Standorte verworfen.
+>Mit der Zurück-Schaltfläche des Browsers können Sie einzelne Schritte zurück gehen und Ihre Auswahl wiederholen.
 
-Übernehmen Sie die Zusammenstellung mit <kbd>Load quote into cart</kbd>.
 
-### Shopping Cart
 
-> ![Shopping Cart](images/portal_cart.png "Shopping Cart")
+### Angebot bzw. Produktaufstellung erstellen lassen
 
-Sie können Ihre Auswahl im Warenkorb nochmals kontrollieren. 
-Die Anzahl der Artikel, Detailbeschreibungen, Outlet(s) und die Kosten werden aufgelistet. 
+![Create Quote](images/portal-plan-create-quote.png "Create Quote")
+
+Überprüfen Sie die Angaben insbesondere den gewählten Plan, Kassenbetreiber und Standorte.
+Falls gewünscht, können Sie den Namen des Angebotes ändern.
+Bestätigen Sie Ihre Auswahl mit <kbd>Create quote</kbd>. Das Syetem erstellt daraufhin ein Angebot bzw. eine Produktaufstellung.
+
+>Hinweis: 
+Sollten bei der folgenden Überprüfung von Kreditlimit, Anzahl der zur Verfügung stehenden Entitlements oder ähnlichem Probleme auftreten, werden Sie mit einer Fehlermeldungen informiert.
+Korrekturen nehmen Sie vor, indem Sie mit der Zurück-Schalfläche des Browsers einzelne Schritte zurück gehen und Ihre Auswahl wiederholen. Mit <kbd>Suche </kbd> gehen Sie zurück zum Anfang, zur Auswahl eines Plans.
+
+Übertragen Sie die Produktaufstellung in den Warenkorrm indem Sie <kbd>Load quote into cart</kbd> drücken.
+
+### Warenkorb
+
+![Shopping Cart](images/portal_cart.png "Shopping Cart")
+
+Sie können hier Ihre Auswahl nochmal überprüfen. 
+Die Anzahl der Artikel, Detailbeschreibungen, Standorte (Outlets) und die Preise werden aufgelistet. 
 Rechts zeigt die <kbd>Angebotsübersicht</kbd> zum Vergleich die zuletzt getätigten Einkäufe.  
 Bestätigen Sie Ihre Auswahl mit der Schaltfläche <kbd>Checkout</kbd>.
-### Order
+
+### Verbindlich bestellen
 
 Bei der Bestellung erhalten Sie eine zusammengefasste Übersicht.
 Mit <kbd>Verbindlich bestellen</kbd> wird die Bestellung durchgeführt.
-Im Account des Kassenbetreibers ist die gewählte Konfiguration innerhalb weniger Minuten zu finden.
-#### Kontrolle 
-Sie können den Vorgang Im Account des Kassenbetreibers kontrollieren. Dazu nutzen Sie die Surrogatefunktion, im den Account zu wechseln. Anschließend wechseln Sie wieder in den eigenen Account
+Im Account des Kassenbetreibers ist die gewählte Zusammensetzung innerhalb weniger Minuten zu finden.
 
-> ![Kontrolle](images/portal_POSOperator.png "POSOperator &rarr; Übersicht")
+#### Überprüfung 
 
-Wählen Sie <kbd>PosOperator</kbd>  &rarr; <kbd>Übersicht</kbd>. 
-Dort suchen Sie den Datensatz des zuvor gewählten Kassenbetreibers. Wählen Sie den Link.
-Im Account des Kassenbetreibers wählen Sie <kbd>PosOperator</kbd> &rarr; <kbd>Standorte</kbd>.
+Sie können die erfolgreiche Durchführung der Bestellung im Account des Kassenbetreibers überprüfen. Um in den Account des Kassenbetreibers zu wechseln können Sie die Surrogate Funktion nutzen.
+
+Folgendes Bild zeigt beispielhaft, dass das Sorglospaket im Account des Kassenbetreibers zum gewählten Standort aktiviert wurde:
+
+![Kontrolle](images/portal-posoperator-check.png "POSOperator &rarr; Übersicht")
+
+Um die Surrogate FUuktion zu nutzen wählen Sie in ihrem eigenen Account: <kbd>PosOperator</kbd>  &rarr; <kbd>Übersicht</kbd>. 
+
+Dort suchen Sie den Datensatz des zu überprüfenden Kassenbetreibers. Drücken Sie den dazugehörigen Link mit dem Namen des Kassenbetreibers. Das System wechselt in den Account des Kassenbetreibers.
+
+Im Account des Kassenbetreibers wählen Sie nun <kbd>PosOperator</kbd> &rarr; <kbd>Standorte</kbd>.
+
 Filtern Sie die Tabelle der Standorte mit der Eingabe eines Suchbegriffes oder sortieren Sie die Standorte mit Klick auf eine der Tabellenüberschriften.
-Rechts werden in den Spalten <kbd>Sorglos</kbd> und <kbd>AKO</kbd> die aktuellen Konfigurationen gezeigt.
-Mit <kbd>Zu Ihrem Account wechseln</kbd> gelangen Sie wieder zurück in Ihren Account als Kassenhändler.
+
+In den Spalten <kbd>Sorglos</kbd> und <kbd>AKO</kbd> können Sie prüfen ob diese Produkte aktiviert wurden.
+
+Mit <kbd>Zu Ihrem Account wechseln</kbd> (oben rechts) gelangen Sie wieder zurück zu Ihren eigenen Account als Kassenhändler.
+
+
 
 
 ## Tipps & Tricks
 ### Bestellungen vereinfachen
-Bei "PosOperator &rarr; Übersicht" finden Sie die Übersicht über Ihre Kassenbetreiber. Mit einem Klick auf "Suchen" zeigt das Portal alle Kassenbetreiber an.
+Bei <kbd>PosOperator</kbd> &rarr; <kbd>Übersicht</kbd> finden Sie die Übersicht über Ihre Kassenbetreiber. Mit einem Klick auf  <kbd>Suchen</kbd> zeigt das Portal alle Kassenbetreiber an.
 Stellen Sie zuvor bei "[Firmenname] &rarr; Kontoeinstellungen" bei "Nummerierung" einen bestimmten Wert ein, wird beim Aufruf von der Übersicht über Ihre Kassenbetreiber sofort die angegebene Anzahl von Datensätzen gezeigt. 
 
 ### Konfiguration Cashbox vereinfachen 
@@ -236,21 +262,21 @@ Ein Beispiel wird im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swi
 ### Bestellungen zusammenfassen
 Die zuvor beschriebenen Schritte können Sie für andere Standorte und auch für andere Kassenbetreiber wiederholen und auch für diese Ansprüche und Aktivierungen zusammen in einer Bestellung abwickeln:
 
-1. Schritt: "Shop &rarr; Produkte" und im Dropdown oben den ersten Standort wählen
+1. Schritt: <kbd>Shop</kbd> &rarr; <kbd>Produkte</kbd> und im Dropdown oben den ersten Standort wählen
 2. Schritt: Übertragungsprodukte und Erzeugungsprodukte in Warenkorb legen
 3. Schritt: im Dropdown oben weiteren Standort wählen
 4. Schritt: Übertragungsprodukte und Erzeugungsprodukte in Warenkorb legen 
 5. Schritt: wiederholen nach Belieben
 6. Schritt Wechsel in den eigenen Account, dabei das versehentliche Abmelden vermeiden
-7. Schritt: Unter "Shop &rarr; Warenkorb" die Übertragungsprodukte und Erzeugungsprodukte je nach  gewähltem Standort kontrollieren. 
-8. Schritt: Bei Bedarf löschen und erneut zum Kassenbetreiber und dem gewünschten Standort wechseln, erneut bestellen und zurück zum eigenen Account bzw Bestellung für andere  Kassenbetreiber vornehmen
-8 Schritt:  Mit "Verbindlich bestellen" den Vorgang für mehrere Standorte oder auch Kassenbetreiber abschließen.
+7. Schritt: Unter <kbd>Shop</kbd> &rarr; <kbd>Warenkorb</kbd> die Übertragungsprodukte und Erzeugungsprodukte je nach  gewähltem Standort kontrollieren. 
+8. Schritt: Bei Bedarf löschen und erneut zum Kassenbetreiber und dem gewünschten Standort wechseln, erneut bestellen und zurück zum eigenen Account bzw. Bestellung für andere  Kassenbetreiber vornehmen
+8 Schritt:  Mit <kbd>Verbindlich bestellen</kbd> den Vorgang für mehrere Standorte oder auch Kassenbetreiber abschließen.
 
 >Hinweis: Der zweite Schritt bezieht sich immer auf den zuvor gewählten Standort und kann nach dem "Verbindlich bestellen" nicht mehr geändert werden. 
- 
+
 ### Bestellung mit getrennten Rechnungen
 Sollen einzelne Rechnungen mit Angaben zu den Kassenbetreibern erstellt werden, gehen Sie vor, wie zuvor in Schritt 1-5 beschrieben. 
-Danach gehen Sie im Account des Kassenbetreibers auf  "Shop &rarr; Warenkorb". Kontrollieren Sie die Übertragungsprodukte und Erzeugungsprodukte je nach  gewähltem Standort. Schließen Sie die Bestellung mit der Schaltfläche "Verbindlich bestellen" ab.
+Danach gehen Sie im Account des Kassenbetreibers auf  <kbd>Shop</kbd> &rarr; <kbd>Warenkorb</kbd>. Kontrollieren Sie die Übertragungsprodukte und Erzeugungsprodukte je nach  gewähltem Standort. Schließen Sie die Bestellung mit der Schaltfläche <kbd>Verbindlich bestellen</kbd> ab.
  In diesem Fall müssen Sie keine "Übertragung" mehr vornehmen, erhalten aber dafür eine separate Rechnung. 
 Ein Beispiel dazu finden sie weiter unten im Kapitel [Swissbit Cloud TSE auschecken und einrichten](#swissbit-cloud-tse-auschecken-und-einrichten).
 
