@@ -140,91 +140,113 @@ Nach der Bearbeitung der Bestellung durch das fiskaltrust System (kann 2-3 Minut
 Zudem können wir im Account des Kassenbetreibers unter <kbd>Firmenname</kbd> &rarr; <kbd>Standorte</kbd> sehen, dass für den zuvor bei der Aktivierung angegebenen Standort das Sorglospaket aktiviert wurde:
 
 ![Produkt Sorglos aktiviert](images/carefree-activated.png "Produkt Sorglos aktiviert")
- 
-
-## Rollout Management mit Plänen
-Wie zuvor erläutert, führen Kassenhändler im Rahmen des Rollouts folgende Schritte durch:
-- Anzahl der Produkte kalkulieren
-- Einkäufe im [fiskaltrust.Portal](https://portal.fiskaltrust.de/) vorbereiten
-- Produkte erwerben
-- Produkte als Ansprüche an Kassenbetreiber übertragen
-- Ansprüche des Kassenbetreibers aktivieren  
-Kassenhändler können mit den neu eingeführten Rollout-Plänen Produktzusammenstellungen erwerben, an Kassenbetreiber und diese aktivieren. Damit werden die letzten Schritte zusammengefasst und vereinfacht. Erläuterung dazu finden Sie im [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) zum Thema. 
 
 
-![rolloutplan](images/process-MGMT_DE.drawio.svg
- "rollout-plans-overview")
+
+## Einkaufspläne
+
+Einkaufspäne simplifizieren den oben beschriebenen Prozess zum Erwerb der Ansprüche, Ihrer Übertragung an die Kassenbetreiber und Ihrer Aktivierung (Erzeugung) für den Kassenbetreiber. Im Gegensatz zum dem oben beschriebenen Prozess haben Einkauspläne den Vorteil, dass Sie zur Übertragung und Aktivierung der Produkte nicht in den Account des Kassenbetreibers wechseln müssen. Zudem selektiert bei der Auswahl eines Einkaufsplans das System für Sie automatisch die benötigten Produkte. Damit wird das Risko einer falsche Zusammensetzung des Warenkorbs reduziert.
+
+Kassenhändler finden dieses neue Feature im fiskaltrust.Portal unter dem Menüpunkt "Rolloutmanagement -> Plan". Erläuterung dazu finden Sie auch in unserem dafür vorbereiteten [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk). 
+
+Der Ablauf wird in folgender Skizze dargestellt:
+
+![Plan](images/plan.png
+ "Prozess")
 
 
-### Auswahl eines Rolloutplans
 
-![Rollout Plan](images/portal_plans.png "rollout-management  &rarr; plan")
+### Plan auswählen
 
-Wählen Sie im fiskaltrust.portal den Eintrag <kbd>Rollout-Management</kbd> und danach <kbd>Plan</kbd>.
-Reduzieren Sie durch die Eingabe von Filterkriterien oder mit der Auswahlleiste die angezeigten Pläne.
-Markieren Sie einen der Pläne.
+![Plan](images/portal-plans.png "rollout-management  &rarr; plan")
+
+Wählen Sie im fiskaltrust.Portal den Menüpunkt <kbd>Rollout-Management</kbd> und danach <kbd>Plan</kbd>.
+Reduzieren Sie durch Setzen von Filterkriterien oder mit der Auswahlleiste die Anzahl der angezeigten Pläne.
+Wählen Sie einen der Pläne aus.
+
 >Hinweis: 
 Sollten Sie den gewählten Plan häufiger anwenden wollen, empfiehlt sich, ein Lesezeichen zu setzen (<kbd>Strg</kbd> & D)
 
-### Wählen Sie einen PosOperator
 
-![Select a PosOperator](images/portal_operators.png "Select a PosOperator")
 
-Verringern Sie die angezeigten Datensätze durch die Eingabe von Filterkriterien, falls gewünscht.
+### Kassenbetreiber auswählen
 
-Markieren Sie einen der Kassenbetreiber oder gehen Sie mit <kbd>Suche</kbd> zurück zur Auswahl eines Plans.
-### Wählen Sie eine Niederlassung
+![Select a PosOperator](images/portal-operators.png "Select a PosOperator")
 
-![Select Outlets](images/portal_POSOUTLETS.png "Select Outlets")
+Sie können die Anzahl der angezeigten Datensätze durch Setzen von Filterkriterien reduzieren.
 
-Verringern Sie die angezeigten Datensätze durch die Eingabe von Filterkriterien.
+Wählen Sie einen der Kassenbetreiber.
 
-Markieren Sie eine oder mehrere der Niederlassungen (Outlets).
-Alternativ verwenden Sie die Auswahlleiste und <kbd>Select all</kbd>.
-Wurde eines oder mehrere der Outlets markiert, wird aus <kbd>Nothing selected yet...</kbd> die Schaltfläche <kbd>Submit Selection</kbd>. Damit bestätigen Sie Ihre Auswahl. 
 
->Hinweis: 
-Mit <kbd>Clear selection</kbd> wird ihre Auswahl von Outlets verworfen.
-Mit der Zurück-Schaltfläche des Browsers können Sie einzelne Schritte zurück gehen und Ihre Auswahl wiederholen.
 
-### Erstellung eines Angebots
+### Wählen Sie einen Standort
 
-![Create Quote](images/portal_create_quote.png "Create Quote")
+![Select Outlets](images/portal-plan-outlets.png "Select Outlets")
 
-Kontrollieren Sie die Angaben wie den gewählten Plan, den Kassenbetreiber und das oder die Outlet(s).
-Falls gewünscht, können Sie den Namen des Angebotes an Ihre Wünsche anpassen.
-Bestätigen Sie Ihre Auswahl mit <kbd>Create quote</kbd>.
+Sie können die Anzahl der angezeigten Datensätze durch Setzen von Filterkriterien reduzieren.
+
+Wählen Sie einen oder mehrere Standorte (Outlets).
+Alternativ verwenden Sie die Auswahlleiste und <kbd>Select all</kbd> um alle zu wählen.
+Wurde einer oder mehrere der Standorte (Outlets) markiert, wird aus <kbd>Nothing selected yet...</kbd> die Schaltfläche <kbd>Submit Selection</kbd>. Damit bestätigen Sie Ihre Auswahl. 
+
+
 
 >Hinweis: 
-Sollten bei der folgenden Überprüfung von Kreditlimit, Anzahl der zur Verfügung stehenden Entitlements oder ähnlichem Probleme auftreten, werden Sie mit nachvollziehbaren Fehlermeldungen informiert.
+>Mit <kbd>Clear selection</kbd> wird ihre Auswahl der Standorte verworfen.
+>Mit der Zurück-Schaltfläche des Browsers können Sie einzelne Schritte zurück gehen und Ihre Auswahl wiederholen.
+
+
+
+### Angebot bzw. Produktaufstellung erstellen lassen
+
+![Create Quote](images/portal-plan-create-quote.png "Create Quote")
+
+Überprüfen Sie die Angaben insbesondere den gewählten Plan, Kassenbetreiber und Standorte.
+Falls gewünscht, können Sie den Namen des Angebotes ändern.
+Bestätigen Sie Ihre Auswahl mit <kbd>Create quote</kbd>. Das Syetem erstellt daraufhin ein Angebot bzw. eine Produktaufstellung.
+
+>Hinweis: 
+Sollten bei der folgenden Überprüfung von Kreditlimit, Anzahl der zur Verfügung stehenden Entitlements oder ähnlichem Probleme auftreten, werden Sie mit einer Fehlermeldungen informiert.
 Korrekturen nehmen Sie vor, indem Sie mit der Zurück-Schalfläche des Browsers einzelne Schritte zurück gehen und Ihre Auswahl wiederholen. Mit <kbd>Suche </kbd> gehen Sie zurück zum Anfang, zur Auswahl eines Plans.
 
-Übernehmen Sie die Zusammenstellung mit <kbd>Load quote into cart</kbd>.
+Übertragen Sie die Produktaufstellung in den Warenkorrm indem Sie <kbd>Load quote into cart</kbd> drücken.
 
 ### Warenkorb
 
 ![Shopping Cart](images/portal_cart.png "Shopping Cart")
 
-Sie können Ihre Auswahl im Warenkorb nochmals kontrollieren. 
-Die Anzahl der Artikel, Detailbeschreibungen, Outlet(s) und die Kosten werden aufgelistet. 
+Sie können hier Ihre Auswahl nochmal überprüfen. 
+Die Anzahl der Artikel, Detailbeschreibungen, Standorte (Outlets) und die Preise werden aufgelistet. 
 Rechts zeigt die <kbd>Angebotsübersicht</kbd> zum Vergleich die zuletzt getätigten Einkäufe.  
 Bestätigen Sie Ihre Auswahl mit der Schaltfläche <kbd>Checkout</kbd>.
+
 ### Verbindlich bestellen
 
 Bei der Bestellung erhalten Sie eine zusammengefasste Übersicht.
 Mit <kbd>Verbindlich bestellen</kbd> wird die Bestellung durchgeführt.
-Im Account des Kassenbetreibers ist die gewählte Konfiguration innerhalb weniger Minuten zu finden.
-#### Kontrolle 
-Sie können den Vorgang Im Account des Kassenbetreibers kontrollieren. Dazu nutzen Sie die Surrogatefunktion, im den Account zu wechseln. Anschließend wechseln Sie wieder in den eigenen Account
+Im Account des Kassenbetreibers ist die gewählte Zusammensetzung innerhalb weniger Minuten zu finden.
 
-![Kontrolle](images/portal_POSOperator.png "POSOperator &rarr; Übersicht")
+#### Überprüfung 
 
-Wählen Sie <kbd>PosOperator</kbd>  &rarr; <kbd>Übersicht</kbd>. 
-Dort suchen Sie den Datensatz des zuvor gewählten Kassenbetreibers. Wählen Sie den Link.
-Im Account des Kassenbetreibers wählen Sie <kbd>PosOperator</kbd> &rarr; <kbd>Standorte</kbd>.
+Sie können die erfolgreiche Durchführung der Bestellung im Account des Kassenbetreibers überprüfen. Um in den Account des Kassenbetreibers zu wechseln können Sie die Surrogate Funktion nutzen.
+
+Folgendes Bild zeigt beispielhaft, dass das Sorglospaket im Account des Kassenbetreibers zum gewählten Standort aktiviert wurde:
+
+![Kontrolle](images/portal-posoperator-check.png "POSOperator &rarr; Übersicht")
+
+Um die Surrogate FUuktion zu nutzen wählen Sie in ihrem eigenen Account: <kbd>PosOperator</kbd>  &rarr; <kbd>Übersicht</kbd>. 
+
+Dort suchen Sie den Datensatz des zu überprüfenden Kassenbetreibers. Drücken Sie den dazugehörigen Link mit dem Namen des Kassenbetreibers. Das System wechselt in den Account des Kassenbetreibers.
+
+Im Account des Kassenbetreibers wählen Sie nun <kbd>PosOperator</kbd> &rarr; <kbd>Standorte</kbd>.
+
 Filtern Sie die Tabelle der Standorte mit der Eingabe eines Suchbegriffes oder sortieren Sie die Standorte mit Klick auf eine der Tabellenüberschriften.
-Rechts werden in den Spalten <kbd>Sorglos</kbd> und <kbd>AKO</kbd> die aktuellen Konfigurationen gezeigt.
-Mit <kbd>Zu Ihrem Account wechseln</kbd> gelangen Sie wieder zurück in Ihren Account als Kassenhändler.
+
+In den Spalten <kbd>Sorglos</kbd> und <kbd>AKO</kbd> können Sie prüfen ob diese Produkte aktiviert wurden.
+
+Mit <kbd>Zu Ihrem Account wechseln</kbd> (oben rechts) gelangen Sie wieder zurück zu Ihren eigenen Account als Kassenhändler.
+
+
 
 
 ## Tipps & Tricks
@@ -251,7 +273,7 @@ Die zuvor beschriebenen Schritte können Sie für andere Standorte und auch für
 8 Schritt:  Mit <kbd>Verbindlich bestellen</kbd> den Vorgang für mehrere Standorte oder auch Kassenbetreiber abschließen.
 
 >Hinweis: Der zweite Schritt bezieht sich immer auf den zuvor gewählten Standort und kann nach dem "Verbindlich bestellen" nicht mehr geändert werden. 
- 
+
 ### Bestellung mit getrennten Rechnungen
 Sollen einzelne Rechnungen mit Angaben zu den Kassenbetreibern erstellt werden, gehen Sie vor, wie zuvor in Schritt 1-5 beschrieben. 
 Danach gehen Sie im Account des Kassenbetreibers auf  <kbd>Shop</kbd> &rarr; <kbd>Warenkorb</kbd>. Kontrollieren Sie die Übertragungsprodukte und Erzeugungsprodukte je nach  gewähltem Standort. Schließen Sie die Bestellung mit der Schaltfläche <kbd>Verbindlich bestellen</kbd> ab.
