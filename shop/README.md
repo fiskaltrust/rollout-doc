@@ -147,8 +147,7 @@ In our [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) you will find furthe
 
 The process is shown in the following sketch:
 
-![Plan](images/plan.png
- "Prozess")
+![Plan](images/plan.png "Prozess")
 
 ### Select a rollout plan
 
