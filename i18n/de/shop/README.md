@@ -140,17 +140,15 @@ Zudem können wir im Account des Kassenbetreibers unter <kbd>Firmenname</kbd> &r
 
 ## Einkaufspläne
 
-Einkaufspläne vereinfachen den oben beschriebenen Prozess zum Erwerb von Ansprüchen, deren Übertragung an die Kassenbetreiber und der Aktivierung (Erzeugung) für den Kassenbetreiber. Im Gegensatz zum dem oben beschriebenen Prozess haben Einkaufspläne den Vorteil, dass Sie zur Übertragung und Aktivierung der Produkte nicht in den Account des Kassenbetreibers wechseln müssen. Zudem wählt bei der Auswahl eines Einkaufsplans das System für Sie automatisch die benötigten Produkte aus. Damit wird das Risiko einer falsche Zusammensetzung des Warenkorbs reduziert.
+Einkaufspläne vereinfachen den oben beschriebenen Prozess zum Erwerb von Ansprüchen, deren Übertragung an die Outlets der Kassenbetreiber und der Aktivierung (Erzeugung) für den Kassenbetreiber. Im Gegensatz zum dem oben beschriebenen Prozess haben Einkaufspläne den Vorteil, dass Sie zur Übertragung und Aktivierung der Produkte nicht in den Account des Kassenbetreibers wechseln müssen. Zudem wählt bei der Auswahl eines Einkaufsplans das System für Sie automatisch die benötigten Produkte aus. Damit wird das Risiko einer falsche Zusammensetzung des Warenkorbs reduziert.
 
 Kassenhändler finden dieses neue Feature im fiskaltrust.Portal unter dem Menüpunkt <kbd>Rolloutmanagement</kbd> &rarr; <kbd>Plan</kbd>. 
-In unserem [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) finden Sie weitere Erläuterungen. 
+In unserem [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) finden Sie weitere Erläuterungen.
 
 Der Ablauf wird in folgender Skizze dargestellt:
 
 ![Plan](images/plan.png
  "Prozess")
-
-
 
 ### Plan auswählen
 
@@ -184,8 +182,6 @@ Sie können die Anzahl der angezeigten Datensätze durch Setzen von Filterkriter
 Wählen Sie einen oder mehrere Standorte (Outlets).
 Alternativ verwenden Sie die Auswahlleiste und <kbd>Select all</kbd> um alle zu wählen.
 Wurde einer oder mehrere der Standorte (Outlets) markiert, wird aus <kbd>Nothing selected yet...</kbd> die Schaltfläche <kbd>Submit Selection</kbd>. Damit bestätigen Sie Ihre Auswahl. 
-
-
 
 >Hinweis: 
 >Mit <kbd>Clear selection</kbd> wird ihre Auswahl der Standorte verworfen.
@@ -241,9 +237,6 @@ Filtern Sie die Tabelle der Standorte mit der Eingabe eines Suchbegriffes oder s
 In den Spalten <kbd>Sorglos</kbd> und <kbd>AKO</kbd> können Sie prüfen, ob diese Produkte aktiviert wurden.
 
 Mit <kbd>Zu Ihrem Account wechseln</kbd> (oben rechts) gelangen Sie wieder zurück zu Ihren eigenen Account als Kassenhändler.
-
-
-
 
 ## Tipps & Tricks
 ### Bestellungen vereinfachen

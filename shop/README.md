@@ -138,6 +138,101 @@ In addition, we can see in the POSOperator's account that the carefree package h
 
 ![carefree activated](images/carefree-activated.png "Product carefree activated")
 
+## Rollout plans
+
+Rollout plans simplify the process described above for acquiring entitlements, transferring them to the POS operators outlets and activating (generating) them for the POS operator. In contrast to the process described above, purchasing plans have the advantage that you do not have to switch to the POSOperator's account to transfer and activate the products. In addition, when you select a purchasing plan, the system automatically selects the required products for you. This reduces the risk of an incorrect composition of the shopping basket.
+
+POSDealers can find this new feature in the fiskaltrust.Portal under the menu item <kbd>Rollout Management</kbd> &rarr; <kbd>Plan</kbd>. 
+In our [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) you will find further explanations.
+
+The process is shown in the following sketch:
+
+![Plan](images/plan.png
+ "Prozess")
+
+### Select a rollout plan
+
+![Plan](images/portal-plans.png "rollout-management  &rarr; plan")
+
+In the fiskaltrust.Portal, select the <kbd>Rollout Management</kbd> menu item and then <kbd>Plan</kbd>.
+Reduce the number of plans displayed by setting filter criteria or using the selection bar.
+Select one of the plans.
+
+>Note: 
+If you want to use the selected plan more often, it is recommended to set a bookmark (<kbd>Ctrl</kbd> & <kbd>D</kbd>).
+
+## Select a PosOperator
+
+
+![Select a PosOperator](images/portal-operators.png "Select a PosOperator")
+
+You can reduce the number of records displayed by setting filter criteria.
+
+Select one of the POSOperators.
+
+### Select outlets
+
+
+![Select Outlets](images/portal-plan-outlets.png "Select Outlets")
+
+You can reduce the number of records displayed by setting filter criteria.
+
+Select one or more locations (outlets).
+Alternatively, use the selection bar and <kbd>Select all</kbd> to select all.
+If one or more of the outlets has been selected, <kbd>Nothing selected yet...</kbd> becomes the <kbd>Submit Selection</kbd> button. This will confirm your selection.
+
+>Note: 
+>Using <kbd>Clear selection</kbd> will discard your selection of outlets.
+>With the back button of the browser you can go back single steps and repeat your selection.
+
+### Rollout summary - creation of a quote
+
+![Create Quote](images/portal-plan-create-quote.png "Create Quote")
+
+Check the details especially the selected plan, POSOperator and outlets.
+If desired, you can change the name of the quote.
+Confirm your selection with <kbd>Create quote</kbd>. The system will then create a quote or product listing.
+
+>Note: 
+If problems occur during the following check of credit limit, number of available Entitlements or similar, you will be informed with an error message.
+Make corrections by going back individual steps with the browser's back button and repeating your selections. With <kbd>Search</kbd> you go back to the beginning, to the selection of a plan.
+
+With the button <kbd>Load quote into cart</kbd> you transfer the product listing into the shopping cart.
+
+### Shopping Cart
+
+![Shopping Cart](images/portal_cart.png "Shopping Cart")
+
+You can review your selection here. 
+The number of items, detailed descriptions, outlets and the prices are listed. 
+On the right, the <kbd>Quote overview</kbd> shows the last purchases made for comparison.  
+Confirm your selection with the <kbd>Checkout</kbd> button.
+
+### Binding Order
+
+When ordering, you will receive a summarized overview.
+With <kbd>Binding order</kbd> the order is placed.
+In the account of the POSOperator, the selected composition can be found within a few minutes.
+
+### Review
+
+You can check the successful completion of the order in the POSOperator's account. To switch to the POSOperator's account, you can use the Surrogate function.
+
+The following image shows an example of the carefree package being activated in the POSOperator's account for the selected location:
+
+![check](images/portal-posoperator-check.png "POSOperator &rarr; Overview")
+
+To use the surrogate function, select in your own account: <kbd>PosOperator</kbd> &rarr; <kbd>Overview</kbd>. 
+
+Find the record of the POS operator you want to check. Press the associated link with the name of the cashier. The system will switch to the account of the cashier.
+
+In the POSOperator's account, now select <kbd>PosOperator's Name</kbd> &rarr; <kbd>Outlets</kbd>.
+
+Filter the locations table by entering a search term or sort the locations by clicking on one of the table headings.
+
+In the <kbd>Carefree</kbd> and <kbd>AKO</kbd> columns, you can check whether these products have been activated.
+
+With <kbd>Switch to your account</kbd> (top right) you get back to your own account as POSDealer.
 
 ## Tips & Tricks
 
