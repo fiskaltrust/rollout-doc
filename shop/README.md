@@ -3,7 +3,7 @@ slug: /posdealers/rollout-doc/shop
 title: Buying and reselling fiskaltrust products
 ---
 
-# Buying and reselling fiskaltrust products
+# Buying and reselling **fiskaltrust** products
 
 <div className="hide-in-docs">
 
@@ -15,6 +15,7 @@ title: Buying and reselling fiskaltrust products
 ├── <a href="#framework-agreements-for-volume-discount" title="Framework agreements for volume discount">Framework agreements for volume discount</a>
 ├── <a href="#buy-products-via-entitlements" title="Buy products via Entitlements">Buy products via Entitlements</a>
 ├── <a href="#transfer-of-purchased-entitlements-to-the-posoperator" title="Transfer of purchased entitlements to the POSOperator">Transfer of purchased entitlements to the POSOperator</a>
+├── <a href="# Rollout plans" title="Rollout plans">Rollout plans</a>
 ├── <a href="#tips--tricks" title="Tips & Tricks">Tips & Tricks</a>
 ├── <a href="#delivery-options-for-hardware-tses" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
 ├── <a href="#swissbit-cloud-tse-check-out-and-setup" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
@@ -145,10 +146,9 @@ Rollout plans simplify the process described above for acquiring entitlements, t
 POSDealers can find this new feature in the fiskaltrust.Portal under the menu item <kbd>Rollout Management</kbd> &rarr; <kbd>Plan</kbd>. 
 In our [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) you will find further explanations.
 
-The process is shown in the following sketch:
+The process is shown in this sketch:
 
-![Plan](images/plan.png
- "Prozess")
+![Plan](images/plans-eng.png "Prozess")
 
 ### Select a rollout plan
 
