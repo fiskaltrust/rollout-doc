@@ -161,7 +161,7 @@ Select one of the plans.
 >Note: 
 If you want to use the selected plan more often, it is recommended to set a bookmark (<kbd>Ctrl</kbd> & <kbd>D</kbd>).
 
-## Select a PosOperator
+### Select a PosOperator
 
 
 ![Select a PosOperator](images/portal-operators.png "Select a PosOperator")
