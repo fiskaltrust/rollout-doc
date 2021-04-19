@@ -11,6 +11,7 @@ fiskaltrust bietet für Kassenhersteller eine lizenzkostenfreie fiskaltrust.Midd
 Diese fiskaltrust Produkte werden ausschließlich über unsere Kassenhändler-Partner als Bestandteil ihrer Produkt- bzw. Ihrer Service-Palette an Kassenbetreiber vertrieben. Hierbei handelt es sich um Archivierungsprodukte, automatisierte Meldungen an das Finanzamt, Technische Sicherheitseinrichtungen (TSE) diverser Hersteller und auch um Sorglospakete mit und ohne TSE-as-a-Service. Eine aktuelle Auflistung unserer Produkte finden Sie in unserer [Produkt-Dokumentation](https://docs.fiskaltrust.cloud/docs/posdealers/get-started/products).  
 
 Im Rahmen des Rollouts führt der Kassenhändler folgende Schritte durch:
+
 - Anzahl der Produkte kalkulieren
 - Einkäufe im [fiskaltrust.Portal](https://portal.fiskaltrust.de/) vorbereiten
 - Produkte erwerben
@@ -49,14 +50,9 @@ In der oberen Leiste wird ein Warenkorb-Symbol angezeigt. Mit Klick darauf ersch
 
 ![entitlements-kaufen-2](images/buy-entitlements-2.png "Checkout")
 
-
-
-
 Als Nächstes wird die Zusammenfassung Ihrer Bestellung angezeigt:
 
 ![entitlements-kaufen-3](images/buy-entitlements-3.png "Bestellung wird angezeigt")
-
-
 
 Überprüfen Sie die Daten wie Produktbeschreibung, deren Anzahl sowie die dargestellten Preise. Mit dem Button: <kbd>Verbindlich Bestellen</kbd> erhalten Sie eine Bestätigung zu Ihrer Bestellung:
 
@@ -73,7 +69,6 @@ Nach der Bearbeitung der Bestellung durch das fiskaltrust System, erscheinen im 
 ![entitlements-kaufen-6](images/buy-entitlements-6.png "Entitlements gutgeschrieben")
 
 ### Produkte als Ansprüche an Kassenbetreiber übertragen
-
 
 ![Kassenbetreiber suchen](images/search-posoperator.png "Kassenbetreiber suchen")
 
@@ -145,27 +140,26 @@ Zudem können wir im Account des Kassenbetreibers unter <kbd>Firmenname</kbd> &r
 
 ## Einkaufspläne
 
-Einkaufspäne simplifizieren den oben beschriebenen Prozess zum Erwerb der Ansprüche, Ihrer Übertragung an die Kassenbetreiber und Ihrer Aktivierung (Erzeugung) für den Kassenbetreiber. Im Gegensatz zum dem oben beschriebenen Prozess haben Einkauspläne den Vorteil, dass Sie zur Übertragung und Aktivierung der Produkte nicht in den Account des Kassenbetreibers wechseln müssen. Zudem selektiert bei der Auswahl eines Einkaufsplans das System für Sie automatisch die benötigten Produkte. Damit wird das Risko einer falsche Zusammensetzung des Warenkorbs reduziert.
+Einkaufspläne vereinfachen den oben beschriebenen Prozess zum Erwerb von Ansprüchen, deren Übertragung an die Outlets der Kassenbetreiber und der Aktivierung (Erzeugung) für den Kassenbetreiber. Im Gegensatz zum dem oben beschriebenen Prozess haben Einkaufspläne den Vorteil, dass Sie zur Übertragung und Aktivierung der Produkte nicht in den Account des Kassenbetreibers wechseln müssen. Zudem wählt bei der Auswahl eines Einkaufsplans das System für Sie automatisch die benötigten Produkte aus. Damit wird das Risiko einer falsche Zusammensetzung des Warenkorbs reduziert.
 
-Kassenhändler finden dieses neue Feature im fiskaltrust.Portal unter dem Menüpunkt "Rolloutmanagement -> Plan". Erläuterung dazu finden Sie auch in unserem dafür vorbereiteten [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk). 
+Kassenhändler finden dieses neue Feature im fiskaltrust.Portal unter dem Menüpunkt <kbd>Rolloutmanagement</kbd> &rarr; <kbd>Plan</kbd>. 
+In unserem [Video](https://www.youtube.com/watch?v=fzkoaGrQlYk) finden Sie weitere Erläuterungen.
 
 Der Ablauf wird in folgender Skizze dargestellt:
 
 ![Plan](images/plan.png
  "Prozess")
 
-
-
 ### Plan auswählen
 
 ![Plan](images/portal-plans.png "rollout-management  &rarr; plan")
 
 Wählen Sie im fiskaltrust.Portal den Menüpunkt <kbd>Rollout-Management</kbd> und danach <kbd>Plan</kbd>.
-Reduzieren Sie durch Setzen von Filterkriterien oder mit der Auswahlleiste die Anzahl der angezeigten Pläne.
-Wählen Sie einen der Pläne aus.
+Reduzieren Sie die Anzahl der angezeigten Pläne durch Setzen von Filterkriterien oder mit der Auswahlleiste.
+Markieren Sie einen der Pläne.
 
 >Hinweis: 
-Sollten Sie den gewählten Plan häufiger anwenden wollen, empfiehlt sich, ein Lesezeichen zu setzen (<kbd>Strg</kbd> & D)
+Sollten Sie den gewählten Plan häufiger anwenden wollen, empfiehlt sich, ein Lesezeichen zu setzen (<kbd>Strg</kbd> & <kbd>D</kbd>)
 
 
 
@@ -189,8 +183,6 @@ Wählen Sie einen oder mehrere Standorte (Outlets).
 Alternativ verwenden Sie die Auswahlleiste und <kbd>Select all</kbd> um alle zu wählen.
 Wurde einer oder mehrere der Standorte (Outlets) markiert, wird aus <kbd>Nothing selected yet...</kbd> die Schaltfläche <kbd>Submit Selection</kbd>. Damit bestätigen Sie Ihre Auswahl. 
 
-
-
 >Hinweis: 
 >Mit <kbd>Clear selection</kbd> wird ihre Auswahl der Standorte verworfen.
 >Mit der Zurück-Schaltfläche des Browsers können Sie einzelne Schritte zurück gehen und Ihre Auswahl wiederholen.
@@ -203,13 +195,13 @@ Wurde einer oder mehrere der Standorte (Outlets) markiert, wird aus <kbd>Nothing
 
 Überprüfen Sie die Angaben insbesondere den gewählten Plan, Kassenbetreiber und Standorte.
 Falls gewünscht, können Sie den Namen des Angebotes ändern.
-Bestätigen Sie Ihre Auswahl mit <kbd>Create quote</kbd>. Das Syetem erstellt daraufhin ein Angebot bzw. eine Produktaufstellung.
+Bestätigen Sie Ihre Auswahl mit <kbd>Create quote</kbd>. Das System erstellt daraufhin ein Angebot bzw. eine Produktaufstellung.
 
 >Hinweis: 
 Sollten bei der folgenden Überprüfung von Kreditlimit, Anzahl der zur Verfügung stehenden Entitlements oder ähnlichem Probleme auftreten, werden Sie mit einer Fehlermeldungen informiert.
-Korrekturen nehmen Sie vor, indem Sie mit der Zurück-Schalfläche des Browsers einzelne Schritte zurück gehen und Ihre Auswahl wiederholen. Mit <kbd>Suche </kbd> gehen Sie zurück zum Anfang, zur Auswahl eines Plans.
+Korrekturen nehmen Sie vor, indem Sie mit der Zurück-Schalfläche des Browsers einzelne Schritte zurück gehen und Ihre Auswahl wiederholen. Mit <kbd>Suche</kbd> gehen Sie zurück zum Anfang, zur Auswahl eines Plans.
 
-Übertragen Sie die Produktaufstellung in den Warenkorrm indem Sie <kbd>Load quote into cart</kbd> drücken.
+Mit der Schaltfläche <kbd>Load quote into cart</kbd> übertragen Sie die Produktaufstellung in den Warenkorb.
 
 ### Warenkorb
 
@@ -234,7 +226,7 @@ Folgendes Bild zeigt beispielhaft, dass das Sorglospaket im Account des Kassenbe
 
 ![Kontrolle](images/portal-posoperator-check.png "POSOperator &rarr; Übersicht")
 
-Um die Surrogate FUuktion zu nutzen wählen Sie in ihrem eigenen Account: <kbd>PosOperator</kbd>  &rarr; <kbd>Übersicht</kbd>. 
+Um die Surrogate Funktion zu nutzen, wählen Sie in ihrem eigenen Account: <kbd>PosOperator</kbd>  &rarr; <kbd>Übersicht</kbd>. 
 
 Dort suchen Sie den Datensatz des zu überprüfenden Kassenbetreibers. Drücken Sie den dazugehörigen Link mit dem Namen des Kassenbetreibers. Das System wechselt in den Account des Kassenbetreibers.
 
@@ -242,12 +234,9 @@ Im Account des Kassenbetreibers wählen Sie nun <kbd>PosOperator</kbd> &rarr; <k
 
 Filtern Sie die Tabelle der Standorte mit der Eingabe eines Suchbegriffes oder sortieren Sie die Standorte mit Klick auf eine der Tabellenüberschriften.
 
-In den Spalten <kbd>Sorglos</kbd> und <kbd>AKO</kbd> können Sie prüfen ob diese Produkte aktiviert wurden.
+In den Spalten <kbd>Sorglos</kbd> und <kbd>AKO</kbd> können Sie prüfen, ob diese Produkte aktiviert wurden.
 
 Mit <kbd>Zu Ihrem Account wechseln</kbd> (oben rechts) gelangen Sie wieder zurück zu Ihren eigenen Account als Kassenhändler.
-
-
-
 
 ## Tipps & Tricks
 ### Bestellungen vereinfachen
