@@ -23,6 +23,7 @@ title: Rollout of the fiskaltrust.Middleware
 │   └── <a href="#send-a-pos-receipt" title="Send a pos-receipt">Send a pos-receipt</a>
 │   └── <a href="#check-connection-with-the-fiskaltrustcloud" title="Check connection with the fiskaltrust.Cloud">Check connection with the fiskaltrust.Cloud</a>
 │   └── <a href="#firewall-troubleshooting" title="Firewall troubleshooting">Firewall troubleshooting</a>
+│   └── <a href="#using-a-proxy" title="Using a proxy">Using a proxy</a>
 │   └── <a href="#test-data-export" title="Test data export">Test data export</a>
 │       └── <a href="#local-data-export" title="Local data export ">Local data export </a>
 │       └── <a href="#notes-on-the-dsfinv-k-export" title="Notes on the DSFinV-K export">Notes on the DSFinV-K export</a>
@@ -430,6 +431,29 @@ The script must run without errors.
 If you like to send the output of the script to a file you can do it like in the following example:
 
 `.\CheckFirewall.ps1 .\FirewallTests-SwissbitCloud.csv | Out-File -FilePath C:\test\fw-script\output.txt -Width 1600`
+
+
+
+### Using a Proxy
+
+If errors occur when connecting fiskaltrust.Middleware to the outside world, it is possible that the network does not allow direct connections and requires the use of a proxy. When using a proxy, the proxy settings must be provided via the [parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) `-proxy` to the launcher before installing the fiskaltrust service (edit files `install-service.cmd` and `test.cmd` within the launcher directory)
+
+The value of the `-proxy` parameter can be used as follows:
+
+ `-proxy=“address=xxx.xxx.xxx.xxx;user=test;password=pwd123`
+
+When the launcher installs the service, it will add the provided proxy setting into the `fiskaltrust.exe.config` file as a key value pair to be used by the service for subsequent restarts. The value (proxy setting) provided will be stored encrypted in the `fiskaltrust.exe.config` file. It looks like this:
+
+`<add key="proxy" value="encrypted string"/>`
+
+Therefore it can not be changed manually in the config file. This means, that if required to be changed, one needs to change the value of the `-proxy` parameter for the launcher. The service must then be uninstalled and installed again. By doing so, the launcher will apply the change and will also update the config file.
+
+
+
+#### Proxy and Swissbit Cloud TSE
+
+When using the Swissbit Cloud TSE, the proxy settings must additionally be provided in the SCU configuration (portal or template). See: https://docs.fiskaltrust.cloud/docs/product-description/germany/products-and-services/caas/features/basics/tse/swissbit-cloud
+
 
 
 ### Test data export
