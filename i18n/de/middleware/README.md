@@ -23,6 +23,7 @@ title: Rollout der fiskaltrust.Middleware
 │   └── <a href="#abrechnungs-beleg-senden" title="Abrechnungs-Beleg senden">Abrechnungs-Beleg senden</a>
 │   └── <a href="#verbindung-mit-der-fiskaltrustcloud-überprüfen" title="Verbindung mit der fiskaltrust.Cloud überprüfen">Verbindung mit der fiskaltrust.Cloud überprüfen</a>
 │   └── <a href="#firewall-troubleshooting" title="Firewall troubleshooting">Firewall troubleshooting</a>
+│   └── <a href="#einen-proxy-verwenden" title="Einen Proxy verwenden">Einen Proxy verwenden</a>
 │   └── <a href="#datenexport-testen" title="Datenexport testen">Datenexport testen</a>
 │       └── <a href="#datenexport-lokal" title="Datenexport lokal">Datenexport lokal</a>
 │       └── <a href="#hinweise-zum-dsfinv-k-export" title="Hinweise zum DSFinV-K Export">Hinweise zum DSFinV-K Export</a>
@@ -433,6 +434,27 @@ Das Script muss fehlerfrei durchlaufen.
 Wenn Sie die Ausgabe des Scripts in eine Datei schreiben lassen möchten, dann können Sie es wie im folgenden Beispiel tun:
 
 `.\CheckFirewall.ps1 .\FirewallTests-SwissbitCloud.csv | Out-File -FilePath C:\test\fw-script\output.txt -Width 1600`
+
+
+### Einen Proxy verwenden
+
+Sollten Fehler bei der Verbindung der fiskaltrust.Middleware nach Außen auftreten, so kann es sein, dass Ihr Proxy die Verbindung blockiert. Bei Verwendung eines Proxys müssen die Proxy-Einstellungen über den [Parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) `-proxy` dem Launcher vor der Installation des fiskaltrust Dienstes mitgeteilt werden (Dateien `install-service.cmd` und `test.cmd` im Launcher-Verzeichnis editieren)
+
+Der Wert des Parameters `-proxy` kann wie folgt übergeben werden:
+
+ `-proxy=“address=xxx.xxx.xxx.xxx;user=test;password=pwd123`
+
+Wenn der Launcher den Dienst installiert, fügt er die angegebene Proxy-Einstellung in die Datei `fiskaltrust.exe.config` als Schlüssel-Wert-Paar ein. Dieser wird vom fiskaltrust Dienst für nachfolgende Neustarts verwendet. Der angegebene Wert (Proxy-Einstellung) wird verschlüsselt in der Datei `fiskaltrust.exe.config` gespeichert. Der Eintrag sieht wie folgt aus:
+
+`<add key="proxy" value="verschlüsselter Wert"/>`
+
+Aufgrund der Verschlüsselung kann der Wert nicht manuell in der Konfigurationsdatei geändert werden. Das bedeutet, dass man den Wert des Parameters `-proxy` für den Launcher ändern muss, falls er geändert werden soll. Der Dienst muss dann deinstalliert und neu installiert werden. Dadurch wird der Launcher die Änderung übernehmen und auch die Konfigurationsdatei aktualisieren.
+
+
+#### Proxy und Swissbit Cloud TSE
+
+Bei Verwendung der Swissbit Cloud TSE müssen die Proxy-Einstellungen zusätzlich in der SCU-Konfiguration (Portal oder Template) angegeben werden. Siehe dazu: https://docs.fiskaltrust.cloud/docs/product-description/germany/products-and-services/caas/features/basics/tse/swissbit-cloud
+
 
 ### Datenexport testen
 
@@ -1024,7 +1046,7 @@ Unsere Template Beispiele können Sie gebündelt als [Zip-Datei herunterladen](i
 | Eine hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen| `hw-tse-at-main-cashregister-1.json` und `hw-tse-at-main-cashregister-2.json`  | Bezieht sich auf das oben beschriebene Rollout Szenario [Hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen](#hardware-tse-an-der-hauptkasse-für-mehrere-zusätzliche-kassen). Das Template in der Datei `hw-tse-at-main-cashregister-1.json` wird als erstes ausgeführt. Es erzeugt die Cashbox für die Hauptkasse mit einer eigenen Queue und einer SCU die auf eine hardware TSE zugreift. Die SCU erhält einen Counter, damit sie später aus den Cashboxen der anderen Kassen referenziert werden kann. Für jede andere Kasse wird daraufhin das Template aus der Datei `hw-tse-at-main-cashregister-2.json` ausgeführt. Es erzeugt eine Cashbox, die die SCU aus der Hauptkasse referenziert und eine Queue anlegt, die auf die SCU der Hauptkasse zugreift. |
 | Eine Cloud-TSE für mehrere Kassen| `a-cloud-tse-for-multiple-cashregisters-1.json` oder `a-cloud-tse-for-multiple-cashregisters-2.json`  | Bezieht sich auf das oben beschriebene Rollout Szenario [Eine Cloud-TSE für mehrere Kassen](#eine-cloud-tse-für-mehrere-kassen). Das Template in der Datei `a-cloud-tse-for-multiple-cashregisters-1.json` wird pro Kasse ausgeführt. Voraussetzung hierbei ist, dass eine SCU bereits existiert, denn sie wird beim Erzeugen der Cashbox nicht angelegt sondern nur referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `a-cloud-tse-for-multiple-cashregisters-2.json` zeigt ein Beispiel bei dem auch die SCU in der Cashbox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Dieses zweite Beispiel legt außerdem eine Queue an, die ihre Daten in einer MySQL Datenbank abspeichert. Dies kann vor allem in einer [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter) von Nutzen sein. |
 | Eine Cashbox mit mehreren Queues| `multiple-queues-same-scu.json` | Mit diesem Template wird eine Cashbox erzeugt, die mehrere Queues beinhaltet, die wiederum auf die gleiche SCU zugreifen. Es wird in dem oben beschriebenen [Rollout-Szenario mit Terminals](#rollout-szenario-mit-terminals) dargestellt, kann aber auch für den Fall verwendet werden in dem für mehrere Kassen nur eine fiskaltrust.Middleware Instanz verwendet werden soll. Jede Queue hat einen anderen Endpunkt (Port ist unterschiedlich) und kann so individuell angesprochen werden. |
-| Rechenzentrum als operational environment (BYODC)| `byodc-1.json` oder  `byodc-2.json`| Bezieht sich auf das oben beschriebene Rollout Szenario [Rechenzentrum als operational environment](#rechenzentrum-als-operational-environment). Mit Hilfe des Templates aus der Datei `byodc-1.json`  wird eine Cashbox angelegt, die eine bereits vorhandene SCU referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `byodc-2.json` zeigt ein Beispiel bei dem auch die SCU in der Cashbox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Die Queue die von dem Template angelegt wird speichert ihre Daten in einer MySQL Datenbank. Dies ist spezifisch for eine [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter). | 
+| Rechenzentrum als operational environment (BYODC)| `byodc-1.json` oder  `byodc-2.json`| Bezieht sich auf das oben beschriebene Rollout Szenario [Rechenzentrum als operational environment](#rechenzentrum-als-operational-environment). Mit Hilfe des Templates aus der Datei `byodc-1.json`  wird eine Cashbox angelegt, die eine bereits vorhandene SCU referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `byodc-2.json` zeigt ein Beispiel bei dem auch die SCU in der Cashbox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Die Queue die von dem Template angelegt wird speichert ihre Daten in einer MySQL Datenbank. Dies ist spezifisch for eine [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter). |
 
 **Hinweise zur Postmancollection**
 
