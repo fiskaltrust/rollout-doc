@@ -436,7 +436,7 @@ If you like to send the output of the script to a file you can do it like in the
 
 ### Using a Proxy
 
-If errors occur when connecting fiskaltrust.Middleware to the outside world, it is possible that your proxy may be blocking the connection. When using a proxy, the proxy settings must be provided via the [parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) `-proxy` to the launcher before installing the fiskaltrust service (edit files `install-service.cmd` and `test.cmd` within the launcher directory)
+If errors occur when connecting fiskaltrust.Middleware to the outside world, it is possible that the network does not allow direct connections and requires the use of proxy. When using a proxy, the proxy settings must be provided via the [parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) `-proxy` to the launcher before installing the fiskaltrust service (edit files `install-service.cmd` and `test.cmd` within the launcher directory)
 
 The value of the `-proxy` parameter can be used as follows:
 
