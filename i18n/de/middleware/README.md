@@ -438,7 +438,7 @@ Wenn Sie die Ausgabe des Scripts in eine Datei schreiben lassen möchten, dann k
 
 ### Einen Proxy verwenden
 
-Sollten Fehler bei der Verbindung der fiskaltrust.Middleware nach Außen auftreten, so kann es sein, dass Ihr Proxy die Verbindung blockiert. Bei Verwendung eines Proxys müssen die Proxy-Einstellungen über den [Parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) `-proxy` dem Launcher vor der Installation des fiskaltrust Dienstes mitgeteilt werden (Dateien `install-service.cmd` und `test.cmd` im Launcher-Verzeichnis editieren)
+Sollten Fehler bei der Verbindung der fiskaltrust.Middleware nach Außen auftreten, so kann es sein, dass das Netzwerk keine direkten Verbindungen erlaubt und stattdessen Zugriff über einen Proxy erfordert. Bei Verwendung eines Proxys müssen die Proxy-Einstellungen über den [Parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) `-proxy` dem Launcher vor der Installation des fiskaltrust Dienstes mitgeteilt werden (Dateien `install-service.cmd` und `test.cmd` im Launcher-Verzeichnis editieren)
 
 Der Wert des Parameters `-proxy` kann wie folgt übergeben werden:
 
