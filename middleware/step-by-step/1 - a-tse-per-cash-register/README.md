@@ -6,8 +6,28 @@ title: Setup Guide for "A TSE per cash register"
 # A TSE per cash register
 This guide walks you through the most basic setup with one dedicated cashbox (one *Queue* and one *SCU/TSE*) for each cash register.
 
+
+
+![](../../images/cash-register-queue-scu-tse2.png)
+
+
+
 ## 0 - Prerequisites
 As dealer please make sure you have used the **surrogate function** first to **enter your client's account and make subsequent changes in that context**.
+
+For this, click `PosOperator` - `Overview` in the left-hand menu, search for your client, and click on your client's name.
+
+*Should it not be possible to click the name, please check the status icon and make sure the client is active (otherwise they might not have completed their account setup yet).*
+
+![](../images/surrogate.png)
+
+
+
+Once you entered your client's account you will notice a red `Switch to your account` button in the top right, which is how you return to your own account and which indicates that you are now successfully operating from within your client's account.
+
+![](../images/switch_back.png)
+
+
 
 
 
@@ -15,20 +35,42 @@ As dealer please make sure you have used the **surrogate function** first to **e
 ### Step 1 - Navigating
 Choose `Configuration` - `Signatur creation unit` from the left-hand menu.
 
-![menu_scu](../images/menu_scu.png)
+![menu_scu](../images/menu_scu2.png)
 
 ### Step 2 - Selecting the add option
 
 Click the `Add` button.
 
-![scu_add](../images/scu_add.png)
+![scu_add](../images/scu_add2.png)
 
 ### Step 3 - Entering the details
-Enter an appropriate description for your new SCU, choose the right package and version applicable to this particular TSE (*for the German market*), and select the outlet in which this SCU should be active.
+Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package, the portal will automatically pick the most recent version as default.
 
 ![main](main_scu.png)
 
-Once you have entered all information, click `Save` and you'll be redirected to the screen where you configure additional technical details, such as **SSCD-specific settings** (*e.g. in the German market, details of the TSE you have just chosen*) as well as the **URL** (*including the desired communication protocol*) under which the SCU should be accessible for the queue.
+Once you have entered all information, click `Save` and you'll be redirected to the screen where you configure additional technical details for the selected TSE as well as the **URL** (*including the desired communication protocol*) under which the SCU should be accessible for the queue.
+
+
+
+
+
+# TODO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![](../images/scu_config.png)
 
@@ -49,7 +91,7 @@ Click the `Create new` button.
 
 ### Step 3 - Entering the details
 
-Enter an appropriate description for your new queue, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identifcation` to let middleware generate a unique number*), and select the outlet in which this queue should be active.
+Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identifcation` to let middleware generate a unique number*), and select the outlet in which this queue should be active.
 
 The country code is already pre-selected based on the national ft.Portal you signed in to.
 
@@ -85,7 +127,7 @@ Click the `Add` button.
 
 ### Step 3 - Entering the details
 
-Enter an appropriate description for your new cashbox and select the outlet in which this queue should be active. Optionally you can also specify a hostname or IP address which will be used as default for any cashbox-external SCUs.
+Enter a descriptive name for your new cashbox in the description field and select the outlet in which this queue should be active. Optionally you can also specify a hostname or IP address which will be used as default for any cashbox-external SCUs.
 
 ![](main_cashbox.png)
 
