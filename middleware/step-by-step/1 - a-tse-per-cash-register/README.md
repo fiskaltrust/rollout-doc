@@ -46,35 +46,23 @@ Click the `Add` button.
 ### Step 3 - Entering the details
 Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package, the portal will automatically pick the most recent version as default.
 
-![main](main_scu.png)
-
-Once you have entered all information, click `Save` and you'll be redirected to the screen where you configure additional technical details for the selected TSE as well as the **URL** (*including the desired communication protocol*) under which the SCU should be accessible for the queue.
+![main](main_scu2.png)
 
 
 
+Once you have entered all information, click `Save` and you'll be redirected to a screen where you configure additional technical details. The majority of these settings is TSE specific (*in the following example we chose a Fiskaly cloud TSE*) and you will need to provide the values required by that TSE (e.g. the right drive letter or the right API key).
 
+Another important part here is the URL under which the SCU should be accessible to the queue. This includes three elements
 
-# TODO
+1. the communication protocol. You can choose between gRPC, REST, SOAP, and net.pipe
+2. the hostname (for this setup it should be `localhost`)
+3. the URL path specific to this SCU
 
+Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
 
+![](../images/scu_config2.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![](../images/scu_config.png)
-
-Once you have finished the configuration, click `Save and close` and the new SCU should be listed on the subsequent screen of all your client's SCUs.
+Once you have finished the configuration scroll to the bottom, click `Save and close` and the new SCU should be listed on the subsequent screen of all your client's SCUs.
 
 
 
@@ -82,24 +70,28 @@ Once you have finished the configuration, click `Save and close` and the new SCU
 ### Step 1 - Navigating
 Choose `Configuration` - `Queue` from the left-hand menu.
 
-![menu_queue](../images/menu_queue.png)
+![menu_queue](../images/menu_queue2.png)
 
 ### Step 2 - Selecting the create option
 Click the `Create new` button.
 
-![](../images/queue_add.png)
+![](../images/queue_add2.png)
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identifcation` to let middleware generate a unique number*), and select the outlet in which this queue should be active.
+Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identifcation` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
 
-The country code is already pre-selected based on the national ft.Portal you signed in to.
+![main_queue](main_queue2.png)
 
-![main_queue](main_queue.png)
+Once you have entered all information, scroll down, click `Save` and you'll be redirected to a screen where you configure additional technical details. The most important part here is the URL under which the queue should accept IPOS requests from your cash register. This URL includes three elements
 
-Once you have entered all information, click `Save` and you'll be redirected to the screen where you configure additional technical details, among them the URL (*including the desired communication protocol*) on which the queue should accept IPOS requests from your cash register.
+1. the communication protocol. You can choose between gRPC, REST, SOAP, and net.pipe
+2. the hostname (`localhost` if the queue runs on the same machine as your cash register)
+3. the URL path specific to this queue and where the cash register will send requests to
 
-![](../images/queue_config.png)
+Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
+
+![](../images/queue_config2.png)
 
 Once you have finished the configuration click `Save and close` and the new queue should be listed on the subsequent screen of all your client's queues.
 
@@ -107,13 +99,13 @@ Once you have finished the configuration click `Save and close` and the new queu
 
 
 ## 3 - Creating the Cashbox
-The cashbox is the central configuration and will combine/connect the queue with the SCU.
+The cashbox is the central entry point and contains the whole configuration of your middleware instance and will combine and connect the queue with the SCU.
 
 ### Step 1 - Navigating
 
 Choose `Configuration` - `CashBox` from the left-hand menu.
 
-![](../images/menu_cashbox.png)
+![](../images/menu_cashbox2.png)
 
 
 
@@ -121,7 +113,7 @@ Choose `Configuration` - `CashBox` from the left-hand menu.
 
 Click the `Add` button.
 
-![](../images/cashbox_add.png)
+![](../images/cashbox_add2.png)
 
 
 
@@ -129,7 +121,7 @@ Click the `Add` button.
 
 Enter a descriptive name for your new cashbox in the description field and select the outlet in which this queue should be active. Optionally you can also specify a hostname or IP address which will be used as default for any cashbox-external SCUs.
 
-![](main_cashbox.png)
+![](main_cashbox2.png)
 
 Once you have entered all information, click `Save` and the new cashbox should be listed on the subsequent screen of all your client's cashbox.
 
@@ -139,23 +131,23 @@ Once you have entered all information, click `Save` and the new cashbox should b
 
 * Back to the list of your cashboxes, click the `Edit by list` button.
 
-![](edit_cashbox.png)
+![](edit_cashbox2.png)
 
 
 
 * On the subsequent screen you need to select the previously added queue for this cashbox by ticking the correct row.
 
-![](select_queue.png)
+![](select_queue2.png)
 
 Additionally you need to **connect the queue to the SCU**, for which you click the pop-out icon on the right side. This will open the following screen where you need to select the previously added SCU and click `Save and close`.
 
-![](connect_scu.png)
+![](connect_scu2.png)
 
 
 
 * Now we have configured the queue for the cashbox and connected it to the SCU but we still need to add the SCU to the cashbox as well, which we do by ticking the correct row
 
-![](select_scu.png)
+![](select_scu2.png)
 
 
 
@@ -165,7 +157,7 @@ This is an **important step** which you always have to perform after you created
 
 To (re)build a cashbox, navigate to your list of cashboxes and click the cashbox's `Rebuild configuration` button whenever it is highlighted in orange.
 
-![](build_cashbox.png)
+![](build_cashbox2.png)
 
 The whole rebuild process is fairly quick and will finish in a few seconds. The moment the rebuild button is greyed out, you'll have an up-to-date configuration.
 
@@ -175,7 +167,7 @@ The whole rebuild process is fairly quick and will finish in a few seconds. The 
 
 At this point you'll have
 
-* one **SCU**, associated with your SSCD (e.g. in Germany a TSE)
+* one **SCU**, associated with your TSE
 * one **queue**, connected to the SCU
 * and one **cashbox**, containing both the SCU and the queue
 
