@@ -25,7 +25,7 @@ For this, click `PosOperator` - `Overview` in the left-hand menu, search for you
 
 Once you entered your client's account you will notice a red `Switch to your account` button in the top right, which is how you return to your own account and which indicates that you are now successfully operating from within your client's account.
 
-![](../images/switch_back.png)
+![](../images/switch-back.png)
 
 
 
@@ -35,22 +35,23 @@ Once you entered your client's account you will notice a red `Switch to your acc
 ### Step 1 - Navigating
 Choose `Configuration` - `Signatur creation unit` from the left-hand menu.
 
-![menu_scu](../images/menu_scu2.png)
+![menu_scu](../images/menu-scu.png)
 
 ### Step 2 - Selecting the add option
 
 Click the `Add` button.
 
-![scu_add](../images/scu_add2.png)
+![scu_add](../images/scu-add.png)
 
 ### Step 3 - Entering the details
 Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package, the portal will automatically pick the most recent version as default.
 
-![main](main_scu2.png)
+![main](images/main-scu.png)
 
 
 
-Once you have entered all information, click `Save` and you'll be redirected to a screen where you configure additional technical  details. The majority of these settings is TSE specific (*in the following example we chose a Fiskaly cloud TSE*) and you will need to provide the values required by that TSE (e.g. the right drive letter or the right API key). *A full list of available options for each TSE type can be found [here](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/middleware#templating-to-create-cashboxes) under the section `SCU`.*
+Once you have entered all information, click `Save` and you'll be redirected to a screen where you configure additional technical  details. The majority of these settings is TSE specific (*in the following example we chose a Fiskaly cloud TSE*) and you will need to provide the values required by that TSE (e.g. the right drive letter or the right API key).
+*A full list of available options for each TSE type can be found [here](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/middleware#templating-to-create-cashboxes) under the section `SCU`.*
 
 Another important part here is the URL under which the SCU should be accessible to the queue. This includes three elements
 
@@ -60,7 +61,7 @@ Another important part here is the URL under which the SCU should be accessible 
 
 Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
 
-![](../images/scu_config2.png)
+![](../images/scu-config.png)
 
 Once you have finished the configuration scroll to the bottom, click `Save and close` and the new SCU should be listed on the subsequent screen of all your client's SCUs.
 
@@ -70,18 +71,18 @@ Once you have finished the configuration scroll to the bottom, click `Save and c
 ### Step 1 - Navigating
 Choose `Configuration` - `Queue` from the left-hand menu.
 
-![menu_queue](../images/menu_queue2.png)
+![menu_queue](../images/menu-queue.png)
 
 ### Step 2 - Selecting the create option
 Click the `Create new` button.
 
-![](../images/queue_add2.png)
+![](../images/queue-add.png)
 
 ### Step 3 - Entering the details
 
 Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
 
-![main_queue](main_queue2.png)
+![main_queue](images/main-queue.png)
 
 Once you have entered all information, scroll down, click `Save` and you'll be redirected to a screen where you configure additional technical details. The most important part here is the URL under which the queue should accept IPOS requests from your cash register. This URL includes three elements
 
@@ -91,7 +92,7 @@ Once you have entered all information, scroll down, click `Save` and you'll be r
 
 Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
 
-![](../images/queue_config2.png)
+![](../images/queue-config.png)
 
 Once you have finished the configuration click `Save and close` and the new queue should be listed on the subsequent screen of all your client's queues.
 
@@ -105,7 +106,7 @@ The cashbox is the central entry point and contains the whole configuration of y
 
 Choose `Configuration` - `CashBox` from the left-hand menu.
 
-![](../images/menu_cashbox2.png)
+![](../images/menu-cashbox.png)
 
 
 
@@ -113,7 +114,7 @@ Choose `Configuration` - `CashBox` from the left-hand menu.
 
 Click the `Add` button.
 
-![](../images/cashbox_add2.png)
+![](../images/cashbox-add.png)
 
 
 
@@ -121,7 +122,7 @@ Click the `Add` button.
 
 Enter a descriptive name for your new cashbox in the description field and select the outlet in which this queue should be active. Optionally you can also specify a hostname or IP address which will be used as default for any cashbox-external SCUs.
 
-![](main_cashbox2.png)
+![](images/main-cashbox.png)
 
 Once you have entered all information, click `Save` and the new cashbox should be listed on the subsequent screen of all your client's cashbox.
 
@@ -131,23 +132,23 @@ Once you have entered all information, click `Save` and the new cashbox should b
 
 * Back to the list of your cashboxes, click the `Edit by list` button.
 
-![](edit_cashbox2.png)
+![](images/edit-cashbox.png)
 
 
 
 * On the subsequent screen you need to select the previously added queue for this cashbox by ticking the correct row.
 
-![](select_queue2.png)
+![](images/select-queue.png)
 
 Additionally you need to **connect the queue to the SCU**, for which you click the pop-out icon on the right side. This will open the following screen where you need to select the previously added SCU and click `Save and close`.
 
-![](connect_scu2.png)
+![](images/connect-scu.png)
 
 
 
 * Now we have configured the queue for the cashbox and connected it to the SCU but we still need to add the SCU to the cashbox as well, which we do by ticking the correct row
 
-![](select_scu2.png)
+![](images/select-scu.png)
 
 
 
@@ -157,7 +158,7 @@ This is an **important step** which you always have to perform after you created
 
 To (re)build a cashbox, navigate to your list of cashboxes and click the cashbox's `Rebuild configuration` button whenever it is highlighted in orange.
 
-![](build_cashbox2.png)
+![](images/build-cashbox.png)
 
 The whole rebuild process is fairly quick and will finish in a few seconds. The moment the rebuild button is greyed out, you'll have an up-to-date configuration.
 
