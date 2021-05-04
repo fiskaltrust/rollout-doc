@@ -50,7 +50,7 @@ Enter a descriptive name for your new SCU in the description field, choose the r
 
 
 
-Once you have entered all information, click `Save` and you'll be redirected to a screen where you configure additional technical  details. The majority of these settings is TSE specific (*in the following example we chose a Fiskaly cloud TSE*) and you will need to provide the values required by that TSE (e.g. the right drive letter or the right API key). *A full list of available options for each TSE type can be found [here](middleware#templating-to-create-cashboxes) under the section `SCU`.*
+Once you have entered all information, click `Save` and you'll be redirected to a screen where you configure additional technical  details. The majority of these settings is TSE specific (*in the following example we chose a Fiskaly cloud TSE*) and you will need to provide the values required by that TSE (e.g. the right drive letter or the right API key). *A full list of available options for each TSE type can be found [here](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/middleware#templating-to-create-cashboxes) under the section `SCU`.*
 
 Another important part here is the URL under which the SCU should be accessible to the queue. This includes three elements
 
