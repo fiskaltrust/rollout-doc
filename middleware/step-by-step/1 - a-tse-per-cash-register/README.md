@@ -79,7 +79,7 @@ Click the `Create new` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identifcation` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
+Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
 
 ![main_queue](main_queue2.png)
 
