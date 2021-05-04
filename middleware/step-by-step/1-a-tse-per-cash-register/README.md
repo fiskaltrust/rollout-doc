@@ -8,7 +8,7 @@ This guide walks you through the most basic setup with one dedicated cashbox (on
 
 
 
-![](../../images/cash-register-queue-scu-tse2.png)
+![](../../images/cash-register-queue-scu-tse.png)
 
 
 
