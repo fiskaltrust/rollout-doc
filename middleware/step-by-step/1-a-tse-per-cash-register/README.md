@@ -46,7 +46,7 @@ Click the `Add` button.
 ### Step 3 - Entering the details
 Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package, the portal will automatically pick the most recent version as default.
 
-![main](images/main-scu.png)
+![main](../images/main-scu.png)
 
 
 
@@ -82,7 +82,7 @@ Click the `Create new` button.
 
 Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
 
-![main_queue](images/main-queue.png)
+![main_queue](../images/main-queue.png)
 
 Once you have entered all information, scroll down, click `Save` and you'll be redirected to a screen where you configure additional technical details. The most important part here is the URL under which the queue should accept IPOS requests from your cash register. This URL includes three elements
 
@@ -132,23 +132,23 @@ Once you have entered all information, click `Save` and the new cashbox should b
 
 * Back to the list of your cashboxes, click the `Edit by list` button.
 
-![](images/edit-cashbox.png)
+![](../images/edit-cashbox.png)
 
 
 
 * On the subsequent screen you need to select the previously added queue for this cashbox by ticking the correct row.
 
-![](images/select-queue.png)
+![](../images/select-queue.png)
 
 Additionally you need to **connect the queue to the SCU**, for which you click the pop-out icon on the right side. This will open the following screen where you need to select the previously added SCU and click `Save and close`.
 
-![](images/connect-scu.png)
+![](../images/connect-scu.png)
 
 
 
 * Now we have configured the queue for the cashbox and connected it to the SCU but we still need to add the SCU to the cashbox as well, which we do by ticking the correct row
 
-![](images/select-scu.png)
+![](../images/select-scu.png)
 
 
 
@@ -158,7 +158,7 @@ This is an **important step** which you always have to perform after you created
 
 To (re)build a cashbox, navigate to your list of cashboxes and click the cashbox's `Rebuild configuration` button whenever it is highlighted in orange.
 
-![](images/build-cashbox.png)
+![](../images/build-cashbox.png)
 
 The whole rebuild process is fairly quick and will finish in a few seconds. The moment the rebuild button is greyed out, you'll have an up-to-date configuration.
 
