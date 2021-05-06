@@ -84,11 +84,11 @@ Enter a descriptive name for your new queue in the description field, choose the
 
 ![main_queue](../images/main-queue.png)
 
-Once you have entered all information, scroll down, click `Save` and you'll be redirected to a screen where you configure additional technical details. The most important part here is the URL under which the queue should accept IPOS requests from your cash register. This URL includes three elements
+Once you have entered all information, scroll down, click `Save` and you'll be redirected to where you configure additional technical details. The most important part here is the URL under which the queue should accept IPOS requests from your cash register. This URL includes three elements
 
-1. the communication protocol. You can choose between gRPC, REST, SOAP, and net.pipe
-2. the hostname (`localhost` if the queue runs on the same machine as your cash register)
-3. the URL path specific to this queue and where the cash register will send requests to
+1. the **communication protocol**. You can choose between gRPC, REST, SOAP, and net.pipe
+2. the **hostname** (`localhost` if the queue runs on the same machine as your cash register)
+3. the **URL path** specific to this queue and where the cash register will send requests to
 
 Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
 
@@ -122,7 +122,7 @@ Click the `Add` button.
 
 Enter a descriptive name for your new cashbox in the description field and select the outlet in which this queue should be active. Optionally you can also specify a hostname or IP address which will be used as default for any cashbox-external SCUs.
 
-![](images/main-cashbox.png)
+![](../images/main-cashbox.png)
 
 Once you have entered all information, click `Save` and the new cashbox should be listed on the subsequent screen of all your client's cashbox.
 
