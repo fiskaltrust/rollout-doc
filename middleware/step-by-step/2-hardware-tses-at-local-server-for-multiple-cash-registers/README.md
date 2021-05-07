@@ -1,9 +1,9 @@
 ---
-slug: /posdealers/rollout-doc/middleware/guides/shared-tses
-title: Setup Guide for "TSE shared across cash registers"
+slug: /posdealers/rollout-doc/middleware/guides/shared-tse
+title: Setup Guide for "Several cash registers sharing a central TSE"
 ---
 
-# TSE shared across cash registers
+# Several cash registers sharing a central TSE
 This guide walks you through a shared scenario where one SCU/TSE is shared across several queues and cash registers.
 
 
