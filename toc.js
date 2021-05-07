@@ -9,7 +9,14 @@ module.exports = {
         'rollout-doc/introduction',
         'rollout-doc/invitation-management/README',
         'rollout-doc/middleware/README',
-        'rollout-doc/shop/README'
+        'rollout-doc/shop/README',
+        {
+        	type: 'category',
+            label: 'How To',
+            items: [                        
+                'rollout-doc/how-to/how-to-switch-scu'
+            ]
+        }
       ]
     }
   ]
