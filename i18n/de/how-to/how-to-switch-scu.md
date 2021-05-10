@@ -1,5 +1,5 @@
 ---
-slug: slug: /posdealers/rollout-doc/how-to/switch-scu
+slug: /posdealers/rollout-doc/how-to/switch-scu
 title: 'How-To: SCU austauschen'
 ---
 
