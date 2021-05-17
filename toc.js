@@ -21,12 +21,12 @@ module.exports = {
                   collapsed: true,
                   label: 'Step-by-step guides',
                   items: [
-                    'rollout-doc/middleware/1-a-tse-per-cash-register/README',
-                    'rollout-doc/middleware/2-hardware-tses-at-local-server-for-multiple-cash-registers/README',
-                    'rollout-doc/middleware/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers/README',
-                    'rollout-doc/middleware/4-a-cloud-tse-for-multiple-cash-registers/README',
-                    'rollout-doc/middleware/5-rollout-scenario-with-terminals/README',
-                    'rollout-doc/middleware/6-data-center-as-operational-environment/README'
+                    'rollout-doc/middleware/step-by-step/1-a-tse-per-cash-register/README',
+                    'rollout-doc/middleware/step-by-step/2-hardware-tses-at-local-server-for-multiple-cash-registers/README',
+                    'rollout-doc/middleware/step-by-step/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers/README',
+                    'rollout-doc/middleware/step-by-step/4-a-cloud-tse-for-multiple-cash-registers/README',
+                    'rollout-doc/middleware/step-by-step//5-rollout-scenario-with-terminals/README',
+                    'rollout-doc/middleware/step-by-step/6-data-center-as-operational-environment/README'
                   ]
                 }
             ]
