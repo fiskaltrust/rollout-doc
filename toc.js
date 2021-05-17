@@ -25,7 +25,7 @@ module.exports = {
                     'rollout-doc/middleware/step-by-step/2-hardware-tses-at-local-server-for-multiple-cash-registers/README',
                     'rollout-doc/middleware/step-by-step/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers/README',
                     'rollout-doc/middleware/step-by-step/4-a-cloud-tse-for-multiple-cash-registers/README',
-                    'rollout-doc/middleware/step-by-step//5-rollout-scenario-with-terminals/README',
+                    'rollout-doc/middleware/step-by-step/5-rollout-scenario-with-terminals/README',
                     'rollout-doc/middleware/step-by-step/6-data-center-as-operational-environment/README'
                   ]
                 }
