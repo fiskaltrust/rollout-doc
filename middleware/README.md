@@ -544,6 +544,8 @@ From a technical point of view, this is the simplest scenario, but it requires a
 
 In the chapter [Template examples](#template-examples) you can find a template that represents this scenario.
 
+A step-by-step guide for this configuration can be found [here](step-by-step/1-a-tse-per-cash-register/README.md).
+
 ### Hardware TSE(s) at local server for multiple cash registers
 
 The fiskaltrust.Middleware runs on each cash register and on the local server. The hardware TSE is connected to the local server (e.g. via USB). The server's CashBox configures the fiskaltrust.Middleware instance with an SCU. The SCU configured for the server accesses a hardware TSE. The CashBoxes of the individual cash registers are configured in such a way that their fiskaltrust.Middleware instance is equipped with only one Queue. The Queues used here connect to the server's SCU. This scenario enables a saving of TSEs. However, since all requests have to pass through the server's SCU, the server becomes a bottleneck. The TSE also becomes a bottleneck. If the server or the TSE fails, all cash registers are affected. Furthermore, this scenario can lead to [performance bottlenecks](#performance recommendation) in the hardware TSE. 
@@ -551,6 +553,10 @@ The fiskaltrust.Middleware runs on each cash register and on the local server. T
 ![tse-separated](images/server-width-hw-tse.png)
 
 In the chapter [Template examples](#template-examples) you can find a template that represents this scenario.
+
+A step-by-step guide for this configuration can be found [here](step-by-step/2-hardware-tses-at-local-server-for-multiple-cash-registers/README.md).
+
+
 
 If you decide to use this scenario, we recommend using one or more additional TSEs if you have a large number of requests. This is visualized in the image below as an example.
 
@@ -565,12 +571,16 @@ The fiskaltrust.Middleware runs on each cash register. The CashBox of the main c
 
 In the chapter [Template examples](#template-examples) you can find a template that represents this scenario.
 
+A step-by-step guide for this configuration can be found [here](step-by-step/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers/README.md).
+
 ### A cloud TSE for multiple cash registers
 The fiskaltrust.Middleware runs on each cash register. The CashBox of each cash register configures the fiskaltrust.Middleware instance with its own Queue and its own SCU. Each SCU accesses the same cloud TSE. This scenario enables cloud TSEs to be saved. One advantage here is that the SCU does not become a bottleneck, since each POS has its own SCU. However, since all requests are sent to the same cloud TSE, the TSE becomes a bottleneck. Furthermore, both possible [performance bottlenecks](#performance recommendation) in the cloud TSE and our [fair use policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md) must also be taken into account here.
 
 ![tse-on-cashregister](images/cash-register-with-cloud-tse.png)
 
 In the chapter [Template examples](#template-examples) you can find a template that represents this scenario.
+
+A step-by-step guide for this configuration can be found [here](step-by-step/4-a-cloud-tse-for-multiple-cash-registers/README.md).
 
 ### Rollout scenario with terminals
 Terminals are input devices such as tablets, handhelds or similar (without cash register function), where it is not possible to connect a hardware TSE or to install the fiskaltrust.Middleware on the device itself. In this case the fiskaltrust.Middleware is operated at a cash register or at a server and is always accessible for the terminals. The terminals only serve as input devices and connect to the server or to the cash register. If there are many simultaneous requests, [performance bottlenecks](#performancerecommendation) may occur in the TSE. If you decide to use this scenario, we recommend using multiple cash registers with additional TSEs (alternatively: multiple fiskaltrust.Middleware instances with their own SCU and TSE on a server) if you have a large number of requests.
@@ -583,6 +593,8 @@ Another possible variation of this scenario is to assign each terminal to its ow
 
 In the chapter [Template examples](#template-examples) you can find a template that represents this scenario.
 
+A step-by-step guide for this configuration can be found [here](step-by-step/5-rollout-scenario-with-terminals/README.md).
+
 
 ### Data center as operational environment
 If the cash register is operated in a data center and the terminals cannot function without an (Internet) connection to it, the data center can be assumed to be the "operational environment" under certain conditions. In this case, the fiskaltrust.Middleware should be operated entirely in the data center. In this scenario, the terminals connect to the fiskaltrust.Middleware in the data center via the online POSSystem.
@@ -591,6 +603,8 @@ However, in the event of a failure of the (Internet) connection, the fiskaltrust
 ![cloud-middleware](images/terminals-mw-cloud.png)
 
 In the chapter [Template examples](#template-examples) you can find a template that represents this scenario.
+
+A step-by-step guide for this configuration can be found [here](step-by-step/6-data-center-as-operational-environment/README.md).
 
 ### Connection variants of the TSE to the SCU
 
