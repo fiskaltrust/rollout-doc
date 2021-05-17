@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/guides/1-to-1
+slug: /posdealers/rollout-doc/middleware/step-by-step/1-a-tse-per-cash-register
 title: Setup Guide for "A TSE per cash register"
 ---
 

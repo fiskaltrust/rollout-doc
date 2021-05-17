@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/guides/register-sharing-scu
+slug: /posdealers/rollout-doc/middleware/step-by-step/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers
 title: Setup Guide for "TSE shared across cash registers"
 ---
 
