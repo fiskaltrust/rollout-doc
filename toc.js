@@ -15,6 +15,7 @@ module.exports = {
             label: 'How To',
             items: [                        
                 'rollout-doc/how-to/how-to-switch-scu',
+                'rollout-doc/how-to/how-to-bulk-update-cashboxes',
                 {
                   type: 'category',
                   collapsed: true,
@@ -25,7 +26,7 @@ module.exports = {
                     'rollout-doc/middleware/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers/README',
                     'rollout-doc/middleware/4-a-cloud-tse-for-multiple-cash-registers/README',
                     'rollout-doc/middleware/5-rollout-scenario-with-terminals/README',
-                    'rollout-doc/middleware/6-data-center-as-operational-environment/README',
+                    'rollout-doc/middleware/6-data-center-as-operational-environment/README'
                   ]
                 }
             ]

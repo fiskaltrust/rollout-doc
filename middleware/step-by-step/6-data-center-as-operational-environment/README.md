@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/guides/central-pos-in-your-data-centre
+slug: /posdealers/rollout-doc/middleware/step-by-step/6-data-center-as-operational-environment
 title: Setup Guide for "Central POS in your data centre"
 ---
 

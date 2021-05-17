@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/guides/shared-tse
+slug: /posdealers/rollout-doc/middleware/step-by-step/2-hardware-tses-at-local-server-for-multiple-cash-registers
 title: Setup Guide for "Several cash registers sharing a central TSE"
 ---
 

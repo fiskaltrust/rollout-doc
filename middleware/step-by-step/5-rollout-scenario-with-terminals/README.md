@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/guides/cash-terminals-with-dedicated-queues
+slug: /posdealers/rollout-doc/middleware/step-by-step/5-rollout-scenario-with-terminals
 title: Setup Guide for "Cash terminals with dedicated queues"
 ---
 

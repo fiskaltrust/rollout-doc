@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/guides/cashboxes-sharing-cloud-tse
+slug: /posdealers/rollout-doc/middleware/step-by-step/4-a-cloud-tse-for-multiple-cash-registers
 title: Setup Guide for "Cloud TSE shared across cashboxes"
 ---
 
