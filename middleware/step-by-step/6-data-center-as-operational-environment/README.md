@@ -69,11 +69,17 @@ Once you have entered all information, click `Save` and you'll be redirected to 
 
 **Another important part here is the URL** under which the SCU should be accessible to the queue. This includes three elements
 
-1. the **communication protocol**. You can choose between gRPC, REST, SOAP, and net.pipe
+1. the **communication protocol**. In a data centre context it is **important to choose `gRPC` here**
 2. the **hostname**. Make sure you use an address here which is reachable from all your queues
 3. the **URL path** specific to this SCU
 
 Click one of the available protocol types to automatically generate an appropriate URL.
+
+
+
+> **It is important that your SCU URL does not use the same port as the URL you plan to use for your queue later on.**
+
+
 
 ![](../images/scu-config.png)
 
@@ -121,13 +127,17 @@ You'll find more details and examples at https://dev.mysql.com/doc/connector-net
 
  This URL includes three elements
 
-1. the **communication protocol**. You can choose between gRPC, REST, SOAP, and net.pipe
+1. the **communication protocol**. In a data centre context it is **important to choose `REST` here**
 2. the **hostname** ( if the queue runs on the same machine as your cash register)
 3. the **URL path** specific to this queue and where the cash register will send requests to
 
 Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
 
 Once you have finished the configuration click `Save and close` and the new queue should be listed on the subsequent screen of all your client's queues.
+
+
+
+> **It is important that your queue URL does not use the same port as the URL you used for your SCU in the previous step.**
 
 
 

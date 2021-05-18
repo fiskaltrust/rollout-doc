@@ -72,6 +72,12 @@ Once you have entered all information, click `Save` and you'll be redirected to 
 
 Click one of the available protocol types to automatically generate an appropriate URL.
 
+
+
+> **It is important that your SCU URL does not use the same port as the URL you plan to use for your queue later on.**
+
+
+
 ![](../images/scu-config.png)
 
 Once you have finished the configuration scroll to the bottom, click `Save and close` and the new SCU should be listed on the subsequent screen of all your client's SCUs.
@@ -94,7 +100,7 @@ Click the `Create new` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
+Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version (*if you choose SQLite the middleware will create the datastore automatically*), enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
 
 ![main_queue](../images/main-queue.png)
 
@@ -105,6 +111,12 @@ Once you have entered all information, scroll down, click `Save` and you'll be r
 3. the **URL path** specific to this queue and where the cash register will send requests to
 
 Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
+
+
+
+> **It is important that your queue URL does not use the same port as the URL you used for your SCU in the previous step.**
+
+
 
 ![](../images/queue-config.png)
 
@@ -206,7 +218,7 @@ The whole rebuild process is fairly quick and will finish in a few seconds. The 
 
 At this point you'll have
 
-* **one master cashbox with a queue and an SCU**, associated with your TSE
-* **a number of cashboxes, each with one queue**, pointing to your master SCU
+* **one master cashbox with a queue (and an embedded datastore if you chose SQLite) and an SCU**, associated with your TSE
+* **a number of cashboxes, each with one queue** (and an embedded datastore if you chose SQLite), pointing to your master SCU
 
 You can now download the launcher for your master cashbox and deploy it on your master cash register (with the TSE connected). Once that is set up and working, download the launchers of the other cashboxes and deploy them on your other cash registers.

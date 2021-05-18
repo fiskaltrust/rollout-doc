@@ -71,6 +71,12 @@ Once you have entered all information, click `Save` and you'll be redirected to 
 
 Click one of the available protocol types to automatically generate an appropriate URL.
 
+
+
+> **It is important that your SCU URL does not use the same port as the URL you plan to use for your queue later on.**
+
+
+
 ![](../images/scu-config.png)
 
 Once you have finished the configuration scroll to the bottom, click `Save and close` and the new SCU should be listed on the subsequent screen of all your client's SCUs.
@@ -93,7 +99,7 @@ Click the `Create new` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
+Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version (*if you choose SQLite the middleware will create the datastore automatically*), enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
 
 ![main_queue](../images/main-queue.png)
 
@@ -105,6 +111,12 @@ Once you have entered all information, scroll down, click `Save` and you'll be r
 
 Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
 
+
+
+> **It is important that your queue URL does not use the same port as the URL you used for your SCU in the previous step.**
+
+
+
 ![](../images/queue-config.png)
 
 Once you have finished the configuration click `Save and close` and the new queue should be listed on the subsequent screen of all your client's queues.
@@ -114,6 +126,8 @@ Once you have finished the configuration click `Save and close` and the new queu
 ## 3 - Creating more queues
 
 Repeat task 2 for as many queues as you need for your individual cash terminals.
+
+> **Please make sure each queue URL uses its own unique port which is not shared across the URL of any other queue.**
 
 
 
@@ -189,6 +203,6 @@ The whole rebuild process is fairly quick and will finish in a few seconds. The 
 
 ## Summary
 
-At this point you'll have **one cashbox** with **one SCU** and a **number of queues** all **connected to that SCU**.
+At this point you'll have **one cashbox** with **one SCU** and a **number of queues** (each with an embedded datastore if you chose SQLite) all **connected to that SCU**.
 
 You can now download the launcher for your cashbox and deploy it on your cash register. **The important part now is that your cash register will address the right queue depending on the cash terminal from where it received the request.**
