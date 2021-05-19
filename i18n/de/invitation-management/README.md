@@ -31,7 +31,7 @@ Wie in der [allgemeinen Rollout-Einleitung](../README.md) beschrieben, werden vo
 
 
 
-Grundvoraussetzung für die Verwendung des fiskaltrust.Portals als Rolloutmanagement-Tool ist die Registrierung und Zuordnung der oben genannten Partner im fiskaltrust.Portal (https://portal.fiskaltrust.de/). Hierzu registriert sich als erster der KassenHersteller selbständig und erfasst sein(e) KassenSystem(e) (PosSystem) im Portal. Danach lädt er pro KassenSystem seine dazugehörigen KassenHändler zur Registrierung ein. Für die Einladung verwendet er die Einladungsfunktion im Portal. Die registrierten KassenHändler laden dann als nächstes ebenfalls über das Portal ihre KassenBetreiber ein. Dadurch entsteht die eindeutige, systemweite Zuordnung der KassenBetreiber zu ihrem KassenHändler und der KassenHändler zum KassenSystem des KassenHersteller:
+Grundvoraussetzung für die Verwendung des fiskaltrust.Portals als Rolloutmanagement-Tool ist die Registrierung und Zuordnung der oben genannten Partner im fiskaltrust.Portal (https://portal.fiskaltrust.de). Hierzu registriert sich als erster der KassenHersteller selbständig und erfasst sein(e) KassenSystem(e) (PosSystem) im Portal. Danach lädt er pro KassenSystem seine dazugehörigen KassenHändler zur Registrierung ein. Für die Einladung verwendet er die Einladungsfunktion im Portal. Die registrierten KassenHändler laden dann als nächstes ebenfalls über das fiskaltrust.Portal ihre KassenBetreiber ein. Dadurch entsteht die eindeutige, systemweite Zuordnung der KassenBetreiber zu ihrem KassenHändler und der KassenHändler zum KassenSystem des KassenHersteller:
 
 
 
@@ -40,11 +40,11 @@ Grundvoraussetzung für die Verwendung des fiskaltrust.Portals als Rolloutmanage
 
 
 
-Der Registrierungs- und Einladungs-Prozess sieht wie folgt aus:
+Der Registrierungs- und Einladungs-Prozess ist wie folgt gestaltet:
 
-1. Der KassenHersteller registriert sich im fiskaltrust.Portal, aktiviert die Rolle "KassenHersteller" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust. Dann erfasst er seine KassenSysteme im Portal und sendet mit Hilfe des Portals pro KassenSystem Einladungen zur Zuordnung an seine KassenHändler. Dabei sendet das fiskaltrust.Portal automatisiert die Einladungs-Emails an die KassenHändler.
+1. Der KassenHersteller registriert sich im fiskaltrust.Portal, aktiviert die Rolle "KassenHersteller" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust. Dann erfasst er seine KassenSysteme im Portal und sendet mit Hilfe des fiskaltrust.Portals pro KassenSystem Einladungen zur Zuordnung an seine KassenHändler. Dabei sendet das fiskaltrust.Portal automatisiert die Einladungs-Emails an die KassenHändler.
 2. Der KassenHändler erhält die Einladungs-Email und klickt auf den Link zur Registrierung. Als erstes setzt er sein Passwort, wählt die Partnerrolle: "KassenHändler" und unterzeichnet digital den dazugehörigen Kooperationsvertrag mit fiskaltrust.
-3. Nun kann der KassenHändler seine KassenBetreiber über das Portal einladen und sich zuordnen lassen. Das ist wichtig, denn er muss später den Massenrollout der fiskaltrust.Middleware über das Portal vornehmen.
+3. Nun kann der KassenHändler seine KassenBetreiber über das Portal einladen und sich zuordnen lassen. Das ist wichtig, denn er muss später den Massenrollout der fiskaltrust.Middleware über das fiskaltrust.Portal vornehmen.
 4. Der eingeladene KassenBetreiber erhält daraufhin die Einladungs-Email von fiskaltrust, drückt den Link zur Registrierung, setzt sein Passwort und unterschreibt die Nutzungsvereinbarung, damit die fiskaltrust.Middleware auf seiner Kasse installiert werden darf.
 
 ![Einladungsprozess](images/invitation-process.png "Einladungsprozess")
@@ -308,7 +308,7 @@ Das Protokoll der, in der Vergangenheit versendeten Einladungen, wird angezeigt.
 
 ![Einladungs-Email erneut senden lassen](images/resend-invitation.png "Einladungs-Email erneut senden lassen")
 
-6.3. Es kann auch eine manuelle Mail mit dem Link versendet werden:
+6.3. Link per E-Mail selbst versenden:
 
 Mit Klick auf den Button "Link in die Zwischenablage kopieren" ![operator-invitation-button-copy_link](images/operator-invitation-button-copy_link.png) wird der Link kopiert, mit welchem der KassenBetreiber dem KassenHändler zuzuordnen ist. Danach kann der Link durch den KassenHändler mit eine individuellen Methode (z.B. durch eine Mail aus dem privaten E-Mail-Account eines Mitarbeiters des KassenHändlers) an den KassenBetreiber gesendet werden.
 
