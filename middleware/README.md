@@ -1273,8 +1273,6 @@ When starting the launcher (`fiskaltrust.exe`), which in turn installs the fiska
 
 Now you can deliver the launcher with the customized configuration file to the POSOperator's cash register and start it with `fiskaltrust.exe`. The launcher will automatically download the CashBox (configuration container) identified by the `cashboxid` specified in `fiskaltrust.exe.config` from the fiskaltrust server, then configure and launch the fiskaltrust.Middleware accordingly.
 
-Alternatively to adjusting the configuration in the `fiskaltrust.exe.config` file, you can pass the `cashboxid` and the `accesstoken` as parameters when starting the launcher (`fiskaltrust.exe` ). This specification overwrites the existing configuration in `fiskaltrust.exe.config`. The description of the possible start parameters can be found [here](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
-
 ### High degree of automation
 
 The procedures described above for executing the configuration templates via the API and for the automated rollout of the fiskaltrust.Middleware allow a high degree of rollout automation to be achieved. Only the outlets have to be created manually using the bulk import in the portal.
