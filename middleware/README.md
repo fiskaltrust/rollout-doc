@@ -1266,6 +1266,11 @@ To do this, please specify the values for `cashboxid` and `accesstoken` in the `
   <add key="cashboxid" value="your-cashbox-id" />
   <add key="accesstoken" value="your-access-token" />
 ```
+
+With each restart of the fiskaltrust.Middleware the values from the configuration file `fiskaltrust.exe.config` are read again.
+
+When starting the launcher (`fiskaltrust.exe`), which in turn installs the fiskaltrust.Middleware as a service, you should know that the parameters `cashboxid` and  `accesstoken` can be passed. This specification overwrites the existing configuration from the file `fiskaltrust.exe.config`. Therefore, especially when starting via the `install.cmd` or `test.cmd` file, make sure that the parameters passed here have also been set or adjusted accordingly before starting the launcher (to do this, open the cmd file with an editor and change it accordingly). The description of the possible start parameters can be found [here](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
+
 Now you can deliver the launcher with the customized configuration file to the POSOperator's cash register and start it with `fiskaltrust.exe`. The launcher will automatically download the CashBox (configuration container) identified by the `cashboxid` specified in `fiskaltrust.exe.config` from the fiskaltrust server, then configure and launch the fiskaltrust.Middleware accordingly.
 
 Alternatively to adjusting the configuration in the `fiskaltrust.exe.config` file, you can pass the `cashboxid` and the `accesstoken` as parameters when starting the launcher (`fiskaltrust.exe` ). This specification overwrites the existing configuration in `fiskaltrust.exe.config`. The description of the possible start parameters can be found [here](https://github.com/fiskaltrust/interface-doc/blob/master/doc/general/installation/installation.md).
