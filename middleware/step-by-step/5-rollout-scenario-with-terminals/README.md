@@ -12,7 +12,7 @@ This guide walks you through a shared scenario where you have one cashbox with o
 
 
 
-This configuration contains a number of traditional queue/SCU setups, where each SCU point to one common shared cloud TSE.
+This configuration contains one cashbox with different queues and one single shared SCU.
 
 In this tutorial we will set up
 
