@@ -181,7 +181,7 @@ Scroll to the bottom of the page and click `Save`.
 
 
 
-## 5 - Building the cashboxes
+## 4 - Building the cashboxes
 
 This is an **important step** which you always have to perform after you created a cashbox, respectively, even after **making any sort of change to its configuration**.
 
