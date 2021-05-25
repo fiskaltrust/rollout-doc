@@ -197,4 +197,4 @@ The whole rebuild process is fairly quick and will finish in a few seconds. The 
 
 At this point you'll have a **number of cashboxes**, each with **one queue (and an embedded datastore if you chose SQLite) and one SCU**. The queue will always be **connected to its SCU** and all the SCUs are **configured for the same cloud TSE**.
 
-You can now download the launcher for your master cashbox and deploy it on your master cash register (with the TSE connected). Once that is set up and working, download the launchers of the other cashboxes and deploy them on your other cash registers.
+You can now download the launchers of your choice and deploy them with their cashbox configurations on your cash registers.
