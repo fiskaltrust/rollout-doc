@@ -18,7 +18,7 @@ In this tutorial we will set up
 
 1. an SCU
 2. a number of queues, each for one cash terminal, all using the same previous SCU
-3. a cashbox, containing the SCU and all cashboxes
+3. a cashbox, containing the SCU and all queues
 
 
 
