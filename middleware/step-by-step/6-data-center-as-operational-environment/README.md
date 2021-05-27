@@ -123,6 +123,8 @@ Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;
 
 You'll find more details and examples at https://dev.mysql.com/doc/connector-net/en/connector-net-connections-string.html.
 
+> Please ensure that each queue uses its own unique database, which is not shared with other queues.
+
 #### Queue URL
 
  This URL includes three elements
