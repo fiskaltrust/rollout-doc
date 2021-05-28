@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/step-by-step/1-eine-tse-pro-kassa
+slug: /posdealers/rollout-doc/middleware/step-by-step/1-a-tse-per-cash-register
 title: Leitfaden für "Eine TSE pro Kassa"
 ---
 

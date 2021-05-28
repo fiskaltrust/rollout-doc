@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/step-by-step/3-hardware-tse-an-der-hauptkassa-fuer-mehrere-zusaetzlichen-kassen
+slug: /posdealers/rollout-doc/middleware/step-by-step/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers
 title: Leitfaden für "Hardware TSE an der Hauptkassa für mehrere zusätzliche Kassen"
 ---
 

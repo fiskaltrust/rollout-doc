@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/step-by-step/2-hardware-tses-am-lokalen-server-fuer-mehrere-kassen
+slug: /posdealers/rollout-doc/middleware/step-by-step/2-hardware-tses-at-local-server-for-multiple-cash-registers
 title: Leitfaden für "Hardware-TSE(s) am lokalen Server für mehrere Kassen"
 ---
 
