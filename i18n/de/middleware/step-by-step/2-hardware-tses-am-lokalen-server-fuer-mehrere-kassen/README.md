@@ -121,7 +121,7 @@ Klicken Sie auf `Speichern`.
 
 
 
-## 2 - Erstellung der Queue
+## 3 - Erstellung der Queue
 
 ### Schritt 1 - Navigation im Menü
 
@@ -217,7 +217,7 @@ Wiederholen Sie 3 und 4 für jede zusätzliche Kassa, auf welcher Sie eine Queue i
 
 
 
-## 4 - Cashbox Build
+## 6  - Cashbox Build
 
 Dies ist ein **wichtiger Schritt**, welchen Sie immer durchführen müssen nachdem Sie eine Cashbox erstellt, **oder geändert**, haben.
 
