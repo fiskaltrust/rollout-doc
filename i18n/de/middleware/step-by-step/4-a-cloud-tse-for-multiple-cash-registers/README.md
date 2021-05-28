@@ -1,11 +1,11 @@
 ---
 slug: /posdealers/rollout-doc/middleware/step-by-step/4-a-cloud-tse-for-multiple-cash-registers
-title: Leitfaden für "Eine Cloud-TSE für mehrere Kassen"
+title: Leitfaden fÃ¼r "Eine Cloud-TSE fÃ¼r mehrere Kassen"
 ---
 
-# Eine Cloud-TSE für mehrere Kassen
+# Eine Cloud-TSE fÃ¼r mehrere Kassen
 
-Dieser Leitfaden führt Sie durch ein geteiltes Szenario, in welchem traditionelle Queue/SCU Setups sich eine allgemeine Cloud TSE teilen.
+Dieser Leitfaden fÃ¼hrt Sie durch ein geteiltes Szenario, in welchem traditionelle Queue/SCU Setups sich eine allgemeine Cloud TSE teilen.
 
 
 
@@ -24,17 +24,17 @@ In diesem Tutorial werden wir folgendes aufsetzen
 
 
 ## 0 - Voraussetzungen
-Als Händler stellen Sie bitte sicher, dass Sie zuerst die **Surrogate Funktion** benutzt haben, um in das **Konto Ihres Kunden zu wechseln und Änderungen in diesem Kontext auszuführen**.
+Als HÃ¤ndler stellen Sie bitte sicher, dass Sie zuerst die **Surrogate Funktion** benutzt haben, um in das **Konto Ihres Kunden zu wechseln und Ã„nderungen in diesem Kontext auszufÃ¼hren**.
 
-Dazu klicken Sie bitte linkerhand `PosOperator` - `Übersicht`, suchen das Konto Ihres Kunden und klicken auf den dazugehörigen Namen.
+Dazu klicken Sie bitte linkerhand `PosOperator` - `Ãœbersicht`, suchen das Konto Ihres Kunden und klicken auf den dazugehÃ¶rigen Namen.
 
-*Sollte es nicht möglich sein den Namen anzuklicken, überprüfen Sie bitte das Statusicon und stellen sicher, dass Ihr Kunde bereits aktiv geschalten ist (ansonsten hätte er möglicherweise sein Kontoerstellung noch nicht abgeschlossen).*
+*Sollte es nicht mÃ¶glich sein den Namen anzuklicken, Ã¼berprÃ¼fen Sie bitte das Statusicon und stellen sicher, dass Ihr Kunde bereits aktiv geschalten ist (ansonsten hÃ¤tte er mÃ¶glicherweise sein Kontoerstellung noch nicht abgeschlossen).*
 
 ![](../images/surrogate.png)
 
 
 
-Sobald Sie in das Konto Ihres Kunden eingestiegen sind, erhalten Sie rechts oben einen roten Knopf mit der Aufschrift `Zu Ihrem Account wechseln`. Dies zeigt einerseits an, dass Sie erfolgreich in das Konto Ihres Kunden gewechselt haben, andererseits können Sie damit zu Ihrem eigenen Konto zurückwechseln.
+Sobald Sie in das Konto Ihres Kunden eingestiegen sind, erhalten Sie rechts oben einen roten Knopf mit der Aufschrift `Zu Ihrem Account wechseln`. Dies zeigt einerseits an, dass Sie erfolgreich in das Konto Ihres Kunden gewechselt haben, andererseits kÃ¶nnen Sie damit zu Ihrem eigenen Konto zurÃ¼ckwechseln.
 
 ![](../images/switch-back.png)
 
@@ -43,100 +43,100 @@ Sobald Sie in das Konto Ihres Kunden eingestiegen sind, erhalten Sie rechts oben
 
 
 ## 1 - Erstellung der SCU
-### Schritt 1 - Navigation im Menü
-Wählen Sie linkerhand im Menü `Konfiguration` - `TSE / Signatur-Erstellungs-Einheit`.
+### Schritt 1 - Navigation im MenÃ¼
+WÃ¤hlen Sie linkerhand im MenÃ¼ `Konfiguration` - `TSE / Signatur-Erstellungs-Einheit`.
 
 ![menu_scu](../images/menu-scu.png)
 
-### Schritt 2 - Hinzufügen
+### Schritt 2 - HinzufÃ¼gen
 
-Klicken Sie den `Hinzufügen` Knopf.
+Klicken Sie den `HinzufÃ¼gen` Knopf.
 
 ![scu_add](../images/scu-add.png)
 
 ### Schritt 3 - Eingabe der Details
-Geben Sie einen aussagekräftigen Namen für Ihre neue SCU im Feld Beschreibung an, wählen Sie das korrekte Paket und die neueste Version für Ihre konkrete TSE und wählen Sie das Outlet, in welchem diese SCU aktiv sein soll. Nach Auswahl vom Paket wird das Portal automatisch die aktuellste Paketversion als Standard auswählen.
+Geben Sie einen aussagekrÃ¤ftigen Namen fÃ¼r Ihre neue SCU im Feld Beschreibung an, wÃ¤hlen Sie das korrekte Paket und die neueste Version fÃ¼r Ihre konkrete TSE und wÃ¤hlen Sie das Outlet, in welchem diese SCU aktiv sein soll. Nach Auswahl vom Paket wird das Portal automatisch die aktuellste Paketversion als Standard auswÃ¤hlen.
 
 ![main](../images/main-scu.png)
 
 
 
-Klicken Sie `Speichern` sobald Sie alle Informationen eingegeben habe. Danach werden Sie zu einem Schirm umgeleitet, wo Sie zusätzliche technische Details konfigurieren können. Die Mehrheit dieser Einstellungen ist TSE-spezifisch und erfordert die korrekten Werte für diese Cloud TSE (z.B. im Fall von Fiskaly die richtige TSS ID, den API Key und  den API Secret Key).
-*Eine vollständige Liste aller möglichen Optionen für jeden TSE Typ kann [hier](https://docs.fiskaltrust.cloud/de/docs/posdealers/rollout-doc/middleware#templating-zum-anlegen-von-cashboxen) im Abschnitt `SCU` gefunden werden.*
+Klicken Sie `Speichern` sobald Sie alle Informationen eingegeben habe. Danach werden Sie zu einem Schirm umgeleitet, wo Sie zusÃ¤tzliche technische Details konfigurieren kÃ¶nnen. Die Mehrheit dieser Einstellungen ist TSE-spezifisch und erfordert die korrekten Werte fÃ¼r diese Cloud TSE (z.B. im Fall von Fiskaly die richtige TSS ID, den API Key und  den API Secret Key).
+*Eine vollstÃ¤ndige Liste aller mÃ¶glichen Optionen fÃ¼r jeden TSE Typ kann [hier](https://docs.fiskaltrust.cloud/de/docs/posdealers/rollout-doc/middleware#templating-zum-anlegen-von-cashboxen) im Abschnitt `SCU` gefunden werden.*
 
-Ein weiterer wichtiger Punkt hier ist die URL, unter welcher die SCU für die Queue verfügbar sein soll. Diese besteht aus drei Elementen
+Ein weiterer wichtiger Punkt hier ist die URL, unter welcher die SCU fÃ¼r die Queue verfÃ¼gbar sein soll. Diese besteht aus drei Elementen
 
-1. dem **Kommunikationsprotokoll**. Sie können zwischen gRPC, REST, SOAP und net.pipe wählen
-2. dem **Hostname** (für dieses Beispiel sollte er `localhost` sein)
-3. dem für die SCU spezifischen **URL Pfad**
+1. dem **Kommunikationsprotokoll**. Sie kÃ¶nnen zwischen gRPC, REST, SOAP und net.pipe wÃ¤hlen
+2. dem **Hostname** (fÃ¼r dieses Beispiel sollte er `localhost` sein)
+3. dem fÃ¼r die SCU spezifischen **URL Pfad**
 
-Klicken Sie auf einen der verfügbaren Protokolltypen um automatische eine passende URL dafür zu generieren. Sie können die Standardwerte beibelassen, ausser Sie benötigen hier spezifische Werte.
+Klicken Sie auf einen der verfÃ¼gbaren Protokolltypen um automatische eine passende URL dafÃ¼r zu generieren. Sie kÃ¶nnen die Standardwerte beibelassen, ausser Sie benÃ¶tigen hier spezifische Werte.
 
 
 
-> **Es ist wichtig, dass Ihre SCU URL nicht den gleichen Netzwerk-Port verwendet wie die URL, welche Sie später für Ihre Queue verwenden möchten.**
+> **Es ist wichtig, dass Ihre SCU URL nicht den gleichen Netzwerk-Port verwendet wie die URL, welche Sie spÃ¤ter fÃ¼r Ihre Queue verwenden mÃ¶chten.**
 
 
 
 ![](../images/scu-config.png)
 
-Sobald Sie die Konfiguration abgeschlossen haben scrollen Sie zum Seitenende, klicken `Speichern und schliessen` und die neue SCU sollte auf dem folgenden Schirm unter den SCUs Ihres Kunden aufgeführt sein.
+Sobald Sie die Konfiguration abgeschlossen haben scrollen Sie zum Seitenende, klicken `Speichern und schliessen` und die neue SCU sollte auf dem folgenden Schirm unter den SCUs Ihres Kunden aufgefÃ¼hrt sein.
 
 
 
 ## 2 - Erstellung der Queue
 
-### Schritt 1 - Navigation im Menü
+### Schritt 1 - Navigation im MenÃ¼
 
-Wählen Sie linkerhand im Menü `Konfiguration` - `Queue`.
+WÃ¤hlen Sie linkerhand im MenÃ¼ `Konfiguration` - `Queue`.
 
 ![menu_queue](../images/menu-queue.png)
 
-### Schritt 2 - Hinzufügen
+### Schritt 2 - HinzufÃ¼gen
 
-Klicken Sie den `Hinzufügen` Knopf.
+Klicken Sie den `HinzufÃ¼gen` Knopf.
 
 ![](../images/queue-add.png)
 
 ### Schritt 3 - Eingabe der Details
 
-Geben Sie einen aussagekräftigen Namen für Ihre neue Queue im Feld Beschreibung an, wählen Sie das korrekte Paket für den gewünschten Datenbanktyp, sowie die neueste Version (*wenn Sie SQLite wählen, wird die Middleware die Datenbank automatisch erstellen*), wählen Sie den gewünschten Timeout Wert aus (Standard sind 15.000 Millisekunden), geben Sie die Serien- oder Identifikationsnummer Ihrer Kassa an (*oder wählen Sie `Generieren der Identifikation` aus um das Portal eine eindeutige Nummer generieren zu lassen*) und wählen Sie das Outlet, in welchem diese Queue aktiv ist aus.
+Geben Sie einen aussagekrÃ¤ftigen Namen fÃ¼r Ihre neue Queue im Feld Beschreibung an, wÃ¤hlen Sie das korrekte Paket fÃ¼r den gewÃ¼nschten Datenbanktyp, sowie die neueste Version (*wenn Sie SQLite wÃ¤hlen, wird die Middleware die Datenbank automatisch erstellen*), wÃ¤hlen Sie den gewÃ¼nschten Timeout Wert aus (Standard sind 15.000 Millisekunden), geben Sie die Serien- oder Identifikationsnummer Ihrer Kassa an (*oder wÃ¤hlen Sie `Generieren der Identifikation` aus um das Portal eine eindeutige Nummer generieren zu lassen*) und wÃ¤hlen Sie das Outlet, in welchem diese Queue aktiv ist aus.
 
 ![main_queue](../images/main-queue.png)
 
-Sobald Sie alle Informationen eingetragen haben, scrollen Sie ans untere Ende der Seite und klicken `Speichern`, worauf Sie auf einen Schirm umgeleitet werden, wo Sie zusätzliche technische Details konfigurieren können. Der wichtigste Teil hier, ist die URL unter welcher die Queue IPOS Anfragen von Ihrer Kassa entgegennehmen soll. Diese URL besteht aus drei Elementen
+Sobald Sie alle Informationen eingetragen haben, scrollen Sie ans untere Ende der Seite und klicken `Speichern`, worauf Sie auf einen Schirm umgeleitet werden, wo Sie zusÃ¤tzliche technische Details konfigurieren kÃ¶nnen. Der wichtigste Teil hier, ist die URL unter welcher die Queue IPOS Anfragen von Ihrer Kassa entgegennehmen soll. Diese URL besteht aus drei Elementen
 
-1. dem **Kommunikationsprotokoll**. Sie können zwischen gRPC, REST, SOAP und net.pipe wählen
-2. dem **Hostname** (wählen Sie `localhost` falls die Queue auf derselben Maschine läuft wie Ihr Kassasystem)
-3. dem für die Queue spezifischen **URL Pfad**
+1. dem **Kommunikationsprotokoll**. Sie kÃ¶nnen zwischen gRPC, REST, SOAP und net.pipe wÃ¤hlen
+2. dem **Hostname** (wÃ¤hlen Sie `localhost` falls die Queue auf derselben Maschine lÃ¤uft wie Ihr Kassasystem)
+3. dem fÃ¼r die Queue spezifischen **URL Pfad**
 
-Klicken Sie auf einen der verfügbaren Protokolltypen um automatische eine passende URL dafür zu generieren. Sie können die Standardwerte beibelassen, ausser Sie benötigen hier spezifische Werte.
+Klicken Sie auf einen der verfÃ¼gbaren Protokolltypen um automatische eine passende URL dafÃ¼r zu generieren. Sie kÃ¶nnen die Standardwerte beibelassen, ausser Sie benÃ¶tigen hier spezifische Werte.
 
 
 
-> **Es ist wichtig, dass Ihre Queue URL nicht den gleichen Netzwerk-Port verwendet wie die URL welche Sie im vorigen Schritt für die SCU verwendet haben.**
+> **Es ist wichtig, dass Ihre Queue URL nicht den gleichen Netzwerk-Port verwendet wie die URL welche Sie im vorigen Schritt fÃ¼r die SCU verwendet haben.**
 
 
 
 ![](../images/queue-config.png)
 
-Klicken Sie `Speichern und schliessen` sobald Sie die Konfiguration abgeschlossen haben. Die neue Queue sollte dann auf dem folgenden Schirm unter den Queues Ihres Kunden aufgeführt sein.
+Klicken Sie `Speichern und schliessen` sobald Sie die Konfiguration abgeschlossen haben. Die neue Queue sollte dann auf dem folgenden Schirm unter den Queues Ihres Kunden aufgefÃ¼hrt sein.
 
 
 
 ## 3 - Erstellung der Cashbox
 
-### Schritt 1 - Navigation im Menü
+### Schritt 1 - Navigation im MenÃ¼
 
-Wählen Sie linkerhand im Menü `Konfiguration` - `CashBox`.
+WÃ¤hlen Sie linkerhand im MenÃ¼ `Konfiguration` - `CashBox`.
 
 ![](../images/menu-cashbox.png)
 
 
 
-### Schritt 2 - Hinzufügen
+### Schritt 2 - HinzufÃ¼gen
 
-Klicken Sie den `Hinzufügen` Knopf.
+Klicken Sie den `HinzufÃ¼gen` Knopf.
 
 ![](../images/cashbox-add.png)
 
@@ -144,33 +144,33 @@ Klicken Sie den `Hinzufügen` Knopf.
 
 ### Schritt 3 - Eingabe der Details
 
-Geben Sie einen aussagekräftigen Namen für Ihre neue Cashbox im Feld Beschreibung an und wählen Sie das Outlet, in welchem diese Cashbox aktiv sein soll aus.
+Geben Sie einen aussagekrÃ¤ftigen Namen fÃ¼r Ihre neue Cashbox im Feld Beschreibung an und wÃ¤hlen Sie das Outlet, in welchem diese Cashbox aktiv sein soll aus.
 
 ![](../images/main-cashbox.png)
 
-Klicken Sie auf `Speichern` sobald Sie alle Informationen eingegeben haben und die neue Cashbox sollte auf dem folgenden Schirm unter den Cashboxen Ihres Kunden aufgeführt sein.
+Klicken Sie auf `Speichern` sobald Sie alle Informationen eingegeben haben und die neue Cashbox sollte auf dem folgenden Schirm unter den Cashboxen Ihres Kunden aufgefÃ¼hrt sein.
 
 
 
 ### Schritt 4 - Verbindung der Komponenten
 
-Zurück bei der Liste der Cashbox, klicken Sie den `Bearbeiten per Liste` Knopf.
+ZurÃ¼ck bei der Liste der Cashbox, klicken Sie den `Bearbeiten per Liste` Knopf.
 
 ![](../images/edit-cashbox.png)
 
 
 
-Auf dem folgenden Schirm müssen Sie die vorher erstellte Queue für diese Cashbox auswählen, indem Sie die richtige Zeile anwählen.
+Auf dem folgenden Schirm mÃ¼ssen Sie die vorher erstellte Queue fÃ¼r diese Cashbox auswÃ¤hlen, indem Sie die richtige Zeile anwÃ¤hlen.
 
 ![](../images/select-queue.png)
 
-Zusätzlich müssen Sie die **Queue mit der SCU verbinden**, indem Sie das Pop-Out Icon auf der rechten Seite anklicken. Dies öffnet folgenden Schirm, wo Sie die vorher erstellte SCU auswählen und `Speichern und schliessen` anklicken.
+ZusÃ¤tzlich mÃ¼ssen Sie die **Queue mit der SCU verbinden**, indem Sie das Pop-Out Icon auf der rechten Seite anklicken. Dies Ã¶ffnet folgenden Schirm, wo Sie die vorher erstellte SCU auswÃ¤hlen und `Speichern und schliessen` anklicken.
 
 ![](../images/connect-scu.png)
 
 
 
-Wir haben jetzt die Queue für die Cashbox konfiguriert und sie mit der SCU verbunden, müssen jedoch noch die SCU selbst der Cashbox hinzufügen, indem wir die richtige Zeile anwählen.
+Wir haben jetzt die Queue fÃ¼r die Cashbox konfiguriert und sie mit der SCU verbunden, mÃ¼ssen jedoch noch die SCU selbst der Cashbox hinzufÃ¼gen, indem wir die richtige Zeile anwÃ¤hlen.
 
 ![](../images/select-scu.png)
 
@@ -184,9 +184,9 @@ Scrollen Sie ans untere Ende der Seite und klicken `Speichern`.
 
 ## 4 - Cashbox Build
 
-Dies ist ein **wichtiger Schritt**, welchen Sie immer durchführen müssen nachdem Sie eine Cashbox erstellt, **oder geändert**, haben.
+Dies ist ein **wichtiger Schritt**, welchen Sie immer durchfÃ¼hren mÃ¼ssen nachdem Sie eine Cashbox erstellt, **oder geÃ¤ndert**, haben.
 
-Um ein Build, oder Rebuild, einer Cashbox durchzuführen, öffnen Sie die Liste aller Ihrer Cashboxen und klicken den `Rebuild configuration` Knopf bei der entsprechenden Cashbox, sofern dieser in Orange markiert ist.
+Um ein Build, oder Rebuild, einer Cashbox durchzufÃ¼hren, Ã¶ffnen Sie die Liste aller Ihrer Cashboxen und klicken den `Rebuild configuration` Knopf bei der entsprechenden Cashbox, sofern dieser in Orange markiert ist.
 
 ![](../images/build-cashbox.png)
 
@@ -196,6 +196,6 @@ Der Build Prozess ist relativ schnell und innerhalb weniger Sekunden fertig. Sob
 
 ## Zusammenfassung
 
-An diesem Punkt sollten Sie eine Anzahl an Cashboxen haben, jede mit **einer Queue (und integrierter Datenbank, falls Sie SQLite gewählt haben) und einer SCU**. Diese Queue ist immer **mit ihrer SCU verbunden**, und **jede SCU ist für die selbe Cloud TSE konfiguriert**.
+An diesem Punkt sollten Sie eine Anzahl an Cashboxen haben, jede mit **einer Queue (und integrierter Datenbank, falls Sie SQLite gewÃ¤hlt haben) und einer SCU**. Diese Queue ist immer **mit ihrer SCU verbunden**, und **jede SCU ist fÃ¼r die selbe Cloud TSE konfiguriert**.
 
-Sie können nun die Launcher Ihrer Wahl runterladen und auf allen Kassen installieren.
+Sie kÃ¶nnen nun die Launcher Ihrer Wahl runterladen und auf allen Kassen installieren.
