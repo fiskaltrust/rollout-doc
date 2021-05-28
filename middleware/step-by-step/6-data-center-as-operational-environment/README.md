@@ -123,15 +123,17 @@ Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;
 
 You'll find more details and examples at https://dev.mysql.com/doc/connector-net/en/connector-net-connections-string.html.
 
+> Please ensure that each queue uses its own unique database, which is not shared with other queues.
+
 #### Queue URL
 
  This URL includes three elements
 
 1. the **communication protocol**. In a data centre context it is **important to choose `REST` here**
-2. the **hostname** ( if the queue runs on the same machine as your cash register)
+2. the **hostname** (please choose the appropriate hostname here, under which the queue will be accessible to your POS instance)
 3. the **URL path** specific to this queue and where the cash register will send requests to
 
-Click one of the available protocol types to automatically generate an appropriate URL. You can leave the default values for the URL, unless your setup requires specific settings.
+Click one of the available protocol types to automatically generate an appropriate URL.
 
 Once you have finished the configuration click `Save and close` and the new queue should be listed on the subsequent screen of all your client's queues.
 
