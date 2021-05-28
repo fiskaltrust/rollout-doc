@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/rollout-doc/middleware/step-by-step/4-eine-cloud-tse-fuer-mehrere-kassen
+slug: /posdealers/rollout-doc/middleware/step-by-step/4-a-cloud-tse-for-multiple-cash-registers
 title: Leitfaden für "Eine Cloud-TSE für mehrere Kassen"
 ---
 
