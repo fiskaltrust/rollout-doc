@@ -381,6 +381,7 @@ In diesem Fall müssen nur die Freigaben für die benötigten fiskaltrust Server
 
 - https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
+- https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
@@ -390,6 +391,7 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 
 - https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
+- https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
 - https://kassensichv.io (zur Verbindung der SCU mit der fiskaly Cloud TSE)
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
@@ -400,6 +402,7 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 
 - https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
+- https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
 - https://link.fiskaltrust.cloud/release-notes (redirect für die ft.Middleware zum FCC download)
 - https://downloads.fiskaltrust.cloud/downloads/info.html (zum Download des FCC, der für die Verbindung zur swissbit Cloud TSE benötigt wird)
 - https://fiskal.cloud (zur Verbindung des FCC mit der swissbit Cloud TSE)
