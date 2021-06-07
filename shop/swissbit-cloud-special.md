@@ -24,4 +24,4 @@ Therefore, in this case, the fiskaltrust.Middleware cannot be run on other devic
 When purchasing a Swissbit Cloud TSE as individual product from fiskaltrust there's a limit of one queue per TSE. This limit does not apply when the TSE is part of a carefree bundle. For details, please refer to the product description LINK.
 
 ##### 4. Additional firewall requirements for the necessary internet connection
-Please see our [FAQ's on firewall settings](https://docs.fiskaltrust.cloud/doc/productdescription-de-doc/for-posdealers/04-after-sales/troubleshooting-firewall.html).
+Please see our [FAQs on firewall settings](https://docs.fiskaltrust.cloud/doc/productdescription-de-doc/for-posdealers/04-after-sales/troubleshooting-firewall.html).
