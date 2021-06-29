@@ -479,7 +479,7 @@ address=proxy.example.com;user=proxyuser
 
 
 
-For security reasons it is best not to include the information in the two launcher files `test.cmd` and `install-service.cmd` directly, but instead call `fiskaltrust.exe` once manually and just pass the `-proxy` parameter with the desired values.
+For security reasons it is recommended not to add the `-proxy` parameter directly to the two launcher files `test.cmd` and `install-service.cmd` but instead call `fiskaltrust.exe` once manually and just pass the parameter with the desired values.
 
 ```
 fiskaltrust.exe -proxy="address=192.168.0.1;user=proxyuser;password=proxypw"
