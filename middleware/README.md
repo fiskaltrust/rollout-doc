@@ -439,21 +439,67 @@ If you like to send the output of the script to a file you can do it like in the
 
 ### Using a Proxy
 
-If errors occur when connecting fiskaltrust.Middleware to the outside world, it is possible that the network does not allow direct connections and requires the use of a proxy. When using a proxy, the proxy settings must be provided via the [parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) `-proxy` to the launcher before installing the fiskaltrust service (edit files `install-service.cmd` and `test.cmd` within the launcher directory)
+In case your network requires the use of a proxy for outbound connections, you can specify that via the [`-proxy` parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation#launcher-configuration) of `fiskaltrust.exe`.
 
-The value of the `-proxy` parameter can be used as follows:
+This parameter takes a semicolon-separated connection string with three arguments, specifying the hostname of the proxy and -  optionally - a username and password for authentication.
 
- `-proxy=“address=xxx.xxx.xxx.xxx;user=test;password=pwd123`
+<table>
+	<tr>
+		<th>Value</th>
+		<th>Description</th>
+		<th>Mandatory</th>
+	</tr>
+	<tr>
+		<td>address</td>
+        <td>The URL of the proxy <i>(defaults to HTTP if only a hostname is provided)</i></td>
+		<td>Yes</td>
+	</tr>
+	<tr>
+		<td>user</td>
+		<td>The user which should be used for authentication against the proxy</td>
+		<td>No</td>
+	</tr>
+	<tr>
+		<td>password</td>
+		<td>The password of the proxy user</td>
+		<td>No</td>
+	</tr>
+</table>
 
-When the launcher installs the service, it will add the provided proxy setting into the `fiskaltrust.exe.config` file as a key value pair to be used by the service for subsequent restarts. The value (proxy setting) provided will be stored encrypted in the `fiskaltrust.exe.config` file. It looks like this:
-
-`<add key="proxy" value="encrypted string"/>`
-
-Therefore it can not be changed manually in the config file. This means, that if required to be changed, one needs to change the value of the `-proxy` parameter for the launcher. The service must then be uninstalled and installed again. By doing so, the launcher will apply the change and will also update the config file.
 
 
+**Examples**
 
-#### Proxy and Swissbit Cloud TSE
+
+```
+address=192.168.0.1
+address=192.168.0.1;user=proxyuser;password=proxypw
+address=proxy.example.com;user=proxyuser
+```
+
+
+
+For security reasons it is recommended not to add the `-proxy` parameter directly to the two launcher files `test.cmd` and `install-service.cmd` but instead call `fiskaltrust.exe` once manually and just pass the parameter with the desired values.
+
+```
+fiskaltrust.exe -proxy="address=192.168.0.1;user=proxyuser;password=proxypw"
+```
+
+This call will save the connection information in an **encrypted fashion** in the configuration and immediately return. You can verify the configuration by checking for the following key in `fiskaltrust.exe.config`
+
+```xml
+<add key="proxy" value="[ENCRYPTED-PROXY-INFORMATION]" />
+```
+
+
+
+As this information is encrypted you won't be able to edit the file manually but need to execute the same command again, should you ever need to change it. *You'll only need to edit the file manually in case you want to remove the proxy configuration altogether*.
+
+**Please keep in mind, any changes only take effect after a restart of fiskaltrust.Middleware.**
+
+
+
+### Proxy and Swissbit Cloud TSE
 
 When using the Swissbit Cloud TSE, the proxy settings must additionally be provided in the SCU configuration (portal or template). See: https://docs.fiskaltrust.cloud/docs/product-description/germany/products-and-services/caas/features/basics/tse/swissbit-cloud
 

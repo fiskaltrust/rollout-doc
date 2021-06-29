@@ -440,20 +440,69 @@ Wenn Sie die Ausgabe des Scripts in eine Datei schreiben lassen möchten, dann k
 
 ### Einen Proxy verwenden
 
-Sollten Fehler bei der Verbindung der fiskaltrust.Middleware nach Außen auftreten, so kann es sein, dass das Netzwerk keine direkten Verbindungen erlaubt und stattdessen Zugriff über einen Proxy erfordert. Bei Verwendung eines Proxys müssen die Proxy-Einstellungen über den [Parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) `-proxy` dem Launcher vor der Installation des fiskaltrust Dienstes mitgeteilt werden (Dateien `install-service.cmd` und `test.cmd` im Launcher-Verzeichnis editieren)
+In dem Fall, dass Ihr Netzwerk die Benützung eines Proxys für ausgehende Verbindung erfordert, können Sie dies mit dem [`-proxy` Parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation) von `fiskaltrust.exe` konfigurieren.
 
-Der Wert des Parameters `-proxy` kann wie folgt übergeben werden:
+Dieser Parameter erfordert einen durch Semikolon-separierten Connection String mit drei Argumenten, welche den Hostnamen des Proxys, sowie optional einen Benutzernamen und Passwort für die Authentifikation, angeben.
 
- `-proxy=“address=xxx.xxx.xxx.xxx;user=test;password=pwd123`
+<table>
+	<tr>
+		<th>Wert</th>
+		<th>Beschreibung</th>
+		<th>Obligat</th>
+	</tr>
+	<tr>
+		<td>address</td>
+        <td>Die URL des Proxys <i>(standardmässig HTTP, falls nur ein Hostname angegeben wird)</i></td>
+		<td>Ja</td>
+	</tr>
+	<tr>
+		<td>user</td>
+		<td>Der Name des Benutzers welcher für die Proxyauthentifikation benutzt werden soll</td>
+		<td>Nein</td>
+	</tr>
+	<tr>
+		<td>password</td>
+		<td>Das Passwort des Proxybenutzers</td>
+		<td>Nein</td>
+	</tr>
+</table>
 
-Wenn der Launcher den Dienst installiert, fügt er die angegebene Proxy-Einstellung in die Datei `fiskaltrust.exe.config` als Schlüssel-Wert-Paar ein. Dieser wird vom fiskaltrust Dienst für nachfolgende Neustarts verwendet. Der angegebene Wert (Proxy-Einstellung) wird verschlüsselt in der Datei `fiskaltrust.exe.config` gespeichert. Der Eintrag sieht wie folgt aus:
-
-`<add key="proxy" value="verschlüsselter Wert"/>`
-
-Aufgrund der Verschlüsselung kann der Wert nicht manuell in der Konfigurationsdatei geändert werden. Das bedeutet, dass man den Wert des Parameters `-proxy` für den Launcher ändern muss, falls er geändert werden soll. Der Dienst muss dann deinstalliert und neu installiert werden. Dadurch wird der Launcher die Änderung übernehmen und auch die Konfigurationsdatei aktualisieren.
 
 
-#### Proxy und Swissbit Cloud TSE
+**Beispiele**
+
+
+```
+address=192.168.0.1
+address=192.168.0.1;user=proxyuser;password=proxypw
+address=proxy.example.com;user=proxyuser
+```
+
+
+
+Aus Sicherheitsgründen ist es empfohlen den Connection String nicht direkt in den beiden Launcherdateien `test.cmd` und `install-service.cmd` zu hinterlegen, sondern stattdessen `fiskaltrust.exe` einmalig manuell mit dem `-proxy` Argument und den gewünschten Werten aufzurufen.
+
+```
+fiskaltrust.exe -proxy="address=192.168.0.1;user=proxyuser;password=proxypw"
+```
+
+Dieser Aufruf speichert die Verbindungsinformationen **verschlüsselt** in der Konfiguration ab. Sie können die Konfiguration überprüfen, indem Sie in `fiskaltrust.exe.config` folgenden Wert vorfinden
+
+```xml
+<add key="proxy" value="[ENCRYPTED-PROXY-INFORMATION]" />
+```
+
+
+
+Da diese Information verschlüsselt ist, können Sie sie nicht manuell ändern, sondern müssen dasselbe Kommando erneut ausführen, sollten Sie die Werte ändern müssen.
+
+As this information is encrypted you won't be able to edit the file manually but need to execute the same command again, should you ever need to change it. *You'll only need to edit the file manually in case you want to remove the proxy configuration altogether*.
+
+**Bitte bedenken Sie, dass jegliche Änderungen erst nach einem Neustart von fiskaltrust.Middleware aktiv werden.**
+
+
+
+### Proxy und Swissbit Cloud TSE
 
 Bei Verwendung der Swissbit Cloud TSE müssen die Proxy-Einstellungen zusätzlich in der SCU-Konfiguration (Portal oder Template) angegeben werden. Siehe dazu: https://docs.fiskaltrust.cloud/docs/product-description/germany/products-and-services/caas/features/basics/tse/swissbit-cloud
 
