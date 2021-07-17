@@ -492,11 +492,7 @@ Dieser Aufruf speichert die Verbindungsinformationen **verschlüsselt** in der K
 <add key="proxy" value="[ENCRYPTED-PROXY-INFORMATION]" />
 ```
 
-
-
-Da diese Information verschlüsselt ist, können Sie sie nicht manuell ändern, sondern müssen dasselbe Kommando erneut ausführen, sollten Sie die Werte ändern müssen.
-
-As this information is encrypted you won't be able to edit the file manually but need to execute the same command again, should you ever need to change it. *You'll only need to edit the file manually in case you want to remove the proxy configuration altogether*.
+Da diese Informationen verschlüsselt sind, können Sie sie nicht manuell ändern, sondern müssen dasselbe Kommando erneut ausführen, sollten Sie die Werte ändern müssen. *Sie müssen die Datei nur in dem Fall manuell bearbeiten, falls Sie die Proxykonfiguration entfernen möchten*.
 
 **Bitte bedenken Sie, dass jegliche Änderungen erst nach einem Neustart von fiskaltrust.Middleware aktiv werden.**
 
