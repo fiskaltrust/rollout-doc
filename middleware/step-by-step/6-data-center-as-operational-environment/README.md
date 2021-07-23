@@ -4,7 +4,7 @@ title: Setup Guide for "Central POS in your data centre"
 ---
 
 # Central POS in your data centre
-This guide walks you through a setup where your outlets use cash terminals and charge through a central cash register located in your data centre. On top of that, the data centre will have a separate cashbox (with its own queue and SCU) for each outlet where the POS will route requests to according to its own logic.
+This guide walks you through a setup where your outlets use cash terminals and charge through a central cash register located in your data centre. On top of that, the data centre will have a separate CashBox (with its own queue and SCU) for each outlet where the POS will route requests to according to its own logic.
 
 
 
@@ -58,13 +58,13 @@ Click the `Add` button.
 ![scu_add](../images/scu-add.png)
 
 ### Step 3 - Entering the details
-Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package the portal will automatically pick the most recent version as default.
+Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package the fiskaltrust.Portal will automatically pick the most recent version as default.
 
 ![main](../images/main-scu.png)
 
 
 
-Once you have entered all information, click `Save` and you'll be redirected to where you configure additional technical details. The majority of these settings is TSE specific and you will need to provide the values required by that cloud TSE (e.g. in the case of Fiskaly the TSS ID, the API key, and the API Secret key).
+Once you have entered all information, click `Save` and you'll be redirected to where you configure additional technical details. The majority of these settings is TSE specific and you will need to provide the values required by that cloud TSE (e.g. in the case of fiskaly the TSS ID, the API key, and the API Secret key).
 *A full list of available options for each TSE type can be found [here](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/middleware#templating-to-create-cashboxes) under the section `SCU`.*
 
 **Another important part here is the URL** under which the SCU should be accessible to the queue. This includes three elements
@@ -103,7 +103,7 @@ Click the `Create new` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new queue in the description field, choose `fiskaltrust.Middleware.Queue.MySQL` as backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
+Enter a descriptive name for your new queue in the description field, choose `fiskaltrust.Middleware.Queue.MySQL` as backend storage and the applicable version, enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the fiskaltrust.Portal generate a unique number*), and select the outlet in which this queue should be active.
 
 ![main_queue](../images/main-queue-mysql.png)
 
@@ -143,7 +143,7 @@ Once you have finished the configuration click `Save and close` and the new queu
 
 
 
-## 4 - Creating the Cashbox
+## 4 - Creating the CashBox
 
 ### Step 1 - Navigating
 
@@ -163,11 +163,11 @@ Click the `Add` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new SCU cashbox in the description field and select the outlet in which this queue should be active.
+Enter a descriptive name for your new SCU CashBox in the description field and select the outlet in which this queue should be active.
 
 ![](../images/main-cashbox.png)
 
-Once you have entered all information, click `Save` and the new cashbox should be listed on the subsequent screen of all your client's cashbox.
+Once you have entered all information, click `Save` and the new CashBox should be listed on the subsequent screen of all your client's cashbox.
 
 
 
@@ -189,7 +189,7 @@ Additionally you'll also need to **connect each queue to the SCU** by clicking t
 
 
 
-Now we have added and configured all queues to the cashbox and configured them for the SCU, but we still need to add the SCU itself to the cashbox as well, which we do by ticking  the correct row.
+Now we have added and configured all queues to the CashBox and configured them for the SCU, but we still need to add the SCU itself to the CashBox as well, which we do by ticking  the correct row.
 
 ![](../images/select-scu.png)
 
@@ -219,4 +219,4 @@ The whole rebuild process is fairly quick and will finish in a few seconds. The 
 
 ## Summary
 
-At this point you will have a **number of cashboxes** in your setup (each with its own queue, SCU, and TSE), all of which using the **MySQL database as storage**. The important part now is that your POS system addresses the right queue whenever it receives a request from one of its cash terminals.
+At this point you will have a **number of cashboxes** in your setup (each with its own queue, SCU, and TSE), all of which using the **MySQL database as storage**. The important part now is that your POS-System addresses the right queue whenever it receives a request from one of its cash terminals.

@@ -5,7 +5,7 @@ title: Leitfaden für "Hardware TSE an der Hauptkassa für mehrere zusätzliche 
 
 # Hardware TSE an der Hauptkassa für mehrere zusätzliche Kassen
 
-Dieser Leitfaden führt Sie durch ein geteiltes Szenario wo ein traditionelles Queue/SCU Setup seine SCU mit anderen Queues teilt.
+Dieser Leitfaden führt Sie durch ein geteiltes Szenario wo ein traditionelles Queue/SCU Setup seine fiskaltrust.SCU  mit anderen Queues teilt.
 
 
 
@@ -13,14 +13,14 @@ Dieser Leitfaden führt Sie durch ein geteiltes Szenario wo ein traditionelles Q
 
 
 
-Diese Konfiguration beinhaltet ein traditionelles Queue/SCU Setup. Dazu gibt es auch noch eine Anzahl von zusätzlichen *Queue-only* Cashboxen (für alle anderen Kassen) welche die SCU von der Master Cashbox verwenden.
+Diese Konfiguration beinhaltet ein traditionelles Queue/SCU Setup. Dazu gibt es auch noch eine Anzahl von zusätzlichen *Queue-only* CashBoxen (für alle anderen Kassen) welche die fiskaltrust.SCU  von der Master CashBox verwenden.
 
 In diesem Tutorial werden wir folgendes aufsetzen
 
 1. eine SCU
 2. eine Queue
-3. eine Master Cashbox, welche die SCU und Queue aus den vorigen Schritten kombiniert
-4. zusätzliche Queue-only Cashboxen, welche die SCU der Master Cashbox aus Schritt 3 verwenden
+3. eine Master CashBox, welche die SCU und Queue aus den vorigen Schritten kombiniert
+4. zusätzliche Queue-only CashBoxen, welche die SCU der Master CashBox aus Schritt 3 verwenden
 
 
 
@@ -56,13 +56,13 @@ Klicken Sie den `Hinzufügen` Knopf.
 ![scu_add](../images/scu-add.png)
 
 ### Schritt 3 - Eingabe der Details
-Geben Sie einen aussagekräftigen Namen für Ihre neue SCU im Feld Beschreibung an, wählen Sie das korrekte Paket und die neueste Version für Ihre konkrete TSE und wählen Sie das Outlet, in welchem diese SCU aktiv sein soll. Nach Auswahl vom Paket wird das Portal automatisch die aktuellste Paketversion als Standard auswählen.
+Geben Sie einen aussagekräftigen Namen für Ihre neue SCU im Feld Beschreibung an, wählen Sie das korrekte Paket und die neueste Version für Ihre konkrete TSE und wählen Sie das Outlet, in welchem diese SCU aktiv sein soll. Nach Auswahl vom Paket wird das fiskaltrust.Portal automatisch die aktuellste Paketversion als Standard auswählen.
 
 ![main](../images/main-scu.png)
 
 
 
-Klicken Sie `Speichern` sobald Sie alle Informationen eingegeben habe. Danach werden Sie zu einem Schirm umgeleitet, wo Sie zusätzliche technische Details konfigurieren können. Die Mehrheit dieser Einstellungen ist TSE-spezifisch (*im folgenden Beispiel haben wir eine Fiskaly Cloud TSE* ausgewählt) und erfordert die korrekten Werte für diese TSE (z.B. den richtigen Laufwerksbuchstaben oder den korrekten API Schlüssel).
+Klicken Sie `Speichern` sobald Sie alle Informationen eingegeben habe. Danach werden Sie zu einem Schirm umgeleitet, wo Sie zusätzliche technische Details konfigurieren können. Die Mehrheit dieser Einstellungen ist TSE-spezifisch (*im folgenden Beispiel haben wireine fiskaly cloudbasierende TSE * ausgewählt) und erfordert die korrekten Werte für diese TSE (z.B. den richtigen Laufwerksbuchstaben oder den korrekten API Schlüssel).
 *Eine vollständige Liste aller möglichen Optionen für jeden TSE Typ kann [hier](https://docs.fiskaltrust.cloud/de/docs/posdealers/rollout-doc/middleware#templating-zum-anlegen-von-cashboxen) im Abschnitt `SCU` gefunden werden.*
 
 Ein weiterer wichtiger Punkt hier ist die URL, unter welcher die SCU für die Queue verfügbar sein soll. Diese besteht aus drei Elementen
@@ -101,11 +101,11 @@ Klicken Sie den `Hinzufügen` Knopf.
 
 ### Schritt 3 - Eingabe der Details
 
-Geben Sie einen aussagekräftigen Namen für Ihre neue Queue im Feld Beschreibung an, wählen Sie das korrekte Paket für den gewünschten Datenbanktyp, sowie die neueste Version (*wenn Sie SQLite wählen, wird die Middleware die Datenbank automatisch erstellen*), wählen Sie den gewünschten Timeout Wert aus (Standard sind 15.000 Millisekunden), geben Sie die Serien- oder Identifikationsnummer Ihrer Kassa an (*oder wählen Sie `Generieren der Identifikation` aus um das Portal eine eindeutige Nummer generieren zu lassen*) und wählen Sie das Outlet, in welchem diese Queue aktiv ist aus.
+Geben Sie einen aussagekräftigen Namen für Ihre neue Queue im Feld Beschreibung an, wählen Sie das korrekte Paket für den gewünschten Datenbanktyp, sowie die neueste Version (*wenn Sie SQLite wählen, wird die Middleware die Datenbank automatisch erstellen*), wählen Sie den gewünschten Timeout Wert aus (Standard sind 15.000 Millisekunden), geben Sie die Serien- oder Identifikationsnummer Ihrer Kasse an (*oder wählen Sie `Generieren der Identifikation` aus um das fiskaltrust.Portal eine eindeutige Nummer generieren zu lassen*) und wählen Sie das Outlet, in welchem diese Queue aktiv ist aus.
 
 ![main_queue](../images/main-queue.png)
 
-Sobald Sie alle Informationen eingetragen haben, scrollen Sie ans untere Ende der Seite und klicken `Speichern`, worauf Sie auf einen Schirm umgeleitet werden, wo Sie zusätzliche technische Details konfigurieren können. Der wichtigste Teil hier, ist die URL unter welcher die Queue IPOS Anfragen von Ihrer Kassa entgegennehmen soll. Diese URL besteht aus drei Elementen
+Sobald Sie alle Informationen eingetragen haben, scrollen Sie ans untere Ende der Seite und klicken `Speichern`, worauf Sie auf einen Schirm umgeleitet werden, wo Sie zusätzliche technische Details konfigurieren können. Der wichtigste Teil hier, ist die URL unter welcher die Queue IPOS Anfragen von Ihrer Kasse entgegennehmen soll. Diese URL besteht aus drei Elementen
 
 1. dem **Kommunikationsprotokoll**. Sie können zwischen gRPC, REST, SOAP und net.pipe wählen
 2. dem **Hostname** (wählen Sie `localhost` falls die Queue auf derselben Maschine läuft wie Ihr Kassasystem)
@@ -125,7 +125,7 @@ Klicken Sie `Speichern und schliessen` sobald Sie die Konfiguration abgeschlosse
 
 
 
-## 3 - Erstellung der Cashbox
+## 3 - Erstellung der CashBox
 
 ### Schritt 1 - Navigation im Menü
 
@@ -145,29 +145,29 @@ Klicken Sie den `Hinzufügen` Knopf.
 
 ### Schritt 3 - Eingabe der Details
 
-Geben Sie einen aussagekräftigen Namen für Ihre neue Cashbox im Feld Beschreibung an und wählen Sie das Outlet, in welchem diese Cashbox aktiv sein soll aus.
+Geben Sie einen aussagekräftigen Namen für Ihre neue CashBox im Feld Beschreibung an und wählen Sie das Outlet, in welchem diese CashBox aktiv sein soll aus.
 
 ![](../images/main-cashbox.png)
 
-Klicken Sie auf `Speichern` sobald Sie alle Informationen eingegeben haben und die neue Cashbox sollte auf dem folgenden Schirm unter den Cashboxen Ihres Kunden aufgeführt sein.
+Klicken Sie auf `Speichern` sobald Sie alle Informationen eingegeben haben und die neue CashBox sollte auf dem folgenden Schirm unter den CashBoxen Ihres Kunden aufgeführt sein.
 
 
 
 ### Schritt 4 - Verbindung der Komponenten
 
-Zurück bei der Liste der Cashbox, klicken Sie den `Bearbeiten per Liste` Knopf.
+Zurück bei der Liste der CashBox, klicken Sie den `Bearbeiten per Liste` Knopf.
 
 ![](../images/edit-cashbox.png)
 
 
 
-Auf dem folgenden Schirm müssen Sie die vorher erstellte Queue für diese Cashbox auswählen, indem Sie die richtige Zeile anwählen.
+Auf dem folgenden Schirm müssen Sie die vorher erstellte Queue für diese CashBox auswählen, indem Sie die richtige Zeile anwählen.
 
 ![](../images/select-queue.png)
 
 Zusätzlich müssen Sie die **Queue mit der SCU verbinden**, indem Sie das Pop-Out Icon auf der rechten Seite anklicken. Dies öffnet folgenden Schirm, wo Sie die vorher erstellte SCU auswählen und `Speichern und schliessen` anklicken.
 
-Wir haben jetzt die Queue für die Cashbox konfiguriert und sie mit der SCU verbunden, müssen jedoch noch die SCU selbst der Cashbox hinzufügen, indem wir die richtige Zeile anwählen.
+Wir haben jetzt die Queue für die CashBox konfiguriert und sie mit der SCU verbunden, müssen jedoch noch die SCU selbst der CashBox hinzufügen, indem wir die richtige Zeile anwählen.
 
 ![](../images/select-scu.png)
 
@@ -178,9 +178,9 @@ Scrollen Sie zum unteren Ende der Seite und klicken `Speichern`.
 
 
 
-## 4 - Erstellung von zusätzlichen Queue-only Cashboxen
+## 4 - Erstellung von zusätzlichen Queue-only CashBoxen
 
-Wiederholen Sie diese Schritte für jeder Ihrer zusätzlichen Kassen, welche Sie mit Ihrer Master Cashbox/Kassa verbinden möchten.
+Wiederholen Sie diese Schritte für jeder Ihrer zusätzlichen Kassen, welche Sie mit Ihrer Master CashBox/Kassa verbinden möchten.
 
 
 
@@ -190,23 +190,23 @@ Erstellen Sie eine weitere Queue, genau so wie unter Punkt 2 erwähnt.
 
 
 
-### Step 2 - Erstellung der Cashbox und Verbindung mit der Queue
+### Step 2 - Erstellung der CashBox und Verbindung mit der Queue
 
-Erstellen Sie eine weitere Cashbox, genau so wie unter Punkt 3 erwähnt, fügen dort jedoch ausschliesslich die eben im vorigen Schritt 1 erstellte Queue hinzu und verbinden diese mit der SCU aus der Master Cashbox. **Fügen Sie nicht die SCU der neuen Cashbox hinzu**.
+Erstellen Sie eine weitere CashBox, genau so wie unter Punkt 3 erwähnt, fügen dort jedoch ausschliesslich die eben im vorigen Schritt 1 erstellte Queue hinzu und verbinden diese mit der SCU aus der Master CashBox. **Fügen Sie nicht die SCU der neuen CashBox hinzu**.
 
 
 
 ### Step 3 - Wiederholung für alle weiteren Kassen
 
-Wiederholen Sie die Schritte 1 und 2 für alle weiteren Kassen. **Bitte stellen Sie erneut sicher, dass Sie NICHT die Master SCU denn Cashboxen hinzufügen, sondern ausschliessliche die Queues verbinden.**
+Wiederholen Sie die Schritte 1 und 2 für alle weiteren Kassen. **Bitte stellen Sie erneut sicher, dass Sie NICHT die Master SCU denn CashBoxen hinzufügen, sondern ausschliessliche die Queues verbinden.**
 
 
 
-## 5 - Cashbox Build
+## 5 - CashBox Build
 
-Dies ist ein **wichtiger Schritt**, welchen Sie immer durchführen müssen nachdem Sie eine Cashbox erstellt, **oder geändert**, haben.
+Dies ist ein **wichtiger Schritt**, welchen Sie immer durchführen müssen nachdem Sie eine CashBox erstellt, **oder geändert**, haben.
 
-Um ein Build, oder Rebuild, einer Cashbox durchzuführen, öffnen Sie die Liste aller Ihrer Cashboxen und klicken den `Rebuild configuration` Knopf bei der entsprechenden Cashbox, sofern dieser in Orange markiert ist.
+Um ein Build, oder Rebuild, einer CashBox durchzuführen, öffnen Sie die Liste aller Ihrer CashBoxen und klicken den `Rebuild configuration` Knopf bei der entsprechenden CashBox, sofern dieser in Orange markiert ist.
 
 ![](../images/build-cashbox.png)
 
@@ -218,7 +218,7 @@ Der Build Prozess ist relativ schnell und innerhalb weniger Sekunden fertig. Sob
 
 An diesem Punkt sollten Sie folgende Komponenten haben
 
-* **eine Master Cashbox mit einer Queue (und integrierter Datenbank, falls Sie SQLite gewählt haben) und einer SCU**, verbunden mit Ihrer TSE
-* **eine Anzahl von Cashboxen, jeweils mit einer Queue**, welche Ihre Master SCU verwenden
+* **eine Master CashBox mit einer Queue (und integrierter Datenbank, falls Sie SQLite gewählt haben) und einer SCU**, verbunden mit Ihrer TSE
+* **eine Anzahl von CashBoxen, jeweils mit einer Queue**, welche Ihre Master SCU verwenden
 
-Sie können nur den Launcher Ihrer Wahl für Ihre Master Cashbox herunterladen und auf Ihrer Master Kassa installiere (wo die TSE verbunden ist). Sobald dieses Setup läuft laden Sie die Launcher Ihrer weiteren Cashboxen herunter und installieren sie auf den weiteren Kassen.
+Sie können nur den Launcher Ihrer Wahl für Ihre Master CashBox herunterladen und auf Ihrer Master Kasse installiere (wo die TSE verbunden ist). Sobald dieses Setup läuft laden Sie die Launcher Ihrer weiteren CashBoxen herunter und installieren sie auf den weiteren Kassen.

@@ -5,7 +5,7 @@ title: 'How-To: Switch SCU'
 
 # How-To: Switch SCU
 
-This tutorial describes how to exchange the assignment of a queue to the used SCU with a new SCU in a Cashbox. The feature described here is useful in case you want to exchange a TSE.
+This tutorial describes how to exchange the assignment of a queue to the used fiskaltrust.SCU with a new SCU in a CashBox. The feature described here is useful in case you want to exchange a TSE.
 
 ## Steps
 
@@ -18,15 +18,15 @@ In general, there are two cases for the switch:
 
 In this case, the exchange is straightforward and consists of the following steps:
 
-### SCU is in the same cashbox as the queue
+### SCU is in the same CashBox as the queue
 
-1. Remove old SCU from the Cashbox in the fiskaltrust.Portal
-2. Add the new SCU to the Cashbox
+1. Remove old SCU from the CashBox in the fiskaltrust.Portal
+2. Add the new SCU to the CashBox
 3. Connect the Queue with the new SCU
 4. Publish the configuration update ("Rebuild configuration")
 5. Restart the fiskaltrust.Middleware
 
-### SCU is located in another Cashbox
+### SCU is located in another CashBox
 
 1. Connect the Queue with the new SCU in the fiskaltrust.Portal
 2. Publish the configuration update ("Rebuild configuration")
@@ -38,9 +38,9 @@ In case the Queue is already active, the switch is done in a two-step process. T
 
 To switch the SCU, proceed as follows:
 
-### SCU is in the same Cashbox as the Queue
+### SCU is in the same CashBox as the Queue
 
-1. Add the new SCU to the Cashbox in the fiskaltrust.Portal (do not remove old SCU from the Cashbox)
+1. Add the new SCU to the CashBox in the fiskaltrust.Portal (do not remove old SCU from the CashBox)
 2. Connect the Queue with the new SCU in the fiskaltrust.Portal
 3. Publish the configuration update ("Rebuild configuration")
 4. Restart the fiskaltrust.Middleware
@@ -48,13 +48,13 @@ To switch the SCU, proceed as follows:
 6. Send an initiate-switch receipt to the Queue
 (Note: If this concerns the changing of a hardware TSE and only one slot is available in the computer, change the hardware TSE after sending the initiate-switch receipt - old for new )
 7. Send an finish-switch receipt to the Queue
-8. Remove the old SCU from the Cashbox in the fiskaltrust.Portal
+8. Remove the old SCU from the CashBox in the fiskaltrust.Portal
 9. Publish the configuration update ("Rebuild configuration")
 10. Restart the fiskaltrust.Middleware
 
-The above mentioned receipt types must have been implemented in the POSSystem by the POSCreator. A detailed description of the receipt types mentioned can be found in our [Middleware API documentation](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/germany/reference-tables/ftreceiptcase) for POSCreators.
+The above mentioned receipt types must have been implemented in the POS-System by the PosCreator. A detailed description of the receipt types mentioned can be found in our [Middleware API documentation](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/germany/reference-tables/ftreceiptcase) for PosCreators.
 
-### SCU is located in a different Cashbox
+### SCU is located in a different CashBox
 
 1. Connect the Queue with the new SCU in the fiskaltrust.Portal
 2. Publish the configuration update ("Rebuild configuration")
@@ -64,4 +64,4 @@ The above mentioned receipt types must have been implemented in the POSSystem by
 (Note: If this concerns the changing of a hardware TSE and only one slot is available in the computer, change the hardware TSE after sending the initiate-switch receipt - old for new )
 6. Send an finish-switch receipt to the Queue
 
-The above mentioned receipt types must have been implemented in the POSSystem by the POSCreator. A detailed description of the receipt types mentioned can be found in our [Middleware API documentation](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/germany/reference-tables/ftreceiptcase) for POSCreators.
+The above mentioned receipt types must have been implemented in the POS-System by the PosCreator. A detailed description of the receipt types mentioned can be found in our [Middleware API documentation](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/germany/reference-tables/ftreceiptcase) for PosCreators.

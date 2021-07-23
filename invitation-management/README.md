@@ -12,7 +12,7 @@ title: Invitation Management
 <pre>
 ├── <a href="#introduction" title="Introduction">Introduction</a>
 ├── <a href="#poscreator-invite-posdealer" title="PosCreator invite PosDealer">PosCreator invite PosDealer</a>
-│   └── <a href="#adding-a-possystem" title="Adding a PosSystem">Adding a PosSystem</a>
+│   └── <a href="#adding-a-pos-system" title="Adding a PosSystem">Adding a Pos-System</a>
 │   └── <a href="#inviting-posdealer" title=" Inviting PosDealer">Inviting PosDealer</a>
 ├── <a href="#posdealer-invite-posoperator" title="PosDealer invite PosOperator">PosDealer invite PosOperator</a>
 │   └── <a href="#adding-outlet-for-posoperator" title="Adding outlet for PosOperator">Addiing outlet for PosOperator</a>
@@ -25,12 +25,12 @@ title: Invitation Management
 
 As described in the [Getting Started Guide](../README.md), fiskaltrust distinguishes between three partner roles during the rollout process of fiskaltrust.Middleware: 
 
-- PosCreator (developer of the PosSystem)
+- PosCreator (developer of the POS-System)
 - PosDealer
 - and PosOperator
 
 
-The basic prerequisite for using the fiskaltrust.Portal as a rollout management tool is the registration and assignment of the above-mentioned partners in the fiskaltrust.Portal. For this purpose, the PosCreator registers first and enters his PosSystem(s) in the portal. He then invites his associated PosDealers to register for the corresponding PosSystem. For the invitation, he uses the invitation function in the portal. The registered PosDealers then invite their PosOperators via the portal as well. This creates a unique, system-wide assignment of the PosOperators to their PosDealers and of the PosDealers to the PosSystem of the PosCreator:
+The basic prerequisite for using the fiskaltrust.Portal as a rollout management tool is the registration and assignment of the above-mentioned partners in the fiskaltrust.Portal. For this purpose, the PosCreator registers first and enters his POS-System(s) in the portal. He then invites his associated PosDealers to register for the corresponding POS-System. For the invitation, he uses the invitation function in the portal. The registered PosDealers then invite their PosOperators via the fiskaltrust.Portal as well. This creates a unique, system-wide assignment of the PosOperators to their PosDealers and of the PosDealers to the POS-System of the PosCreator:
 
 
 
@@ -40,9 +40,9 @@ The basic prerequisite for using the fiskaltrust.Portal as a rollout management 
 
 The registration and invitation process is as follows:
 
-1. The PosCreator registers in the fiskaltrust.Portal, activates the role "PosCreator" and digitally signs the associated cooperation agreement with fiskaltrust. Then he registers his PosSystems in the portal and sends invitations for assignment to his PosDealers with the help of the portal (for each registered PosSystem). The fisklatrust.Portal automatically sends the invitation e-mails to the PosDealers.
+1. The PosCreator registers in the fiskaltrust.Portal, activates the role "PosCreator" and digitally signs the associated cooperation agreement with fiskaltrust. Then he registers his POS-Systems in the fiskaltrust.Portal and sends invitations for assignment to his PosDealers with the help of the fiskaltrust.Portal (for each registered POS-System). The fiskaltrust.Portal automatically sends the invitation e-mails to the PosDealers.
 2. The PosDealer receives the invitation e-mail and clicks on the link to register. First, he sets his password, selects the partner role: "PosDealer" and digitally signs the associated cooperation agreement with fiskaltrust.
-3. Now the PosDealer can invite his PosOperators via the portal and have them assigned to him. This is important, because he must later carry out the mass rollout of the fiskaltrust.Middleware via the portal.
+3. Now the PosDealer can invite his PosOperators via the fiskaltrust.Portal and have them assigned to him. This is important, because he must later carry out the mass rollout of the fiskaltrust.Middleware via the portal.
 4. The invited PosOperator then receives the invitation email from fiskaltrust, presses the link to register, sets his password and signs the user agreement so that the fiskaltrust.Middleware can be installed on his cash register.
 
 ![Invitation process](images/invitation-process.png "invitation process")
@@ -57,42 +57,42 @@ In the following, we will describe in detail how the individual steps in the inv
 
 ## PosCreator invite PosDealer
 
-The PosCreators integrate the fiskaltrust.Middleware into their PosSystem. To do this, they must register independently in the fiskaltrust.Portal. Furthermore, PosCreators must select the role "PosCreator" when registering in the fiskaltrust.Portal, sign the contract with fiskaltrust digitally and register their PosSystem(s) in the fiskaltrust.Portal. The registration of the PosSystem is the prerequisite for inviting the PosDealers. Please invite your PosDealers as early as possible, because the PosDealers need enough time to invite the PosOperators and to prepare and test the mass rollout. 
+The PosCreators integrate the fiskaltrust.Middleware into their POS-System. To do this, they must register independently in the fiskaltrust.Portal. Furthermore, PosCreators must select the role "PosCreator" when registering in the fiskaltrust.Portal, sign the contract with fiskaltrust digitally and register their POS-System(s) in the fiskaltrust.Portal. The registration of the POS-System is the prerequisite for inviting the PosDealers. Please invite your PosDealers as early as possible, because the PosDealers need enough time to invite the PosOperators and to prepare and test the mass rollout. 
 
-First you have to enter/register your PosSystem(s) in the fiskaltrust.Portal. Then you can invite the associated PosDealers via the registered PosSystem and thus assign them to the PosSystem.
-
-
-### Adding a PosSystem
-
-As a PosCreator, you can register your PosSystem in the fiskaltrust.Portal as follows:
-
-1. Click on the menu item "PosSystems". You will be taken to the overview of your registered PosSystems:
-
-   
-
-![menu-possystems](images/menu-possystems.png "Overview PosSystems")
+First you have to enter/register your POS-System(s) in the fiskaltrust.Portal. Then you can invite the associated PosDealers via the registered POS-System and thus assign them to the POS-System.
 
 
+### Adding a POS-System
 
-2. Click the "Add" button to add your PosSystem. The registration is done via a form:
+As a PosCreator, you can register your POS-System in the fiskaltrust.Portal as follows:
+
+1. Click on the menu item "POS-Systems". You will be taken to the overview of your registered POS-Systems:
 
    
 
-![add PosSystem](images/add-possystem.png "add PosSystem")
+![menu-POS-Systems](images/menu-POS-Systems.png "Overview POS-Systems")
 
 
 
-3. After entering the data, you can press the "Create" button to add the PosSystem. The overview appears again, in which the entered PosSystem is now displayed:
+2. Click the "Add" button to add your POS-System. The registration is done via a form:
+
+   
+
+![add POS-System](images/add-POS-System.png "add POS-System")
 
 
 
-![Overview PosSystems](images/possystem-in-overview.png "Overview PosSystems")
+3. After entering the data, you can press the "Create" button to add the POS-System. The overview appears again, in which the entered POS-System is now displayed:
+
+
+
+![Overview POS-Systems](images/POS-System-in-overview.png "Overview POS-Systems")
 
 
 
 ### Inviting PosDealer
 
-4. As you can see in the picture above, there are no PosDealer assigned to the newly added PosSystem yet. Press "PosDealer" to go to the PosDealer overview and start inviting PosDealers.
+4. As you can see in the picture above, there are no PosDealer assigned to the newly added POS-System yet. Press "PosDealer" to go to the PosDealer overview and start inviting PosDealers.
 
 
 
@@ -100,7 +100,7 @@ As a PosCreator, you can register your PosSystem in the fiskaltrust.Portal as fo
 
 
 
-5. Now press the "Add" button to enter a PosDealer, invite him and thus assign him to the PosSystem. Next, enter the email address of the PosDealer (email address of the contact person - this will later be used by the PosDealer to log in):
+5. Now press the "Add" button to enter a PosDealer, invite him and thus assign him to the POS-System. Next, enter the email address of the PosDealer (email address of the contact person - this will later be used by the PosDealer to log in):
 
 
 
@@ -108,7 +108,7 @@ As a PosCreator, you can register your PosSystem in the fiskaltrust.Portal as fo
 
 
 
-6. Now press the "Search" button. The portal will search for the PosDealer in the fiskaltrust system. If he is already registered, he can be assigned immediately. Otherwise, a form for entering the PosDealer data will appear:
+6. Now press the "Search" button. The fiskaltrust.Portal will search for the PosDealer in the fiskaltrust system. If he is already registered, he can be assigned immediately. Otherwise, a form for entering the PosDealer data will appear:
 
 
 
@@ -116,7 +116,7 @@ As a PosCreator, you can register your PosSystem in the fiskaltrust.Portal as fo
 
 
 
-7. After entering the data in the form, press the "Add/Invite" button. The portal will then send an invitation email to the PosDealer (to the specified contact person). In the overview, the PosDealer can now be seen as assigned:
+7. After entering the data in the form, press the "Add/Invite" button. The fiskaltrust.Portal will then send an invitation email to the PosDealer (to the specified contact person). In the overview, the PosDealer can now be seen as assigned:
 
 ![pos dealer added](images/dealer-data-added.png "PosDealer added")
 
@@ -140,7 +140,7 @@ As a PosCreator, you can register your PosSystem in the fiskaltrust.Portal as fo
 
 
 
-9. The PosDealer will be redirected to the "Overview page" of his account in the portal and MUST activate the role "PosDealer" here:
+9. The PosDealer will be redirected to the "Overview page" of his account in the fiskaltrust.Portal and MUST activate the role "PosDealer" here:
 
    
 
@@ -175,10 +175,10 @@ As a PosCreator, you can register your PosSystem in the fiskaltrust.Portal as fo
 
 
 
-The PosDealer is now invited and assigned to the PosSystem. He can now start inviting his PosOperators.
+The PosDealer is now invited and assigned to the POS-System. He can now start inviting his PosOperators.
 
 ## PosDealer invite PosOperator
-As a PosDealer, you need to invite your PosOperators to the fiskaltrust.Portal in order to use the portal as a rollout management tool for the fiskaltrust.Middleware and for other fiskaltrust products. 
+As a PosDealer, you need to invite your PosOperators to the fiskaltrust.Portal in order to use the fiskaltrust.Portal as a rollout management tool for the fiskaltrust.Middleware and for other fiskaltrust products. 
 
 You can invite single PosOperators but also many PosOperators at the same time (CSV import).
 
@@ -201,7 +201,7 @@ To invite PosOperators, proceed as follows:
 
 ![Einladungen der Betreiber](images/operator-prepare-invitation.png "Überischt der Einladungen")
 
-3. Also, specify which rights **you** would like to have on the operator's account. You have the following options for this:
+3. Also, specify which rights **you** would like to have on the operator's fiskaltrust.Account. You have the following options for this:
 
 - "Read only": you can log into the operator's account later, but you cannot change anything there.
 - "Read and write": you can log into the operator's account later, read and write everything there, for example, create the configuration of the fiskaltrust.Middelware that you will need during the rollout.
@@ -315,7 +315,7 @@ To add or edit outlets for your PosOperator as a PosDealer, you can proceed as f
 
 1. Log in to the fiskaltrust.Portal with your account (as a PosDealer) and go to PosOperator -> Overview. Press the "Search" button to find the PosOperator:
 
-![Übersicht der Kassenbetreiber](images/search-operator.png "Übersicht der Kassenbetreiber")
+![Übersicht der KassenBetreiber](images/search-operator.png "Übersicht der KassenBetreiber")
 
 
 

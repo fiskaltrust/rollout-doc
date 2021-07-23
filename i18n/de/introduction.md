@@ -53,7 +53,7 @@ Diese Dokumentation ist auf Grundlage der oben beschriebenen Prozesse in folgend
 
 ### Weiteres
 
-Es kommt gelegentlich vor, dass fiskaltrust Partner nicht exakt in die oben beschrieben Partnerrollen hineinpassen, weil sie zum Beispiel KassenHersteller und KassenHändler in einem sind (z.B. KassenHersteller, der selbst den Vertrieb an die Endkunden übernimmt) oder sowohl KassenHersteller als auch KassenBetreiber sind (z.B. ein Franchise Unternehmen). Sollten Sie einer dieser Partner sein und sich nicht vollständig in den hier beschriebenen Partnerrollen wiederfinden, empfehlen wir Ihnen sich dennoch an den beschriebenen Prozess zu halten, indem sie sich selbst im fiskaltrust.Portal einladen, um die fehlende(n) Partnerrolle(n) zu übernehmen und zu kompensieren. Sollten Sie weitere Fragen dazu haben, steht Ihnen gerne unser Support- und Sales-Team unter support@fiskaltrust.de zur Verfügung.
+Es kommt gelegentlich vor, dass fiskaltrust.Partner nicht exakt in die oben beschrieben Partnerrollen hineinpassen, weil sie zum Beispiel KassenHersteller und KassenHändler in einem sind (z.B. KassenHersteller, der selbst den Vertrieb an die Endkunden übernimmt) oder sowohl KassenHersteller als auch KassenBetreiber sind (z.B. ein Franchise Unternehmen). Sollten Sie einer dieser Partner sein und sich nicht vollständig in den hier beschriebenen Partnerrollen wiederfinden, empfehlen wir Ihnen sich dennoch an den beschriebenen Prozess zu halten, indem sie sich selbst im fiskaltrust.Portal einladen, um die fehlende(n) Partnerrolle(n) zu übernehmen und zu kompensieren. Sollten Sie weitere Fragen dazu haben, steht Ihnen gerne unser Support- und Sales-Team unter support@fiskaltrust.de zur Verfügung.
 
 <div className="hide-in-docs">
 
@@ -75,7 +75,7 @@ Es kommt gelegentlich vor, dass fiskaltrust Partner nicht exakt in die oben besc
 │   └── <a href="shop/README.md#%C3%BCbertragung-gekaufter-entitlements-an-die-kassenbetreiber" title="Übertragung gekaufter Entitlements an die KassenBetreiber">Übertragung gekaufter Entitlements an die KassenBetreiber</a>
 │   └── <a href="shop/README.md#lieferoptionen-f%C3%BCr-hardware-tses" title="Lieferoptionen für Hardware TSEs">Lieferoptionen für Hardware TSEs</a>
 │   └── <a href="shop/README.md#swissbit-cloud-tse-auschecken-und-einrichten" title="Swissbit Cloud TSE auschecken und einrichten">Swissbit Cloud TSE auschecken und einrichten</a>
-│   └── <a href="shop/README.md#fiskaly-cloud-tse-auschecken-und-einrichten" title="Fiskaly Cloud TSE auschecken und einrichten">Fiskaly Cloud TSE auschecken und einrichten</a>
+│   └── <a href="shop/README.md#fiskaly-cloud-tse-auschecken-und-einrichten" title="fiskaly Cloud TSE auschecken und einrichten">fiskaly Cloud TSE auschecken und einrichten</a>
 
 </pre>
 </div>

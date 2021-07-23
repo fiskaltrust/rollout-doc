@@ -4,7 +4,7 @@ title: Setup Guide for "A TSE per cash register"
 ---
 
 # A TSE per cash register
-This guide walks you through the most basic setup with one dedicated cashbox (one *Queue* and one *SCU/TSE*) for each cash register.
+This guide walks you through the most basic setup with one dedicated CashBox (one *Queue* and one *SCU/TSE*) for each cash register.
 
 
 
@@ -31,7 +31,7 @@ Once you entered your client's account you will notice a red `Switch to your acc
 
 
 
-## 1 - Creating the SCU
+## 1 - Creating the fiskaltrust.SCU 
 ### Step 1 - Navigating
 Choose `Configuration` - `Signatur creation unit` from the left-hand menu.
 
@@ -44,13 +44,13 @@ Click the `Add` button.
 ![scu_add](../images/scu-add.png)
 
 ### Step 3 - Entering the details
-Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package, the portal will automatically pick the most recent version as default.
+Enter a descriptive name for your new fiskaltrust.SCU  in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this fiskaltrust.SCU  should be active. When selecting a package, the fiskaltrust.Portal will automatically pick the most recent version as default.
 
 ![main](../images/main-scu.png)
 
 
 
-Once you have entered all information, click `Save` and you'll be redirected to a screen where you configure additional technical  details. The majority of these settings is TSE specific (*in the following example we chose a Fiskaly cloud TSE*) and you will need to provide the values required by that TSE (e.g. the right drive letter or the right API key).
+Once you have entered all information, click `Save` and you'll be redirected to a screen where you configure additional technical  details. The majority of these settings is TSE specific (*in the following example we chose a fiskaly cloud TSE*) and you will need to provide the values required by that TSE (e.g. the right drive letter or the right API key).
 *A full list of available options for each TSE type can be found [here](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/middleware#templating-to-create-cashboxes) under the section `SCU`.*
 
 Another important part here is the URL under which the SCU should be accessible to the queue. This includes three elements
@@ -86,7 +86,7 @@ Click the `Create new` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version (*if you choose SQLite the middleware will create the datastore automatically*), enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
+Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version (*if you choose SQLite the middleware will create the datastore automatically*), enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the fiskaltrust.Portal generate a unique number*), and select the outlet in which this queue should be active.
 
 ![main_queue](../images/main-queue.png)
 
@@ -111,8 +111,8 @@ Once you have finished the configuration click `Save and close` and the new queu
 
 
 
-## 3 - Creating the Cashbox
-The cashbox is the central entry point and contains the whole configuration of your middleware instance and will combine and connect the queue with the SCU.
+## 3 - Creating the CashBox
+The CashBox is the central entry point and contains the whole configuration of your middleware instance and will combine and connect the queue with the SCU.
 
 ### Step 1 - Navigating
 
@@ -132,11 +132,11 @@ Click the `Add` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new cashbox in the description field and select the outlet in which this queue should be active. Optionally you can also specify a hostname or IP address which will be used as default for any cashbox-external SCUs.
+Enter a descriptive name for your new CashBox in the description field and select the outlet in which this queue should be active. Optionally you can also specify a hostname or IP address which will be used as default for any cashbox-external SCUs.
 
 ![](../images/main-cashbox.png)
 
-Once you have entered all information, click `Save` and the new cashbox should be listed on the subsequent screen of all your client's cashbox.
+Once you have entered all information, click `Save` and the new CashBox should be listed on the subsequent screen of all your client's cashbox.
 
 
 
@@ -148,7 +148,7 @@ Once you have entered all information, click `Save` and the new cashbox should b
 
 
 
-* On the subsequent screen you need to select the previously added queue for this cashbox by ticking the correct row.
+* On the subsequent screen you need to select the previously added queue for this CashBox by ticking the correct row.
 
 ![](../images/select-queue.png)
 
@@ -158,7 +158,7 @@ Additionally you need to **connect the queue to the SCU**, for which you click t
 
 
 
-* Now we have configured the queue for the cashbox and connected it to the SCU but we still need to add the SCU to the cashbox as well, which we do by ticking the correct row
+* Now we have configured the queue for the CashBox and connected it to the SCU but we still need to add the SCU to the CashBox as well, which we do by ticking the correct row
 
 ![](../images/select-scu.png)
 
@@ -184,4 +184,4 @@ At this point you'll have
 * one **queue** (with an embedded datastore if you chose SQLite), connected to the SCU
 * and one **cashbox**, containing both the SCU and the queue
 
-You can now download the launcher of your choice and deploy the launcher with its cashbox configuration on your cash registers.
+You can now download the launcher of your choice and deploy the launcher with its CashBox configuration on your cash registers.

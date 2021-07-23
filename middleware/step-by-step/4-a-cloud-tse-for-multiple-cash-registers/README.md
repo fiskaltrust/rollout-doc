@@ -23,11 +23,11 @@ In this tutorial we will set up
 
 
 ## 0 - Prerequisites
-As dealer please make sure you have used the **surrogate function** first to **enter your client's account and make subsequent changes in that context**.
+As dealer please make sure you have used the **surrogate function** first to **enter your client's fiskaltrust.Account and make subsequent changes in that context**.
 
 For this, click `PosOperator` - `Overview` in the left-hand menu, search for your client, and click on your client's name.
 
-*Should it not be possible to click the name, please check the status icon and make sure the client is active (otherwise they might not have completed their account setup yet).*
+*Should it not be possible to click the name, please check the status icon and make sure the client is active (otherwise they might not have completed their fiskaltrust.Account setup yet).*
 
 ![](../images/surrogate.png)
 
@@ -54,13 +54,13 @@ Click the `Add` button.
 ![scu_add](../images/scu-add.png)
 
 ### Step 3 - Entering the details
-Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package the portal will automatically pick the most recent version as default.
+Enter a descriptive name for your new SCU in the description field, choose the right package and version applicable to this particular TSE, and select the outlet in which this SCU should be active. When selecting a package the fiskaltrust.Portal will automatically pick the most recent version as default.
 
 ![main](../images/main-scu.png)
 
 
 
-Once you have entered all information, click `Save` and you'll be redirected to where you configure additional technical details. The majority of these settings is TSE specific and you will need to provide the values required by that cloud TSE (e.g. in the case of Fiskaly the TSS ID, the API key, and the API Secret key).
+Once you have entered all information, click `Save` and you'll be redirected to where you configure additional technical details. The majority of these settings is TSE specific and you will need to provide the values required by that cloud TSE (e.g. in the case of fiskaly the TSS ID, the API key, and the API Secret key).
 *A full list of available options for each TSE type can be found [here](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/middleware#templating-to-create-cashboxes) under the section `SCU`.*
 
 **Another important part here is the URL** under which the SCU should be accessible to the queue. This includes three elements
@@ -99,7 +99,7 @@ Click the `Create new` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version (*if you choose SQLite the middleware will create the datastore automatically*), enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the portal generate a unique number*), and select the outlet in which this queue should be active.
+Enter a descriptive name for your new queue in the description field, choose the right package for the desired backend storage and the applicable version (*if you choose SQLite the middleware will create the datastore automatically*), enter the desired timeout (default 15,000 milliseconds), enter the serial or identification number of your cash register (*or tick `Generate Identification` to let the fiskaltrust.Portal generate a unique number*), and select the outlet in which this queue should be active.
 
 ![main_queue](../images/main-queue.png)
 
@@ -123,7 +123,7 @@ Once you have finished the configuration click `Save and close` and the new queu
 
 
 
-## 3 - Creating the Cashbox
+## 3 - Creating the CashBox
 
 ### Step 1 - Navigating
 
@@ -143,11 +143,11 @@ Click the `Add` button.
 
 ### Step 3 - Entering the details
 
-Enter a descriptive name for your new SCU cashbox in the description field and select the outlet in which this queue should be active.
+Enter a descriptive name for your new SCU CashBox in the description field and select the outlet in which this queue should be active.
 
 ![](../images/main-cashbox.png)
 
-Once you have entered all information, click `Save` and the new cashbox should be listed on the subsequent screen of all your client's cashbox.
+Once you have entered all information, click `Save` and the new CashBox should be listed on the subsequent screen of all your client's cashbox.
 
 
 
@@ -159,7 +159,7 @@ Back at the list of your cashboxes click the `Edit by list` button.
 
 
 
-On the subsequent screen you need to select the previously added queue for  this cashbox by ticking the correct row. 
+On the subsequent screen you need to select the previously added queue for  this CashBox by ticking the correct row. 
 
 ![](../images/select-queue.png)
 
@@ -169,7 +169,7 @@ Additionally you need to **connect the queue to the SCU**, for  which you click 
 
 
 
-Now we have configured the queue for the cashbox and connected it to the SCU  but we still need to add the SCU to the cashbox as well, which we do by ticking  the correct row
+Now we have configured the queue for the CashBox and connected it to the SCU  but we still need to add the SCU to the CashBox as well, which we do by ticking  the correct row
 
 ![](../images/select-scu.png)
 
@@ -197,4 +197,4 @@ The whole rebuild process is fairly quick and will finish in a few seconds. The 
 
 At this point you'll have a **number of cashboxes**, each with **one queue (and an embedded datastore if you chose SQLite) and one SCU**. The queue will always be **connected to its SCU** and all the SCUs are **configured for the same cloud TSE**.
 
-You can now download the launchers of your choice and deploy them with their cashbox configurations on your cash registers.
+You can now download the launchers of your choice and deploy them with their CashBox configurations on your cash registers.
