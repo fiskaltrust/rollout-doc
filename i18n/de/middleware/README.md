@@ -391,8 +391,9 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 
 - https://helipad.fiskaltrust.cloud/version (zum Download der CashBox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
-- https://dc.services.visualstudio.com (für die Übermittelung von CashBox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
-- https://kassensichv.io (zur Verbindung der SCU mit der fiskaly Cloud TSE)
+- https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
+- https://kassensichv.io/api/v1 (to connect the SCU to the fiskaly Cloud TSE 1.0)
+- https://kassensichv-middleware.fiskaly.com/api/v2 (to connect the SCU to the fiskaly Cloud TSE 2.0)
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
@@ -492,11 +493,7 @@ Dieser Aufruf speichert die Verbindungsinformationen **verschlüsselt** in der K
 <add key="proxy" value="[ENCRYPTED-PROXY-INFORMATION]" />
 ```
 
-
-
-Da diese Information verschlüsselt ist, können Sie sie nicht manuell ändern, sondern müssen dasselbe Kommando erneut ausführen, sollten Sie die Werte ändern müssen.
-
-As this information is encrypted you won't be able to edit the file manually but need to execute the same command again, should you ever need to change it. *You'll only need to edit the file manually in case you want to remove the proxy configuration altogether*.
+Da diese Informationen verschlüsselt sind, können Sie sie nicht manuell ändern, sondern müssen dasselbe Kommando erneut ausführen, sollten Sie die Werte ändern müssen. *Sie müssen die Datei nur in dem Fall manuell bearbeiten, falls Sie die Proxykonfiguration entfernen möchten*.
 
 **Bitte bedenken Sie, dass jegliche Änderungen erst nach einem Neustart von fiskaltrust.Middleware aktiv werden.**
 
