@@ -392,7 +392,8 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 - https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
 - https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
-- https://kassensichv.io (zur Verbindung der SCU mit der fiskaly Cloud TSE)
+- https://kassensichv.io/api/v1 (to connect the SCU to the fiskaly Cloud TSE 1.0)
+- https://kassensichv-middleware.fiskaly.com/api/v2 (to connect the SCU to the fiskaly Cloud TSE 2.0)
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 

@@ -390,7 +390,8 @@ In this case, the permissions for the required fiskaltrust servers and the permi
 - https://helipad.fiskaltrust.cloud/version (to download the cashbox and upload the receipt data).
 - https://packages.fiskaltrust.cloud/version (to download the required software packages)
 - https://dc.services.visualstudio.com (for error reporting of cashbox related issues, a full list of current IP addresses can be found [here](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses))
-- https://kassensichv.io (to connect the SCU to the fiskaly Cloud TSE)
+- https://kassensichv.io/api/v1 (to connect the SCU to the fiskaly Cloud TSE 1.0)
+- https://kassensichv-middleware.fiskaly.com/api/v2 (to connect the SCU to the fiskaly Cloud TSE 2.0)
 
 must be reachable. To assist with troubleshooting, we provide a [PowerShell Script](#script-to-check-the-firewall-permissions) for you. The script must run without errors.
 
