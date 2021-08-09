@@ -32,7 +32,7 @@ function TestConnection
 	{
 		$WebResponse = Invoke-WebRequest -UseBasicParsing $Server
 	}
-	catch [System.Net.WebException]
+	catch
 	{
 		$WebResponse = $_.Exception.Response
 	}
