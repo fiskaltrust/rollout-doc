@@ -70,7 +70,7 @@ As a PosCreator, you can register your POS-System in the fiskaltrust.Portal as f
 
    
 
-![menu-POS-Systems](images/menu-POS-Systems.png "Overview POS-Systems")
+![menu-POS-Systems](images/menu-possystems.png "Overview POS-Systems")
 
 
 
@@ -78,7 +78,7 @@ As a PosCreator, you can register your POS-System in the fiskaltrust.Portal as f
 
    
 
-![add POS-System](images/add-POS-System.png "add POS-System")
+![add POS-System](images/add-possystem.png "add POS-System")
 
 
 
@@ -86,7 +86,7 @@ As a PosCreator, you can register your POS-System in the fiskaltrust.Portal as f
 
 
 
-![Overview POS-Systems](images/POS-System-in-overview.png "Overview POS-Systems")
+![Overview POS-Systems](images/possystem-in-overview.png "Overview POS-Systems")
 
 
 
