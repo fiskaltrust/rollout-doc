@@ -62,8 +62,11 @@ Diese stehen unter https://www.datev.de/web/de/media/datev_de/pdf/export-imports
 - [ ] Je nach Browsereinstellungen wird das `Fenster zum Passwort setzen` (https://meinfiskal.de/registrierung/passwort-setzen...) **nicht im Vordergrund** angezeigt. <br />Wechseln Sie dann mit <kbd>Alt</kbd> & <kbd>Tab</kbd> zum gewünschten Fenster.
 ![meinFiskal Passwort setzen](images/meinFiskal-Anmelden-Passwort.png "meinFiskal Passwort setzen")
 - [ ] Geben Sie ein Passwort ein und wiederholen Sie dieses im zweiten Feld.
-- [ ] Damit Ihr Passwort sicher genug ist, muss es aus mindestens 8 Zeichen bestehen und Zeichen aus drei der nachfolgend genannten Zeichengruppen enthalten:
-- [ ] Großbuchstaben, Kleinbuchstaben, Zahlen, Sonderzeichen
+- [ ] Damit Ihr Passwort sicher genug ist, muss es aus mindestens acht Zeichen bestehen und Elemente aus drei von vier dieser Zeichengruppen enthalten:
+    - [ ] Großbuchstaben
+    - [ ] Kleinbuchstaben
+    - [ ] Zahlen
+    - [ ] Sonderzeichen
 - [ ] Nach der Meldung namens `Vielen Dank, Passwort erfolgreich geändert!` wechseln Sie zum **Anmelden**.
 - [ ] Bei der Einwilligung in elektronische Werbung (Kundenbefragungen) nach § 7 UWG können Sie <kbd>Zustimmen</kbd> oder <kbd>Überspringen</kbd> wählen.
 ![Einwilligung in elektronische Kundenbefragungen](images/meinFiskal-Anmelden-kundenbefragung.png "Einwilligung in elektronische Kundenbefragungen")
