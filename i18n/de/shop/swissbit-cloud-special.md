@@ -7,7 +7,7 @@ Die Swissbit Cloud TSE hat gegenüber anderen fiskaltrust.Middleware Konfigurati
 
 ##### 1. Die Swissbit Cloud TSE wird mit dem Computer, auf dem sie läuft, fix verbunden (gepaired).
 * Die Swissbit Cloud TSE wird bei der Initialisierung fix mit dem Computer verbunden, auf dem diese durchgeführt wird. Nach der ersten Kommunikation mit den Swissbit Cloud Servern kann diese nur mehr auf genau diesem Computer ausgeführt werden. <br />Bei der fiskaltrust.Middleware wird die Initialisierung mit dem **Startbeleg oder Initial-operation receipt** durchgeführt.
-* Daher kann die fiskaltrust.Middleware in Verbindung mit der Swissbit Cloud TSE auch nicht auf anderen Geräten testhalber ausgeführt werden. Die Installation ist ein einmalig. Wenn etwas nicht nach Ihrem Wunsch eingerichtet und ein Initial-operation receipt versandt wird, muss die Swissbit Cloud TSE erneut erworben werden.
+* Daher kann die fiskaltrust.Middleware in Verbindung mit der Swissbit Cloud TSE auch nicht auf anderen Geräten testhalber ausgeführt werden. Die Installation ist nur einmalig möglich. Wenn etwas nicht nach Ihrem Wunsch eingerichtet und ein Initial-operation receipt versandt wird, muss die Swissbit Cloud TSE erneut erworben werden.
 
 ##### 2. Einschränkungen des Produktes bei Einzelkauf
 * Bei Kauf einer Swissbit Cloud TSE als Einzelprodukt (nicht im Rahmen eines fiskaltrust.Sorglos Pakets) ist die Verwendung auf eine einzelne Queue eingeschränkt. Details entnehmen Sie bitte der Produktbeschreibung im [Download-Bereich vom fiskaltrust.Portal](https://portal.fiskaltrust.de/AccountProfile/Download). 
