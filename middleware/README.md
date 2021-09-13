@@ -456,7 +456,7 @@ This parameter takes a semicolon-separated connection string with three argument
 		<td>Yes</td>
 	</tr>
 	<tr>
-		<td>user</td>
+		<td>username</td>
 		<td>The user which should be used for authentication against the proxy</td>
 		<td>No</td>
 	</tr>
@@ -474,8 +474,8 @@ This parameter takes a semicolon-separated connection string with three argument
 
 ```
 address=192.168.0.1
-address=192.168.0.1;user=proxyuser;password=proxypw
-address=proxy.example.com;user=proxyuser
+address=192.168.0.1;username=proxyuser;password=proxypw
+address=proxy.example.com;username=proxyuser
 ```
 
 
@@ -483,7 +483,7 @@ address=proxy.example.com;user=proxyuser
 For security reasons it is recommended not to add the `-proxy` parameter directly to the two launcher files `test.cmd` and `install-service.cmd` but instead call `fiskaltrust.exe` once manually and just pass the parameter with the desired values.
 
 ```
-fiskaltrust.exe -proxy="address=192.168.0.1;user=proxyuser;password=proxypw"
+fiskaltrust.exe -proxy="address=192.168.0.1;username=proxyuser;password=proxypw"
 ```
 
 This call will save the connection information in an **encrypted fashion** in the configuration and immediately return. You can verify the configuration by checking for the following key in `fiskaltrust.exe.config`

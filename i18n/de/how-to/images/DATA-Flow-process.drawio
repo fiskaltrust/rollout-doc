@@ -1,0 +1,33 @@
+<mxfile host="65bd71144e">
+    <diagram id="_dMCbrwks0jvEyA-nKa9" name="Page-1">
+        <mxGraphModel dx="705" dy="812" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;h1&gt;&lt;font face=&quot;Klavika&quot;&gt;Datenfluss&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;fontColor=#5C5C5C;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="167" y="22" width="119" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;h1 style=&quot;font-size: 19px&quot;&gt;&lt;/h1&gt;&lt;span lang=&quot;EN-GB&quot; style=&quot;line-height: 107% ; font-size: 19px&quot;&gt;&lt;font face=&quot;Roboto&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Roboto&quot;&gt;&lt;h1 style=&quot;font-size: 19px&quot;&gt;Zusammenarbeit mit DATEV&lt;/h1&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;fontColor=#5C5C5C;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="101" y="79" width="251" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=15;endArrow=block;endFill=0;strokeColor=#99DCEB;strokeWidth=5;fillColor=#21C0A5;fontColor=#000099;labelBackgroundColor=#ffffff;" parent="1" source="91" target="92" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="Sicherung im&amp;nbsp;&lt;br&gt;DATEV Kassenarchiv online" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=22;fillStyle=zigzag-line;fontColor=#000099;labelBackgroundColor=#ffffff;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="17" y="358" width="400" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="Verarbeitung im&lt;br&gt;DATEV Kassenbuch online" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=22;fillStyle=zigzag-line;fontColor=#000099;labelBackgroundColor=#ffffff;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="17" y="598" width="400" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=15;endArrow=block;endFill=0;strokeColor=#99DCEB;strokeWidth=5;fillColor=#21C0A5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000099;labelBackgroundColor=#ffffff;" parent="1" source="99" target="91" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="145" y="384" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="99" value="fiskaltrust middleware &lt;br&gt;erzeugt&lt;br&gt;&amp;nbsp;DSFinV-K Export" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=22;fillStyle=zigzag-line;fontColor=#000099;labelBackgroundColor=#ffffff;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="17" y="118" width="400" height="150" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
