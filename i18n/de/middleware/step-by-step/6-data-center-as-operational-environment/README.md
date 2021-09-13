@@ -5,7 +5,7 @@ title: Leitfaden für "Rechenzentrum als Operational Environment"
 
 # Rechenzentrum als Operational Environment
 
-Dieser Leitfaden führt Sie durch ein Setup wo Ihre Outlets Kassenterminals verwenden und durch ein zentrales Kassensystem in Ihrem Rechenzentrum verrechnen. Weiters führt das Kassensystem für jedes Outlet eine eigene Cashbox (mit eigener Queue und SCU), welche jeweils abhängig davon von welchem Outlet die Anfrage gekommen ist, angesprochen wird.
+Dieser Leitfaden führt Sie durch ein Setup wo Ihre Outlets Kassenterminals verwenden und durch ein zentrales Kassensystem in Ihrem Rechenzentrum verrechnen. Weiters führt das Kassensystem für jedes Outlet eine eigene CashBox (mit eigener Queue und fiskaltrust.SCU), welche jeweils abhängig davon von welchem Outlet die Anfrage gekommen ist, angesprochen wird.
 
 
 
@@ -19,7 +19,7 @@ In diesem Tutorial stellen wir zuerst sicher, dass die Datenbank funktionsfähig
 
 1. eine SCU
 2. eine Queue
-3. eine Cashbox, welche die SCU und die Cashbox beinhaltet
+3. eine CashBox, welche die fiskaltrust.SCU  und die CashBox beinhaltet
 
 
 
@@ -46,7 +46,7 @@ Da wir keine integrierte SQLite Datenbank in diesem Tutorial verwenden, vergewis
 
 
 
-## 2 - Erstellung der SCU
+## 2 - Erstellung der fiskaltrust.SCU 
 ### Schritt 1 - Navigation im Menü
 Wählen Sie linkerhand im Menü `Konfiguration` - `TSE / Signatur-Erstellungs-Einheit`.
 
@@ -59,13 +59,13 @@ Klicken Sie den `Hinzufügen` Knopf.
 ![scu_add](../images/scu-add.png)
 
 ### Schritt 3 - Eingabe der Details
-Geben Sie einen aussagekräftigen Namen für Ihre neue SCU im Feld Beschreibung an, wählen Sie das korrekte Paket und die neueste Version für Ihre konkrete TSE und wählen Sie das Outlet, in welchem diese SCU aktiv sein soll. Nach Auswahl vom Paket wird das Portal automatisch die aktuellste Paketversion als Standard auswählen.
+Geben Sie einen aussagekräftigen Namen für Ihre neue fiskaltrust.SCU  im Feld Beschreibung an, wählen Sie das korrekte Paket und die neueste Version für Ihre konkrete TSE und wählen Sie das Outlet, in welchem diese SCU aktiv sein soll. Nach Auswahl vom Paket wird das fiskaltrust.Portal automatisch die aktuellste Paketversion als Standard auswählen.
 
 ![main](../images/main-scu.png)
 
 
 
-Klicken Sie `Speichern` sobald Sie alle Informationen eingegeben habe. Danach werden Sie zu einem Schirm umgeleitet, wo Sie zusätzliche technische Details konfigurieren können. Die Mehrheit dieser Einstellungen ist TSE-spezifisch (*im folgenden Beispiel haben wir eine Fiskaly Cloud TSE* ausgewählt) und erfordert die korrekten Werte für diese TSE (z.B. den richtigen Laufwerksbuchstaben oder den korrekten API Schlüssel).
+Klicken Sie `Speichern` sobald Sie alle Informationen eingegeben habe. Danach werden Sie zu einem Schirm umgeleitet, wo Sie zusätzliche technische Details konfigurieren können. Die Mehrheit dieser Einstellungen ist TSE-spezifisch (*im folgenden Beispiel haben wireine fiskaly cloudbasierende TSE * ausgewählt) und erfordert die korrekten Werte für diese TSE (z.B. den richtigen Laufwerksbuchstaben oder den korrekten API Schlüssel).
 *Eine vollständige Liste aller möglichen Optionen für jeden TSE Typ kann [hier](https://docs.fiskaltrust.cloud/de/docs/posdealers/rollout-doc/middleware#templating-zum-anlegen-von-cashboxen) im Abschnitt `SCU` gefunden werden.*
 
 Ein weiterer wichtiger Punkt hier ist die URL, unter welcher die SCU für die Queue verfügbar sein soll. Diese besteht aus drei Elementen
@@ -104,7 +104,7 @@ Klicken Sie den `Hinzufügen` Knopf.
 
 ### Step 3 - Entering the details
 
-Geben Sie einen aussagekräftigen Namen für Ihre neue Queue im Feld Beschreibung an, wählen Sie `fiskaltrust.Middleware.Queue.MySQL` als gewünschten Datenbanktyp, sowie die neueste Version, wählen Sie den gewünschten Timeout Wert aus (Standard sind 15.000 Millisekunden), geben Sie die Serien- oder Identifikationsnummer Ihrer Kassa an (*oder wählen Sie `Generieren der Identifikation` aus um das Portal eine eindeutige Nummer generieren zu lassen*) und wählen Sie das Outlet, in welchem diese Queue aktiv ist aus.
+Geben Sie einen aussagekräftigen Namen für Ihre neue Queue im Feld Beschreibung an, wählen Sie `fiskaltrust.Middleware.Queue.MySQL` als gewünschten Datenbanktyp, sowie die neueste Version, wählen Sie den gewünschten Timeout Wert aus (Standard sind 15.000 Millisekunden), geben Sie die Serien- oder Identifikationsnummer Ihrer Kasse an (*oder wählen Sie `Generieren der Identifikation` aus um das fiskaltrust.Portal eine eindeutige Nummer generieren zu lassen*) und wählen Sie das Outlet, in welchem diese Queue aktiv ist aus.
 
 ![main_queue](../images/main-queue-mysql.png)
 
@@ -112,7 +112,7 @@ Sobald Sie alle Informationen eingetragen haben, scrollen Sie ans untere Ende de
 
 ![](../images/queue-config-mysql.png)
 
-Der wichtigste Teil hier der MySQL Connection String und die URL unter welcher die Queue IPOS Requests von Ihrer Kassa entgegenehmen soll.
+Der wichtigste Teil hier der MySQL Connection String und die URL unter welcher die Queue IPOS Requests von Ihrer Kasse entgegenehmen soll.
 
 #### MySQL Connection String
 
@@ -144,7 +144,7 @@ Klicken Sie `Speichern und schliessen` sobald Sie die Konfiguration abgeschlosse
 
 
 
-## 4 - Erstellung der Cashbox
+## 4 - Erstellung der CashBox
 
 ### Schritt 1 - Navigation im Menü
 
@@ -164,23 +164,23 @@ Klicken Sie den `Hinzufügen` Knopf.
 
 ### Schritt 3 - Eingabe der Details
 
-Geben Sie einen aussagekräftigen Namen für Ihre neue Cashbox im Feld Beschreibung an und wählen Sie das Outlet, in welchem diese Cashbox aktiv sein soll aus.
+Geben Sie einen aussagekräftigen Namen für Ihre neue CashBox im Feld Beschreibung an und wählen Sie das Outlet, in welchem diese CashBox aktiv sein soll aus.
 
 ![](../images/main-cashbox.png)
 
-Klicken Sie auf `Speichern` sobald Sie alle Informationen eingegeben haben und die neue Cashbox sollte auf dem folgenden Schirm unter den Cashboxen Ihres Kunden aufgeführt sein.
+Klicken Sie auf `Speichern` sobald Sie alle Informationen eingegeben haben und die neue CashBox sollte auf dem folgenden Schirm unter den CashBoxen Ihres Kunden aufgeführt sein.
 
 
 
 ### Schritt 4 - Verbindung der Komponenten
 
-Zurück bei der Liste der Cashbox, klicken Sie den `Bearbeiten per Liste` Knopf.
+Zurück bei der Liste der CashBox, klicken Sie den `Bearbeiten per Liste` Knopf.
 
 ![](../images/edit-cashbox.png)
 
 
 
-Auf dem folgenden Schirm müssen Sie die vorher erstellte Queue für diese Cashbox auswählen, indem Sie die richtige Zeile anwählen.
+Auf dem folgenden Schirm müssen Sie die vorher erstellte Queue für diese CashBox auswählen, indem Sie die richtige Zeile anwählen.
 
 ![](../images/select-queue.png)
 
@@ -190,7 +190,7 @@ Zusätzlich müssen Sie die **Queue mit der SCU verbinden**, indem Sie das Pop-O
 
 
 
-Wir haben jetzt die Queue für die Cashbox konfiguriert und sie mit der SCU verbunden, müssen jedoch noch die SCU selbst der Cashbox hinzufügen, indem wir die richtige Zeile anwählen.
+Wir haben jetzt die Queue für die CashBox konfiguriert und sie mit der SCU verbunden, müssen jedoch noch die SCU selbst der CashBox hinzufügen, indem wir die richtige Zeile anwählen.
 
 ![](../images/select-scu.png)
 
@@ -202,15 +202,15 @@ Scrollen Sie an das untere Ende der Seite und klicken `Speichern`.
 
 ## 5 - Weitere Outlets
 
-Wiederholen Sie die Punkte 2 bis 4 für jedes weitere Outlet, welches Sie konfigurieren möchten und wo Sie Ihrem POS System eine Queue zur Verfügung stellen möchten.
+Wiederholen Sie die Punkte 2 bis 4 für jedes weitere Outlet, welches Sie konfigurieren möchten und wo Sie Ihrem POS-System eine Queue zur Verfügung stellen möchten.
 
 
 
-## 6 - Cashbox Build
+## 6 - CashBox Build
 
-Dies ist ein **wichtiger Schritt**, welchen Sie immer durchführen müssen nachdem Sie eine Cashbox erstellt, **oder geändert**, haben.
+Dies ist ein **wichtiger Schritt**, welchen Sie immer durchführen müssen nachdem Sie eine CashBox erstellt, **oder geändert**, haben.
 
-Um ein Build, oder Rebuild, einer Cashbox durchzuführen, öffnen Sie die Liste aller Ihrer Cashboxen und klicken den `Rebuild configuration` Knopf bei der entsprechenden Cashbox, sofern dieser in Orange markiert ist.
+Um ein Build, oder Rebuild, einer CashBox durchzuführen, öffnen Sie die Liste aller Ihrer CashBoxen und klicken den `Rebuild configuration` Knopf bei der entsprechenden CashBox, sofern dieser in Orange markiert ist.
 
 ![](../images/build-cashbox.png)
 
@@ -220,4 +220,4 @@ Der Build Prozess ist relativ schnell und innerhalb weniger Sekunden fertig. Sob
 
 ## Zusammenfassung
 
-An diesem Punkt sollten Sie über eine Anzahl von Cashboxen für Ihr Setup verfügen (jede mit ihrer eigenen Queue, SCU und TSE), wo jede Queue ihre **eigene MySQL Datenbank verwendet**. Nun ist es wichtig, dass Ihr POS System so konfiguriert ist, dass es jeweils die richtige Queue anspricht, wenn es einen Request von seinen Kassenterminals erhält.
+An diesem Punkt sollten Sie über eine Anzahl von CashBoxen für Ihr Setup verfügen (jede mit ihrer eigenen Queue, SCU und TSE), wo jede Queue ihre **eigene MySQL Datenbank verwendet**. Nun ist es wichtig, dass Ihr POS-System so konfiguriert ist, dass es jeweils die richtige Queue anspricht, wenn es einen Request von seinen Kassenterminals erhält.

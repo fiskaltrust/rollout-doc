@@ -13,7 +13,7 @@ title: Rollout der fiskaltrust.Middleware
 ├── <a href="#einleitung" title="Einleitung">Einleitung</a>
 ├── <a href="#konfiguration-der-fiskaltrustmiddleware" title="Konfiguration der fiskaltrust.Middleware">Konfiguration der fiskaltrust.Middleware</a>
 │   └── <a href="#aufbau-der-fiskaltrustmiddleware" title="Aufbau der fiskaltrust.Middleware">Aufbau der fiskaltrust.Middleware</a>
-│   └── <a href="#die-cashbox-als-konfigurationscontainer" title="Die CashBox als Konfigurationscontainer">Die CashBox als Konfigurationscontainer</a>
+│   └── <a href="#die-CashBox-als-konfigurationscontainer" title="Die fiskaltrust.CashBox als Konfigurationscontainer">Die fiskaltrust.CashBox als Konfigurationscontainer</a>
 │       └── <a href="#konfiguration-der-queue" title="Konfiguration der Queue">Konfiguration der Queue</a>
 │       └── <a href="#konfiguration-der-scu" title="Konfiguration der SCU">Konfiguration der SCU</a>
 │   └── <a href="#cashbox-manuell-über-das-fiskaltrustportal-anlegen" title="CashBox manuell über das fiskaltrust.Portal anlegen">CashBox manuell über das fiskaltrust.Portal anlegen</a>
@@ -43,7 +43,7 @@ title: Rollout der fiskaltrust.Middleware
 ├── <a href="#automatisierung-des-rollout" title="Rollout Szenarien">Automatisierung des Rollout</a>
 │   └── <a href="#einleitung-2" title="Einleitung">Einleitung</a>
 │   └── <a href="#überblick-manueller-prozess" title="Überblick manueller Prozess">Überblick manueller Prozess</a>
-│   └── <a href="#templating-zum-anlegen-von-cashboxen" title="Templating zum Anlegen von CashBoxen">Templating zum Anlegen von CashBoxen</a>
+│   └── <a href="#templating-zum-anlegen-von-cashboxen" title="Templating zum Anlegen von fiskaltrust.CashBoxen">Templating zum Anlegen von CashBoxen</a>
 │   └── <a href="#automatisierter-rollout-der-fiskaltrustmiddleware" title="Automatisierter Rollout der fiskaltrust.Middleware">Automatisierter Rollout der fiskaltrust.Middleware</a>
 │   └── <a href="#hoher-automatisierungsgrad" title="Hoher Automatisierungsgrad">Hoher Automatisierungsgrad</a>
 
@@ -66,7 +66,7 @@ Die Konfiguration der fiskaltrust.Middleware kann manuell über das fiskaltrust.
 
 ### Aufbau der fiskaltrust.Middleware
 
-Die fiskaltrust.Middleware ist modular aufgebaut und besteht aus mehreren Komponenten. Die wichtigsten Komponenten sind die **Queue** und die **SCU** (Signaturerstellungseinheit). Des Weiteren können auch sogenannte **Helper** zum Einsatz kommen, wie zum Beispiel der Helipad-Helper, der für den regelmäßigen Upload der verarbeiteten Daten in die fiskaltrust.Cloud verantwortlich ist. Folgende Illustration zeigt wie die Queue und die SCU zum Einsatz kommen:
+Die fiskaltrust.Middleware ist modular aufgebaut und besteht aus mehreren Komponenten. Die wichtigsten Komponenten sind die **Queue** und die **SCU** (Signaturerstellungseinheit). Des Weiteren können auch sogenannte **Helper** zum Einsatz kommen, wie zum Beispiel der Helipad-Helper, der für den regelmäßigen Upload der verarbeiteten Daten in die fiskaltrust.Cloud verantwortlich ist. Folgende Illustration zeigt wie die Queue und die fiskaltrust.SCU zum Einsatz kommen:
 
 
 
@@ -75,7 +75,7 @@ Die fiskaltrust.Middleware ist modular aufgebaut und besteht aus mehreren Kompon
 
 
 
-Die Queue ist die Komponente der fiskaltrust.Middleware, mit der das KassenSystem kommuniziert. Dafür stellt die Queue eine länderübergreifend gleiche Schnittstelle zur Verfügung, die sogenannte IPOS Schnittstelle (IPOS Interface). Die Art der Kommunikation mit der Queue wird vom KassenHersteller bei der Implementierung des KassenSystems gewählt. So kann z.B. REST, grpc oder WCF zum Einsatz kommen. Die IPOS Schnittstelle stellt dem KassenSystem drei Funktionen zur Verfügung:
+Die Queue ist die Komponente der fiskaltrust.Middleware, mit der das KassenSystem kommuniziert. Dafür stellt die Queue eine länderübergreifend gleiche Schnittstelle zur Verfügung, die sogenannte fiskaltrust.Ipos Schnittstelle (IPOS Interface). Die Art der Kommunikation mit der Queue wird vom KassenHersteller bei der Implementierung des KassenSystems gewählt. So kann z.B. REST, grpc oder WCF zum Einsatz kommen. Die IPOS Schnittstelle stellt dem KassenSystem drei Funktionen zur Verfügung:
 
 - `echo` - zur Prüfung der Verfügbarkeit der Queue
 - `sign` - zum Signieren von Belegdaten, sowie zum Ausführen von Funktionalität über Sonderbelege (z.B. Initialisierung-Beleg, Tages-Abschluss-Beleg oder Nullbeleg)
@@ -83,11 +83,11 @@ Die Queue ist die Komponente der fiskaltrust.Middleware, mit der das KassenSyste
 
 Die Queue erhält also Anfragen vom KassenSystem und verarbeitet diese. Sie ist verantwortlich für die Erstellung der Belegnummer, für die Verkettung der Anfragen und für die Persistenz der Daten.
 
-Für die Signierung der Daten ist die fiskaltrust.Middleware-Komponente SCU (Signaturerstellungseinheit) verantwortlich. Dabei werden die zu signierenden Daten von der Queue an die SCU gesendet, die, in der deutschen Variante, wiederum mit einer TSE kommuniziert. Die TSE nimmt schlussendlich die Signierung der Daten vor. Die signierten Daten und alle dazugehörigen Informationen werden dann von der SCU zurück an die Queue gesendet. Die Queue persistiert die Daten und baut die Antwort auf, die an das KassenSystem zurückgegeben wird. In dieser Antwort befinden sich wichtige Angaben, die vom KassenSystem auf den Beleg gedruckt werden müssen.
+Für die Signierung der Daten ist eine Middleware-Komponente namens fiskaltrust.SCU  (Signaturerstellungseinheit) verantwortlich. Dabei werden die zu signierenden Daten von der Queue an die fiskaltrust.SCU  gesendet, die, in der deutschen Variante, wiederum mit einer TSE kommuniziert. Die TSE nimmt schlussendlich die Signierung der Daten vor. Die signierten Daten und alle dazugehörigen Informationen werden dann von der SCU zurück an die Queue gesendet. Die Queue persistiert die Daten und baut die Antwort auf, die an das KassenSystem zurückgegeben wird. In dieser Antwort befinden sich wichtige Angaben, die vom KassenSystem auf den Beleg gedruckt werden müssen.
 
-### Die CashBox als Konfigurationscontainer
+### Die fiskaltrust.CashBox als Konfigurationscontainer
 
-Die Konfiguration einer fiskaltrust.Middleware-Instanz wird über eine sogenannte **CashBox** vorgenommen. Die CashBox ist ein Konfigurationscontainer. Er beinhaltet die Konfigurationen der in der fiskaltrust.Middleware-Instanz zum Einsatz kommenden fiskaltrust.Middleware Komponenten (z.B. Queue, SCU). Im folgenden Beispiel wird eine CashBox dargestellt, die die Konfiguration einer Queue und die Konfiguration einer SCU beinhaltet:
+Die Konfiguration einer fiskaltrust.Middleware-Instanz wird über eine sogenannte **CashBox** vorgenommen. Die CashBox ist ein Konfigurationscontainer. Er beinhaltet die Konfigurationen der in der fiskaltrust.Middleware-Instanz zum Einsatz kommenden fiskaltrust.Middleware Komponenten (z.B. Queue, fiskaltrust.SCU). Im folgenden Beispiel wird eine CashBox dargestellt, die die Konfiguration einer Queue und die Konfiguration einer SCU beinhaltet:
 
 
 
@@ -101,7 +101,7 @@ Aber was genau müssen wir für die Queue und für die SCU konfigurieren?
 
 #### Konfiguration der Queue
 
-Wie bereits vorhin erwähnt, ist die Queue die Komponente der fiskaltrust.Middleware, welche über die IPOS Schnittstelle dem KassenSystem für Anfragen zur Verfügung steht. Zudem ist die Queue für die Persistenz der verarbeiteten Daten verantwortlich. Und genau das sind die zwei Punkte, die wir hier konfigurieren müssen:
+Wie bereits vorhin erwähnt, ist die Queue die Komponente der fiskaltrust.Middleware, welche über die fiskaltrust.Ipos Schnittstelle dem KassenSystem für Anfragen zur Verfügung steht. Zudem ist die Queue für die Persistenz der verarbeiteten Daten verantwortlich. Und genau das sind die zwei Punkte, die wir hier konfigurieren müssen:
 
 1. Wie und wo genau soll die Queue für das KassenSystem erreichbar sein? (also z.B. per `grpc` auf `localhost:1234`)
 2. Wo genau soll die Queue die Daten speichern? (also z.B. in eine MySql Datenbank mit dem connectionstring: "xyz")
@@ -110,23 +110,23 @@ Wie die Kommunikation stattfinden soll, also z.B. per `grpc`, entscheidet der Ka
 
 #### Konfiguration der SCU
 
-Die SCU ist für die Erzeugung der Signaturen verantwortlich. Sie bekommt dabei die zu signierenden Daten von der Queue und übernimmt die Kommunikation mit einer ihr zugewiesenen TSE um die Daten signieren zu lassen. Auch bei der SCU sind also zwei Konfigurationsangaben vorzunehmen:
+Die fiskaltrust.SCU ist für die Erzeugung der Signaturen verantwortlich. Sie bekommt dabei die zu signierenden Daten von der Queue und übernimmt die Kommunikation mit einer ihr zugewiesenen TSE um die Daten signieren zu lassen. Auch bei der SCU sind also zwei Konfigurationsangaben vorzunehmen:
 
 1. Zum einen muss die Queue wissen, wie und wo sie die SCU erreichen kann
  (also z.B. über `grpc` auf `localhost:5678`).
 
-2. Und zum anderen muss die SCU wissen auf welche TSE sie zugreifen soll und wo sich diese befindet
+2. Und zum anderen muss die SCU wissen, auf welche TSE sie zugreifen soll und wo sich diese befindet
  (z.B. Swissbit - USB - TSE im Laufwerk `E:`).
 
-Sie werden sich nun sicherlich fragen, warum wir hier konfigurieren müssen, wie die SCU von der Queue erreichbar sein soll, wenn die Queue und SCU doch interne Komponenten der fiskaltrust.Middleware sind. Ist der Queue nicht schon bekannt, wie sie die SCU erreichen kann? Nun, die Antwort liegt in der Flexibilität des fiskaltrust.Middleware, denn eine Instanz der fiskaltrust.Middleware betreibt nur genau die Komponenten, die in ihrer CashBox angegeben werden. So kann zum Beispiel erreicht werden dass sich drei Kassen eine SCU und damit eine Hardware-TSE teilen können:
+Sie werden sich nun sicherlich fragen, warum wir hier konfigurieren müssen, wie die SCU von der Queue erreichbar sein soll, wenn die Queue und SCU doch interne Komponenten der fiskaltrust.Middleware sind. Ist der Queue nicht schon bekannt, wie sie die SCU erreichen kann? Nun, die Antwort liegt in der Flexibilität des fiskaltrust.Middleware, denn eine Instanz der fiskaltrust.Middleware betreibt nur genau die Komponenten, die in ihrer fiskaltrust.CashBox angegeben werden. So kann zum Beispiel erreicht werden dass sich drei Kassen eine SCU und damit eine Hardware-TSE teilen können:
 
 ![Flexibilität der Middleware](images/cash-register-as-sever-hw-tse.png "Flexibilität der Middleware")
 
-Auf jeder Kasse läuft eine Instanz der fiskaltrust.Middleware, die durch ihre eigene CashBox konfiguriert wird. Die CashBoxen der oberen und der unteren Kasse beinhalten nur die Konfiguration einer Queue. Die CashBox der mittleren Kasse beinhaltet die Konfiguration einer Queue und einer SCU. Damit die SCU aus der mittleren Kasse (z.B. Hauptkasse) für die anderen beiden Kassen bzw. Queues erreichbar ist, müssen wir in der Queue Konfiguration angeben wie und wo die SCU erreichbar ist (und natürlich den entsprechenden Port freigeben). Um sicherzustellen, dass eine Queue sich mit der richtigen SCU verbindet, müssen wir diese Verbindungangabe beim Erstellen der CashBox für die Queue vornehmen. 
+Auf jeder Kasse läuft eine Instanz der fiskaltrust.Middleware, die durch ihre eigene fiskaltrust.CashBox konfiguriert wird. Die CashBoxen der oberen und der unteren Kasse beinhalten nur die Konfiguration einer Queue. Die CashBox der mittleren Kasse beinhaltet die Konfiguration einer Queue und einer SCU. Damit die SCU aus der mittleren Kasse (z.B. Hauptkasse) für die anderen beiden Kassen bzw. Queues erreichbar ist, müssen wir in der Queue Konfiguration angeben wie und wo die SCU erreichbar ist (und natürlich den entsprechenden Port freigeben). Um sicherzustellen, dass eine Queue sich mit der richtigen SCU verbindet, müssen wir diese Verbindungangabe beim Erstellen der CashBox für die Queue vornehmen. 
 
-### CashBox manuell über das fiskaltrust.Portal anlegen
+### fiskaltrust.CashBox manuell über das fiskaltrust.Portal anlegen
 
-Jede Instanz der fiskaltrust.Middleware muss mit Hilfe einer CashBox konfiguriert werden. Eine solche CashBox kann manuell über das fiskaltrust.Portal angelegt werden oder automatisiert über eine API. In diesem Kapitel zeigen wir Ihnen beispielhaft wie eine CashBox über das fiskaltrust.Portal angelegt wird. Dazu gehen wir von folgenden Szenario aus:
+Jede Instanz der fiskaltrust.Middleware muss mit Hilfe einer fiskaltrust.CashBox konfiguriert werden. Eine solche CashBox kann manuell über das fiskaltrust.Portal angelegt werden oder automatisiert über eine API. In diesem Kapitel zeigen wir Ihnen beispielhaft wie eine CashBox über das fiskaltrust.Portal angelegt wird. Dazu gehen wir von folgenden Szenario aus:
 
 ![Szenario-CashBox-Queue-SCU](images/cash-register-queue-scu-tse.png "Szenario CashBox mit Queue und SCU")
 
@@ -268,7 +268,7 @@ Sie erhalten ein Zip-komprimierten Ordner, den sie auf der Kasse entpacken könn
 
 ![Launcher entpacken](images/unzip-launcher.png "Launcher endpacken")
 
-Der daraus resultierende Ordner kann bei Bedarf auch umbenannt werden. In dem Ordner befinden sich der Launcher `fiskaltrust.exe`, der Service repräsentiert durch die `.dll` Files, eine Konfigurations-Datei namens `fiskaltrust.exe.config` und drei Command-Files:
+Der daraus resultierende Ordner kann bei Bedarf auch umbenannt werden. In dem Ordner befinden sich der fiskaltrust.Launcher `fiskaltrust.exe`, der Service repräsentiert durch die `.dll` Files, eine Konfigurations-Datei namens `fiskaltrust.exe.config` und drei Command-Files:
 
 - `install-service.cmd`
 - `uninstall-service.cmd`
@@ -375,21 +375,21 @@ Drücken Sie nun als nächstes auf den Button mit dem Auge-Symbol in der Zeile m
 
 Sollten Fehler bei der Verbindung der fiskaltrust.Middleware nach Außen auftreten, so kann es sein, dass Ihre Firewall die Verbindung nicht zulässt. Überprüfen Sie je nach verwendeter TSE folgende Freigaben:
 
-#### Es wird keine Cloud TSE verwendet
+#### Es wird keine cloudbasierende TSE verwendet
 
 In diesem Fall müssen nur die Freigaben für die benötigten fiskaltrust Server überprüft werden:
 
-- https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
+- https://helipad.fiskaltrust.cloud/version (zum Download der CashBox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
-- https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
+- https://dc.services.visualstudio.com (für die Übermittelung von CashBox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
-#### Es wird die fiskaly Cloud TSE verwendet
+#### Es wirddie fiskaly cloudbased TSE  verwendet
 
 In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und die Freigabe für den fiskaly Server überprüft werden:
 
-- https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
+- https://helipad.fiskaltrust.cloud/version (zum Download der CashBox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
 - https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
 - https://kassensichv.io/api/v1 (to connect the SCU to the fiskaly Cloud TSE 1.0)
@@ -397,16 +397,16 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
-#### Es wird die swissbit Cloud TSE verwendet
+#### Es wird  Die Swissbit cloudbasierende TSE verwendet
 
-In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und die Freigabe für den swissbit Server überprüft werden:
+In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und die Freigabe für den Swissbit Server überprüft werden:
 
-- https://helipad.fiskaltrust.cloud/version (zum Download der Cashbox und zum Hochladen der Belegdaten)
+- https://helipad.fiskaltrust.cloud/version (zum Download der CashBox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
-- https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
+- https://dc.services.visualstudio.com (für die Übermittelung von CashBox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
 - https://link.fiskaltrust.cloud/release-notes (redirect für die ft.Middleware zum FCC download)
-- https://downloads.fiskaltrust.cloud/downloads/info.html (zum Download des FCC, der für die Verbindung zur swissbit Cloud TSE benötigt wird)
-- https://fiskal.cloud (zur Verbindung des FCC mit der swissbit Cloud TSE)
+- https://downloads.fiskaltrust.cloud/downloads/info.html (zum Download des FCC, der für die Verbindung zur Swissbit Cloud TSE benötigt wird)
+- https://fiskal.cloud (zur Verbindung des FCC mit der Swissbit Cloud TSE)
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
@@ -424,11 +424,11 @@ Geben Sie zum Ausführen des PowerShell Scripts beim Start mit `.\CheckFirewall.
 
 `.\CheckFirewall.ps1 FirewallTests-ft.csv`
 
-**Es wird die fiskaly Cloud TSE verwendet:**
+**Es wirddie fiskaly cloudbased TSE  verwendet:**
 
-`.\CheckFirewall.ps1 FirewallTests-FiskalyCloud.csv `
+`.\CheckFirewall.ps1 FirewallTests-fiskalyCloud.csv `
 
-**Es wird die swissbit Cloud TSE verwendet:**
+**Es wird  Die Swissbit cloudbasierende TSE verwendet:**
 
 `.\CheckFirewall.ps1 FirewallTests-SwissbitCloud.csv`
 
@@ -557,7 +557,7 @@ Es können folgende Daten pro Queue exportiert werden:
 
 Zum Test des Datenexports über das fiskaltrust.Portal können Sie wie folgt vorgehen:
 
-##### Belegjournal oder Actionjournal exportieren
+##### Belegjournal oder fiskaltrust.ActionJournal exportieren
 
 Gehen Sie im fiskaltrust.Portal auf den Menüpunkt "Konfiguration -> Queue". Sie finden hier für jede Queue einen Listeneintrag. Im Listeneintrag der Queue befinden sich die Buttons zum Exportieren der Journale:
 
@@ -599,7 +599,7 @@ Instanzen der fiskaltrust.Middleware können je nach Gegebenheit bzw. Szenario u
 - Alle Queues, SCUs und TSEs müssen sich im sogenannten "operational environment" des KassenBetreibers befinden. Eine Ausnahme stellt die Cloud-Komponente einer zertifizierten Cloud-TSE dar. Diese befindet sich im Rechenzentrum des Cloud-TSE Anbieters.
 - Jeder Queue kann nur eine SCU zugeordnet werden und jede SCU kann nur für eine TSE zuständig sein. D.h. jede Kasse kann nur eine TSE verwenden.
 - Pro Kasse können mehrere Terminals betrieben werden.
- (Terminals sind an einem elektronischen Aufzeichnungssystem mit Kassenfunktion - Kasse - angeschlossene Eingabegeräte, die keine eigenständige Kassenfunktion implementieren. Im Rahmen des fiskaltrust IPOS Interfeace werden diese anhand des Feldes `cbTerminalID` identifiziert.).
+ (Terminals sind an einem elektronischen Aufzeichnungssystem mit Kassenfunktion - Kasse - angeschlossene Eingabegeräte, die keine eigenständige Kassenfunktion implementieren. Im Rahmen des fiskaltrust.Ipos Interfeace werden diese anhand des Feldes `cbTerminalID` identifiziert.).
 
   
 
@@ -744,7 +744,7 @@ Dieses Kapitel soll beim Rollout-Prozess unterstützen indem es Möglichkeiten d
 
 ### Einleitung
 
-Jede fiskaltrust.Middleware-Instanz wird mit einer sogenannten CashBox konfiguriert. Dieser Konfigurationscontainer wird zusammen mit der fiskaltrust.Middleware beim KassenBetreiber ausgerollt. Dazu wird zum Beispiel der Launcher aus dem Portal heruntergeladen und in der Kasse gestartet. Der heruntergeladene Launcher beinhaltet die fiskaltrust.Middleware und ihre Konfiguration in Form einer CashBox. Die CashBox beinhaltet hauptsächlich die Konfigurationen der Queue und der SCU, kann aber auch Helperkonfigurationen beinhalten. 
+Jede fiskaltrust.Middleware-Instanz wird mit einer sogenannten CashBox konfiguriert. Dieser Konfigurationscontainer wird zusammen mit der fiskaltrust.Middleware beim KassenBetreiber ausgerollt. Dazu wird zum Beispiel der Launcher aus dem fiskaltrust.Portal heruntergeladen und in der Kasse gestartet. Der heruntergeladene Launcher beinhaltet die fiskaltrust.Middleware und ihre Konfiguration in Form einer CashBox. Die CashBox beinhaltet hauptsächlich die Konfigurationen der Queue und der SCU, kann aber auch Helperkonfigurationen beinhalten. 
 
 
 
@@ -752,7 +752,7 @@ Jede fiskaltrust.Middleware-Instanz wird mit einer sogenannten CashBox konfiguri
 
 
 
-In den enthaltenen Konfigurationen sind zum Beispiel Kommunikations-Endpunkte, Datenbankzugriff, TSE-Zugriff usw. definiert. Im Normallfall wird eine solche CashBox pro Kasse benötigt. Ein Rollout mit vielen Kassen ist daher bei einer manuellen Vorgehensweise sehr zeitintensiv, da grundsätzlich für jede Kasse eine eigene CashBox im Portal angelegt, zusammengestellt und publiziert werden muss. Des Weiteren muss der Launcher heruntergeladen werden und in der Kasse ausgeführt werden. 
+In den enthaltenen Konfigurationen sind zum Beispiel Kommunikations-Endpunkte, Datenbankzugriff, TSE-Zugriff usw. definiert. Im Normallfall wird eine solche CashBox pro Kasse benötigt. Ein Rollout mit vielen Kassen ist daher bei einer manuellen Vorgehensweise sehr zeitintensiv, da grundsätzlich für jede Kasse eine eigene CashBox im fiskaltrust.Portal angelegt, zusammengestellt und publiziert werden muss. Des Weiteren muss der Launcher heruntergeladen werden und in der Kasse ausgeführt werden. 
 
 Um diesen Prozess zu optimieren, stellt fiskaltrust diverse Tools zur Verfügung. Eine zentrale Rolle spielen dabei die Möglichkeit des Templating zum Anlegen von CashBoxen und die Möglichkeit zum automatisierten Ausführen der Templates mit Hilfe der fiskaltrust Portal-API. 
 
@@ -767,7 +767,7 @@ Wie bereits in der Einleitung erwähnt, wird grundsätzlich pro Kasse eine CashB
 
 Es existieren auch andere Szenarien, auf welche unter [Rollout-Szenarien](./README.md#rollout-szenarien ) eingegangen wird. Die Konfiguration einer CashBox ist im Kapitel [Konfiguration der fiskaltrust.Middleware](./README.md#konfiguration-der-fiskaltrustmiddleware) beschrieben.
 
-Sobald die CashBox für die Kasse im Portal angelegt, konfiguriert und zusammengestellt wurde, kann der Launcher aus dem fiskaltrust.Portal bereits heruntergeladen werden und auf der Kasse gestartet werden. Sobald der Launcher zum ersten Mal gestartet wird, wird die enthaltene Konfiguration angewendet. Dadurch ist die fiskaltrust.Middleware bereit und wird im nächsten Schritt vom Launcher gestartet.
+Sobald die CashBox für die Kasse im fiskaltrust.Portal angelegt, konfiguriert und zusammengestellt wurde, kann der Launcher aus dem fiskaltrust.Portal bereits heruntergeladen werden und auf der Kasse gestartet werden. Sobald der Launcher zum ersten Mal gestartet wird, wird die enthaltene Konfiguration angewendet. Dadurch ist die fiskaltrust.Middleware bereit und wird im nächsten Schritt vom Launcher gestartet.
 
 D.h. im manuellen Prozess sind beim Rollout mindestens folgende initialen Schritte für jede Kasse vorzunehmen:
 
@@ -784,9 +784,9 @@ Möchte man später die Konfiguration updaten (z.B. eine neue SCU Package Versio
 
 1. Update der betroffenen Konfiguration im Portal
  (z.B. SCU Konfiguration)
-2. Rebuild Configuration für die CashBox im Portal 
+2. Rebuild Configuration für die CashBox im fiskaltrust.Portal 
 (Zusammenbauen/Aktualisieren der CashBox)
-3. Stoppen der Middleware und Neustart des Launchers an der Kasse. 
+3. Stoppen der fiskaltrust.Middleware und Neustart des Launchers an der Kasse. 
 
 Der Launcher lädt daraufhin automatisch die neue Version der CashBox, wendet diese an und startet die fiskaltrust.Middleware mit der neuen Konfiguration.
 
@@ -795,7 +795,7 @@ Bei einer großen Menge von Kassen ist der initiale Rollout sehr zeitaufwendig, 
 
 ### Templating zum Anlegen von CashBoxen
 
-Beim Templating besteht die Möglichkeit, mit Hilfe eines Konfigurations-Templates automatisiert CashBoxen für den KassenBetreiber anzulegen. Es wird dafür ein Template vorbereitet und für den KassenBetreiber im fiskaltrust.Portal hinterlegt. Daraufhin erscheint das Template im fiskaltrust.Shop als kostenloses Produkt innerhalb des Accounts des KassenBetreibers . Es kann dort in beliebiger Menge ausgecheckt werden. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom fiskaltrust.Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account des KassenBetreiber hinterlegt. 
+Beim Templating besteht die Möglichkeit, mit Hilfe eines Konfigurations-Templates automatisiert CashBoxen für den KassenBetreiber anzulegen. Es wird dafür ein Template vorbereitet und für den KassenBetreiber im fiskaltrust.Portal hinterlegt. Daraufhin erscheint das Template im fiskaltrust.Shop als kostenloses Produkt innerhalb des Accounts des KassenBetreibers . Es kann dort in beliebiger Menge ausgecheckt werden. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom fiskaltrust.Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im fiskaltrust.Account des KassenBetreiber hinterlegt. 
 
 Im Folgenden werden die einzelnen Schritte des oben beschriebenen Prozess detailliert dargestellt. Zudem stellen wir Ihnen ein [Video](https://www.youtube.com/watch?v=l6IcV7o_LFM&t=8s) zum Thema Templating zur Verfügung.
 
@@ -866,42 +866,42 @@ Wie ebenfalls in Zeile 31 zu sehen ist, können die JSON String Werte aus einer 
 
 Folgende Tabellen zeigen die möglichen Inhalte (Datenstruktur) eines Template:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `ftCashBoxId` |ja | ```GUID String``` | Identifiziert die Cashbox im fiskaltrust System und muss daher eindeutig sein. Wird später ein Teil der Authentifizierung der Registrierkasse mit fiskaltrust. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden, um den Wert bei der Generierung der Cashbox von fiskaltrust automatisch zu erzeugen und einzusetzen. |
-| `ftSignaturCreationDevices` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden SCUs |
-| `ftQueues` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden Queues |
-| `helpers` |nein | `PackageConfiguration [ ]` | Array, beinhaltet die Konfigurationen der zu verwendenden Helper |
-| `TimeStamp` |nein | ```DateTime.UtcNow.Ticks``` | Zeitpunkt der Erstellung des Template|
+| **Fieldname**               | **Pflicht** | **Inhalt**                                                          | **Beschreibung**                                                                                                                                                                                                                                                                                                                         |
+|-----------------------------|-------------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ftCashBoxId`               | ja          | ```GUID String```                                                   | Identifiziert die CashBox im fiskaltrust System und muss daher eindeutig sein. Wird später ein Teil der Authentifizierung der Registrierkasse mit fiskaltrust. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden, um den Wert bei der Generierung der CashBox von fiskaltrust automatisch zu erzeugen und einzusetzen. |
+| `ftSignaturCreationDevices` | nein        | `PackageConfiguration [ ]`                                          | Array, beinhaltet die Konfigurationen der zu verwendenden SCUs                                                                                                                                                                                                                                                                           |
+| `ftQueues`                  | nein        | `PackageConfiguration [ ]`                                          | Array, beinhaltet die Konfigurationen der zu verwendenden Queues                                                                                                                                                                                                                                                                         |
+| `helpers`                   | nein        | `PackageConfiguration [ ]`                                          | Array, beinhaltet die Konfigurationen der zu verwendenden Helper                                                                                                                                                                                                                                                                         |
+| `TimeStamp`                 | nein        | ```DateTime.UtcNow.Ticks``` | Zeitpunkt der Erstellung des Template |                                                                                                                                                                                                                                                                                                                                          |
 
 Ein **`PackageConfiguration`** Objekt ist wie folgt aufgebaut:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `Id` |ja |  ```GUID String```  | Identifiziert die Instanz des Elements, das hier konfiguriert wird (SCU, Queue oder Helper). Für die Queue kann die Systemvariable `queue{0-9}_id` verwendet werden. Für die SCU kann hier die Systemvariable `scu{0-9}_id` zum Einsatz kommen. Für Helper  `helper{0-9}_id`. |
-| `Package` |ja | ```String``` | Name des Packages, das zum Erstellen des Elements verwendet werden soll, z.B. `fiskaltrust.Middleware.SCU.DE.CryptoVision` für eine SCU, die mit einer Cyptovision-TSE kommunizieren soll. Aktuell unterstützte Packages finden sie weiter unten. |
-| `Description` |nein |  ```String```| Name des Elements, z.B. der Queue oder SCU |
-| `Version` |nein |  ```String```| Version des Packages, das zum Erstellen des Elements verwendet werden soll. Wenn keine Version angegeben wird, so wird die neueste Version verwendet.|
-| `Configuration` |nein | `<String, Object>`| Konfigurationsparameter des Elements, z.B. Laufwerkbuchstabe der TSE bei der Cryptovision SCU, damit der SCU bekannt ist wie sie auf die TSE zugreifen soll. Je nach Element-Typ zu befüllen. Siehe unten. |
-| `URL` |ja | `String []` | Array, Kommunikationsendpunkte des Elements, z.B. REST Endpunkt für die Kommunikation mit der Queue. |
+| **Fieldname**   | **Pflicht** | **Inhalt**         | **Beschreibung**                                                                                                                                                                                                                                                              |
+|-----------------|-------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `Id`            | ja          | ```GUID String```  | Identifiziert die Instanz des Elements, das hier konfiguriert wird (SCU, Queue oder Helper). Für die Queue kann die Systemvariable `queue{0-9}_id` verwendet werden. Für die SCU kann hier die Systemvariable `scu{0-9}_id` zum Einsatz kommen. Für Helper  `helper{0-9}_id`. |
+| `Package`       | ja          | ```String```       | Name des Packages, das zum Erstellen des Elements verwendet werden soll, z.B. `fiskaltrust.Middleware.SCU.DE.CryptoVision` für eine SCU, die mit einer Cyptovision-TSE kommunizieren soll. Aktuell unterstützte Packages finden sie weiter unten.                             |
+| `Description`   | nein        | ```String```       | Name des Elements, z.B. der Queue oder SCU                                                                                                                                                                                                                                    |
+| `Version`       | nein        | ```String```       | Version des Packages, das zum Erstellen des Elements verwendet werden soll. Wenn keine Version angegeben wird, so wird die neueste Version verwendet.                                                                                                                         |
+| `Configuration` | nein        | `<String, Object>` | Konfigurationsparameter des Elements, z.B. Laufwerkbuchstabe der TSE bei der Cryptovision SCU, damit der SCU bekannt ist wie sie auf die TSE zugreifen soll. Je nach Element-Typ zu befüllen. Siehe unten.                                                                    |
+| `URL`           | ja          | `String []`        | Array, Kommunikationsendpunkte des Elements, z.B. REST Endpunkt für die Kommunikation mit der Queue.                                                                                                                                                                          |
 
 **Queue**
 Folgende Packages stehen aktuell für Queues zur Verfügung:
 
-| **Package Name**        | **Beschreibung**          |
-|----------------------|----------------------|
-| `fiskaltrust.Middleware.Queue.SQLite` |Eine SQLite Datenbank wird als lokaler Persistenzlayer verwendet. |
-| `fiskaltrust.Middleware.Queue.EF` |Entity Framework wird als lokaler Persistenzlayer verwendet. |
-| `fiskaltrust.Middleware.Queue.MySQL` | Eine MySQL Datenbank wird als lokaler Persistenzlayer verwendet. |
+| **Package Name**                      | **Beschreibung**                                                  |
+|---------------------------------------|-------------------------------------------------------------------|
+| `fiskaltrust.Middleware.Queue.SQLite` | Eine SQLite Datenbank wird als lokaler Persistenzlayer verwendet. |
+| `fiskaltrust.Middleware.Queue.EF`     | Entity Framework wird als lokaler Persistenzlayer verwendet.      |
+| `fiskaltrust.Middleware.Queue.MySQL`  | Eine MySQL Datenbank wird als lokaler Persistenzlayer verwendet.  |
 
 Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Queue verwendet:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `init_ftQueue` |ja |  ```Configuration``` | Initialisierungsparameter für die Queue (allgemeiner Teil der Queue Konfiguration).|
-| `init_ftQueueDE` |ja |  ```Configuration``` | Initialisierungsparameter für die Queue (länderspezifischer Teil der Queue Konfiguration).|
-| `init_ftSignaturCreationUnitDE` |nein |  ```Configuration``` | Initialisierungsparameter zum Verknüpfen der Queue mit einer SCU. Hier werden Verbindungswerte hinterlegt.|
-| `connectionstring` |nein |  ```String``` | Verbindungsstring zum Persistenzlayer. Beispiel siehe unten. Bei SQLite kann dieses Feld weggelassen werden, falls keine eigene Datenbank vorhanden ist. In diesem Fall legt fiskaltrust automatisch eine SQLite Datenbank an. |
+| **Fieldname**                   | **Pflicht** | **Inhalt**          | **Beschreibung**                                                                                                                                                                                                               |
+|---------------------------------|-------------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `init_ftQueue`                  | ja          | ```Configuration``` | Initialisierungsparameter für die Queue (allgemeiner Teil der Queue Konfiguration).                                                                                                                                            |
+| `init_ftQueueDE`                | ja          | ```Configuration``` | Initialisierungsparameter für die Queue (länderspezifischer Teil der Queue Konfiguration).                                                                                                                                     |
+| `init_ftSignaturCreationUnitDE` | nein        | ```Configuration``` | Initialisierungsparameter zum Verknüpfen der Queue mit einer SCU. Hier werden Verbindungswerte hinterlegt.                                                                                                                     |
+| `connectionstring`              | nein        | ```String```        | Verbindungsstring zum Persistenzlayer. Beispiel siehe unten. Bei SQLite kann dieses Feld weggelassen werden, falls keine eigene Datenbank vorhanden ist. In diesem Fall legt fiskaltrust automatisch eine SQLite Datenbank an. |
 
 - Beispiel für einen `connectionstring` bei Verwendung von Entity Framework:
 
@@ -917,126 +917,126 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Qu
 
 Folgende Schlüssel-Wert Paare werden in dem **`Configuration` **Objekt einer Queue im Feld **`init_ftQueue`**  verwendet:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `ftQueueId` |ja |  ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden.|
-| `ftCashBoxId` |ja |  ```GUID String``` | Identifikation  der Cashbox. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden.|
-| `CountryCode` |ja |  ```String``` | Länderkürzel. Für Deutschland: "DE".|
-| `Timeout` |nein |  ```Int``` | Timeout in Millisekunden. |
+| **Fieldname** | **Pflicht** | **Inhalt**        | **Beschreibung**                                                                                  |
+|---------------|-------------|-------------------|---------------------------------------------------------------------------------------------------|
+| `ftQueueId`   | ja          | ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden.               |
+| `ftCashBoxId` | ja          | ```GUID String``` | Identifikation  der CashBox. Die Systemvariable ```|[cashbox_id]|```  kann hier verwendet werden. |
+| `CountryCode` | ja          | ```String```      | Länderkürzel. Für Deutschland: "DE".                                                              |
+| `Timeout`     | nein        | ```Int```         | Timeout in Millisekunden.                                                                         |
 
 Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Queue im Feld **`init_ftQueueDE`**  verwendet:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `ftQueueDEId` |ja |  ```GUID String``` | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden. (Hier muss der gleiche Wert wie bei `ftQueueId` verwendet werden.) |
-| `CashBoxIdentification` |ja |  ```printable String (20)``` | Kassenseriennummer. Wird auch als Client-ID für die TSE verwendet. Printable String, max. 20 Zeichen.|
-| `ftSignaturCreationUnitDEId` |ja |  ```GUID String```  | Die ID der SCU mit der sich diese Queue verbinden soll.|
+| **Fieldname**                | **Pflicht** | **Inhalt**                  | **Beschreibung**                                                                                                                                       |
+|------------------------------|-------------|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ftQueueDEId`                | ja          | ```GUID String```           | Identifikation der Queue. Die Systemvariable `queue{0-9}_id` kann verwendet werden. (Hier muss der gleiche Wert wie bei `ftQueueId` verwendet werden.) |
+| `CashBoxIdentification`      | ja          | ```printable String (20)``` | Kassenseriennummer. Wird auch als Client-ID für die TSE verwendet. Printable String, max. 20 Zeichen.                                                  |
+| `ftSignaturCreationUnitDEId` | ja          | ```GUID String```           | Die ID der SCU mit der sich diese Queue verbinden soll.                                                                                                |
 
 Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Queue im Feld **`init_ftSignaturCreationUnitDE`**  verwendet:
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `ftSignaturCreationUnitDEId` |ja |  ```GUID String``` | Identifikation der SCU mit der sich diese Queue verbinden soll. Die Systemvariable `scu{0-9}_id` kann verwendet werden. |
-| `Url` |ja |  ```String``` | Kommunikationsendpunkte der SCU. Als Array im String Bsp: ```"[\"grpc://localhost:10081\", \"grpc://localhost:10082\"]"```. Normalerweise wird nur ein Endpunkt benötigt. |
+| **Fieldname**                | **Pflicht** | **Inhalt**        | **Beschreibung**                                                                                                                                                          |
+|------------------------------|-------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ftSignaturCreationUnitDEId` | ja          | ```GUID String``` | Identifikation der SCU mit der sich diese Queue verbinden soll. Die Systemvariable `scu{0-9}_id` kann verwendet werden.                                                   |
+| `Url`                        | ja          | ```String```      | Kommunikationsendpunkte der SCU. Als Array im String Bsp: ```"[\"grpc://localhost:10081\", \"grpc://localhost:10082\"]"```. Normalerweise wird nur ein Endpunkt benötigt. |
 
 **SCU**
 
 Folgende Packages stehen aktuell für SCUs zur Verfügung:
 
-| **Package Name**        | **Beschreibung**          |
-|----------------------|----------------------|
-| `fiskaltrust.Middleware.SCU.DE.CryptoVision` | Dieses Package ermöglicht die Kommunikation mit einer Cryptovision TSE.|
-| `fiskaltrust.Middleware.SCU.DE.DieboldNixdorf` | Dieses Package ermöglicht die Kommunikation mit einer Diebold Nixdorf TSE.|
-| `fiskaltrust.Middleware.SCU.DE.Epson` | Dieses Package ermöglicht die Kommunikation mit einer Epson TSE.|
-| `fiskaltrust.Middleware.SCU.DE.Fiskaly` | Dieses Package ermöglicht die Kommunikation mit eine Fiskaly TSE.|
-| `fiskaltrust.Middleware.SCU.DE.Swissbit` | Dieses Package ermöglicht die Kommunikation mit einer Swissbit TSE. |
+| **Package Name**                               | **Beschreibung**                                                           |
+|------------------------------------------------|----------------------------------------------------------------------------|
+| `fiskaltrust.Middleware.SCU.DE.CryptoVision`   | Dieses Package ermöglicht die Kommunikation mit einer Cryptovision TSE.    |
+| `fiskaltrust.Middleware.SCU.DE.DieboldNixdorf` | Dieses Package ermöglicht die Kommunikation mit einer Diebold Nixdorf TSE. |
+| `fiskaltrust.Middleware.SCU.DE.Epson`          | Dieses Package ermöglicht die Kommunikation mit einer Epson TSE.           |
+| `fiskaltrust.Middleware.SCU.DE.fiskaly`        | Dieses Package ermöglicht die Kommunikation mit eine fiskaly Cloud-TSE.          |
+| `fiskaltrust.Middleware.SCU.DE.Swissbit`       | Dieses Package ermöglicht die Kommunikation mit einer Swissbit TSE.        |
 
 Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **SCU** je nach Hersteller der TSE verwendet:
 
 **Swissbit TSE**
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `devicePath` |ja |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Swissbit TSE an der Kasse angeschossen wird. |
-| `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |nein |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| **Fieldname**  | **Pflicht** | **Inhalt**   | **Beschreibung**                                                                                                                                                                      |
+|----------------|-------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `devicePath`   | ja          | ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Swissbit TSE an der Kasse angeschossen wird.                                            |
+| `adminPin`     | nein        | ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.      |
+| `timeAdminPin` | nein        | ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt. |
 
 **Cryptovision TSE**
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `devicePath` |ja |  ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Cryptovision TSE an der Kasse angeschossen wird. |
-| `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben, wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |nein |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
+| **Fieldname**  | **Pflicht** | **Inhalt**   | **Beschreibung**                                                                                                                                                                      |
+|----------------|-------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `devicePath`   | ja          | ```String``` | Laufwerksbuchstabe gefolgt von Doppelpunkt (z.B. `E:`). Repräsentiert das Laufwerk an dem die Cryptovision TSE an der Kasse angeschossen wird.                                        |
+| `adminPin`     | nein        | ```String``` | Admin PIN. Nur anzugeben, wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.     |
+| `timeAdminPin` | nein        | ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt. |
 
 **Diebold Nixdorf**
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `comPort` |ja (nur USB) |  ```String``` | Definiert den Com Anschluß an, an dem die TSE angeschlossen wird. Zum Beispiel `COM6`. Nur zu verwenden wenn es sich um eine USB-TSE ohne Connect Box handelt. |
-| `url` |ja (nur Connect Box) |  ```String``` | Verbindungs-Url, falls es sich um eine Diebold Nixdorf Connect Box handelt. |
-| `adminUser` |nein |  ```String``` | Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `adminPin` |nein |  ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminUser` |nein |  ```String``` | Time Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `timeAdminPin` |nein |  ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.|
-| `slotNumber` |ja (nur Connect Box) |  ```Int``` | Slot-Nummer der TSE falls hierbei eine Diebold Nixdorf Connect Box verwendet wird. |
+| **Fieldname**   | **Pflicht**          | **Inhalt**   | **Beschreibung**                                                                                                                                                                           |
+|-----------------|----------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `comPort`       | ja (nur USB)         | ```String``` | Definiert den Com Anschluß an, an dem die TSE angeschlossen wird. Zum Beispiel `COM6`. Nur zu verwenden wenn es sich um eine USB-TSE ohne Connect Box handelt.                             |
+| `url`           | ja (nur Connect Box) | ```String``` | Verbindungs-Url, falls es sich um eine Diebold Nixdorf Connect Box handelt.                                                                                                                |
+| `adminUser`     | nein                 | ```String``` | Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.      |
+| `adminPin`      | nein                 | ```String``` | Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.           |
+| `timeAdminUser` | nein                 | ```String``` | Time Admin Username. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt. |
+| `timeAdminPin`  | nein                 | ```String``` | Time Admin PIN. Nur anzugeben wenn es sich um eine außerhalb von fiskaltrust initialisierte TSE handelt. Falls die TSE noch nicht initialisiert ist, wird dieser Wert nicht benötigt.      |
+| `slotNumber`    | ja (nur Connect Box) | ```Int```    | Slot-Nummer der TSE falls hierbei eine Diebold Nixdorf Connect Box verwendet wird.                                                                                                         |
 
 **Epson** 
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `host` |ja |  ```String``` | Url zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein |
-| `port` |nein |  ```String``` | Port zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein|
-| `deviceId` |nein |  ```String``` | Device Id beim Epson Server.|
-| `timeout` |nein | Int | Timeout in Millisekunden |
+| **Fieldname** | **Pflicht** | **Inhalt**   | **Beschreibung**                                                  |
+|---------------|-------------|--------------|-------------------------------------------------------------------|
+| `host`        | ja          | ```String``` | Url zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein  |
+| `port`        | nein        | ```String``` | Port zum Verbinden mit der TSE. Hier wird die TSE erreichbar sein |
+| `deviceId`    | nein        | ```String``` | Device Id beim Epson Server.                                      |
+| `timeout`     | nein        | Int          | Timeout in Millisekunden                                          |
 
-**Fiskaly**
+**fiskaly**
 
-| **Fieldname**        | **Pflicht**              | **Inhalt**          | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `ApiKey` |ja |  ```String``` | Fiskaly API Schlüssel |
-| `ApiSecret` |ja |  ```String``` | Fiskaly API Secret |
-| `TssId` |ja |  ```GUID String``` | ID der TSE von Fiskaly |
+| **Fieldname** | **Pflicht** | **Inhalt**                                 | **Beschreibung** |
+|---------------|-------------|--------------------------------------------|------------------|
+| `ApiKey`      | ja          | ```String``` | fiskaly API Schlüssel       |                  |
+| `ApiSecret`   | ja          | ```String``` | fiskaly API Secret          |                  |
+| `TssId`       | ja          | ```GUID String``` | ID der TSE von fiskaly |                  |
 
 Folgende Schlüssel-Wert Paare können in dem **`Configuration`** Objekt einer **SCU**  unabhängig vom Hersteller der TSE verwendet werden:
 
-| **Fieldname**        | **Pflicht**   | **Inhalt** | **Beschreibung** |
-|----------------------|--------------------------|--------------------------|---------------------|
-| `Counter` |nein |  ```Integer``` | Wenn der Counter für eine SCU in deren Konfiguration gesetzt ist, kann diese, bereits existierende SCU in einem Template referenziert werden. Siehe dazu auch das Kapitel [Referenzierung vorhandener SCUs in einem Template](#referenzierung-vorhandener-scus-in-einem-template). |
+| **Fieldname** | **Pflicht** | **Inhalt**    | **Beschreibung**                                                                                                                                                                                                                                                                   |
+|---------------|-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `Counter`     | nein        | ```Integer``` | Wenn der Counter für eine SCU in deren Konfiguration gesetzt ist, kann diese, bereits existierende SCU in einem Template referenziert werden. Siehe dazu auch das Kapitel [Referenzierung vorhandener SCUs in einem Template](#referenzierung-vorhandener-scus-in-einem-template). |
 
 #### Systemvariablen
 
 Folgende Systemvariablen stehen Ihnen zur Verwendung im Template zur Verfügung:
 
-| Variable                                         | Wert                                                         |
-| ------------------------------------------------ | ------------------------------------------------------------ |
-| `cashbox_id`                                     | Random GUID                                                  |
-| `scu{0-9}_id`                                    | Random GUID                                                  |
-| `helper{0-9}_id`                                 | Random GUID                                                  |
-| `queue{0-9}_id`                                  | Random GUID                                                  |
-| `queue{0-9}_id_base64withoutspecialchars`        | `{queue_id}`, converted to Base64 without special characters. Wird oft als Kassenseriennummer verwendet (CashboxIdentification) |
-| `reference_scu_fiskaly_counter_{0-n}_id`         | wird verwendet um eine bereits vorhandene fiskaly cloud SCU zu referenzieren (z.B. die automatisch beim checkout erstellt wurde) |
-| `reference_scu_swissbitcloud_counter_{0-n}_id`   | wird verwendet um eine bereits vorhandene swissbit cloud SCU zu referenzieren (z.B. die automatisch beim checkout erstellt wurde) |
-| `reference_scu_swissbit_counter_{0-n}_id`        | wird verwendet um eine bereits vorhandene swissbit usb SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
+| Variable                                         | Wert                                                                                                                              |
+|--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `cashbox_id`                                     | Random GUID                                                                                                                       |
+| `scu{0-9}_id`                                    | Random GUID                                                                                                                       |
+| `helper{0-9}_id`                                 | Random GUID                                                                                                                       |
+| `queue{0-9}_id`                                  | Random GUID                                                                                                                       |
+| `queue{0-9}_id_base64withoutspecialchars`        | `{queue_id}`, converted to Base64 without special characters. Wird oft als Kassenseriennummer verwendet (CashBoxIdentification)   |
+| `reference_scu_fiskaly_counter_{0-n}_id`         | wird verwendet um eine bereits vorhandene fiskaly cloud SCU zu referenzieren (z.B. die automatisch beim checkout erstellt wurde)  |
+| `reference_scu_swissbitcloud_counter_{0-n}_id`   | wird verwendet um eine bereits vorhandene Swissbit cloud SCU zu referenzieren (z.B. die automatisch beim checkout erstellt wurde) |
+| `reference_scu_swissbit_counter_{0-n}_id`        | wird verwendet um eine bereits vorhandene Swissbit usb SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
 | `reference_scu_cryptovision_counter_{0-n}_id`    | wird verwendet um eine bereits vorhandene cryptovision SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
-| `reference_scu_dieboldnixdorf_counter_{0-n}_id`  | wird verwendet um eine bereits vorhandene diebold SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
-| `reference_scu_epson_counter_{0-n}_id`           | wird verwendet um eine bereits vorhandene epson SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
-| `reference_scu_atrust_counter_{0-n}_id`          | wird verwendet um eine bereits vorhandene atrust SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
-| `reference_scu_fiskaly_counter_{0-n}_url`        | wird verwendet um die Url einer bereits vorhandenen fiskaly cloud SCU zu erhalten |
-| `reference_scu_swissbitcloud_counter_{0-n}_url`  | wird verwendet um die Url einer bereits vorhandenen swissbit cloud SCU zu erhalten |
-| `reference_scu_swissbit_counter_{0-n}_url`       | wird verwendet um die Url einer bereits vorhandenen swissbit usb SCU zu erhalten |
-| `reference_scu_cryptovision_counter_{0-n}_url`   | wird verwendet um die Url einer bereits vorhandenen cryptovision SCU zu erhalten |
-| `reference_scu_dieboldnixdorf_counter_{0-n}_url` | wird verwendet um die Url einer bereits vorhandenen diebold SCU zu erhalten |
-| `reference_scu_epson_counter_{0-n}_url`          | wird verwendet um die Url einer bereits vorhandenen epson SCU zu erhalten |
-| `reference_scu_atrust_counter_{0-n}_url`         | wird verwendet um die Url einer bereits vorhandenen atrust SCU zu erhalten |
+| `reference_scu_dieboldnixdorf_counter_{0-n}_id`  | wird verwendet um eine bereits vorhandene diebold SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat      |
+| `reference_scu_epson_counter_{0-n}_id`           | wird verwendet um eine bereits vorhandene epson SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat        |
+| `reference_scu_atrust_counter_{0-n}_id`          | wird verwendet um eine bereits vorhandene atrust SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat       |
+| `reference_scu_fiskaly_counter_{0-n}_url`        | wird verwendet um die Url einer bereits vorhandenen fiskaly cloud SCU zu erhalten                                                 |
+| `reference_scu_swissbitcloud_counter_{0-n}_url`  | wird verwendet um die Url einer bereits vorhandenen Swissbit cloud SCU zu erhalten                                                |
+| `reference_scu_swissbit_counter_{0-n}_url`       | wird verwendet um die Url einer bereits vorhandenen Swissbit usb SCU zu erhalten                                                  |
+| `reference_scu_cryptovision_counter_{0-n}_url`   | wird verwendet um die Url einer bereits vorhandenen cryptovision SCU zu erhalten                                                  |
+| `reference_scu_dieboldnixdorf_counter_{0-n}_url` | wird verwendet um die Url einer bereits vorhandenen diebold SCU zu erhalten                                                       |
+| `reference_scu_epson_counter_{0-n}_url`          | wird verwendet um die Url einer bereits vorhandenen epson SCU zu erhalten                                                         |
+| `reference_scu_atrust_counter_{0-n}_url`         | wird verwendet um die Url einer bereits vorhandenen atrust SCU zu erhalten                                                        |
 
 _Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
 
 #### Referenzierung vorhandener SCUs in einem Template
 
-Eine bereits zuvor angelegte SCU kann in einem Template referenziert werden. Dies ist zum Beispiel für den Fall wichtig, dass eine Queue der neu zu erstellenden Cashbox, auf eine bereits vorhandene SCU zugreifen soll, die sich Außerhalb der neuen Cashbox befindet.
+Eine bereits zuvor angelegte SCU kann in einem Template referenziert werden. Dies ist zum Beispiel für den Fall wichtig, dass eine Queue der neu zu erstellenden CashBox, auf eine bereits vorhandene SCU zugreifen soll, die sich Außerhalb der neuen CashBox befindet.
 
-Die zu referenzierende SCU wird über die Kombination aus ihrem Typ (z.B. swissbit) und ihrem  `Counter`  im Template identifiziert. Voraussetzung ist also, dass die zu referenzierende SCU einen sogenannten  `Counter`  als Schlüssel-Wert Paar in ihrer Konfiguration hat. Die von fiskaltrust automatisch angelegten SCUs (also z.B. fiskaly oder swissbit cloud bei Checkout) haben den  `Counter`  bereits gesetzt. Bei manuell oder durch ein Template angelegte SCUs wird das Setzen des Counter über das Portal im Bereich Konfiguration vorgenommen. Legen Sie dazu in der Konfiguration der SCU das Schlüssel-Wert Paar `Counter` wie folgt  an:
+Die zu referenzierende SCU wird über die Kombination aus ihrem Typ (z.B. Swissbit) und ihrem  `Counter`  im Template identifiziert. Voraussetzung ist also, dass die zu referenzierende SCU einen sogenannten  `Counter`  als Schlüssel-Wert Paar in ihrer Konfiguration hat. Die von fiskaltrust automatisch angelegten SCUs (also z.B. fiskaly oder Swissbit cloud bei Checkout) haben den  `Counter`  bereits gesetzt. Bei manuell oder durch ein Template angelegte SCUs wird das Setzen des Counter über das fiskaltrust.Portal im Bereich Konfiguration vorgenommen. Legen Sie dazu in der Konfiguration der SCU das Schlüssel-Wert Paar `Counter` wie folgt  an:
 
 ![counter-anlegen](images/ref-scu-1.png)
 
@@ -1066,7 +1066,7 @@ Im dem Template, dass die SCU referenzieren soll, können nun folgende Angaben g
 ```
 Je nach Typ wird bei **`Id`** die dazugehörige [Systemvariable](#systemvariablen) verwendet. In obigen Beispiel ist es die Variable `reference_scu_swissbit_counter_{0-n}_id`. Der Wert {0-n} gibt konkret an, welche SCU referenziert werden soll. In unserem Beispiel ist es die 1 also: reference_scu_swissbit_counter_**1**_id.
 
-Des Weiteren muss bei **`Package`** das Package der zu referenzierenden SCU angegeben werden. In unserem Beispiel ist es für die swissbit usb das Package `fiskaltrust.Middleware.SCU.DE.Swissbit`.
+Des Weiteren muss bei **`Package`** das Package der zu referenzierenden SCU angegeben werden. In unserem Beispiel ist es für die Swissbit usb das Package `fiskaltrust.Middleware.SCU.DE.Swissbit`.
 
 2. Die Verbindung einer Queue mit der SCU wird im Template am folgenden beiden Stellen angegeben:
 
@@ -1098,15 +1098,15 @@ Hier finden Sie ein solches Template als Beispiel zum Download: [`ref-template-e
 
 Unsere Template Beispiele können Sie gebündelt als [Zip-Datei herunterladen](images/template-examples.zip). Im Folgenden werden die einzelnen Bespiele und die dazugehörigen Dateien beschrieben. In dem Ordner befindet sich auch eine Postmancollection, die zum Testen der Ausführung über die weiter unten beschriebene [API](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) verwendet werden kann.
 
-| **Name**        | **Dateien**              | **Beschreibung**          |
-|----------------------|--------------------------|--------------------------|
-| Eine TSE pro Kasse| `a-tse-per-cashregister.json` | Bezieht sich auf das oben beschriebene Rollout Szenario [Eine TSE pro Kasse](#eine-tse-pro-kasse). Das Template erzeugt eine Cashbox mit einer Queue und einer SCU die auf eine hardware TSE zugreift, die sich im Laufwerk E: befindet. Die Queue ist über ein REST Endpunkt erreichbar. |
-| Eine hardware TSE am lokalen Server für mehrere Kassen| `tse-at-local-server-for-multiple-cashregisters-1-1.json` und `tse-at-local-server-for-multiple-cashregisters-1-2.json`  | Bezieht sich auf den ersten Teil des oben beschriebene Rollout Szenario [Hardware-TSE(s) am lokalen Server für mehrere Kassen](#hardware-tses-am-lokalen-server-für-mehrere-kassen). Das Template in der Datei `tse-at-local-server-for-multiple-cashregisters-1-1.json` wird als erstes ausgeführt. Es erzeugt die Cashbox für den Server mit einer SCU die auf eine hardware TSE zugreift. Die SCU erhält einen Counter, damit sie später aus den Cashboxen der Kassen referenziert werden kann. Für jede Kasse wird daraufhin das Template aus der Datei `tse-at-local-server-for-multiple-cashregisters-1-2.json` ausgeführt. Es erzeugt eine Cashbox, die die SCU aus dem Server referenziert und eine Queue anlegt, die auf die SCU des Servers zugreift. |
-| Mehrere hardware TSEs am lokalen Server für mehrere Kassen| `tse-at-local-server-for-multiple-cashregisters-2-1.json` ,  `tse-at-local-server-for-multiple-cashregisters-2-2.json` und  `tse-at-local-server-for-multiple-cashregisters-2-3.json`  | Bezieht sich auf den zweiten Teil des oben beschriebene Rollout Szenario [Hardware-TSE(s) am lokalen Server für mehrere Kassen](#hardware-tses-am-lokalen-server-für-mehrere-kassen). Das Template in der Datei `tse-at-local-server-for-multiple-cashregisters-2-1.json` wird als erstes ausgeführt. Es erzeugt die Cashbox für den Server mit zwei SCUs die auf jeweils eine hardware TSE zugreifen. Die SCUs erhalten einen Counter, damit sie später aus den Cashboxen der Kassen referenziert werden können. Für jede Kasse, die die erste SCU verwenden soll, wird daraufhin das Template aus der Datei `tse-at-local-server-for-multiple-cashregisters-2-2.json` ausgeführt. Es erzeugt eine Cashbox, die die erste SCU aus dem Server referenziert und eine Queue anlegt, die auf die erste SCU des Servers zugreift. |
-| Eine hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen| `hw-tse-at-main-cashregister-1.json` und `hw-tse-at-main-cashregister-2.json`  | Bezieht sich auf das oben beschriebene Rollout Szenario [Hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen](#hardware-tse-an-der-hauptkasse-für-mehrere-zusätzliche-kassen). Das Template in der Datei `hw-tse-at-main-cashregister-1.json` wird als erstes ausgeführt. Es erzeugt die Cashbox für die Hauptkasse mit einer eigenen Queue und einer SCU die auf eine hardware TSE zugreift. Die SCU erhält einen Counter, damit sie später aus den Cashboxen der anderen Kassen referenziert werden kann. Für jede andere Kasse wird daraufhin das Template aus der Datei `hw-tse-at-main-cashregister-2.json` ausgeführt. Es erzeugt eine Cashbox, die die SCU aus der Hauptkasse referenziert und eine Queue anlegt, die auf die SCU der Hauptkasse zugreift. |
-| Eine Cloud-TSE für mehrere Kassen| `a-cloud-tse-for-multiple-cashregisters-1.json` oder `a-cloud-tse-for-multiple-cashregisters-2.json`  | Bezieht sich auf das oben beschriebene Rollout Szenario [Eine Cloud-TSE für mehrere Kassen](#eine-cloud-tse-für-mehrere-kassen). Das Template in der Datei `a-cloud-tse-for-multiple-cashregisters-1.json` wird pro Kasse ausgeführt. Voraussetzung hierbei ist, dass eine SCU bereits existiert, denn sie wird beim Erzeugen der Cashbox nicht angelegt sondern nur referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `a-cloud-tse-for-multiple-cashregisters-2.json` zeigt ein Beispiel bei dem auch die SCU in der Cashbox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Dieses zweite Beispiel legt außerdem eine Queue an, die ihre Daten in einer MySQL Datenbank abspeichert. Dies kann vor allem in einer [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter) von Nutzen sein. |
-| Eine Cashbox mit mehreren Queues| `multiple-queues-same-scu.json` | Mit diesem Template wird eine Cashbox erzeugt, die mehrere Queues beinhaltet, die wiederum auf die gleiche SCU zugreifen. Es wird in dem oben beschriebenen [Rollout-Szenario mit Terminals](#rollout-szenario-mit-terminals) dargestellt, kann aber auch für den Fall verwendet werden in dem für mehrere Kassen nur eine fiskaltrust.Middleware-Instanz verwendet werden soll. Jede Queue hat einen anderen Endpunkt (Port ist unterschiedlich) und kann so individuell angesprochen werden. |
-| Rechenzentrum als operational environment (BYODC)| `byodc-1.json` oder  `byodc-2.json`| Bezieht sich auf das oben beschriebene Rollout Szenario [Rechenzentrum als operational environment](#rechenzentrum-als-operational-environment). Mit Hilfe des Templates aus der Datei `byodc-1.json`  wird eine Cashbox angelegt, die eine bereits vorhandene SCU referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `byodc-2.json` zeigt ein Beispiel bei dem auch die SCU in der Cashbox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Die Queue die von dem Template angelegt wird speichert ihre Daten in einer MySQL Datenbank. Dies ist spezifisch for eine [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter). |
+| **Name**                                                           | **Dateien**                                                                                                                                                                           | **Beschreibung**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Eine TSE pro Kasse                                                 | `a-tse-per-cashregister.json`                                                                                                                                                         | Bezieht sich auf das oben beschriebene Rollout Szenario [Eine TSE pro Kasse](#eine-tse-pro-kasse). Das Template erzeugt eine CashBox mit einer Queue und einer SCU die auf eine hardware TSE zugreift, die sich im Laufwerk E: befindet. Die Queue ist über ein REST Endpunkt erreichbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Eine hardware TSE am lokalen Server für mehrere Kassen             | `tse-at-local-server-for-multiple-cashregisters-1-1.json` und `tse-at-local-server-for-multiple-cashregisters-1-2.json`                                                               | Bezieht sich auf den ersten Teil des oben beschriebene Rollout Szenario [Hardware-TSE(s) am lokalen Server für mehrere Kassen](#hardware-tses-am-lokalen-server-für-mehrere-kassen). Das Template in der Datei `tse-at-local-server-for-multiple-cashregisters-1-1.json` wird als erstes ausgeführt. Es erzeugt die CashBox für den Server mit einer SCU die auf eine hardware TSE zugreift. Die SCU erhält einen Counter, damit sie später aus den CashBoxen der Kassen referenziert werden kann. Für jede Kasse wird daraufhin das Template aus der Datei `tse-at-local-server-for-multiple-cashregisters-1-2.json` ausgeführt. Es erzeugt eine CashBox, die die SCU aus dem Server referenziert und eine Queue anlegt, die auf die SCU des Servers zugreift.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Mehrere hardware TSEs am lokalen Server für mehrere Kassen         | `tse-at-local-server-for-multiple-cashregisters-2-1.json` ,  `tse-at-local-server-for-multiple-cashregisters-2-2.json` und  `tse-at-local-server-for-multiple-cashregisters-2-3.json` | Bezieht sich auf den zweiten Teil des oben beschriebene Rollout Szenario [Hardware-TSE(s) am lokalen Server für mehrere Kassen](#hardware-tses-am-lokalen-server-für-mehrere-kassen). Das Template in der Datei `tse-at-local-server-for-multiple-cashregisters-2-1.json` wird als erstes ausgeführt. Es erzeugt die CashBox für den Server mit zwei SCUs die auf jeweils eine hardware TSE zugreifen. Die SCUs erhalten einen Counter, damit sie später aus den CashBoxen der Kassen referenziert werden können. Für jede Kasse, die die erste SCU verwenden soll, wird daraufhin das Template aus der Datei `tse-at-local-server-for-multiple-cashregisters-2-2.json` ausgeführt. Es erzeugt eine CashBox, die die erste SCU aus dem Server referenziert und eine Queue anlegt, die auf die erste SCU des Servers zugreift.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Eine hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen | `hw-tse-at-main-cashregister-1.json` und `hw-tse-at-main-cashregister-2.json`                                                                                                         | Bezieht sich auf das oben beschriebene Rollout Szenario [Hardware-TSE an der Hauptkasse für mehrere zusätzliche Kassen](#hardware-tse-an-der-hauptkasse-für-mehrere-zusätzliche-kassen). Das Template in der Datei `hw-tse-at-main-cashregister-1.json` wird als erstes ausgeführt. Es erzeugt die CashBox für die Hauptkasse mit einer eigenen Queue und einer SCU die auf eine hardware TSE zugreift. Die SCU erhält einen Counter, damit sie später aus den CashBoxen der anderen Kassen referenziert werden kann. Für jede andere Kasse wird daraufhin das Template aus der Datei `hw-tse-at-main-cashregister-2.json` ausgeführt. Es erzeugt eine CashBox, die die SCU aus der Hauptkasse referenziert und eine Queue anlegt, die auf die SCU der Hauptkasse zugreift.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Eine Cloud-TSE für mehrere Kassen                                  | `a-cloud-tse-for-multiple-cashregisters-1.json` oder `a-cloud-tse-for-multiple-cashregisters-2.json`                                                                                  | Bezieht sich auf das oben beschriebene Rollout Szenario [Eine Cloud-TSE für mehrere Kassen](#eine-cloud-tse-für-mehrere-kassen). Das Template in der Datei `a-cloud-tse-for-multiple-cashregisters-1.json` wird pro Kasse ausgeführt. Voraussetzung hierbei ist, dass eine SCU bereits existiert, denn sie wird beim Erzeugen der CashBox nicht angelegt sondern nur referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im fiskaltrust.Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `a-cloud-tse-for-multiple-cashregisters-2.json` zeigt ein Beispiel bei dem auch die SCU in der CashBox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Dieses zweite Beispiel legt außerdem eine Queue an, die ihre Daten in einer MySQL Datenbank abspeichert. Dies kann vor allem in einer [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter) von Nutzen sein. |
+| Eine CashBox mit mehreren Queues                                   | `multiple-queues-same-scu.json`                                                                                                                                                       | Mit diesem Template wird eine CashBox erzeugt, die mehrere Queues beinhaltet, die wiederum auf die gleiche SCU zugreifen. Es wird in dem oben beschriebenen [Rollout-Szenario mit Terminals](#rollout-szenario-mit-terminals) dargestellt, kann aber auch für den Fall verwendet werden in dem für mehrere Kassen nur eine fiskaltrust.Middleware-Instanz verwendet werden soll. Jede Queue hat einen anderen Endpunkt (Port ist unterschiedlich) und kann so individuell angesprochen werden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Rechenzentrum als operational environment (BYODC)                  | `byodc-1.json` oder  `byodc-2.json`                                                                                                                                                   | Bezieht sich auf das oben beschriebene Rollout Szenario [Rechenzentrum als operational environment](#rechenzentrum-als-operational-environment). Mit Hilfe des Templates aus der Datei `byodc-1.json`  wird eine CashBox angelegt, die eine bereits vorhandene SCU referenziert. Die SCU wird meist automatisch von fiskaltrust beim Auschecken einer cloud TSE im fiskaltrust.Shop angelegt, sie kann aber auch manuell angelegt werden. Das zweite Template `byodc-2.json` zeigt ein Beispiel bei dem auch die SCU in der CashBox angelegt wird. Für die Übergabe der Verbindungswerte werden individuelle Variablen verwendet. Diese können beim Ausführen des Templates über die API als Query-Parameter übergeben werden. Die genaue Vorgehensweise zur Übergabe der Werte für die individuellen Variablen können Sie im Kapitel [Nutzung von API und PowerShell zum automatisierten Ausführen der Templates](#nutzung-von-api-und-powershell-zum-automatisierten-ausführen-der-templates) nachlesen. Die Queue die von dem Template angelegt wird speichert ihre Daten in einer MySQL Datenbank. Dies ist spezifisch for eine [BYODC Umgebung](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter).                                                                                                                                                                 |
 
 **Hinweise zur Postmancollection**
 
@@ -1122,27 +1122,27 @@ Beim Anlegen des Template kann gewählt werden, an welche Zielgruppe das Templat
 
 Optionen für **KassenHersteller**:
 
-| **Option**        | **Beschreibung**          |
-|----------------------|----------------------|
-| `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
-| `Privat (nur Besitzer)` | Freigabe nur für dem Kassenhersteller selbst (z.B. zum Testen) |
-| `Geteilt mit Händler` | Freigabe für den Kassenhersteller selbst und für alle mit ihm verbundenen Kassenhändler. |
-| `Geteilt mit Betreiber` | Freigabe für den Kassenhersteller selbst und für alle mit seinen Kassenhändler verbundenen Kassenbetreiber.|
+| **Option**              | **Beschreibung**                                                                                            |
+|-------------------------|-------------------------------------------------------------------------------------------------------------|
+| `Deaktiviert`           | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert.                            |
+| `Privat (nur Besitzer)` | Freigabe nur für dem KassenHersteller selbst (z.B. zum Testen)                                              |
+| `Geteilt mit Händler`   | Freigabe für den KassenHersteller selbst und für alle mit ihm verbundenen KassenHändler.                    |
+| `Geteilt mit Betreiber` | Freigabe für den KassenHersteller selbst und für alle mit seinen KassenHändler verbundenen KassenBetreiber. |
 
 Optionen für **KassenHändler**:
 
-| **Option**        | **Beschreibung**          |
-|----------------------|----------------------|
-| `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
-| `Privat (nur Besitzer)` | Freigabe nur für dem Kassenhändler selbst (z.B. zum Testen). |
-| `Geteilt mit Betreiber` | Freigabe für den Kassenhändler selbst und für alle mit ihm verbundenen Kassenbetreiber.|
+| **Option**              | **Beschreibung**                                                                        |
+|-------------------------|-----------------------------------------------------------------------------------------|
+| `Deaktiviert`           | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert.        |
+| `Privat (nur Besitzer)` | Freigabe nur für dem KassenHändler selbst (z.B. zum Testen).                            |
+| `Geteilt mit Betreiber` | Freigabe für den KassenHändler selbst und für alle mit ihm verbundenen KassenBetreiber. |
 
 Optionen für **KassenBetreiber**:
 
-| **Option**        | **Beschreibung**          |
-|----------------------|----------------------|
-| `Deaktiviert` | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
-| `Privat (nur Besitzer)` | Freigabe nur für dem Kassenbetreiber selbst. |
+| **Option**              | **Beschreibung**                                                                 |
+|-------------------------|----------------------------------------------------------------------------------|
+| `Deaktiviert`           | Keine Freigabe, Template befindet sich noch in Vorbereitung oder wurde pausiert. |
+| `Privat (nur Besitzer)` | Freigabe nur für dem KassenBetreiber selbst.                                     |
 
 Des Weiteren kann das Template mit einem Bild und Link personalisiert werden. Da später das Template im fiskaltrust.Webshop für freigegebene Accounts erscheint, wird durch dieses Branding eine bessere Erkennung ermöglicht.
 
@@ -1151,7 +1151,7 @@ Stellt der KassenHersteller ein Template für seine KassenHändler zur Verfügun
 
 #### Manuelles Ausführen des Konfigurations-Template
 
-Sobald ein Template für einen Account freigeben wurde, so erscheint dieses innerhalb des freigegebenen Accounts als kostenloses Produkt im fiskaltrust.Shop. Der Account-Besitzer kann das Template nun in beliebiger Menge auschecken. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account bei den Konfigurationen hinterlegt
+Sobald ein Template für einen fiskaltrust.Account freigeben wurde, so erscheint dieses innerhalb des freigegebenen Accounts als kostenloses Produkt im fiskaltrust.Shop. Der Account-Besitzer kann das Template nun in beliebiger Menge auschecken. Die Menge stellt dabei die Anzahl der CashBoxen dar, die automatisch generiert werden sollen. Sobald der Checkout-Prozess abgeschlossen ist, wird vom fiskaltrust.Portal durch Anwendung des Templates die entsprechende Anzahl von CashBoxen automatisch generiert und im Account bei den Konfigurationen hinterlegt
 (Menüpunkt: `Konfiguration->CashBox`). 
 
 Handelt es sich hierbei um den Account eines KassenBetreibers, besteht die Möglichkeit, je nach Outlet unterschiedliche Templates auszuchecken. Deshalb sollte vor der Übernahme des Templates in den Warenkorb auf die Standortauswahl geachtet werden
@@ -1198,34 +1198,34 @@ Falls nicht über den Query-String überschrieben, werden [Systemvariablen](#sys
 
 Des Weiteren besteht die Möglichkeit folgende zusätzliche (optionale) Parameter über den Query-String der URL zu übergeben:
 
-| Variable                 | Beschreibung                                                 | Default Wert falls nicht übergeben                        |
-| ------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
-| `outlet_number`          | Nummer des Standorts                                         | `{max(outlets used in account's existing cashboxes) + 1}` |
-| `description`            | Name allgemein. Wird für die Cashbox, enthaltene Queues und SCUs verwendet, falls nicht einzeln mit eigenem Parameter überschrieben. | `ft{yyyyMMddHHmmss}`                                      |
-| `cashbox_description`    | Name für die Cashbox. Überschreibt  `description`            | `ft{yyyyMMddHHmmss}`                                      |
-| `cashbox_id`             | ID der Cashbox. Kann bei Neuanlage und bei Änderung verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `ftCashBoxId` überschrieben. | Random GUID                                               |
-| `cashbox_ipaddress`      | IP Adresse der Cashbox.                                      | Empty string                                              |
-| `cashbox_producttype`    | Cashbox Product Type                                         | Empty string                                              |
-| `queue{0-9}_id`          | ID der Queue. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben. | Random GUID                                               |
-| `queue{0-9}_description` | Name für die Queue. Überschreibt  `description`. Achtung: wird von `PackageConfiguration.Description`  überschrieben. | `{description}`                                           |
-|`queue{0-9}_package` |  Name des Package zum Erstellen der Queue. Achtung: wird von `PackageConfiguration.Package`  überschrieben. | Empty String |
-|`queue{0-9}_version` |  Version des Package zum Erstellen der Queue. Achtung: wird von `PackageConfiguration.Version`  überschrieben. | Empty String |
-| `queue{0-9}_url` | JSON Array mit URLs (Strings) für die Queue. Achtung: wird von `PackageConfiguration.Url`  überschrieben.  | `http://localhost:1200/fiskaltrust` for the first queue, `http://localhost:1200/fiskaltrust{1-9}` for others |
-| `queue{0-9}_configuration` | JSON Element zur Konfiguration der Queue. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben. | Empty |
-| `queue{0-9}_countrycode` | Länderkürzel für die Queue. Wie   `PackageConfiguration.Configuration.CountryCode`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration.CountryCode`  überschrieben.  | Empty |
-| `queue{0-9}_timeout` | Timeout für die Queue. Wie   `PackageConfiguration.Configuration.Timeout`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration.Timeout`  überschrieben.  | 15000 |
-| `scu{0-9}_id`                            | ID der SCU. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben. | Random GUID                                                  |
-| `scu{0-9}_description`                   | Name für die SCU. Überschreibt  `description` . Achtung: wird von `PackageConfiguration.Description`  überschrieben. | `{description}`                                              |
-|`scu{0-9}_package` |  Name des Package zum Erstellen der SCU. Achtung: wird von `PackageConfiguration.Package`  überschrieben. | Empty String |
-|`scu{0-9}_version` |  Version des Package zum Erstellen der SCU. Achtung: wird von `PackageConfiguration.Version`  überschrieben. | Empty String |
-| `scu{0-9}_url` | JSON Array mit URLs (Strings) für die SCU. Achtung: wird von `PackageConfiguration.Url`  überschrieben.  | `net.pipe://localhost/{scu_id}` |
-| `scu{0-9}_configuration` | JSON Element zur Konfiguration der SCU. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben. | Empty |
-| `helper{0-9}_id`                         | ID des Helper. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben. | Random GUID                                                  |
-| `helper{0-9}_description`                | Name für den Helper. Überschreibt  `description` . Achtung: wird von `PackageConfiguration.Description`  überschrieben.  | `{description}`                                              |
-| `helper{0-9}_url`                        | JSON Array mit URLs (Strings) für den Helper. Achtung: wird von `PackageConfiguration.Url`  überschrieben.  | `net.pipe://localhost/{helper_id}`                           |
-|`helper{0-9}_package` |  Name des Package zum Erstellen des Helper. Achtung: wird von `PackageConfiguration.Package`  überschrieben. | Empty String |
-|`helper{0-9}_version` |  Version des Package zum Erstellen des Helper. Achtung: wird von `PackageConfiguration.Version`  überschrieben. | Empty String |
-| `helper{0-9}_configuration` | JSON Element zur Konfiguration des Helper. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben.  | Empty |
+| Variable                    | Beschreibung                                                                                                                                                                                                                                                                            | Default Wert falls nicht übergeben                                                                           |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| `outlet_number`             | Nummer des Standorts                                                                                                                                                                                                                                                                    | `{max(outlets used in account's existing cashboxes) + 1}`                                                    |
+| `description`               | Name allgemein. Wird für die CashBox, enthaltene Queues und SCUs verwendet, falls nicht einzeln mit eigenem Parameter überschrieben.                                                                                                                                                    | `ft{yyyyMMddHHmmss}`                                                                                         |
+| `cashbox_description`       | Name für die CashBox. Überschreibt  `description`                                                                                                                                                                                                                                       | `ft{yyyyMMddHHmmss}`                                                                                         |
+| `cashbox_id`                | ID der CashBox. Kann bei Neuanlage und bei Änderung verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `ftCashBoxId` überschrieben.              | Random GUID                                                                                                  |
+| `cashbox_ipaddress`         | IP Adresse der CashBox.                                                                                                                                                                                                                                                                 | Empty string                                                                                                 |
+| `cashbox_producttype`       | CashBox Product Type                                                                                                                                                                                                                                                                    | Empty string                                                                                                 |
+| `queue{0-9}_id`             | ID der Queue. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben.  | Random GUID                                                                                                  |
+| `queue{0-9}_description`    | Name für die Queue. Überschreibt  `description`. Achtung: wird von `PackageConfiguration.Description`  überschrieben.                                                                                                                                                                   | `{description}`                                                                                              |
+| `queue{0-9}_package`        | Name des Package zum Erstellen der Queue. Achtung: wird von `PackageConfiguration.Package`  überschrieben.                                                                                                                                                                              | Empty String                                                                                                 |
+| `queue{0-9}_version`        | Version des Package zum Erstellen der Queue. Achtung: wird von `PackageConfiguration.Version`  überschrieben.                                                                                                                                                                           | Empty String                                                                                                 |
+| `queue{0-9}_url`            | JSON Array mit URLs (Strings) für die Queue. Achtung: wird von `PackageConfiguration.Url`  überschrieben.                                                                                                                                                                               | `http://localhost:1200/fiskaltrust` for the first queue, `http://localhost:1200/fiskaltrust{1-9}` for others |
+| `queue{0-9}_configuration`  | JSON Element zur Konfiguration der Queue. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben.                                                                                                          | Empty                                                                                                        |
+| `queue{0-9}_countrycode`    | Länderkürzel für die Queue. Wie   `PackageConfiguration.Configuration.CountryCode`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration.CountryCode`  überschrieben.                                                                                                | Empty                                                                                                        |
+| `queue{0-9}_timeout`        | Timeout für die Queue. Wie   `PackageConfiguration.Configuration.Timeout`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration.Timeout`  überschrieben.                                                                                                             | 15000                                                                                                        |
+| `scu{0-9}_id`               | ID der SCU. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben.    | Random GUID                                                                                                  |
+| `scu{0-9}_description`      | Name für die SCU. Überschreibt  `description` . Achtung: wird von `PackageConfiguration.Description`  überschrieben.                                                                                                                                                                    | `{description}`                                                                                              |
+| `scu{0-9}_package`          | Name des Package zum Erstellen der SCU. Achtung: wird von `PackageConfiguration.Package`  überschrieben.                                                                                                                                                                                | Empty String                                                                                                 |
+| `scu{0-9}_version`          | Version des Package zum Erstellen der SCU. Achtung: wird von `PackageConfiguration.Version`  überschrieben.                                                                                                                                                                             | Empty String                                                                                                 |
+| `scu{0-9}_url`              | JSON Array mit URLs (Strings) für die SCU. Achtung: wird von `PackageConfiguration.Url`  überschrieben.                                                                                                                                                                                 | `net.pipe://localhost/{scu_id}`                                                                              |
+| `scu{0-9}_configuration`    | JSON Element zur Konfiguration der SCU. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben.                                                                                                            | Empty                                                                                                        |
+| `helper{0-9}_id`            | ID des Helper. Kann bei Neuanlage und bei Änderungen verwendet werden. Bei Neuanlage empfehlen wir diesen Parameter nicht anzugeben und dessen automatische Generierung dem fiskaltrust System zu überlassen. Achtung: wird vom Template-Feld  `PackageConfiguration.Id` überschrieben. | Random GUID                                                                                                  |
+| `helper{0-9}_description`   | Name für den Helper. Überschreibt  `description` . Achtung: wird von `PackageConfiguration.Description`  überschrieben.                                                                                                                                                                 | `{description}`                                                                                              |
+| `helper{0-9}_url`           | JSON Array mit URLs (Strings) für den Helper. Achtung: wird von `PackageConfiguration.Url`  überschrieben.                                                                                                                                                                              | `net.pipe://localhost/{helper_id}`                                                                           |
+| `helper{0-9}_package`       | Name des Package zum Erstellen des Helper. Achtung: wird von `PackageConfiguration.Package`  überschrieben.                                                                                                                                                                             | Empty String                                                                                                 |
+| `helper{0-9}_version`       | Version des Package zum Erstellen des Helper. Achtung: wird von `PackageConfiguration.Version`  überschrieben.                                                                                                                                                                          | Empty String                                                                                                 |
+| `helper{0-9}_configuration` | JSON Element zur Konfiguration des Helper. Wie   `PackageConfiguration.Configuration`  aus dem Template. Achtung: wird von `PackageConfiguration.Configuration`  überschrieben.                                                                                                         | Empty                                                                                                        |
 
 
 
@@ -1256,9 +1256,9 @@ Wie weiter oben bereits erwähnt, kann das Auschecken von Templates mit dem Stan
 
 ##### Anlegen oder Importieren der Outlets im Portal
 
-Standorte (sogenannte Outlets) können manuell über das Portal im Account des KassenBetreibers angelegt werden. Siehe Menüpunkt `Outlets`. Des Weiteren kann als Optimierungsvariante unter demselben Menüpunkt mit Hilfe einer csv. Datei eine ganze Liste von Standorten importiert werden. Der Aufbau einer solchen Liste ist im Portal beschrieben.
+Standorte (sogenannte Outlets) können manuell über das fiskaltrust.Portal im Account des KassenBetreibers angelegt werden. Siehe Menüpunkt `Outlets`. Des Weiteren kann als Optimierungsvariante unter demselben Menüpunkt mit Hilfe einer csv. Datei eine ganze Liste von Standorten importiert werden. Der Aufbau einer solchen Liste ist im fiskaltrust.Portal beschrieben.
 
-Das Anlegen der Standorte ist nur über das Portal möglich und kann nicht über die API erfolgen.
+Das Anlegen der Standorte ist nur über das fiskaltrust.Portal möglich und kann nicht über die API erfolgen.
 
 ##### Angabe des Outlets im API Aufruf
 
@@ -1287,7 +1287,7 @@ foreach ($outlet in $outlets)
 ```
 Schritt 1: Header definieren (accountId und accesstoken setzen)
 
-Schritt 2: Outlets aus der [`fiskaltrustOutletsWithTemplateFile.csv`](images/fiskaltrustOutletsWithTemplateFile.csv) Datei einlesen. Diese Datei wird sowohl für das Anlegen der Outlets (Import im Portal) als auch zum Ausführen der Templates verwendet. Nach dem Import im Portal wird sie hier eingelesen. Beispielhafter Inhalt:
+Schritt 2: Outlets aus der [`fiskaltrustOutletsWithTemplateFile.csv`](images/fiskaltrustOutletsWithTemplateFile.csv) Datei einlesen. Diese Datei wird sowohl für das Anlegen der Outlets (Import im Portal) als auch zum Ausführen der Templates verwendet. Nach dem Import im fiskaltrust.Portal wird sie hier eingelesen. Beispielhafter Inhalt:
 
 `
 LocationId;OutletNumber;Name;Address;ContactName;Telephone;Fax;PostalCode;City;County;StateOrProvince;Country;Template;TillCode
@@ -1305,11 +1305,11 @@ Schritt 5: für jede eingelesene Zeile wird die Uri für den API Aufruf aufgebau
 Schritt 6: für jede eingelesene Zeile wird ein Aufruf der HTTP-API mit dem zuvor vorbereiteten Header, Uri und Template abgesetzt.
 
 Zusammenfassung:
- In dem obigen Beispiel wurden mit Hilfe der [`fiskaltrustOutletsWithTemplateFile.csv`](images/fiskaltrustOutletsWithTemplateFile.csv) Datei sowohl die Outlets im Portal angelegt (Bulk-Import) als auch für jedes Outlet das dazugehörige Template (einmalig - als Beispiel) ausgeführt.
+ In dem obigen Beispiel wurden mit Hilfe der [`fiskaltrustOutletsWithTemplateFile.csv`](images/fiskaltrustOutletsWithTemplateFile.csv) Datei sowohl die Outlets im fiskaltrust.Portal angelegt (Bulk-Import) als auch für jedes Outlet das dazugehörige Template (einmalig - als Beispiel) ausgeführt.
 
 ### Automatisierter Rollout der fiskaltrust.Middleware
 
-Über das fiskaltrust.Portal haben Sie die Möglichkeit, den Launcher herunterzuladen. Drücken Sie dazu den "Download online Launcher" Button einer beliebigen Cashbox im fiskaltrust.Portal. Den heruntergeladenen Launcher können Sie nun als Teil Ihres Rollouts automatisiert auf alle Kassen der Betreiber ausliefern und starten. 
+Über das fiskaltrust.Portal haben Sie die Möglichkeit, den Launcher herunterzuladen. Drücken Sie dazu den "Download online Launcher" Button einer beliebigen CashBox im fiskaltrust.Portal. Den heruntergeladenen Launcher können Sie nun als Teil Ihres Rollouts automatisiert auf alle Kassen der Betreiber ausliefern und starten. 
 
 Wichtig ist es hierbei, beim ersten Start darauf zu achten, dass die fiskaltrust.Middleware richtig, d.h. mit der dazugehörigen CashBox initialisiert wird. Dafür stellt der Launcher ein Konfigurationsfile (fiskaltrust.exe.config) zur Verfügung. Dieses können Sie vor dem Ausrollen des Launcher auf die Kasse des Betreibers entsprechend anpassen. 
 
@@ -1331,7 +1331,7 @@ Nun können Sie den Launcher mit der angepassten Konfigurationsdatei und Paramet
 
 ### Hoher Automatisierungsgrad
 
-Durch die oben beschriebene Vorgehensweisen zum Ausführen der Konfigurations-Templates über die API und zum automatisierten Rollout der fiskaltrust.Middleware ist ein hoher Automatisierungsgrad des Rollouts erreichbar. Lediglich die Outlets müssen mit Hilfe des Bulk-Import im Portal manuell angelegt werden.
+Durch die oben beschriebene Vorgehensweisen zum Ausführen der Konfigurations-Templates über die API und zum automatisierten Rollout der fiskaltrust.Middleware ist ein hoher Automatisierungsgrad des Rollouts erreichbar. Lediglich die Outlets müssen mit Hilfe des Bulk-Import im fiskaltrust.Portal manuell angelegt werden.
 
 ## Schlusswort
 
