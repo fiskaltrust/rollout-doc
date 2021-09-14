@@ -35,7 +35,7 @@ Diese stehen unter https://www.datev.de/web/de/media/datev_de/pdf/export-imports
 - [ ] Geben Sie ggf. Filterkriterien ein, um die Suchergebnisse einzugrenzen und wählen Sie <kbd>Suchen</kbd>.
 - [ ] Prüfen Sie mit dem Symbol bei `Berechtigungen`, ob der Eintrag  `Vertragsabschluss` aktiv ist. <br />Falls nicht, setzen Sie sich mit dem KassenBetreiber in Verbindung und lassen diese aktivieren. Beachten Sie dazu den Hilfetext bei [Troubleshooting](#Troubleshooting)  
 - [ ] Mit <kbd>OK</kbd> schließen Sie das Dialogfenster.
-- [ ] Wählen Sie bei <kbd>Name*</kbd>  den Link und wechseln Sie den Account des Kassenbetreibers.
+- [ ] Wählen Sie bei <kbd>Name*</kbd>  den Link und wechseln Sie den Account des KassenBetreibers.
 - [ ] Wählen Sie <kbd>Firma</kbd> &rarr; <kbd>Stammdaten</kbd>.
 - [ ] Kontrollieren Sie, ob jedes Pflichtfeld wie `Name*`,  `Adresse*` ausgefüllt ist.
 - [ ] Prüfen Sie auch, ob **keine Leerstellen** in den Feldern eingegeben wurden, zum Beispiel vor oder nach den Werten oder in scheinbar leeren Feldern.
@@ -45,7 +45,7 @@ Diese stehen unter https://www.datev.de/web/de/media/datev_de/pdf/export-imports
 
 ## meinFiskal Benutzerkonto bereitstellen
 
-- [ ] Wechseln Sie im Account des Kassenbetreibers zu <kbd>Firma</kbd>  &rarr; <kbd>Übersicht</kbd> (https://portal.fiskaltrust.de/AccountProfile).
+- [ ] Wechseln Sie im Account des KassenBetreibers zu <kbd>Firma</kbd>  &rarr; <kbd>Übersicht</kbd> (https://portal.fiskaltrust.de/AccountProfile).
 ![Firma-->Übersicht-->Verbindungen zu Drittpartnern](images/meinFiskal-uebersicht.png "Firma-->Übersicht-->Verbindungen zu Drittpartnern")
 - [ ] Aktivieren Sie den Schieberegler bei `Hier können Sie Verbindungen zu Drittpartnern aktivieren:`
 - [ ] Aktivieren Sie das Kästchen bei `Ich habe die AGB und die Datenschutzerklärung gelesen und akzeptiere diese.`
