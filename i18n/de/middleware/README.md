@@ -445,28 +445,11 @@ In dem Fall, dass Ihr Netzwerk die Benützung eines Proxys für ausgehende Verbi
 
 Dieser Parameter erfordert einen durch Semikolon-separierten Connection String mit drei Argumenten, welche den Hostnamen des Proxys, sowie optional einen Benutzernamen und Passwort für die Authentifikation, angeben.
 
-<table>
-	<tr>
-		<th>Wert</th>
-		<th>Beschreibung</th>
-		<th>Obligat</th>
-	</tr>
-	<tr>
-		<td>address</td>
-        <td>Die URL des Proxys <i>(standardmässig HTTP, falls nur ein Hostname angegeben wird)</i></td>
-		<td>Ja</td>
-	</tr>
-	<tr>
-		<td>user</td>
-		<td>Der Name des Benutzers welcher für die Proxyauthentifikation benutzt werden soll</td>
-		<td>Nein</td>
-	</tr>
-	<tr>
-		<td>password</td>
-		<td>Das Passwort des Proxybenutzers</td>
-		<td>Nein</td>
-	</tr>
-</table>
+| Wert     | Beschreibung                                                                        | Obligat   |
+| -------- | ----------------------------------------------------------------------------------- | --------: |
+| address  | Die URL des Proxys _(standardmässig HTTP, falls nur ein Hostname angegeben wird)_   |        Ja |
+| username | Der Name des Benutzers welcher für die Proxyauthentifikation benutzt werden soll    |      Nein |
+| password | Das Passwort des Proxybenutzers                                                     |      Nein |
 
 
 
