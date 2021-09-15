@@ -444,28 +444,11 @@ In case your network requires the use of a proxy for outbound connections, you c
 
 This parameter takes a semicolon-separated connection string with three arguments, specifying the hostname of the proxy and -  optionally - a username and password for authentication.
 
-<table>
-	<tr>
-		<th>Value</th>
-		<th>Description</th>
-		<th>Mandatory</th>
-	</tr>
-	<tr>
-		<td>address</td>
-        <td>The URL of the proxy <i>(defaults to HTTP if only a hostname is provided)</i></td>
-		<td>Yes</td>
-	</tr>
-	<tr>
-		<td>username</td>
-		<td>The user which should be used for authentication against the proxy</td>
-		<td>No</td>
-	</tr>
-	<tr>
-		<td>password</td>
-		<td>The password of the proxy user</td>
-		<td>No</td>
-	</tr>
-</table>
+| Value    | Description                                                              | Mandatory |
+| -------- | ------------------------------------------------------------------------ | --------: |
+| address  | The URL of the proxy *(defaults to HTTP if only a hostname is provided)* |       Yes |
+| username | The user which should be used for authentication against the proxy       |        No |
+| password | The password of the proxy user                                           |        No |
 
 
 
