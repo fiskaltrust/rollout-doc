@@ -74,7 +74,7 @@ Als KassenHersteller können Sie wie folgt Ihr KassenSystem (POS-System) im fisk
 
    
 
-![Übersicht KassenSysteme](images/menu-POS-Systems.png "Übersicht der Kassensysteme")
+![Übersicht KassenSysteme](images/menu-possystems.png "Übersicht der Kassensysteme")
 
 
 
@@ -82,7 +82,7 @@ Als KassenHersteller können Sie wie folgt Ihr KassenSystem (POS-System) im fisk
 
    
 
-![Kassensystem erfassen](images/add-POS-System.png "Kassensystem erfassen")
+![Kassensystem erfassen](images/add-possystem.png "Kassensystem erfassen")
 
 
 
@@ -90,7 +90,7 @@ Als KassenHersteller können Sie wie folgt Ihr KassenSystem (POS-System) im fisk
 
 
 
-![Kassensystem in Übersicht](images/POS-System-in-overview.png "Kassensystem in Übersicht")
+![Kassensystem in Übersicht](images/possystem-in-overview.png "Kassensystem in Übersicht")
 
 
 
