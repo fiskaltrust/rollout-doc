@@ -444,11 +444,12 @@ In case your network requires the use of a proxy for outbound connections, you c
 
 This parameter takes a semicolon-separated connection string with three arguments, specifying the hostname of the proxy and -  optionally - a username and password for authentication.
 
-| Value    | Description                                                              | Mandatory |
-| -------- | ------------------------------------------------------------------------ | --------: |
-| address  | The URL of the proxy *(defaults to HTTP if only a hostname is provided)* |       Yes |
-| username | The user which should be used for authentication against the proxy       |        No |
-| password | The password of the proxy user                                           |        No |
+| Value    | Description                                                                                                                  | Mandatory |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------- | --------: |
+| address  | The URL of the proxy *(defaults to HTTP if only a hostname is provided)*                                                     |       Yes |
+| username | The user which should be used for authentication against the proxy                                                           |        No |
+| password | The password of the proxy user                                                                                               |        No |
+| bypass   | A regular expression with host addresses and names which ought to be exempt from proxying<br />*Can be used more than once*  |        No |
 
 
 
@@ -459,6 +460,8 @@ This parameter takes a semicolon-separated connection string with three argument
 address=192.168.0.1
 address=192.168.0.1;username=proxyuser;password=proxypw
 address=proxy.example.com;username=proxyuser
+address=192.168.0.1;bypass=192\.168\.10\.1
+address=192.168.0.1;bypass=192\.168\.10\.1;bypass=scu\d+\.example\.com
 ```
 
 

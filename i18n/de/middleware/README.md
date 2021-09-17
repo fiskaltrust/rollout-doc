@@ -445,11 +445,12 @@ In dem Fall, dass Ihr Netzwerk die Benützung eines Proxys für ausgehende Verbi
 
 Dieser Parameter erfordert einen durch Semikolon-separierten Connection String mit drei Argumenten, welche den Hostnamen des Proxys, sowie optional einen Benutzernamen und Passwort für die Authentifikation, angeben.
 
-| Wert     | Beschreibung                                                                        | Obligat   |
-| -------- | ----------------------------------------------------------------------------------- | --------: |
-| address  | Die URL des Proxys _(standardmässig HTTP, falls nur ein Hostname angegeben wird)_   |        Ja |
-| username | Der Name des Benutzers welcher für die Proxyauthentifikation benutzt werden soll    |      Nein |
-| password | Das Passwort des Proxybenutzers                                                     |      Nein |
+| Wert     | Beschreibung                                                                                                                             | Obligat   |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------: |
+| address  | Die URL des Proxys _(standardmässig HTTP, falls nur ein Hostname angegeben wird)_                                                        |        Ja |
+| username | Der Name des Benutzers welcher für die Proxyauthentifikation benutzt werden soll                                                         |      Nein |
+| password | Das Passwort des Proxybenutzers                                                                                                          |      Nein |
+| bypass   | Ein regulärer Ausdruck mit Host Adressen/Namen, welche vom Proxy ausgenommen werden sollen<br />*Kann mehr als einmal angegeben werden*  |      Nein |
 
 
 
@@ -460,6 +461,8 @@ Dieser Parameter erfordert einen durch Semikolon-separierten Connection String m
 address=192.168.0.1
 address=192.168.0.1;user=proxyuser;password=proxypw
 address=proxy.example.com;user=proxyuser
+address=192.168.0.1;bypass=192\.168\.10\.1
+address=192.168.0.1;bypass=192\.168\.10\.1;bypass=scu\d+\.example\.com
 ```
 
 
