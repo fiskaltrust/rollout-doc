@@ -442,14 +442,15 @@ If you like to send the output of the script to a file you can do it like in the
 
 In case your network requires the use of a proxy for outbound connections, you can specify that via the [`-proxy` parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation#launcher-configuration) of `fiskaltrust.exe`.
 
-This parameter takes a semicolon-separated connection string with three arguments, specifying the hostname of the proxy and -  optionally - a username and password for authentication.
+This parameter takes a semicolon-separated connection string with five arguments, specifying the hostname of the proxy and - optionally - a username and password for authentication.
 
-| Value    | Description                                                                                                                  | Mandatory |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------- | --------: |
-| address  | The URL of the proxy *(defaults to HTTP if only a hostname is provided)*                                                     |       Yes |
-| username | The user which should be used for authentication against the proxy                                                           |        No |
-| password | The password of the proxy user                                                                                               |        No |
-| bypass   | A regular expression with host addresses and names which ought to be exempt from proxying<br />*Can be used more than once*  |        No |
+| Value           | Description                                                                                                                  | Required  |
+| --------        | ---------------------------------------------------------------------------------------------------------------------------- | --------: |
+| address         | The URL of the proxy *(defaults to HTTP if only a hostname is provided)*                                                     |       Yes |
+| username        | The user which should be used for authentication against the proxy                                                           |        No |
+| password        | The password of the proxy user                                                                                               |        No |
+| bypass          | A regular expression with host addresses and names which ought to be exempt from proxying<br />*Can be used more than once*  |        No |
+| bypasslocalhost | Indicates whether local connections require proxying as well (`false` or `true`)                                             |        No |
 
 
 
