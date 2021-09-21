@@ -1029,7 +1029,7 @@ Indicates the SCU attribute you'd like to reference to. Possible values for `att
 
 ##### Key / Value
 
-For `key` and `value` any valid string can be used which has a matching counterpart in one of SCUs of the chosen type **and** in the selected outlet.
+For `key` and `value` any valid key / value pair can be used, that has been assigned to one of the  SCUs of the chosen type **and** in the selected outlet.
 
 
 
