@@ -1031,7 +1031,7 @@ _Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
 
 ##### Schlüssel / Wert
 
-Für `key` und `value` kann jeglich gültiger String verwendet werden, welcher einen entsprechenden Gegenpart hat in einer der SCUs des gewählten Typs **und** in dem ausgewählten Standort.
+Für `key` und `value` kann jedes gültige Schlüssel/Wert Paar verwendet werden, das einer SCU des gewählten Typs **und**  in dem ausgewählten Standort zugewiesen wurde.
 
 
 
