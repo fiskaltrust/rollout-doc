@@ -997,27 +997,47 @@ Folgende Systemvariablen stehen Ihnen zur Verwendung im Template zur Verfügung:
 
 | Variable                                         | Wert                                                                                                                              |
 |--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `cashbox_id`                                     | Random GUID                                                                                                                       |
-| `scu{0-9}_id`                                    | Random GUID                                                                                                                       |
-| `helper{0-9}_id`                                 | Random GUID                                                                                                                       |
-| `queue{0-9}_id`                                  | Random GUID                                                                                                                       |
-| `queue{0-9}_id_base64withoutspecialchars`        | `{queue_id}`, converted to Base64 without special characters. Wird oft als Kassenseriennummer verwendet (CashBoxIdentification)   |
-| `reference_scu_fiskaly_counter_{0-n}_id`         | wird verwendet um eine bereits vorhandene fiskaly cloud SCU zu referenzieren (z.B. die automatisch beim checkout erstellt wurde)  |
-| `reference_scu_swissbitcloud_counter_{0-n}_id`   | wird verwendet um eine bereits vorhandene Swissbit cloud SCU zu referenzieren (z.B. die automatisch beim checkout erstellt wurde) |
-| `reference_scu_swissbit_counter_{0-n}_id`        | wird verwendet um eine bereits vorhandene Swissbit usb SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
-| `reference_scu_cryptovision_counter_{0-n}_id`    | wird verwendet um eine bereits vorhandene cryptovision SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat |
-| `reference_scu_dieboldnixdorf_counter_{0-n}_id`  | wird verwendet um eine bereits vorhandene diebold SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat      |
-| `reference_scu_epson_counter_{0-n}_id`           | wird verwendet um eine bereits vorhandene epson SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat        |
-| `reference_scu_atrust_counter_{0-n}_id`          | wird verwendet um eine bereits vorhandene atrust SCU zu referenzieren, die in ihrer Konfiguration einen Counter gesetzt hat       |
-| `reference_scu_fiskaly_counter_{0-n}_url`        | wird verwendet um die Url einer bereits vorhandenen fiskaly cloud SCU zu erhalten                                                 |
-| `reference_scu_swissbitcloud_counter_{0-n}_url`  | wird verwendet um die Url einer bereits vorhandenen Swissbit cloud SCU zu erhalten                                                |
-| `reference_scu_swissbit_counter_{0-n}_url`       | wird verwendet um die Url einer bereits vorhandenen Swissbit usb SCU zu erhalten                                                  |
-| `reference_scu_cryptovision_counter_{0-n}_url`   | wird verwendet um die Url einer bereits vorhandenen cryptovision SCU zu erhalten                                                  |
-| `reference_scu_dieboldnixdorf_counter_{0-n}_url` | wird verwendet um die Url einer bereits vorhandenen diebold SCU zu erhalten                                                       |
-| `reference_scu_epson_counter_{0-n}_url`          | wird verwendet um die Url einer bereits vorhandenen epson SCU zu erhalten                                                         |
-| `reference_scu_atrust_counter_{0-n}_url`         | wird verwendet um die Url einer bereits vorhandenen atrust SCU zu erhalten                                                        |
+| `cashbox_id`                                     | Zufällige GUID                                                                                                                    |
+| `scu{0-9}_id`                                    | Zufällige GUID                                                                                                                    |
+| `helper{0-9}_id`                                 | Zufällige GUID                                                                                                                    |
+| `queue{0-9}_id`                                  | Zufällige GUID                                                                                                                    |
+| `queue{0-9}_id_base64withoutspecialchars`        | `{queue_id}`, konvertiert zu Base64 ohne Sonderzeichen. Wird oft als Kassenseriennummer verwendet (CashBoxIdentification)         |
+| `reference_scu_{type}_{key}_{value}_{attr}`      | Referenziert auf das angegebene Attribut einer existierenden SCU des gegebenen Typs und Schlüssel/Werte Paars                     |
 
 _Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
+
+##### Typ
+
+`type` gibt den SCU Typ an, den Sie referenzieren möchten. Mögliche Werte sind
+
+* **atrust**
+* **cryptovision**
+* **dieboldnixdorf**
+* **epson**
+* **fiskaly**
+* **swissbit**
+* **swissbitcloud**
+
+
+
+##### Attribut
+
+`attr` gibt das SCU Attribut an, welches Sie referenzieren möchten. Mögliche Werte sind
+
+* **id** - referenziert auf die ID der jeweiligen SCU
+* **url** - referenziert auf alle konfigurierten URLs der jeweiligen SCU
+
+
+
+##### Schlüssel / Wert
+
+Für `key` und `value` kann jeglich gültiger String verwendet werden, welcher einen entsprechenden Gegenpart hat in einer der SCUs des gewählten Typs **und** in dem ausgewählten Standort.
+
+
+
+> **Wichtig:** Standardmässig bekommen alle, über fiskaltrust.Shop erworbene, SCUs ein Feld names `counter` zugewiesen, welches einen für die jeweilige CashBox eindeutigen Integer Wert besitzt.
+>
+> Um, zum Beispiel, auf die ID einer fiskaly SCU mit einem Counter Wert von "1" zu referenzieren, würden Sie `reference_scu_fiskaly_counter_1_id` angeben.
 
 #### Referenzierung vorhandener SCUs in einem Template
 
