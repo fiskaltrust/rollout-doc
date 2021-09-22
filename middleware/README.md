@@ -993,29 +993,51 @@ The following key-value pairs can be used in the **`Configuration`** object of a
 
 The following system variables are available for use in the template:
 
-| Variable                                         | Wert                                                                                                  |
-|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| `cashbox_id`                                     | Random GUID                                                                                           |
-| `scu{0-9}_id`                                    | Random GUID                                                                                           |
-| `helper{0-9}_id`                                 | Random GUID                                                                                           |
-| `queue{0-9}_id`                                  | Random GUID                                                                                           |
-| `queue{0-9}_id_base64withoutspecialchars`        | `{queue_id}`, converted to Base64 without special characters                                          |
-| `reference_scu_fiskaly_counter_{0-n}_id`         | used to reference an existing fiscaly cloud scu (e.g. that was automatically created by checkout)     |
-| `reference_scu_swissbitcloud_counter_{0-n}_id`   | used to reference an existing Swissbit cloud scu (e.g. that was automatically created by checkout)    |
-| `reference_scu_swissbit_counter_{0-n}_id`        | used to reference an existing Swissbit usb scu that has a counter set in it's configuration           |
-| `reference_scu_cryptovision_counter_{0-n}_id`    | used to reference an existing cryptovision scu that has a counter set in it's configuration           |
-| `reference_scu_dieboldnixdorf_counter_{0-n}_id`  | used to reference an existing diebold scu that has a counter set in it's configuration                |
-| `reference_scu_epson_counter_{0-n}_id`           | used to reference an existing epson scu that has a counter set in it's configuration                  |
-| `reference_scu_atrust_counter_{0-n}_id`          | used to reference an existing atrust scu that has a counter set in it's configuration                 |
-| `reference_scu_fiskaly_counter_{0-n}_url`        | used to obtain the url of an existing fiscaly cloud scu that has a counter set in it's configuration  |
-| `reference_scu_swissbitcloud_counter_{0-n}_url`  | used to obtain the url of an existing Swissbit cloud scu that has a counter set in it's configuration |
-| `reference_scu_swissbit_counter_{0-n}_url`       | used to obtain the url of an existing Swissbit usb scu that has a counter set in it's configuration   |
-| `reference_scu_cryptovision_counter_{0-n}_url`   | used to obtain the url of an existing cryptovision scu that has a counter set in it's configuration   |
-| `reference_scu_dieboldnixdorf_counter_{0-n}_url` | used to obtain the url of an existing diebold scu that has a counter set in it's configuration        |
-| `reference_scu_epson_counter_{0-n}_url`          | used to obtain the url of an existing epson scu that has a counter set in it's configuration          |
-| `reference_scu_atrust_counter_{0-n}_url`         | used to obtain the url of an existing atrust scu that has a counter set in it's configuration         |
+| Variable                                    | Value                                                                                                         |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `cashbox_id`                                | Random GUID                                                                                                   |
+| `scu{0-9}_id`                               | Random GUID                                                                                                   |
+| `helper{0-9}_id`                            | Random GUID                                                                                                   |
+| `queue{0-9}_id`                             | Random GUID                                                                                                   |
+| `queue{0-9}_id_base64withoutspecialchars`   | `{queue_id}`, converted to Base64 without special characters                                                  |
+| `reference_scu_{type}_{key}_{value}_{attr}` | References the indicated attribute of an existing SCU with the given key/value pair and of the specified type |
 
 _Dynamic values are highlighted by {} in this table._
+
+##### Type
+
+Indicates the type of SCU you'd want to reference to. Possible values for `type` are
+
+* **cryptovision**
+* **dieboldnixdorf**
+* **epson**
+* **fiskalycertified**
+* **swissbit**
+* **swissbitcloud**
+
+
+
+##### Attribute
+
+Indicates the SCU attribute you'd like to reference to. Possible values for `attr` are
+
+* **id** - references the ID of the respective SCU
+* **url** - references all URLs configured for the respective SCU
+
+
+
+##### Key / Value
+
+For `key` and `value` any valid key / value pair can be used, that has been assigned to one of the SCUs of the chosen type **and** in the selected outlet.
+
+:::info
+
+By default, all SCUs purchased via fiskaltrust.Shop get a field `counter` assigned with an integer value unique within that CashBox.
+
+So, for example, to reference the ID of a fiskaly SCU with a counter value of "1", you'd be using `reference_scu_fiskaly_counter_1_id`.
+
+:::
+
 
 #### Referencing an existing SCU in a template
 
