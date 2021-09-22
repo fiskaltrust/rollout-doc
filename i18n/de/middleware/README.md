@@ -1036,7 +1036,7 @@ Für `key` und `value` kann jedes gültige Schlüssel/Wert Paar verwendet werden
 
 Standardmäßig bekommen alle über den fiskaltrust.Shop erworbenen SCUs ein Feld names `counter` zugewiesen, welches einen für die jeweilige CashBox eindeutigen Integer-Wert besitzt.
 
-Um, zum Beispiel, auf die ID einer fiskaly SCU mit einem Counter Wert von "1" zu referenzieren, würden Sie `reference_scu_fiskaly_counter_1_id` angeben.
+Um beispielsweise auf die ID einer fiskaly SCU mit einem Counter Wert von "1" zu referenzieren, kann die dynamische Referenz `reference_scu_fiskaly_counter_1_id` verwendet werden.
 
 :::
 
