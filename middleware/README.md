@@ -1008,11 +1008,10 @@ _Dynamic values are highlighted by {} in this table._
 
 Indicates the type of SCU you'd want to reference to. Possible values for `type` are
 
-* **atrust**
 * **cryptovision**
 * **dieboldnixdorf**
 * **epson**
-* **fiskaly**
+* **fiskalycertified**
 * **swissbit**
 * **swissbitcloud**
 
@@ -1029,14 +1028,15 @@ Indicates the SCU attribute you'd like to reference to. Possible values for `att
 
 ##### Key / Value
 
-For `key` and `value` any valid key / value pair can be used, that has been assigned to one of the  SCUs of the chosen type **and** in the selected outlet.
+For `key` and `value` any valid key / value pair can be used, that has been assigned to one of the SCUs of the chosen type **and** in the selected outlet.
 
+:::info
 
+By default, all SCUs purchased via fiskaltrust.Shop get a field `counter` assigned with an integer value unique within that CashBox.
 
-> **Important:** By default, all SCUs purchased via fiskaltrust.Shop get a field `counter` assigned with an integer value unique within that CashBox.
->
-> So, for example, to reference the ID of a fiskaly SCU with a counter value of "1", you'd be using `reference_scu_fiskaly_counter_1_id`.
+So, for example, to reference the ID of a fiskaly SCU with a counter value of "1", you'd be using `reference_scu_fiskaly_counter_1_id`.
 
+:::
 
 
 #### Referencing an existing SCU in a template

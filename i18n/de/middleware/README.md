@@ -1010,11 +1010,10 @@ _Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
 
 `type` gibt den SCU Typ an, den Sie referenzieren möchten. Mögliche Werte sind
 
-* **atrust**
 * **cryptovision**
 * **dieboldnixdorf**
 * **epson**
-* **fiskaly**
+* **fiskalycertified**
 * **swissbit**
 * **swissbitcloud**
 
@@ -1031,13 +1030,16 @@ _Dynamische Werte werden in dieser Tabelle durch {} hervorgehoben._
 
 ##### Schlüssel / Wert
 
-Für `key` und `value` kann jedes gültige Schlüssel/Wert Paar verwendet werden, das einer SCU des gewählten Typs **und**  in dem ausgewählten Standort zugewiesen wurde.
+Für `key` und `value` kann jedes gültige Schlüssel/Wert Paar verwendet werden, das einer SCU des gewählten Typs **und** in dem ausgewählten Standort zugewiesen wurde.
 
+:::info
 
+Standardmässig bekommen alle, über fiskaltrust.Shop erworbene, SCUs ein Feld names `counter` zugewiesen, welches einen für die jeweilige CashBox eindeutigen Integer Wert besitzt.
 
-> **Wichtig:** Standardmässig bekommen alle, über fiskaltrust.Shop erworbene, SCUs ein Feld names `counter` zugewiesen, welches einen für die jeweilige CashBox eindeutigen Integer Wert besitzt.
->
-> Um, zum Beispiel, auf die ID einer fiskaly SCU mit einem Counter Wert von "1" zu referenzieren, würden Sie `reference_scu_fiskaly_counter_1_id` angeben.
+Um, zum Beispiel, auf die ID einer fiskaly SCU mit einem Counter Wert von "1" zu referenzieren, würden Sie `reference_scu_fiskaly_counter_1_id` angeben.
+
+:::
+
 
 #### Referenzierung vorhandener SCUs in einem Template
 
