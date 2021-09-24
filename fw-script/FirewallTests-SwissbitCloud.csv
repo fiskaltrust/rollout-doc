@@ -2,6 +2,5 @@ Url,Code,Purpose
 https://helipad.fiskaltrust.cloud/version,200,ft cashbox download & upload receipt data
 https://packages.fiskaltrust.cloud/version,200,ft download packages
 https://dc.services.visualstudio.com/,404,ft error reporting
-https://link.fiskaltrust.cloud/release-notes,200,FCC redirect for Swissbit cloud TSE
 https://downloads.fiskaltrust.cloud/downloads/info.html,200, FCC for Swissbit cloud TSE
 https://fiskal.cloud,200,swissbit cloud TSE

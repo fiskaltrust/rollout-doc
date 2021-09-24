@@ -404,7 +404,6 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 - https://helipad.fiskaltrust.cloud/version (zum Download der CashBox und zum Hochladen der Belegdaten)
 - https://packages.fiskaltrust.cloud/version (zum Downloaden der benötigten Software Packages)
 - https://dc.services.visualstudio.com (für die Übermittelung von CashBox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
-- https://link.fiskaltrust.cloud/release-notes (redirect für die ft.Middleware zum FCC download)
 - https://downloads.fiskaltrust.cloud/downloads/info.html (zum Download des FCC, der für die Verbindung zur Swissbit Cloud TSE benötigt wird)
 - https://fiskal.cloud (zur Verbindung des FCC mit der Swissbit Cloud TSE)
 
