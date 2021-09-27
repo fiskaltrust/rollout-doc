@@ -402,7 +402,6 @@ In this case, the permissions for the required fiskaltrust servers and the permi
 - https://helipad.fiskaltrust.cloud/version (for downloading the CashBox and uploading the receipt data).
 - https://packages.fiskaltrust.cloud/version (to download the required software packages)
 - https://dc.services.visualstudio.com (for error reporting of CashBox related issues, a full list of current IP addresses can be found [here](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses))
-- https://link.fiskaltrust.cloud/release-notes (redirect for the ft.Middleware to the FCC download)
 - https://downloads.fiskaltrust.cloud/downloads/info.html (to download the FCC needed to connect tothe Swissbit cloudbased TSE )
 - https://fiskal.cloud (for the FCC to connect tothe Swissbit cloudbased TSE )
 
