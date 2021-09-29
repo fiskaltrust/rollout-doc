@@ -929,13 +929,13 @@ Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer Qu
 
 Folgende Packages stehen aktuell für SCUs zur Verfügung:
 
-| **Package Name**                               | **Beschreibung**                                                           |
-|------------------------------------------------|----------------------------------------------------------------------------|
-| `fiskaltrust.Middleware.SCU.DE.CryptoVision`   | Dieses Package ermöglicht die Kommunikation mit einer Cryptovision TSE.    |
-| `fiskaltrust.Middleware.SCU.DE.DieboldNixdorf` | Dieses Package ermöglicht die Kommunikation mit einer Diebold Nixdorf TSE. |
-| `fiskaltrust.Middleware.SCU.DE.Epson`          | Dieses Package ermöglicht die Kommunikation mit einer Epson TSE.           |
-| `fiskaltrust.Middleware.SCU.DE.fiskaly`        | Dieses Package ermöglicht die Kommunikation mit eine fiskaly Cloud-TSE.          |
-| `fiskaltrust.Middleware.SCU.DE.Swissbit`       | Dieses Package ermöglicht die Kommunikation mit einer Swissbit TSE.        |
+| **Package Name**                                 | **Beschreibung**                                                           |
+|--------------------------------------------------|----------------------------------------------------------------------------|
+| `fiskaltrust.Middleware.SCU.DE.CryptoVision`     | Dieses Package ermöglicht die Kommunikation mit einer Cryptovision TSE.    |
+| `fiskaltrust.Middleware.SCU.DE.DieboldNixdorf`   | Dieses Package ermöglicht die Kommunikation mit einer Diebold Nixdorf TSE. |
+| `fiskaltrust.Middleware.SCU.DE.Epson`            | Dieses Package ermöglicht die Kommunikation mit einer Epson TSE.           |
+| `fiskaltrust.Middleware.SCU.DE.FiskalyCertified` | Dieses Package ermöglicht die Kommunikation mit eine fiskaly Cloud-TSE.    |
+| `fiskaltrust.Middleware.SCU.DE.Swissbit`         | Dieses Package ermöglicht die Kommunikation mit einer Swissbit TSE.        |
 
 Folgende Schlüssel-Wert Paare werden in dem **`Configuration`** Objekt einer **SCU** je nach Hersteller der TSE verwendet:
 
