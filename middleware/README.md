@@ -932,7 +932,7 @@ Folgende Packages stehen aktuell für SCUs zur Verfügung:
 | `fiskaltrust.Middleware.SCU.DE.CryptoVision`   | This package enables communication with a Cryptovision TSE.    |
 | `fiskaltrust.Middleware.SCU.DE.DieboldNixdorf` | This package enables communication with a Diebold Nixdorf TSE. |
 | `fiskaltrust.Middleware.SCU.DE.Epson`          | This package enables communication with an Epson TSE.          |
-| `fiskaltrust.Middleware.SCU.DE.fiskaly`        | This package enables communication with a fiskaly Cloud-TSE.         |
+| `fiskaltrust.Middleware.SCU.DE.FiskalyCertified`        | This package enables communication with a certified fiskaly Cloud-TSE.         |
 | `fiskaltrust.Middleware.SCU.DE.Swissbit`       | This package enables communication with a Swissbit TSE.        |
 
 The following key-value pairs are used in the **`Configuration`** object of a **SCU** depending on the manufacturer of the TSE:
