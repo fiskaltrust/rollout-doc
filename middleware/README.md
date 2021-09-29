@@ -1010,7 +1010,7 @@ Indicates the type of SCU you'd want to reference to. Possible values for `type`
 * **cryptovision**
 * **dieboldnixdorf**
 * **epson**
-* **FiskalyCertified**
+* **fiskalycertified**
 * **swissbit**
 * **swissbitcloud**
 
