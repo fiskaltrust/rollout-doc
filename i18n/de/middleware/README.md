@@ -385,7 +385,7 @@ In diesem Fall müssen nur die Freigaben für die benötigten fiskaltrust Server
 
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
-#### Es wirddie fiskaly cloudbased TSE  verwendet
+#### Es wird die fiskaly cloudbased TSE  verwendet
 
 In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und die Freigabe für den fiskaly Server überprüft werden:
 
@@ -394,7 +394,7 @@ In diesem Fall müssen die Freigaben für die benötigten fiskaltrust Server und
 - https://dc.services.visualstudio.com (für die Übermittelung von Cashbox-bezogenen Fehlern, eine vollständige Liste der aktuellen IP Adressen kann [hier](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses) bezogen werden)
 - https://kassensichv.io/api/v1 (to connect the SCU to the fiskaly Cloud TSE 1.0)
 - https://kassensichv-middleware.fiskaly.com/api/v2 (to connect the SCU to the fiskaly Cloud TSE 2.0)
-
+- https://auth.fiskaly.com (fiskaly authentication)
 müssen erreichbar sein. Als Unterstützung bei der Fehlersuche stellen wir für Sie ein  [PowerShell Script](#script-zum-überprüfen-der-firewall-freigaben) zur Verfügung. Das Script muss fehlerfrei durchlaufen.
 
 #### Es wird  Die Swissbit cloudbasierende TSE verwendet
