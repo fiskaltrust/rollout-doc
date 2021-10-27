@@ -5,6 +5,7 @@
       { "pattern": "^https?://helipad\\.fiskaltrust\\.cloud/?$" },
       { "pattern": "^https?://packages\\.fiskaltrust\\.cloud/?$" },
       { "pattern": "^https?://eur-lex\\.europa\\.eu.*" },
-      { "pattern": "^https://dc.services\\.visualstudio\\.com/?$" }
+      { "pattern": "^https://dc.services\\.visualstudio\\.com/?$" },
+      { "pattern": "^https://auth\\.fiskaly\\.com/?$" }
     ]
   }
