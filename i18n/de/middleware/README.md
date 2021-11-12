@@ -604,7 +604,7 @@ Aus technischer Sicht ist dies das einfachste Szenario, benötigt allerdings ein
 
 Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
-Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/1-eine-tse-pro-kassa/README.md) nachgelesen werden.
+Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/1-a-tse-per-cash-register/README.md) nachgelesen werden.
 
 ### Hardware-TSE(s) am lokalen Server für mehrere Kassen
 
@@ -614,7 +614,7 @@ Auf jeder Kasse und auf dem lokalen Server läuft die fiskaltrust.Middleware. Di
 
 Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
-Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/2-hardware-tses-am-lokalen-server-fuer-mehrere-kassen/README.md) nachgelesen werden.
+Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/2-hardware-tses-at-local-server-for-multiple-cash-registers/README.md) nachgelesen werden.
 
 Sollten Sie sich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz einer oder mehrerer zusätzlichen TSEs. Dies wird im unteren Bild beispielhaft visualisiert.
 
@@ -629,7 +629,7 @@ Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox der Hauptkasse ko
 
 Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
-Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/3-hardware-tse-an-der-hauptkassa-fuer-mehrere-zusaetzlichen-kassen/README.md) nachgelesen werden.
+Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers/README.md) nachgelesen werden.
 
 ### Eine Cloud-TSE für mehrere Kassen
 Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer eigenen Queue und einer eigenen SCU. Jede SCU greift auf die gleiche Cloud-TSE zu. Dieses Szenario ermöglicht eine Einsparung von Cloud-TSEs. Ein Vorteil hier ist, dass die SCU nicht zum Bottleneck wird, da jede Kasse ihre eigene SCU hat. Da jedoch hierbei alle Requests an die gleiche Cloud-TSE gesendet werden, wird die TSE zum Bottleneck. Des Weiteren sind hierbei ebenfalls sowohl mögliche [Performanceengpässe](#performanceempfehlung) in der Cloud-TSE zu berücksichtigen als auch unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md).
@@ -638,7 +638,7 @@ Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfi
 
 Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
-Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/4-eine-cloud-tse-fuer-mehrere-kassen/README.md) nachgelesen werden.
+Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/4-a-cloud-tse-for-multiple-cash-registers/README.md) nachgelesen werden.
 
 ### Rollout-Szenario mit Terminals
 Terminals sind Eingabegeräte ohne Kassenfunktion wie Tablets, Handhelds oder ähnliches, bei denen es nicht möglich ist, eine Hardware-TSE anzuschließen bzw. die fiskaltrust.Middleware am Gerät selbst zu installieren. In diesem Fall wird die fiskaltrust.Middleware an einer Kasse oder an einem Server betrieben und ist stets für die Terminals erreichbar. Die Terminals dienen nur als Eingabegeräte und verbinden sich mit dem Server oder mit der Kasse. Bei vielen gleichzeitigen Requests kann es zu [Performanceengpässen](#performanceempfehlung) in der TSE kommen. Sollten Sie sich für dieses Szenario entscheiden, empfehlen wir bei einer großen Anzahl von Requests den Einsatz mehrerer Kassen mit zusätzlichen TSEs (alternativ: mehrere fiskaltrust.Middleware-Instanzen mit eigener SCU und TSE auf dem Server).
@@ -651,7 +651,7 @@ Eine weitere mögliche Variante dieses Szenario ist die Zuordnung jedes Terminal
 
 Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
-Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/5-rollout-szenario-mit-terminals/README.md) nachgelesen werden.
+Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/5-rollout-scenario-with-terminals/README.md) nachgelesen werden.
 
 
 ### Rechenzentrum als operational environment
@@ -662,7 +662,7 @@ Im Falle eines Ausfalls der (Internet-)Verbindung ist es allerdings so, dass die
 
 Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, dass dieses Szenario abbildet.
 
-Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/6-rechenzentrum-als-operational-environment/README.md) nachgelesen werden.
+Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/6-data-center-as-operational-environment/README.md) nachgelesen werden.
 
 ### Anbindungsvarianten der TSE an die SCU
 
