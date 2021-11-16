@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Overview/Legal & Data Protection
+slug: /Overview/Legal & Data Protection/Data Protection
 title: Data Protection
 ---
 # Data Protection

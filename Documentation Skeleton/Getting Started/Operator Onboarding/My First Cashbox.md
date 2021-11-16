@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Getting Started/Operator Onboarding
+slug: /Getting Started/Operator Onboarding/My First Cashbox
 title: My First Cashbox
 ---
 # My First Cashbox

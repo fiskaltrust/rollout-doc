@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Getting Started
+slug: /Getting Started/Sandbox
 title: Sandbox
 ---
 # Sandbox

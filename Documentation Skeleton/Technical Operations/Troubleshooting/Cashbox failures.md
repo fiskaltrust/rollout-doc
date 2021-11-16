@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Technical Operations/Troubleshooting
+slug: /Technical Operations/Troubleshooting/Cashbox failures
 title: Cashbox failures
 ---
 # Cashbox failures

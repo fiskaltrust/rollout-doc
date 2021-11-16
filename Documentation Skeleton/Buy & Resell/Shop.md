@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Buy & Resell
+slug: /Buy & Resell/Shop
 title: Shop
 ---
 # Shop

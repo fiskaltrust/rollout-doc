@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Overview/Legal & Data Protection
+slug: /Overview/Legal & Data Protection/Terms of Service
 title: Terms of Service
 ---
 # Terms of Service

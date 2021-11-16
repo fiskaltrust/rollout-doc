@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Technical Operations/Middleware
+slug: /Technical Operations/Middleware/Network Requirements
 title: Network Requirements
 ---
 # Network Requirements

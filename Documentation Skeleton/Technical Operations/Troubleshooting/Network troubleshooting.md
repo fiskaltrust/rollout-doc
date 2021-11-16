@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Technical Operations/Troubleshooting
+slug: /Technical Operations/Troubleshooting/Network troubleshooting
 title: Network troubleshooting
 ---
 # Network troubleshooting

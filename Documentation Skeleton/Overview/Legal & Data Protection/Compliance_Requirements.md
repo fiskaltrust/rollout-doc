@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Overview/Legal & Data Protection
+slug: /Overview/Legal & Data Protection/Compliance requirements
 title: Compliance requirements
 ---
 # Compliance requirements

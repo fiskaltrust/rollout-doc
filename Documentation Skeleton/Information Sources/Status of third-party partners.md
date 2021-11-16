@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Technical Operations/Information Sources
+slug: /Technical Operations/Information Sources/Status of third-party partners
 title: Status of third-party partners
 ---
 # Status of third-party partners

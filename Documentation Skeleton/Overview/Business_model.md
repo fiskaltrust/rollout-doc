@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Overview
+slug: /Overview/Business model
 title: Business model
 ---
 # Business model

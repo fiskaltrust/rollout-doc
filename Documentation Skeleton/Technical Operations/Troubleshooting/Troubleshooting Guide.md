@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Technical Operations/Troubleshooting
+slug: /Technical Operations/Troubleshooting/Troubleshooting Guide
 title: Troubleshooting Guide
 ---
 # Troubleshooting Guide

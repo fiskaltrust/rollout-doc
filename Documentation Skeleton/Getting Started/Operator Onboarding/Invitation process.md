@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Getting Started/Operator Onboarding
+slug: /Getting Started/Operator Onboarding/Invitation process
 title: Invitation process
 ---
 # Invitation process

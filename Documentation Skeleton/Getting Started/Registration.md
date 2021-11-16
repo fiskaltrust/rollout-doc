@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/documentation/Getting Started
+slug: /Getting Started/Registration
 title: Registration
 ---
 # Registration
