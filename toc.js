@@ -1,6 +1,7 @@
 module.exports = {
-	rolloutDoc: [
-		{
+  rolloutDoc: [
+    //AUTO-INSERT:GETTING-STARTED-DEALERS
+    {
 			type: 'category',
 			label: 'Overview',
 			items: [
@@ -20,7 +21,7 @@ module.exports = {
 					]
 				}
 			]
-		},
+		},    
 		{
 			type: 'category',
 			label: 'Get Started',
@@ -115,5 +116,5 @@ module.exports = {
 				'rollout-doc/information-sources/contacting-support'
 			]
 		}
-	]
+  ]
 }
