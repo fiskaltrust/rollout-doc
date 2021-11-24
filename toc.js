@@ -1,5 +1,6 @@
 module.exports = {
 	rolloutDoc: [
+	//AUTO-INSERT:GETTING-STARTED-DEALERS
 		{
 			type: 'category',
 			label: 'Overview',
