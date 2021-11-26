@@ -48,7 +48,7 @@ Archive data can be accessed and exported at any time (e.g. for a fiscal audit) 
 
 An active *archive service* package will allow you to export your data, using *fiskaltrust.Portal*, in a **variety of formats** relevant to the applicable national regulations.
 
-In addition to manual exports, the portal also supports the integration of third party services, allowing you to optionally associate your third party accounts with your fiskaltrust account and stream your fiscal data to their systems. The availability of this feature depends on the respective country and may require additional service subscriptions.
+In addition to manual exports, the portal also supports the integration of third party services. This makes it possible for you to associate your *fiskaltrust* account with your account at another service provider and have *fiskaltrust* transparently replicate your data over to your other account. The availability of this feature depends on the respective country and may require additional service subscriptions.
 
 
 
