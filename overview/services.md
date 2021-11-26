@@ -12,7 +12,7 @@ After reading this, you can explain what kind of products fiskaltrust offers.
 
 The service portfolio of *fiskaltrust* provides end-to-end solutions for your POS system to sign, persist, and manage its receipts in a **legally compliant** way. *fiskaltrust* offers a comprehensive and full-fledged stack of services around that topic and as a **unified approach across countries and markets**.
 
-The services consist of a range of web-based tools, software bundles, interfaces, and SaaS subscriptions. The following paragraphs will provide you with a brief overview on these topics.
+The services consist of a range of web-based tools, software bundles, interfaces, and [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) subscriptions. The following paragraphs will provide you with a brief overview on these topics.
 
 
 
@@ -54,7 +54,7 @@ In addition to manual exports, the portal also supports the integration of third
 
 ## Middleware-as-a-Service
 
-In some countries, *fiskaltrust* offers an SaaS version of the Middleware, allowing your POS system to sign and manage receipts with **no need of installing and maintaining additional software**. In this case, your POS system will connect to the *fiskaltrust*-hosted Middleware via an encrypted, **HTTPS-secured** Internet connection. These setups are managed exclusively via *fiskaltrust.Portal*.
+In some countries, *fiskaltrust* offers an [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) version of the Middleware, allowing your POS system to sign and manage receipts with **no need of installing and maintaining additional software**. In this case, your POS system will connect to the *fiskaltrust*-hosted Middleware via an encrypted, **HTTPS-secured** Internet connection. These setups are managed exclusively via *fiskaltrust.Portal*.
 
 :::note Service Availability
 
