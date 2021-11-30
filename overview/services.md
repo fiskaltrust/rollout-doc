@@ -10,15 +10,15 @@ After reading this, you can explain what kind of products fiskaltrust offers.
 
 ## Introduction
 
-The service portfolio of *fiskaltrust* provides end-to-end solutions for your POS system to sign, persist, and manage its receipts in a **legally compliant** way. *fiskaltrust* offers a comprehensive and full-fledged stack of services around that topic and as a **unified approach across countries and markets**.
+*fiskaltrust* offers end-to-end solutions for your POS systems to handle the receipts you issue in a **legally and fiscally compliant way**. The portfolio comprises a comprehensive stack of software and services around the topic of **fiscal compliance** and provides a **unified approach** across countries and markets.
 
-The services consist of a range of web-based tools, software bundles, interfaces, and [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) subscriptions. The following paragraphs will provide you with a brief overview on these topics.
+The core components are a *software service* for **signing and tracking receipts** and a *web-based platform* for **managing the service**. Additionally, there is a range of supporting services, interfaces to third party, and [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) subscriptions offered. The following paragraphs will provide you with a brief overview on these topics.
 
 
 
 ## fiskaltrust.Middleware
 
-*fiskaltrust.Middleware* is a **multi-platform**, **on-premise**¹) software solution which complements your POS system and provides the core service of **signing POS receipts** using the relevant and required national signing mechanisms. It also **keeps track of receipts in a secure and auditable fashion** and makes sure your *fiskaltrust.Portal* account is up-to-date.
+*fiskaltrust.Middleware* is a **multi-platform**, **on-premise**¹) software solution which complements your POS system and provides the core service of **signing POS receipts** using the relevant and required national signing mechanisms. It also **keeps track of receipts in a secure and auditable fashion** and makes sure its relevant portal information is kept up-to-date.
 
 The Middleware is one of the centrepieces of the *fiskaltrust* stack and is available for all supported countries and provides a **single, standardised, and unified** communication interface, which greatly simplifies rollouts in new markets.
 
