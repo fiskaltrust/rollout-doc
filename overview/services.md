@@ -12,7 +12,7 @@ After reading this, you can explain what kind of products fiskaltrust offers.
 
 *fiskaltrust* offers end-to-end solutions for your POS systems to handle the receipts you issue in a **legally and fiscally compliant way**. The portfolio comprises a comprehensive stack of software and services around the topic of **fiscal compliance** and provides a **unified approach** across countries and markets.
 
-The core components are a *software service* for **signing and tracking receipts** and a *web-based platform* for **managing the service**. Additionally, there is a range of supporting services, interfaces to third party, and [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) subscriptions offered. The following paragraphs will provide you with a brief overview on these topics.
+The core components are *fiskaltrust.Middleware* for **signing and tracking receipts** and *fiskaltrust.Portal* for **managing the service**. Additionally, there is a range of supporting services, interfaces to third party, and [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) subscriptions offered. The following paragraphs will provide you with a brief overview on these topics.
 
 
 
