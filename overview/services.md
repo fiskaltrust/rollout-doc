@@ -54,7 +54,7 @@ In addition to manual exports, the portal also supports the integration of third
 
 ## Middleware-as-a-Service
 
-In some countries, *fiskaltrust* offers an [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) version of the Middleware, allowing your POS system to sign and manage receipts with **no need of installing and maintaining additional software**. In this case, your POS system will connect to the *fiskaltrust*-hosted Middleware via an encrypted, **HTTPS-secured** Internet connection. These setups are managed exclusively via *fiskaltrust.Portal*.
+In some countries, *fiskaltrust* offers a [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) version of the Middleware, allowing your POS system to sign and manage receipts with **no need of installing and maintaining additional software**. In this case, your POS system will connect to the *fiskaltrust*-hosted Middleware via an encrypted, **HTTPS-secured** Internet connection. These setups are managed exclusively via *fiskaltrust.Portal*.
 
 :::note Service Availability
 
