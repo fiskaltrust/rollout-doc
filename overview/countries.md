@@ -11,8 +11,16 @@ As an IT service provider, fiskaltrust supports manufacturers (PosCreator) and d
 The IPOS interface enables easy integration of the fiskaltrust.middleware into different cash register systems and thus adaptations to country-specific, legal requirements. fiskaltrust is proud to offer its services in several countries for over 25.000 companies.
 
 
-<details>
-  <summary>Austria</summary>  
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  values={[
+    {label: 'Austria', value: 'AT'},
+    {label: 'France', value: 'FR'},
+    {label: 'Germany', value: 'DE'},
+  ]}>
+  <TabItem value="AT">
 
 ### General Informations
 https://fiskaltrust.at/
@@ -25,10 +33,10 @@ info@fiskaltrust.at
 https://portal.fiskaltrust.at/
 ### Sandbox
 https://portal-sandbox.fiskaltrust.at/
-</details>
 
-<details>
-  <summary>France</summary>  
+  </TabItem>
+
+  <TabItem value="FR">
 
 ### General Informations
 https://fiskaltrust.fr/
@@ -43,10 +51,10 @@ support@fiskaltrust.fr
 https://portal.fiskaltrust.fr/
 ### Sandbox
 https://portal-sandbox.fiskaltrust.fr/
-</details>
 
-<details>
-  <summary>Germany</summary>  
+  </TabItem>
+
+  <TabItem value="DE">
 
 ### General Informations
 https://fiskaltrust.de/
@@ -59,4 +67,6 @@ info@fiskaltrust.de
 https://portal.fiskaltrust.de/
 ### Sandbox
 https://portal-sandbox.fiskaltrust.de/
-</details>
+
+  </TabItem>
+</Tabs>
