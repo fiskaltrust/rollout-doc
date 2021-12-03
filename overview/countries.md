@@ -13,60 +13,28 @@ The IPOS interface enables easy integration of the fiskaltrust.middleware into d
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ContactAT from './_markets/at/_contact.mdx';
+import ContactFR from './_markets/fr/_contact.mdx';
+import ContactDE from './_markets/de/_contact.mdx';
 
-<Tabs
+<Tabs groupId="market"
   values={[
     {label: 'Austria', value: 'AT'},
     {label: 'France', value: 'FR'},
     {label: 'Germany', value: 'DE'},
-  ]}>
+  ]}
+  defaultValue="AT">
+
   <TabItem value="AT">
-
-### General Informations
-https://fiskaltrust.at/
-
-### Contacts
-info@fiskaltrust.at  
-+43 1 5330 330  
-
-### Portal
-https://portal.fiskaltrust.at/
-### Sandbox
-https://portal-sandbox.fiskaltrust.at/
-
+    <ContactAT />
   </TabItem>
 
   <TabItem value="FR">
-
-### General Informations
-https://fiskaltrust.fr/
-### Contacts
-+33 1 70 99 53 53  
-
-contact@fiskaltrust.fr  
-
-support@fiskaltrust.fr  
-
-### Portal
-https://portal.fiskaltrust.fr/
-### Sandbox
-https://portal-sandbox.fiskaltrust.fr/
-
+    <ContactFR />
   </TabItem>
 
   <TabItem value="DE">
-
-### General Informations
-https://fiskaltrust.de/
-
-### Contacts
-info@fiskaltrust.de  
-+49 211 54013 432  
-
-### Portal
-https://portal.fiskaltrust.de/
-### Sandbox
-https://portal-sandbox.fiskaltrust.de/
-
+    <ContactDE />
   </TabItem>
+
 </Tabs>
