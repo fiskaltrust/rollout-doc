@@ -14,39 +14,30 @@ If the PosOperators use Pos-Systems in combination with our products, the fiskal
 
 **PosOperators** need functional and legally compliant PosSystems. After the invitation to the fiskaltrust.Portal by the PosDealer and the activation of the role as PosOperator, fiskaltrust.products and product packages can be used. These save data from the Pos-Systems and prepare it for specific countries. The prepared data are immediately available for audits by the fiscal authorities. Interfaces for accounting further help PosOperators to concentrate on their business tasks.
 
-<details>
-  <summary>Austria</summary>  
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ContactAT from './_markets/at/_sales.mdx';
+import ContactFR from './_markets/fr/_sales.mdx';
+import ContactDE from './_markets/de/_sales.mdx';
 
-### General Informations
-https://fiskaltrust.at/
+<Tabs groupId="market"
+  values={[
+    {label: 'Austria', value: 'AT'},
+    {label: 'France', value: 'FR'},
+    {label: 'Germany', value: 'DE'},
+  ]}
+  defaultValue="AT">
 
-### Contacts
-info@fiskaltrust.at  
-+43 1 5330 330  
+  <TabItem value="AT">
+    <ContactAT />
+  </TabItem>
 
-</details>
+  <TabItem value="FR">
+    <ContactFR />
+  </TabItem>
 
-<details>
-  <summary>France</summary>  
+  <TabItem value="DE">
+    <ContactDE />
+  </TabItem>
 
-### General Informations
-
-https://fiskaltrust.fr/
-### Contacts
-+33 1 70 99 53 53  
-
-contact@fiskaltrust.fr  
-
-</details>
-
-<details>
-  <summary>Germany</summary>  
-
-### General Informations
-https://fiskaltrust.de/
-
-### Contacts
-info@fiskaltrust.de  
-+49 211 54013 432  
-
-</details>
+</Tabs>
