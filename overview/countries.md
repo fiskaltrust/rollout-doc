@@ -12,9 +12,9 @@ The IPOS interface enables easy integration of the fiskaltrust.middleware into d
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import ContactAT from './_markets/at/_contact.mdx';
-import ContactFR from './_markets/fr/_contact.mdx';
-import ContactDE from './_markets/de/_contact.mdx';
+import ContactAT from '../_markets/at/overview/countries/_contact.mdx';
+import ContactFR from '../_markets/fr/overview/countries/_contact.mdx';
+import ContactDE from '../_markets/de/overview/countries/_contact.mdx';
 
 <Tabs groupId="market"
   values={[
