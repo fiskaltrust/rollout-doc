@@ -22,7 +22,7 @@ The core components are *fiskaltrust.Middleware* for **signing and tracking rece
 
 The Middleware is one of the centrepieces of the *fiskaltrust* stack and is available for all supported countries and provides a **single, standardised, and unified** communication interface, which greatly simplifies rollouts in new markets.
 
-It features a **REST interface** for communication with your POS systems and is available for **on-premise** deployment on platforms supporting **.NET** and **Android**, as well as, an **off-premise** SaaS solution. For the latter, please see [Middleware-as-a-Service](#middleware-as-a-service) for further details.
+It features a **REST interface** for communication with your POS systems and is available for **on-premise** deployment on platforms supporting **.NET** and **Android**, as well as an **off-premise** SaaS solution. For the latter, please see [Middleware-as-a-Service](#middleware-as-a-service) for further details.
 
 
 
