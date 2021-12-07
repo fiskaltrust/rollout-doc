@@ -32,7 +32,7 @@ It features a **REST interface** for communication with your POS systems and is 
 
 
 
-## Secure Receipt Archive
+## Revision-Safe Receipt Archive
 
 The archive service is an optional, paid add-on product, which enables your *fiskaltrust.Middleware* instances to use the archive facilities of *fiskaltrust*. When activated for an instance, the Middleware will regularly push new receipts into the archive, where they will be persisted in **secure** and **tamper-proof** receipt chain.
 
