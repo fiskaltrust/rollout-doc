@@ -16,9 +16,9 @@ If the PosOperators use Pos-Systems in combination with our products, the fiskal
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import ContactAT from './_markets/at/_sales.mdx';
-import ContactFR from './_markets/fr/_sales.mdx';
-import ContactDE from './_markets/de/_sales.mdx';
+import SalesAT from '../_markets/at/overview/business-model/_sales.mdx';
+import SalesFR from '../_markets/fr/overview/business-model/_sales.mdx';
+import SalesDE from '../_markets/de/overview/business-model/_sales.mdx';
 
 <Tabs groupId="market"
   values={[
@@ -29,15 +29,15 @@ import ContactDE from './_markets/de/_sales.mdx';
   defaultValue="AT">
 
   <TabItem value="AT">
-    <ContactAT />
+    <SalesAT />
   </TabItem>
 
   <TabItem value="FR">
-    <ContactFR />
+    <SalesFR />
   </TabItem>
 
   <TabItem value="DE">
-    <ContactDE />
+    <SalesDE />
   </TabItem>
 
 </Tabs>
