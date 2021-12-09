@@ -5,7 +5,11 @@ title: Countries
 
 # Countries
 
+:::info summary
+
 After reading this, you can explain in which countries fiskaltrust operates.
+
+:::
 
 As an IT service provider, fiskaltrust supports manufacturers (PosCreators) and dealers (PosDealers) of cash register (PosSystems) in the fiscalization of their recording systems in compliance with tax regulations. We offer PosCreators a license-free interface for simple and legally compliant connection of a cash register. PosDealer we support with additional functions for automation and optimization of fiscalization.  
 fiskaltrust is proud to offer its services in several countries for over 25.000 companies.
