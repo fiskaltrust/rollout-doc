@@ -4,7 +4,11 @@ title: Business model
 ---
 # Business model
 
+:::info summary
+
 After reading this, you can explain what entitlements are and how to get recurrent revenue from the buy & resell model.
+
+:::
 
 As **PosCreator**, we are happy to support you in the development of Pos-Systems, even for special purposes or particular challenges. With the integration of our free fiskaltrust.Middleware, your Pos-System will immediately become compliant with the law. You save the cost of licenses and maintenance of the part of the software we provide. Since no effort is required for you to monitor the legal situation, you save time, resources and money. This allows you to focus on your core business, the Pos-System. By registering with the fiskaltrust.Portal and activating the role as PosCreator, you can offer your Pos-Systems on our platform. After inviting your PosDealers to the fiskaltrust.Portal, they can start selling your Pos-System.
 

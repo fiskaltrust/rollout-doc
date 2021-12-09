@@ -5,7 +5,11 @@ title: Architecture
 
 # Architecture
 
+:::info summary
+
 After reading this, you can explain the basic architecture of the fiskaltrust middleware, the purpose of a queue, a SSCD, a cashbox and a launcher.
+
+:::
 
 
 
