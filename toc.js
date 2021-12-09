@@ -8,7 +8,7 @@ module.exports = {
 				'rollout-doc/overview/services',
 				'rollout-doc/overview/countries',
 				'rollout-doc/overview/architecture',
-				'rollout-doc/overview/tasks',
+				'rollout-doc/overview/management-portal',
 				'rollout-doc/overview/business-model',
 				{
 					type: 'category',
