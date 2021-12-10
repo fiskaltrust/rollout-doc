@@ -62,6 +62,12 @@ Service availability is subject to national requirements and restrictions in eac
 
 
 
-## Hardware Leasing (SSCD-as-a-Service)
+## Signing-as-a-Service
 
-*fiskaltrust* offers a hardware leasing service in some of the countries where national regulations require the use of hardware dongles ([SSCDs](https://en.wikipedia.org/wiki/Secure_signature_creation_device)) for the issuance of receipt signatures. The service comes as a subscription model and provides you with the necessary hardware throughout the subscription period.
+Where applicable, *fiskaltrust* offers dedicated **signing services** as backend for *fiskaltrust.Middleware*, providing the required receipt signature data blocks according to the relevant national regulations. These are subscription-based services which, typically, come in the form of leased hardware dongles ([SSCDs](https://en.wikipedia.org/wiki/Secure_signature_creation_device)) or access to SaaS platforms.
+
+:::info Service Availability
+
+Service availability is subject to national requirements and restrictions in each market.
+
+:::
