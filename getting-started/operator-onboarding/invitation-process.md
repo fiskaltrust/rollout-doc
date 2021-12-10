@@ -13,137 +13,162 @@ The invitation of a PosOperator can only be made by a PosDealer and not by a Pos
 However, the role of a PosDealer can also be activated by these companies and thus taken over in parallel to another role.
 
 ![Number 1](images/Numbers/circle-1o.png) Choose PosDealer / Overview.  
-![Number 2](images/Numbers/circle-2o.png) A list of the already assigned PosOperators is shown. 
+![Number 2](images/Numbers/circle-2o.png) A list of the already assigned PosOperators is shown.  
 ![Number 3](images/Numbers/circle-3o.png) With PosDealer / Invitation you will find Options to add PosOperators.  
+
+## Preparation of Invitations
+
 
 There are two ways to add and assign PosOperators to your Account as a PosDealer:
 
-1. For adding a single PosOperator, see chapter [_Invitation of a single PosOperator_](#Invitation-of-a-single-PosOperator).
-2. Adding several PosOperators by importing a CSV file with _Invitation_, see chapter [_Invitation of PosOperators_](#Invitation-of-PosOperators).
-
+1. For adding a single PosOperator, see chapter [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator).
+2. Adding several PosOperators by importing a CSV file with _Invitation_, see chapter [_Invitation of PosOperators_](#invitation-of-posoperators).
+3.  Checking or changing the settings for the invitations is inevitable for both ways. Therefore, regardless of the further way, prepare the settings first.  To do this, select PosOperators / Invitations.  
+4. Control or change the setting for the invitation:
+    * PDF-Attachment: Avoid confusing your PosOperators when they receive an e-mail invitation from an unknown source like robot@- or robot@fiskaltrust.abc. Explain in an accompanying letter that you as PosDealer are extending their offers and inviting him to register with the fiskaltrust.portal via the confirmation link. Add the document in the form of a PDF as an attachment to the invitation.
+    * add information text: The automated e-mail invitation to your PosOperator from an source like robot@- or robot@fiskaltrust.abc can be supplemented with your text. Use this text block  up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as PosDealer extend their offers and invite him to register with the fiskaltrust.Portal via the confirmation link.
+    * Surrogate rights: Set the rights you should have as PosDealer after switching to the PosOperator's account to [FULL]. Otherwise, you would have access to the PsOperator's account, but you would not be able to conclude contracts on his behalf. But these are necessary for the cooperation with third parties.
 
 ## Invitation of a single PosOperator
 
-![invitation process individual](images/1-onboarding-individual.png "invitation process individual")
+![invitation process individual](images/1-onboarding-individual.png "1 invitation process individual")  
+
+### Explanation
+
 This is particularly interesting for the on-site support given by the PosDealer, if a PosOperator wants to use the fiskaltrust.Services immediately - in connection with the commissioning of a POS-System. Further, you may want to learn about and test the portal and its processes in the sandbox. The Invitation of a single PosOperator is also useful here.
 
+### Work steps
+
 1. Choose PosOperator / Invitation
-2. Control or change the setting for the invitation:
-    * PDF-Attachment: Avoid confusing your PosOperators when they receive an invitation email from an unknown source like robot@- or robot@fiskaltrust.abc. Explain in an accompanying letter that you as PosDealer are extending their offers and inviting him to register with the fiskaltrust.portal via the confirmation link. Add the document in the form of a PDF as an attachment to the invitation.
-    * add information text: The automated invitation e-mail to your PosOperator from an source like robot@- or robot@fiskaltrust.abc can be supplemented with your text. Use this text block  up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as PosDealer extend their offers and invite him to register with the fiskaltrust.Portal via the confirmation link.
-    * Surrogate rights: Set the rights you should have as PosDealer after switching to the PosOperator's account to [FULL]. Otherwise, you would have access to the PsOperator's account, but you would not be able to conclude contracts on his behalf. But these are necessary for the cooperation with third parties.
-
+2. Check the settings previously described [_here_](#preparation-of-invitations).
 3. Choose [Add]
-4. The following fields are mandatory fields. They must be filled in to guarantee that the PosOperator can be found correctly in the fiskaltrust.Portal via his email address and can be assigned:
-    * Contact First name
-    * Contact Surname
-    * Contact E-mail address
-    * Company's name
-    * Zip code
+4. The following fields are mandatory fields. They must be filled in to guarantee that the PosOperator can be found correctly in the fiskaltrust.Portal via his e-mail address and can be assigned:
+    * Company data - Company name
+    * E-mail address
+    * Address line 1
+    * Postal code
     * City
-    * Location
-5. Save your [Values with Save]
-6. Choose [Assign all PosOperators]
+    * Country
+    * User data - First name
+    * Last name
+    * Contact E-mail address
+5. The commercial identification is no mandatory field for the invitation. But for the correct management of the cash register systems, these data are essential.
+6. Save your Values with [Save]
+7. Choose [Assign all PosOperators]
+8. If the invitation does not reach the PosOperator, please read the chapter [_Managing the invitations_](#managing-the-invitations)
 
-### Invitation of PosOperators
 
-[! [https://portal.fiskaltrust.fr/PosOperator/PosOperators](images/PosOperator/PosOperators.png "https://portal.fiskaltrust.fr/PosOperator/PosOperators" )](https://portal.fiskaltrust.fr/POSOperator)
-Invite PosOperators to a PosDealer account
+## Invitation of PosOperators in a bulk process
 
-! [Number 1](../images/Numbers/circle-1o.png) The CSV file is to be imported and selected via \[Choose File\].
-! [Number 2](../images/Numbers/circle-2o.png) Then the import is carried out by clicking on \[Import\].
-! [Number 3](../images/Numbers/circle-3o.png) The necessary structure of the CSV file is described using an example. This example can be obtained via \[Download demo CSV file\].
+![Invitation of PosOperators in a bulk process](images/2-onboarding-bulk.png "2-onboarding-bulk.png")  
 
-| Fields of the CSV file | Description                                                                                                                         | Mandatory |
+### Explanation
+
+Inviting PosOperators to a PosDealer account with an import file is especially interesting if you want to invite a larger number of business partners. Since the invitations are created and sent automatically via the fiskaltrust.portal, the information of your business partners is relevant. Therefore, please note the section on preparation to avoid irritation, loss of time or effort due to invitations mistakenly treated as SPAM. The necessary structure of the CSV file is described using an example. This example can be obtained in the fiskaltrust.Portal. 
+
+### Work steps
+
+![invitation via csv file](images/6-onboarding-portal.png "6-onboarding")  
+
+1. Choose PosOperator / Invitation
+2. Check the configurations of the invitations as previously described [_here_](#preparation-of-invitations).
+3. Download the demo CSV file.
+4. Open the the demo CSV file.
+5. See the [_explanation below_](fields-of-the-csv-file), add the requested data of the PosOperators and save the date as a CSV file.
+6. Change  again to the fiskaltrust.Portal and choose PosOperator / Invitation / PosOperators that should be invited.
+7. Use [Choose file...] to set your CSV file.
+8. With [Import] the data are uploaded and analyzed to avoid duplicate or incomplete records. You can control or add data to each record. 
+9. Choose [Assign all PosOperators] to send the invitation-E-mail to each business partner in your CSV file.
+
+### Fields of the CSV file
+
+
+| Fields | Description                                                                                                                         | Mandatory |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|:---------:|
-| ContactFirstName       | First name of the primary contact                                                                                                   | yes       |
-| ContactLastName        | Last name of primary contact                                                                                                        | yes       |
-| ContactTitle           | (Academic) Title of primary contact (before name)                                                                                   | no        |
-| ContactSuffix          | Name suffix of the primary contact (after the name)                                                                                 | no        |
-| ContactEmail           | Email address of the primary contact<br />**IMPORTANT!**<br />This email address will be the user's login to the newly created company. | yes       |
-| ContactMobilePhone     | Mobile phone number of the primary contact                                                                                          | no        |
 | AccountName            | Company name, this should be written exactly as it is in the commercial register                                                    | yes       |
-| AccountWeb             | URL of the company's website                                                                                                        | no        |
-| AccountEmail           | General email address of the company<br />**IMPORTANT!**<br />All information and all invoices will be sent to this email address!      | no        |
-| AccountPhone           | Company phone number                                                                                                                | no        |
+| AccountEmail           | General e-mail address of the company<br />**IMPORTANT!**<br />All information and all invoices will be sent to this e-mail address!      | no        |
 | AccountAddressLine1    | Address, first line of the company                                                                                                  | no        |
 | AccountAddressLine2    | Address, second line of the company                                                                                                 | no        |
 | AccountPostalCode      | Postcode of the company                                                                                                             | no        |
 | AccountCity            | Name of city of the company's address                                                                                               | no        |
 | AccountCountry         | Zip-Code of the city                                                                                                                | no        |
-| AccountIdVat           | UID number of the company.<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no        |
-| AccountIdFibu          | The _SIREN_ of the company<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no        |
-| AccountIdGln           | GLN of the company.                                                                                                                 | no        |
-| AccountIdTax           | Tax office tax number of the company.                                                                                               | no        |
+| AccountWeb             | URL of the company's website                                                                                                        | no        |
+| AccountPhone           | Company phone number                                                                                                                | no        |
+| commercial identification 1           | country-specific<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no        |
+| commercial identification 2          | country-specific<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no        |
+| ContactFirstName       | First name of the primary contact                                                                                                   | yes       |
+| ContactLastName        | Last name of primary contact                                                                                                        | yes       |
+| ContactEmail           | Email address of the primary contact<br />**IMPORTANT!**<br />This e-mail address will be the user's login to the newly created company. | yes       |
+| ContactTitle           | (Academic) Title of primary contact (before name)                                                                                   | no        |
+| ContactMobilePhone     | Mobile phone number of the primary contact                                                                                          | no        |
 
-Not all of the fields _AccountIdVat_, _AccountIdTax_ and _AccountIdFibu_ are mandatory. Only one of the three fields should be completed. It is recommended to use the field _AccountIdFibu_.
+Not all of the fields _commercial identification_ are mandatory. The naming might be country-specific, but one of the three fields should be completed.
 
-A pdf-file can be first choosen! [Number 4](../images/Numbers/circle-4o.png) and then imported! [Number 5](../images/Numbers/circle-5o.png) as a PDF document, which is sent to the PosOperators as an attachment in the email invitations. This PDF document can be individually adapted to the rollout concept.
+### Error message importing a csv-file for invitations
 
-Before sending the invitation to all PosOperators listed in the csv file a text message! [Number 6](../images/Numbers/circle-6o.png) can be added to this invitation email.
-
-By accepting the invitation the PosOperator gets assigned to the PosDealer's account and thus get some access rights on the PosOperators account. This surrogating of rights can be defined in the claims list! [Number 7](../images/Numbers/circle-7o.png).
-
-#### Error message importing a csv-file for invitations
-
-! [Import error on PosOperator invitations](images/PosOperator/Import.png "https://portal.fiskaltrust.at/PosOperator/CreatePosOperator/")
-If not all of the mandatory fields of the csv file are completed an error message with the wrong or missing data is shown.
-
-#### Add PosOperator<a name="add-posoperator"></a>
+![Import errors ](images/7-onboarding-portal.png "7-onboarding-portal.png")
+If not all of the mandatory fields of the csv file are completed error messages with the wrong or missing data are shown.
 
 
 
-#### Managing the invitations
+## Managing the invitations
 
-[! [https://portal.fiskaltrust.fr/PosOperator/PosOperators/](images/PosOperator/PosOperators-Overview.png "https://portal.fiskaltrust.fr/PosOperator/PosOperators/")](https://portal.fiskaltrust.fr/PosOperator/PosOperators/)
-Assigning, editing and deleting a PosOperator
+### Assigning, editing and deleting a PosOperator
 
-! [Number 1](../images/Numbers/circle-1o.png) Status of the invitation:
+![8-onboarding](images/8-onboarding-portal.png "8-onboarding-portal")
 
-- ! [Notsent](../images/Buttons/002.png "Notsent") E-mail invitation has not been sent yet.
-- ! [Error](../images/Buttons/002.png "Error") The data of the PosOperator is not correct and can not be assigned to the PosDealers account. It must be corrected with ! [Edit](../images/Buttons/005.png "Edit").
-- ! [Checkmark](../images/Buttons/003.png "Checkmark") Email invitation was sent by clicking on ! [Email](../images/Buttons/004.png "Email").
+* Check the Status ![Number 1](images/Numbers/circle-1o.png) of the invitation. A red symbol shows, that the E-mail invitation has not yet been sent. 
 
-! [Number 2](../images/Numbers/circle-2o.png) By clicking on \[Assign all cash register users\] the email invitation can be sent to **all**  PosOperators who have not yet been invited.
+* Use ![Number 2](images/Numbers/circle-2o.png) to send / resend this single e-mail invitation or [Assign all PosOperators] to send all.
+* Choose ![Number 3](images/Numbers/circle-3o.png) to edit the data of the PosOperator, if they are not correct and can not be assigned to the PosDealers account.
+* Use ![Number 4](images/Numbers/circle-4o.png) to delete the data of a not yet assigned PosOperator.
 
-! [Number 3](../images/Numbers/circle-3o.png) By clicking on [+&nbsp;Add] a [manual invitation](#add-posoperator) can be created.
+### Assigning PosOperators in a bulk process
 
-! [Number 4](../images/Numbers/circle-4o.png) A click on [Protocol](#protocol) shows the history of invitations of this account.
+![9-onboarding](images/9-onboarding-portal.png "9-onboarding-portal")
 
-! [Number 5](../images/Numbers/circle-5o.png) By clicking on ! [Email](../images/Buttons/004.png "Email") the email invitation can be sent to a single PosOperator. The email invitation can be sent as an attachment with an individually designed PDF document.
-! [example of an invitation email](images/PosOperator/PosOperator-Invitation-Email.png)
-Example email invitation of a PosOperator.
+* By clicking on ![Number 1](images/Numbers/circle-1o.png) [Assign all PosOperator users] the e-mail invitation can be sent to **all**  PosOperators who have not yet been invited.
+* ![Number 2](images/Numbers/circle-2o.png) is used for a manual invitation, see chapter [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator).
+* Choose ![Number 3](images/Numbers/circle-3o.png) for for control or also repair of e-mail invitations.
 
-! [Number 6](../images/Numbers/circle-6o.png) The individual PosOperator can be edited again by clicking on ! [Edit](../images/Buttons/005.png "Edit").
+#### Protocol of invitations
 
-! [Number 7](../images/Numbers/circle-7o.png) The individual PosOperator can be removed by clicking ! [Remove](../images/Buttons/006.png "Remove")
+![10-onboarding](images/10-onboarding-portal.png "10-onboarding-portal")
 
-! [Number 8](../images/Numbers/circle-8o.png) The resend-button ! [Resend](../images/Buttons/016.png "Resend") sends the invitation again to the PosOperator's email address.
-
-! [Number 9](../images/Numbers/circle-9o.png) By entering text in the search field the list of PosOperators gets filtered and only the PosOperators matching the entered text are shown.
-
-#### Protocol of invitations<a name="protocol"></a>
-[! [https://portal.fiskaltrust.fr/PosOperator/](images/PosOperator/PosOperatorsHistory.png "https://portal.fiskaltrust.fr/PosOperator/")](https://portal.fiskaltrust.fr/PosOperator/)
-Protocol of PosOperator invitations
-
-! [Number 1](../images/Numbers/circle-1o.png) The start date of the log overview can be restricted using this field.
-! [Number 2](../images/Numbers/circle-2o.png) The last date of the log overview can be restricted using this field.
-! [Number 3](../images/Numbers/circle-3o.png) By clicking on [Invoke&nbsp;protocol] the overview is filtered by the entered dates. If the two fields are empty the whole protocol without any filter is shown
-! [Number 4](../images/Numbers/circle-4o.png). By clicking on this button the window is closed and the _Invitation_ module is shown.
-! [Number 5](../images/Numbers/circle-5o.png) Entering a text filters the overview. By deleting all entered data in the search field the whole overview data is shown.
-! [Number 6](../images/Numbers/circle-6o.png) Status of the invitation:
-
-- ! [Not sent](../images/Buttons/002.png "Not sent") Email invitation has not been sent yet.
-- ! [Error](../images/Buttons/002.png "Error") The data of the PosOperator is not correct and can not be assigned to the PosDealers account.
-- ! [Checkmark](../images/Buttons/003.png "Checkmark") Email invitation was sent.
-
-! [Number 7](../images/Numbers/circle-7o.png) Available commands for this PosOperator:
-
-- ! [Details](../images/Buttons/007.png "Details") Detailed information about this contact is shown.
-! [Details of an invitation](images/PosOperator/DetailsInvitation.png)
-- ! [Resend](../images/Buttons/040.png "Resend") Sends the invitation to this contact again.
-- ! [Delete](../images/Buttons/006.png "Delete") Deletes this row from the protocol.
-- ! [Copy](../images/Buttons/041.png "Copy") Shows a window with the direct link for the invitation. This can be copied in the clipboard and send by direct message.
-! [Direct link of an invitation](images/PosOperator/PosOperator-Invitation-Link.png)
+* ![Number 1](images/Numbers/circle-1o.png) The start date of the log overview can be restricted using this field. 
+* ![Number 2](images/Numbers/circle-2o.png) The last date of the log overview can be restricted using this field. Start the search with [Invoke protocol]. If the two fields are empty the whole protocol without any filter is shown
+* Entering a text filters at [Search table] reduces the overview. By deleting all entered data in the search field the whole overview data is shown.
+* ![Number 3](images/Numbers/circle-3o.png) Check the details of the data of a PosOperator. 
+* ![Number 4](images/Numbers/circle-4o.png) Resend the e-mail invitation for this data record.
+* ![Number 5](images/Numbers/circle-5o.png) Delete the data record. please note that once an email address has been assigned, it cannot be completely deleted for fiscal reasons. Therefore, it cannot be assigned to any other account in fiskaltrust.Portal. 
+* ![Number 6](images/Numbers/circle-6o.png) Shows a window with the direct link for the invitation. This can be copied in the clipboard and send by direct message.
+Return to the Invitation module with [Overview of PosOperator].
 
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ContactAT from '../_markets/at/overview/countries/_contact.mdx';
+import ContactFR from '../_markets/fr/overview/countries/_contact.mdx';
+import ContactDE from '../_markets/de/overview/countries/_contact.mdx';
+
+<Tabs groupId="market"
+  values={[
+    {label: 'Austria', value: 'AT'},
+    {label: 'France', value: 'FR'},
+    {label: 'Germany', value: 'DE'},
+  ]}
+  defaultValue="AT">
+
+  <TabItem value="AT">
+    <ContactAT />
+  </TabItem>
+
+  <TabItem value="FR">
+    <ContactFR />
+  </TabItem>
+
+  <TabItem value="DE">
+    <ContactDE />
+  </TabItem>
+
+</Tabs>
