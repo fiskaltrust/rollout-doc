@@ -25,13 +25,14 @@ There are two ways to add and assign PosOperators to your Account as a PosDealer
 ## Invitation of a single PosOperator
 
 ![invitation process individual](images/1-onboarding-individual.png "invitation process individual")
-This is particularly interesting for the on-site support given by the PosDealer, if a PosOperator wants to use the ft.Services immediately - in connection with the commissioning of a POS-System.
+This is particularly interesting for the on-site support given by the PosDealer, if a PosOperator wants to use the fiskaltrust.Services immediately - in connection with the commissioning of a POS-System. Further, you may want to learn about and test the portal and its processes in the sandbox. The Invitation of a single PosOperator is also useful here.
 
 1. Choose PosOperator / Invitation
-2. Control or change the invitation configuration:
-    * set rights for surrogating to full
-    * add PDF file
-    * add information text
+2. Control or change the setting for the invitation:
+    * PDF-Attachment: Avoid confusing your PosOperators when they receive an invitation email from an unknown source like robot@- or robot@fiskaltrust.abc. Explain in an accompanying letter that you as PosDealer are extending their offers and inviting him to register with the fiskaltrust.portal via the confirmation link. Add the document in the form of a PDF as an attachment to the invitation.
+    * add information text: The automated invitation e-mail to your PosOperator from an source like robot@- or robot@fiskaltrust.abc can be supplemented with your text. Use this text block  up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as PosDealer extend their offers and invite him to register with the fiskaltrust.Portal via the confirmation link.
+    * Surrogate rights: Set the rights you should have as PosDealer after switching to the PosOperator's account to [FULL]. Otherwise, you would have access to the PsOperator's account, but you would not be able to conclude contracts on his behalf. But these are necessary for the cooperation with third parties.
+
 3. Choose [Add]
 4. The following fields are mandatory fields. They must be filled in to guarantee that the PosOperator can be found correctly in the fiskaltrust.Portal via his email address and can be assigned:
     * Contact First name
