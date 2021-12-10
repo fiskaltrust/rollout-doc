@@ -12,9 +12,9 @@ The invitation of a PosOperator can only be made by a PosDealer and not by a Pos
 
 However, the role of a PosDealer can also be activated by these companies and thus taken over in parallel to another role.
 
-![Number 1](images/Numbers/circle-1o.png) Choose PosDealer / Overview.  
-![Number 2](images/Numbers/circle-2o.png) A list of the already assigned PosOperators is shown.  
-![Number 3](images/Numbers/circle-3o.png) With PosDealer / Invitation you will find Options to add PosOperators.  
+1. Choose PosDealer / Overview.  
+2. A list of the already assigned PosOperators is shown.  
+3. With PosDealer / Invitation you will find Options to add PosOperators.  
 
 ## Preparation of Invitations
 
@@ -80,7 +80,7 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 8. With [Import] the data are uploaded and analyzed to avoid duplicate or incomplete records. You can control or add data to each record. 
 9. Choose [Assign all PosOperators] to send the invitation-E-mail to each business partner in your CSV file.
 
-### Fields of the CSV file
+#### Fields of the CSV file
 
 
 | Fields | Description                                                                                                                         | Mandatory |
@@ -104,16 +104,19 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 
 Not all of the fields _commercial identification_ are mandatory. The naming might be country-specific, but one of the three fields should be completed.
 
-### Error message importing a csv-file for invitations
+#### Handling error messages
 
-![Import errors ](images/7-onboarding-portal.png "7-onboarding-portal.png")
-If not all of the mandatory fields of the csv file are completed error messages with the wrong or missing data are shown.
-
-
+*![Import errors ](images/7-onboarding-portal.png "7-onboarding-portal.png")
+* If not all of the mandatory fields of the csv file are completed error messages with the wrong or missing data are shown.
+* please note the error messages and add the necessary data in the respective lines of the CSV file 
 
 ## Managing the invitations
 
-### Assigning, editing and deleting a PosOperator
+### Explanation 
+
+If the preparations are done, the invitation process should work autimatised. However, if problems arise, you can fix the most of them on yourself. Have a look at the protocol of invitations, if a PosOperator claims, that there was no e-mail invitation. There a several ways to help.
+
+#### Assigning, editing and deleting a PosOperator
 
 ![8-onboarding](images/8-onboarding-portal.png "8-onboarding-portal")
 
@@ -123,7 +126,7 @@ If not all of the mandatory fields of the csv file are completed error messages 
 * Choose ![Number 3](images/Numbers/circle-3o.png) to edit the data of the PosOperator, if they are not correct and can not be assigned to the PosDealers account.
 * Use ![Number 4](images/Numbers/circle-4o.png) to delete the data of a not yet assigned PosOperator.
 
-### Assigning PosOperators in a bulk process
+#### Assigning PosOperators in a bulk process
 
 ![9-onboarding](images/9-onboarding-portal.png "9-onboarding-portal")
 
@@ -135,40 +138,14 @@ If not all of the mandatory fields of the csv file are completed error messages 
 
 ![10-onboarding](images/10-onboarding-portal.png "10-onboarding-portal")
 
-* ![Number 1](images/Numbers/circle-1o.png) The start date of the log overview can be restricted using this field. 
-* ![Number 2](images/Numbers/circle-2o.png) The last date of the log overview can be restricted using this field. Start the search with [Invoke protocol]. If the two fields are empty the whole protocol without any filter is shown
-* Entering a text filters at [Search table] reduces the overview. By deleting all entered data in the search field the whole overview data is shown.
-* ![Number 3](images/Numbers/circle-3o.png) Check the details of the data of a PosOperator. 
-* ![Number 4](images/Numbers/circle-4o.png) Resend the e-mail invitation for this data record.
-* ![Number 5](images/Numbers/circle-5o.png) Delete the data record. please note that once an email address has been assigned, it cannot be completely deleted for fiscal reasons. Therefore, it cannot be assigned to any other account in fiskaltrust.Portal. 
-* ![Number 6](images/Numbers/circle-6o.png) Shows a window with the direct link for the invitation. This can be copied in the clipboard and send by direct message.
+1. The start date of the log overview can be restricted using this field. 
+2. The last date of the log overview can be restricted using this field. Start the search with [Invoke protocol]. If the two fields are empty the whole protocol without any filter is shown.  
+Entering a text filters at [Search table] reduces the overview. By deleting all entered data in the search field the whole overview data is shown.
+4. Check the details of the data of a PosOperator. 
+5. Resend the e-mail invitation for this data record.
+1. Delete the data record. please note that once an email address has been assigned, it cannot be completely deleted for fiscal reasons. Therefore, it cannot be assigned to any other account in fiskaltrust.Portal. 
+6. Shows a window with the direct link for the invitation. This can be copied in the clipboard and send by direct message. 
+
 Return to the Invitation module with [Overview of PosOperator].
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import ContactAT from '../_markets/at/overview/countries/_contact.mdx';
-import ContactFR from '../_markets/fr/overview/countries/_contact.mdx';
-import ContactDE from '../_markets/de/overview/countries/_contact.mdx';
-
-<Tabs groupId="market"
-  values={[
-    {label: 'Austria', value: 'AT'},
-    {label: 'France', value: 'FR'},
-    {label: 'Germany', value: 'DE'},
-  ]}
-  defaultValue="AT">
-
-  <TabItem value="AT">
-    <ContactAT />
-  </TabItem>
-
-  <TabItem value="FR">
-    <ContactFR />
-  </TabItem>
-
-  <TabItem value="DE">
-    <ContactDE />
-  </TabItem>
-
-</Tabs>
+### Information for PosOperators
