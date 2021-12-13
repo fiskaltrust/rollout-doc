@@ -8,7 +8,7 @@ title: Invitation process
 After reading this, you can invite a single PosOperator and perform a bulk operation to invite several PosOperators.
 :::
 
-The invitation of a PosOperator can only be made by a PosDealer and not by a PosCreator or consultant.
+You as a PosDealer can do the invitation of a PosOperator only, this can not be made by a PosCreator or consultant.
 
 However, the role of a PosDealer can also be activated by these companies and thus taken over in parallel to another role.
 
@@ -18,26 +18,31 @@ However, the role of a PosDealer can also be activated by these companies and th
 
 ## Preparation of Invitations
 
-
 There are two ways to add and assign PosOperators to your Account as a PosDealer:
 
-1. For adding a single PosOperator, see chapter [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator).
-2. Adding several PosOperators by importing a CSV file with _Invitation_, see chapter [_Invitation of PosOperators_](#invitation-of-posoperators).
-3.  Checking or changing the settings for the invitations is inevitable for both ways. Therefore, regardless of the further way, prepare the settings first.  To do this, select PosOperators / Invitations.  
+1. For adding a single PosOperator, read this chapter and see afterwards [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator).
+2. For Adding several PosOperators by importing a CSV file, read this chapter and change then to [_Invitation of PosOperators_](#invitation-of-posoperators).
+3.  Checking or changing the settings for the invitations is **inevitable for both ways**. Therefore, regardless of the further way, prepare the settings first.  To do this, select PosOperators / Invitations.  
+![invitation process preparation](images/11-onboarding-portal.png "11 invitation process individual")  
 4. Control or change the setting for the invitation:
-    * PDF-Attachment: Avoid confusing your PosOperators when they receive an e-mail invitation from an unknown source like robot@- or robot@fiskaltrust.abc. Explain in an accompanying letter that you as PosDealer are extending their offers and inviting him to register with the fiskaltrust.portal via the confirmation link. Add the document in the form of a PDF as an attachment to the invitation.
-    * add information text: The automated e-mail invitation to your PosOperator from an source like robot@- or robot@fiskaltrust.abc can be supplemented with your text. Use this text block  up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as PosDealer extend their offers and invite him to register with the fiskaltrust.Portal via the confirmation link.
-    * Surrogate rights: Set the rights you should have as PosDealer after switching to the PosOperator's account to [FULL]. Otherwise, you would have access to the PsOperator's account, but you would not be able to conclude contracts on his behalf. But these are necessary for the cooperation with third parties.
+    1. PDF-Attachment:  
+    Avoid confusing your PosOperators when they receive an e-mail invitation from an unknown source like robot@- or robot@fiskaltrust.abc. Explain in an accompanying letter that you as PosDealer are extending your offers and invite him to register with the fiskaltrust.portal via the confirmation link. With [Choose file...] and [Import] your document will be added as an attachment to the invitation.
+    2. add information text:  
+    The automated e-mail invitation to your PosOperator from an source like robot@- or robot@fiskaltrust.abc can be supplemented with your text. Use this text block up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as PosDealer extend your offers and invite him to register with the fiskaltrust.Portal via the confirmation link.
+    3. Surrogate rights:  
+    Set the rights you should have as PosDealer after switching to the PosOperator's account to [FULL]. Otherwise, you would have access to the PsOperator's account, but you would not be able to conclude contracts on his behalf. But these are necessary for the cooperation with third parties.
 
 ## Invitation of a single PosOperator
 
+### Overview individual invitation
+
 ![invitation process individual](images/1-onboarding-individual.png "1 invitation process individual")  
 
-### Explanation
+### Explanation individual invitation
 
-This is particularly interesting for the on-site support given by the PosDealer, if a PosOperator wants to use the fiskaltrust.Services immediately - in connection with the commissioning of a POS-System. Further, you may want to learn about and test the portal and its processes in the sandbox. The Invitation of a single PosOperator is also useful here.
+The single invitation is particularly interesting for the on-site support that you give as a the PosDealer, if a PosOperator wants to use the fiskaltrust.Services immediately - in connection with the commissioning of a POS-System. Further, you may want to learn about and test the portal and its processes in the sandbox. The Invitation of a single PosOperator is also useful here.
 
-### Work steps
+### Work steps individual invitation
 
 1. Choose PosOperator / Invitation
 2. Check the settings previously described [_here_](#preparation-of-invitations).
@@ -52,21 +57,24 @@ This is particularly interesting for the on-site support given by the PosDealer,
     * User data - First name
     * Last name
     * Contact E-mail address
-5. The commercial identification is no mandatory field for the invitation. But for the correct management of the cash register systems, these data are essential.
-6. Save your Values with [Save]
+5. The commercial identification is no mandatory field for the invitation.  
+But for the correct management of the cash register systems, these data and their validation are essential.
+6. Save your values with [Save]
 7. Choose [Assign all PosOperators]
 8. If the invitation does not reach the PosOperator, please read the chapter [_Managing the invitations_](#managing-the-invitations)
 
 
 ## Invitation of PosOperators in a bulk process
 
+### Overview bulk process
+
 ![Invitation of PosOperators in a bulk process](images/2-onboarding-bulk.png "2-onboarding-bulk.png")  
 
-### Explanation
+### Explanation bulk process
 
 Inviting PosOperators to a PosDealer account with an import file is especially interesting if you want to invite a larger number of business partners. Since the invitations are created and sent automatically via the fiskaltrust.portal, the information of your business partners is relevant. Therefore, please note the section on preparation to avoid irritation, loss of time or effort due to invitations mistakenly treated as SPAM. The necessary structure of the CSV file is described using an example. This example can be obtained in the fiskaltrust.Portal. 
 
-### Work steps
+### Work steps bulk process
 
 ![invitation via csv file](images/6-onboarding-portal.png "6-onboarding")  
 
@@ -80,7 +88,7 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 8. With [Import] the data are uploaded and analyzed to avoid duplicate or incomplete records. You can control or add data to each record. 
 9. Choose [Assign all PosOperators] to send the invitation-E-mail to each business partner in your CSV file.
 
-#### Fields of the CSV file
+### Fields of the CSV file
 
 
 | Fields | Description                                                                                                                         | Mandatory |
@@ -89,12 +97,12 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 | AccountEmail           | General e-mail address of the company<br />**IMPORTANT!**<br />All information and all invoices will be sent to this e-mail address!      | no        |
 | AccountAddressLine1    | Address, first line of the company                                                                                                  | no        |
 | AccountAddressLine2    | Address, second line of the company                                                                                                 | no        |
-| AccountPostalCode      | Postcode of the company                                                                                                             | no        |
+| AccountPostalCode      | Postcode of the company                                                                                                             | no (A)        |
 | AccountCity            | Name of city of the company's address                                                                                               | no        |
 | AccountCountry         | Zip-Code of the city                                                                                                                | no        |
 | AccountWeb             | URL of the company's website                                                                                                        | no        |
 | AccountPhone           | Company phone number                                                                                                                | no        |
-| commercial identification 1           | country-specific<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no        |
+| commercial identification 1           | country-specific<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no (B)        |
 | commercial identification 2          | country-specific<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no        |
 | ContactFirstName       | First name of the primary contact                                                                                                   | yes       |
 | ContactLastName        | Last name of primary contact                                                                                                        | yes       |
@@ -102,11 +110,13 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 | ContactTitle           | (Academic) Title of primary contact (before name)                                                                                   | no        |
 | ContactMobilePhone     | Mobile phone number of the primary contact                                                                                          | no        |
 
-Not all of the fields _commercial identification_ are mandatory. The naming might be country-specific, but one of the three fields should be completed.
+A = Not all of the fields _commercial identification_ are mandatory. The naming might be country-specific, but one of the three fields should be completed.
+B = There may be country-specific differences in which fields are mandatory to fill in. For example, the postal code is only mandatory in Austria. 
 
 #### Handling error messages
 
-*![Import errors ](images/7-onboarding-portal.png "7-onboarding-portal.png")
+![Import errors ](images/7-onboarding-portal.png "7-onboarding-portal.png")
+
 * If not all of the mandatory fields of the csv file are completed error messages with the wrong or missing data are shown.
 * please note the error messages and add the necessary data in the respective lines of the CSV file 
 
@@ -114,9 +124,9 @@ Not all of the fields _commercial identification_ are mandatory. The naming migh
 
 ### Explanation 
 
-If the preparations are done, the invitation process should work autimatised. However, if problems arise, you can fix the most of them on yourself. Have a look at the protocol of invitations, if a PosOperator claims, that there was no e-mail invitation. There a several ways to help.
+If the preparations are done, the invitation process should work automatized. However, if problems arise, you can fix the most of them on yourself. Have a look at the protocol of invitations, if a PosOperator claims, that there was no e-mail invitation. There a several ways to help.
 
-#### Assigning, editing and deleting a PosOperator
+### Assigning, editing and deleting a PosOperator
 
 ![8-onboarding](images/8-onboarding-portal.png "8-onboarding-portal")
 
@@ -126,7 +136,7 @@ If the preparations are done, the invitation process should work autimatised. Ho
 * Choose ![Number 3](images/Numbers/circle-3o.png) to edit the data of the PosOperator, if they are not correct and can not be assigned to the PosDealers account.
 * Use ![Number 4](images/Numbers/circle-4o.png) to delete the data of a not yet assigned PosOperator.
 
-#### Assigning PosOperators in a bulk process
+### Assigning PosOperators in a bulk process
 
 ![9-onboarding](images/9-onboarding-portal.png "9-onboarding-portal")
 
@@ -134,7 +144,7 @@ If the preparations are done, the invitation process should work autimatised. Ho
 * ![Number 2](images/Numbers/circle-2o.png) is used for a manual invitation, see chapter [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator).
 * Choose ![Number 3](images/Numbers/circle-3o.png) for for control or also repair of e-mail invitations.
 
-#### Protocol of invitations
+### Protocol of invitations
 
 ![10-onboarding](images/10-onboarding-portal.png "10-onboarding-portal")
 
@@ -147,5 +157,3 @@ Entering a text filters at [Search table] reduces the overview. By deleting all 
 6. Shows a window with the direct link for the invitation. This can be copied in the clipboard and send by direct message. 
 
 Return to the Invitation module with [Overview of PosOperator].
-
-### Information for PosOperators
