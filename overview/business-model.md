@@ -24,23 +24,17 @@ import SalesAT from '../_markets/at/overview/business-model/_sales.mdx';
 import SalesFR from '../_markets/fr/overview/business-model/_sales.mdx';
 import SalesDE from '../_markets/de/overview/business-model/_sales.mdx';
 
-<Tabs groupId="market"
-  values={[
-    {label: 'Austria', value: 'AT'},
-    {label: 'France', value: 'FR'},
-    {label: 'Germany', value: 'DE'},
-  ]}
-  defaultValue="AT">
+<Tabs groupId="market">
 
-  <TabItem value="AT">
+  <TabItem value="AT" label="Austria">
     <SalesAT />
   </TabItem>
 
-  <TabItem value="FR">
+  <TabItem value="FR" label="France">
     <SalesFR />
   </TabItem>
 
-  <TabItem value="DE">
+  <TabItem value="DE" label="Germany">
     <SalesDE />
   </TabItem>
 

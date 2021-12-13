@@ -20,23 +20,17 @@ import ContactAT from '../_markets/at/overview/countries/_contact.mdx';
 import ContactFR from '../_markets/fr/overview/countries/_contact.mdx';
 import ContactDE from '../_markets/de/overview/countries/_contact.mdx';
 
-<Tabs groupId="market"
-  values={[
-    {label: 'Austria', value: 'AT'},
-    {label: 'France', value: 'FR'},
-    {label: 'Germany', value: 'DE'},
-  ]}
-  defaultValue="AT">
+<Tabs groupId="market">
 
-  <TabItem value="AT">
+  <TabItem value="AT" label="Austria">
     <ContactAT />
   </TabItem>
 
-  <TabItem value="FR">
+  <TabItem value="FR" label="France">
     <ContactFR />
   </TabItem>
 
-  <TabItem value="DE">
+  <TabItem value="DE" label="Germany">
     <ContactDE />
   </TabItem>
 
