@@ -97,12 +97,12 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 | AccountEmail           | General e-mail address of the company<br />**IMPORTANT!**<br />All information and all invoices will be sent to this e-mail address!      | no        |
 | AccountAddressLine1    | Address, first line of the company                                                                                                  | no        |
 | AccountAddressLine2    | Address, second line of the company                                                                                                 | no        |
-| AccountPostalCode      | Postcode of the company                                                                                                             | no (A)        |
+| AccountPostalCode      | Postcode of the company                                                                                                             | no <sup>1</sup>        |
 | AccountCity            | Name of city of the company's address                                                                                               | no        |
 | AccountCountry         | Zip-Code of the city                                                                                                                | no        |
 | AccountWeb             | URL of the company's website                                                                                                        | no        |
 | AccountPhone           | Company phone number                                                                                                                | no        |
-| commercial identification 1           | country-specific<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no (B)        |
+| commercial identification 1           | country-specific<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no <sup>2</sup>        |
 | commercial identification 2          | country-specific<br />**IMPORTANT!**<br />This is one of the identification criterias for legalisation of the service.        | no        |
 | ContactFirstName       | First name of the primary contact                                                                                                   | yes       |
 | ContactLastName        | Last name of primary contact                                                                                                        | yes       |
@@ -110,8 +110,8 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 | ContactTitle           | (Academic) Title of primary contact (before name)                                                                                   | no        |
 | ContactMobilePhone     | Mobile phone number of the primary contact                                                                                          | no        |
 
-A = Not all of the fields _commercial identification_ are mandatory. The naming might be country-specific, but one of the three fields should be completed.
-B = There may be country-specific differences in which fields are mandatory to fill in. For example, the postal code is only mandatory in Austria. 
+<sup>1</sup> = Not all of the fields _commercial identification_ are mandatory. The naming might be country-specific, but one of the three fields should be completed.
+<sup>2</sup> = There may be country-specific differences in which fields are mandatory to fill in. For example, the postal code is only mandatory in Austria. 
 
 #### Handling error messages
 
