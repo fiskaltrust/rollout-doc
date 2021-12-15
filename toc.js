@@ -28,7 +28,7 @@ module.exports = {
 			items: [
 				'rollout-doc/getting-started/sandbox',
 				'rollout-doc/getting-started/registration',
-				'rollout-doc/getting-started/authorizations',
+				'rollout-doc/getting-started/company-roles',
 				{
 					type: 'category',
 					label: 'Operator Onboarding',
