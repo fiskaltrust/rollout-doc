@@ -4,7 +4,9 @@ title: Master Data
 ---
 # Master Data
 
+:::info summary
 After reading this, you can keep your and the PosOperators master data up-to-date and explain, why that is important.
+:::
 
 ## Explanation
 
