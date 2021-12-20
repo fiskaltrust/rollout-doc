@@ -58,7 +58,7 @@ The following steps will activate a new role for your account.
 ![](./images/company-roles/role-activate.png)
 
 1. **Log in** to your portal account
-2. Open your **company profile page** from `[COMPANYNAME]` / `Overview` in the left-hand navigation menu
+2. Open your **company profile page** from `[COMPANY NAME]` / `Overview` in the left-hand navigation menu
 3. **Switch the slider** of the role you'd like to activate from ![](./images/company-roles/slider-off.png) to  ![](./images/company-roles/slider-on.png)<br />*This will load a new page where you need to sign the respective agreement*
 
 
@@ -81,7 +81,7 @@ The following steps will deactivate an existing role of your account.
 ![](./images/company-roles/role-deactivate.png)
 
 1. **Log in** to your portal account
-2. Open your **company profile page** from `[COMPANYNAME]` / `Overview` in the left-hand navigation menu
+2. Open your **company profile page** from `[COMPANY NAME]` / `Overview` in the left-hand navigation menu
 3. **Switch the slider** of the role you'd like to deactivate from ![](./images/company-roles/slider-on.png) to  ![](./images/company-roles/slider-off.png)<br />*This will load a new page where you need to confirm the step*
 
 
