@@ -10,9 +10,9 @@ After reading this, you can explain the products fiskaltrust offers.
 
 :::
 
+On top of its free core product, *fiskaltrust.Middleware*, *fiskaltrust* also offers a number of additional **services and subscriptions** which are based on the Middleware and expand its functionality and feature-set.
 
-
-
+The following sections will provide you with details on the services **available in each market**. Please make sure to select the applicable country for your business case, as the availability and set of features **may vary from country to country**.
 
 
 
@@ -41,6 +41,7 @@ import ArchiveDE from '../_markets/de/buy-resell/products/_archive.mdx';
   </TabItem>
 
 </Tabs>
+<br />
 
 
 ## Hosted Middleware
@@ -64,6 +65,7 @@ import HostedMiddlewareDE from '../_markets/de/buy-resell/products/_hosted-middl
   </TabItem>
 
 </Tabs>
+<br />
 
 
 ## Signing
@@ -87,6 +89,7 @@ import SigningDE from '../_markets/de/buy-resell/products/_signing.mdx';
   </TabItem>
 
 </Tabs>
+<br />
 
 
 ## Third Party Integrations
@@ -110,6 +113,7 @@ import ThirdPartiesDE from '../_markets/de/buy-resell/products/_third-parties.md
   </TabItem>
 
 </Tabs>
+<br />
 
 
 ## Product Bundles
