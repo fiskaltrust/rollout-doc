@@ -28,15 +28,15 @@ import ArchiveDE from '../_markets/de/buy-resell/products/_archive.mdx';
 
 <Tabs groupId="market">
 
-  <TabItem value="AT" label="Austria 🇦🇹">
+  <TabItem value="AT" label="Austria">
     <ArchiveAT />
   </TabItem>
 
-  <TabItem value="FR" label="France 🇫🇷">
+  <TabItem value="FR" label="France">
     <ArchiveFR />
   </TabItem>
 
-  <TabItem value="DE" label="Germany 🇩🇪">
+  <TabItem value="DE" label="Germany">
     <ArchiveDE />
   </TabItem>
 
@@ -51,15 +51,15 @@ import HostedMiddlewareDE from '../_markets/de/buy-resell/products/_hosted-middl
 
 <Tabs groupId="market">
 
-  <TabItem value="AT" label="Austria 🇦🇹">
+  <TabItem value="AT" label="Austria">
     <HostedMiddlewareAT />
   </TabItem>
 
-  <TabItem value="FR" label="France 🇫🇷">
+  <TabItem value="FR" label="France">
     <HostedMiddlewareFR />
   </TabItem>
 
-  <TabItem value="DE" label="Germany 🇩🇪">
+  <TabItem value="DE" label="Germany">
     <HostedMiddlewareDE />
   </TabItem>
 
@@ -74,15 +74,15 @@ import SigningDE from '../_markets/de/buy-resell/products/_signing.mdx';
 
 <Tabs groupId="market">
 
-  <TabItem value="AT" label="Austria 🇦🇹">
+  <TabItem value="AT" label="Austria">
     <SigningAT />
   </TabItem>
 
-  <TabItem value="FR" label="France 🇫🇷">
+  <TabItem value="FR" label="France">
     <SigningFR />
   </TabItem>
 
-  <TabItem value="DE" label="Germany 🇩🇪">
+  <TabItem value="DE" label="Germany">
     <SigningDE />
   </TabItem>
 
@@ -97,15 +97,15 @@ import ThirdPartiesDE from '../_markets/de/buy-resell/products/_third-parties.md
 
 <Tabs groupId="market">
 
-  <TabItem value="AT" label="Austria 🇦🇹">
+  <TabItem value="AT" label="Austria">
     <ThirdPartiesAT />
   </TabItem>
 
-  <TabItem value="FR" label="France 🇫🇷">
+  <TabItem value="FR" label="France">
     <ThirdPartiesFR />
   </TabItem>
 
-  <TabItem value="DE" label="Germany 🇩🇪">
+  <TabItem value="DE" label="Germany">
     <ThirdPartiesDE />
   </TabItem>
 
@@ -120,15 +120,15 @@ import BundlesDE from '../_markets/de/buy-resell/products/_bundles.mdx';
 
 <Tabs groupId="market">
 
-  <TabItem value="AT" label="Austria 🇦🇹">
+  <TabItem value="AT" label="Austria">
     <BundlesAT />
   </TabItem>
 
-  <TabItem value="FR" label="France 🇫🇷">
+  <TabItem value="FR" label="France">
     <BundlesFR />
   </TabItem>
 
-  <TabItem value="DE" label="Germany 🇩🇪">
+  <TabItem value="DE" label="Germany">
     <BundlesDE />
   </TabItem>
 
