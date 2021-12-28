@@ -632,6 +632,13 @@ Im Kapitel [Template Beispiele](#template-beispiele) finden Sie ein Template, da
 Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by-step/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers/README.md) nachgelesen werden.
 
 ### Eine Cloud-TSE für mehrere Kassen
+
+:::caution
+
+Diese Setup Szenario erfordert eine **fiskaly TSE als Teil eines TSE-as-a-Service Pakets**. Weder eine Swissbit Cloud TSE, noch ein fiskaly TSE Einzelprodukt wäre in diesem Anwendungsfall unterstützt.
+
+:::
+
 Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer eigenen Queue und einer eigenen SCU. Jede SCU greift auf die gleiche Cloud-TSE zu. Dieses Szenario ermöglicht eine Einsparung von Cloud-TSEs. Ein Vorteil hier ist, dass die SCU nicht zum Bottleneck wird, da jede Kasse ihre eigene SCU hat. Da jedoch hierbei alle Requests an die gleiche Cloud-TSE gesendet werden, wird die TSE zum Bottleneck. Des Weiteren sind hierbei ebenfalls sowohl mögliche [Performanceengpässe](#performanceempfehlung) in der Cloud-TSE zu berücksichtigen als auch unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md).
 
 ![tse-on-cashregister](images/cash-register-with-cloud-tse.png)
@@ -646,6 +653,12 @@ Terminals sind Eingabegeräte ohne Kassenfunktion wie Tablets, Handhelds oder ä
 ![terminals-single-queue](images/terminals-one-queue.png)
 
 Eine weitere mögliche Variante dieses Szenario ist die Zuordnung jedes Terminals zu einer eigenen Queue.
+
+:::caution
+
+Falls Sie planen eine Cloud TSE via fiskaltrust zu erwerben und einzusetzen, bitte beachten Sie, dass ein Multi-Queue Setup ein TSE-as-a-Service Paket erfordert. Einzelprodukte sind für diesen Anwendungsfall nicht unterstützt.
+
+:::
 
 ![terminals-mehrere-queues](images/terminals-multiple-queues.png)
 
