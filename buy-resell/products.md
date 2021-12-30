@@ -10,9 +10,9 @@ After reading this, you can explain the products fiskaltrust offers.
 
 :::
 
-On top of its free core product, *fiskaltrust.Middleware*, *fiskaltrust* also offers a number of additional **services and subscriptions** which are based on the Middleware and expand its functionality and feature-set.
+On top of its free core product - *fiskaltrust.Middleware* - *fiskaltrust* also offers a number of additional **services and subscriptions** which are based on the Middleware and expand its functionality and feature set.
 
-The following sections will provide you with details on the services **available in each market**. Please make sure to select the applicable country for your business case, as the availability and set of features **may vary from country to country**.
+The following sections will provide you with details on the services **available in each market**. Please make sure to select the applicable country for your business case, as the features and their availability **may vary from country to country**.
 
 
 
@@ -20,7 +20,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-## Archive
+## Receipt Archive
 
 import ArchiveAT from '../_markets/at/buy-resell/products/_archive.mdx';
 import ArchiveFR from '../_markets/fr/buy-resell/products/_archive.mdx';
