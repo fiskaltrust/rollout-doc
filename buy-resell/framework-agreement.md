@@ -12,16 +12,18 @@ After reading this, you can explain the different agreements for reselling produ
 
 ## Explanation
 
-As mentioned in the section [Business Model] (../Overview/Business%20model), fiskaltrust also offers more favorable dealer packages for you as PosDealer in addition to the offer in the fiskaltrust.portal. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products).  
+As mentioned in the section [Business Model](../overview/business%20model), fiskaltrust also offers more favorable dealer packages for you as PosDealer in addition to the bid in the shop of the fiskaltrust.portal. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products).  
 If you commit to purchasing larger quantities of product bundles of your choice over the course of a year, attractive discounts can be arranged.  
-With this **Framework Agreement** you can achieve significant discounts depending on the planned sales volume.  
+With this **Framework Agreement** you can achieve significant discounts depending on the planned sales volume.
+Please also note the following paragraphs if you are not interested in a framework agreement for the time being. A framework agreement can also be concluded later. 
+A **credit limit** for your account in the fiskaltrust.portal must be agreed in any case and also checked before the first transactions.
 
 ### Legal Framework
 
-* Term for one year
-* No expenses in advance
-* Purchase as needed
-* No processing of refunds required
+* The contract period is open and the evaluation period for the ordered number of entitlements will be set to one year or the period of your choice.
+* The agreed purchase price applies to each allocation of each entitlements, regardless of whether you use the rollout management or prefer the store.
+* By assigning entitlements in the fiskaltrust.Portal according to your needs, you control purchase and accounting by yourself.
+* You avoid processing refunds because unused Entitlements already purchased can also be used in the following year.
 
 ## Work steps to achieve a framework agreement
 
@@ -29,25 +31,27 @@ With this **Framework Agreement** you can achieve significant discounts dependin
 
 ### Preliminaries
 
-* acceptance of Terms & Conditions
-* signed cooperation agreement as PosDealer
-* checked Master data 
-* Knowledge of products and product bundles
-* Test scenarios created in the sandbox 
-* Test scenarios successfully completed
-* Rollout planning completed
-* Determined demand for products, product bundles and their number
+* Accept the invitation of the PC.
+* Accept the General Terms and Conditions and the Privacy Policy and complete the registration in the fiskaltrust.Portal in full.
+* Sign the cooperation agreement as PosDealer.
+* Complete and check the master data in your account in the fiskaltrust.Portal. 
+* Get an overview of the current products and product bundles in the live system.
+* Create test scenarios such as invitation and rollout management in the sandbox. 
+* Test these test scenarios to successful completion.
+* Resolve outstanding rollout planning issues.
+ * Determine your need for products, product bundles and their number.
 
 ### Negotiation
 
-* contact fiskaltrust, see tabs below for country specific details
-* Framework agreement (can last some days)
-* receive Framework Contract
-* credit limit and price list are done by ???
-* Check prices (Shop, Rollout plans)
-* Resale
-* determination of demand for following year
-* contact fiskaltrust, see tabs below for country specific details
+* Contact fiskaltrust. Check the tabs below for country-specific details.
+* Make a request for a framework agreement with the data previously collected.
+* Note that it will take a few days to process your request. Only then will you receive the master agreement.
+* With the framework agreement, your credit limit and adjusted product prices will be stored in the fiskaltrust.Portal.
+* Check the deposited prices, pay attention to the offers in the store as well as the rollout plans. 
+* Carry out the resale of the Entitlements in the agreed period.
+* Check the remaining stock in good time. This will be invoiced at the end of the agreed period.
+* At the end of the agreed period, determine the requirements for the following year.
+* Contact fiskaltrust for further agreement.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

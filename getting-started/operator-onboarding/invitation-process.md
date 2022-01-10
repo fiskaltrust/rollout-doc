@@ -26,9 +26,10 @@ There are two ways to add and assign PosOperators to your Account as a PosDealer
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](images/Numbers/circle-1o.png)| PDF-Attachment: Avoid confusing your PosOperators when they receive an E-mail invitation from an expectable unknown source like sandbox@fiskaltrust.TLD or robot@fiskaltrust.TLD. Explain in an accompanying letter that you as PosDealer are extending your offers and invite him to register with the fiskaltrust.portal via the confirmation link. With `Choose file...`and `Import` your document will be added as an attachment to the invitation.  |
-|![Number 2](images/Numbers/circle-2o.png)| add information text:  The automated E-mail invitation to your PosOperator from an source like like sandbox@fiskaltrust.topleveldomain or robot@fiskaltrust.TLD can be supplemented with your text. Use this text block up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as PosDealer extend your offers and invite him to register with the fiskaltrust.Portal via the confirmation link.  |
+|![Number 1](images/Numbers/circle-1o.png)| PDF-Attachment: Avoid confusing your PosOperators when they receive an E-mail invitation from an expectable unknown source like sandbox@fiskaltrust.TLD or robot@fiskaltrust.TLD. Explain in an accompanying letter that you as PosDealer are extending your offers and invite your PosOperators to register with the fiskaltrust.portal via the confirmation link. With `Choose file...`and `Import` your document will be added as an attachment to the invitation.  |
+|![Number 2](images/Numbers/circle-2o.png)| add information text:  The automated E-mail invitation to your PosOperator from an source like like sandbox@fiskaltrust.topleveldomain or robot@fiskaltrust.TLD can be supplemented with your text. Use this text block up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as PosDealer extend your offers and invite your PosOperators to register with the fiskaltrust.Portal via the confirmation link.  |
 |![Number 3](images/Numbers/circle-3o.png)| Surrogate rights:  Set the rights you should have as PosDealer after switching to the PosOperator's account to `FULL`. Otherwise, you would have access to the PosOperator's account, but you would not be able to conclude contracts on his behalf. But these are necessary for the cooperation with third parties.  |
+
 ## Invitation of a single PosOperator
 
 ### Overview individual invitation
@@ -142,6 +143,14 @@ import FieldsDE from '../../_markets/de/getting-started/operator-onboarding/invi
 
 * If not all of the mandatory fields of the csv file are completed, error messages with the wrong or missing data are shown.
 * Please note the error messages and add the necessary data in the respective lines of the CSV file 
+
+| messages | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](images/Numbers/circle-1o.png) |Email-address is required! |
+|![Number 2](images/Numbers/circle-2o.png) |Address line 1 is required! |
+|![Number 3](images/Numbers/circle-3o.png) |ZIP-code is required!  |
+|![Number 4](images/Numbers/circle-4o.png) |City is required!  |
+|![Number 5](images/Numbers/circle-5o.png) |Country is required!  |
 
 ## Managing the invitations
 
