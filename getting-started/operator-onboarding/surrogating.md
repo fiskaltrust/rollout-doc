@@ -20,7 +20,7 @@ For your visualization, the process of surrogating is described here with the ex
 ### Prerequisites
 
 1. You as a PosDealer have prepared your own account ready-to-use.
-2. You have configured invitations to PosOperators like described under [Invitation process / Preparation of Invitations](Invitation%20process/#preparation-of-invitations).
+2. You have configured invitations to PosOperators like described under [Preparation of Invitations](Invitation%20process/#preparation-of-invitations).
 3. The PosOperator followed the invitation by activating the role contract.
 4. There have no changes been, neither with other role contracts, nor to your authorizations.
 5. You as a PosDealer check the status of our invited PosOperators with PosOperator / Overview:
