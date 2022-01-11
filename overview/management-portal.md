@@ -52,6 +52,8 @@ The portal is where you manage your operators and **invite** them to *fiskaltrus
 
 Surrogating is a key feature of *fiskaltrust.Portal* and enables you to **act on behalf of your operators** within the **scope of their granted authorisation**. This may include **read-only** access, **write** access, and even the permission to sign agreements on their behalf. For *PosDealers* this is an **essential feature** to plan and implement their rollouts.
 
+More information is available in the chapter [Surrogating](../Getting%20Started/Operator%20Onboarding/Surrogating).
+
 
 
 ## Shop
