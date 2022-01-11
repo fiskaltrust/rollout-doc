@@ -12,11 +12,7 @@ After reading this, you can buy and transfer selected entitlements in the easies
 
 ## Explanation
 
-As formerly described at [Rollout plans](../Getting%20Started/My%20First%20Cashbox)
-[Rollout plans](../Buy%20&%20Resell/Rollout%20Plans)  
-
-
-, the fiskaltrust.Portal provides you as PosDealer with options for distributing products to your KassenBetreiber. Within the rollout management you can choose between different plans. 
+As formerly described at [Rollout plans](../Getting%20Started/My%20First%20Cashbox), the fiskaltrust.Portal provides you as PosDealer with options for distributing products to your KassenBetreiber. Within the rollout management you can choose between different plans. 
 When using a rollout plan, you access a defined sequence of activities. In doing so, you avoid confusion as to which activities are to be carried out and at what point in time.
 
 ### Benefits of using a rollout plan:
