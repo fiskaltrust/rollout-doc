@@ -1,8 +1,8 @@
 ---
-slug: /Buy & Resell/Products
+slug: /buy-resell/products
 title: Products
 ---
-# Products(?)
+# Products
 
 :::info summary
 
@@ -18,6 +18,30 @@ The following sections will provide you with details on the services **available
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+
+## Product Bundles
+
+import BundlesAT from '../_markets/at/buy-resell/products/_bundles.mdx';
+import BundlesFR from '../_markets/fr/buy-resell/products/_bundles.mdx';
+import BundlesDE from '../_markets/de/buy-resell/products/_bundles.mdx';
+
+<Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <BundlesAT />
+  </TabItem>
+
+  <TabItem value="FR" label="France">
+    <BundlesFR />
+  </TabItem>
+
+  <TabItem value="DE" label="Germany">
+    <BundlesDE />
+  </TabItem>
+
+</Tabs>
+<br />
 
 
 ## Receipt Archive
@@ -116,24 +140,24 @@ import ThirdPartiesDE from '../_markets/de/buy-resell/products/_third-parties.md
 <br />
 
 
-## Product Bundles
+## Professional Services
 
-import BundlesAT from '../_markets/at/buy-resell/products/_bundles.mdx';
-import BundlesFR from '../_markets/fr/buy-resell/products/_bundles.mdx';
-import BundlesDE from '../_markets/de/buy-resell/products/_bundles.mdx';
+import ProfessionalServicesAT from '../_markets/at/buy-resell/products/_professional-services.mdx';
+import ProfessionalServicesFR from '../_markets/fr/buy-resell/products/_professional-services.mdx';
+import ProfessionalServicesDE from '../_markets/de/buy-resell/products/_professional-services.mdx';
 
 <Tabs groupId="market">
 
   <TabItem value="AT" label="Austria">
-    <BundlesAT />
+    <ProfessionalServicesAT />
   </TabItem>
 
   <TabItem value="FR" label="France">
-    <BundlesFR />
+    <ProfessionalServicesFR />
   </TabItem>
 
   <TabItem value="DE" label="Germany">
-    <BundlesDE />
+    <ProfessionalServicesDE />
   </TabItem>
 
 </Tabs>
