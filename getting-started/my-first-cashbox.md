@@ -1,5 +1,5 @@
 ---
-slug: /Getting Started/My First Cashbox
+slug: /getting-started/my-first-cashbox
 title: My First Cashbox
 ---
 # My First Cashbox
