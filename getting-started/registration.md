@@ -60,11 +60,11 @@ All the fields marked with a red star are mandatory and must be filled out with 
 
 | element | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../images/Numbers/circle-1o.png) |The correct company has to be entered. The name will be verified later on against any entered commercial number. This name has to be the same as the one used in the commercial registers. The name of the company may not already be in use for registration.  |
-|![Number 2](../images/Numbers/circle-2o.png) |A valid email address must be entered in this field. This email address can only be used once for a company in the portal. If your mailserver supports the use of "+" in your email address (meaning username+tag@domain will be delivered to username@domain) you can use such emailadresses especially for testing purposes and the portal will treat each of them as a unique email-adress. |
-|![Number 3](../images/Numbers/circle-3o.png) |The address,zip-code and the name of the city of the company's headquarter must be entered.  |
-|![Number 4](../images/Numbers/circle-4o.png) |You can already enter some or all commercial numbers for the company. This will facilitate the further registration process and usage of the portal. |
-|![Number 5](../images/Numbers/circle-5o.png) |By clicking on `Next` you proceed to the 3rd step _User data_ of the registration process. |
+|![Number 1](../images/numbers/circle-1o.png) |The correct company has to be entered. The name will be verified later on against any entered commercial number. This name has to be the same as the one used in the commercial registers. The name of the company may not already be in use for registration.  |
+|![Number 2](../images/numbers/circle-2o.png) |A valid email address must be entered in this field. This email address can only be used once for a company in the portal. If your mailserver supports the use of "+" in your email address (meaning username+tag@domain will be delivered to username@domain) you can use such emailadresses especially for testing purposes and the portal will treat each of them as a unique email-adress. |
+|![Number 3](../images/numbers/circle-3o.png) |The address,zip-code and the name of the city of the company's headquarter must be entered.  |
+|![Number 4](../images/numbers/circle-4o.png) |You can already enter some or all commercial numbers for the company. This will facilitate the further registration process and usage of the portal. |
+|![Number 5](../images/numbers/circle-5o.png) |By clicking on `Next` you proceed to the 3rd step _User data_ of the registration process. |
 
 :::info  Error message
 If the data entered in _Company name_ and/or _email address_ was already used for registration, the registration will jump to the last step and an informational page will be displayed.
