@@ -1,5 +1,5 @@
 ---
-slug: /Getting Started/Operator Onboarding/Invitation process
+slug: /getting-started/operator-onboarding/invitation-process
 title: Invitation process
 ---
 # Invitation process
@@ -10,7 +10,7 @@ After reading this, you can invite a single PosOperator and perform a bulk opera
 
 You as a PosDealer can do the invitation of a PosOperator only, this can not be made by a PosCreator or consultant.
 However, the role of a PosDealer can also be activated by these parties and thus be assumed in parallel with another role. If you are in doubt,  
-please refer to [Company Roles](../Company%20Roles)
+please refer to [Company Roles](../company-roles.md)
 
 ## Preparation of Invitations
 

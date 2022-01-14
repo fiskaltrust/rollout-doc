@@ -1,5 +1,5 @@
 ---
-slug: /Getting Started/Registration
+slug: /getting-started/registration
 title: Registration
 ---
 # Registration

@@ -1,5 +1,5 @@
 ---
-slug: /Getting Started/Operator Onboarding/Surrogating
+slug: /getting-started/operator-onboarding/surrogating
 title: Surrogating
 ---
 # Surrogating
@@ -10,7 +10,7 @@ After reading this, you can explain the prerequisites to act in the fiskaltrust.
 
 ## Explanation
 
-As mentioned in the section [Company Roles](../Company%20Roles), _fiskaltrust_ distinguishes company roles in the context of the fiskaltrust.Portal and its role management. The end-users of the Pos-Systems activate the role contract of an **PosOperator**, Pos-System distributors activate the role contract of an **PosDealer**.
+As mentioned in the section [Company Roles](../company-roles.md), _fiskaltrust_ distinguishes company roles in the context of the fiskaltrust.Portal and its role management. The end-users of the Pos-Systems activate the role contract of an **PosOperator**, Pos-System distributors activate the role contract of an **PosDealer**.
 
 To support and maintain a PosOperator's Pos-System, PosDealers switch from their account to the PosOperator's account, change settings, assign contracts or order products and switch back to their own account - they use **surrogating**.
 For your visualization, the process of surrogating is described here with the example of checking the master data of an PosOperator. Please note, that there is no bulk action, surrogating is a method to work with your fiskaltrust.account and one PosOperators account only.
@@ -20,13 +20,13 @@ For your visualization, the process of surrogating is described here with the ex
 ### Prerequisites
 
 1. You as a PosDealer have prepared your own account ready-to-use.
-2. You have configured invitations to PosOperators like described under [Preparation of Invitations](Invitation%20process/#preparation-of-invitations).
+2. You have configured invitations to PosOperators like described under [Preparation of Invitations](invitation-process.md/#preparation-of-invitations).
 3. The PosOperator followed the invitation by activating the role contract.
 4. There have no changes been, neither with other role contracts, nor to your authorizations.
 5. You as a PosDealer check the status of our invited PosOperators with PosOperator / Overview:
 
 * If the name of the PosOperator is an active link, the account is active.
-* If the name of the PosOperator is an inactive link, your invitation is not yet accepted. Please read and follow the instructions at [Troubleshooting](Invitation%20process#troubleshooting).
+* If the name of the PosOperator is an inactive link, your invitation is not yet accepted. Please read and follow the instructions at [Troubleshooting](invitation-process.md#troubleshooting).
 
 6. Under the table of PosOperators (`PosOperator` / `Overview`) you will find a download opportunity. This may help you with an overview of active and inactive PosOperator-Accounts and to contact them.  
 

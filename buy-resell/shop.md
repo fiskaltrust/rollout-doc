@@ -1,5 +1,5 @@
 ---
-slug: /Buy & Resell/Shop
+slug: /buy-resell/shop
 title: Shop
 ---
 # Shop

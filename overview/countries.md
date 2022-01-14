@@ -1,5 +1,5 @@
 --- 
-slug: /Overview/Countries
+slug: /overview/countries
 title: Countries
 ---
 
