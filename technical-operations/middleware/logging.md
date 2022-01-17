@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Middleware/Logging
+slug: /technical-operations/middleware/logging
 title: Logging
 ---
 # Logging

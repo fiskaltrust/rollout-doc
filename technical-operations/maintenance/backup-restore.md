@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Maintenance/Backup & Restore
+slug: /technical-operations/maintenance/backup-restore
 title: Backup & Restore
 ---
 # Backup & Restore

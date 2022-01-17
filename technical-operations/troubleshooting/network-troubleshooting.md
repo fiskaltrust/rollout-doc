@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Troubleshooting/Network troubleshooting
+slug: /technical-operations/troubleshooting/network-troubleshooting
 title: Network troubleshooting
 ---
 # Network troubleshooting

@@ -1,5 +1,5 @@
 ---
-slug: /Overview/Legal & Data Protection/Data Protection
+slug: /overview/legal-data-protection/data-protection
 title: Data Protection
 ---
 # Data Protection

@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Middleware/Launcher
+slug: /technical-operations/middleware/launcher
 title: Launcher
 ---
 # Launcher

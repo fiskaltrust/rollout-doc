@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Middleware/Overview
+slug: /technical-operations/middleware/overview
 title: Overview
 ---
 # Overview

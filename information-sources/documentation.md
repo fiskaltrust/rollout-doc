@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/Documentation
+slug: /technical-operations/information-sources/documentation
 title: Documentation
 ---
 # Documentation

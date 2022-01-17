@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Scenarios
+slug: /technical-operations/scenarios
 title: Scenarios
 ---
 ## Scenarios

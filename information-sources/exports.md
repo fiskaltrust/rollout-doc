@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/Exports
+slug: /technical-operations/information-sources/exports
 title: Exports
 ---
 # Exports

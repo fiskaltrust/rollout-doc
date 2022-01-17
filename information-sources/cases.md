@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/Cases
+slug: /technical-operations/information-sources/cases
 title: Cases
 ---
 # Cases

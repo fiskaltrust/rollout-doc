@@ -1,5 +1,5 @@
 ---
-slug: /Overview/Legal & Data Protection/Terms of Service
+slug: /overview/legal-data-protection/terms-of-service
 title: Terms of Service
 ---
 # Terms of Service

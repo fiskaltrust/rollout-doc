@@ -1,5 +1,5 @@
 ---
-slug: /Overview/Legal & Data Protection/Fair-use-Policy
+slug: /overview/legal-data-protection/fair-use-policy
 title: Fair-use-Policy
 ---
 # Fair-use-Policy

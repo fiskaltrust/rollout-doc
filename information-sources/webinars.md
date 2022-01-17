@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/Webinars
+slug: /technical-operations/information-sources/webinars
 title: Webinars
 ---
 # Webinars
