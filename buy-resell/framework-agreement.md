@@ -12,14 +12,16 @@ After reading this, you can explain the different agreements for reselling produ
 
 ## Explanation
 
-### Credit limit
-Please also note the following paragraphs if you are not interested in a framework agreement for the time being. A framework agreement can also be concluded later. 
+Please also note the following paragraphs if you are not interested in a framework agreement for the time being. A framework agreement can also be concluded later.
 
-When the PosDealer role is activated, a credit limit is also granted in the fiskaltrust.portal. Note that the limit in the productive system is significantly lower than in the sandbox. 
+### Explanation Credit limit
+
+When the PosDealer role is activated, a credit limit is also granted in the fiskaltrust.portal. Note that the limit in the productive system is significantly lower than in the sandbox.
+
 If the invoice amounts exceed the credit limit during rollout management or purchases in the store, you will be notified of the credit limit by a corresponding message when creating further offers. 
 If it is not possible to settle the open invoices in a timely manner, contact the sales department responsible for the country in question with a request to grant you more credit limit. Check the tabs below for country-specific details.
 
-### Framework Agreement
+### Explanation Framework Agreement
 
 As mentioned in the section [Business model](../overview/business-model.md), in addition to offering individual products, fiskaltrust also offers more favorable merchant bundles in the fiskaltrust.portal store. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
 If you are committing to purchase **large quantities of product bundles** of your choice over the course of a year, a **Framework Agreement** is the best option. This allows you to achieve significant discounts depending on your planned sales volume.
