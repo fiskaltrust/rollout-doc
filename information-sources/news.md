@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/News
+slug: /technical-operations/information-sources/news
 title: News
 ---
 # News 

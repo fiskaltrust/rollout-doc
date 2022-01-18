@@ -1,5 +1,5 @@
 ---
-slug: /Overview/Legal & Data Protection/Compliance requirements
+slug: /overview/legal-data-protection/compliance-requirements
 title: Compliance requirements
 ---
 # Compliance requirements

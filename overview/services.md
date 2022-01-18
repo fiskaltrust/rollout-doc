@@ -1,5 +1,5 @@
 ---
-slug: /Overview/Services
+slug: /overview/services
 title: Services
 ---
 # Services

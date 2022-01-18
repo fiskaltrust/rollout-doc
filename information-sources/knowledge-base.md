@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/Knowledge Base
+slug: /technical-operations/information-sources/knowledge-base
 title: Knowledge Base
 ---
 # Knowledge Base

@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Rollout Automation/Templates
+slug: /technical-operations/rollout-automation/templates
 title: Templates
 ---
 # Templates

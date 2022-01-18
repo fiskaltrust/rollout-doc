@@ -1,5 +1,5 @@
 ---
-slug: /Getting Started/Company Roles
+slug: /getting-started/company-roles
 title: Company Roles
 ---
 # Company Roles

@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Rollout Automation/Shop Templating
+slug: /technical-operations/rollout-automation/shop-templating
 title: Shop Templating
 ---
 # Shop Templating

@@ -1,5 +1,5 @@
 ---
-slug: /Overview/Business model
+slug: /overview/business-model
 title: Business model
 ---
 # Business model

@@ -1,6 +1,10 @@
-For this setup we choose a *fiskaltrust.Carefree* plan with a *fiskaly TSE*. This will create a Carefree and TSE-as-a-Service bundle and automatically create and assign a *fiskaly TSE* to your account. Being an online TSE, there are no further hardware provisioning steps required from your side.
+For this setup we choose a rollout plan based on a fiskaly template. This plan will create a new queue, a new CashBox, and link the previously created SCU to it.
 
 To start the Technical rollout **log into your portal account** and proceed with the following steps.
+
+import ReactPlayer from "react-player"
+
+<ReactPlayer controls url={require("./media/technical-rollout.mp4").default} /><br />
 
 1. Open your the **rollout management page** from [`Rollout Management` / `Plan`](https://portal-sandbox.fiskaltrust.de/RolloutManagement/Plan) (*Sandbox link*) in the left-hand navigation menu.
 2. Select `Technical Rollout - Creating cashboxes at scale`.
@@ -15,11 +19,9 @@ To start the Technical rollout **log into your portal account** and proceed with
 11. Click `Checkout`.
 12. Click `binding order` to **complete the order**.
 
-*A detailed step-by-step list of instructions with screenshots can be found [here](My%20First%20Cashbox/Technical%20Rollout/Germany).*
-
 -----
 
-At this point should have the order listed under `Shop` / `Orders`. Finishing the order can take a couple of minutes, but once it has been completed you should have
+At this point should have the order listed under [`Shop` / `Orders`](https://portal-sandbox.fiskaltrust.de/Shop/Orders). Finishing the order can take a couple of minutes, but once it has been completed you should have
 
-* a new queue
-* a CashBox
+* a **new queue** under [`Configuration` / `Queue`](https://portal-sandbox.fiskaltrust.de/Queue)
+* a **new CashBox** under [`Configuration` / `CashBox`](https://portal-sandbox.fiskaltrust.de/CashBox)

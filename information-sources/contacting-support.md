@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/Contacting support
+slug: /technical-operations/information-sources/contacting-support
 title: Contacting support
 ---
 # Contacting support
