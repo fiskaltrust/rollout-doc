@@ -6,20 +6,20 @@ title: Rollout Plans
 
 :::info summary
 
-After reading this, you can buy and transfer selected entitlements in the easiest way.
+After reading this, you can buy or transfer selected entitlements in the easiest way.
 
 :::
 
 ## Explanation
 
-As formerly described at [Rollout plans](../Getting%20Started/My%20First%20Cashbox), the fiskaltrust.Portal provides you as PosDealer with options for distributing products to your KassenBetreiber. Within the rollout management you can choose between different plans. 
+As formerly described at [Rollout plans](../Getting%20Started/My%20First%20Cashbox), the fiskaltrust.Portal provides you as PosDealer with options for distributing products to your PosOperator. Within the rollout management you can choose between different plans. 
 When using a rollout plan, you access a defined sequence of activities. In doing so, you avoid confusion as to which activities are to be carried out and at what point in time.
 
 ### Benefits of using a rollout plan:
 
 #### Saving time:
 
-The use of rollout plans allows you as a PosDealer or your team members to create rapidly the key elements. You generate more time for making adjustments, to meet the specific requirements of each KassenBetreiber and their various locations. 
+The use of rollout plans allows you as a PosDealer or your team members to create rapidly the key elements. You generate more time for making adjustments, to meet the specific requirements of each PosOperator and their various locations. 
 
 #### Improving communication: 
 
@@ -37,6 +37,10 @@ Focusing on rollout plans give you a helping hand on explaining which products y
 
 The use of rollout plans will support you as a PosDealer with a well-organized your rollout strategy and makes it easier to plan for the next year .
 
-## Work steps to achieve a framework agreement
+## Work steps
+
+### preliminaries
+
+### aso
 
 ## further informations
