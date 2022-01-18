@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Middleware/Configuration
+slug: /technical-operations/middleware/configuration
 title: Configuration
 ---
 # Configuration

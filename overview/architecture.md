@@ -1,5 +1,5 @@
 ---
-slug: /Overview/Architecture
+slug: /overview/architecture
 title: Architecture
 ---
 

@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/Videos
+slug: /technical-operations/information-sources/videos
 title: Videos
 ---
 # Videos

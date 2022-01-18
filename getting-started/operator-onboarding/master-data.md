@@ -1,5 +1,5 @@
 ---
-slug: /Getting Started/Operator Onboarding/Master Data
+slug: /getting-started/operator-onboarding/master-data
 title: Master Data
 ---
 # Master Data
@@ -23,7 +23,7 @@ Basically, the information about the user at `[USERNAME]` / `Data` is only impor
 
 For PosOperators, it is equally essential to check the Master data for completeness and correctness. This must be done in the respective account. 
 
-To illustrate the processes of checking and validation of Master data, we show here in detail the procedure for checking your own Master data. Having this and the import of PosOperators done, you use the surrogating to change into the account of your PosOperators. Please refer to the section [Surrogating](Surrogating) to check the Master data for completeness and correctness.
+To illustrate the processes of checking and validation of Master data, we show here in detail the procedure for checking your own Master data. Having this and the import of PosOperators done, you use the surrogating to change into the account of your PosOperators. Please refer to the section [Surrogating](surrogating.md) to check the Master data for completeness and correctness.
 
 ### Work steps to check Master data
 

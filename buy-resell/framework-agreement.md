@@ -1,5 +1,5 @@
 ---
-slug: /Buy & Resell/Framework Agreement
+slug: /buy-resell/framework-agreement
 title: Framework Agreement
 ---
 # Framework Agreement
@@ -12,7 +12,7 @@ After reading this, you can explain the different agreements for reselling produ
 
 ## Explanation
 
-As mentioned in the section [Business Model](../overview/business%20model), fiskaltrust also offers more favorable dealer packages for you as PosDealer in addition to the bid in the shop of the fiskaltrust.portal. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products).  
+As mentioned in the section [Business Model](../overview/business-model.md), fiskaltrust also offers more favorable dealer packages for you as PosDealer in addition to the bid in the shop of the fiskaltrust.portal. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
 If you commit to purchasing larger quantities of product bundles of your choice over the course of a year, attractive discounts can be arranged.  
 With this **Framework Agreement** you can achieve significant discounts depending on the planned sales volume.
 Please also note the following paragraphs if you are not interested in a framework agreement for the time being. A framework agreement can also be concluded later. 

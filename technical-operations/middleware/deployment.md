@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Middleware/Deployment
+slug: /technical-operations/middleware/deployment
 title: Deployment
 ---
 # Deployment

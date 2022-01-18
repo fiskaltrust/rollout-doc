@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Maintenance/Proactive actions
+slug: /technical-operations/maintenance/proactive-actions
 title: Proactive actions
 ---
 # Proactive actions

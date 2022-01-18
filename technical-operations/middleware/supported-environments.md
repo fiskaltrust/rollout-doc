@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Middleware/Supported Environments
+slug: /technical-operations/middleware/supported-environments
 title: Supported Environments
 ---
 # Supported Environments

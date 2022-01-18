@@ -1,5 +1,5 @@
 ---
-slug: /Getting Started/Sandbox
+slug: /getting-started/sandbox
 title: Sandbox
 ---
 # Sandbox

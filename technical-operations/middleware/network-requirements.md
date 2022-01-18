@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Middleware/Network Requirements
+slug: /technical-operations/middleware/network-requirements
 title: Network Requirements
 ---
 # Network Requirements

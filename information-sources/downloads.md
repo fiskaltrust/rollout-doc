@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Information Sources/Downloads
+slug: /technical-operations/information-sources/downloads
 title: Downloads
 ---
 # Downloads

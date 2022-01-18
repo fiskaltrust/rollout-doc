@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Troubleshooting/Troubleshooting Guide
+slug: /technical-operations/troubleshooting/troubleshooting-guide
 title: Troubleshooting Guide
 ---
 # Troubleshooting Guide

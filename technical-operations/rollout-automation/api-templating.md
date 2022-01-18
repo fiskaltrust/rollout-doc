@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Rollout Automation/API Templating
+slug: /technical-operations/rollout-automation/api-templating
 title: API Templating
 ---
 # API Templating

@@ -1,5 +1,5 @@
 ---
-slug: /Technical Operations/Maintenance/Updating
+slug: /technical-operations/maintenance/updating
 title: Updating
 ---
 # Updating
