@@ -637,6 +637,8 @@ Eine Schritt-für-Schritt Anleitung für diese Konfiguration kann [hier](step-by
 
 Diese Setup Szenario erfordert eine **fiskaly TSE als Teil eines TSE-as-a-Service Pakets**. Weder eine Swissbit Cloud TSE, noch ein fiskaly TSE Einzelprodukt wäre in diesem Anwendungsfall unterstützt.
 
+Alternativ könnten Sie auch eine leicht angepasste Version dieses Setups wählen, in welcher alle Ihre Queues sich zu einer einzelnen SCU verbinden, ähnlich wie [Hardware-TSE(s) am lokalen Server für mehrere Kassen](#hardware-tses-am-lokalen-server-für-mehrere-kassen). In dem Fall könnten Sie ebenfalls eine Swissbit Cloud TSE einsetzen.
+
 :::
 
 Auf jeder Kasse läuft die fiskaltrust.Middleware. Die CashBox jeder Kasse konfiguriert die fiskaltrust.Middleware-Instanz mit einer eigenen Queue und einer eigenen SCU. Jede SCU greift auf die gleiche Cloud-TSE zu. Dieses Szenario ermöglicht eine Einsparung von Cloud-TSEs. Ein Vorteil hier ist, dass die SCU nicht zum Bottleneck wird, da jede Kasse ihre eigene SCU hat. Da jedoch hierbei alle Requests an die gleiche Cloud-TSE gesendet werden, wird die TSE zum Bottleneck. Des Weiteren sind hierbei ebenfalls sowohl mögliche [Performanceengpässe](#performanceempfehlung) in der Cloud-TSE zu berücksichtigen als auch unsere [Fair-Use-Policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md).

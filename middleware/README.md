@@ -640,6 +640,9 @@ A step-by-step guide for this configuration can be found [here](step-by-step/3-h
 
 This setup scenario requires a **fiskaly TSE as part of a TSE-as-a-Service package**. Neither a Swissbit Cloud TSE nor a fiskaltrust standalone fiskaly TSE would be supported for this use case.
 
+Alternatively, you could consider a slightly different setup with all your queues connecting to one single SCU, similar to [Hardware TSE(s) at local server for multiple cash registers](#hardware-tses-at-local-server-for-multiple-cash-registers). In that case you could also use a Swissbit Cloud TSE.
+
+
 :::
 
 The fiskaltrust.Middleware runs on each cash register. The CashBox of each cash register configures the fiskaltrust.Middleware instance with its own Queue and its own SCU. Each SCU accesses the same cloud TSE. This scenario enables cloud TSEs to be saved. One advantage here is that the SCU does not become a bottleneck, since each POS has its own SCU. However, since all requests are sent to the same cloud TSE, the TSE becomes a bottleneck. Furthermore, both possible [performance bottlenecks](#performance-recommendations) in the cloud TSE and our [fair use policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md) must also be taken into account here.
