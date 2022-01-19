@@ -12,11 +12,19 @@ After reading this, you can explain the different agreements for reselling produ
 
 ## Explanation
 
-As mentioned in the section [Business Model](../overview/business-model.md), fiskaltrust also offers more favorable dealer packages for you as PosDealer in addition to the bid in the shop of the fiskaltrust.portal. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
-If you commit to purchasing larger quantities of product bundles of your choice over the course of a year, attractive discounts can be arranged.  
-With this **Framework Agreement** you can achieve significant discounts depending on the planned sales volume.
-Please also note the following paragraphs if you are not interested in a framework agreement for the time being. A framework agreement can also be concluded later. 
-A **credit limit** for your account in the fiskaltrust.portal must be agreed in any case and also checked before the first transactions.
+Please also note the following paragraphs if you are not interested in a framework agreement for the time being. A framework agreement can also be concluded later.
+
+### Explanation Credit limit
+
+When the PosDealer role is activated, a credit limit is also granted in the fiskaltrust.portal. Note that the limit in the productive system is significantly lower than in the sandbox.
+
+If the invoice amounts exceed the credit limit during rollout management or purchases in the store, you will be notified of the credit limit by a corresponding message when creating further offers. 
+If it is not possible to settle the open invoices in a timely manner, contact the sales department responsible for the country in question with a request to grant you more credit limit. Check the tabs below for country-specific details.
+
+### Explanation Framework Agreement
+
+As mentioned in the section [Business model](../overview/business-model.md), in addition to offering individual products, fiskaltrust also offers more favorable merchant bundles in the fiskaltrust.portal store. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
+If you are committing to purchase **large quantities of product bundles** of your choice over the course of a year, a **Framework Agreement** is the best option. This allows you to achieve significant discounts depending on your planned sales volume.
 
 ### Legal Framework
 
@@ -29,12 +37,12 @@ A **credit limit** for your account in the fiskaltrust.portal must be agreed in 
 
 ![Buy & Resell Process](images/buy_resell-details.png "Buy & Resell Process")
 
-### Preliminaries
+### Prerequisites
 
-* Accept the invitation of the PC.
+* Accept the invitation of the PosCreator.
 * Accept the General Terms and Conditions and the Privacy Policy and complete the registration in the fiskaltrust.Portal in full.
 * Sign the cooperation agreement as PosDealer.
-* Complete and check the master data in your account in the fiskaltrust.Portal. 
+* Complete and check the master data, the outlets and the credit limit in your account in the fiskaltrust.Portal. 
 * Get an overview of the current products and product bundles in the live system.
 * Create test scenarios such as invitation and rollout management in the sandbox. 
 * Test these test scenarios to successful completion.
