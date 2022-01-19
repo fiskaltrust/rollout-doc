@@ -635,7 +635,17 @@ In the chapter [Template examples](#template-examples) you can find a template t
 A step-by-step guide for this configuration can be found [here](step-by-step/3-hardware-tse-at-the-main-cash-register-for-several-additional-cash-registers/README.md).
 
 ### A cloud TSE for multiple cash registers
-The fiskaltrust.Middleware runs on each cash register. The CashBox of each cash register configures the fiskaltrust.Middleware instance with its own Queue and its own SCU. Each SCU accesses the same cloud TSE. This scenario enables cloud TSEs to be saved. One advantage here is that the SCU does not become a bottleneck, since each POS has its own SCU. However, since all requests are sent to the same cloud TSE, the TSE becomes a bottleneck. Furthermore, both possible [performance bottlenecks](#performance recommendation) in the cloud TSE and our [fair use policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md) must also be taken into account here.
+
+:::caution
+
+This setup scenario requires a **fiskaly TSE as part of a TSE-as-a-Service package**. Neither a Swissbit Cloud TSE nor a fiskaltrust standalone fiskaly TSE would be supported for this use case.
+
+Alternatively, you could consider a slightly different setup with all your queues connecting to one single SCU, similar to [Hardware TSE(s) at local server for multiple cash registers](#hardware-tses-at-local-server-for-multiple-cash-registers). In that case you could also use a Swissbit Cloud TSE.
+
+
+:::
+
+The fiskaltrust.Middleware runs on each cash register. The CashBox of each cash register configures the fiskaltrust.Middleware instance with its own Queue and its own SCU. Each SCU accesses the same cloud TSE. This scenario enables cloud TSEs to be saved. One advantage here is that the SCU does not become a bottleneck, since each POS has its own SCU. However, since all requests are sent to the same cloud TSE, the TSE becomes a bottleneck. Furthermore, both possible [performance bottlenecks](#performance-recommendations) in the cloud TSE and our [fair use policy](https://github.com/fiskaltrust/productdescription-de-doc/blob/master/product-service-description/market-de-fair-use-policy.md) must also be taken into account here.
 
 ![tse-on-cashregister](images/cash-register-with-cloud-tse.png)
 
@@ -649,6 +659,12 @@ Terminals are input devices such as tablets, handhelds or similar (without cash 
 ![terminals-single-queue](images/terminals-one-queue.png)
 
 Another possible variation of this scenario is to assign each terminal to its own Queue.
+
+:::caution
+
+If you plan to purchase and use a cloud TSE via fiskaltrust, please note that a multi-queue setup will require a TSE-as-a-Service subscription. Standalone products are not supported for this use case.
+
+:::
 
 ![terminals-mehrere-queues](images/terminals-multiple-queues.png)
 
