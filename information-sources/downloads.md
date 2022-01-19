@@ -4,4 +4,13 @@ title: Downloads
 ---
 # Downloads
 
-After reading this, you can download general information, your contracts and archives(?).
+:::info summary
+
+After reading this, you can download general information, your contracts and archives.
+
+:::
+
+
+## Explanation
+
+### Work steps

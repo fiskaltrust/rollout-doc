@@ -19,7 +19,7 @@ The shop is the most basic way to buy fiskaltrust [products](products) for PosDe
 
 :::info prerequisites
 
-As a PosDealer, you should know how to [surrogate] (../getting%20started/operator%20onboarding/surrogating), signed a  [Framework Agreement](framework-agreement), have a volume discount and a credit limit. 
+As a PosDealer, you should know how to [surrogate](../getting-started/operator-onboarding/surrogating), have signed a  [Framework Agreement](framework-agreement), have a volume discount and a credit limit. 
 As a PosOperator, you should clarify with your PosDealer wether to buy the products directly or via your PosDealer.
 
 :::
@@ -38,27 +38,7 @@ If you  want to try how the shop works, you should do this in the [Sandbox](../g
 
 :::
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import ShopAT from '../_markets/at/buy-resell/shop/_shopExample.mdx';
-import ShopFR from '../_markets/fr/buy-resell/shop/_shopExample.mdx';
-import ShopDE from '../_markets/de/buy-resell/shop/_shopExample.mdx';
 
-<Tabs groupId="market">
-
-  <TabItem value="AT" label="Austria">
-    <ShopAT />
-  </TabItem>
-
-  <TabItem value="FR" label="France">
-   <ShopFR />
-  </TabItem>
-
-  <TabItem value="DE" label="Germany">
-   <ShopDE />
-  </TabItem>
-
-</Tabs>
 
 ## Orders
 
@@ -84,14 +64,14 @@ import ReactPlayer from "react-player"
 
 |             Step             | Description                                                  |
 | :--------------------------: | ------------------------------------------------------------ |
-| ![](../../../../images/numbers/1.png) | Go to `Shop` / `Products` in the left-hand navigation menu to transfer an existing entitlements to this PosOperators outlet. |
-| ![](../../../../images/numbers/2.png) | Select the **outlet** in the top center that you want to transfer the entitlements to. |
-| ![](../../../../images/numbers/3.png) | Choose a **transfer entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet.  |
-| ![](../../../../images/numbers/4.png) | Choose a **create entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet. The transfer entitlements products must have been placed into the shopping cart **before**! |
-| ![](../../../../images/numbers/5.png) | **Switch to your account** by clicking the red button on the top right of the window. |
-| ![](../../../../images/numbers/6.png) | Click on the shopping cart in the top right of the window and click the `Checkout` button.  | 
-| ![](../../../../images/numbers/7.png) | The transfer and activation of existing entitlements should be free of charge. **Check** the order, the PosOperator and the Outlet before you **click** the `binding order` button.| 
-| ![](../../../../images/numbers/8.png) | A confirmation for your order will be shown and also sent to you via E-Mail.  | 
+| ![](../images/numbers/1.png) | Go to `Shop` / `Products` in the left-hand navigation menu to transfer an existing entitlements to this PosOperators outlet. |
+| ![](../images/numbers/2.png) | Select the **outlet** in the top center that you want to transfer the entitlements to. |
+| ![](../images/numbers/3.png) | Choose a **transfer entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet.  |
+| ![](../images/numbers/4.png) | Choose a **create entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet. The transfer entitlements products must have been placed into the shopping cart **before**! |
+| ![](../images/numbers/5.png) | **Switch to your account** by clicking the red button on the top right of the window. |
+| ![](../images/numbers/6.png) | Click on the shopping cart in the top right of the window and click the `Checkout` button.  | 
+| ![](../images/numbers/7.png) | The transfer and activation of existing entitlements should be free of charge. **Check** the order, the PosOperator and the Outlet before you **click** the `binding order` button.| 
+| ![](../images/numbers/8.png) | A confirmation for your order will be shown and also sent to you via E-Mail.  | 
 
 :::info 
 

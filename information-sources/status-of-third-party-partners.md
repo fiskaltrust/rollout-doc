@@ -4,4 +4,13 @@ title: Status of third-party partners
 ---
 # Status of third-party partners
 
+:::info summary
+
 After reading this, you can explain where to find status information about third-party partners.
+
+:::
+
+
+## Explanation
+
+### Work steps
