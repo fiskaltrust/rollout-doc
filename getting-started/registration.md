@@ -45,7 +45,9 @@ Whenever you enter your username and password for the fiskaltrust.Portal, make s
 
 First you have to confirm the captcha by checking the checkbox. Sometimes reCAPTCHA will open a new popup where you have to solve a task (e.g. select all images with bycicles) before reCAPTCHA will finish the verification.
 
-![Captcha](./images/registration/captcha.gif "Captcha" )
+import ReactPlayer from "react-player"
+
+<ReactPlayer controls url={require("./images/registration/captcha.mp4").default} /><br />
 
 ## Company Data
 
