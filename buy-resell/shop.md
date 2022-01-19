@@ -27,7 +27,7 @@ As a PosDealer, you do not buy products directly for your PosOperators. Instead 
 
 ## Buying Products or Entitlements
 
-In this example we will go through the process of buying a product using entitlements. The process to buy a product directly is similar. You just buy a product directly as a PosOperator instead of buying an entitlement and you will assign it to an outlet directly and do not have to transfer it.
+In this example we will go through the process of buying a product using entitlements. The process to buy a product directly is similar. You just choose an outlet and buy a product directly as a PosOperator and do not have to transfer it.
 
 :::info sandbox
 
