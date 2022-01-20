@@ -16,8 +16,8 @@ The shop is the most basic way to buy fiskaltrust [products](products) for PosDe
 
 :::info prerequisites
 
-As a PosDealer, you should know how to [surrogate](../getting-started/operator-onboarding/surrogating), signed a  [Framework Agreement](framework-agreement), have a volume discount and a credit limit. 
-As a PosOperator, you should clarify with your PosDealer wether to buy the products directly or via your PosDealer.
+As a PosDealer, you should know how to [surrogate](../getting-started/operator-onboarding/surrogating), have signed a  [Framework Agreement](framework-agreement), have a volume discount and a credit limit. 
+As a PosOperator, you should clarify with your PosDealer whether to buy the products directly or via your PosDealer.
 
 :::
 
@@ -35,6 +35,9 @@ If you  want to try how the shop works, you should do this in the [Sandbox](../g
 
 :::
 
+<<<<<<< HEAD
+
+=======
 ![Products](./images/products.png)
 
 |             Step             | Description                                                  |
@@ -71,6 +74,7 @@ You can combine orders for multiple outlets by repeating steps 2 to 4 for differ
 :::
 
 After transfering the entitlements, you will see that your remaining entitlements have been reduced at `Shop` / `Entitlements`. You can see the order and invoice as usual, additionally you can see the now activated subscription at `Shop` / `Entitlements`.
+>>>>>>> 9c5677087dac144854a84ec904b2723c46eb55f7
 
 ## Orders
 
@@ -87,6 +91,35 @@ Once the order is processed successfully, you will find the entitlements you pur
 
 ![Entitlements](./images/entitlements.png)
 
+<<<<<<< HEAD
+## Transfer Entitlements
+To transfer the entitlements to the PosOperator, you have to [surrogate] (../getting%20started/operator%20onboarding/surrogating) into that account by clicking the PosOperators name at `PosOperator` / `Overview`. 
+
+import ReactPlayer from "react-player"
+
+<ReactPlayer controls url={require("./images/shop-transfer.mp4").default} /><br />
+
+|             Step             | Description                                                  |
+| :--------------------------: | ------------------------------------------------------------ |
+| ![](../images/numbers/1.png) | Go to `Shop` / `Products` in the left-hand navigation menu to transfer an existing entitlements to this PosOperators outlet. |
+| ![](../images/numbers/2.png) | Select the **outlet** in the top center that you want to transfer the entitlements to. |
+| ![](../images/numbers/3.png) | Choose a **transfer entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet.  |
+| ![](../images/numbers/4.png) | Choose a **create entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet. The transfer entitlements products must have been placed into the shopping cart **before**! |
+| ![](../images/numbers/5.png) | **Switch to your account** by clicking the red button on the top right of the window. |
+| ![](../images/numbers/6.png) | Click on the shopping cart in the top right of the window and click the `Checkout` button.  | 
+| ![](../images/numbers/7.png) | The transfer and activation of existing entitlements should be free of charge. **Check** the order, the PosOperator and the Outlet before you **click** the `binding order` button.| 
+| ![](../images/numbers/8.png) | A confirmation for your order will be shown and also sent to you via E-Mail.  | 
+
+:::info 
+
+Always make sure you perform the transfer for the desired PosOperator and outlet and place the transfer entitlements products before the create entitlements products.
+
+:::
+
+After transfering the entitlements, you will see that your remaining entitlements have been reduced at `Shop` / `Entitlements`. You can see the order and invoice as usual, additionally you can see the now activated subscription at `Shop` / `Entitlements`
+
+=======
+>>>>>>> 9c5677087dac144854a84ec904b2723c46eb55f7
 ## Subscriptions
 An overview of your subscriptions can be found at `Shop` / `Subscriptions`.
 

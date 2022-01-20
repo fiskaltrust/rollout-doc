@@ -4,4 +4,9 @@ title: Documentation
 ---
 # Documentation
 
-After reading this, you can use the documentation effectivly in your specific function.
+:::info summary
+
+After reading this, you can use the documentation effectively in your specific function.
+
+:::
+
