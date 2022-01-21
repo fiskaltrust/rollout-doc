@@ -10,7 +10,6 @@ After reading this, you can use knowledge base articles in the Help-section of t
 
 :::
 
-
 ## Explanation
 
 A knowledge base is a collection of articles that contain organized information about products or services. You, as a PosDealer, can browse these articles to learn more about fiskaltrust products or services or how to solve related problems. A knowledge base is typically a collection of articles that contain images and text. 
@@ -27,11 +26,11 @@ At the end of each article you will find the option to leave feedback. In additi
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../images/Numbers/circle-1o.png)| Help: Tick to open the Help-Area.  |
-|![Number 2](../images/Numbers/circle-2o.png)| Knowledge Base Articles: Tick to open the collection of articles.  |
-|![Number 3](../images/Numbers/circle-3o.png)| Search for articles: Enter a search keyword.  |
+|![Number 1](../images/Numbers/circle-1o.png)| `Help:` Tick to open the Help-Area.  |
+|![Number 2](../images/Numbers/circle-2o.png)| `Knowledge Base Articles`: Tick to open the collection of articles.  |
+|![Number 3](../images/Numbers/circle-3o.png)| `Search for articles`: Enter a search keyword.  |
 |![Number 4](../images/Numbers/circle-4o.png)| Choice of language: Select the language you prefer, if available.  |
 |![Number 5](../images/Numbers/circle-5o.png)| Problem: Note the problem description.  |
 |![Number 6](../images/Numbers/circle-6o.png)| Background: Get more overview with background information.  |
 |![Number 7](../images/Numbers/circle-7o.png)| Solution: Note if prerequisites are described that must be met before you can go through the solution steps.  |
-|![Number 8](../images/Numbers/circle-8o.png)| Was this article helpful?: Assign a classification, if it is possible for you, complete it with some notes.  |
+|![Number 8](../images/Numbers/circle-8o.png)| `Was this article helpful?`: Your rating and a comment will be transmitted with `Submit feedback`.  |
