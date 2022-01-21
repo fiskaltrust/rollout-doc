@@ -22,7 +22,7 @@ At the end of each article you will find the option to leave feedback. In additi
 
 ### Work steps
 
-![knowledge base](images/1-knowledge-base.png "knowledge base")
+![Help-Section / knowledge base](images/1-knowledge-base.png "Help-Section / knowledge base")
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

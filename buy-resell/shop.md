@@ -35,9 +35,6 @@ If you  want to try how the shop works, you should do this in the [Sandbox](../g
 
 :::
 
-<<<<<<< HEAD
-
-=======
 ![Products](./images/products.png)
 
 |             Step             | Description                                                  |
@@ -74,7 +71,6 @@ You can combine orders for multiple outlets by repeating steps 2 to 4 for differ
 :::
 
 After transfering the entitlements, you will see that your remaining entitlements have been reduced at `Shop` / `Entitlements`. You can see the order and invoice as usual, additionally you can see the now activated subscription at `Shop` / `Entitlements`.
->>>>>>> 9c5677087dac144854a84ec904b2723c46eb55f7
 
 ## Orders
 
@@ -95,7 +91,6 @@ Once the order is processed successfully, you will find the entitlements you pur
 ## Transfer Entitlements
 To transfer the entitlements to the PosOperator, you have to [surrogate] (../getting%20started/operator%20onboarding/surrogating) into that account by clicking the PosOperators name at `PosOperator` / `Overview`. 
 
-import ReactPlayer from "react-player"
 
 <ReactPlayer controls url={require("./images/shop-transfer.mp4").default} /><br />
 
