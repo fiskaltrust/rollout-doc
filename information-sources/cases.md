@@ -12,7 +12,7 @@ After reading this, you can work with support cases in the Help-Section of the p
 
 ## Explanation
 
-As a PosDealer, you can contact fiskaltrust's Customer Success Team. Your call will be answered by a call service center. The agents will create a ticket, as will any email you send to the country-specific address. When your ticket is processed, a case is created, you will receive an confirmation.
+As a PosDealer, you can contact fiskaltrust's Customer Success Team. Your call will be answered by a call service center. The agents will create a ticket, as will any e-mail you send to the country-specific address below. When your ticket is processed, a case is created, you will receive an confirmation via e-mail.
 In the fiskaltrust.Portal you will find the option to check the cases that have been assigned to your company. So, even different users of your company can also see all the Cases.
 
 You can see the progress of each case, distinguishing between `Identify`, `Research` and `Solved`. Further, you will also find descriptions of previous requests. This way you can avoid unnecessary time spent on overlapping requests from different users or repeated requests.
