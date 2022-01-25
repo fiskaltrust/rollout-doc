@@ -95,17 +95,17 @@ Depending on whether you are registering on the _sandbox_ or on the _portal_ you
 <Tabs groupId="market">
 
   <TabItem value="AT" label="Austria">
-     _sandbox@fiskaltrust.at_ or _portal@fiskaltrust.at_
+     sandbox@fiskaltrust.at or portal@fiskaltrust.at
  
   </TabItem>
 
   <TabItem value="FR" label="France">
-     _sandbox@fiskaltrust.fr_ or _portal@fiskaltrust.fr_
+     sandbox@fiskaltrust.fr or portal@fiskaltrust.fr
 
   </TabItem>
 
   <TabItem value="DE" label="Germany">
-    _sandbox@fiskaltrust.de_ or _portal@fiskaltrust.de_
+    sandbox@fiskaltrust.de or portal@fiskaltrust.de
 
   </TabItem>
 
