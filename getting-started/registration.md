@@ -37,7 +37,7 @@ import RegistrationDE from '../_markets/de/getting-started/registration/_registr
 
 By clicking `Register` you can start the process to register a user, as well as the associated company, in four steps. It is independent of the companys future role (PosCreator, PosDealer, Consultant or PosOperator) in the fiskaltrust.Portal.
 
-:::info Login Security
+:::caution Login Security
 Whenever you enter your username and password for the fiskaltrust.Portal, make sure the URL is one of the above and look for the "lock" symbol in the browser. A secure site always has a closed padlock in the URL bar. That way you can be sure, you are actually entering the data on the correct website and avoid becoming a victim of website or login spoofing.
 :::
 
@@ -68,7 +68,7 @@ All the fields marked with a red star are mandatory and must be filled out with 
 |![Number 4](../images/numbers/circle-4o.png) |You can already enter some or all commercial numbers for the company. This will facilitate the further registration process and usage of the portal. |
 |![Number 5](../images/numbers/circle-5o.png) |By clicking on `Next` you proceed to the 3rd step _User data_ of the registration process. |
 
-:::info  Error message
+:::tip  Error message
 If the data entered in _Company name_ and/or _email address_ was already used for registration, the registration will jump to the last step and an informational page will be displayed.
 This page contains the information of the registered company. Click on the link with the name of the primary contact to open your email application and ask the primary contact to invite you into the company as a new user.
 :::
@@ -81,7 +81,7 @@ A valid email address must be entered and it cannot have been used already for a
 
 ![Enter user data](./images/registration/user_data.png)
 
-:::info  Error message
+:::tip  Error message
 If the email address entered in _email address_ was already used for registration, an information will be displayed, that a user with this emailadress already exists. By clicking the link in this information, you can initiate the password reset for this user.
 :::
 
@@ -95,17 +95,17 @@ Depending on whether you are registering on the _sandbox_ or on the _portal_ you
 <Tabs groupId="market">
 
   <TabItem value="AT" label="Austria">
-     _sandbox@fiskaltrust.at_ or _portal@fiskaltrust.at_
+     sandbox@fiskaltrust.at or portal@fiskaltrust.at
  
   </TabItem>
 
   <TabItem value="FR" label="France">
-     _sandbox@fiskaltrust.fr_ or _portal@fiskaltrust.fr_
+     sandbox@fiskaltrust.fr or portal@fiskaltrust.fr
 
   </TabItem>
 
   <TabItem value="DE" label="Germany">
-    _sandbox@fiskaltrust.de_ or _portal@fiskaltrust.de_
+    sandbox@fiskaltrust.de or portal@fiskaltrust.de
 
   </TabItem>
 

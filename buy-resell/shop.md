@@ -29,7 +29,7 @@ As a PosDealer, you do not buy products directly for your PosOperators. Instead 
 
 In this example we will go through the process of buying a product using entitlements. The process to buy a product directly is similar. You just choose an outlet and buy a product directly as a PosOperator and do not have to transfer it.
 
-:::info sandbox
+:::tip sandbox
 
 If you  want to try how the shop works, you should do this in the [Sandbox](../getting-started/sandbox). Orders placed in the sandbox are just for testing purposes and will not cost you anything, but always make sure you really are working in the sandbox.
 
@@ -61,10 +61,10 @@ import ReactPlayer from "react-player"
 | ![](../images/numbers/4.png) | Choose a **create entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet. The transfer entitlements products must have been placed into the shopping cart **before**! |
 | ![](../images/numbers/5.png) | **Switch to your account** by clicking the red button on the top right of the window. |
 | ![](../images/numbers/6.png) | Click on the shopping cart in the top right of the window and click the `Checkout` button.  | 
-| ![](../images/numbers/7.png) | The transfer and activation of existing entitlements should be free of charge. **Check** the order, the PosOperator and the Outlet before you **click** the `binding order` button.| 
+| ![](../images/numbers/7.png) | The transfer and activation of existing entitlements should be free of charge. **Check** the order, the PosOperator and the Outlet before you click the `binding order` button.| 
 | ![](../images/numbers/8.png) | A confirmation for your order will be shown and also sent to you via E-Mail.  | 
 
-:::info 
+:::tip 
 
 Always make sure you perform the transfer for the desired PosOperator and outlet and place the transfer entitlements products before the create entitlements products into the shopping cart.
 You can combine orders for multiple outlets by repeating steps 2 to 4 for different outlets and then go on with step 5.
