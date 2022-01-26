@@ -14,7 +14,7 @@ After reading this, you can decide when and how to get support.
 
 Unfortunately, problems cannot always be avoided in the context of complex processes. Please use this documentation or other sources of information explained below for any tasks. 
 This will help you avoid waiting times in case you need to contact support. The fiskaltrust.staff will be happy to handle your requests if you are a PosDealer. 
-You will shorten the processing of your request if you first describe the problem and mention the AccountId`s ( `[Company]`/ `Overview`), the used roles and the part of the information sources you used in vain to solve your request by yourself.
+You will shorten the processing of your request if you first describe the problem and mention the AccountId`s ( `[Company]`/ `Overview`), the used roles and the part of the information sources you used in vain to solve your request by yourself. To process your requests, please refer to the instructions for [Cases](cases.md)
 
 ### Work steps
 
@@ -27,7 +27,7 @@ All our learning in discussions, requests or how-tos`s result in knowledge base 
 |Onboarding|Please note the section [getting started](../getting-started/operator-onboarding/invitation-process.md)  |
 |Training|Please note the section [Webinars](webinars.md)  |
 |Gathering customer feedback|Please note the sections [knowledge base](../information-sources/knowledge-base.md). Further, please do not hesitate to [share your thoughts](mailto:feedback+portal@fiskaltrust.cloud.) about improvements and fixes, that are described in our release notes.  |
-|Updating customers|Check your inbox for the newsletters, that are sent to PosDealers and posCreators. Further note the section [News](../information-sources/news.md). |
+|Updating customers|Check your inbox for the newsletters, that are sent to PosDealers and posCreators. Further note the section [News](../information-sources/news.md) and the FAQ. |
 
 ## Country-specific information
 
