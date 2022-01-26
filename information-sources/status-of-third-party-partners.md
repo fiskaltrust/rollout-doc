@@ -13,4 +13,7 @@ After reading this, you can explain where to find status information about third
 
 ## Explanation
 
+link to http://localhost:3000/docs/buy-resell/products
+here explanation
+
 ### Work steps

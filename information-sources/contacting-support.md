@@ -22,7 +22,7 @@ We assume to have explained them in this documentation **dazu dient auch die tab
 |Account management|The link behind `If you have forgotten your password, please click here` leads you or your PosOperators to a `password reset service`.|
 |Onboarding|Please note the section [getting started](../getting-started/operator-onboarding/invitation-process.md)  |
 |Training|Please note the section [Webinars](webinars.md)  |
-|Gathering customer feedback|Please note the sections [knowledge base](../information-sources/knowledge-base.md)  |
+|Gathering customer feedback|Please note the sections [knowledge base](../information-sources/knowledge-base.md). Further, please do not hesitate to [share your thoughts](mailto:feedback+portal@fiskaltrust.cloud.) about improvements and fixes, that are described in our release notes  |
 |Updating customers|Check your inbox for the newsletters, that are sent to PosDealers and posCreators. Further note the section [News](../information-sources/news.md). |
 
 ## Country-specific options
