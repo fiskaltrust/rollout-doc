@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 ## Introduction
 
-The Middleware represents the core service of fiskaltrust's portfolio and enables your POS systems to handle their receipts with full fiscal and legal compliance across markets.
+The Middleware represents the core service of fiskaltrust's portfolio and enables your POS systems to handle their receipts within the scope of full fiscal and legal compliance across markets.
 
 It features a standardised **communication interface** to receive requests from the POS system, a **data layer** to manage and persist your receipts and their signatures, and a number of different **signing backends** which provide the required signature information.
 
