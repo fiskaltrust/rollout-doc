@@ -12,7 +12,7 @@ After reading this, you can find current news and product changes.
 
 ## Explanation
 
-### Work steps
+## Work steps
 
 https://www.fiskaltrust.at/news/
 https://fiskaltrust.de/news/

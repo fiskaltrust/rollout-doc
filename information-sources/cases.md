@@ -18,7 +18,7 @@ In the fiskaltrust.Portal you will find the option to check the cases that have 
 You can see the progress of each case, distinguishing between `Identify`, `Research` and `Solved`. Further, you will also find descriptions of previous requests. This way you can avoid unnecessary time spent on overlapping requests from different users or repeated requests.
 If you have any questions, please always use the reply e-mail. The case number can help you to search your inbox.
 
-### Work steps
+## Work steps
 
 ![Help-Section / Cases](images/2-cases.png "Help-Section / Cases")
 
@@ -31,6 +31,7 @@ If you have any questions, please always use the reply e-mail. The case number c
 |![Number 5](../images/Numbers/circle-5o.png)| `Case Number`: Tick here to open the description of the case.  |
 |![Number 6](../images/Numbers/circle-6o.png)| `Progress`: the progress of a case changes from  `Identify`to `Research` and `Solved`.  |
 
+## Country-specific information
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

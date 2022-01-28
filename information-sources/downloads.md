@@ -13,4 +13,4 @@ After reading this, you can download general information, your contracts and arc
 
 ## Explanation
 
-### Work steps
+## Work steps

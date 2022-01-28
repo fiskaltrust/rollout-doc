@@ -14,7 +14,7 @@ After reading this, you can explain what kind of products fiskaltrust offers.
 
 ## Introduction
 
-*fiskaltrust* offers an end-to-end solution for your POS system to ensure it issues receipts in a legal and fiscally compliant way. The portfolio comprises a comprehensive stack of software and services around the topic of **fiscal compliance** and provides a **unified approach** across countries and markets.
+*fiskaltrust* offers an end-to-end solution for your POS-System to ensure it issues receipts in a legal and fiscally compliant way. The portfolio comprises a comprehensive stack of software and services around the topic of **fiscal compliance** and provides a **unified approach** across countries and markets.
 
 The core components are the Middleware for **signing and tracking receipts** and the portal for **managing the service**. Additionally, there is a range of supporting services, interfaces to third party, and [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) subscriptions offered. The following paragraphs will provide you with a brief overview on these topics.
 
@@ -22,11 +22,11 @@ The core components are the Middleware for **signing and tracking receipts** and
 
 ## Middleware
 
-The Middleware is a **multi-platform** software solution which complements your POS system and provides the core service of **signing POS receipts** using the relevant and required national signing mechanisms. It also **keeps track of receipts in a secure and auditable fashion** and makes sure its relevant portal information is kept up-to-date.
+The Middleware is a **multi-platform** software solution which complements your POS-System and provides the core service of **signing POS receipts** using the relevant and required national signing mechanisms. It also **keeps track of receipts in a secure and auditable fashion** and makes sure its relevant portal information is kept up-to-date.
 
 The Middleware is one of the centrepieces of the *fiskaltrust* stack and is available for all supported countries and provides a **single, standardised, and unified** communication interface, which greatly simplifies rollouts in new markets.
 
-It features a **REST interface** for communication with your POS systems and is available for **on-premise** deployment on platforms supporting **.NET** and **Android**, as well as an **off-premise** SaaS solution. For the latter, please see [Hosted Middleware](#hosted-middleware) for further details.
+It features a **REST interface** for communication with your POS-Systems and is available for **on-premise** deployment on platforms supporting **.NET** and **Android**, as well as an **off-premise** SaaS solution. For the latter, please see [Hosted Middleware](#hosted-middleware) for further details.
 
 
 
@@ -52,7 +52,7 @@ In addition to manual exports, the portal also supports the integration of third
 
 ## Hosted Middleware
 
-In some countries, *fiskaltrust* offers a [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) version of the Middleware, allowing your POS system to sign and manage receipts with **no need of installing and maintaining additional software**. In this case, your POS system will connect to the *fiskaltrust*-hosted Middleware via an encrypted, **HTTPS-secured** Internet connection. These setups are managed exclusively via the portal.
+In some countries, *fiskaltrust* offers a [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) version of the Middleware, allowing your POS-System to sign and manage receipts with **no need of installing and maintaining additional software**. In this case, your POS-System will connect to the *fiskaltrust*-hosted Middleware via an encrypted, **HTTPS-secured** Internet connection. These setups are managed exclusively via the portal.
 
 :::info Service Availability
 

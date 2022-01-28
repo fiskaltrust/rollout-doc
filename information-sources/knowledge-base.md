@@ -20,7 +20,7 @@ So you can avoid possible waiting times with a support request if you first visi
 
 At the end of each article you will find the option to leave feedback. In addition to your rating between one and five stars, you can leave comments and suggestions. These help fiskaltrust to see if the articles meet the needs of PosDealers and help solve problems of PosOperators.
 
-### Work steps
+## Work steps
 
 ![Help-Section / knowledge base](images/1-knowledge-base.png "Help-Section / knowledge base")
 

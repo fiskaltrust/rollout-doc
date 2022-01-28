@@ -3,7 +3,7 @@ slug: /overview/countries
 title: Countries
 ---
 
-# Countries
+## Countries
 
 :::info summary
 
@@ -16,7 +16,7 @@ As an IT service provider, fiskaltrust supports manufacturers (PosCreators) and 
 PosDealers are supported with additional functions for automation and optimization of fiscalization.  
 fiskaltrust is proud to offer its services in several countries for over 25.000 companies.
 
-## Contact Options
+## Country-specific information
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

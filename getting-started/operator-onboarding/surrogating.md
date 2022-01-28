@@ -10,9 +10,9 @@ After reading this, you can explain the prerequisites to act in the fiskaltrust.
 
 ## Explanation
 
-As mentioned in the section [Company Roles](../company-roles.md), _fiskaltrust_ distinguishes company roles in the context of the fiskaltrust.Portal and its role management. The end-users of the Pos-Systems activate the role contract of an **PosOperator**, Pos-System distributors activate the role contract of an **PosDealer**.
+As mentioned in the section [Company Roles](../company-roles.md), _fiskaltrust_ distinguishes company roles in the context of the fiskaltrust.Portal and its role management. The end-users of the POS-Systems activate the role contract of an **PosOperator**, POS-System distributors activate the role contract of an **PosDealer**.
 
-To support and maintain a PosOperator's Pos-System, PosDealers switch from their account to the PosOperator's account, change settings, assign contracts or order products and switch back to their own account - they use **surrogating**.
+To support and maintain a PosOperator's POS-System, PosDealers switch from their account to the PosOperator's account, change settings, assign contracts or order products and switch back to their own account - they use **surrogating**.
 For your visualization, the process of surrogating is described here with the example of checking the master data of an PosOperator. Please note, that there is no bulk action, surrogating is a method to work with your fiskaltrust.account and one PosOperators account only.
 
 ![overview surrogating accounts](images/1-overview-surrogating-accounts.png "overview surrogating accounts")

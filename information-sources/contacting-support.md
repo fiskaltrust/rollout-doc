@@ -12,11 +12,22 @@ After reading this, you can decide when and how to get support.
 
 ## Explanation
 
-Unfortunately, problems cannot always be avoided in the context of complex processes. Please use this documentation or other sources of information explained below for any tasks. 
-This will help you avoid waiting times in case you need to contact support. The fiskaltrust.staff will be happy to handle your requests if you are a PosDealer. 
-You will shorten the processing of your request if you first describe the problem and mention the AccountId`s ( `[Company]`/ `Overview`), the used roles and the part of the information sources you used in vain to solve your request by yourself. To process your requests, please refer to the instructions for [Cases](cases.md)
+Unfortunately, problems in the context of complex processes cannot always be avoided. Please use this documentation or other sources of information explained below for any tasks.  
+This will help you avoid waiting times in case you need to contact support. The fiskaltrust.Staff will be happy to handle your requests if you are a PosDealer.  
+Since we do not know the respective constellations of POS-Systems on site and can therefore provide advice, we must always refer PosOperators to their PosDealer.   
 
-### Work steps
+Note the country specific mail address below to contact fiskaltrust.Staff.  
+
+You will speed up the processing of your request if you include the following in your email: 
+* description of the problem: what was done, what was expected, what was the result? 
+* the accounts involved with actual names and/or AccountId's (see `[Company]`/ `Master data`)  
+* the roles used
+* the source of information or the routine you used in vain to solve your request yourself.
+
+To track your requests, please refer to the [Cases](cases.md) section.
+
+
+## Work steps
 
 All our learning in discussions, requests or how-tos`s result in knowledge base articles, FAQ (see Country-specific information) or releases.
 

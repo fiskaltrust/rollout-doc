@@ -23,7 +23,7 @@ If it is not possible to settle the open invoices in a timely manner, contact th
 
 ### Explanation Framework Agreement
 
-As mentioned in the section [Business model](../overview/business-model.md), in addition to offering individual products, fiskaltrust also offers more favorable merchant bundles in the fiskaltrust.portal store. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
+As mentioned in the section [Business model](../overview/business-model.md), in addition to offering individual products, fiskaltrust also offers more favorable merchant bundles in the fiskaltrust.Portal store. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
 If you are committing to purchase **large quantities of product bundles** of your choice over the course of a year, a **Framework Agreement** is the best option. This allows you to achieve significant discounts depending on your planned sales volume.
 
 ### Legal Framework
