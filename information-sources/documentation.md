@@ -30,32 +30,20 @@ After reading this, you can use the documentation effectively in your specific f
 
 ### Searching in our documentation
 
-![fiskaltrust documentation](images/4-documentation-search.png "fiskaltrust documentation")
+
+import ReactPlayer from "react-player"
+
+<ReactPlayer controls url={require("./images/search-options-22-01-31.mp4").default} /><br />
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Use `CTRL` & `K` to open the search window or tick the symbol in the task bar. Enter keywords for your search |
 |![Number 2](images/Numbers/circle-2o.png) |keywords, that you have used in the running session are listed here)  |
 |![Number 3](images/Numbers/circle-3o.png) |keywords, that will be used often, can be set as favourites here, different behavior is mostly due to the settings of your browser   |
-
-#### Prepare advanced search
-
-![fiskaltrust documentation](images/4-documentation-search-results.png "fiskaltrust documentation")
-
-| steps | description                                                                                                                |
-|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|--- |Use `CTRL` & `K` to open the search window or tick the symbol in the task bar. Enter keywords for your search |
-|![Number 1](images/Numbers/circle-1o.png)|Scroll down to the lower end of the search results(without keywords not usable)  |
-|![Number 2](images/Numbers/circle-2o.png)  |Tick on `See all XYZ results` |
-
-
-#### Advanced search options
-
-![fiskaltrust documentation](images/4-documentation-search-results-2.png "fiskaltrust documentation")
-| steps | description                                                                                                                |
-|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 3](images/Numbers/circle-3o.png) |Here you can find more details about the content, in which your keyword was found|
-|![Number 4](images/Numbers/circle-4o.png) |Get more overview with opening the found documents in several tabs |
+|![Number 4](images/Numbers/circle-4o.png)|Scroll down to the lower end of the search results(without keywords not usable)  |
+|![Number 5](images/Numbers/circle-5o.png)  |Tick on `See all XYZ results` |
+|![Number 6](images/Numbers/circle-6o.png) |Here you can find more details about the content, in which your keyword was found|
+|![Number 7](images/Numbers/circle-7o.png) |Get more overview with opening the found documents in several tabs |
 
 ## Our software documentation:
 
