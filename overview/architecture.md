@@ -17,7 +17,7 @@ After reading this, you can explain the basic architecture of the fiskaltrust.Mi
 
 A typical *fiskaltrust* setup consists of a three-tiered system.
 
-1. **Your POS-System**
+1. **Your POS system**
 2. **fiskaltrust.Middleware** (running your *fiskaltrust.CashBox*) to provide the service itself
 3. **fiskaltrust.Portal** to manage your setup
 
@@ -29,7 +29,7 @@ The following schema provides an overview of how the three tiers interact.
 
 
 
-*fiskaltrust.Middleware* is the autonomous service providing the **core signing functionality**. Your POS-System connects to the Middleware to **sign and persist its receipts** and the Middleware, in turn, communicates with *fiskaltrust.Portal* to update its own receipt chain and receive any changes you made to its configuration on the portal side.
+*fiskaltrust.Middleware* is the autonomous service providing the **core signing functionality**. Your POS system connects to the Middleware to **sign and persist its receipts** and the Middleware, in turn, communicates with *fiskaltrust.Portal* to update its own receipt chain and receive any changes you made to its configuration on the portal side.
 
 The following paragraphs will provide you with a brief overview on the major components here.
 
@@ -58,7 +58,7 @@ The CashBox is the main **configuration set** of a Middleware instance and conta
 
 ## Middleware
 
-The Middleware is the main *fiskaltrust* service used *directly* by your POS-System. It follows a modular approach and supports a number of components, which can be individually combined in a Middleware instance (*CashBox*) to best fit your custom setup and requirements.
+The Middleware is the main *fiskaltrust* service used *directly* by your POS system. It follows a modular approach and supports a number of components, which can be individually combined in a Middleware instance (*CashBox*) to best fit your custom setup and requirements.
 
 
 
@@ -70,7 +70,7 @@ The launcher is the bootstrap component of a Middleware instance. It downloads t
 
 ### Queue
 
-The queue is the **central component** of your *fiskaltrust* setup. It provides the **communication interface** (*e.g. REST*) for your POS-System, manages the **receipt datastore**, and handles the signing requests from your POS-System.
+The queue is the **central component** of your *fiskaltrust* setup. It provides the **communication interface** (*e.g. REST*) for your POS system, manages the **receipt datastore**, and handles the signing requests from your POS system.
 
 
 
