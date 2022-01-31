@@ -22,11 +22,11 @@ import TabItem from '@theme/TabItem';
 
 ## Middleware
 
-The Middleware is fiskaltrust's core product. It is a freely available software solution which complements your POS-System and provides the central service of issuing signatures for your POS receipts and keeping track of both, receipts and their signatures, in its chained receipt datastore. It does so using the relevant and mandatory national signing mechanisms.
+The Middleware is fiskaltrust's core product. It is a freely available software solution which complements your POS system and provides the central service of issuing signatures for your POS receipts and keeping track of both, receipts and their signatures, in its chained receipt datastore. It does so using the relevant and mandatory national signing mechanisms.
 
 The Middleware is available for all supported countries and provides a single, standardised, and unified communication interface.
 
-It features a REST interface for communication with your POS-Systems and is available for on-premise deployment on platforms supporting .NET and Android, as well as an off-premise SaaS solution.
+It features a REST interface for communication with your POS systems and is available for on-premise deployment on platforms supporting .NET and Android, as well as an off-premise SaaS solution.
 
 <br />
 
