@@ -10,57 +10,76 @@ After reading this, you can use the documentation effectively in your specific f
 
 :::
 
+## Our documentation
 
-:::warning draft
+![fiskaltrust documentation](images/4-documentation-start-new.png "fiskaltrust documentation")
 
-:::  
+### Usage of our documentation
+| links | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](images/Numbers/circle-1o.png) |Jump back to the [start](https://docs.fiskaltrust.cloud/)  |
+|![Number 2](images/Numbers/circle-2o.png) |PosCreators start reading [here](https://docs.fiskaltrust.cloud/de/docs/poscreators/get-started)  |
+|![Number 3](images/Numbers/circle-3o.png) |PosDealers start reading [here](https://docs.fiskaltrust.cloud/de/docs/posdealers/get-started)   |
+|![Number 4](images/Numbers/circle-4o.png) |Here you can find more detailed [product descriptions](https://docs.fiskaltrust.cloud/docs/product-description/germany)   |
+|![Number 5](images/Numbers/circle-5o.png) |Here are listed answers to frequently asked questions (FAQ), a [description of customer roles](https://docs.fiskaltrust.cloud/docs/faq/customer-roles) like PosCraetor, PosDealer an our [Terminology](https://docs.fiskaltrust.cloud/docs/faq/terms)  |
+|![Number 6](images/Numbers/circle-6o.png) |Jump to our [Release Notes](https://docs.fiskaltrust.cloud/docs/release-notes) |
+|![Number 7](images/Numbers/circle-7o.png) |Change between languages, if translations are available  |
+|![Number 8](images/Numbers/circle-8o.png) |Switch between light mode and dark mode with this button  |
+|![Number 9](images/Numbers/circle-9o.png) |Jump to our [repositories](https://github.com/fiskaltrust) in GitHub  |
+|![Number 10](images/Numbers/circle-10o.png) |Tick here or use `CTRL` & `K` to open the search window  |
 
-We try to provide you with good software documentation. 
-### Good software documentation:
+### Searching in our documentation
+
+![fiskaltrust documentation](images/4-documentation-search.png "fiskaltrust documentation")
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](images/Numbers/circle-1o.png) |Use `CTRL` & `K` to open the search window or tick the symbol in the task bar. Enter keywords for your search |
+|![Number 2](images/Numbers/circle-2o.png) |keywords, that you have used in the running session are listed here)  |
+|![Number 3](images/Numbers/circle-3o.png) |keywords, that will be used often, can be set as favourites here, different behavior is mostly due to the settings of your browser   |
+
+#### Prepare advanced search
+
+![fiskaltrust documentation](images/4-documentation-search-results.png "fiskaltrust documentation")
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|--- |Use `CTRL` & `K` to open the search window or tick the symbol in the task bar. Enter keywords for your search |
+|![Number 1](images/Numbers/circle-1o.png)|Scroll down to the lower end of the search results(without keywords not usable)  |
+|![Number 2](images/Numbers/circle-2o.png)  |Tick on `See all XYZ results` |
+
+
+#### Advanced search options
+
+![fiskaltrust documentation](images/4-documentation-search-results-2.png "fiskaltrust documentation")
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 3](images/Numbers/circle-3o.png) |Here you can find more details about the content, in which your keyword was found|
+|![Number 4](images/Numbers/circle-4o.png) |Get more overview with opening the found documents in several tabs |
+
+## Our software documentation:
+
+* The main points of the descriptions are based on the following sources
+    * fixing problems encountered during the development process
+    * Helping the end user understand the product 
+    * Helping PosCreators and PosDealers and the CST find relevant information
+* The used master data is fictitious as far as possible
 * Is based on fundamental knowledge of our customers' frameworks
 * creates a basic understanding of our comprehensive approach
 * helps you to understand our products
 * gives you and your staff the ability to accomplish tasks at hand
 * provides solutions when you encounter problems using our products
 * helps you to search and quickly find a specific section
-* provides context-sensitive help at any point in the program flow
-* Guided tour through the user interface as a first introduction.
-The mentioned details and descriptions in our documentation are taken from the following sources:
-* fixing problems encountered during the development process
-* Helping the end user understand the product 
-* Helping PosCreators and PosDealers and the CST find the information.
+* Guided tour through the user interface as a first introduction 
 
-### A good user manual consists of:
-* Information on the functionality of the software, its input data, and the results produced * from the user's/user's perspective.
-* A basic user's guide.
-* Advice on troubleshooting, error analysis with countermeasures.
-* A tutorial, where the solution of some exercise tasks can be exemplified, and ideally independent solution attempts are accompanied and resolved in case of failure.
-* Frequently Asked Questions (FAQ) in a clear structure.
-* Glossary with explanation of technical terms.
+### General offers
 
-### Offers for the PosDealer target group
-This software documentation is provided for PosDealers. They should get a rough understanding of the product with the software documentation. Necessary details can be found in the country-specific sections.
-### Offers for the PosCreator target group
-
-As PosCreator you need information on:
-
-* Reference documents - Describes the technical details of the product (software requirements specification, software design documents, etc.)
-* API documentation - Describes how to call API calls and classes or how to include API in the code being developed.
-* System requirements
-
-You as a PosCreator should start reading [here](https://docs.fiskaltrust.cloud/de/docs/poscreators/get-started)
-
-### Offerings for each target group
-
-* glossar: look for our [terminology here](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
+* Glossar: look for our [terminology here](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
 * Videos - Learn a concept by following a series of [videos](videos.md) 
 * Scenarios - complete a task or achieve a given goal [here](../../technical-operations/scenarios).
-* Release Notes: Describes the latest software, new features, and fixed bugs. Typically, this document is a text file with a file name extension (.txt).
-* Updated information on the developers' website.
 
-### Tools to work with
+### Tools in use
 
-We use https://docusaurus.io/ beacuse this offers several advantages:
-* Content search
-* Ready for translation or i18n friendly
-* powered by markdown
+We use [docusaurus](https://docusaurus.io/) for this documentation.
+Screenshots are done with [snagit](https://www.techsmith.com/screen-capture.html)
+Videos are edited with [camtasia](https://www.techsmith.com/video-editor.html) 
