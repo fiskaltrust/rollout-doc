@@ -78,8 +78,8 @@ C:\>fiskaltrust.exe -?
 
 | Parameter                  | Description                                                  |
 | -------------------------- | ------------------------------------------------------------ |
-| -i                         | Installs the Middleware as system service (Windows) or daemon (Unix) |
-| -u                         | Uninstalls a service or daemon setup                         |
+| -i                         | Installs the Middleware as system service on Windows (based on `-servicename`) |
+| -u                         | Uninstalls the Middleware system service on Windows (based on `-servicename`) |
 | -test                      | Starts the Middleware as regular command line application (instead of in service mode) |
 | -servicename=[SERVICENAME] | Defines the name of the service                              |
 | -displayname=[DISPLAYNAME] | Defines the display name of the service                      |
