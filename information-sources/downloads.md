@@ -58,7 +58,7 @@ Have a look [here for more details](exports) about configuring your individual d
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](images/Numbers/circle-1o.png) |Tick `[Tools]` / `Exports` |
+|![Number 1](images/Numbers/circle-1o.png) |Tick `Tools` / `Exports` |
 |![Number 2](images/Numbers/circle-2o.png) |Depending on the configurations and exports before, the `List of queue exports` will show export data |
 |![Number 3](images/Numbers/circle-3o.png) |Tick the arrow - symbol to open the available files.   |
 |![Number 4](images/Numbers/circle-4o.png)|Tick `export.zip` to start the download of the chosen data  |

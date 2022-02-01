@@ -18,12 +18,6 @@ Since we do not know the respective constellations of POS-Systems on site and ca
 
 Note the country specific mail address below to contact fiskaltrust.Staff.  
 
-You will speed up the processing of your request if you include the following in your email: 
-* description of the problem: what was done, what was expected, what was the result? 
-* the accounts involved with actual names and/or AccountId's (see `[Company]`/ `Master data`)  
-* the roles used
-* the source of information or the routine you used in vain to solve your request yourself.
-
 To track your requests, please refer to the [Cases](cases.md) section.
 
 
@@ -41,6 +35,8 @@ All our learning in discussions, requests or how-tos`s result in knowledge base 
 |Updating customers|Check your inbox for the newsletters, that are sent to PosDealers and posCreators. Further note the section [News](../information-sources/news.md) and the FAQ. |
 
 ## Country-specific information
+
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
