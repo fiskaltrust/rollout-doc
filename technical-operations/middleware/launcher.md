@@ -103,7 +103,7 @@ Each parameter is to be followed by an `=` sign and its value (e.g. `-cashboxid=
 | -packagesurl       | An alternative download URL for the fiskaltrust package service. | `-packagesurl="https://packages.fiskaltrust.cloud"` |
 | -proxy             | Connection details for a possible proxy connection. Please see [Proxy setups](network-requirements.md#proxy-setups) for details. | `-proxy="address=10.0.0.0"`                         |
 | -sandbox           | Boolean flag indicating whether the Middleware uses the [sandbox environment](../../getting-started/sandbox.md) | `-sandbox=false`                                    |
-| -servicefolder     | Full path to the Middleware's working directory.             | `-servicefolder="D:\data\fiskaltrust"`              |
+| -servicefolder     | Full path to the Middleware's working directory              | `-servicefolder="D:\data\fiskaltrust"`              |
 | -sslvalidation     | Boolean flag indicating whether the Middleware validates SSL certificates | `-sslvalidation=true`                               |
 | -useoffline        | Boolean flag indicating whether the Middleware should function | `-useoffline=false`                                 |
 |                    | **Following parameters are only available with version 1.3 of the Launcher, on the German market** |                                                     |
