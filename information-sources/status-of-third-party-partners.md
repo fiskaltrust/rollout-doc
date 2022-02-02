@@ -10,7 +10,6 @@ After reading this, you can explain where to find status information about third
 
 :::
 
-
 ## Explanation
 
 External service providers can, for example, provide technological support for payment processes or prepare and forward data for accounting.  
