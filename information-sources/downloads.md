@@ -13,12 +13,12 @@ After reading this, you can download your contracts, general information and arc
 ## Explanation
 In our fiskaltrust.Portal, you may take use of three sources for downloads. 
 
-**Contracts** are provided in the overview of the chosen account (`[COMPANY]` / `Overview`). These files are the same, which were sent to you by mail attachment at the conclusion or a change of a contract. Primarily, these are the contracts for the agreed roles, the user agreements or, in the case of PosDealers, cooperation agreements. If user agreements with third parties have been concluded, you will find these here as well - please note any different, country-specific options for this. 
+**Contracts** are provided in the overview of the chosen account (`[COMPANY]` / `Overview`). These files are the same, which were sent to you by E-mail attachment at the conclusion or a change of a contract. Primarily, these are the contracts for the agreed roles, the user agreements or, in the case of PosDealers, cooperation agreements. If user agreements with third parties have been concluded, you will find these here as well - please note any different, country-specific options for this. 
 
-Two other download options are summarized in the tools section.  
-**General information** such as procedural documentation, SLA, price lists are available in the Downloads section (`Tools` / `Downloads`). These are available for selection depending on the target group. Furthermore, depending on the country, you will find general information such as certificates, brochures, scripts, etc.
+Two other download options are summarized in the tools section:  
+* **General information** such as procedural documentation, SLA, price lists are available in the Downloads section (`Tools` / `Downloads`). These are available for selection depending on the target group. Furthermore, depending on the country, you will find general information such as certificates, brochures, scripts, etc.
 
-**Archives**, that were already prepared are available as exports (`Tools` / `Exports`).
+* **Archives**, that were already prepared are available as Exports (`Tools` / `Exports`).
 
 ## Work steps
 

@@ -10,17 +10,16 @@ After reading this, you can create exports and download them from the portal.
 
 :::
 
-
 ## Explanation
 
 Data from your POS-Systems can be exported via the fiskaltrust.Portal for archiving or for processing with other systems such as your accounting. 
-You can choose from various file types. If a PosArchive is used, exports can be triggered manually with individual settings. You can select here file types like `~.csv`, `~.xml file`or country-specific exports. The PosArchive in use also offers the option for automatic export. This automated export may require some detailed work in preparation due to different legal obligations (see [master data](../getting-started/operator-onboarding/master-data)). On the other hand, depending on the market, the exported data can additionally be checked for accuracy and completeness by third parties if desired. This means that all the prerequisites are in place to be optimally prepared for any tax audits. 
+You can choose from various file types. If a PosArchive is used, exports can be triggered manually with individual settings. You may choose from file types like `~.csv`, `~.xml file`or country-specific exports. If a PosArchive is used, exports can also be automatized. This automated export may require some detailed work in preparation due to different legal obligations (see [master data](../getting-started/operator-onboarding/master-data)). On the other hand, depending on the market, the exported data can additionally be checked for accuracy and completeness by third parties if desired. This means that all the prerequisites are in place to be optimally prepared for any tax audits. 
 
-The preparation of an export to the desired file format can also take some time, depending on the amount of data. If you are waiting for processing, you will be automatically redirected. The fiskaltrust.Portal can be closed in the meantime or you as a PosDealer can surrogate to another account or switch to another queue of the same account. If you leave the actual tab in the fiskaltrust.portal, you can also find the desired export data later under `Tools` / `Downloads`.  
+Generating an export to the desired file format may take some time depending on the amount of data. If you are waiting for processing, you will be automatically redirected. The fiskaltrust.Portal can be closed in the meantime or you as a PosDealer can surrogate to another account or switch to another queue of the same account. If you leave the actual tab in the fiskaltrust.portal, you can also find the desired export data later under `Tools` / `Downloads`.  
 
-Regardless of the selected file type, after the export is done, two files are available. With the `export.zip` you get access to the previously selected data. You can download this compressed file, unpack it and use it with a suitable program of your choice.  
-
-The other file, `journal.json`, contains technical status information on the export job and provides details on whether the export was successful and how many records were processed. Specifically, `Taskname` refers to the export type and `Moment` indicates the export time.
+Regardless of the selected file type, after the export is done, two files are available:
+* With the `export.zip` you get access to the previously selected data. You can download this compressed file, unpack it and use it with a suitable program of your choice.  
+* The other file, `journal.json`, contains technical status information on the export job and provides details on whether the export was successful and how many records were processed. Specifically, `Taskname` refers to the export type and `Moment` indicates the export time.
 
 ## Work steps
 

@@ -193,7 +193,7 @@ After choosing `PosOperator` / `Invitation`
 |![Number 2](images/Numbers/circle-2o.png) |The last date of the log overview can be restricted using this field. Start the search with `Invoke protocol`. If the two fields are empty, the whole protocol without any filter is shown. Entering a text filters at `Search table` reduces the overview. By deleting all entered data in the search field the whole overview data is shown.   |
 |![Number 3](images/Numbers/circle-3o.png) |Check the details of the data of a PosOperator.    |
 |![Number 4](images/Numbers/circle-4o.png) |Resend the E-mail invitation for this data record.    |
-|![Number 5](images/Numbers/circle-5o.png) |Delete the data record. Please note that once an email address has been assigned, it cannot be completely deleted for fiscal reasons. Therefore, it cannot be assigned to any other account in fiskaltrust.Portal.   |
+|![Number 5](images/Numbers/circle-5o.png) |Delete the data record. Please note that once an E-mail address has been assigned, it cannot be completely deleted for fiscal reasons. Therefore, it cannot be assigned to any other account in fiskaltrust.Portal.   |
 |![Number 6](images/Numbers/circle-6o.png) |Shows a window with the direct link for the invitation. You can copy that link and send it to your PosOperator by direct message.      |
 
 Return to the Invitation module with [Overview of PosOperator].

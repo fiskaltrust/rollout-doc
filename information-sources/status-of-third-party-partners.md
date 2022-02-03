@@ -30,4 +30,4 @@ For manual exchange, see the section on [Exports](exports.md).
 |![Number 2](images/Numbers/circle-2o.png) |Choose `Overview`  |
 |![Number 3](images/Numbers/circle-3o.png) |Scroll down until `Here you can enable connections to 3rd party partners`  |
 |![Number 4](images/Numbers/circle-4o.png) |Enable the connection by setting the slide to the right and signing the contract. |
-|![Number 5](images/Numbers/circle-5o.png) |Return to download the contract again, if needed.This was send to your E-mail-address when the contact was signed or changed  |
+|![Number 5](images/Numbers/circle-5o.png) |Return to download the contract again, if needed. This was send to your E-mail-address when the contact was signed or changed  |

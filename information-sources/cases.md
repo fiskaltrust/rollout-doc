@@ -12,11 +12,11 @@ After reading this, you can work with support cases in the Help-Section of the p
 
 ## Explanation
 
-As a PosCreator or as a PosDealer, you can contact fiskaltrust's Customer Success Team. Your call will be answered by a call service center. The agents will create a ticket, as will any e-mail you send to the country-specific address below. When your ticket is processed, a case is created, you will receive an confirmation via e-mail.
-In the fiskaltrust.Portal you will find the option to check the cases that have been assigned to your company. So, even different users of your company can also see all the Cases.
+As a PosCreator or as a PosDealer, you can contact fiskaltrust's Customer Success Team. Your call will be answered by a call center. The agents will create a ticket, as will any E-mail you send to the country-specific address below. When your ticket is processed, a case is created, you will receive an confirmation via E-mail.
+In the Help-section of the fiskaltrust.Portal you will find the possibility to check the cases assigned to your company. This also gives the various users of your company an overview of open as well as already closed cases.
 
 You can see the progress of each case, distinguishing between `Identify`, `Research` and `Solved`. Further, you will also find descriptions of previous requests. This way you can avoid unnecessary time spent on overlapping requests from different users or repeated requests.
-If you have any questions, please always use the reply e-mail. The case number can help you to search your inbox.
+If you have any questions, please always use the reply E-mail. The case number will help you identify the related messages in your inbox.
 
 ## Work steps
 
@@ -29,7 +29,7 @@ If you have any questions, please always use the reply e-mail. The case number c
 |![Number 3](../images/Numbers/circle-3o.png)| `Search table`: Enter a search keyword.  |
 |![Number 4](../images/Numbers/circle-4o.png)| Selection of the search period: reduce or select the period, when your case has been created.  |
 |![Number 5](../images/Numbers/circle-5o.png)| `Case Number`: Tick here to open the description of the case.  |
-|![Number 6](../images/Numbers/circle-6o.png)| `Progress`: the progress of a case changes from  `Identify`to `Research` and `Solved`.  |
+|![Number 6](../images/Numbers/circle-6o.png)| `Progress`: the progress of a case changes from  `Identify` to `Research` and `Solved`.  |
 
 ## Country-specific information
 

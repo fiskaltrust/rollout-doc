@@ -16,7 +16,7 @@ Unfortunately, problems in the context of complex processes cannot always be avo
 This will help you avoid waiting times in case you need to contact support. The fiskaltrust.Staff will be happy to handle your requests if you are a PosDealer.  
 Since we do not know the respective constellations of POS-Systems on site and can therefore provide advice, we must always refer PosOperators to their PosDealer.   
 
-Note the country specific mail address below to contact fiskaltrust.Staff.  
+Note the country specific E-mail address below to contact fiskaltrust.Staff.  
 
 To track your requests, please refer to the [Cases](cases.md) section.
 

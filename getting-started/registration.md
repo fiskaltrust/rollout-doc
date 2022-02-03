@@ -63,34 +63,34 @@ All the fields marked with a red star are mandatory and must be filled out with 
 | element | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/numbers/circle-1o.png) |The correct company has to be entered. The name will be verified later on against any entered commercial number. This name has to be the same as the one used in the commercial registers. The name of the company may not already be in use for registration.  |
-|![Number 2](../images/numbers/circle-2o.png) |A valid email address must be entered in this field. This email address can only be used once for a company in the portal. If your mailserver supports the use of "+" in your email address (meaning username+tag@domain will be delivered to username@domain) you can use such emailadresses especially for testing purposes and the portal will treat each of them as a unique email-adress. |
+|![Number 2](../images/numbers/circle-2o.png) |A valid E-mail address must be entered in this field. This E-mail address can only be used once for a company in the portal. If your mailserver supports the use of "+" in your E-mail address (meaning username+tag@domain will be delivered to username@domain) you can use such E-mailadresses especially for testing purposes and the portal will treat each of them as a unique E-mail-adress. |
 |![Number 3](../images/numbers/circle-3o.png) |The address,zip-code and the name of the city of the company's headquarter must be entered.  |
 |![Number 4](../images/numbers/circle-4o.png) |You can already enter some or all commercial numbers for the company. This will facilitate the further registration process and usage of the portal. |
 |![Number 5](../images/numbers/circle-5o.png) |By clicking on `Next` you proceed to the 3rd step _User data_ of the registration process. |
 
 :::tip  Error message
 If the data entered in _Company name_ and/or _email address_ was already used for registration, the registration will jump to the last step and an informational page will be displayed.
-This page contains the information of the registered company. Click on the link with the name of the primary contact to open your email application and ask the primary contact to invite you into the company as a new user.
+This page contains the information of the registered company. Click on the link with the name of the primary contact to open your E-mail application and ask the primary contact to invite you into the company as a new user.
 :::
 
 ## User data
 
 The 3rd step of the registration process queries the personal data of the primary user. All the fields marked with a red star must be filled out with the correct data. The primary user is the key contact used in the fiskaltrust.Portal.
 This contact is the designated administrator of the newly registered company. With this account other employees of the company can be invited. 
-A valid email address must be entered and it cannot have been used already for another registration. This will be the primary contact and all messages from the ft.Portal will be sent to this address.
+A valid E-mail address must be entered and it cannot have been used already for another registration. This will be the primary contact and all messages from the ft.Portal will be sent to this address.
 
 ![Enter user data](./images/registration/user_data.png)
 
 :::tip  Error message
-If the email address entered in _email address_ was already used for registration, an information will be displayed, that a user with this emailadress already exists. By clicking the link in this information, you can initiate the password reset for this user.
+If the E-mail address entered in _email address_ was already used for registration, an information will be displayed, that a user with this E-mailadress already exists. By clicking the link in this information, you can initiate the password reset for this user.
 :::
 
 ## Confirm registration
 
-In the last step the information about the successfull registration is shown. The fiskaltrust.Portal sends an email with all the necessary information to your primary contact's email.
+In the last step the information about the successfull registration is shown. The fiskaltrust.Portal sends an E-mail with all the necessary information to your primary contact's E-mail.
 
-When the email is received in the primary contact's inbox, open it and click on the confirmation link. If you don't find the email in your inbox, look at the spam folder of your email application. 
-Depending on whether you are registering on the _sandbox_ or on the _portal_ you'll receive this email from the sender 
+When the E-mail is received in the primary contact's inbox, open it and click on the confirmation link. If you don't find the E-mail in your inbox, look at the spam folder of your E-mail application. 
+Depending on whether you are registering on the _sandbox_ or on the _portal_ you'll receive this E-mail from the sender 
 
 <Tabs groupId="market">
 
@@ -112,7 +112,7 @@ Depending on whether you are registering on the _sandbox_ or on the _portal_ you
 </Tabs>
 
 :::info Information
-If this link is invalidated or expired (after 24 hours), an informational page is shown and you will receive a new confirmation email automatically.
+If this link is invalidated or expired (after 24 hours), an informational page is shown and you will receive a new confirmation E-mail automatically.
 :::
 
 Now your account is active and the link  _this link_ in the final comfirmation screen or the `PORTAL-LOGIN` button on the fiskaltrust website can be used, to log into the fiskaltrust.Portal.
@@ -122,7 +122,7 @@ Now your account is active and the link  _this link_ in the final comfirmation s
 If the password for logging into the fiskaltrust.Portal is lost or forgotten, you can request a password reset:
 
 1. Got to the login screen of the fiskaltrust.Portal and click on the link 'If you have forgotten your password please click here'.
-2. Solve the CAPTCHA and enter the email address you used, when you registered your account.
-3. A confirmation will be shown, that the link for resetting the password has been sent to the entered email address.
-4. After a few minutes, the email with the link will be delivered to the inbox of this email adress. When you click the link in the email, a browser window will open and show the password reset page of the fiskaltrust.Portal. 
-5. Enter the email address of your fiskaltrust account, the new password and confirm it by entering it a second time. After clicking `RESET` the new password will be saved, a confirmation page is shown and you can login into the fiskaltrust.Portal again.
+2. Solve the CAPTCHA and enter the E-mail address you used, when you registered your account.
+3. A confirmation will be shown, that the link for resetting the password has been sent to the entered E-mail address.
+4. After a few minutes, the E-mail with the link will be delivered to the inbox of this E-mail adress. When you click the link in the E-mail, a browser window will open and show the password reset page of the fiskaltrust.Portal. 
+5. Enter the E-mail address of your fiskaltrust account, the new password and confirm it by entering it a second time. After clicking `RESET` the new password will be saved, a confirmation page is shown and you can login into the fiskaltrust.Portal again.

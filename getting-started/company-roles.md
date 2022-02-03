@@ -63,7 +63,7 @@ After enabling the switch, a new page will load where you need to sign the respe
 | ![](../images/numbers/5.png) | Check the box that you read and accepted the **terms and conditions** |
 | ![](../images/numbers/6.png) | **Click** the `Sign` button                                  |
 
-**Done**, the selected role should now be already active for your account. You'll also receive an additional email confirming the activation of that role.<br /><br />
+**Done**, the selected role should now be already active for your account. You'll also receive an additional E-mail confirming the activation of that role.<br /><br />
 
 ## How to deactivate a role
 
@@ -90,4 +90,4 @@ After disabling the switch, a new page will load where you need to confirm the s
 | ![](../images/numbers/3.png) | Enter your **legal name** in the signature box at the bottom of the page |
 | ![](../images/numbers/4.png) | **Click** the `Sign` button                                  |
 
-**Done**, the selected role should now be inactive for your account. You'll also receive an additional email confirming the deactivation of that role.
+**Done**, the selected role should now be inactive for your account. You'll also receive an additional E-mail confirming the deactivation of that role.

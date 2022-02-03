@@ -12,15 +12,13 @@ After reading this, you can use knowledge base articles in the Help-section of t
 
 ## Explanation
 
-A knowledge base is typically a collection of articles that contain images and text. Articles in a knowledge base may be targeted to internal or external audiences.   
+A knowledge base is typically a collection of articles that contain images and text. In the help section of the fiskaltrust.Portal PosDealers or PosOperators will find knowledge base articles. These articles are based on those questions, that our customer success team answers most frequently.
 
-PosDealers or PosOperators will find knowledge base articles in the help section of the fiskaltrust.Portal. The articles are based on the questions that our customer success team answers most frequently.
+You, as a PosDealers or PosOperator, can browse these articles to learn more about fiskaltrusts products or services or how to solve related problems.  
 
-You, as a PosDealer, can browse these articles to learn more about fiskaltrusts products or services or how to solve related problems.  
+You can avoid possible waiting times with a support request if you **first visit the knowledge base** in the fiskaltrust.Portal when you have a problem and see if your problem has already been described and a solution explained.
 
-So you can avoid possible waiting times with a support request if you **first visit the knowledge base** in the fiskaltrust.Portal when you have a problem and see if your problem has already been described and a solution explained.
-
-At the end of each article you will find the option to leave feedback. In addition to your rating between one and five stars, leave comments and suggestions. These will help the fiskaltrust.Staff to see if the articles meet the needs of PosDealers and help to solve problems of PosOperators.
+At the end of each article you will find the option to leave feedback. In addition to your rating with one up to five stars, leave comments and suggestions. These will help the fiskaltrust.Staff to see if the articles meet the needs of PosDealers and help to solve problems of PosOperators.
 
 ## Work steps
 
