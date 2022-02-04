@@ -26,7 +26,7 @@ For your visualization, the process of surrogating is described here with the ex
 5. You as a PosDealer check the status of our invited PosOperators with PosOperator / Overview:
 
 * If the name of the PosOperator is an active link, the account is active.
-* If the name of the PosOperator is an inactive link, your invitation is not yet accepted. Please read and follow the instructions at [Troubleshooting](invitation-process.md#troubleshooting).
+* If the name of the PosOperator is an inactive link, your invitation is not yet accepted. Please read and follow the instructions at [Invitation process / Troubleshooting](invitation-process.md#troubleshooting).
 
 6. Under the table of PosOperators (`PosOperator` / `Overview`) you will find a download opportunity. This may help you with an overview of active and inactive PosOperator-Accounts and to contact them.  
 

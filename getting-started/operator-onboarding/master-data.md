@@ -15,7 +15,7 @@ On the one hand, parts of this data, such as commercial identifications, are use
 On the other hand, this data is used for automated invoice generation between PosDealer and PosOperators.  
 It is therefore essential to check the completeness of Master data in the fiskaltrust.portal. Country-specific check mechanisms are also available for checking the data entered.
 Depending on the legal situation and the technical equipment of the tax authority, it is checked whether an entered value meets the formal requirements.  
-Under certain circumstances, when a PosOperator is first registered, the other master data can be retrieved from the relevant authority and checked imported by entering a tax number.
+Under country-specific circumstances, when a PosOperator is first registered, the other master data can be retrieved from the relevant authority and checked imported by entering a tax number.
 
 After logging on to the fiskaltrust.portal, you as a PosDealer should check the completeness and also use the available checking mechanisms.
 

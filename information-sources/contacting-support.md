@@ -13,8 +13,7 @@ After reading this, you can decide when and how to get support.
 ## Explanation
 
 Unfortunately, problems in the context of complex processes cannot always be avoided. Please use this documentation or other sources of information explained below for any tasks.  
-This will help you avoid waiting times in case you need to contact support. The fiskaltrust.Staff will be happy to handle your requests if you are a PosDealer.  
-Since we do not know the respective constellations of POS-Systems on site and can therefore provide advice, we must always refer PosOperators to their PosDealer.   
+This will help you avoid waiting times in case you need to contact support. The fiskaltrust.Staff will be happy to handle your requests if you are a PosDealer or a PosCreator. Since we do not know the respective constellations of POS-Systems on site and can therefore provide advice, we must always refer PosOperators to their PosDealer.   
 
 Note the country specific E-mail address below to contact fiskaltrust.Staff.  
 
