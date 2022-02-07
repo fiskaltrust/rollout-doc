@@ -134,7 +134,7 @@ A log entry consists of four elements.
 
 
 
-The given examples provides us with the following clues
+The given example provides us with the following clues
 
 * in line 1, the Middleware was started with the Launcher version X.X.X
 * lines 2 to 4, [configuration parameters](launcher.md#configuration-parameters) for the mentioned settings were provided
