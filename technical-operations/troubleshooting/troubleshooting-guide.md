@@ -29,4 +29,11 @@ Since we do not know the respective constellations of POS-Systems on site and ca
 |![Number 2](../../images/Numbers/circle-2o.png) |Is the Careless-product in use or a single product?  |
 |![Number 3](../../images/Numbers/circle-3o.png) |Has the Pos-System been in use or is it new?  |
 |![Number 4](../../images/Numbers/circle-4o.png) |Are there any fair-use-regulations concerned  |
-|![Number 4](../../images/Numbers/circle-4o.png) |Are there any product limitations concerned |
+|![Number 5](../../images/Numbers/circle-5o.png) |Are there any product limitations concerned |
+|![Number 6](../../images/Numbers/circle-6o.png) |log-file(wieso nur deutsche version) [KBA](https://portal.fiskaltrust.de/KBArticle#/KA-01043/Log-Datei%20erstellen)  |
+
+### DRAFT
+start TSEhttps://docs.fiskaltrust.cloud/de/docs/faq/germany#ich-bekomme-die-fiskaltrustmiddleware-bei-einem-kunden-nicht-zum-laufen-welche-technischen-ursachen-kann-das-haben
+
+run stop https://docs.fiskaltrust.cloud/de/docs/faq/germany#was-passiert-wenn-die-fiskaltrustmiddleware-nicht-erreichbar-ist
+stop TSE https://docs.fiskaltrust.cloud/de/docs/faq/germany#was-passiert-wenn-eine-tse-ausfllt-br-kann-man-bei-ausfall-oder-nichterreichbarkeit-einer-tse-zb-bei-einer-cloudlsung-oder-einer-zentralen-tse-im-eigenen-rechenzentrum-auf-eine-zweite-tse-zugreifen
