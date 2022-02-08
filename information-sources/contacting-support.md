@@ -28,14 +28,11 @@ All our learning in discussions, requests or how-tos`s result in knowledge base 
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |Firefighting| Please note the `SLA(Service Level Agreement)` in the fiskaltrust.Portal (`Tools / Download`)|
 |Account management|The link behind `If you have forgotten your password, please click here` leads you or your PosOperators to a `password reset service`.|
-|Onboarding|Please note the section [getting started](../getting-started/operator-onboarding/invitation-process.md)  |
-|Training|Please note the section [Webinars](webinars.md)  |
+|Onboarding|Please note the section [Get started](../getting-started/operator-onboarding/invitation-process.md)  |
 |Gathering customer feedback|Please note the sections [knowledge base](../information-sources/knowledge-base.md). Further, please do not hesitate to [share your thoughts](mailto:feedback+portal@fiskaltrust.cloud.) about improvements and fixes, that are described in our release notes.  |
 |Updating customers|Check your inbox for the newsletters, that are sent to PosDealers and posCreators. Further note the section [News](../information-sources/news.md) and the FAQ. |
 
 ## Country-specific information
-
-
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

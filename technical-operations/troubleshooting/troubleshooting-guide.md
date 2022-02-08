@@ -16,24 +16,40 @@ Since we do not know the respective constellations of POS-Systems on site and ca
 
 ### Prerequisites
 
-* PosDealers or PosCreators can contact fiskaltrust.Staff, no PosOperators
-* The better the problem is described and searched, the faster the solution is found
-* The country specific E-mail address to contact fiskaltrust.Staff you will find in the [Country-specific information](../information-sources/contacting-support).
+* PosDealers or PosCreators can contact fiskaltrust.Staff, no PosOperators.
+* The better the problem is described and searched, the faster the solution is found.
+* The country specific E-mail address to contact fiskaltrust.Staff you will find in the [Country-specific information](../information-sources/contacting-support) down below.
 
 ## Work steps
 
-
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../images/Numbers/circle-1o.png) |Avoid Firefighting - Please note the `SLA(Service Level Agreement)` in the fiskaltrust.Portal (`Tools / Download`)  |
-|![Number 2](../../images/Numbers/circle-2o.png) |Is the Careless-product in use or a single product?  |
-|![Number 3](../../images/Numbers/circle-3o.png) |Has the Pos-System been in use or is it new?  |
-|![Number 4](../../images/Numbers/circle-4o.png) |Are there any fair-use-regulations concerned  |
-|![Number 5](../../images/Numbers/circle-5o.png) |Are there any product limitations concerned |
-|![Number 6](../../images/Numbers/circle-6o.png) |log-file(wieso nur deutsche version) [KBA](https://portal.fiskaltrust.de/KBArticle#/KA-01043/Log-Datei%20erstellen)  |
+|![Number 1](../../images/Numbers/circle-1o.png) |We recommend in case of requests to read the KBA and the FAQ, see country-specific information below for details. |
+|![Number 2](../../images/Numbers/circle-2o.png) |Please note the description of [network requirements](../../technical-operations/middleware/network-requirements), if the middleware has to contact to the internet.  |
+|![Number 3](../../images/Numbers/circle-3o.png) |For further investigation, use the [script to check the firewall permissions](https://docs.fiskaltrust.cloud/de/assets/files/fw-script-9362c4c6fe9c20faa1a60b471316a21d.zip)  |
+|![Number 4](../../images/Numbers/circle-4o.png) |In some cases, the internal investigation of fiskaltrust requests a [log-file](../../technical-operations/middleware/logging) or a memory dump. Please refrain both from sending them to customer service unsolicited and from using them uncompressed and complete. You will receive a link from the customer service to the location where you can deposit the data as well as information about which data should be collected, if necessary.  |
+|![Number 11](../../images/Numbers/circle-11o.png) |Avoid Firefighting - Please note the `SLA(Service Level Agreement)` in the fiskaltrust.Portal (`Tools / Download`)  |
 
-### DRAFT
-start TSEhttps://docs.fiskaltrust.cloud/de/docs/faq/germany#ich-bekomme-die-fiskaltrustmiddleware-bei-einem-kunden-nicht-zum-laufen-welche-technischen-ursachen-kann-das-haben
+## Country-specific information
 
-run stop https://docs.fiskaltrust.cloud/de/docs/faq/germany#was-passiert-wenn-die-fiskaltrustmiddleware-nicht-erreichbar-ist
-stop TSE https://docs.fiskaltrust.cloud/de/docs/faq/germany#was-passiert-wenn-eine-tse-ausfllt-br-kann-man-bei-ausfall-oder-nichterreichbarkeit-einer-tse-zb-bei-einer-cloudlsung-oder-einer-zentralen-tse-im-eigenen-rechenzentrum-auf-eine-zweite-tse-zugreifen
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TroubleAT from '../../_markets/at/technical-operations/troubleshooting/_trouble.mdx';
+import TroubleFR from '../../_markets/fr/technical-operations/troubleshooting/_trouble.mdx';
+import TroubleDE from '../../_markets/de/technical-operations/troubleshooting/_trouble.mdx';
+
+<Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <TroubleAT />
+  </TabItem>
+
+  <TabItem value="FR" label="France">
+    <TroubleFR />
+  </TabItem>
+
+  <TabItem value="DE" label="Germany">
+    <TroubleDE />
+  </TabItem>
+
+</Tabs>
