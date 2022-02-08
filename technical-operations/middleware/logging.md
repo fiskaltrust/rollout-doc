@@ -20,9 +20,9 @@ The following sections provide you with more insight on which log levels are ava
 
 :::caution logging in production
 
-Depending on the log level and your number of transactions, the Middleware may log a lot of information, which may unnecessarily occupy disk storage on your system. For performance and storage reasons, it is generally advised not to have logging **enabled at all times**, but only when analysing an issue. Please make sure the log level is either set to `none` or there is no configuration entry for the log file.
+Depending on the log level and your number of transactions, the Middleware may log a lot of information, which may unnecessarily occupy disk storage on your system. For performance and storage reasons, it is generally advised not to exceed a log level of `warning` for regular production use. Set a higher log level only when you want to reproduce or analyse issues or when advised by fiskaltrust.Support.
 
-**Log file rotation is only support as of version 2.0 of the launcher.**
+**Log file rotation is only supported as of version 2.0 of the launcher.**
 
 :::
 
@@ -134,7 +134,7 @@ A log entry consists of four elements.
 
 
 
-The given examples provides us with the following clues
+The given example provides us with the following clues
 
 * in line 1, the Middleware was started with the Launcher version X.X.X
 * lines 2 to 4, [configuration parameters](launcher.md#configuration-parameters) for the mentioned settings were provided
