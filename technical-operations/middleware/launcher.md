@@ -89,30 +89,19 @@ C:\>fiskaltrust.exe -?
 
 ### Configuration parameters
 
-The following parameters are used for changing configuration settings in the Middleware's configuration file `fiskaltrust.exe.config`.
+The Launcher also supports additional parameters which provide the ability to set [configuration values](configuration.md#parameters) from the command line. To do so, just call `fiskaltrust.exe` and pass the desired parameter, prefixed with a hyphen and followed by an `=` sign and its value, to the call. In case, the value contains spaces, please wrap the value in quotes (`"`).
 
-Each parameter is to be followed by an `=` sign and its value (e.g. `-cashboxid=00000000-0000-0000-0000-000000000000`). Please use quotes (`"`) for the value, should there be any spaces in the string.
+For example, the following call would set the `sandbox` parameter to `false` and the `logfile` parameter to the provide path.
 
-| Parameter          | Description                                                  | Example                                             |
-| ------------------ | ------------------------------------------------------------ | --------------------------------------------------- |
-| -accesstoken       | The access token of the CashBox                              | `-accesstoken=McWDtOcxxN`                           |
-| -cashboxid         | The ID of the CashBox the Launcher should start              | `-cashboxid=00000000-0000-0000-0000-000000000000`   |
-| -connectionretry   | The number of times the Middleware will attempt to fetch its configuration from | `-connectionretry=1`                                |
-| -connectiontimeout | The timeout (in seconds) after which the Middleware will abort | `-connectiontimeout=15`                             |
-| -logfile           | Full path to log file                                        | `-logfile="D:\logs\fiskaltrust.log"`                |
-| -packagesurl       | An alternative download URL for the fiskaltrust package service. | `-packagesurl="https://packages.fiskaltrust.cloud"` |
-| -proxy             | Connection details for a possible proxy connection. Please see [Proxy setups](network-requirements.md#proxy-setups) for details. | `-proxy="address=10.0.0.0"`                         |
-| -sandbox           | Boolean flag indicating whether the Middleware uses the [sandbox environment](../../getting-started/sandbox.md) | `-sandbox=false`                                    |
-| -servicefolder     | Full path to the Middleware's working directory              | `-servicefolder="D:\data\fiskaltrust"`              |
-| -sslvalidation     | Boolean flag indicating whether the Middleware validates SSL certificates | `-sslvalidation=true`                               |
-| -useoffline        | Boolean flag indicating whether the Middleware should function | `-useoffline=false`                                 |
-|                    | **Following parameters are only available with version 1.3 of the Launcher, on the German market** |                                                     |
-| -scutimeout        | The timeout (in seconds) after which the queue will abort requests to the SCU | `-scutimeout=75`                                    |
-| -telemetry-optout  | Flag indicating whether the Middleware should disable telemetry | `-telemetry-optout=false`                           |
-| -verbosity         | The level of logging the Middleware should use<br />Supported values: trace, debug, information, warning, error, critical, and none | `-verbosity=information`                            |
+
+```shell
+C:\>fiskaltrust.exe -sandbox=false -logfile="D:\log\fiskaltrust.log"
+```
+
+Please see the chapter [Configuration](configuration.md) for more details.
 
 :::caution
 
-Please note, configuration parameters only set their values in the configuration file `fiskaltrust.exe.config`. Removing a parameter from the invocation call will *not remove* the configuration setting, please adjust either the parameter or the configuration file entry in this case.
+Please note, configuration parameters only set their values in the configuration file `fiskaltrust.exe.config`. If you added a parameter to one of the helper scripts, removing it only from there will not remove the configuration setting, please adjust either the parameter or the configuration file entry in this case.
 
 :::
