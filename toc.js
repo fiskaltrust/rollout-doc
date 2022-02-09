@@ -95,7 +95,8 @@ module.exports = {
 					items: [
 						'rollout-doc/technical-operations/maintenance/proactive-actions',
 						'rollout-doc/technical-operations/maintenance/updating',
-						'rollout-doc/technical-operations/maintenance/backup-restore'
+						'rollout-doc/technical-operations/maintenance/backup-restore',
+						'rollout-doc/technical-operations/maintenance/exports'
 					]
 				}
 			]
@@ -107,7 +108,6 @@ module.exports = {
 				'rollout-doc/information-sources/knowledge-base',
 				'rollout-doc/information-sources/cases',
 				'rollout-doc/information-sources/documentation',
-				'rollout-doc/information-sources/exports',
 				'rollout-doc/information-sources/downloads',
 				'rollout-doc/information-sources/status-of-third-party-partners',
 				'rollout-doc/information-sources/news',
