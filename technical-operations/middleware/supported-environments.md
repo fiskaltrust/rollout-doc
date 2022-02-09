@@ -32,11 +32,13 @@ A .NET Framework version 4.8 is recommended.
 Starting with version 1.1, the Middleware will run on Linux and macOS, using [Mono](https://www.mono-project.com/). In general, it's possible to run the Middleware on every Linux distribution that is supported by Mono (_Ubuntu_, _Debian_, _Raspbian_, _CentOS_ and _Fedora_, including their derivatives). Most testing at fiskaltrust is performed with Ubuntu and Debian, 
 hence we recommend using these distributions.
 
-**Please make sure to install the latest Mono version**. The default versions in the package repositories are usually extremely outdated, so please follow the official [Mono guidelines](https://www.mono-project.com/download/stable/#download-lin-ubuntu) to get the latest packages. We recommend to use at least version 6.8.0. Other than that, no specific software needs to be installed (aside from the dependencies Mono has).
+**Please make sure to update the Mono version**. The default versions in the package repositories are usually extremely outdated, so please follow the official [Mono guidelines](https://www.mono-project.com/download/stable/#download-lin-ubuntu) to get the latest packages. We recommend to use version **6.8.0** as this is tested by us. Other than that, no specific software needs to be installed (aside from the dependencies Mono has).
 
-:::info Limitations
+:::caution Limitations for Linux
 
-Currently, the Middleware only supports gRPC and REST when executed on Linux. This means that SOAP is not supported right now (due to open bugs in Mono's WCF implementation).
+- **gRPC**: **supported** 
+- **REST**: **supported** 
+- **SOAP**: **not supported** right now (due to open bugs in Mono's WCF implementation).
 
 If you haven't already decided for a communication technology, we strongly recommend gRPC, especially in Linux scenarios, as it provides a cleaner, more stable interface. Please refer to our demo project (currently available in C#, Java, Node.js and others) for sample implementations.
 When using REST, the HTTP endpoint slightly differs from the Windows version, as the version prefix cannot be included because of the mentioned Mono issues. Hence, a REST URL on Linux would look like this: http://localhost:1500/a4c4e466-721a-4011-a9a5-a23827a21b45/sign (instead of ../v1/sign).
