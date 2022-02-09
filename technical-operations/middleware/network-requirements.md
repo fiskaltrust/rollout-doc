@@ -56,7 +56,7 @@ Should you need to determine the IP addresses of these hostnames for your networ
 
 :::info inbound connections
 
-The Middleware does expect or handle any other inbound connections, apart from the receipt requests sent by your POS systems. So you only need to make sure your POS systems have access, all other connections can (and should) be restricted.
+The Middleware does not expect or handle any other inbound connections, apart from the receipt requests sent by your POS systems. So you only need to make sure your POS systems have access, all other connections can (and should) be restricted.
 
 :::
 

@@ -33,13 +33,15 @@ Depending on the log level and your number of transactions, the Middleware may l
 
 The Middleware distinguishes between seven different log levels.
 
-1. `none` - Nothing is logged
-2. `critical` - Only critical errors are logged
-3. `error` - General errors are logged
-4. `warning` - Warning messages are logged
-5. `information` - General technical information is logged
-6. `debug` - Debug messages are logged
-7. `trace` - The most detailed log level, with additional trace information
+|            Priority             | Level         | Description                                                    |
+| :-----------------------------: | ------------- | -------------------------------------------------------------- |
+| ![](../../images/numbers/1.png) | `none`        | Nothing is logged                                              |
+| ![](../../images/numbers/2.png) | `critical`    | Only critical errors are logged                                |
+| ![](../../images/numbers/3.png) | `error`       | General errors are logged                                      |
+| ![](../../images/numbers/4.png) | `warning`     | Warning messages are logged                                    |
+| ![](../../images/numbers/5.png) | `information` | General technical information is logged                        |
+| ![](../../images/numbers/6.png) | `debug`       | Debug messages are logged                                      |
+| ![](../../images/numbers/7.png) | `trace`       | The most detailed log level, with additional trace information |
 
 Each log level builds upon the previous ones and includes all their information as well. For example, if you configure `warning` the log will also include the information for the levels `critical` and `error`.
 
@@ -127,12 +129,12 @@ System.UnauthorizedAccessException: Attempted to perform an unauthorized operati
 
 A log entry consists of four elements.
 
-1. The local date
-2. The local time
-3. The log level under which the message was logged (`CRI`, `ERR`, `WRN`, `INF`, `DBG`, and `VRB`)
-4. The log message
-
-
+|            Position             | Description                                                                                     |
+| :-----------------------------: | ----------------------------------------------------------------------------------------------- |
+| ![](../../images/numbers/1.png) | The local date                                                                                  |
+| ![](../../images/numbers/2.png) | The local time                                                                                  |
+| ![](../../images/numbers/3.png) | The log level under which the message was logged (`CRI`, `ERR`, `WRN`, `INF`, `DBG`, and `VRB`) |
+| ![](../../images/numbers/4.png) | The log message                                                                                 |
 
 The given example provides us with the following clues
 
