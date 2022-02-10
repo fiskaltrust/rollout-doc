@@ -22,6 +22,8 @@ The CashBox is primarily configured in the portal and then rolled out as part of
 
 The CashBox ID and the access token are two crucial parameters of each CashBox and are used for authentication against the portal services. For example, the Middleware itself uses them to fetch its configuration. You'll also use them in the context of templating.
 
+You can access the ID and the token of each CashBox under its respective entry on the [`Configuration` / `CashBox`](#cashbox-maintenance-portal) screen.
+
 :::caution
 
 The CashBox ID is not strictly confidential data and will often be requested by fiskaltrust.Support to identify the CashBox and provide technical assistance.
