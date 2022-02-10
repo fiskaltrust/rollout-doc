@@ -10,13 +10,13 @@ After reading this, you can explain the structure of the data directory.
 
 :::
 
+## Introduction
+
 :::caution
 
 This chapter is about locally deployed **.NET Middleware** setups (Windows or Mono on Unix). Other deployment types (e.g. Android, BYODC, hosted Middleware) may have significantly different layouts and requirements.
 
 :::
-
-## Introduction
 
 When you deploy your Middleware setup and run it for the first time you will find a couple of new files in your file system. This chapter elaborates on how the installation and the data directories of a Middleware installation are structured, what type of files they contain, and how these files are used.
 
@@ -48,7 +48,7 @@ This directory contains your business data and is crucial to your Middleware ins
 
 The data directory is the Middleware's main directory to store all runtime relevant information. It contains the configuration for each CashBox, all relevant package libraries, and any locally hosted SQLite databases (if you picked such a queue type). The data directory is also the default destination for any exported files.
 
-Unless explicitly specified by the [`-servicefolder` parameter](launcher.md#configuration-parameters), the directory path will default on **Windows systems** to
+Unless explicitly specified by the [`servicefolder` parameter](configuration.md#parameters), the directory path will default on **Windows systems** to
 
 ```
 %ProgramData%\fiskaltrust\service
