@@ -32,7 +32,7 @@ As for the access token, please **do not share the access token** with third par
 
 
 
-## Running a CashBox (the Middleware)
+## CashBox instance (Middleware)
 
 From the Middleware's point of view, a CashBox is a [JSON](https://en.wikipedia.org/wiki/JSON) file it fetched from the portal during its start phase (or as part of the deployment package, in case of an offline setup). That file contains the **whole configuration information** for this particular Middleware instance. This includes all the components it is supposed to provide and their own configuration data.
 
@@ -104,9 +104,9 @@ The following sample is a trimmed down CashBox skeleton outlining the overall st
 
 
 
-## Assembling a CashBox (the Portal)
+## CashBox maintenance (Portal)
 
-The Portal is the starting point for each CashBox. There, you create and maintain all your CashBoxes.
+The portal is the starting point for each CashBox. There, you create and maintain all your CashBoxes.
 
 To get an overview of your CashBoxes, open the portal and go to `Configuration` / `CashBox` (![](../../images/numbers/1.png)).
 
@@ -149,7 +149,7 @@ Rollout plans are not yet available on the Austrian portal.
 
 
 
-## Configuring a CashBox
+### Configuring a CashBox
 
 A CashBox alone does not do much. It needs to be configured with all the service components you eventually want to run as part of that CashBox, such as queues or SCUs.
 
@@ -165,6 +165,6 @@ Please make sure to rebuild your CashBox, whenever it has the rebuild icon (![](
 
 :::caution restart
 
-Please do note, once you have deployed your CashBox, any changes to its configuration will only take effect after a restart of your Middleware instance. It also needs to be able to [reach the fiskaltrust portal services](network-requirements.md) and it must **not** be configured for [offline mode](launcher.md#configuration-parameters).
+Please do note, once you have deployed your CashBox, any changes to its configuration will only take effect after a restart of your Middleware instance. It also needs to be able to [reach the fiskaltrust portal services](network-requirements.md) and it must **not** be configured for [offline mode](configuration.md#parameters).
 
 :::
