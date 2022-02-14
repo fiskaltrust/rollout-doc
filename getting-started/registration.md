@@ -203,7 +203,7 @@ In the future, all contacts use the login listed up [as above or in the assignme
 
 ### PosDealers have several companies
 
-The E-mail Address of a contact is binding because this is used as a one-to-one assignment of a record to an account. So a usage for two or more companies is not possible for employees.
+The E-mail address of a contact is binding because this is used as a one-to-one assignment of a record to an account. So a usage for two or more companies is not possible for employees.
 
 #### Solution for employees
 
@@ -224,7 +224,7 @@ etc.
 
 One email address can be used to access different companies, but with three prerequisites only:
 
-* The companies are not yet created in the fiskatrust.Portal and can be added manually.
+* The companies are not yet created in the fiskaltrust.Portal and can be added manually.
 * The companies are not created more than once.
 * The e-mail address is used exclusively as the primary contact in the new companies.
 
