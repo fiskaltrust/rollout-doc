@@ -23,7 +23,7 @@ If it is not possible to settle the open invoices in a timely manner, contact th
 
 ### Explanation Framework Agreement
 
-As mentioned in the section [Business model](../overview/business-model.md), in addition to offering individual products, fiskaltrust also offers more favorable merchant bundles in the fiskaltrust.Portal store. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
+As mentioned in the section [Business model](../overview/business-model.md), fiskaltrust is offering discounted prices if you agree to a certain purchase quantity. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
 If you are committing to purchase **large quantities of product bundles** of your choice over the course of a year, a **Framework Agreement** is the best option. This allows you to achieve significant discounts depending on your planned sales volume.
 
 ### Legal Framework
@@ -31,7 +31,6 @@ If you are committing to purchase **large quantities of product bundles** of you
 * The contract period is open and the evaluation period for the ordered number of entitlements will be set to one year or the period of your choice.
 * The agreed purchase price applies to each allocation of each entitlements, regardless of whether you use the rollout management or prefer the store.
 * By assigning entitlements in the fiskaltrust.Portal according to your needs, you control purchase and accounting by yourself.
-* You avoid processing refunds because unused Entitlements already purchased can also be used in the following year.
 
 ## Work steps to achieve a framework agreement
 
@@ -56,8 +55,8 @@ If you are committing to purchase **large quantities of product bundles** of you
 * Note that it will take a few days to process your request. Only then will you receive the master agreement.
 * With the framework agreement, your credit limit and adjusted product prices will be stored in the fiskaltrust.Portal.
 * Check the deposited prices, pay attention to the offers in the store as well as the rollout plans. 
-* Carry out the resale of the Entitlements in the agreed period.
-* Check the remaining stock in good time. This will be invoiced at the end of the agreed period.
+* Resale of the rights by the PosDealer, within a maximum of three years.
+* Comparison of the Entitlements purchased in the meantime to the agreed purchase volume. The difference is transferred and invoiced to the PosDealer at the end of the valuation period
 * At the end of the agreed period, determine the requirements for the following year.
 * Contact fiskaltrust for further agreement.
 
