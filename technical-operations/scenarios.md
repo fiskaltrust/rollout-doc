@@ -20,11 +20,17 @@ Have a look at the country-specific information for further details.
 * Each queue requires the connection to a specific SCU
 * Each queue and each SCU must be in the operational environment of a POSOperator
 
+:::tip health check
+
+health check is done only while configuration, do not change
+
+::: 
+
 ### Explanation of terms
 
 | image | description  |
 |:----------------------:|:----------------------:|
-|![Cashpoint](../technical-operations/scenarios/images/cashpoint.svg "Cashpoint") |Cashpoint or **Pos-System**  |
+|![Cash register](../technical-operations/scenarios/images/POS-System.svg "Cash register") |Cash register or **Pos-System**  |
 |![Handheld](../technical-operations/scenarios/images/handheld.svg "Handheld")  |Handheld  |
 |![Server](../technical-operations/scenarios/images/server.svg "Server")  |Server  |
 |![USB Drive](../technical-operations/scenarios/images/USB_Drive.svg "USB_Drive")  |USB Drive.  |
@@ -93,12 +99,30 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 | facts | description  |
 |:----------------------:|:----------------------:|
 |description |Multiple Terminals share one main Pos-System or a CashBox at a server.  |
-|pro |Less costs, if a hardware signature element is needed|
+|pro |Flexibility with changing workloads by adjusting the number of terminals |
+|pro |High spatial flexibility of the employees|
 |pro |Less costs, because no server is needed|
 |con |Low reliability for the PosOperator, if SCU is out of operation, all Terminals and the **Pos-System** fail|
 |con |Main Pos-System can be the performance bottleneck|
 |Restrictions |--- |
 
+![Main Pos-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5B.png "Main Pos-System for multiple Terminals")
+
+### Data center as operational environment
+
+![Main Pos-System for multiple Terminals](../technical-operations/scenarios/images/scenario-6.png "Main Pos-System for multiple Terminals")
+
+| facts | description  |
+|:----------------------:|:----------------------:|
+|description |Multiple terminals are connected to the fiskaltrust.middleware in the data center via a online cash register system.  |
+|pro |Flexibility with changing workloads by adjusting the number of terminals |
+|pro |High spatial flexibility of the employees|
+|pro |The terminals remain safe in the operational environment |
+|pro |Less costs, because no **Pos-System** and no server is needed|
+|pro |Less costs, because no **Pos-System** and no server is needed|
+|con |Low reliability for the PosOperator, if online cash register system is out of reach or operation, all Terminals fail|
+|con |internet connection or online cash register system can be the performance bottleneck|
+|Restrictions |coodination and cooperation of several providers, systems may result in a high effort of installation |
 
 ## Country-specific information
 
