@@ -33,15 +33,14 @@ health check is done only while configuration, do not change
 |![Cash register](../technical-operations/scenarios/images/POS-System.svg "Cash register") |Cash register or **Pos-System**  |
 |![Handheld](../technical-operations/scenarios/images/handheld.svg "Handheld")  |Handheld  |
 |![Server](../technical-operations/scenarios/images/server.svg "Server")  |Server  |
-|![USB Drive](../technical-operations/scenarios/images/USB_Drive.svg "USB_Drive")  |USB Drive.  |
 
 Please not our [terminology](../../faq/terms.md) for the terms used in our application and this documentation.
 
-## Scenarios
+## Rollout Scenarios
 
 ### One SCU for each Pos-System
 
-![One SCU for each Pos-System](../technical-operations/scenarios/images/scenario-1.png "One SCU for each Pos-System")
+![One SCU for each Pos-System](../technical-operations/scenarios/images/scenario-1-R.png "One SCU for each Pos-System")
 
 | facts | description  |
 |:----------------------:|:----------------------:|
@@ -53,7 +52,7 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 ### One SCU at server for multiple Pos-Systems
 
-![SCU on a local Server](../technical-operations/scenarios/images/scenario-2.png "SCU on a local Server")
+![SCU on a local Server](../technical-operations/scenarios/images/scenario-2-R.png "SCU on a local Server")
 
 | facts | description  |
 |:----------------------:|:----------------------:|
@@ -65,11 +64,11 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 |con |Server can be the performance bottleneck|
 |Restrictions |--- |
 
-![SCU on a local Server](../technical-operations/scenarios/images/scenario-2-double.png "SCU on a local Server")
+![SCU on a local Server](../technical-operations/scenarios/images/scenario-2-R-double.png "SCU on a local Server")
 
 ### One main Pos-System for multiple Pos-Systems
 
-![Main Pos-System for multiple Pos-Systems](../technical-operations/scenarios/images/scenario-3.png "Main Pos-System for multiple Pos-Systems")
+![Main Pos-System for multiple Pos-Systems](../technical-operations/scenarios/images/scenario-3-R.png "Main Pos-System for multiple Pos-Systems")
 
 | facts | description  |
 |:----------------------:|:----------------------:|
@@ -82,7 +81,7 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 ### Multiple Pos-Systems share one external signature service
 
-![One external signature service](../technical-operations/scenarios/images/scenario-4.png "One external signature service")
+![One external signature service](../technical-operations/scenarios/images/scenario-4-R.png "One external signature service")
 
 | facts | description  |
 |:----------------------:|:----------------------:|
@@ -94,7 +93,7 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 ### Main Pos-System for multiple Terminals
 
-![Main Pos-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5.png "Main Pos-System for multiple Terminals")
+![Main Pos-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5-R.png "Main Pos-System for multiple Terminals")
 
 | facts | description  |
 |:----------------------:|:----------------------:|
@@ -106,11 +105,11 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 |con |Main Pos-System can be the performance bottleneck|
 |Restrictions |--- |
 
-![Main Pos-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5B.png "Main Pos-System for multiple Terminals")
+![Main Pos-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5B-R.png "Main Pos-System for multiple Terminals")
 
 ### Data center as operational environment
 
-![Main Pos-System for multiple Terminals](../technical-operations/scenarios/images/scenario-6.png "Main Pos-System for multiple Terminals")
+![Main Pos-System for multiple Terminals](../technical-operations/scenarios/images/scenario-6-R.png "Main Pos-System for multiple Terminals")
 
 | facts | description  |
 |:----------------------:|:----------------------:|
