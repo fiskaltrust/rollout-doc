@@ -73,7 +73,7 @@ The following example shows a configuration where the log level was set to `debu
 
 
 
-The entries can be set manually by editing `fiskaltrust.exe.config` or by calling the Launcher with the [`-verbosity`/`logfile` parameters](launcher.md#configuration-parameters). The following example call illustrates how the settings from above's example would be configured via the command line.
+The entries can be set manually by editing `fiskaltrust.exe.config` or by calling the Launcher with the [`-verbosity`/`logfile` parameters](configuration.md#parameters). The following example call illustrates how the settings from above's example would be configured via the command line.
 
 
 ```shell
@@ -139,7 +139,7 @@ A log entry consists of four elements.
 The given example provides us with the following clues
 
 * in line 1, the Middleware was started with the Launcher version X.X.X
-* lines 2 to 4, [configuration parameters](launcher.md#configuration-parameters) for the mentioned settings were provided
+* lines 2 to 4, [configuration parameters](configuration.md#parameters) for the mentioned settings were provided
 * line 5 indicates an error (*in this case missing permissions for the file system*), the respective exception message is appended in lines 6 to 11
 * lines 12 to 14 are general information messages during the start
 * line 15 points out that, in test mode, the Middleware can be exited by pressing any key

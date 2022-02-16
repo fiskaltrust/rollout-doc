@@ -28,7 +28,7 @@ Since we do not know the respective constellations of POS-Systems on site and ca
 |![Number 2](../../images/Numbers/circle-2o.png) |Please note the description of [network requirements](../../technical-operations/middleware/network-requirements), if the middleware has to contact to the internet.  |
 |![Number 3](../../images/Numbers/circle-3o.png) |For further investigation, use the [script to check the firewall permissions](https://docs.fiskaltrust.cloud/de/assets/files/fw-script-9362c4c6fe9c20faa1a60b471316a21d.zip)  |
 |![Number 4](../../images/Numbers/circle-4o.png) |In some cases, the internal investigation of fiskaltrust requests a [log-file](../../technical-operations/middleware/logging) or a memory dump. Please refrain both from sending them to customer service unsolicited and from using them uncompressed and complete. You will receive a link from the customer service to the location where you can deposit the data as well as information about which data should be collected, if necessary.  |
-|![Number 11](../../images/Numbers/circle-11o.png) |Avoid Firefighting - Please note the `SLA(Service Level Agreement)` in the fiskaltrust.Portal (`Tools / Download`)  |
+|![Number 5](../../images/Numbers/circle-5o.png) |Avoid Firefighting - Please note the `SLA(Service Level Agreement)` in the fiskaltrust.Portal (`Tools / Download`)  |
 
 ## Country-specific information
 
