@@ -4,7 +4,11 @@ title: Backup & Restore
 ---
 # Backup & Restore
 
+:::info summary
+
 After reading this, you can plan and implement recovery of the Middleware.
+
+:::
 
 ## Backup
 
