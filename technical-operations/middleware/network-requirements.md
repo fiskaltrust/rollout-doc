@@ -29,7 +29,7 @@ There are also a few **outbound** connections (e.g. querying for changes to your
 
 :::tip troubleshooting
 
-In case of connectivity issues, please check out the dedicated chapter [Network Troubleshooting](../troubleshooting/network-troubleshooting.md), as well as our [PowerShell script](../../assets/fw-script.zip).
+In case of connectivity issues, please check out the dedicated chapter [Network Troubleshooting](../troubleshooting/network-troubleshooting.md).
 
 :::
 
