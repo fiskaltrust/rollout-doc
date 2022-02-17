@@ -273,7 +273,7 @@
            style="stroke:#00A7CE"
            transform="matrix(3.5091426,0,0,3.5091426,-322.72614,-104.62758)">
           <path
-             style="fill:none;stroke:#00A7CE;stroke-width:0.26458332;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:6.30000019;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+             style="fill:#999999;stroke:#00A7CE;stroke-width:0.26458332;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:6.30000019;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
              d="m 111.44767,89.13787 h 19.14072 c 0,0 -1.06872,0.489753 -1.57124,1.067771 l -15.97442,-1.01e-4 c -0.38303,-0.663419 -1.59506,-1.06767 -1.59506,-1.06767 z"
              id="path4769"
              inkscape:connector-curvature="0"

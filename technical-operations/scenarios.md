@@ -4,34 +4,29 @@ title: Scenarios
 ---
 
 
-## Scenarios
+## Rollout Scenarios
 
 After reading this, you can design the setup of the Middleware components and decide how to integrate them into your environment.
 
 ## Explanation
 
+
 The scenarios in this general part will not cover all the aspects, that can be covered with fiskaltrust.Middleware and our products. 
-Due to technical or legal reasons not all scenarios are available in every country, please check the country specific notes!
-
-:::info basics
-
-* An outlet need its own SCU. Outlets can be shared spaces, queues not
-* A queue must be reported to the fiscal authority  
-* Each queue requires the connection to a specific SCU
-* Each queue and each SCU must be in the operational environment of a PosOperator
-
-::: 
+Please check the country specific notes for further details. Due to technical or legal reasons not all scenarios are available in every country.
 
 ### Explanation of terms and graphics
 
-| image | description  | image | description  |
-|:----------------------:|:----------------------|:----------------------:|:----------------------|
-|![Main POS-System](../technical-operations/scenarios/images/main-POS-System.svg "Main POS-System") |** Main POS-System**  |![Subsidiary POS-System](../technical-operations/scenarios/images/POS-System.svg "Subsidiary POS-System") |Subsidiary POS-System  |
-|![Terminal](../technical-operations/scenarios/images/terminal-table.svg "Terminal")  |Terminal, handheld  |![Server](../technical-operations/scenarios/images/server.svg "Server")  |Server  |
-
 Please not our [terminology](../../faq/terms.md) for the terms used in our application and this documentation.
 
-## Rollout Scenarios
+
+The scenarios are described by pros and cons. The term _POS-System fails_ means, that the Queue will switch into failed mode, but is still operational until the connection is restored with a zero receipt. 
+
+| image | description  | image | description  |
+|:----------------------:|:----------------------|:----------------------:|:----------------------|
+|![Main POS-System](../technical-operations/scenarios/images/main-POS-System.svg ) |** Main POS-System**  |![Subsidiary POS-System](../technical-operations/scenarios/images/POS-System.svg ) |Subsidiary POS-System  |
+|![Terminal](../technical-operations/scenarios/images/terminal-table.svg "Terminal")  |Terminal, handheld  |![Server](../technical-operations/scenarios/images/server.svg "Server")  |Server  |
+
+## Scenarios
 
 ### One SCU for each POS-System
 
@@ -39,7 +34,6 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 | facts | description  |
 |:----------------------:|:----------------------|
-|description |One SCU for each POS-System   |
 |pro |High reliability for the PosOperator with one single POS-System - very high reliability, if several POS-Systems in operation  |
 |pro |High performance, when several POS-Systems are in operation, best possible performance  |
 |con |Consistent costs for each POS-System without regard to varying needs  |
@@ -51,23 +45,21 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 | facts | description  |
 |:----------------------:|:----------------------|
-|description |One SCU at a local Server for multiple POS-Systems|
-|pro |Less costs, if a hardware signature element is needed|
-|pro |High performance, as a large number of requests can be distributed to several multiple SCU`s|
+|pro |Lower costs, if a hardware signature element is needed|
+|pro |High performance, as a large number of requests can be distributed to several multiple SCUs |
 |con |High effort during installation, coordination with providers|
 |con |Attention to the installation during maintenance and care|
-|con |Server can be the performance bottleneck|
+|con |Server or signing devices can be the performance bottleneck|
 |Restrictions | Due to technical or legal reasons this scenario is not available in every country, please check the country specific notes ! |
 
-### One main POS-System for multiple POS-Systems
+### One SCU in main POS-System, used by other POS-Systems
 
 ![Main POS-System for multiple POS-Systems](../technical-operations/scenarios/images/scenario-3-RR.png "Main POS-System for multiple POS-Systems")
 
 | facts | description  |
 |:----------------------:|:----------------------|
-|description |Multiple POS-Systems share one SCU at a main POS-System.  |
-|pro |Less costs, if a hardware signature element is needed|
-|pro |Less costs, because no server is needed|
+|pro |Lower costs, if a hardware signature element is needed|
+|pro |Lower costs, because no server is needed|
 |con |Low reliability for the PosOperator, if SCU is out of operation, all POS-Systems fail|
 |con |Main POS-System can be the performance bottleneck|
 |Restrictions |Due to technical or legal reasons this scenario is not available in every country, please check the country specific notes!|
@@ -78,11 +70,10 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 | facts | description  |
 |:----------------------:|:----------------------|
-|description |Multiple POS-Systems share one external signature service  |
-|pro |High performance, , as a large number of requests can be distributed to several multiple SCU`s|
-|pro |Less costs, if a signature element is shared|
+|pro |High performance, , as a large number of requests can be distributed to several multiple SCUs |
+|pro |Lower costs, if a signature element is shared|
 |pro |High reliability for the PosOperator, even if internet connection fails|
-|Restrictions |restrictions depending on fair-use-rules or technical limitations are possible |
+|Restrictions |Restrictions depending on fair-use-rules or technical limitations are possible. Due to technical or legal reasons not all scenarios are available in every country. |
 
 ### Main POS-System for multiple Terminals
 
@@ -90,10 +81,9 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 | facts | description  |
 |:----------------------:|:----------------------|
-|description |Multiple Terminals share one CashBox at a main POS-System or at a server.  |
 |pro |Flexibility with changing workloads by adjusting the number of terminals |
 |pro |High spatial flexibility of the employees|
-|pro |Less costs, because no server is needed|
+|pro |Lower costs, because no server is needed|
 |con |Low reliability for the PosOperator, if SCU is out of operation, all Terminals and the POS-System fail|
 |con |Main POS-System can be the performance bottleneck|
 |Restrictions | Due to technical or legal reasons this scenario is not available in every country, please check the country specific notes! |
@@ -104,14 +94,15 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 ![Main POS-System for multiple Terminals](../technical-operations/scenarios/images/scenario-6-RR.png "Main POS-System for multiple Terminals")
 
+Several terminals are connected to the fiskaltrust.middleware in our data center or the one of your choice via an online POS-System.
+
 | facts | description  |
 |:----------------------:|:----------------------|
-|description |Multiple terminals are connected to the fiskaltrust.middleware in the data center via a online cash register system.  |
 |pro |Flexibility with changing workloads by adjusting the number of terminals |
 |pro |High spatial flexibility of the employees|
 |pro |The terminals remain safe in the operational environment |
-|pro |Less costs, because no POS-System and no server is needed|
-|pro |Less costs, because no POS-System and no server is needed|
+|pro |Lower costs, because no POS-System and no server is needed|
+|pro |Lower costs, because no POS-System and no server is needed|
 |con |Low reliability for the PosOperator, if online cash register system is out of reach or operation, all Terminals fail|
 |con |internet connection or online cash register system can be the performance bottleneck|
 |Restrictions |Coordination and cooperation of several providers, systems may result in a high effort of installation |
