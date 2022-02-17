@@ -25,6 +25,16 @@ There are also a few **outbound** connections (e.g. querying for changes to your
 | helipad.fiskaltrust.cloud    |   TCP    |   443   | Provides the CashBox configuration and the archive service                                                                     |
 | dc.services.visualstudio.com |   TCP    |   443   | Error reporting (Microsoft provides a [list of IP addresses](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses)) |
 
+
+
+:::tip troubleshooting
+
+In case of connectivity issues, please check out the dedicated chapter [Network Troubleshooting](../troubleshooting/network-troubleshooting.md), as well as our [PowerShell script](../../assets/fw-script.zip).
+
+:::
+
+
+
 ### Additional access permissions
 
 import HostsAT from '../../_markets/at/technical-operations/middleware/network-requirements/_hosts.mdx';
