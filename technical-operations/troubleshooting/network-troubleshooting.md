@@ -39,7 +39,7 @@ Double check your [helper scripts](../middleware/setup.md#installation-directory
 
 ## fiskaltrust firewall script
 
-In addition to the manual verification steps outlined in this chapter, fiskaltrust also provides a ready-made PowerShell script, which performs a couple of basic network check automatically.
+In addition to the manual verification steps outlined in this chapter, fiskaltrust also provides a ready-made PowerShell script, which performs a couple of basic network checks automatically.
 
 To run the script, [download the latest version from here](../../assets/fw-script.zip), unpack it into the desired destination directory, and run the `CheckFirewall.ps1` script with the configuration CSV file applicable to your use case (the package contains a number of sample files) from your PowerShell console. Please, also make sure you have the [latest version](https://github.com/PowerShell/PowerShell/releases/latest) of PowerShell installed.
 
@@ -100,7 +100,7 @@ If you find any of the following error messages in the log output, it may sugges
 | The remote name could not be resolved                        | [DNS issues](#dns-issues)                                    |
 | Unable to connect to the remote server                       | [General network issues](#network-issues) (e.g. ports blocked) |
 | The request was aborted: Could not create SSL/TLS secure channel | [SSL issues](#ssl-issues)                                    |
-| Failed to connect to all addresses                           | Connection issue between queue and SCU                       |
+| Failed to connect to all addresses                           | [Connection issue between queue and SCU](#queuescu-connection) |
 
 
 
@@ -196,11 +196,6 @@ In case your operating system is not supported any more or you have customised y
 
 ## Queue/SCU connection
 
+This issue typically indicates that the [queue](../middleware/overview.md#queue) lost its internal connection to an [SCU](../middleware/overview.md#scu). This may occur after components were shifted within a CashBox or any of the involved machines got new IP addresses assigned.
 
-
-
-
-
-
-
-
+Fixing this issue is often quickly done with a [rebuild](../middleware/cashbox.md#rebuilding) of the CashBox and a subsequent restart of the Middleware, though, please verify the configuration of the relevant CashBoxes beforehand. In particular, please pay attention to the hostnames and IP addresses, as well as the ports, you configured for each component and make sure they [resolve](#dns-issues) and match the actual machine configuration. Please, also double check there's no (local) firewall which may prevent connections.
