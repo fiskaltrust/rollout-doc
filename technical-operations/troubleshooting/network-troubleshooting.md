@@ -146,7 +146,7 @@ You can use [curl](https://curl.se) to perform a basic connection test against a
 Use the following command to run a test request against `https://packages.fiskaltrust.cloud`.
 
 ```console
-curl -I https://packages.fiskaltrust.cloud
+curl.exe -I https://packages.fiskaltrust.cloud
 ```
 
 As long as you receive an HTTP response with a valid status code (e.g. `202` or `401`), your system should be able to connect to the specified URL. Should you, however receive an error message indicating, for example, a network or encryption issue, there might be additional configuration changes necessary, in order to allow said connection. For example, firewall whitelisting or updates to your SSL configuration. Please consult your network administrator for more information.
