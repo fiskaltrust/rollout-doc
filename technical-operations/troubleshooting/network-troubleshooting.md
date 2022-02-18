@@ -133,7 +133,7 @@ It may be that your network generally restricts outbound connections and require
 
 :::
 
-If the log refers to a message saying "a connection could not be establish" or that it was "unable to connect to the remote server", that could mean there was either no Internet connectivity present or some security appliance (e.g. a network firewall) blocked the connection.
+If the log refers to a message saying `a connection could not be establish` or that it was `unable to connect to the remote server`, that could mean there was either no Internet connectivity present or some security appliance (e.g. a network firewall) blocked the connection.
 
 All services mentioned in the chapter [Network Requirements](../middleware/network-requirements.md) have to be reachable for the Middleware. These are typically HTTP-based services running on TCP port 443 and can be quickly checked with curl.
 
