@@ -22,6 +22,11 @@ After reading this, you can prepare a system where the Middleware will run.
 | Hardware                          | The Middleware can basically run on a  [Rasperry PI 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). |
 | Local Storage                     | ~ 500 MB (200 MB for the Middleware + 200 MB reserved for update packages); optional: Storage for SQLite DB (~ 8-10Kb/Receipt) |
 
+:::info SQLite Database
+
+SQLite is the default setting for the database and works well for a single CashBox on a system. With increasing number of CashBoxes on one hardware, we recommend to use a central database instead of SQLite to reduce unsynchronized file I/O caused by the multiple SQLite databases.
+
+:::
 
 ## Windows
 
