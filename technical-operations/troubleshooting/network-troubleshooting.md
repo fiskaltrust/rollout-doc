@@ -95,12 +95,12 @@ The first step in debugging any connectivity issues is typically the Middleware'
 
 If you find any of the following error messages in the log output, it may suggest an issue 
 
-| Error message                                                | Typically suggests                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The remote name could not be resolved                        | [DNS issues](#dns-issues)                                    |
-| Unable to connect to the remote server                       | [General network issues](#network-issues) (e.g. ports blocked) |
-| The request was aborted: Could not create SSL/TLS secure channel | [SSL issues](#ssl-issues)                                    |
-| Failed to connect to all addresses                           | [Connection issue between queue and SCU](#queuescu-connection) |
+| Error message                                                    | Typically suggests                                             |
+| ---------------------------------------------------------------- | -------------------------------------------------------------- |
+| The remote name could not be resolved                            | [DNS issues](#dns-issues)                                      |
+| Unable to connect to the remote server                           | [General network issues](#network-issues) (e.g. ports blocked) |
+| The request was aborted: Could not create SSL/TLS secure channel | [SSL issues](#ssl-issues)                                      |
+| Failed to connect to all addresses                               | [Connection issue between queue and SCU](#queuescu-connection) |
 
 
 
@@ -133,7 +133,7 @@ It may be that your network generally restricts outbound connections and require
 
 :::
 
-If the log refers to a message saying `a connection could not be establish` or that it was `unable to connect to the remote server`, that could mean there was either no Internet connectivity present or some security appliance (e.g. a network firewall) blocked the connection.
+If the log refers to a message saying `a connection could not be established` or that it was `unable to connect to the remote server`, that could mean there was either no Internet connectivity present or some security appliance (e.g. a network firewall) blocked the connection.
 
 All services mentioned in the chapter [Network Requirements](../middleware/network-requirements.md) have to be reachable for the Middleware. These are typically HTTP-based services running on TCP port 443 and can be quickly checked with curl.
 
