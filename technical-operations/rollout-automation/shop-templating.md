@@ -14,7 +14,7 @@ Instead of creating and configuring a CashBox manually, a template can be used t
 
 ## Create & Edit Template
 
-At 'Configuration->Template' you can see the existing templates, copy or edit them and create new ones.
+At `Configuration->Template` you can see the existing templates, copy or edit them and create new ones.
 
 ![Template List](./images/template-shop-list.png)
 
@@ -39,7 +39,7 @@ When you create or edit a template, you have to fill out the following form.
 
 ## Create CashBox from Shop Template
 
-CashBoxes can be created from templates at 'Shop->Products' by buying them like a regular product (see chapter [Shop](../../buy-resell/shop.md)). 
+CashBoxes can be created from templates at `Shop->Products` by buying them like a regular product (see chapter [Shop](../../buy-resell/shop.md)). 
 Please make sure to [surrogate](../../getting-started/operator-onboarding/surrogating.md) into the right PosOperator and select the correct Outlet in the Shop, before adding the template into the shopping cart. The CashBox will be created on Checkout.
 
 :::info Required Products
