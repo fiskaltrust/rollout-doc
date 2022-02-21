@@ -61,7 +61,7 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 |pro |Lower costs, if a hardware signature element is needed|
 |pro |Lower costs, because no server is needed|
 |con |Low reliability for the PosOperator, if SCU is out of operation, all POS-Systems fail|
-|con |Main POS-System can be the performance bottleneck|
+|con |The SCU in the main POS-System can be the performance bottleneck|
 |Restrictions |Due to technical or legal reasons this scenario is not available in every country, please check the country specific notes!|
 
 ### Multiple POS-Systems share one external signature service
@@ -70,7 +70,7 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 
 | facts | description  |
 |:----------------------:|:----------------------|
-|pro |High performance, , as a large number of requests can be distributed to several multiple SCUs |
+|pro |High performance, as a large number of requests can be distributed to several multiple SCUs |
 |pro |Lower costs, if a signature element is shared|
 |pro |High reliability for the PosOperator, even if internet connection fails|
 |Restrictions |Restrictions depending on fair-use-rules or technical limitations are possible. Due to technical or legal reasons not all scenarios are available in every country. |
@@ -88,6 +88,12 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 |con |Main POS-System can be the performance bottleneck|
 |Restrictions | Due to technical or legal reasons this scenario is not available in every country, please check the country specific notes! |
 
+:::tip
+
+Experience values of our partners showed that in exceptional cases terminals become defective. If at this moment a receipt of the defective device is being processed, this can lead to the blocking of a shared queue. This would cause the entire system to fail. You can achieve greater reliability by creating a separate queue for each terminal, as shown in the following diagram. 
+
+:::
+
 ![Main POS-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5B-RR.png "Main POS-System for multiple Terminals")
 
 ### Data center as operational environment
@@ -102,9 +108,8 @@ Several terminals are connected to the fiskaltrust.middleware in our data center
 |pro |High spatial flexibility of the employees|
 |pro |The terminals remain safe in the operational environment |
 |pro |Lower costs, because no POS-System and no server is needed|
-|pro |Lower costs, because no POS-System and no server is needed|
-|con |Low reliability for the PosOperator, if online cash register system is out of reach or operation, all Terminals fail|
-|con |internet connection or online cash register system can be the performance bottleneck|
+|con |Depending on country-specific conditions, reliability for the PosOperator may be limited if the online POS system is not available. |
+|con |Internet connection or online POS-System can be a performance bottleneck|
 |Restrictions |Coordination and cooperation of several providers, systems may result in a high effort of installation |
 
 ## Country-specific information

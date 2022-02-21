@@ -9,15 +9,12 @@ After reading this, you can follow a structured way to determine the source of t
 
 ## Explanation
 
-Unfortunately, problems in the context of complex processes cannot always be avoided. Please use this 
-Troubleshooting Guide on your way to solve or at least describe a problem.
-This will help you avoid waiting times in case you need to contact support. The fiskaltrust.Staff will be happy to handle your requests if you are a PosDealer or a PosCreator. 
-Since we do not know the respective constellations of the POS systems on site and therefore cannot advise, we have to refer PosOperators to their PosDealer. Country-specific exceptions or individual cases are possible, but as a rule, PosOperators receive high-quality support from their PosDealer in a short time.
-
+Unfortunately, problems in the context of complex processes cannot always be avoided. Please use this Troubleshooting Guide on your way to solve or describe a problem. If the problem cannot be solved with the described steps, you have at least reduced waiting times and possible queries if you need to contact the Customer Success Team.
+The fiskaltrust.Staff will be happy to handle your requests if you are a PosDealer or a PosCreator. Since we do not know the respective constellations of the POS systems on site and therefore cannot advise, we have to refer PosOperators to their PosDealer. Country-specific exceptions or individual cases are possible, but as a rule, PosOperators receive high-quality support from their PosDealer in a short time.
 
 ## Work steps
 
-* The better a problem is described and studied, the faster a solution will be found.
+The better a problem is described and studied, the faster a solution will be found.
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -28,7 +25,7 @@ Since we do not know the respective constellations of the POS systems on site an
 
 :::tip Copying expressions made easy
 
-In this documentation and especially in the technical sections you will find expressions which can be executed in a command line or a PowerShell. Note the possibility to move the mouse over the expression. Then a button for copying the expression appears on the right. This way you don't waste time with typing or spelling mistakes. Note the respective explanatory text for notes on where to use the expression and whether any adjustments are necessary.
+The documentation, in particular technical chapters, contains code blocks which can be executed on your system's command line. When hovering with the mouse over such a code block, a copy button will appear in the top right, allowing for the whole code to be copied with one click to your clipboard. This can save time and avoid typos or spelling issues. Please note the respective explanatory text for notes on where to use the code and whether any adjustments are necessary.
 
 :::
 
