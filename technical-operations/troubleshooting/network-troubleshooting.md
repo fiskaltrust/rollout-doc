@@ -164,6 +164,12 @@ As long as you receive an HTTP response with a valid status code (e.g. `200` or 
 
 While most of the fiskaltrust services are web-based and connections can be verified as mentioned under [Checking web services](#checking-web-services), you can also use default system tools, such as Telnet, to check for overall connectivity.
 
+:::tip telnet installation
+
+Telnet does not come pre-installed on Windows. If it hasn't been already installed, please open the Run dialog (Win+R), type `appwiz.cpl` and press `Enter`, choose `Turn Windows features on or off` from the left, and install `Telnet Client`.
+
+:::
+
 For example, to verify whether your system allows connections to `https://packages.fiskaltrust.cloud` on the default HTTPS port 443, you can also run the following command
 
 ```
@@ -171,13 +177,6 @@ telnet packages.fiskaltrust.cloud 443
 ```
 
 If the screen immediately clears and only shows a text cursor, you have established a connection. You can exit Telnet by pressing `Ctrl` + `]`. If Telnet appears to hang or shows any type of error message, that may suggest that you have possible connectivity issues. Please consult your network administrator in that case for more information.
-
-:::tip telnet installation
-
-Telnet does not come pre-installed on Windows. If it hasn't been already installed, please open the Run dialog (Win+R), type `appwiz.cpl` and press `Enter`, choose `Turn Windows features on or off` from the left, and install `Telnet Client`.
-
-:::
-
 
 
 ### SSL
