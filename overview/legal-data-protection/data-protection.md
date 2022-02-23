@@ -10,22 +10,22 @@ After reading this, you can explain what we do to ensure data protection.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import dataAT from '../../_markets/at/overview/legal/_data.mdx';
-import dataFR from '../../_markets/fr/overview/legal/_data.mdx';
-import dataDE from '../../_markets/de/overview/legal/_data.mdx';
+import DataAT from '../../_markets/at/overview/legal/_data.mdx';
+import DataFR from '../../_markets/fr/overview/legal/_data.mdx';
+import DataDE from '../../_markets/de/overview/legal/_data.mdx';
 
 <Tabs groupId="market">
 
   <TabItem value="AT" label="Austria">
-      <dataAT />
+      <DataAT />
   </TabItem>
 
   <TabItem value="FR" label="France">
-      <dataFR />
+      <DataFR />
   </TabItem>
 
   <TabItem value="DE" label="Germany">
-      <dataDE />
+      <DataDE />
   </TabItem>
 
 </Tabs>

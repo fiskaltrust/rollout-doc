@@ -10,22 +10,22 @@ After reading this, you can follow the fiskaltrust Fair-use Policy.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import fairAT from '../../_markets/at/overview/legal/_fair-use-policy.mdx';
-import fairFR from '../../_markets/fr/overview/legal/_fair-use-policy.mdx';
-import fairDE from '../../_markets/de/overview/legal/_fair-use-policy.mdx';
+import FairAT from '../../_markets/at/overview/legal/_fair-use-policy.mdx';
+import FairFR from '../../_markets/fr/overview/legal/_fair-use-policy.mdx';
+import FairDE from '../../_markets/de/overview/legal/_fair-use-policy.mdx';
 
 <Tabs groupId="market">
 
   <TabItem value="AT" label="Austria">
-      <fairAT />
+      <FairAT />
   </TabItem>
 
   <TabItem value="FR" label="France">
-      <fairFR />
+      <FairFR />
   </TabItem>
 
   <TabItem value="DE" label="Germany">
-      <fairDE />
+      <FairDE />
   </TabItem>
 
 </Tabs>
