@@ -10,9 +10,9 @@ After reading this, you can follow the fiskaltrust Fair-use Policy.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import fairAT from '../../_markets/at/overview/legal-data/_fair-use-policy.mdx';
-import fairFR from '../../_markets/fr/overview/legal-data/_fair-use-policy.mdx';
-import fairDE from '../../_markets/de/overview/legal-data/_fair-use-policy.mdx';
+import fairAT from '../../_markets/at/overview/legal/_fair-use-policy.mdx';
+import fairFR from '../../_markets/fr/overview/legal/_fair-use-policy.mdx';
+import fairDE from '../../_markets/de/overview/legal/_fair-use-policy.mdx';
 
 <Tabs groupId="market">
 

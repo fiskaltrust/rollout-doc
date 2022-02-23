@@ -1,5 +1,5 @@
 ---
-slug: /overview/legal-data-protection/compliance-requirements
+slug: /overview/legal-protection/compliance-requirements
 title: Compliance requirements
 ---
 # Compliance requirements
@@ -10,8 +10,8 @@ After reading this, you can explain how to stay legally compliant using fiskaltr
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import complianceAT from '../../_markets/at/overview/legal-data/_compliance.mdx';
-import complianceFR from '../../_markets/fr/overview/legal-data/_compliance.mdx';
+import complianceAT from '../../_markets/at/overview/legal/_compliance.mdx';
+import complianceFR from '../../_markets/fr/overview/legal/_compliance.mdx';
 import complianceDE from '../../_markets/de/overview/legal/_compliance.mdx';
 
 <Tabs groupId="market">
