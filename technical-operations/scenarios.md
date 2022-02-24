@@ -6,7 +6,11 @@ title: Scenarios
 
 ## Rollout Scenarios
 
+:::info summary
+
 After reading this, you can design the setup of the Middleware components and decide how to integrate them into your environment.
+
+:::
 
 ## Explanation
 

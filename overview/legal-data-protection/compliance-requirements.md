@@ -4,7 +4,11 @@ title: Compliance requirements
 ---
 # Compliance requirements
 
+:::info summary
+
 After reading this, you can explain how to stay legally compliant using fiskaltrust products.
+
+:::
 
 ## Country-specific information
 

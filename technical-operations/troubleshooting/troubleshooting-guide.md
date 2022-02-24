@@ -5,7 +5,11 @@ title: Troubleshooting Guide
 
 # Troubleshooting Guide
 
+:::info summary
+
 After reading this, you can follow a structured way to determine the source of the problem.
+
+:::
 
 ## Explanation
 

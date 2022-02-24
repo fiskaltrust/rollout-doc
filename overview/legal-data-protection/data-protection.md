@@ -4,7 +4,11 @@ title: Data Protection
 ---
 # Data Protection
 
+:::info summary
+
 After reading this, you can explain what we do to ensure data protection.
+
+:::
 
 ## Country-specific information
 

@@ -4,7 +4,11 @@ title: Fair-use-Policy
 ---
 # Fair-use-Policy
 
+:::info summary
+
 After reading this, you can follow the fiskaltrust Fair-use Policy.
+
+:::
 
 ## Country-specific information
 
