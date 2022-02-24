@@ -10,6 +10,14 @@ After reading this, you can perform updates of the Middleware efficiently.
 
 :::
 
+## Information about updates
+
+When a new update is available it will be announced on the fiskaltrust.Portal. Check the [release notes](https://docs.fiskaltrust.cloud/docs/release-notes/) for details about the update and decide if you want to update or not.
+
+import ReactPlayer from "react-player"
+
+<ReactPlayer controls url={require("./media/update-middleware.mp4").default} /><br />
+
 ## Bulk update CashBoxes
 
 You can update many CashBoxes at the same time using the fiskaltrust.Portal. This is useful in case fiskaltrust provides a newer version of a software package and you need to update multiple of your running fiskaltrust.Middleware instances (e.g. the package version of the SQLite Queue needs to be replaced for all customers). 
@@ -40,11 +48,6 @@ Check the overview and if you are satisfied with the information, press the `Con
 Do not forget to activate the `Rebuild Configuration` option. Otherwise you will have to do this manually for each affected CashBox before rolling it out. Only then will the configuration change be available for download for the affected fiskaltrust.Middleware instances.
 
 :::
-
-import ReactPlayer from "react-player"
-
-<ReactPlayer controls url={require("./media/update-middleware.mp4").default} /><br />
-
 
 ## Restart the fiskaltrust.Middleware
 
