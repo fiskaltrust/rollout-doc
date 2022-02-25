@@ -113,9 +113,9 @@ The arrays `ftSignaturCreationDevices`, `ftQueues`, and `helpers` each contain c
 
 
 
-### Configuration object
+### Package object
 
-A configuration object specifies the entire setup configuration of an individual component (e.g. queue or SCU).
+A package object specifies the entire setup configuration of an individual component (e.g. queue or SCU).
 
 ```json
 {
@@ -140,3 +140,25 @@ A configuration object specifies the entire setup configuration of an individual
 
 
 ### Available packages
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import PackagesAT from '../../_markets/at/technical-operations/rollout-automation/templates/_packages.mdx';
+import PackagesFR from '../../_markets/fr/technical-operations/rollout-automation/templates/_packages.mdx';
+import PackagesDE from '../../_markets/de/technical-operations/rollout-automation/templates/_packages.mdx';
+
+<Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <PackagesAT />
+  </TabItem>
+
+  <TabItem value="FR" label="France">
+    <PackagesFR />
+  </TabItem>
+
+  <TabItem value="DE" label="Germany">
+    <PackagesDE />
+  </TabItem>
+
+</Tabs>
