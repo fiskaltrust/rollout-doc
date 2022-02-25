@@ -9,7 +9,7 @@ Queue package
 
 ```json
 {
-	"field1": "value1", // comment
+	"field1": "value1",
 	"field2": "value2",
 	"field3": "value3",
 	"field4": "value4"
@@ -31,23 +31,24 @@ Queue package for a Entity Framework backed database
 ```
 </details>
 
-#### Package "fiskaltrust.service.sqlite"
+#### Packages "fiskaltrust.service.sqlite" and "fiskaltrust.service.sqlite.mono"
 
-Queue package for a locally hosted SQLite database
+Queue package for a locally hosted SQLite database.
 
 <details>
 <summary>Configuration</summary>
 
 ```json
 {
+	"init_ftQueue": {},
+	"init_ftQueueAT": {},
+	"init_ftSignaturCreationUnitAT": {},
+	"connectionstring": ""
 }
 ```
 </details>
 
-#### Package "fiskaltrust.service.sqlite.mono"
-
-
-
+-----
 
 ### SCUs
 
@@ -122,16 +123,10 @@ Helper package for the balancer service
 
 #### Package "fiskaltrust.service.helper.helipad"
 
-Helper package for the balancer service
+Helper package for the portal communication plugin.
 
-<details>
-<summary>Configuration</summary>
+This package does not require any special configuration settings.
 
-```json
-{
-}
-```
-</details>
 
 #### Package "fiskaltrust.service.helper.rest"
 

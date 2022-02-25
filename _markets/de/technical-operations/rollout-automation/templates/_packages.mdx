@@ -28,12 +28,12 @@ This object contains general initialisation values for this queue.
 	"ftQueueId": "|[queueX_id]|",
 	"ftCashBoxId": "|[cashbox_id]|",
 	"CountryCode": "DE",
-	"Timeout": 10000
+	"Timeout": 15000
 }
 ```
 
 * `ftQueueId` - Reference to the ID of the queue. Needs to be the same value as in `Id` of the embedding package object. [`|[queue{0-9}_id]|`](#pre-defined-system-variables) can be used here.
-* `ftCashBoxId` - Reference to the ID of the CashBox. Needs to be the same value as in `ftCashBoxId` of the overall CashBox object. [`|[cashbox_id]|`](#pre-defined-system-variables) can be 
+* `ftCashBoxId` - Reference to the ID of the CashBox. Needs to be the same value as in `ftCashBoxId` of the overall CashBox object. [`|[cashbox_id]|`](#pre-defined-system-variables) can be used here.
 * `CountryCode` - [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) country code. For Germany, this should be `DE`.
 * `Timeout` * - Optional timeout value in milliseconds.
 
@@ -51,7 +51,7 @@ This object contains Germany-specific initialisation values for this queue.
 ```
 
 * `ftQueueDEId` - Reference to the ID of the queue. Needs to be the same value as in `Id` of the embedding package object. [`|[queue{0-9}_id]|`](#pre-defined-system-variables) can be used here.
-* `CashBoxIdentification` - [`|[queue{0-9}_id_base64withoutspecialchars]|`](#pre-defined-system-variables) can be used here.
+* `CashBoxIdentification` - The ID of the POS system. Also used for the registration with the TSE. [`|[queue{0-9}_id_base64withoutspecialchars]|`](#pre-defined-system-variables) can be used here.
 * `ftSignaturCreationUnitDEId` - Reference to the ID of the SCU to be used for this queue. [`|[scu{0-9}_id]|`](#pre-defined-system-variables) can be used here.
 
 
