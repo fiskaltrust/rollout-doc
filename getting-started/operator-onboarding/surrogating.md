@@ -15,7 +15,7 @@ As mentioned in the section [Company Roles](../company-roles.md), _fiskaltrust_ 
 To support and maintain a PosOperator's POS-System, PosDealers switch from their account to the PosOperator's account, change settings, assign contracts or order products and switch back to their own account - they use **surrogating**.
 For your visualization, the process of surrogating is described here with the example of checking the master data of an PosOperator. Please note, that there is no bulk action, surrogating is a method to work with your fiskaltrust.account and one PosOperators account only.
 
-![overview surrogating accounts](images/1-overview-surrogating-accounts.png "overview surrogating accounts")
+![overview surrogating accounts](images/1-overview-surrogating-accounts-relaunch.png "overview surrogating accounts")
 
 ### Prerequisites
 

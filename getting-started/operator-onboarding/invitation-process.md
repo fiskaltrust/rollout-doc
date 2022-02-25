@@ -42,7 +42,7 @@ There are two ways to add and assign PosOperators to your Account as a PosDealer
 
 ### Overview individual invitation
 
-![invitation process individual](images/1-onboarding-individual.png "1 invitation process individual")  
+![invitation process individual](images/1-onboarding-individual-relaunch.png "1 invitation process individual")  
 
 ### Explanation individual invitation
 
@@ -100,7 +100,7 @@ import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/inv
 
 ### Overview bulk process
 
-![Invitation of PosOperators in a bulk process](images/2-onboarding-bulk.png "2-onboarding-bulk.png")  
+![Invitation of PosOperators in a bulk process](images/2-onboarding-bulk-relaunch.png "2-onboarding-bulk.png")  
 
 ### Explanation bulk process
 
