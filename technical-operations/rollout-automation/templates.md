@@ -136,29 +136,3 @@ A package object specifies the entire setup configuration of an individual compo
 | `Version`       | String           |    no    | The package version to be used. If not specified, the current version will be used. |
 | `Configuration` | Object           |    no    | The configuration data for this component.                   |
 | `Description`   | String           |    no    | A description of this component.                             |
-
-
-
-### Available packages
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import PackagesAT from '../../_markets/at/technical-operations/rollout-automation/templates/_packages.mdx';
-import PackagesFR from '../../_markets/fr/technical-operations/rollout-automation/templates/_packages.mdx';
-import PackagesDE from '../../_markets/de/technical-operations/rollout-automation/templates/_packages.mdx';
-
-<Tabs groupId="market">
-
-  <TabItem value="AT" label="Austria">
-    <PackagesAT />
-  </TabItem>
-
-  <TabItem value="FR" label="France">
-    <PackagesFR />
-  </TabItem>
-
-  <TabItem value="DE" label="Germany">
-    <PackagesDE />
-  </TabItem>
-
-</Tabs>
