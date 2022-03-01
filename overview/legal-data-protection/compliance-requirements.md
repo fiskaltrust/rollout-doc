@@ -10,6 +10,8 @@ After reading this, you can explain how to stay legally compliant using fiskaltr
 
 :::
 
+![words in progress](images/words-in-progress.png "words in progress")
+
 ## Country-specific information
 
 import Tabs from '@theme/Tabs';

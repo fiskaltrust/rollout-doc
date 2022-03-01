@@ -9,6 +9,8 @@ After reading this, you can explain fiskaltrust terms of service.
 
 :::
 
+![words in progress](images/words-in-progress.png "words in progress")
+
 ## Country-specific information
 
 import Tabs from '@theme/Tabs';
