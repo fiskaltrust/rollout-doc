@@ -14,7 +14,6 @@ This Fair Use Policy applies to the use of site-related products of fiskaltrust 
 
 This section defines and explains the terms used in this Fair Use Policy.
 
-
 ### Outlet
 
 An outlet generally represents a physical location (branch or subsidiary) of the PosOperator (Operator of a POS-System).  
