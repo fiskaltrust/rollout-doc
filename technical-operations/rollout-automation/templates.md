@@ -59,7 +59,7 @@ The following variables are pre-defined by execution scope of templates.
 | `cashbox_description`                     | Defaults to the same value as `description`.                 |
 | `cashbox_id`                              | A random UUID for the CashBox. Used to set or reference the CashBox ID. |
 | `count`                                   | The number of queues in your account, plus one.              |
-| `description`                             | Description of the CashBox, defaulting to `ft{UTC timestamp}`. |
+| `description`                             | Description of the CashBox, defaulting to `ft{UTC timestamp}` (e.g. `ft19700101000000`). |
 | `helper{0-9}_description`                 | Defaults to the same value as `description`.                 |
 | `helper{0-9}_id`                          | Ten random UUIDs for helper components. Used to set or reference helper IDs. |
 | `helper{0-9}_url`                         | Ten helper URLs, defaulting to `net.pipe://localhost/{helperX_id}`. |
