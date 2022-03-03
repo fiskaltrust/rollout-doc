@@ -54,24 +54,46 @@ For example, to use the variable `my_variable` in a template, you'd use `|[my_va
 
 The following variables are pre-defined by execution scope of templates.
 
-| Variable                                    | Content                                                      |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| `cashbox_id`                                | A random UUID for the CashBox. Used to set or reference the CashBox ID. |
-| `helper{0-9}_id`                            | Ten random UUIDs for helper components. Used to set or reference helper IDs. |
-| `queue{0-9}_id`                             | Ten random UUIDs for queue components. Used to set or reference queue IDs. |
-| `queue{0-9}_id_base64withoutspecialchars`   | Base64 representation (filtered for alphanumeric characters) of the respective `queueX_id` value. |
-| `reference_scu_{type}_{key}_{value}_{attr}` | References the indicated attribute (`attr`) of an existing SCU with the given key/value pair (`key`/`value`) and of the specified type (`type`). |
-| `scu{0-9}_id`                               | Ten random UUIDs for SCU components. Used to set or reference SCU IDs. |
+| Variable                                  | Content                                                      |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| `cashbox_description`                     | Defaults to the same value as `description`.                 |
+| `cashbox_id`                              | A random UUID for the CashBox. Used to set or reference the CashBox ID. |
+| `count`                                   | The number of queues in your account, plus one.              |
+| `description`                             | Description of the CashBox, defaulting to `ft{UTC timestamp}`. |
+| `helper{0-9}_description`                 | Defaults to the same value as `description`.                 |
+| `helper{0-9}_id`                          | Ten random UUIDs for helper components. Used to set or reference helper IDs. |
+| `helper{0-9}_url`                         | Ten helper URLs, defaulting to `net.pipe://localhost/{helperX_id}`. |
+| `queue{0-9}_description`                  | Defaults to the same value as `description`.                 |
+| `queue{0-9}_id_base64withoutspecialchars` | Base64 representation (filtered for alphanumeric characters) of the respective `queue{X}_id` value. |
+| `queue{0-9}_id`                           | Ten random UUIDs for queue components. Used to set or reference queue IDs. |
+| `queue{0-9}_url`                          | Ten queue URLs, defaulting to `http://localhost:1200/fiskaltrus{X}`. |
+| `scu{0-9}_description`                    | Defaults to the same value as `description`.                 |
+| `scu{0-9}_id`                             | Ten random UUIDs for SCU components. Used to set or reference SCU IDs. |
+| `scu{0-9}_url`                            | Ten SCU URLs, defaulting to `net.pipe://localhost/{scuX_id}`. |
 
-*Curly brackets denote dynamic values within a variable.*
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import VariablesAT from '../../_markets/at/technical-operations/rollout-automation/templates/_variables.mdx';
+import VariablesFR from '../../_markets/fr/technical-operations/rollout-automation/templates/_variables.mdx';
+import VariablesDE from '../../_markets/de/technical-operations/rollout-automation/templates/_variables.mdx';
 
+<Tabs groupId="market">
 
+  <TabItem value="AT" label="Austria">
+    <VariablesAT />
+  </TabItem>
 
-#### References
+  <TabItem value="FR" label="France">
+    <VariablesFR />
+  </TabItem>
 
+  <TabItem value="DE" label="Germany">
+    <VariablesDE />
+  </TabItem>
 
+</Tabs>
 
-
+*Curly brackets denote dynamic values.*
 
 ### Custom variables
 
