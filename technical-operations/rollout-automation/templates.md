@@ -54,10 +54,13 @@ For example, to use the variable `my_variable` in a template, you'd use `|[my_va
 
 The following variables are pre-defined by execution scope of templates.
 
+*Curly brackets denote dynamic values.*
+
 | Variable                                  | Content                                                      |
 | ----------------------------------------- | ------------------------------------------------------------ |
 | `cashbox_description`                     | Defaults to the same value as `description`.                 |
 | `cashbox_id`                              | A random UUID for the CashBox. Used to set or reference the CashBox ID. |
+| `cashbox_ipaddress`                       | The IP address of the machine where the CashBox is running. Defaults to an empty string. |
 | `cashbox_producttype`                     | The product type.                                            |
 | `count`                                   | The number of queues in your account, plus one.              |
 | `description`                             | Description of the CashBox, defaulting to `ft{UTC timestamp}` (e.g. `ft19700101000000`). |
@@ -68,7 +71,7 @@ The following variables are pre-defined by execution scope of templates.
 | `queue{0-9}_description`                  | Defaults to the same value as `description`.                 |
 | `queue{0-9}_id_base64withoutspecialchars` | Base64 representation (filtered for alphanumeric characters) of the respective `queue{X}_id` value. |
 | `queue{0-9}_id`                           | Ten random UUIDs for queue components. Used to set or reference queue IDs. |
-| `queue{0-9}_url`                          | Ten queue URLs, defaulting to `http://localhost:1200/fiskaltrus{X}`. |
+| `queue{0-9}_url`                          | Ten queue URLs, defaulting to `http://localhost:1200/fiskaltrust{X}`. |
 | `scu{0-9}_description`                    | Defaults to the same value as `description`.                 |
 | `scu{0-9}_id`                             | Ten random UUIDs for SCU components. Used to set or reference SCU IDs. |
 | `scu{0-9}_url`                            | Ten SCU URLs, defaulting to `net.pipe://localhost/{scuX_id}`. |
@@ -94,8 +97,6 @@ import VariablesDE from '../../_markets/de/technical-operations/rollout-automati
   </TabItem>
 
 </Tabs>
-
-*Curly brackets denote dynamic values.*
 
 ### Custom variables
 
