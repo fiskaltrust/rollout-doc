@@ -169,6 +169,8 @@ There are several ways to help.
 
 ### Troubleshooting 
 
+#### status or error messages 
+
 ![8-onboarding](images/8-onboarding-portal.png "8-onboarding-portal")
 
 | steps | description                                                                                                                |
@@ -177,6 +179,7 @@ There are several ways to help.
 |![Number 2](images/Numbers/circle-2o.png) |Use `Assign` to send / resend this single E-mail invitation or `Assign all PosOperators` to send all.|
 |![Number 3](images/Numbers/circle-3o.png) |With `Edit` you can open a screen to edit the data of the PosOperator, if they are not correct or complete and can not be assigned to the PosDealers account.|
 |![Number 4](images/Numbers/circle-4o.png) |Use `Delete` to remove the data of a not yet assigned PosOperator.|
+|  |If `This e-mail address already exists` appears, see [Onboarding of existing PosOperators](./invitation-process.md#onboarding-of-existing-posoperators) .|
 
 ### Assigning PosOperators in a bulk process
 
@@ -187,6 +190,22 @@ There are several ways to help.
 |![Number 1](images/Numbers/circle-1o.png) |By clicking on `Assign all PosOperator users` the E-mail invitation can be sent to **all**  PosOperators who have not yet been invited.  |
 |![Number 2](images/Numbers/circle-2o.png) |`+Add` is used for a manual invitation, see chapter [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator). |
 |![Number 3](images/Numbers/circle-3o.png) |Choose `History` for control or also repair of E-mail invitations.|
+
+### Onboarding of existing PosOperators 
+
+![15-onboarding](images/15-onboarding-already-existing-PosOperators.png "15 onboarding existing PosOperators")
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](images/Numbers/circle-1o.png) |By clicking on `Assign all PosOperator users` (`PosOperators`/ `Invitation`) the E-mail invitation can be sent to **all**  PosOperators who have not yet been invited. If the message `This e-mail address already exists` is shown, the PosOperator has been onboarded by another PosDealer.|
+|![Number 2](images/Numbers/circle-2o.png) |**Do not, under any circumstances, invite this PosOperator again using a different email address.** This will cause problems when verifying business identifications used for authentication to tax authorities or third party services.|
+|![Number 3](images/Numbers/circle-3o.png) |Inform the PosOperator to add your account as new or further PosDealer.|
+|![Number 4](images/Numbers/circle-4o.png) |PosOperators open the fiskaltrust.Portal and choose `PosOperator` / `Search PosDealer/Consultant`.|
+|![Number 5](images/Numbers/circle-5o.png) |PosOperators enter search terms like name or e-mail address of your account as a PosDealer.|
+|![Number 6](images/Numbers/circle-6o.png) |After checking name, e-mail address and access rights they choose `Request assignement PosDealer`.|
+|![Number 7](images/Numbers/circle-7o.png) |You as a PosDealer have to choose `PosOperator` / `Overview`, search the new PosOperator and tick `Accept`. The result is an active link, which can be used for surrogating.|
+
+
 
 ### Options with invited PosOperators
 
