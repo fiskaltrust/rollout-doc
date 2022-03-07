@@ -126,13 +126,13 @@ Templates are classic JSON documents with a root object and five root-level fiel
 }
 ```
 
-| Field                       | Type                                                    | Required | Description                                                  |
-| --------------------------- | ------------------------------------------------------- | :------: | ------------------------------------------------------------ |
-| `ftCashBoxId`               | String                                                  |   yes    | Indicates the ID of the CashBox. Typically, the variable [`cashbox_id`](#pre-defined-system-variables) here, to ensure a unique value is selected when the template is instantiated. |
-| `ftSignaturCreationDevices` | Array of [configuration objects](#configuration-object) |    no    | A list of all SCUs managed by this CashBox.                  |
-| `ftQueues`                  | Array of [configuration objects](#configuration-object) |    no    | A list of all queues managed by this CashBox.                |
-| `helpers`                   | Array of [configuration objects](#configuration-object) |    no    | A list of all helpers managed by this CashBox.               |
-| `TimeStamp`                 | Number                                                  |    no    | The time when the CashBox was updated. Please see [DateTime](https://docs.microsoft.com/dotnet/api/system.datetime.ticks) for more details on the format. |
+| Field                       | Type                                        | Required | Description                                                  |
+| --------------------------- | ------------------------------------------- | :------: | ------------------------------------------------------------ |
+| `ftCashBoxId`               | String                                      |   yes    | Indicates the ID of the CashBox. Typically, the variable [`cashbox_id`](#pre-defined-system-variables) here, to ensure a unique value is selected when the template is instantiated. |
+| `ftSignaturCreationDevices` | Array of [package objects](#package-object) |    no    | A list of all SCUs managed by this CashBox.                  |
+| `ftQueues`                  | Array of [package objects](#package-object) |    no    | A list of all queues managed by this CashBox.                |
+| `helpers`                   | Array of [package objects](#package-object) |    no    | A list of all helpers managed by this CashBox.               |
+| `TimeStamp`                 | Number                                      |    no    | The time when the CashBox was updated. Please see [DateTime](https://docs.microsoft.com/dotnet/api/system.datetime.ticks) for more details on the format. |
 
 The arrays `ftSignaturCreationDevices`, `ftQueues`, and `helpers` each contain configuration object entries for each component the Middleware is supposed to service for the given component type.
 
