@@ -56,6 +56,7 @@ A very basic request example would be
 POST /api/configuration HTTP/1.1
 Host: helipad.fiskaltrust.cloud
 Content-Length: 167
+Content-Type: application/json
 accountid: ACCOUNT_ID
 accesstoken: ACCOUNT_ACCESS_TOKEN
 
@@ -85,6 +86,12 @@ Invoke-WebRequest -Uri https://helipad.fiskaltrust.cloud/api/configuration -Meth
 If using the shell, please pay particular attention that all applicable characters are appropriately escaped. [Shell escaping](#shell-escaping) has more details on that.
 
 :::
+
+
+
+### Customising CashBox parameters
+
+Please see [Custom variables](#custom-variables) for more details on how to supply custom parameters for your CashBox and override the values of default system parameters. For example, you can set the outlet by providing the outlet ID with the `outlet_number` parameter.
 
 
 
@@ -137,7 +144,7 @@ In short, a traditional JSON string with quotation marks escaped with a slash, n
 
 :::tip
 
-You can escape the template with a [number of tools](https://duckduckgo.com/?q=escape+json), such as e.g. [freeformatter.com](https://www.freeformatter.com/json-escape.html) or [codebeautify.org](https://codebeautify.org/json-escape-unescape). If you are comfortable with the browser console (F12), you can also use [JSON.stringify()](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to escape the template object.
+You can escape the template with a [number of tools](https://duckduckgo.com/?q=escape+json), such as e.g. [freeformatter.com](https://www.freeformatter.com/json-escape.html) or [codebeautify.org](https://codebeautify.org/json-escape-unescape). If you are comfortable with the browser console (F12), you can also use [JSON.stringify()](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to escape the template object. **Please make sure the string is enclosed by quotation marks.**
 
 :::
 

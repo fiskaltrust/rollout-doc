@@ -134,7 +134,7 @@ Templates are classic JSON documents with a root object and five root-level fiel
 | `helpers`                   | Array of [package objects](#package-object) |    no    | A list of all helpers managed by this CashBox.               |
 | `TimeStamp`                 | Number                                      |    no    | The time when the CashBox was updated. Please see [DateTime](https://docs.microsoft.com/dotnet/api/system.datetime.ticks) for more details on the format. |
 
-The arrays `ftSignaturCreationDevices`, `ftQueues`, and `helpers` each contain configuration object entries for each component the Middleware is supposed to service for the given component type.
+The arrays `ftSignaturCreationDevices`, `ftQueues`, and `helpers` each contain package object entries for each component the Middleware is supposed to service for the given component type.
 
 
 
