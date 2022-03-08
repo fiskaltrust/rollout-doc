@@ -24,6 +24,7 @@ At `Configuration->Template` you can see the existing templates, copy or edit th
 |![Number 2](../../images/numbers/circle-2o.png) |Templates are visible for different scopes of users: Private (owner only), Deactivated (not visible in shop), Public for (your) PosOperators, Public for (your) PosDealers. |
 |![Number 3](../../images/numbers/circle-3o.png) |You can copy an existing template.  |
 |![Number 4](../../images/numbers/circle-4o.png) |Edit an existing template. |
+|![Number 5](../../images/numbers/circle-5o.png) |Create a new template. |
 
 When you create or edit a template, you have to fill out the following form.
 
