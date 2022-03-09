@@ -46,17 +46,19 @@ import ReactPlayer from "react-player"
 
 ## Our software documentation:
 
-* The main points of the descriptions are based on the following sources
-    * fixing problems encountered during the development process
-    * helping the end user understand the product 
-    * helping PosCreators and PosDealers and the CST find relevant information
-* The used master data is fictitious as far as possible
-* Is based on fundamental knowledge of our customers' frameworks
+* is based on fundamental knowledge of our customers' frameworks
 * creates a basic understanding of our comprehensive approach
 * helps you to understand our products
 * gives you and your staff the ability to accomplish tasks at hand
 * provides solutions when you encounter problems using our products
 * helps you to search and quickly find a specific section
+* uses master data, which is fictitious, as far as possible
+
+
+The main points of the descriptions are based on the following sources
+* fixing problems encountered during the development process
+* helping the end user understand the product 
+* helping PosCreators and PosDealers and the CST find relevant information
 
 ### General offers
 
