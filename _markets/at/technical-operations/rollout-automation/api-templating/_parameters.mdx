@@ -1,0 +1,27 @@
+
+#### Queue parameters
+
+| Parameter                        | Description                                            |
+| -------------------------------- | ------------------------------------------------------ |
+| `queue{0-n}_closedsystemkind`    |                                                        |
+| `queue{0-n}_closedsystemnote`    |                                                        |
+| `queue{0-n}_encryptionkeybase64` | The encryption key used for this queue, Base64-encoded |
+
+
+
+#### SCU parameters
+
+Each parameter can be specified globally or per SCU (in parentheses).
+
+| Parameter                                          | Description                                      |
+| -------------------------------------------------- | ------------------------------------------------ |
+| `CertificateBase64` (`scu{0-n}_certificatebase64`) | The certificate used by this SCU, Base64-encoded |
+| `Mode` (`scu{0-n}_mode`)                           |                                                  |
+| `SN` (`scu{0-n}_sn`)                               |                                                  |
+| `ZDA` (`scu{0-n}_zda`)                             |                                                  |
+
+:::caution
+
+Global values will override SCU specific ones.
+
+:::
