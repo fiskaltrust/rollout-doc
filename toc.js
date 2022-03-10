@@ -14,10 +14,10 @@ module.exports = {
 					type: 'category',
 					label: 'Legal/Data Protection',
 					items: [
-						'rollout-doc/overview/legal-data-protection/compliance-requirements',
-						'rollout-doc/overview/legal-data-protection/terms-of-service',
-						'rollout-doc/overview/legal-data-protection/fair-user-policy',
-						'rollout-doc/overview/legal-data-protection/data-protection'
+						//'rollout-doc/overview/legal-data-protection/compliance-requirements',
+						//'rollout-doc/overview/legal-data-protection/terms-of-service',
+						'rollout-doc/overview/legal-data-protection/fair-use-policy',
+						//'rollout-doc/overview/legal-data-protection/data-protection'
 					]
 				}
 			]
