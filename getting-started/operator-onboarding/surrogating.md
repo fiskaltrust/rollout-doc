@@ -10,7 +10,7 @@ After reading this, you can explain the prerequisites to act in the fiskaltrust.
 
 ## Explanation
 
-As mentioned in the section [Company Roles](../company-roles.md), _fiskaltrust_ distinguishes company roles in the context of the fiskaltrust.Portal and its role management. The end-users of the POS-Systems activate the role contract of an **PosOperator**, POS-System distributors activate the role contract of an **PosDealer**.
+As mentioned in the section [Company Roles](../company-roles.md), fiskaltrust distinguishes company roles in the context of the fiskaltrust.Portal and its role management. The end-users of the POS-Systems activate the role contract of an **PosOperator**, POS-System distributors activate the role contract of an **PosDealer**.
 
 To support and maintain a PosOperator's POS-System, PosDealers switch from their account to the PosOperator's account, change settings, assign contracts or order products and switch back to their own account - they use **surrogating**.
 For your visualization, the process of surrogating is described here with the example of checking the master data of an PosOperator. Please note, that there is no bulk action, surrogating is a method to work with your fiskaltrust.account and one PosOperators account only.
@@ -23,12 +23,12 @@ For your visualization, the process of surrogating is described here with the ex
 2. You have configured invitations to PosOperators like described under [Preparation of Invitations](invitation-process.md/#preparation-of-invitations).
 3. The PosOperator followed the invitation by activating the role contract.
 4. There have no changes been, neither with other role contracts, nor to your authorizations.
-5. You as a PosDealer check the status of our invited PosOperators with PosOperator / Overview:
+5. You as a PosDealer check the status of our invited PosOperators with `PosOperator` / `Overview`:
 
 * If the name of the PosOperator is an active link, the account is active.
 * If the name of the PosOperator is an inactive link, your invitation is not yet accepted. Please read and follow the instructions at [Invitation process / Troubleshooting](invitation-process.md#troubleshooting).
 
-6. Under the table of PosOperators (`PosOperator` / `Overview`) you will find a download opportunity. This may help you with an overview of active and inactive PosOperator-Accounts and to contact them.  
+6. Under the table of PosOperators (`PosOperator` / `Overview`) you will find a `download` opportunity. This may help you with an overview of active and inactive PosOperator-Accounts and to contact them.  
 
 ### Work steps for surrogating
 
@@ -37,8 +37,8 @@ For your visualization, the process of surrogating is described here with the ex
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Choose `PosOperator` / `Overview`  |
-|![Number 2](images/Numbers/circle-2o.png) |Enter a search term with at least four characters for the desired PosOperator.  |
-|![Number 3](images/Numbers/circle-3o.png) |With `Enter` or the Symbol for `Search` the datasets of those PosOperators, whose names or E-mail addresses matches your criteria will be displayed. Without a search term, all are displayed.  |
+|![Number 2](images/Numbers/circle-2o.png) |Enter a search term for the desired PosOperator.  |
+|![Number 3](images/Numbers/circle-3o.png) |With `Enter` or the Symbol for `Search` the datasets of those PosOperators, whose names or E-mail addresses matches your criteria will be displayed. Without a search term, all PosOperators are displayed.  |
 |![Number 4](images/Numbers/circle-4o.png) |If the name of the PosOperator is an active link, the account is active. Choose that link to switch to the PosOperators account.  |
 
 ![surrogating accounts](images/3-surrogating-accounts.png "surrogating accounts")

@@ -25,18 +25,19 @@ There are two ways to add and assign PosOperators to your Account as a PosDealer
 1. Choose `PosOperator` / `Overview`.  
 2. A list of the already assigned PosOperators is shown.  
 3. With `PosOperator` / `Invitation` you will find options to add PosOperators.  
-4. For adding a single PosOperator, finish reading this chapter and see afterwards [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator).
-5. For adding several PosOperators, finish reading this chapter and change then to [_Invitation of PosOperators_](#bulk-invitation-of-posoperators).
+4. To add a single PosOperator, perform the preparations as described in this chapter and then switch to  [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator).
+5. For adding several PosOperators, perform the preparations as described in this chapter and change then to [_Invitation of PosOperators_](#bulk-invitation-of-posoperators).
 6.  Checking or changing the settings for the invitations is **inevitable for both ways**. Therefore, regardless of the further way, prepare the settings first.  To do this, select `PosOperator` / `Invitation`.  
+7. Control or change the settings for the invitation  
 
 ![invitation process preparation](images/11-onboarding-portal.png "11 invitation process individual")  
-7. Control or change the settings for the invitation:  
+
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](images/Numbers/circle-1o.png)| PDF-Attachment: Avoid confusing your PosOperators when they receive an E-mail invitation from an expectable unknown source like sandbox@fiskaltrust.TLD or robot@fiskaltrust.TLD. Explain in an accompanying letter that you as PosDealer are extending your offers and invite your PosOperators to register with the fiskaltrust.Portal via the confirmation link. With `Choose file...`and `Import` your document will be added as an attachment to the invitation.  |
-|![Number 2](images/Numbers/circle-2o.png)| add information text:  The automated E-mail invitation to your PosOperator from an source like like sandbox@fiskaltrust.topleveldomain or robot@fiskaltrust.TLD can be supplemented with your text ([see preview](invitation-process.md#preview-of-the-e-mail-invitation)). Use this text block up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as a PosDealer extend your offers and invite your PosOperators to register with the fiskaltrust.Portal via the confirmation link.  |
-|![Number 3](images/Numbers/circle-3o.png)| Surrogate rights:  Set the rights you should have as PosDealer after switching to the PosOperator's account to `FULL`. Otherwise, you would have access to the PosOperator's account, but you would not be able to conclude contracts on his behalf. But these are necessary for the cooperation with third parties.  |
+|![Number 1](images/Numbers/circle-1o.png)| `PDF-Attachment`: Avoid confusing your PosOperators when they receive an E-mail invitation from an expectable unknown source like sandbox@fiskaltrust.TLD or robot@fiskaltrust.TLD. Explain in an accompanying letter that you as PosDealer are extending your offers and invite your PosOperators to register with the fiskaltrust.Portal via the confirmation link. With `Choose file...`and `Import` your document will be added as an attachment to the invitation.  |
+|![Number 2](images/Numbers/circle-2o.png)| `additional information`:  The automated E-mail invitation to your PosOperator from an source like sandbox@fiskaltrust.topleveldomain or robot@fiskaltrust.TLD can be supplemented with your text ([see preview](invitation-process.md#preview-of-the-e-mail-invitation)). Use this text block up to a maximum of 400 characters to inform your PosOperators personally. Explain that you as a PosDealer extend your offers and invite your PosOperators to register with the fiskaltrust.Portal via the confirmation link.  |
+|![Number 3](images/Numbers/circle-3o.png)| `Surrogate rights`:  Set the rights you should have as PosDealer after switching to the PosOperator's account to `FULL`. Otherwise, you would have access to the PosOperator's account, but you would not be able to conclude contracts on his behalf. But these are necessary for the cooperation with third parties.  |
 
 ## Invitation of a single PosOperator
 
