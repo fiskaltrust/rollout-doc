@@ -89,37 +89,9 @@ If using the shell, please pay particular attention that all applicable characte
 
 
 
-### Customising CashBox parameters
-
-Please see [Custom variables](#custom-variables) for more details on how to supply custom parameters for your CashBox and override the values of default system parameters. For example, you can set the outlet by providing the outlet ID with the `outlet_number` parameter.
-
-
-
-### Handling the response & provisioning the CashBox
-
-If the response you receive indicates a status code `200`, the request properly went through and a new CashBox should have been created. In this case, the response body will contain a JSON object (not an escaped JSON string) with the details of that new CashBox.
-
-```
-{
-	"cashBoxId": "",
-	"accessToken": "",
-	"configuration": ""
-}
-```
-
-| Field           | Description                                                  |
-| --------------- | ------------------------------------------------------------ |
-| `cashBoxId`     | The ID of the created CashBox.                               |
-| `accessToken`   | The access token of the created CashBox.                     |
-| `configuration` | The configuration object of the new CashBox, as escaped JSON string and based on the provided template. |
-
-Here, in particular `cashBoxId` and `accessToken` are interesting, as they allow you to automatically provision the CashBox. To do that, please deploy a vanilla [Launcher](../middleware/launcher.md) instance on the destination system and set its [CashBox ID and Access Token parameters](../middleware/configuration.md) to the values you received in the response.
-
-
-
 ### Escaping the template
 
-Please do note, the API does **not** expect the JSON object as plain JSON object but as escaped JSON string. For example, the following template
+Please do note, the API does **not** expect a plain JSON object in the request body but rather a (properly escaped) JSON string. For example, the following template
 
 
 ```json
@@ -155,6 +127,82 @@ If you run the request from the command line, please also pay attention to escap
 ```
 -Body "`"{\`"ftCashBoxId\`": \`"|[cashbox_id]|\`"}`""
 ```
+
+
+
+
+### Customising parameters
+
+Similarly to [Custom variables](#custom-variables), you can customise many of the parameters of the individual CashBox components by providing their values in the query string.
+
+#### Queue parameters
+
+There are three main queue parameters, each using a **zero-based** index to indicate the queue of the template, where you'd like to apply the value.
+
+| Parameter                          | Description                                                  |
+| ---------------------------------- | ------------------------------------------------------------ |
+| `queue{0-n}_cashboxidentification` | The identifier of the CashBox.                               |
+| `queue{0-n}_countrycode`           | [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the queue. |
+| `queue{0-n}_timeout`               | Specifying a millisecond value for the timeout of the queue. |
+
+For example, to specify a timeout value of 10,000 milliseconds for the **second** queue in your template, you'd append `queue1_timeout=10000` to the query string of your HTTP call.
+
+
+
+#### Market-specfic parameters
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ParametersAT from '../../_markets/at/technical-operations/rollout-automation/api-templating/_parameters.mdx';
+import ParametersFR from '../../_markets/fr/technical-operations/rollout-automation/api-templating/_parameters.mdx';
+import ParametersDE from '../../_markets/de/technical-operations/rollout-automation/api-templating/_parameters.mdx';
+
+<Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <ParametersAT />
+  </TabItem>
+
+  <TabItem value="FR" label="France">
+    <ParametersFR />
+  </TabItem>
+
+  <TabItem value="DE" label="Germany">
+    <ParametersDE />
+  </TabItem>
+
+</Tabs>
+
+
+
+### Postman example
+
+import ReactPlayer from "react-player"
+
+<ReactPlayer controls url={require("./media/postman_example.mp4").default} /><br />
+
+
+
+### Handling the response & provisioning the CashBox
+
+If the response you receive indicates a status code `200`, the request properly went through and a new CashBox should have been created. In this case, the response body will contain a JSON object (not an escaped JSON string) with the details of that new CashBox.
+
+```
+{
+	"cashBoxId": "",
+	"accessToken": "",
+	"configuration": ""
+}
+```
+
+| Field           | Description                                                  |
+| --------------- | ------------------------------------------------------------ |
+| `cashBoxId`     | The ID of the created CashBox.                               |
+| `accessToken`   | The access token of the created CashBox.                     |
+| `configuration` | The configuration object of the new CashBox, as escaped JSON string and based on the provided template. |
+
+Here, in particular `cashBoxId` and `accessToken` are interesting, as they allow you to automatically provision the CashBox. To do that, please deploy a vanilla [Launcher](../middleware/launcher.md) instance on the destination system and set its [CashBox ID and Access Token parameters](../middleware/configuration.md) to the values you received in the response.
+
 
 
 
