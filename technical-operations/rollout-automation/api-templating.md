@@ -28,11 +28,9 @@ In order to run a request successfully against the template API, you'll need at 
 * Your account's access token
 * The desired template
 
-The ID and the access token can be obtained from your portal's company overview at `[COMPANYNAME]` / `Overview` (![](../../images/numbers/1.png)). There, you'll find at the bottom of the page your account ID (![](../../images/numbers/2.png)) and the access token (![](../../images/numbers/3.png)) for the authentication against the API.
-
 ![](images/account_data.png)
 
-
+The ID and the access token can be obtained from your portal's company overview at `[COMPANYNAME]` / `Overview` (![](../../images/numbers/1.png)). There, you'll find at the bottom of the page your account ID (![](../../images/numbers/2.png)) and the access token (![](../../images/numbers/3.png)) for the authentication against the API.
 
 Additionally to the ID and access token, you will also need the template itself, encoded for a JSON string, as you will have to include it in the API request.
 
@@ -175,14 +173,6 @@ import ParametersDE from '../../_markets/de/technical-operations/rollout-automat
 
 
 
-### Postman example
-
-import ReactPlayer from "react-player"
-
-<ReactPlayer controls url={require("./media/postman_example.mp4").default} /><br />
-
-
-
 ### Handling the response & provisioning the CashBox
 
 If the response you receive indicates a status code `200`, the request properly went through and a new CashBox should have been created. In this case, the response body will contain a JSON object (not an escaped JSON string) with the details of that new CashBox.
@@ -223,3 +213,31 @@ The call above will substitute all occurrences of `|[my_variable]|` with `desire
 The query string can also be used to override values of system variables. Any value passed in this way will have precedence over the default value.
 
 :::
+
+
+
+## Demo with Postman
+
+Postman is a popular HTTP client and is often used to run REST requests manually. You can use it to try out and fine-tune your own requests to the template API.
+
+To download Postman, please go to https://www.postman.com/downloads and select the appropriate package for your system. fiskaltrust also provides a [Postman collection](../../assets/template_postman.zip) with pre-configured request settings, which you can import and use as foundation to customise your own API requests.
+
+
+
+import ReactPlayer from "react-player"
+
+<ReactPlayer controls url={require("./media/postman_example.mp4").default} /><br />
+
+|               Step               | Description                                                  |
+| :------------------------------: | ------------------------------------------------------------ |
+| ![](../../images/Numbers/1.png)  | Import the [demo collection](../../assets/template_postman.zip) into your Postman instance. |
+| ![](../../images/Numbers/2.png)  | Create a duplicate entry of the Sandbox environment.         |
+| ![](../../images/Numbers/3.png)  | Open the newly created entry.                                |
+| ![](../../images/Numbers/4.png)  | In the `Params` tab, specify the desired Sandbox outlet ID and CashBox description. |
+| ![](../../images/Numbers/5.png)  | In the `Headers` tab, specify your Sandbox [account ID and Access Token](#prerequisites). |
+| ![](../../images/Numbers/6.png)  | In the portal, fetch a demo template from `Configuration` / `Template`. |
+| ![](../../images/Numbers/7.png)  | [Escape](#escaping-the-template) the template.               |
+| ![](../../images/Numbers/8.png)  | In the `Body` tab, add the escaped template as JSON string.  |
+| ![](../../images/Numbers/9.png)  | Send the request using the `Send` button.                    |
+| ![](../../images/Numbers/10.png) | Check if the response indicated a successful request.        |
+| ![](../../images/Numbers/11.png) | In the portal, verify if the CashBox was properly created under `Configuration` / `CashBox`. |
