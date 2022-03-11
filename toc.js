@@ -5,6 +5,7 @@ module.exports = {
 			type: 'category',
 			label: 'Overview',
 			items: [
+				'rollout-doc/overview/introduction',
 				'rollout-doc/overview/services',
 				'rollout-doc/overview/countries',
 				'rollout-doc/overview/architecture',
