@@ -195,7 +195,7 @@ Apart from firewalls, the most common issue is an improperly configured SSL stac
 
 In case your operating system is not supported any more or you have customised your certificate trust store, you may have to import/configure the certificates manually. You can obtain the necessary certificate details in two ways
 
-* By opening the site in question in your browser and [accessing the certificates from the security dialog](https://duckduckgo.com/?q=accessing+certificate+chain+in+browser).
+* By opening the site in question in your browser and [accessing the certificates from the security dialog](https://search.brave.com/search?q=accessing+certificate+chain+in+browser).
 * By downloading the applicable certificate pack from fiskaltrust.Portal under `Tools` / `Download` (subject to availability).
 
 

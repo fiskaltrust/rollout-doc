@@ -12,9 +12,9 @@ After reading this, you can use the API to rollout templates.
 
 ## Introduction
 
-In addition to the other ways of creating a CashBox, mentioned in the previous chapters, fiskaltrust also provides a REST API to support a fully automated way of setting up new CashBoxes. This API takes a generic template, optional custom variables, and creates a new CashBox based on these parameters. Contrary to [templates used in the shop](shop-templating.md), these templates do not need to be pre-configured, but the content is sent directly with the API request.
+In addition to the other ways of creating a CashBox, mentioned in the previous chapters, fiskaltrust also provides a REST API for a fully automated solution to set up CashBoxes. This API takes a generic template, relevant CashBox parameters and variables, and creates a new CashBox based on this information. Contrary to [templates used in the shop](shop-templating.md), these templates do not need to be pre-configured, but the content is sent directly with the API request.
 
-A successful response will also include the [ID and access token](../middleware/cashbox.md#cashbox-id--access-token) of the newly created CashBox, which will allow for an immediate rollout of a launcher instance with these values.
+The response to a successful request will include the [ID and access token](../middleware/cashbox.md#cashbox-id--access-token) of the newly created CashBox, which will allow for an immediate rollout of a launcher instance with these values.
 
 
 
@@ -114,7 +114,7 @@ In short, a traditional JSON string with quotation marks escaped with a slash, n
 
 :::tip
 
-You can escape the template with a [number of tools](https://duckduckgo.com/?q=escape+json), such as e.g. [freeformatter.com](https://www.freeformatter.com/json-escape.html) or [codebeautify.org](https://codebeautify.org/json-escape-unescape). If you are comfortable with the browser console (F12), you can also use [JSON.stringify()](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to escape the template object. **Please make sure the string is enclosed by quotation marks.**
+You can escape the template with a [number of tools](https://search.brave.com/search?q=escape+json), such as e.g. [freeformatter.com](https://www.freeformatter.com/json-escape.html) or [codebeautify.org](https://codebeautify.org/json-escape-unescape). If you are comfortable with the browser console (F12), you can also use [JSON.stringify()](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to escape the template object. **Please make sure the string is enclosed by quotation marks.**
 
 :::
 

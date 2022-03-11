@@ -60,7 +60,7 @@ import HostsDE from '../../_markets/de/technical-operations/middleware/network-r
 
 :::tip address lookup
 
-Should you need to determine the IP addresses of these hostnames for your network policies, please use the appropriate tools on your local workstation (e.g. nslookup or dig) or an [online lookup service](https://duckduckgo.com/?q=dns+lookup+online).
+Should you need to determine the IP addresses of these hostnames for your network policies, please use the appropriate tools on your local workstation (e.g. nslookup or dig) or an [online lookup service](https://search.brave.com/search?q=dns+lookup+online).
 
 :::
 
