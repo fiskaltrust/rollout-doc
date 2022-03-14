@@ -29,7 +29,7 @@ The following sections will give you more insight on the core features, as well 
 
 ### Global Interface
 
-The Middleware uses the **iPOS interface** for communication with your POS systems. Its protocol and its calls are **standardised across all fiskaltrust markets** and, once implemented by your POS system software, you can deploy your systems in all of the supported markets with either no changes at all or only minor adjustments to accommodate particular national regulations.
+The Middleware uses the **iPOS interface** for communication with your POS systems. Its protocol and its calls are **standardised across all _fiskaltrust_ markets** and, once implemented by your POS system software, you can deploy your systems in all of the supported markets with either no changes at all or only minor adjustments to accommodate particular national regulations.
 
 
 

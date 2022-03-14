@@ -63,7 +63,7 @@ The following table contains the list of all currently supported configuration p
 | connectionretry   | The number of times the Middleware will attempt to fetch its configuration from the portal. | `1`                                    |
 | connectiontimeout | The timeout (in seconds) after which the Middleware will abort. | `15`                                   |
 | logfile           | Full path to log file. Please [Logging](logging.md) for details. | `D:\logs\fiskaltrust.log`              |
-| packagesurl       | An alternative download URL for the fiskaltrust package service. | `https://packages.fiskaltrust.cloud`   |
+| packagesurl       | An alternative download URL for the _fiskaltrust_ package service. | `https://packages.fiskaltrust.cloud`   |
 | proxy             | Connection details for a possible proxy connection. Please see [Proxy setups](network-requirements.md#proxy-setups) for details. | `address=10.0.0.0`                     |
 | sandbox           | Boolean flag indicating whether the Middleware uses the [sandbox environment](../../getting-started/sandbox.md). | `false`                                |
 | servicefolder     | Full path to the Middleware's [data directory](setup.md#data-directory). | `D:\data\fiskaltrust`                  |

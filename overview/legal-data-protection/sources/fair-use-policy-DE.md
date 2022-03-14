@@ -14,7 +14,7 @@ title: Fair-use-Policy
 
 # Fair Use Policy
 
-der fiskaltrust gmbh<br />
+der _fiskaltrust_ gmbh<br />
 Toulouser Allee 19a<br />
 D-40211 Düsseldorf<br />
 
@@ -38,7 +38,7 @@ Eine aktive Queue ist eine im Einsatz befindliche Queue, die durch einen Inbetri
 
 ### Terminals
 
-Terminals sind an einem elektronischen Aufzeichnungssystem mit Kassenfunktion angeschlossene Eingabegeräte, die keine eigenständige Kassenfunktion implementieren. Im Rahmen des fiskaltrust IPOS Interface werden diese anhand des Feldes `cbTerminalID` identifiziert. 
+Terminals sind an einem elektronischen Aufzeichnungssystem mit Kassenfunktion angeschlossene Eingabegeräte, die keine eigenständige Kassenfunktion implementieren. Im Rahmen des _fiskaltrust_ IPOS Interface werden diese anhand des Feldes `cbTerminalID` identifiziert. 
 
 ### Standortbezogene Produkte der fiskaltrust gmbh
 
@@ -46,17 +46,17 @@ Standortbezogene Produkte, sind Produkte (bzw. Subscriptions) die pro Outlet erw
 
 ## Fair Use Regeln
 
-Werden in einem Outlet standortbezogene Produkte der fiskaltrust gmbh eingesetzt, so dürfen in dem betroffenen Outlet maximal 25 aktive Queues mit insgesamt maximal 25 Kassen oder Terminals betrieben werden. Zudem dürfen im betroffenen Outlet maximal 150.000 TSE Signaturen pro Kalendermonat angefordert werden.
+Werden in einem Outlet standortbezogene Produkte der **fiskaltrust gmbh** eingesetzt, so dürfen in dem betroffenen Outlet maximal 25 aktive Queues mit insgesamt maximal 25 Kassen oder Terminals betrieben werden. Zudem dürfen im betroffenen Outlet maximal 150.000 TSE Signaturen pro Kalendermonat angefordert werden.
 
-Diese Fair Use Regeln können aufgrund spezifischer Eigenschaften einzelner standortbezogener Produkte durch fiskaltrust angepasst werden. Achten Sie deshalb bitte auch auf die konkreten Produktmerkmale.
+Diese Fair Use Regeln können aufgrund spezifischer Eigenschaften einzelner standortbezogener Produkte durch _fiskaltrust_ angepasst werden. Achten Sie deshalb bitte auch auf die konkreten Produktmerkmale.
 
 ### Empfehlung zur Einhaltung der Fair Use Regel
 
-Sollte ein physischer Standort aufgrund höherer Anforderungen nicht durch ein einzelnes Outlet abgedeckt werden können, so steht Ihnen die Möglichkeit zur Verfügung für diesen physischen Standort zusätzliche, virtuelle Outlets, im fiskaltrust Portal anzulegen. Die virtuellen Outlets müssen mit der Adresse des physischen Standorts im fiskaltrust Portal angelegt werden damit sie diesem zugeordnet werden können. Pro angelegtem Outlet können dann separat die benötigten, standortbezogenen fiskaltrust Produkte erworben werden.
+Sollte ein physischer Standort aufgrund höherer Anforderungen nicht durch ein einzelnes Outlet abgedeckt werden können, so steht Ihnen die Möglichkeit zur Verfügung für diesen physischen Standort zusätzliche, virtuelle Outlets, im fiskaltrust.Portal anzulegen. Die virtuellen Outlets müssen mit der Adresse des physischen Standorts im fiskaltrust.Portal angelegt werden damit sie diesem zugeordnet werden können. Pro angelegtem Outlet können dann separat die benötigten, standortbezogenen fiskaltrust Produkte erworben werden.
 
 ### Nichteinhaltung der Fair Use Policy
 
-Bei Nichteinhaltung der Fair Use Policy behält sich die fiskaltrust gmbh das Recht vor, den Betrieb der im betroffenen Outlet verwendeten Produkte und Komponenten einzuschränken, bis sich diese wieder innerhalb des hier beschriebenen Fair-Use-Rahmen befinden.
+Bei Nichteinhaltung der Fair Use Policy behält sich die **fiskaltrust gmbh** das Recht vor, den Betrieb der im betroffenen Outlet verwendeten Produkte und Komponenten einzuschränken, bis sich diese wieder innerhalb des hier beschriebenen Fair-Use-Rahmen befinden.
 
 ### Schätzung der TSE Signaturanzahl
 

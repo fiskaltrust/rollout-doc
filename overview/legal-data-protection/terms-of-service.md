@@ -5,7 +5,7 @@ title: Terms of Service
 # Terms of Service
 
 :::info summary
-After reading this, you can explain fiskaltrust terms of service.
+After reading this, you can explain _fiskaltrust_ terms of service.
 
 :::
 

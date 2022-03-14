@@ -34,7 +34,7 @@ The ft.Middleware runs as a service on all Windows platforms since Windows 7 in 
 A .NET Framework version 4.8 is recommended.
 
 ## Linux & macOS
-Starting with version 1.1, the Middleware will run on Linux and macOS, using [Mono](https://www.mono-project.com/). In general, it's possible to run the Middleware on every Linux distribution that is supported by Mono (_Ubuntu_, _Debian_, _Raspbian_, _CentOS_ and _Fedora_, including their derivatives). Most testing at fiskaltrust is performed with Ubuntu and Debian, 
+Starting with version 1.1, the Middleware will run on Linux and macOS, using [Mono](https://www.mono-project.com/). In general, it's possible to run the Middleware on every Linux distribution that is supported by Mono (_Ubuntu_, _Debian_, _Raspbian_, _CentOS_ and _Fedora_, including their derivatives). Most testing at _fiskaltrust_ is performed with Ubuntu and Debian, 
 hence we recommend using these distributions.
 
 **Please make sure to update the Mono version**. The default versions in the package repositories are usually extremely outdated, so please follow the official [Mono guidelines](https://www.mono-project.com/download/stable/#download-lin-ubuntu) to get the latest packages. We recommend to use version **6.8.0** as this is tested by us. Other than that, no specific software needs to be installed (aside from the dependencies Mono has).

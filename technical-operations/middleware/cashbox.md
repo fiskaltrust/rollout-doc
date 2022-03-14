@@ -50,7 +50,7 @@ The format of the file follows a standard JSON syntax, with the top-level fields
 
 :::info
 
-Unless the Middleware is configured for offline mode, it will try to compare its CashBox configuration against the portal's on each start and apply pending changes to the configuration. Please make sure the relevant fiskaltrust hosts are reachable for your Middleware, otherwise it won't be able to download the latest CashBox data.
+Unless the Middleware is configured for offline mode, it will try to compare its CashBox configuration against the portal's on each start and apply pending changes to the configuration. Please make sure the relevant _fiskaltrust_ hosts are reachable for your Middleware, otherwise it won't be able to download the latest CashBox data.
 
 Please see [Network Requirements](network-requirements.md) for details.
 
@@ -167,6 +167,6 @@ Please make sure to rebuild your CashBox, whenever it has the rebuild icon (![](
 
 :::caution restart
 
-Please do note, once you have deployed your CashBox, any changes to its configuration will only take effect after a restart of your Middleware instance. It also needs to be able to [reach the fiskaltrust portal services](network-requirements.md) and it must **not** be configured for [offline mode](configuration.md#parameters).
+Please do note, once you have deployed your CashBox, any changes to its configuration will only take effect after a restart of your Middleware instance. It also needs to be able to [reach thefiskaltrust.Portal services](network-requirements.md) and it must **not** be configured for [offline mode](configuration.md#parameters).
 
 :::

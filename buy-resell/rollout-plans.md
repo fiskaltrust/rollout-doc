@@ -12,7 +12,7 @@ After reading this, you can buy or transfer selected entitlements in the easiest
 
 ## Explanation
 
-For the scaled rollout of fiskaltrust products, you as PosDealer use the rollout management as already described under [Rollout Plans](../getting-started/my-first-cashbox.md). In rollout management, the most common products are offered on a market-specific basis.  
+For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollout management as already described under [Rollout Plans](../getting-started/my-first-cashbox.md). In rollout management, the most common products are offered on a market-specific basis.  
 A rollout plan guides you through selecting the product, destination and outlets for which you want to rollout. This way you avoid ambiguities about which activities should be performed at which point in time.
 
 You choose a business plan at the beginning, work on the defined sequence of action steps and use it to create the backend components for a CashBox, for example. Depending on the market, a technical rollout can also be used to create, for example queue and CashBox and link the SCU previously created in the business rollout.
@@ -56,4 +56,4 @@ This facilitates planning for the current year and for the next year, see also t
 
 Please check the offers at Rollout Management in your account.
 Please note that differences between the productive system and the sandbox are likely.
-The content in the sandbox is also used to test new features for fiskaltrust and friendly customers.
+The content in the sandbox is also used to test new features for _fiskaltrust_ and friendly customers.

@@ -37,9 +37,9 @@ Double check your [helper scripts](../middleware/setup.md#installation-directory
 
 
 
-## fiskaltrust firewall script
+## _fiskaltrust_ firewall script
 
-In addition to the manual verification steps outlined in this chapter, fiskaltrust also provides a ready-made PowerShell script, which performs a couple of basic network checks automatically.
+In addition to the manual verification steps outlined in this chapter, _fiskaltrust_ also provides a ready-made PowerShell script, which performs a couple of basic network checks automatically.
 
 To run the script, [download the latest version from here](../../assets/fw-script.zip), unpack it into the desired destination directory, and run the `CheckFirewall.ps1` script and pass **as argument the configuration CSV file** applicable to your use case (the package contains a number of sample files) from your PowerShell console. Please, also make sure you have the [latest version](https://github.com/PowerShell/PowerShell/releases/latest) of PowerShell installed.
 
@@ -162,7 +162,7 @@ As long as you receive an HTTP response with a valid status code (e.g. `200` or 
 
 #### Checking generic TCP services
 
-While most of the fiskaltrust services are web-based and connections can be verified as mentioned under [Checking web services](#checking-web-services), you can also use default system tools, such as Telnet, to check for overall connectivity.
+While most of the _fiskaltrust_ services are web-based and connections can be verified as mentioned under [Checking web services](#checking-web-services), you can also use default system tools, such as Telnet, to check for overall connectivity.
 
 :::tip telnet installation
 

@@ -23,7 +23,7 @@ If it is not possible to settle the open invoices in a timely manner, contact th
 
 ### Explanation Framework Agreement
 
-As mentioned in the section [Business model](../overview/business-model.md), fiskaltrust is offering discounted prices if you agree to a certain purchase quantity. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
+As mentioned in the section [Business model](../overview/business-model.md), _fiskaltrust_ is offering discounted prices if you agree to a certain purchase quantity. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
 If you are committing to purchase **large quantities of product bundles** of your choice over the course of a year, a **Framework Agreement** is the best option. This allows you to achieve significant discounts depending on your planned sales volume.
 
 ### Legal Framework
@@ -58,7 +58,7 @@ If you are committing to purchase **large quantities of product bundles** of you
 * Resale of the rights by the PosDealer, within a maximum of three years.
 * Comparison of the Entitlements purchased in the meantime to the agreed purchase volume. The difference is transferred and invoiced to the PosDealer at the end of the valuation period
 * At the end of the agreed period, determine the requirements for the following year.
-* Contact fiskaltrust for further agreement.
+* Contact _fiskaltrust_ for further agreement.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

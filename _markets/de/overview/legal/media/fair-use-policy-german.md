@@ -8,7 +8,7 @@ Toulouser Allee 19a
 D-40211 Düsseldorf  
 
 ## Scope
-This Fair Use Policy applies to the use of site-related products of fiskaltrust gmbh.
+This Fair Use Policy applies to the use of site-related products of **fiskaltrust gmbh**.
 
 ## Definition of terms
 
@@ -27,7 +27,7 @@ It represents an electronic recording system with cash register function.
 ### Terminals
 
 Terminals are input devices connected to an electronic recording system with a cash register function that do not implement an independent cash register function.  
-Within the fiskaltrust IPOS Interface, these are identified by means of the field `cbTerminalID`. 
+Within the _fiskaltrust_ IPOS Interface, these are identified by means of the field `cbTerminalID`. 
 
 ### Outlet-related products of fiskaltrust gmbh
 
@@ -36,18 +36,18 @@ They are used for the outlet's subordinate recording systems (queues) and techni
 
 ## Fair Use Rules 
 
-If location-based products from fiskaltrust gmbh are used in an outlet, a maximum of 25 active queues with a total of a maximum of 25 cash registers or terminals may be operated in the affected outlet.  
+If location-based products from **fiskaltrust gmbh** are used in an outlet, a maximum of 25 active queues with a total of a maximum of 25 cash registers or terminals may be operated in the affected outlet.  
 In addition, a maximum of 150,000 TSE signatures per calendar month may be requested in the affected outlet.  
-These fair use rules may be adjusted by fiskaltrust gmbh due to specific characteristics of individual site-related products. Therefore, please also pay attention to the specific product characteristics.
+These fair use rules may be adjusted by **fiskaltrust gmbh** due to specific characteristics of individual site-related products. Therefore, please also pay attention to the specific product characteristics.
 
 ### Recommendation for compliance with the fair use rule
 
-If a physical location cannot be covered by a single outlet due to higher requirements, you have the option to create additional virtual outlets for this physical location in the fiskaltrust portal. The virtual outlets must be created with the address of the physical location in the fiskaltrust portal so that they can be assigned to it.  
-The required location-specific fiskaltrust products can then be purchased separately for each outlet created.
+If a physical location cannot be covered by a single outlet due to higher requirements, you have the option to create additional virtual outlets for this physical location in thefiskaltrust.Portal. The virtual outlets must be created with the address of the physical location in thefiskaltrust.Portal so that they can be assigned to it.  
+The required location-specific _fiskaltrust_ products can then be purchased separately for each outlet created.
 
 ### Non-compliance with the Fair Use Policy
 
-In the event of non-compliance with the Fair Use Policy, fiskaltrust gmbh reserves the right to restrict the operation of the products and components used in the affected outlet until they are again within the fair use framework described herein.
+In the event of non-compliance with the Fair Use Policy, **fiskaltrust gmbh** reserves the right to restrict the operation of the products and components used in the affected outlet until they are again within the fair use framework described herein.
 
 ### Estimation of the TSE signature count
 

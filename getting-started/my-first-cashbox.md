@@ -21,7 +21,7 @@ This tutorial, unfortunately, is **not yet applicable to the Austrian market**.
 The following prerequisites must be first in place before we can roll out our Middleware instance
 
 * A working **Internet connection** (_please see [Network Requirements](../technical-operations/middleware/network-requirements.md)_)
-* An active fiskaltrust **PosDealer account** (*either by [registration](registration.md) or by invitation through your PosCreator*)
+* An active _fiskaltrust_ **PosDealer account** (*either by [registration](registration.md) or by invitation through your PosCreator*)
 * A system meeting the hardware and software **[requirements](../technical-operations/middleware/supported-environments.md)** (*in this tutorial we focus on rollouts on Windows*)
 * Any **SSCD components** (*hardware or SaaS credentials*) required for the setup, unless created during the setup itself
 

@@ -6,7 +6,7 @@ title: Products
 
 :::info summary
 
-After reading this, you can explain the products fiskaltrust offers.
+After reading this, you can explain the products _fiskaltrust_ offers.
 
 :::
 

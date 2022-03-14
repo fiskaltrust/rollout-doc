@@ -20,7 +20,7 @@ import ReactPlayer from "react-player"
 
 ## Bulk update CashBoxes
 
-You can update many CashBoxes at the same time using the fiskaltrust.Portal. This is useful in case fiskaltrust provides a newer version of a software package and you need to update multiple of your running fiskaltrust.Middleware instances (e.g. the package version of the SQLite Queue needs to be replaced for all customers). 
+You can update many CashBoxes at the same time using the fiskaltrust.Portal. This is useful in case _fiskaltrust_ provides a newer version of a software package and you need to update multiple of your running fiskaltrust.Middleware instances (e.g. the package version of the SQLite Queue needs to be replaced for all customers). 
 
 In the fiskaltrust.Portal you can access the view for the bulk update of the CashBoxes at `Configuration` / `Update`.  Here you have the choice to update the CashBoxs of the current account and/or to update the CashBoxes of all PosOperators assigned to you, if you are logged in to the fiskaltrust.Portal as a PosDealer.
 

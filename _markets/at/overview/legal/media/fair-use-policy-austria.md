@@ -3,7 +3,7 @@
 # Fair Use Policy
 
 
-der fiskaltrust consulting gmbh<br />
+der **fiskaltrust consulting gmbh**<br />
 Alpenstraße 99/2.OG/02  
 5020 Salzburg  
 

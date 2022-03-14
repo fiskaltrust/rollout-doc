@@ -17,7 +17,7 @@ With different authorizations you define the options that the contacts have in t
 
 ### Country-specific information
 
-The registration or login can be reached via a link on the fiskaltrust website or directly going to the URL:
+The registration or login can be reached via a link on the _fiskaltrust_ website or directly going to the URL:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -123,7 +123,7 @@ Depending on whether you are registering on the _sandbox_ or on the _portal_ you
 If this link is invalidated or expired (after 24 hours), an informational page is shown and you will receive a new confirmation E-mail automatically.
 :::
 
-Now your account is active and the link  _this link_ in the final confirmation screen or the `PORTAL-LOGIN` button on the fiskaltrust website can be used, to log into the fiskaltrust.Portal.
+Now your account is active and the link  _this link_ in the final confirmation screen or the `PORTAL-LOGIN` button on the _fiskaltrust_ website can be used, to log into the fiskaltrust.Portal.
 
 ## Reset password
 
@@ -134,7 +134,7 @@ If the password for logging into the fiskaltrust.Portal is lost or forgotten, yo
 3. Enter the E-mail address you used, when you registered your account.
 3. A confirmation will be shown, that the link for resetting the password has been sent to the entered E-mail address. If not, check whether the E-mail address in usage is definitely the very same you used, when you registered your account.
 4. After a few minutes, the E-mail with the link will be delivered to the inbox of this E-mail address. When you click the link in the E-mail, a browser window will open and show the password reset page of the fiskaltrust.Portal. 
-5. Enter the E-mail address of your fiskaltrust account, the new password and confirm it by entering it a second time. After clicking `RESET` the new password will be saved, a confirmation page is shown and you can login into the fiskaltrust.Portal again.
+5. Enter the E-mail address of your _fiskaltrust_ account, the new password and confirm it by entering it a second time. After clicking `RESET` the new password will be saved, a confirmation page is shown and you can login into the fiskaltrust.Portal again.
 
 ## Invitation of new contacts
 

@@ -12,7 +12,7 @@ After reading this, you can use the API to rollout templates.
 
 ## Introduction
 
-In addition to the other ways of creating a CashBox, mentioned in the previous chapters, fiskaltrust also provides a REST API for a fully automated solution to set up CashBoxes. This API takes a generic template, relevant CashBox parameters and variables, and creates a new CashBox based on this information. Contrary to [templates used in the shop](shop-templating.md), these templates do not need to be pre-configured, but the content is sent directly with the API request.
+In addition to the other ways of creating a CashBox, mentioned in the previous chapters, _fiskaltrust_ also provides a REST API for a fully automated solution to set up CashBoxes. This API takes a generic template, relevant CashBox parameters and variables, and creates a new CashBox based on this information. Contrary to [templates used in the shop](shop-templating.md), these templates do not need to be pre-configured, but the content is sent directly with the API request.
 
 The response to a successful request will include the [ID and access token](../middleware/cashbox.md#cashbox-id--access-token) of the newly created CashBox, which will allow for an immediate rollout of a launcher instance with these values.
 
@@ -220,7 +220,7 @@ The query string can also be used to override values of system variables. Any va
 
 Postman is a popular HTTP client and is often used to run REST requests manually. You can use it to try out and fine-tune your own requests to the template API.
 
-To download Postman, please go to https://www.postman.com/downloads and select the appropriate package for your system. fiskaltrust also provides a [Postman collection](../../assets/template_postman.zip) with pre-configured request settings, which you can import and use as foundation to customise your own API requests.
+To download Postman, please go to https://www.postman.com/downloads and select the appropriate package for your system. _fiskaltrust_ also provides a [Postman collection](../../assets/template_postman.zip) with pre-configured request settings, which you can import and use as foundation to customise your own API requests.
 
 
 

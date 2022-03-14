@@ -6,7 +6,7 @@ title: Compliance requirements
 
 :::info summary
 
-After reading this, you can explain how to stay legally compliant using fiskaltrust products.
+After reading this, you can explain how to stay legally compliant using _fiskaltrust_ products.
 
 :::
 
