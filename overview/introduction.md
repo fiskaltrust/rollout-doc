@@ -8,27 +8,29 @@ title: Introduction
 
 This documentation follows two targets:
 
-* PosDealers understand and use _fiskaltrusts_ products and services
+* PosDealers understand and use _fiskaltrust's_ products and services
 * PosDealers get help when questions come up while working with fiskaltrust
 
-## Reading recommendations
+<details>
+  <summary> Reading recommendations</summary>  
 
-| sections | PosDealers      |Support      |Technicians      |Lawyers      |Managers      |
-|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-|**Overview** |Yes|Yes|<sup>**1**</sup>|Yes|<sup>**3**</sup>|
-|**Get started** |Yes|Yes|Yes|---|---|
-|**Buy / Resell** |Yes|Yes|---|<sup>**2**</sup>|Yes|
-|**Technical Operations** |Yes|Yes|Yes|---|---|
-|**Information Sources** |Yes|Yes|Yes|---|---|
-
+|        target audience     | Overview | Get started | Buy / Resell | Technical Operations | Information Sources |
+| ----------- | :-----: |:-----:|:-----:|:-----:|:-----:|
+| **support staff**    |![recommended](images/invalid.png "recommended")|![recommended](images/invalid.png "recommended")|![recommended](images/invalid.png "recommended")|![recommended](images/invalid.png "recommended")|![recommended](images/invalid.png "recommended")|
+| **pre-test or on-site rollout** |![partly](images/question.png "question")<sup>**1**</sup>|![invalid](images/invalid.png "no")|![if interested](images/valid.png "if interested")|![recommended](images/invalid.png "recommended")|![recommended](images/invalid.png "recommended")|
+| **legal issues**     |![recommended](images/invalid.png "recommended")|![if interested](images/valid.png "if interested")|![partly](images/question.png "question")<sup>**2**</sup>|![if interested](images/valid.png "if interested")|![if interested](images/valid.png "if interested")|
+| **purchase and sales**    |![partly](images/question.png "question")<sup>**3**</sup>|![if interested](images/valid.png "if interested")|![recommended](images/invalid.png "recommended")|![if interested](images/valid.png "if interested")|![if interested](images/valid.png "if interested")|
 
 Legend | 
 :---------|
- <sup>1</sup> = at least `Architecture` |
+ <sup>1</sup> = at least `Architecture`, `Portal Management` |
  <sup>2</sup> = at least `Framework Agreement` | 
  <sup>3</sup> = at least `Business model` and `legal/data protection` |
   
-## Where to start
+</details>
+
+<details>
+  <summary> Where to start</summary>    
 
 |  MyFirst Cashbox     |Planning Rollout      |Buy / Resell      |Pilot Installation     |Preparation Rollout      |
 |:------------:|:------------:|:------------:|:------------:|:------------:|
@@ -36,10 +38,10 @@ Legend |
 |[fiskaltrust.Portal](../overview/management-portal.md)|[Scenarios](../technical-operations/scenarios.md)|[Business model](../overview/business-model.md)|[Onboarding](../getting-started/operator-onboarding/invitation-process.md)<sup>**1**</sup>|[Onboarding](../getting-started/operator-onboarding/invitation-process.md)|
 |[Sandbox](../getting-started/sandbox.md)|<sup>**2**</sup>|[Legal / Data protection](../overview/legal-data-protection/fair-use-policy.md)|<sup>**3**</sup>|**Planning Rollout**|
 |[Registration](../getting-started/registration.md)|[Framework Agreement](../buy-resell/framework-agreement.md)|[Products](../buy-resell/products.md)|[Products](../buy-resell/products.md)|**Buy / Resell**|
-|[Roles](../getting-started/company-roles.md)|--------------|[Framework Agreement](../buy-resell/framework-agreement.md)|[Rollout Plans](../buy-resell/rollout-plans.md)|**Pilot Installation**|
-|[My First Cashbox](../getting-started/my-first-cashbox.md)|--------------|[Shop](../buy-resell/shop.md)|[Shop](../buy-resell/shop.md)|[Templating](../technical-operations/rollout-automation/templates.md)|
-|--------------|--------------|<sup>**4**</sup>|<sup>**5**</sup>|<sup>**6**</sup>|
-|--------------|--------------|--------------|[Network Troubleshooting](../technical-operations/troubleshooting/network-troubleshooting.md)|--------------|
+|[Roles](../getting-started/company-roles.md)|----------|[Framework Agreement](../buy-resell/framework-agreement.md)|[Rollout Plans](../buy-resell/rollout-plans.md)|**Pilot Installation**|
+|[My First Cashbox](../getting-started/my-first-cashbox.md)|----------|[Shop](../buy-resell/shop.md)|[Shop](../buy-resell/shop.md)|[Templating](../technical-operations/rollout-automation/templates.md)|
+|----------|----------|<sup>**4**</sup>|<sup>**5**</sup>|<sup>**6**</sup>|
+|----------|----------|----------|[Network Troubleshooting](../technical-operations/troubleshooting/network-troubleshooting.md)|----------|
 
 Legend | 
 :---------|
@@ -49,6 +51,10 @@ Legend |
  <sup>4</sup> = consultation Rollout Planer, Negotiation |
  <sup>5</sup> = decision: Rollout Plans or Shop | 
  <sup>6</sup> = decision: Rollout Plans, Templating or Shop|
+
+ </details>
+
+
 ### Key elements
 
 | elements | description                                                                                                                |
