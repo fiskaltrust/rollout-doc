@@ -120,3 +120,35 @@ For a proper service installation, please refer to the chapter [Deployment](../t
 As we downloaded the online launcher the archive only comes with the launcher stub and the Middleware will fetch all additionally required packages upon the first start. This may delay the first start by a couple of seconds.
 
 :::
+
+
+
+
+## Running a test request
+
+Once the Middleware has been deployed and started, it is advisable to perform a quick check if the Middleware is generally available on the network and responds to requests.
+
+For that purpose, the Middleware features an echo/ping request type which responds back with the data it received. If you successfully get a response, the Middleware should be ready to receive your signing requests as well.
+
+:::tip postman collection
+
+For Postman, you can download a request collection from the [Github repository](https://github.com/fiskaltrust/middleware-demo-postman).
+
+:::
+
+### Request details
+
+import EchoFR from '../_markets/fr/getting-started/my-first-cashbox/_echo.mdx';
+import EchoDE from '../_markets/de/getting-started/my-first-cashbox/_echo.mdx';
+
+<Tabs groupId="market">
+
+  <TabItem value="FR" label="France">
+    <EchoFR />
+  </TabItem>
+
+  <TabItem value="DE" label="Germany">
+    <EchoDE />
+  </TabItem>
+
+</Tabs>
