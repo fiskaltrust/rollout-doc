@@ -37,7 +37,7 @@ Double check your [helper scripts](../middleware/setup.md#installation-directory
 
 
 
-## _fiskaltrust_ firewall script
+## fiskaltrust firewall script
 
 In addition to the manual verification steps outlined in this chapter, _fiskaltrust_ also provides a ready-made PowerShell script, which performs a couple of basic network checks automatically.
 
