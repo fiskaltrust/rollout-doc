@@ -10,7 +10,7 @@ After reading this, you can explain the different agreements for reselling produ
 
 :::
 
-## Explanation
+## Introduction
 
 Please also note the following paragraphs if you are not interested in a framework agreement for the time being. A framework agreement can also be concluded later.
 

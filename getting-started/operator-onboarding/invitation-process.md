@@ -8,7 +8,7 @@ title: Invitation process
 After reading this, you can invite a single PosOperator and perform a bulk operation to invite several PosOperators.
 :::
 
-## Explanation
+## Introduction
 
 As described in the section [business model](../overview/business-model) _"we are happy to support you (as a PosCreator) in the development of POS-Systems"..."For PosDealers, we offer the fiskaltrust.Portal, which can be used free of charge, as a platform on which the POS-Systems of the PosCreators can be accessed. You as a PosDealer can purchase additional products and product packages in the store of the fiskaltrust.Portal. If your PosOperators are invited to use the fiskaltrust.Portal, the fiskaltrust.products can be transferred to these accounts."_
 So you as a PosDealer get an invitation by a PosCreator to the fiskaltrust.Portal and your PosOperators get their invitation by you. The invitation of a single PosOperator is possible, for example for testing in the sandbox or in case of a new contact. A bulk invitation is your option, when you want to invite several PosOperators.

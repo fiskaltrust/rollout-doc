@@ -9,8 +9,11 @@ title: Fair-use-Policy
 After reading this, you can follow the fair-use policies.
 
 :::
+## Introduction
 
-## Country-specific content
+**Fair use** means that your use of _fiskaltrusts_ services or products is subject to certain usage parameters. We explain these parameters in the Fair Use Policy. Please note, that they may apply differently or be non-existent depending on the country.
+
+## Country-specific information
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

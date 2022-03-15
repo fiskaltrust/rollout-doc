@@ -8,7 +8,7 @@ title: Surrogating
 After reading this, you can explain the prerequisites to act in the fiskaltrust.Portal on behalf of a PosOperator and can do it.
 :::
 
-## Explanation
+## Introduction
 
 As mentioned in the section [Company Roles](../company-roles.md), _fiskaltrust_ distinguishes company roles in the context of the fiskaltrust.Portal and its role management. The end-users of the POS-Systems activate the role contract of an **PosOperator**, POS-System distributors activate the role contract of an **PosDealer**.
 

@@ -10,7 +10,7 @@ After reading this, you can create exports and download them from the portal.
 
 :::
 
-## Explanation
+## Introduction
 
 Data from your POS-Systems can be exported via the fiskaltrust.Portal for archiving or for processing with other systems such as your accounting. 
 You can choose from various file types. If a PosArchive is used, exports can be triggered manually with individual settings. You may choose from file types like `~.csv`, `~.xml file`or country-specific exports. If a PosArchive is used, exports can also be automatized. This automated export may require some detailed work in preparation due to different legal obligations (see [master data](../../getting-started/operator-onboarding/master-data.md)). On the other hand, depending on the market, the exported data can additionally be checked for accuracy and completeness by third parties if desired. This means that all the prerequisites are in place to be optimally prepared for any tax audits.

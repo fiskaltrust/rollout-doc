@@ -10,7 +10,7 @@ After reading this, you can find videos for walkthroughs, presentations or Webin
 
 :::
 
-## Explanation
+## Introduction
 
 We are working on how-to guides, product demonstrations via video and also provide recorded webinars.
 

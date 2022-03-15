@@ -10,7 +10,7 @@ After reading this, you can explain where to find status information about third
 
 :::
 
-## Explanation
+## Introduction
 
 External service providers can, for example, provide technological support for payment processes or prepare and forward data for accounting.  
 Such data exchange with external service providers must be initialized in the fiskaltrust.portal and can also be managed there.  

@@ -10,7 +10,7 @@ After reading this, you can use knowledge base articles in the Help-section of t
 
 :::
 
-## Explanation
+## Introduction
 
 A knowledge base is typically a collection of articles that contains images and text. In the help section of the fiskaltrust.Portal PosDealers or PosOperators will find knowledge base articles. These articles are based on those questions, that our customer success team answers most frequently.
 

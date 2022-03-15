@@ -10,7 +10,7 @@ After reading this, you can download your contracts, general information and arc
 
 :::
 
-## Explanation
+## Introduction
 In our fiskaltrust.Portal, you may take use of three sources for downloads. 
 
 **Contracts** are provided in the overview of the chosen account (`[COMPANY]` / `Overview`). These files are the same, which were sent to you by E-mail attachment at the conclusion or a change of a contract. Primarily, these are the contracts for the agreed roles, the user agreements or, in the case of PosDealers, cooperation agreements. If user agreements with third parties have been concluded, you will find these here as well - please note any different, country-specific options for this. 

@@ -12,7 +12,7 @@ After reading this, you can design the setup of the Middleware components and de
 
 :::
 
-## Explanation
+## Introduction
 
 
 The scenarios in this general part will not cover all the aspects, that can be covered with fiskaltrust.Middleware and our products. 
@@ -115,29 +115,3 @@ Several terminals are connected to the fiskaltrust.middleware in our data center
 |con |Depending on country-specific conditions, reliability for the PosOperator may be limited if the online POS system is not available. |
 |con |Internet connection or online POS-System can be a performance bottleneck|
 |Restrictions |Coordination and cooperation of several providers, systems may result in a high effort of installation |
-
-## Country-specific information
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import SceneAT from '../_markets/at/technical-operations/scenarios/_scene.mdx';
-import SceneFR from '../_markets/fr/technical-operations/scenarios/_scene.mdx';
-import SceneDE from '../_markets/de/technical-operations/scenarios/_scene.mdx';
-
-[Test](../_markets/at/technical-operations/scenarios/_scene.mdx)
-
-<Tabs groupId="market">
-
-  <TabItem value="AT" label="Austria">
-    <SceneAT />
-  </TabItem>
-
-  <TabItem value="FR" label="France">
-    <SceneFR />
-  </TabItem>
-
-  <TabItem value="DE" label="Germany">
-    <SceneDE />
-  </TabItem>
-
-</Tabs>

@@ -10,7 +10,7 @@ After reading this, you can find webinars for learning purposes.
 
 :::
 
-## Explanation
+## Introduction
 
 fiskaltrust offers free webinars. The offer is primarily aimed at PosCreators. For PosDealers, offers take place when new products, features or processes are introduced or the demand for a webinar has been brought to fiskaltrust. Usually you will be invited to PosDealer webinars via newsletter.
 
@@ -24,7 +24,7 @@ fiskaltrust offers free webinars. The offer is primarily aimed at PosCreators. F
 |![Number 4](../images/Numbers/circle-4o.png)|Check microphone, speakers and camera, if desired.  |
 |![Number 5](../images/Numbers/circle-5o.png)|Deposit questions in the chat area and the presenters will answer them either live or in writing.  |
 
-## Country-specific options
+## Country-specific information
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

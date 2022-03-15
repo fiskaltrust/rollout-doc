@@ -8,7 +8,7 @@ title: Master Data
 After reading this, you can keep your and the PosOperators Master data up-to-date and explain, why that is important.
 :::
 
-## Explanation
+## Introduction
 
 The Master data of a company in the fiskaltrust.Portal are important for various reasons:  
 On the one hand, parts of this data, such as commercial identifications, are used for authentication with the tax authorities or third party services.  
