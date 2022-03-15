@@ -4,13 +4,15 @@ title: Introduction
 ---
 # Introduction
 
-## Targets of this documentation
+
+:::info summary
 
 This documentation follows two targets:
 
 * PosDealers understand and use _fiskaltrust's_ products and services
 * PosDealers get help when questions come up while working with fiskaltrust
 
+:::
 <details>
   <summary> Recommended reading</summary>  
 
@@ -125,7 +127,7 @@ import TabItem from '@theme/TabItem';
 |explanation |The introduction of each section consists of some general or background information    |
 |work steps |Where to do what is explained with the help of screenshots. There you will find necessary buttons numbered with stamps(![Number 1](../images/numbers/1.png), ![Number 2](../images/numbers/2.png), ![Number 3](../images/numbers/3.png)). You will find these numbers again in the explanations of the work steps.   |
 |videos |We show longer sequences of work steps as a short silent movie, where you control the playback speed and display size yourself. Here, the work steps are subsequently described in the sequence as in the video   |
-|country specific details | In this documentation you will find the general work steps explained. Country-specific details can then be found in the sections marked with the country name. After selecting a section, the selected country is retained during your current session. |
+|Country-specific information | In this documentation you will find the general work steps explained. Country-specific details can then be found in the sections marked with the country name. After selecting a section, the selected country is retained during your current session. |
 </details>
 
 <details>
