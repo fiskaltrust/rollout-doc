@@ -25,18 +25,19 @@ Please not our [terminology](../../faq/terms.md) for the terms used in our appli
 
 The scenarios are described by pros and cons. The term _POS-System fails_ means, that the Queue will switch into failed mode, but is still operational until the connection is restored with a zero receipt. 
 
-| image | description  | image | description  |
+| Image | Description  | Image | Description  |
 |:----------------------:|:----------------------|:----------------------:|:----------------------|
-|![Main POS-System](../technical-operations/scenarios/images/main-POS-System.svg ) |** Main POS-System**  |![Subsidiary POS-System](../technical-operations/scenarios/images/POS-System.svg ) |Subsidiary POS-System  |
+|![Main POS-System](../technical-operations/scenarios/images/main-POS-System.svg ) | **Main POS-System**  |![Subsidiary POS-System](../technical-operations/scenarios/images/POS-System.svg ) |Subsidiary POS-System  |
 |![Terminal](../technical-operations/scenarios/images/terminal-table.svg "Terminal")  |Terminal, handheld  |![Server](../technical-operations/scenarios/images/server.svg "Server")  |Server  |
 
 ## Scenarios
 
 ### One SCU for each POS-System
+A single SCU for each POS-System is the simplest - and often the most reliable - architectural approach and works best for independent, standalone POS-systems.
 
 ![One SCU for each POS-System](../technical-operations/scenarios/images/scenario-1-RR.png "One SCU for each POS-System")
 
-| facts | description  |
+| Facts | Description  |
 |:----------------------:|:----------------------|
 |pro |High reliability for the PosOperator with one single POS-System - very high reliability, if several POS-Systems in operation  |
 |pro |High performance, when several POS-Systems are in operation, best possible performance  |
@@ -44,10 +45,11 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 |Restrictions |--- |
 
 ### One SCU at server for multiple POS-Systems
+Hosting a single SCU in a separate CashBox that is accessed by multiple Queues/POS-Systems can be a more efficient solution for interconnected systems, e.g. in stores with multiple POS-Systems and an on-site backoffice.
 
 ![SCU on a local Server](../technical-operations/scenarios/images/scenario-2-RR.png "SCU on a local Server")
 
-| facts | description  |
+| Facts | Description  |
 |:----------------------:|:----------------------|
 |pro |Lower costs, if a hardware signature element is needed|
 |pro |High performance, as a large number of requests can be distributed to several multiple SCUs |
@@ -57,10 +59,11 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 |Restrictions | Due to technical or legal reasons this scenario is not available in every country, please check the country specific notes ! |
 
 ### One SCU in main POS-System, used by other POS-Systems
+Hosting a single SCU for multiple Queues in the CashBox of the _main_ POS-System can be a more efficient solution for interconnected systems, e.g. in stores with multiple POS-Systems and no on-site backoffice.
 
 ![Main POS-System for multiple POS-Systems](../technical-operations/scenarios/images/scenario-3-RR.png "Main POS-System for multiple POS-Systems")
 
-| facts | description  |
+| Facts | Description  |
 |:----------------------:|:----------------------|
 |pro |Lower costs, if a hardware signature element is needed|
 |pro |Lower costs, because no server is needed|
@@ -69,10 +72,11 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 |Restrictions |Due to technical or legal reasons this scenario is not available in every country, please check the country specific notes!|
 
 ### Multiple POS-Systems share one external signature service
+In scenarios where the external signing provider supports multi-place usage, this architecture helps reducing local network complexity by re-using the same SCU in multiple CashBoxes.
 
 ![One external signature service](../technical-operations/scenarios/images/scenario-4-RR.png "One external signature service")
 
-| facts | description  |
+| Facts | Description  |
 |:----------------------:|:----------------------|
 |pro |High performance, as a large number of requests can be distributed to several multiple SCUs |
 |pro |Lower costs, if a signature element is shared|
@@ -80,10 +84,11 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 |Restrictions |Restrictions depending on fair-use-rules or technical limitations are possible. Due to technical or legal reasons not all scenarios are available in every country. |
 
 ### Main POS-System for multiple Terminals
+This scenario is recommend for interconnected POS-Systems where terminals that have no standalone-functionality are connected to a central system.
 
 ![Main POS-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5-RR.png "Main POS-System for multiple Terminals")
 
-| facts | description  |
+| Facts | Description  |
 |:----------------------:|:----------------------|
 |pro |Flexibility with changing workloads by adjusting the number of terminals |
 |pro |High spatial flexibility of the employees|
@@ -94,7 +99,7 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 
 :::tip
 
-Experience values of our partners showed that in exceptional cases terminals become defective. If at this moment a receipt of the defective device is being processed, this can lead to the blocking of a shared queue. This would cause the entire system to fail. You can achieve greater reliability by creating a separate queue for each terminal, as shown in the following diagram. 
+Experiences of our partners showed that in exceptional cases terminals become defective. If at this moment a receipt of the defective device is being processed, this can lead to the blocking of a shared queue. This would cause the entire system to fail. You can achieve greater reliability by creating a separate queue for each terminal, as shown in the following diagram. 
 
 :::
 
@@ -106,7 +111,7 @@ Experience values of our partners showed that in exceptional cases terminals bec
 
 Several terminals are connected to the fiskaltrust.middleware in our data center or the one of your choice via an online POS-System.
 
-| facts | description  |
+| Facts | Description  |
 |:----------------------:|:----------------------|
 |pro |Flexibility with changing workloads by adjusting the number of terminals |
 |pro |High spatial flexibility of the employees|
