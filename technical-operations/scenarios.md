@@ -106,10 +106,10 @@ Experiences of our partners showed that in exceptional cases terminals become de
 ![Main POS-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5B-RR.png "Main POS-System for multiple Terminals")
 
 ### Data center as operational environment
+This scenarios works best in centralized system architectures. Many POS systems or terminals can be connected to the hosted version of the fiskaltrust.Middleware, which is operated either in fiskaltrust's or the users datacenter. In countries where remote signing is allowed (Austria and France), this is the generally recommended solution, as it does not require any locally installed Middleware instances.
 
 ![Main POS-System for multiple Terminals](../technical-operations/scenarios/images/scenario-6-RR.png "Main POS-System for multiple Terminals")
 
-Several terminals are connected to the fiskaltrust.middleware in our data center or the one of your choice via an online POS-System.
 
 | Facts | Description  |
 |:----------------------:|:----------------------|
