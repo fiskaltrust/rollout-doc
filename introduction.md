@@ -1,5 +1,5 @@
 ---
-slug: /overview/introduction
+slug: /introduction
 title: Introduction
 ---
 # Introduction
@@ -45,12 +45,12 @@ import TabItem from '@theme/TabItem';
 
 |start with|
 |:------------:|
-|[Architecture](../overview/architecture.md )|
-|[fiskaltrust.Portal](../overview/management-portal.md)|
-|[Sandbox](../getting-started/sandbox.md)|
-|[Registration](../getting-started/registration.md)|
-|[Roles](../getting-started/company-roles.md)|
-|[My First Cashbox](../getting-started/my-first-cashbox.md)|
+|[Architecture](overview/architecture.md )|
+|[fiskaltrust.Portal](overview/management-portal.md)|
+|[Sandbox](getting-started/sandbox.md)|
+|[Registration](getting-started/registration.md)|
+|[Roles](getting-started/company-roles.md)|
+|[My First Cashbox](getting-started/my-first-cashbox.md)|
 
   </TabItem>
 
@@ -59,13 +59,13 @@ import TabItem from '@theme/TabItem';
 
 |start with|
 |:------------:|
-|[My First Cashbox](../getting-started/my-first-cashbox.md) |
-|[Scenarios](../technical-operations/scenarios.md) |
+|[My First Cashbox](getting-started/my-first-cashbox.md) |
+|[Scenarios](technical-operations/scenarios.md) |
 |Analysis of customer data: Numbers  |
 |Estimation of products required  |
 |Contact person for trial runs  |
 |contrast of scenarios with conditions on site  |
-|[Framework Agreement](../buy-resell/framework-agreement.md) |
+|[Framework Agreement](buy-resell/framework-agreement.md) |
 
   </TabItem>
 
@@ -73,12 +73,12 @@ import TabItem from '@theme/TabItem';
 
 |start with|
 |:------------:|
-|[Services](../overview/services.md) |
-|[Business model](../overview/business-model.md) |
-|[Legal / Data protection](../overview/legal-data-protection/fair-use-policy.md)  |
-|[Products](../buy-resell/products.md) |
-|[Framework Agreement](../buy-resell/framework-agreement.md)|
-|[Shop](../buy-resell/shop.md)|
+|[Services](overview/services.md) |
+|[Business model](overview/business-model.md) |
+|[Legal / Data protection](overview/legal-data-protection/fair-use-policy.md)  |
+|[Products](buy-resell/products.md) |
+|[Framework Agreement](buy-resell/framework-agreement.md)|
+|[Shop](buy-resell/shop.md)|
 |consultation Rollout Planer|
 |Negotiation framework-agreement|
   </TabItem>
@@ -87,14 +87,14 @@ import TabItem from '@theme/TabItem';
 
 |start with|
 |:------------:|
-|[Overview Middleware](../technical-operations/middleware/overview.md) |
-|[Onboarding](../getting-started/operator-onboarding/invitation-process.md)**1** |
+|[Overview Middleware](technical-operations/middleware/overview.md) |
+|[Onboarding](getting-started/operator-onboarding/invitation-process.md)**1** |
 |Analysis of conditions on site  |
-|[Products](../buy-resell/products.md) |
-|[Rollout Plans](../buy-resell/rollout-plans.md)|
-|[Shop](../buy-resell/shop.md)|
+|[Products](buy-resell/products.md) |
+|[Rollout Plans](buy-resell/rollout-plans.md)|
+|[Shop](buy-resell/shop.md)|
 |decision: Rollout Plans or Shop|
-|[Network Troubleshooting](../technical-operations/troubleshooting/network-troubleshooting.md)|
+|[Network Troubleshooting](technical-operations/troubleshooting/network-troubleshooting.md)|
 
 **1** = at least _Invitation of a single PosOperator_
 
@@ -105,11 +105,11 @@ import TabItem from '@theme/TabItem';
 |start with|
 |:------------:|
 |**MyFirst Cashbox**|
-|[Onboarding](../getting-started/operator-onboarding/invitation-process.md)|
+|[Onboarding](getting-started/operator-onboarding/invitation-process.md)|
 |**Planning Rollout**|
 |**Buy / Resell**|
 |**Pilot Installation**|
-|[Templating](../technical-operations/rollout-automation/templates.md)|
+|[Templating](technical-operations/rollout-automation/templates.md)|
 |decision: Rollout Plans, Templating or Shop|
 
   </TabItem>
@@ -125,7 +125,7 @@ import TabItem from '@theme/TabItem';
 | elements | description                                                                                                                |
 |:----------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 |explanation |The introduction of each section consists of some general or background information    |
-|work steps |Where to do what is explained with the help of screenshots. There you will find necessary buttons numbered with stamps(![Number 1](../images/numbers/1.png), ![Number 2](../images/numbers/2.png), ![Number 3](../images/numbers/3.png)). You will find these numbers again in the explanations of the work steps.   |
+|work steps |Where to do what is explained with the help of screenshots. There you will find necessary buttons numbered with stamps(![Number 1](images/numbers/1.png), ![Number 2](images/numbers/2.png), ![Number 3](images/numbers/3.png)). You will find these numbers again in the explanations of the work steps.   |
 |videos |We show longer sequences of work steps as a short silent movie, where you control the playback speed and display size yourself. Here, the work steps are subsequently described in the sequence as in the video   |
 |Country-specific information | In this documentation you will find the general work steps explained. Country-specific details can then be found in the sections marked with the country name. After selecting a section, the selected country is retained during your current session. |
 </details>
