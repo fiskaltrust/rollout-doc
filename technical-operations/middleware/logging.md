@@ -129,12 +129,10 @@ System.UnauthorizedAccessException: Attempted to perform an unauthorized operati
 
 A log entry consists of four elements.
 
-|            Position             | Description                                                                                     |
-| :-----------------------------: | ----------------------------------------------------------------------------------------------- |
-| ![](../../images/numbers/1.png) | The local date                                                                                  |
-| ![](../../images/numbers/2.png) | The local time                                                                                  |
-| ![](../../images/numbers/3.png) | The log level under which the message was logged (`CRI`, `ERR`, `WRN`, `INF`, `DBG`, and `VRB`) |
-| ![](../../images/numbers/4.png) | The log message                                                                                 |
+1. The local date
+2. The local time
+3. The log level under which the message was logged (`CRI`, `ERR`, `WRN`, `INF`, `DBG`, and `VRB`)
+4. The log message
 
 The given example provides us with the following clues
 
