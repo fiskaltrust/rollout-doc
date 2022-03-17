@@ -1,5 +1,5 @@
 ---
-slug: /getting-started/company-roles
+slug: /posdealer/getting-started/company-roles
 title: Company Roles
 ---
 

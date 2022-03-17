@@ -1,5 +1,5 @@
 ---
-slug: /overview/architecture
+slug: /posdealer/overview/architecture
 title: Architecture
 ---
 

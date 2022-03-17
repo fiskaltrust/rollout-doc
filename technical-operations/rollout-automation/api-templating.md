@@ -1,5 +1,5 @@
 ---
-slug: /technical-operations/rollout-automation/api-templating
+slug: /posdealer/technical-operations/rollout-automation/api-templating
 title: API Templating
 ---
 # API Templating

@@ -1,5 +1,5 @@
 ---
-slug: /technical-operations/information-sources/news
+slug: /posdealer/technical-operations/information-sources/news
 title: News
 ---
 # News 

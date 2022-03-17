@@ -1,5 +1,5 @@
 ---
-slug: /technical-operations/maintenance/backup-restore
+slug: /posdealer/technical-operations/maintenance/backup-restore
 title: Backup & Restore
 ---
 # Backup & Restore

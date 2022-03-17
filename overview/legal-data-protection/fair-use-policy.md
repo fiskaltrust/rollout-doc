@@ -1,5 +1,5 @@
 ---
-slug: /overview/legal-data-protection/fair-use-policy
+slug: /posdealer/overview/legal-data-protection/fair-use-policy
 title: Fair-use-Policy
 ---
 # Fair-use-Policy

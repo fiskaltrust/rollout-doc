@@ -1,5 +1,5 @@
 ---
-slug: /technical-operations/troubleshooting/cashbox-failures
+slug: /posdealer/technical-operations/troubleshooting/cashbox-failures
 title: CashBox failures
 ---
 # CashBox failures
