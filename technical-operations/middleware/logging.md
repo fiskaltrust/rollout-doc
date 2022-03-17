@@ -26,22 +26,19 @@ Depending on the log level and your number of transactions, the Middleware may l
 
 :::
 
-
-
-
 ## Log levels
 
 The Middleware distinguishes between seven different log levels.
 
 |            Priority             | Level         | Description                                                    |
 | :-----------------------------: | ------------- | -------------------------------------------------------------- |
-| ![](../../images/numbers/1.png) | `none`        | Nothing is logged                                              |
-| ![](../../images/numbers/2.png) | `critical`    | Only critical errors are logged                                |
-| ![](../../images/numbers/3.png) | `error`       | General errors are logged                                      |
-| ![](../../images/numbers/4.png) | `warning`     | Warning messages are logged                                    |
-| ![](../../images/numbers/5.png) | `information` | General technical information is logged                        |
-| ![](../../images/numbers/6.png) | `debug`       | Debug messages are logged                                      |
-| ![](../../images/numbers/7.png) | `trace`       | The most detailed log level, with additional trace information |
+| ![](../../images/numbers/circle-1o.png) | `none`        | Nothing is logged                                              |
+| ![](../../images/numbers/circle-2o.png) | `critical`    | Only critical errors are logged                                |
+| ![](../../images/numbers/circle-3o.png) | `error`       | General errors are logged                                      |
+| ![](../../images/numbers/circle-4o.png) | `warning`     | Warning messages are logged                                    |
+| ![](../../images/numbers/circle-5o.png) | `information` | General technical information is logged                        |
+| ![](../../images/numbers/circle-6o.png) | `debug`       | Debug messages are logged                                      |
+| ![](../../images/numbers/circle-7o.png) | `trace`       | The most detailed log level, with additional trace information |
 
 Each log level builds upon the previous ones and includes all their information as well. For example, if you configure `warning` the log will also include the information for the levels `critical` and `error`.
 

@@ -129,12 +129,14 @@ Now your account is active and the link  _this link_ in the final confirmation s
 
 If the password for logging into the fiskaltrust.Portal is lost or forgotten, you can request a password reset:
 
-1. Go to the login screen of the fiskaltrust.Portal and click on the link `If you have forgotten your password please click here`.
-2. Solve the CAPTCHA.
-3. Enter the E-mail address you used, when you registered your account.
-3. A confirmation will be shown, that the link for resetting the password has been sent to the entered E-mail address. If not, check whether the E-mail address in usage is definitely the very same you used, when you registered your account.
-4. After a few minutes, the E-mail with the link will be delivered to the inbox of this E-mail address. When you click the link in the E-mail, a browser window will open and show the password reset page of the fiskaltrust.Portal. 
-5. Enter the E-mail address of your _fiskaltrust_ account, the new password and confirm it by entering it a second time. After clicking `RESET` the new password will be saved, a confirmation page is shown and you can login into the fiskaltrust.Portal again.
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../rollout-doc/images/numbers/circle-1o.png) |Go to the login screen of the fiskaltrust.Portal and click on the link `If you have forgotten your password please click here`.  |
+|![Number 2](../../rollout-doc/images/numbers/circle-2o.png) |Solve the CAPTCHA..  |
+|![Number 3](../../rollout-doc/images/numbers/circle-3o.png) |Enter the E-mail address you used, when you registered your account.  |
+|![Number 4](../../rollout-doc/images/numbers/circle-4o.png) |A confirmation will be shown, that the link for resetting the password has been sent to the entered E-mail address. If not, check whether the E-mail address in usage is definitely the very same you used, when you registered your account..  |
+|![Number 5](../../rollout-doc/images/numbers/circle-5o.png) |After a few minutes, the E-mail with the link will be delivered to the inbox of this E-mail address. When you click the link in the E-mail, a browser window will open and show the password reset page of the fiskaltrust.Portal.  |
+|![Number 6](../../rollout-doc/images/numbers/circle-6o.png) |Enter the E-mail address of your _fiskaltrust_ account, the new password and confirm it by entering it a second time. After clicking `RESET` the new password will be saved, a confirmation page is shown and you can login into the fiskaltrust.Portal again..  |
 
 ## Invitation of new contacts
 
