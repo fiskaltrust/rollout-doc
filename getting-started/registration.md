@@ -51,7 +51,7 @@ Whenever you enter your username and password for the fiskaltrust.Portal, make s
 
 ### Confirm CAPTCHA
 
-First you have to confirm the captcha by checking the checkbox. Sometimes reCAPTCHA will open a new popup where you have to solve a task (e.g. select all images with bycicles) before reCAPTCHA will finish the verification.
+First you have to confirm the captcha by checking the checkbox. Sometimes reCAPTCHA will open a new popup where you have to solve a task (e.g. select all images with traffic lights) before reCAPTCHA will finish the verification.
 
 import ReactPlayer from "react-player"
 

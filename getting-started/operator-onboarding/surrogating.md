@@ -49,7 +49,7 @@ For your visualization, the process of surrogating is described here with the ex
 |![Number 2](images/Numbers/circle-2o.png) |The portal looks similar to the own one for you as a PosDealer when surrogating into the account of a PosOperator. The account of a PosOperator is to be recognized with the PosOperators COMPANY NAME. |
 |![Number 3](images/Numbers/circle-3o.png) |Every product, you as a surrogated PosDealer buy in the store will be added to the **shopping cart** and will be available after you switch to your own account.   |
 |![Number 4](images/Numbers/circle-4o.png) |You switch back to your own account with the `Switch to your account`- button on the right upper corner.   |
-|![Number 5](images/Numbers/circle-5o.png) |Avoid to leave the account of a PosOperator by signing out, your **shopping cart** would get lost.   |
+|![Number 5](images/Numbers/circle-5.png) |Avoid to leave the account of a PosOperator by signing out, your **shopping cart** would get lost.   |
 
 ### Check PosOperators Master data
 

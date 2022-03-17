@@ -2,13 +2,14 @@
 slug: /getting-started/company-roles
 title: Company Roles
 ---
-# Company Roles
 
 :::info summary
 
 After reading this, you can choose the right roles and explain their effects.
 
 :::
+
+## Introduction
 
 *fiskaltrust* distinguishes between four principal **company roles** in the context of the portal and its role management.
 

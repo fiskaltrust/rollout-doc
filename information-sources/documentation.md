@@ -2,7 +2,6 @@
 slug: /technical-operations/information-sources/documentation
 title: Documentation
 ---
-## Documentation
 
 :::info summary
 

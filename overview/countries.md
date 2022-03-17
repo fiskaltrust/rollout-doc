@@ -3,8 +3,6 @@ slug: /overview/countries
 title: Countries
 ---
 
-## Countries
-
 :::info summary
 
 After reading this, you can explain in which countries _fiskaltrust_ operates.
