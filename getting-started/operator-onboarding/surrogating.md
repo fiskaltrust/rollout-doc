@@ -1,5 +1,5 @@
 ---
-slug: /getting-started/operator-onboarding/surrogating
+slug: /posdealer/getting-started/operator-onboarding/surrogating
 title: Surrogating
 ---
 # Surrogating

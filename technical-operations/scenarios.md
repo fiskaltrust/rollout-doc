@@ -1,5 +1,5 @@
 ---
-slug: /technical-operations/scenarios
+slug: /posdealer/technical-operations/scenarios
 title: Scenarios
 ---
 

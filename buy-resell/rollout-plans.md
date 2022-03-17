@@ -1,5 +1,5 @@
 ---
-slug: /buy-resell/rollout-plans
+slug: /posdealer/buy-resell/rollout-plans
 title: Rollout Plans
 ---
 # Rollout Plans

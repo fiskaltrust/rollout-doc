@@ -1,5 +1,5 @@
 ---
-slug: /introduction
+slug: /posdealer/introduction
 title: Introduction
 ---
 # Introduction
