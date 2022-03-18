@@ -105,6 +105,19 @@ module.exports = {
 			type: 'category',
 			label: 'Information Sources',
 			items: [
+				{
+					type: 'category',
+					label: 'Tutorials',
+					items: [
+						{
+							type: 'category',
+							label: 'German market',
+							items: [
+								'rollout-doc/information-sources/tutorials/de/switch-scu'
+							]
+						}
+					]
+				},
 				'rollout-doc/information-sources/knowledge-base',
 				'rollout-doc/information-sources/cases',
 				'rollout-doc/information-sources/documentation',
