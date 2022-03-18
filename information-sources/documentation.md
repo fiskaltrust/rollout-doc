@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/information-sources/documentation
+slug: /posdealer/information-sources/documentation
 title: Documentation
 ---
 

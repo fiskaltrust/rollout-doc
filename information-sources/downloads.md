@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/information-sources/downloads
+slug: /posdealer/information-sources/downloads
 title: Downloads
 ---
 # Downloads

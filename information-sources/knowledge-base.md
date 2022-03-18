@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/information-sources/knowledge-base
+slug: /posdealer/information-sources/knowledge-base
 title: Knowledge Base
 ---
 # Knowledge Base

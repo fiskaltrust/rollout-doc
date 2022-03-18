@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/information-sources/cases
+slug: /posdealer/information-sources/cases
 title: Cases
 ---
 # Cases

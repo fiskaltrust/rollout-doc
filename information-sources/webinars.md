@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/information-sources/webinars
+slug: /posdealer/information-sources/webinars
 title: Webinars
 ---
 # Webinars

@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/information-sources/videos
+slug: /posdealer/information-sources/videos
 title: Videos
 ---
 # Videos
