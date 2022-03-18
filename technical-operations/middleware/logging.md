@@ -26,12 +26,14 @@ Depending on the log level and your number of transactions, the Middleware may l
 
 :::
 
+
+
 ## Log levels
 
 The Middleware distinguishes between seven different log levels.
 
-|            Priority             | Level         | Description                                                    |
-| :-----------------------------: | ------------- | -------------------------------------------------------------- |
+|                Priority                 | Level         | Description                                                    |
+| :-------------------------------------: | ------------- | -------------------------------------------------------------- |
 | ![](../../images/numbers/circle-1o.png) | `none`        | Nothing is logged                                              |
 | ![](../../images/numbers/circle-2o.png) | `critical`    | Only critical errors are logged                                |
 | ![](../../images/numbers/circle-3o.png) | `error`       | General errors are logged                                      |
