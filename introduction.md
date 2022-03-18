@@ -6,20 +6,16 @@ title: Introduction
 
 As a PosDealer, you want to get to know, understand and use the services and products of _fiskaltrust_. 
 
-This documentation provides you an **overview** of which services _fiskaltrust_ offers in which countries. The **architecture**, the **business model** and **legal/data protection** issues are explained.
+This documentation provides you an **overview** of which services _fiskaltrust_ offers in which countries. The architecture, the business model and legal/data protection issues are explained.
 
-Before rolling out a POS system at a customer site, you need a playground to test the services and products in detail. At **Get Started** we explain the concept of our **Sandbox**. **Registration** and use is free of charge. After that you will get familiar with the **Operator Onboarding** and then create a **My First Cashbox**.  
+Before rolling out a POS system at a customer site, you need a playground to test the services and products in detail. At **Get Started** we explain the concept of our Sandbox. Registration and use is free of charge. After that you will get familiar with the Operator Onboarding and then create a My First Cashbox.  
 
-With **Buy/Resell** you can expand your knowledge of our business model. You will learn how to make a **Framework Agreement** for which **Products**. With **Rollout Management**, rollouts at the cash register operator succeed in a standardized manner, and with the **Shop** in a highly individualized manner.  
+With **Buy/Resell** you can expand your knowledge of our business model. You will learn how to make a Framework Agreement for which Products. With Rollout Management, rollouts at the cash register operator succeed in a standardized manner, and with the Shop in a highly individualized manner.  
 
-In the **Technical Operations** section you will find **Scenarios** for using our products for different requirements. In-depth details on **Middleware** and **Rollout Automation** avoid time-consuming problems with **Troubleshooting** or **Maintenance**.
+In the **Technical Operations** section you will find Scenarios for using our products for different requirements. In-depth details on Middleware and Rollout Automation avoid time-consuming problems with Troubleshooting or Maintenance.
 
-_fiskaltrust_ provides you as PosDealer with plenty of information. On the one hand, you will find the **Knowledge Base** in the fiskaltrust.Portal,
-possible **cases** at our support as well as contractual information and various exports for **download**.
-
-Use our tips for the efficient use of this **Documentation**, read our **News** and learn more about further information sources such as **Webinars** and **Videos**.
-
-If **contacting support** should be necessary, we will help you prepare your request to best support the process.
+_fiskaltrust_ provides you as PosDealer with **Information sources**. On the one hand, you will find the Knowledge Base in the fiskaltrust.Portal,
+possible cases at our support as well as contractual information and various exports for download. Use our tips for the efficient use of this Documentation, read our News and learn more about further information sources such as Webinars and Videos. If contacting support should be necessary, we will help you prepare your request to best support the process.
 
 Please use the **Recommended reading** section below to learn our recommendations depending on your role in handling our products and services.
 **Where to start** will provide you with recommendations on which content to work on depending on your focus.
@@ -137,9 +133,13 @@ import TabItem from '@theme/TabItem';
 || elements | description                                                                                                                |
 |:---------------------:|:---------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |:memo:| Introduction |The **introduction** of each section consists of some general or background information    |
-|![Number 1](images/numbers/1.png) ![Number 2](images/numbers/2.png) ![Number 3](images/numbers/3.png) |Work steps |With the help of **screenshots**, the documentation explains what to do where. In our screenshots the steps are marked with numbers. You will find these numbers again in the explanations of the work steps. |
+|![Number 1](images/numbers/1.png) ![Number 2](images/numbers/2.png) ![Number 3](images/numbers/3.png) |Work steps |With the help of **screenshots**, the documentation explains what to do where. In our screenshots the steps are marked with numbers. You will find these numbers again in the explanations of the work steps. Screenshots and drawings are maximized and resized with a mouse click.|
 |:movie_camera: |Videos |We show longer sequences of work steps as a silent **short movie**, where you control the playback speed and display size yourself. Here, the work steps are subsequently described in the sequence as in the video. |
 |:flags:|Country-specific information | In this documentation you will find the general work steps explained. You will find **Country-specific information** in the sections marked with the country name. After selecting a section, the selected country is retained during your current session. |
+
+## Admonitions
+
+You will find several types of call-outs in our documentation. Please note these side contents. 
 
 :::info summary
 A **short explanation of the content**, that you will know, after you have read this section. 
