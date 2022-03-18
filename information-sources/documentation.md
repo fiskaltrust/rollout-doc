@@ -43,6 +43,16 @@ import ReactPlayer from "react-player"
 |![Number 6](images/Numbers/circle-6o.png) |Here you can find more details about the content, in which your keyword was found|
 |![Number 7](images/Numbers/circle-7o.png) |Get more overview with opening the found documents in several tabs |
 
+### Copying expressions
+
+:::tip Copying expressions made easy
+
+The documentation, in particular technical chapters, contains code blocks which can be executed on your system's command line. When hovering with the mouse over such a code block, a copy button will appear in the top right, allowing for the whole code to be copied with one click to your clipboard. This can save time and avoid typos or spelling issues. Please note the respective explanatory text for notes on where to use the code and whether any adjustments are necessary.
+
+:::
+
+<ReactPlayer controls url={require("./images/using-code-comand-prompt.mp4").default} /><br />
+
 ## Our software documentation:
 
 * is based on fundamental knowledge of our customers' frameworks

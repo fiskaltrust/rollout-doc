@@ -27,16 +27,6 @@ The better a problem is described and studied, the faster a solution will be fou
 |![Number 3](../../images/Numbers/circle-3o.png) |Among other things, fiskaltrust.portal also offers you an overview of the status of cashboxes, lists exception errors and provides detailed information for error analysis , please note [CashBox failures](../troubleshooting/cashbox-failures.md) |
 |![Number 4](../../images/Numbers/circle-4o.png) |In some cases, fiskaltrust.Staff requires a [log file](../../technical-operations/middleware/logging) or a memory dump for intensive investigation of your request. Please refrain from sending these data unsolicited. Furthermore, we always recommend that you do not create such analysis data over an indefinite period of time and or send such data uncompressed. If applicable, our Customer Success Team will provide you with a link to where you can deposit the data, as well as information about what data should be collected. |
 
-:::tip Copying expressions made easy
-
-The documentation, in particular technical chapters, contains code blocks which can be executed on your system's command line. When hovering with the mouse over such a code block, a copy button will appear in the top right, allowing for the whole code to be copied with one click to your clipboard. This can save time and avoid typos or spelling issues. Please note the respective explanatory text for notes on where to use the code and whether any adjustments are necessary.
-
-:::
-
-### Copying expressions
-import ReactPlayer from "react-player"
-
-<ReactPlayer controls url={require("./images/using-code-comand-prompt.mp4").default} /><br />
 
 ## Country-specific information
 

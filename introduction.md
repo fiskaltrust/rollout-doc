@@ -4,15 +4,27 @@ title: Introduction
 ---
 # Introduction
 
+As a PosDealer, you want to get to know, understand and use the services and products of _fiskaltrust_. 
 
-:::info summary
+This documentation provides you an **overview** of which services _fiskaltrust_ offers in which countries. The **architecture**, the **business model** and **legal/data protection** issues are explained.
 
-This documentation follows two targets:
+Before rolling out a POS system at a customer site, you need a playground to test the services and products in detail. At **Get Started** we explain the concept of our **Sandbox**. **Registration** and use is free of charge. After that you will get familiar with the **Operator Onboarding** and then create a **My First Cashbox**.  
 
-* PosDealers understand and use _fiskaltrust's_ products and services
-* PosDealers get help when questions come up while working with fiskaltrust
+With **Buy/Resell** you can expand your knowledge of our business model. You will learn how to make a **Framework Agreement** for which **Products**. With **Rollout Management**, rollouts at the cash register operator succeed in a standardized manner, and with the **Shop** in a highly individualized manner.  
 
-:::
+In the **Technical Operations** section you will find **Scenarios** for using our products for different requirements. In-depth details on **Middleware** and **Rollout Automation** avoid time-consuming problems with **Troubleshooting** or **Maintenance**.
+
+_fiskaltrust_ provides you as PosDealer with plenty of information. On the one hand, you will find the **Knowledge Base** in the fiskaltrust.Portal,
+possible **cases** at our support as well as contractual information and various exports for **download**.
+
+Use our tips for the efficient use of this **Documentation**, read our **News** and learn more about further information sources such as **Webinars** and **Videos**.
+
+If **contacting support** should be necessary, we will help you prepare your request to best support the process.
+
+Please use the **Recommended reading** section below to learn our recommendations depending on your role in handling our products and services.
+**Where to start** will provide you with recommendations on which content to work on depending on your focus.
+**Key elements** shows which elements we use in this documentation and how you can get the most benefit from them.
+
 <details>
   <summary> Recommended reading</summary>  
 
@@ -122,23 +134,29 @@ import TabItem from '@theme/TabItem';
   <summary>Key elements</summary>  
 
 
-| elements | description                                                                                                                |
-|:----------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-|explanation |The introduction of each section consists of some general or background information    |
-|work steps |Where to do what is explained with the help of screenshots. There you will find necessary buttons numbered with stamps(![Number 1](images/numbers/1.png), ![Number 2](images/numbers/2.png), ![Number 3](images/numbers/3.png)). You will find these numbers again in the explanations of the work steps.   |
-|videos |We show longer sequences of work steps as a short silent movie, where you control the playback speed and display size yourself. Here, the work steps are subsequently described in the sequence as in the video   |
-|Country-specific information | In this documentation you will find the general work steps explained. Country-specific details can then be found in the sections marked with the country name. After selecting a section, the selected country is retained during your current session. |
-</details>
+|| elements | description                                                                                                                |
+|:---------------------:|:---------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|:memo:| Introduction |The **introduction** of each section consists of some general or background information    |
+|![Number 1](images/numbers/1.png) ![Number 2](images/numbers/2.png) ![Number 3](images/numbers/3.png) |Work steps |With the help of **screenshots**, the documentation explains what to do where. In our screenshots the steps are marked with numbers. You will find these numbers again in the explanations of the work steps. |
+|:movie_camera: |Videos |We show longer sequences of work steps as a silent **short movie**, where you control the playback speed and display size yourself. Here, the work steps are subsequently described in the sequence as in the video. |
+|:flags:|Country-specific information | In this documentation you will find the general work steps explained. You will find **Country-specific information** in the sections marked with the country name. After selecting a section, the selected country is retained during your current session. |
 
-<details>
-  <summary> Target audience</summary>  
+:::info summary
+A **short explanation of the content**, that you will know, after you have read this section. 
+:::
+
+:::tip tipps
+**Recommendations** and hints on how to either save time or get more in-depth information
+:::
 
 
-* Owners, employees and Shareholders of PosDealers
-* Sales- or Account-Managers (purchase and sales)
-* Technicians (pre-test, on-site rollout, maintenance)
-* Support staff (troubleshooting)
-* Lawyers (legal issues, data protection)
+:::caution
+**Tips** you should follow to avoid problems
+:::
+
+:::danger 
+**Bids** that protect you from losing time or material
+:::
 
 </details>
 
