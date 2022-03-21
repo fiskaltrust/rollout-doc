@@ -6,20 +6,22 @@ title: Introduction
 
 As a PosDealer, you want to get to know, understand and use the services and products of _fiskaltrust_. 
 
-This documentation provides you an **overview** of which services _fiskaltrust_ offers in which countries. The architecture, the business model and legal/data protection issues are explained.
+This documentation provides you an **Overview** of which _services_ are offered by _fiskaltrust_ in which _Countries_. The _Architecture_, _fiskaltrusts Management Portal_, the _Business model_ and _Legal/data protection_ issues are explained.
 
-Before rolling out a POS system at a customer site, you need a playground to test the services and products in detail. At **Get Started** we explain the concept of our Sandbox. Registration and use is free of charge. After that you will get familiar with the Operator Onboarding and then create a My First Cashbox.  
+Before rolling out a POS system at a customer site, you need a playground to test the services and products in detail. At **Get Started** we explain the concept of our _Sandbox_. _Registration_ and use is free of charge. After that you will get familiar with _Company Roles_ and the _Operator Onboarding_ and then follow _My First Cashbox_ to create your first demo setup.
 
-With **Buy/Resell** you can expand your knowledge of our business model. You will learn how to make a Framework Agreement for which Products. With Rollout Management, rollouts at the cash register operator succeed in a standardized manner, and with the Shop in a highly individualized manner.  
+With **Buy/Resell** you can expand your knowledge of our business model. You will learn how to make a _Framework Agreement_ for which _Products_. With _Rollout Management_, rollouts at the PosOperator succeed in a standardized manner, and with the _Shop_ in a highly individualized manner.  
 
-In the **Technical Operations** section you will find Scenarios for using our products for different requirements. In-depth details on Middleware and Rollout Automation avoid time-consuming problems with Troubleshooting or Maintenance.
+In the **Technical Operations** section you will find _Scenarios_ for using our products for different requirements. In-depth details on _Middleware_ and _Rollout Automation_ avoid time-consuming problems with _Troubleshooting_ or _Maintenance_.
 
-_fiskaltrust_ provides you as PosDealer with **Information sources**. On the one hand, you will find the Knowledge Base in the fiskaltrust.Portal,
-possible cases at our support as well as contractual information and various exports for download. Use our tips for the efficient use of this Documentation, read our News and learn more about further information sources such as Webinars and Videos. If contacting support should be necessary, we will help you prepare your request to best support the process.
+_fiskaltrust_ provides you as PosDealer with **Information sources**. On the one hand, you will find the _Knowledge Base_ in the fiskaltrust.Portal,
+possible _Cases_ at our support as well as contractual information and various exports for download. Use our tips for the efficient use of this _Documentation_, read our _News_ and learn more about further information sources such as _Webinars_ and _Videos_. If _Contacting support_ should be necessary, we will help you prepare your request to best support the process.
 
 Please use the **Recommended reading** section below to learn our recommendations depending on your role in handling our products and services.
 **Where to start** will provide you with recommendations on which content to work on depending on your focus.
 **Key elements** shows which elements we use in this documentation and how you can get the most benefit from them.
+
+If you are unfamiliar with the used expressions or want to reassure your understanding of our usage of them, have a look at the [Terminology](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
 
 <details>
   <summary> Recommended reading</summary>  
@@ -137,7 +139,7 @@ import TabItem from '@theme/TabItem';
 |:movie_camera: |Videos |We show longer sequences of work steps as a silent **short movie**, where you control the playback speed and display size yourself. Here, the work steps are subsequently described in the sequence as in the video. |
 |:flags:|Country-specific information | In this documentation you will find the general work steps explained. You will find **Country-specific information** in the sections marked with the country name. After selecting a section, the selected country is retained during your current session. |
 
-## Admonitions
+#### Admonitions
 
 You will find several types of call-outs in our documentation. Please note these side contents. 
 
