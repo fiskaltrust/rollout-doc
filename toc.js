@@ -105,6 +105,9 @@ module.exports = {
 			type: 'category',
 			label: 'Information Sources',
 			items: [
+				'rollout-doc/information-sources/knowledge-base',
+				'rollout-doc/information-sources/cases',
+				'rollout-doc/information-sources/documentation',
 				{
 					type: 'category',
 					label: 'Tutorials',
@@ -118,9 +121,6 @@ module.exports = {
 						}
 					]
 				},
-				'rollout-doc/information-sources/knowledge-base',
-				'rollout-doc/information-sources/cases',
-				'rollout-doc/information-sources/documentation',
 				'rollout-doc/information-sources/downloads',
 				'rollout-doc/information-sources/status-of-third-party-partners',
 				'rollout-doc/information-sources/news',
