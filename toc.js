@@ -1,6 +1,6 @@
 module.exports = {
 	rolloutDoc: [
-		//AUTO-INSERT:GETTING-STARTED-DEALERS
+		// AUTO-INSERT:GETTING-STARTED-DEALERS
 		'rollout-doc/introduction',
 		{
 			type: 'category',
