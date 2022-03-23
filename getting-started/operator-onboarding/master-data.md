@@ -29,9 +29,9 @@ To illustrate the processes of checking and validation of Master data, we show h
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import PreviewAT from '../../_markets/at/getting-started/operator-onboarding/master data/_edit-master.mdx';
-import PreviewFR from '../../_markets/fr/getting-started/operator-onboarding/master data/_edit-master.mdx';
-import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/master data/_edit-master.mdx';
+import PreviewAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_edit-master.mdx';
+import PreviewFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_edit-master.mdx';
+import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/master-data/_edit-master.mdx';
 
 <Tabs groupId="market">
 
@@ -64,9 +64,9 @@ import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/mas
 
 ### Check or add outlets
 
-import OutletAT from '../../_markets/at/getting-started/operator-onboarding/master data/_checking-outlets.mdx';
-import OutletFR from '../../_markets/fr/getting-started/operator-onboarding/master data/_checking-outlets.mdx';
-import OutletDE from '../../_markets/de/getting-started/operator-onboarding/master data/_checking-outlets.mdx';
+import OutletAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
+import OutletFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
+import OutletDE from '../../_markets/de/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
 
 <Tabs groupId="market">
 

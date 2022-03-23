@@ -28,9 +28,9 @@ fiskaltrust offers free webinars. The offer is primarily aimed at PosCreators. F
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import VideoAT from '../_markets/at/sources/info/_webinar.mdx';
-import VideoFR from '../_markets/fr/sources/info/_webinar.mdx';
-import VideoDE from '../_markets/de/sources/info/_webinar.mdx';
+import VideoAT from '../_markets/at/information-sources/webinars/_webinar.mdx';
+import VideoFR from '../_markets/fr/information-sources/webinars/_webinar.mdx';
+import VideoDE from '../_markets/de/information-sources/webinars/_webinar.mdx';
 
 <Tabs groupId="market">
 

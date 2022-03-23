@@ -32,9 +32,9 @@ The better a problem is described and studied, the faster a solution will be fou
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import TroubleAT from '../../_markets/at/technical-operations/troubleshooting/_trouble.mdx';
-import TroubleFR from '../../_markets/fr/technical-operations/troubleshooting/_trouble.mdx';
-import TroubleDE from '../../_markets/de/technical-operations/troubleshooting/_trouble.mdx';
+import TroubleAT from '../../_markets/at/technical-operations/troubleshooting/troubleshooting-guide/_trouble.mdx';
+import TroubleFR from '../../_markets/fr/technical-operations/troubleshooting/troubleshooting-guide/_trouble.mdx';
+import TroubleDE from '../../_markets/de/technical-operations/troubleshooting/troubleshooting-guide/_trouble.mdx';
 
 <Tabs groupId="market">
 

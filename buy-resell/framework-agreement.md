@@ -65,9 +65,9 @@ import TabItem from '@theme/TabItem';
 
 ## further informations
 
-import FrameworkAT from '../_markets/at/buy-resell/framework/_framework.mdx';
-import SalesFR from '../_markets/fr/overview/business-model/_sales.mdx';
-import SalesDE from '../_markets/de/overview/business-model/_sales.mdx';
+import FrameworkAT from '../_markets/at/buy-resell/framework-agreement/_framework.mdx';
+import FrameworkFR from '../_markets/fr/buy-resell/framework-agreement/_framework.mdx';
+import FrameworkDE from '../_markets/de/buy-resell/framework-agreement/_framework.mdx';
 
 <Tabs groupId="market">
 
@@ -76,11 +76,11 @@ import SalesDE from '../_markets/de/overview/business-model/_sales.mdx';
   </TabItem>
 
   <TabItem value="FR" label="France">
-    <SalesFR />
+    <FrameworkFR />
   </TabItem>
 
   <TabItem value="DE" label="Germany">
-    <SalesDE />
+    <FrameworkDE />
   </TabItem>
 
 </Tabs>

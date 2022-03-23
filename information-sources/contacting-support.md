@@ -36,9 +36,9 @@ All our learning in discussions, requests or how-tos`s result in knowledge base 
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import SupportAT from '../_markets/at/sources/info/_support.mdx';
-import SupportFR from '../_markets/fr/sources/info/_support.mdx';
-import SupportDE from '../_markets/de/sources/info/_support.mdx';
+import SupportAT from '../_markets/at/information-sources/contacting-support/_support.mdx';
+import SupportFR from '../_markets/fr/information-sources/contacting-support/_support.mdx';
+import SupportDE from '../_markets/de/information-sources/contacting-support/_support.mdx';
 
 <Tabs groupId="market">
 

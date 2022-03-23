@@ -25,15 +25,15 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 
 | Image | Description  | Image | Description  |
 |:----------------------:|:----------------------|:----------------------:|:----------------------|
-|![Main POS-System](../technical-operations/scenarios/images/main-POS-System.svg ) | **Main POS-System**  |![Subsidiary POS-System](../technical-operations/scenarios/images/POS-System.svg ) |Subsidiary POS-System  |
-|![Terminal](../technical-operations/scenarios/images/terminal-table.svg "Terminal")  |Terminal, handheld  |![Server](../technical-operations/scenarios/images/server.svg "Server")  |Server  |
+|![Main POS-System](images/main-POS-System.svg ) | **Main POS-System**  |![Subsidiary POS-System](images/POS-System.svg ) |Subsidiary POS-System  |
+|![Terminal](images/terminal-table.svg "Terminal")  |Terminal, handheld  |![Server](images/server.svg "Server")  |Server  |
 
 ## Scenarios
 
 ### One SCU for each POS-System
 A single SCU for each POS-System is the simplest - and often the most reliable - architectural approach and works best for independent, standalone POS-systems.
 
-![One SCU for each POS-System](../technical-operations/scenarios/images/scenario-1-RR.png "One SCU for each POS-System")
+![One SCU for each POS-System](images/scenario-1-RR.png "One SCU for each POS-System")
 
 | Facts | Description  |
 |:----------------------:|:----------------------|
@@ -45,7 +45,7 @@ A single SCU for each POS-System is the simplest - and often the most reliable -
 ### One SCU at server for multiple POS-Systems
 Hosting a single SCU in a separate CashBox that is accessed by multiple Queues/POS-Systems can be a more efficient solution for interconnected systems, e.g. in stores with multiple POS-Systems and an on-site backoffice.
 
-![SCU on a local Server](../technical-operations/scenarios/images/scenario-2-RR.png "SCU on a local Server")
+![SCU on a local Server](images/scenario-2-RR.png "SCU on a local Server")
 
 | Facts | Description  |
 |:----------------------:|:----------------------|
@@ -59,7 +59,7 @@ Hosting a single SCU in a separate CashBox that is accessed by multiple Queues/P
 ### One SCU in main POS-System, used by other POS-Systems
 Hosting a single SCU for multiple Queues in the CashBox of the _main_ POS-System can be a more efficient solution for interconnected systems, e.g. in stores with multiple POS-Systems and no on-site backoffice.
 
-![Main POS-System for multiple POS-Systems](../technical-operations/scenarios/images/scenario-3-RR.png "Main POS-System for multiple POS-Systems")
+![Main POS-System for multiple POS-Systems](images/scenario-3-RR.png "Main POS-System for multiple POS-Systems")
 
 | Facts | Description  |
 |:----------------------:|:----------------------|
@@ -72,7 +72,7 @@ Hosting a single SCU for multiple Queues in the CashBox of the _main_ POS-System
 ### Multiple POS-Systems share one external signature service
 In scenarios where the external signing provider supports multi-place usage, this architecture helps reducing local network complexity by re-using the same SCU in multiple CashBoxes.
 
-![One external signature service](../technical-operations/scenarios/images/scenario-4-RR.png "One external signature service")
+![One external signature service](images/scenario-4-RR.png "One external signature service")
 
 | Facts | Description  |
 |:----------------------:|:----------------------|
@@ -84,7 +84,7 @@ In scenarios where the external signing provider supports multi-place usage, thi
 ### Main POS-System for multiple Terminals
 This scenario is recommend for interconnected POS-Systems where terminals that have no standalone-functionality are connected to a central system.
 
-![Main POS-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5-RR.png "Main POS-System for multiple Terminals")
+![Main POS-System for multiple Terminals](images/scenario-5-RR.png "Main POS-System for multiple Terminals")
 
 | Facts | Description  |
 |:----------------------:|:----------------------|
@@ -101,12 +101,12 @@ Experiences of our partners showed that in exceptional cases terminals become de
 
 :::
 
-![Main POS-System for multiple Terminals](../technical-operations/scenarios/images/scenario-5B-RR.png "Main POS-System for multiple Terminals")
+![Main POS-System for multiple Terminals](images/scenario-5B-RR.png "Main POS-System for multiple Terminals")
 
 ### Data center as operational environment
 This scenarios works best in centralized system architectures. Many POS systems or terminals can be connected to the hosted version of the fiskaltrust.Middleware, which is operated either in fiskaltrust's or the users datacenter. In countries where remote signing is allowed (Austria and France), this is the generally recommended solution, as it does not require any locally installed Middleware instances.
 
-![Main POS-System for multiple Terminals](../technical-operations/scenarios/images/scenario-6-RR.png "Main POS-System for multiple Terminals")
+![Main POS-System for multiple Terminals](images/scenario-6-RR.png "Main POS-System for multiple Terminals")
 
 
 | Facts | Description  |

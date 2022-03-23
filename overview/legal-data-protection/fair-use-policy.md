@@ -17,9 +17,9 @@ After reading this, you can follow the fair-use policies.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import FairAT from '../../_markets/at/overview/legal/_fair-use-policy.mdx';
-import FairFR from '../../_markets/fr/overview/legal/_fair-use-policy.mdx';
-import FairDE from '../../_markets/de/overview/legal/_fair-use-policy.mdx';
+import FairAT from '../../_markets/at/overview/legal-data-protection/fair-use-policy/_fair-use-policy.mdx';
+import FairFR from '../../_markets/fr/overview/legal-data-protection/fair-use-policy/_fair-use-policy.mdx';
+import FairDE from '../../_markets/de/overview/legal-data-protection/fair-use-policy/_fair-use-policy.mdx';
 
 <Tabs groupId="market">
 

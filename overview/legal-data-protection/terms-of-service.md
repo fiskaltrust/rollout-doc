@@ -15,9 +15,9 @@ After reading this, you can explain _fiskaltrust_ terms of service.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import TermsAT from '../../_markets/at/overview/legal/_terms-of-service.mdx';
-import TermsFR from '../../_markets/fr/overview/legal/_terms-of-service.mdx';
-import TermsDE from '../../_markets/de/overview/legal/_terms-of-service.mdx';
+import TermsAT from '../../_markets/at/overview/legal-data-protection/terms-of-service/_terms-of-service.mdx';
+import TermsFR from '../../_markets/fr/overview/legal-data-protection/terms-of-service/_terms-of-service.mdx';
+import TermsDE from '../../_markets/de/overview/legal-data-protection/terms-of-service/_terms-of-service.mdx';
 
 <Tabs groupId="market">
 
