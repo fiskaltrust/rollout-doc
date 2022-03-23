@@ -139,26 +139,40 @@ import TabItem from '@theme/TabItem';
 |:movie_camera: |Videos |We show longer sequences of work steps as a silent **short movie**, where you control the playback speed and display size yourself. Here, the work steps are subsequently described in the sequence as in the video. |
 |:flags:|Country-specific information | In this documentation you will find the general work steps explained. You will find **Country-specific information** in the sections marked with the country name. After selecting a section, the selected country is retained during your current session. |
 
-#### Admonitions
+#### Summary
 
-You will find several types of call-outs in our documentation. Please note these side contents. 
+Each chapter starts with a brief summary on what topics the chapter covers.
 
 :::info summary
 A **short explanation of the content**, that you will know, after you have read this section. 
 :::
 
-:::tip tipps
-**Recommendations** and hints on how to either save time or get more in-depth information
+#### Alert boxes
+
+Chapters make use of alert boxes to bring your attention to important details on the subject.
+
+:::info
+
+Blue info alerts contain additional general information.
+
 :::
 
+:::tip
+
+Green tip alerts provide you with with more in-depth information on shortcuts and others tips and tricks.
+
+:::
 
 :::caution
-**Tips** you should follow to avoid problems
+
+Yellow caution alerts point out areas, where you should pay particular attention, in order to avoid subsequent issues.
+
 :::
 
 :::danger 
-**Bids** that protect you from losing time or material
-:::
 
+Red danger alerts contain information details, critical to your production environment.
+
+:::
 </details>
 
