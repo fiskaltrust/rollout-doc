@@ -17,8 +17,8 @@ Such data exchange with external service providers must be initialized in the fi
 
 **No data exchange can take place without active setup by PosDealer or PosOperator.**  
 
-For details, please refer to the respective instructions or product descriptions [Products](../../buy-resell/products).  
-For manual exchange, see the section on [Exports](exports.md).
+For details, please refer to the respective instructions or product descriptions [Products](../buy-resell/products.md).  
+For manual exchange, see the section on [Exports](../technical-operations/maintenance/exports.md).
 
 ## Work steps
 

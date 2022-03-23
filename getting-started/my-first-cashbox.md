@@ -113,8 +113,6 @@ This assembles the appropriate binary packages for your CashBox and may take a c
 
 Unzip the archive you just downloaded into the directory where you'd like to deploy the Middleware. Once that is complete you can start your Middleware instance with the test script `test.cmd` (_please make sure to launch it with **administrative privileges**_).
 
-For a proper service installation, please refer to the chapter [Deployment](../technical-operations/middleware/deployment.md).
-
 :::info
 
 As we downloaded the online launcher the archive only comes with the launcher stub and the Middleware will fetch all additionally required packages upon the first start. This may delay the first start by a couple of seconds.
