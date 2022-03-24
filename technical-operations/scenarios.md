@@ -25,8 +25,8 @@ The scenarios are described by pros and cons. The term _POS-System fails_ means,
 
 | Image | Description  | Image | Description  |
 |:----------------------:|:----------------------|:----------------------:|:----------------------|
-|![Main POS-System](images/main-POS-System.svg ) | **Main POS-System**  |![Subsidiary POS-System](images/POS-System.svg ) |Subsidiary POS-System  |
-|![Terminal](images/terminal-table.svg "Terminal")  |Terminal, handheld  |![Server](images/server.svg "Server")  |Server  |
+|![Main POS-System](images/main-POS-System.png ) | **Main POS-System**  |![Subsidiary POS-System](images/POS-System.png ) |Subsidiary POS-System  |
+|![Handheld](images/handheld.png "Handheld")  |Terminal, handheld  |![Server](images/server.png "Server")  |Server  |
 
 ## Scenarios
 
