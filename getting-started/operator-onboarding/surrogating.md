@@ -41,7 +41,7 @@ For your visualization, the process of surrogating is described here with the ex
 |![Number 3](images/Numbers/circle-3o.png) |With `Enter` or the Symbol for `Search` the datasets of those PosOperators, whose names or E-mail addresses matches your criteria will be displayed. Without a search term, all PosOperators are displayed.  |
 |![Number 4](images/Numbers/circle-4o.png) |If the name of the PosOperator is an active link, the account is active. Choose that link to switch to the PosOperators account.  |
 
-![surrogating accounts](images/3-surrogating-accounts.png "surrogating accounts")
+![surrogating accounts](images/3-surrogating-accounts.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,14 +53,14 @@ For your visualization, the process of surrogating is described here with the ex
 
 ### Check PosOperators Master data
 
-![surrogating accounts](images/5-surrogating-accounts.png "surrogating accounts")
+![surrogating accounts](images/5-surrogating-accounts.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |After signing in (for PosOperators) or surrogating in the Account of a PosOperator (for PosDealers), choose `[COMPANY NAME]`/ `Overview`.  |
 |![Number 2](images/Numbers/circle-2o.png) |Determine if the role PosOperator has been activated as well as no other. Otherwise, cancel the undesired role. Please check [Company Roles](../Company%20Roles) for further questions |
 
-![surrogating accounts](images/6-surrogating-accounts.png "surrogating accounts")
+![surrogating accounts](images/6-surrogating-accounts.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Edit")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

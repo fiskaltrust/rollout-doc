@@ -66,7 +66,7 @@ You can now go directly to the company data by clicking on `Enter company data m
 
 All the fields marked with a red star are mandatory and must be filled out with the correct data.
 
-![Enter company data](./images/registration/company_data_2.png)
+![Enter company data](./images/registration/company_data_2.png "https://portal-sandbox.fiskaltrust.TLD/Account/Register")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -87,7 +87,7 @@ The 3rd step of the registration process queries the personal data of the primar
 This contact is the designated administrator of the newly registered company. With this account other employees of the company can be invited. 
 A valid E-mail address must be entered and it cannot have been used already for another registration. This will be the primary contact and all messages from the ft.Portal will be sent to this address.
 
-![Enter user data](images/registration/user_data.png)
+![Enter user data](images/registration/user_data.png "https://portal-sandbox.fiskaltrust.TLD/Account/Register")
 
 :::tip  Error message
 If the E-mail address entered in _email address_ was already used for registration, an information will be displayed, that a user with this E-mailadress already exists. By clicking the link in this information, you can initiate the password reset for this user.
@@ -95,7 +95,7 @@ If the E-mail address entered in _email address_ was already used for registrati
 
 ### Confirm registration
 
-In the last step the information about the successfull registration is shown. The fiskaltrust.Portal sends an E-mail with all the necessary information to your primary contact's E-mail.
+In the last step the information about the successful registration is shown. The fiskaltrust.Portal sends an E-mail with all the necessary information to your primary contact's E-mail.
 
 When the E-mail is received in the primary contact's inbox, open it and click on the confirmation link. If you don't find the E-mail in your inbox, look at the spam folder of your E-mail application. 
 Depending on whether you are registering on the _sandbox_ or on the _portal_ you'll receive this E-mail from the sender 
@@ -146,7 +146,7 @@ With different authorizations you define the options that the contacts have in t
 ### Work steps to invite new contacts
 
 
-![Data employee](images/registration/user_data_employee.png "Data employee")
+![Data employee](images/registration/user_data_employee.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -178,7 +178,7 @@ In the future, all contacts use the login listed up [as above or in the assignme
 
 ### Expand user rights
 
-![Employees Authorizations](images/registration/user_management.png "Employees Authorizations")
+![Employees Authorizations](images/registration/user_management.png "Employees Authorizations at https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

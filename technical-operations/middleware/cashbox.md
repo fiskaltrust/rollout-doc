@@ -112,7 +112,7 @@ The portal is the starting point for each CashBox. There, you create and maintai
 
 To get an overview of your CashBoxes, open the portal and go to `Configuration` / `CashBox` (![](../../images/numbers/1.png)).
 
-![](images/cashbox_portal.png)
+![](images/cashbox_portal.png "https://portal-sandbox.fiskaltrust.TLD/CashBox#/")
 
 
 

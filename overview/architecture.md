@@ -25,7 +25,7 @@ A typical *fiskaltrust* setup consists of a three-tiered system.
 
 The following schema provides an overview of how the three tiers interact.
 
-![](./images/arch.png)
+![Overview of three tiers interaction](./images/arch.png "Overview of three tiers interaction")
 
 
 

@@ -28,7 +28,7 @@ In order to run a request successfully against the template API, you'll need at 
 * Your account's access token
 * The desired template
 
-![](images/account_data.png)
+![](images/account_data.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
 The ID and the access token can be obtained from your portal's company overview at `[COMPANYNAME]` / `Overview` (![](../../images/numbers/1.png)). There, you'll find at the bottom of the page your account ID (![](../../images/numbers/2.png)) and the access token (![](../../images/numbers/3.png)) for the authentication against the API.
 

@@ -33,7 +33,7 @@ There are two ways to add and assign PosOperators to your Account as a PosDealer
 |![Number 6](images/Numbers/circle-6o.png) |Checking or changing the settings for the invitations is **inevitable for both ways**. Therefore, regardless of the further way, prepare the settings first.  To do this, select `PosOperator` / `Invitation`.    |
 |![Number 7](images/Numbers/circle-7o.png) |Control or change the settings for the invitation.  |
 
-![invitation process preparation](images/11-onboarding-portal.png "11 invitation process individual")  
+![invitation process preparation](images/11-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")  
 
 
 | options | description                                                                                                                |
@@ -46,7 +46,7 @@ There are two ways to add and assign PosOperators to your Account as a PosDealer
 
 ### Overview individual invitation
 
-![invitation process individual](images/1-onboarding-individual-relaunch.png "1 invitation process individual")  
+![invitation process individual](images/1-onboarding-individual-relaunch.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")  
 
 ### Explanation individual invitation
 
@@ -106,7 +106,7 @@ import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/inv
 
 ### Overview bulk process
 
-![Invitation of PosOperators in a bulk process](images/2-onboarding-bulk-relaunch.png "2-onboarding-bulk.png")  
+![Invitation of PosOperators in a bulk process](images/2-onboarding-bulk-relaunch.png "Invitation of PosOperators in a bulk process")  
 
 ### Explanation bulk process
 
@@ -114,7 +114,7 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 
 ### Work steps bulk process
 
-![invitation via csv file](images/6-onboarding-portal.png "6-onboarding")  
+![invitation via csv file](images/6-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators invitation via csv file")  
 
 
 | steps | description                                                                                                                |
@@ -153,7 +153,7 @@ import FieldsDE from '../../_markets/de/getting-started/operator-onboarding/invi
 
 ### Handling error messages
 
-![Import errors ](images/7-onboarding-portal.png "7-onboarding-portal.png")
+![Import errors ](images/7-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators/import errors")
 
 * If not all of the mandatory fields of the csv file are completed, error messages with the wrong or missing data are shown.
 * Please note the error messages and add the necessary data in the respective lines of the CSV file 
@@ -177,7 +177,7 @@ There are several ways to help.
 
 #### status or error messages 
 
-![8-onboarding](images/8-onboarding-portal.png "8-onboarding-portal")
+![8-onboarding](images/8-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -189,7 +189,7 @@ There are several ways to help.
 
 ### Assigning PosOperators in a bulk process
 
-![9-onboarding](images/9-onboarding-portal.png "9-onboarding-portal")
+![9-onboarding](images/9-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -199,7 +199,7 @@ There are several ways to help.
 
 ### Onboarding of existing PosOperators 
 
-![15-onboarding](images/15-onboarding-already-existing-PosOperators.png "15 onboarding existing PosOperators")
+![15-onboarding](images/15-onboarding-already-existing-PosOperators.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -211,11 +211,9 @@ There are several ways to help.
 |![Number 6](../../images/Numbers/circle-6o.png) |After checking name, e-mail address and access rights they choose `Request assignement PosDealer`.|
 |![Number 7](../../images/Numbers/circle-7o.png) |You as a PosDealer have to choose `PosOperator` / `Overview`, search the new PosOperator and tick `Accept`. The result is an active link, which can be used for surrogating.|
 
-
-
 ### Options with invited PosOperators
 
-![10-onboarding](images/10-onboarding-portal.png "10-onboarding-portal")
+![10-onboarding](images/10-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")
 
 After choosing `PosOperator` / `Invitation`
  / `History` the Protocol for assignments of PosOperators offers you several features:

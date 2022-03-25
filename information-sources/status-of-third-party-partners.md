@@ -22,7 +22,7 @@ For manual exchange, see the section on [Exports](../technical-operations/mainte
 
 ## Work steps
 
-![third party partner](images/5-documentation-third-party.png "third party partner")
+![third party partner](images/5-documentation-third-party.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

@@ -13,7 +13,7 @@ After reading this, you can choose the right roles and explain their effects.
 
 *fiskaltrust* distinguishes between four principal **company roles** in the context of the portal and its role management.
 
-![](./images/company-roles/roles.png)
+![](./images/company-roles/roles.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
 Each role has a specific audience and comes with a distinct set of features and permissions.
 
@@ -44,7 +44,7 @@ The following steps will activate a new role for your account.
 
 
 
-![](./images/company-roles/role-activate.png)
+![](./images/company-roles/role-activate.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
 |             Step             | Description                                                  |
 | :--------------------------: | ------------------------------------------------------------ |
@@ -55,7 +55,7 @@ The following steps will activate a new role for your account.
 
 After enabling the switch, a new page will load where you need to sign the respective agreement
 
-![](./images/company-roles/sign-contract.png)
+![](./images/company-roles/sign-contract.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
 |             Step             | Description                                                  |
 | :--------------------------: | ------------------------------------------------------------ |
@@ -72,7 +72,7 @@ The following steps will deactivate an existing role of your account.
 
 
 
-![](./images/company-roles/role-deactivate.png)
+![](./images/company-roles/role-deactivate.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
 
 |             Step             | Description                                                  |

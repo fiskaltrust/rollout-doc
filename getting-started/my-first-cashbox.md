@@ -103,7 +103,7 @@ You should now have a working CashBox and be able to download its package and de
 
 To download the Middleware package for your newly created CashBox, go to your list of CashBoxes in the portal (at `Configuration` / `CashBox`) and click the download button for the *Online Launcher*.
 
-![](./images/my-first-cashbox/download.png)
+![](./images/my-first-cashbox/download.png "https://portal-sandbox.fiskaltrust.TLD/CashBox#/")
 
 This assembles the appropriate binary packages for your CashBox and may take a couple of seconds. Once your browser prompts you for the file download, save the file to your hard disk.
 

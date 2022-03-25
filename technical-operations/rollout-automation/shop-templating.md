@@ -28,7 +28,7 @@ At `Configuration->Template` you can see the existing templates, copy or edit th
 
 When you create or edit a template, you have to fill out the following form.
 
-![Template Create/Edit](./images/template-shop-create.png)
+![Template Create/Edit](./images/template-shop-create.png "https://portal-sandbox.fiskaltrust.TLD/Template")
 
 | elements | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

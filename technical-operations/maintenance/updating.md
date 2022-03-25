@@ -26,7 +26,7 @@ In the fiskaltrust.Portal you can access the view for the bulk update of the Cas
 
 Each CashBox can contain the modules `Queue`, `Helper` and `SCU`. Depending on the module for which you want to update the package version (e.g. for `fiskaltrust.Middleware.Queue.SQLite` from version `1.3.8` to `1.3.9`) you can specify your update request using the dropdowns. Furthermore, you have the possibility to re-publish the CashBoxes to be updated by activating `Rebuild Configuration` slider for each update selection. 
 
-![Bulk Update](./images/update.png)
+![Bulk Update](./images/update.png "https://portal-sandbox.fiskaltrust.TLD/UpdateConfiguration")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

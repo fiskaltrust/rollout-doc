@@ -20,7 +20,7 @@ If you have any questions, please always use the reply E-mail. The case number w
 
 ## Work steps
 
-![Help-Section / Cases](images/2-cases.png "Help-Section / Cases")
+![Help-Section / Cases](images/2-cases.png "https://portal-sandbox.fiskaltrust.TLD/Case")
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

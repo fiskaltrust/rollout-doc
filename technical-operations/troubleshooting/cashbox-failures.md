@@ -19,7 +19,7 @@ Please keep in mind, that using this will prevent us from actively reacting to i
 
 :::
 
-![CashBox Failures ](./images/cashbox-failures.png)
+![CashBox Failures ](./images/cashbox-failures.png "https://portal-sandbox.fiskaltrust.TLD/MetricCashbox/ListCashboxes")
 
 | element | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -28,6 +28,6 @@ Please keep in mind, that using this will prevent us from actively reacting to i
 |![Number 3](../../images/numbers/circle-3o.png) |The number of exceptions for each single CashBox. |
 |![Number 4](../../images/numbers/circle-4o.png) |Click the icon in the column `Logs` to get the detailed CashBox failure log. |
 
-![CashBox Failure Log ](./images/cashbox-failure-log.png)
+![CashBox Failure Log ](./images/cashbox-failure-log.png "https://portal-sandbox.fiskaltrust.TLD/MetricCashbox/ListCashboxes")
 You will find more detailed information about the exceptions here and can even access the stacktrace when clicking on the icon below `Details` to analyze the CashBox failure.
 

@@ -16,7 +16,7 @@ After reading this, you can explain the tasks performed in the fiskaltrust.Porta
 
 *fiskaltrust.Portal* is the central **management dashboard** to control all aspects of your *fiskaltrust* account and services. This includes, for example, your account and company data, operator associations, the configuration and rollout of your *fiskaltrust.Middleware* instances, placing orders for products and services, and more.
 
-![](./images/portal.png)
+![](./images/portal.png "https://portal-SANDBOX.fiskaltrust.TLD/Home/Dashboard")
 
 The following paragraphs will provide you with a brief overview on the general actions and tasks you can perform in the portal.
 

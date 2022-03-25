@@ -11,7 +11,7 @@ After reading this, you can use the documentation effectively in your specific f
 
 ## Our documentation
 
-![fiskaltrust.Docs start](images/4-documentation-start-new.png "fiskaltrust.Docs start")
+![fiskaltrust.Docs start](images/4-documentation-start-new.png "https://docs.fiskaltrust.cloud/")
 
 ### Usage of our documentation
 | links | description                                                                                                                |
