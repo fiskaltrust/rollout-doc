@@ -6,11 +6,11 @@ module.exports = {
 			type: 'category',
 			label: 'Overview',
 			items: [
+				'rollout-doc/overview/business-model',
 				'rollout-doc/overview/services',
 				'rollout-doc/overview/countries',
 				'rollout-doc/overview/architecture',
 				'rollout-doc/overview/management-portal',
-				'rollout-doc/overview/business-model',
 				{
 					type: 'category',
 					label: 'Legal & Data Protection',
@@ -56,7 +56,7 @@ module.exports = {
 			type: 'category',
 			label: 'Technical Operations',
 			items: [
-				'rollout-doc/technical-operations/scenarios',
+				'rollout-doc/technical-operations/rollout-scenarios',
 				{
 					type: 'category',
 					label: 'Middleware',
