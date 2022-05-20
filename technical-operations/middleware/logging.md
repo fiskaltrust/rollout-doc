@@ -108,7 +108,7 @@ Whenever possible, please also try to limit the logging to the point in time whe
 
 The following log excerpt is an example from when the Launcher just started and encountered a file system permission issue.
 
-```
+```log showLineNumbers
 1970-01-01 00:00:00 [INF] fiskaltrust.Launcher-X.X.X
 1970-01-01 00:00:00 [INF] CashBoxId set to "00000000-0000-0000-0000-000000000000"
 1970-01-01 00:00:00 [INF] AccessToken set

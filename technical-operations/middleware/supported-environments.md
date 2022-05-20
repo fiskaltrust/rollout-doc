@@ -13,18 +13,18 @@ After reading this, you can prepare a system where the Middleware will run.
 
 ## Overview
 
-| Category                           | Requirements                                           |
-| --------------------------------- | ------------------------------------------------------------ |
-| Operating System - Windows        | **Windows 7** or higher,**.net Framework >= 4.8** |
-| Operating System - Linux & macOS  | supported since **ft.Middleware version 1.1**, Ubuntu and Debian recommended, **Mono >=6.8.0**, SOAP not supported and gRPC recommended. |
-| Operating System - Android        | **Germany only**, Android 7 or higher, Swissbit or Fiskaly only. |
-| Database                          | **SQLite** (local DB), **Entity Framework** (MS SQL Server), **MySQL** with ft.Middleware version 1.3.14 |
-| Hardware                          | The Middleware can basically run on a  [Rasperry PI 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). |
-| Local Storage                     | ~ 500 MB (200 MB for the Middleware + 200 MB reserved for update packages); optional: Storage for SQLite DB (~ 8-10Kb/Receipt) |
+| Category                                   | Requirements                                           |
+| ------------------------------------------ | ------------------------------------------------------ |
+| **Operating System:** <br /> Windows        | **Windows 7** or higher <br />**.NET Framework >= 4.8** |
+| **Operating System:** <br /> Linux & macOS  | Ubuntu or Debian recommended<br />**Mono >= 6.8.0**<br />SOAP is not supported, gRPC is recommended |
+| **Operating System:** <br /> Android        | **Germany only**<br />**Android 7** or higher<br />Swissbit or Fiskaly TSSs only |
+| Databases                         | **SQLite** (local DB)<br />**MS SQL Server** (All versions currently supported by Microsoft)<br />**MySQL** (Germany only) |
+| Hardware                          | At least 200MB of memory per Queue<br />Multicore CPU recommended<br />The actual memory amount depends on the amount of receipts to process. |
+| Local Storage                     | At least 500 MB (200 MB for the Middleware + 200 MB reserved for update packages)<br />Optional: Storage for SQLite DB (~ 8-10Kb/receipt) |
 
 :::info SQLite Database
 
-SQLite is the default setting for the database and works well for a single CashBox on a system. With increasing number of CashBoxes on one hardware, we recommend to use a central database instead of SQLite to reduce unsynchronized file I/O caused by the multiple SQLite databases.
+SQLite databases work well for a single CashBox on a system. With increasing number of CashBoxes on one hardware, we recommend to use a central database instead of SQLite, both for reliability and performance reasons due to high I/O load on the disk caused by the multiple SQLite databases.
 
 :::
 
@@ -39,15 +39,19 @@ hence we recommend using these distributions.
 
 **Please make sure to update the Mono version**. The default versions in the package repositories are usually extremely outdated, so please follow the official [Mono guidelines](https://www.mono-project.com/download/stable/#download-lin-ubuntu) to get the latest packages. We recommend to use version **6.8.0** as this is tested by us. Other than that, no specific software needs to be installed (aside from the dependencies Mono has).
 
-:::caution Limitations for Linux
+:::caution Limitations for Linux & macOS
 
 - **gRPC**: **supported** 
 - **REST**: **supported** 
 - **SOAP**: **not supported** right now (due to open bugs in Mono's WCF implementation).
 
-If you haven't already decided for a communication technology, we strongly recommend gRPC, especially in Linux scenarios, as it provides a cleaner, more stable interface. Please refer to our demo project (currently available in C#, Java, Node.js and others) for sample implementations.
-When using REST, the HTTP endpoint slightly differs from the Windows version, as the version prefix cannot be included because of the mentioned Mono issues. Hence, a REST URL on Linux would look like this: http://localhost:1500/a4c4e466-721a-4011-a9a5-a23827a21b45/sign (instead of ../v1/sign).
+If you haven't already decided for a communication technology, we strongly recommend gRPC, especially in Linux scenarios, as it provides a cleaner, more stable interface. Please refer to our [demo projects on GitHub](https://github.com/fiskaltrust?q=demo&type=all&language=&sort=) (currently available in C#, Java, Node.js and others) for sample implementations.
+
+When using REST, **the HTTP endpoint slightly differs from the Windows version**, as the version prefix cannot be included because of unfixed bugs in Mono. Hence, a REST URL on Linux would look like this: `http://localhost:1500/a4c4e466-721a-4011-a9a5-a23827a21b45/sign` (instead of `../v1/sign`).
+
 In addition, if REST is used, a gRPC endpoint needs to be configured as the primary endpoint of the Queue and the SCU, so it can be properly used by our packages.
+
+We're working on an updated version of the Launcher that doesn't rely on Mono anymore to resolve these issues.
 
 :::
 
@@ -61,10 +65,11 @@ Android is currently only supported in Germany.
 
 Android 7 and higher is supported. Due to the security restrictions of Android, the required packages cannot be loaded or updated when the service is started. The middleware for Android is therefore available for download with the following pre-configured packages:
 
-- SQLite queue
+- SQLite Queue
 - fiskaly SCU
 - Swissbit SCU (e.g. via SD-cards)
 
-This Google security restriction also implies, that our regular package update mechanism is not supported on Android. To receive the latest middleware updates, the APK must therefore be updated either via Google Play or Mobile Device Management.
-Additional information on how to run the middleware on Android can be found [here](https://github.com/fiskaltrust/middleware-demo-android).
+This Google security restriction also implies that our regular package update mechanism is not supported on Android. To receive the latest middleware updates, the APK must therefore be updated either via Google Play or Mobile Device Management.
+
+Additional information on how to run the Middleware on Android can be found [here](https://github.com/fiskaltrust/middleware-demo-android).
 

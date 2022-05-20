@@ -1,6 +1,6 @@
 ---
 slug: /posdealers/information-sources/documentation
-title: Documentation
+title: About this Documentation
 ---
 
 :::info summary

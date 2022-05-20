@@ -28,7 +28,7 @@ Each CashBox can contain the modules `Queue`, `Helper` and `SCU`. Depending on t
 
 ![Bulk Update](./images/update.png "https://portal-sandbox.fiskaltrust.TLD/UpdateConfiguration")
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/numbers/circle-1o.png) |Go to `Configuration->Update`.  |
 |![Number 2](../../images/numbers/circle-2o.png) |Choose your CashBoxes or your PosOperators CashBoxes. |

@@ -52,7 +52,7 @@ This facilitates planning for the current year and for the next year, see also t
 ### Steps
 [Rollout Plans](../getting-started/my-first-cashbox#prerequisites)
 
-## further informations
+## Further information
 
 Please check the offers at Rollout Management in your account.
 Please note that differences between the productive system and the sandbox are likely.

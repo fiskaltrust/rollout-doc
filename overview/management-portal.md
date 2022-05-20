@@ -44,13 +44,13 @@ The *Configuration* section in the portal is the starting point for any *fiskalt
 
 ## Operator Management
 
-The portal is where you manage your operators and **invite** them to *fiskaltrust*. Once they accepted your invitation their **account will be associated** with yours, which (*given their authorisation*) will make [surrogating](#surrogating) possible.
+The portal is where you manage your operators and **invite** them to *fiskaltrust*. Once they accepted your invitation their **account will be associated** with yours, which (*given their authorization*) will make [surrogating](#surrogating) possible.
 
 
 
 ## Surrogating
 
-Surrogating is a key feature of *fiskaltrust.Portal* and enables you to **act on behalf of your operators** within the **scope of their granted authorisation**. This may include **read-only** access, **write** access, and even the permission to sign agreements on their behalf. For *PosDealers* this is an **essential feature** to plan and implement their rollouts.
+Surrogating is a key feature of *fiskaltrust.Portal* and enables you to **act on behalf of your operators** within the **scope of their granted authorization**. This may include **read-only** access, **write** access, and even the permission to sign agreements on their behalf. For *PosDealers* this is an **essential feature** to plan and implement their rollouts.
 
 More information is available in the chapter [Surrogating](../getting-started/operator-onboarding/surrogating.md).
 

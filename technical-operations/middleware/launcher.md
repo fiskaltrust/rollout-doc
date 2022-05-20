@@ -12,7 +12,13 @@ After reading this, you can explain what the Middleware launcher is and how it i
 
 ## Introduction
 
-The Launcher is a core component of every Middleware setup, it is the service's **bootstrap part** which manages and initialises the other components of the CashBox (e.g. the queue). The file `fiskaltrust.exe` in your Middleware package is the Launcher binary.
+The Launcher is a core component of every Middleware **on-premise** setup, it is the service's **bootstrap part** which manages and initializes the other components of the CashBox (e.g. the queue). The file `fiskaltrust.exe` in your Middleware package is the Launcher binary.
+
+:::tip Tip
+
+This section is about the **Desktop** Launcher, as this is the most commonly used variant for on-premise installations. Other installation types - e.g. Android or data-center installations - use the same architecture and Middleware packages, but are configured differently.
+
+:::
 
 Typically, you will not use the Launcher binary directly yourself, but you will use one of the **included scripts** to start the service in test mode or install it as a system-wide service.
 
@@ -50,7 +56,7 @@ Please use the standard service control commands, applicable to your system setu
 
 Though not intended to be the standard launch mode (please [install as a service instead](#installing-and-uninstalling-as-a-service)), the *test mode* can be very useful to **quickly test** the Middleware setup and get **additional logging information** without having to necessarily configure a full-fledged log file.
 
-To start the Middleware in *test mode*, please first make sure any possibly running **service instance has been stopped**. Then, use the test script (`test.[cmd/sh]`) to start the Middleware. It is important to run the script with **administrative privileges** (from an administrator shell or with "Run as administrator"). Once the Middleware has started and the Launcher initialised all components, you can use the Middleware just as if you had started it as a service.
+To start the Middleware in *test mode*, please first make sure any possibly running **service instance has been stopped**. Then, use the test script (`test.[cmd/sh]`) to start the Middleware. It is important to run the script with **administrative privileges** (from an administrator shell or with "Run as administrator"). Once the Middleware has started and the Launcher initialized all components, you can use the Middleware just as if you had started it as a service.
 
 If you wish to stop the Middleware, just press any key.
 

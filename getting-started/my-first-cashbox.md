@@ -10,9 +10,9 @@ After reading this, you have completed all necessary steps to create a CashBox a
 
 :::
 
-:::danger 🇦🇹 austria
+:::caution 🇦🇹 austria
 
-This tutorial, unfortunately, is **not yet applicable to the Austrian market**.
+This tutorial is unfortunately **not yet applicable to the Austrian market** as rollout plans are not active there yet. While we're working on enabling rollout plans in Austria, please use the shop to create a SignatureCloud cashbox.
 
 :::
 

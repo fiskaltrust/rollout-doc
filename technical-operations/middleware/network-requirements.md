@@ -36,6 +36,7 @@ In case of connectivity issues, please check out the dedicated chapter [Network 
 
 
 ### Additional access permissions
+In some countries, the Middleware uses external 3rd party endpoints in some cases, which are described in this section. This is currently only the case when using cloud TSSs in Germany.
 
 import HostsAT from '../../_markets/at/technical-operations/middleware/network-requirements/_hosts.mdx';
 import HostsFR from '../../_markets/fr/technical-operations/middleware/network-requirements/_hosts.mdx';

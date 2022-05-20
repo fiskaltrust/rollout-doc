@@ -31,26 +31,3 @@ If you have any questions, please always use the reply E-mail. The case number w
 |![Number 5](../images/Numbers/circle-5o.png)| `Case Number`: Tick here to open the description of the case.  |
 |![Number 6](../images/Numbers/circle-6o.png)| `Progress`: the progress of a case changes from  `Identify` to `Research` and `Solved`.  |
 
-## Country-specific information
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import SalesAT from '../_markets/at/overview/business-model/_sales.mdx';
-import SalesFR from '../_markets/fr/overview/business-model/_sales.mdx';
-import SalesDE from '../_markets/de/overview/business-model/_sales.mdx';
-
-<Tabs groupId="market">
-
-  <TabItem value="AT" label="Austria">
-    <SalesAT />
-  </TabItem>
-
-  <TabItem value="FR" label="France">
-    <SalesFR />
-  </TabItem>
-
-  <TabItem value="DE" label="Germany">
-    <SalesDE />
-  </TabItem>
-
-</Tabs>

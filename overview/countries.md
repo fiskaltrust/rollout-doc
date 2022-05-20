@@ -15,6 +15,9 @@ PosDealers are supported with additional functions for automation and optimizati
 fiskaltrust is proud to offer its services in several countries for over 25.000 companies.
 
 ## Country-specific information
+The fiskaltrust.Portal and it's connected backend systems are distinctively hosted, as we aim to store all data in the country where the respective Middleware instance is operated in whenever possible. Therefore, the URLs of the Portals differ and separate accounts need to be created in each country.
+
+In addition to our [global website](https://fiskaltrust.eu), we also offer country-specific information about our products and services on the market website listed below.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

@@ -91,7 +91,7 @@ Please see [Supported Environments](supported-environments.md) for more details 
 
 ## Components
 
-The Middleware follows a component-based approach, where different components, depending on the individual use case, are assembled into a CashBox configuration object. This CashBox object is then used by the Middleware to initialise and run all configured components and provide the respective services.
+The Middleware follows a component-based approach, where different components, depending on the individual use case, are assembled into a CashBox configuration object. This CashBox object is then used by the Middleware to initialize and run all configured components and provide the respective services.
 
 
 
@@ -107,7 +107,7 @@ Please see [CashBox](cashbox.md) for more details.
 
 ### Launcher
 
-The Launcher is a basic component of every CashBox and is the Middleware's bootstrap part. It fetches the most recent CashBox configuration from the portal, if necessary updates the CashBox's components, and initialises the whole CashBox and its components.
+The Launcher is a basic component of every CashBox and is the Middleware's bootstrap part. It fetches the most recent CashBox configuration from the portal, if necessary updates the CashBox's components, and initializes the whole CashBox and its components.
 
 Please see [Launcher](launcher.md) for more details.
 

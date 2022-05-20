@@ -27,7 +27,7 @@ import ReactPlayer from "react-player"
 
 <ReactPlayer controls url={require("./media/exporte-220126.mp4").default} /><br />
 
-| options | description                                                                                                                |
+| Options | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/Numbers/circle-1o.png)| You as PosDealer or PosOperator log in to the desired account.  |
 |![Number 2](../../images/Numbers/circle-2o.png)| At `Configuration` / `Queue` select the queue from which data should be exported.  |
@@ -42,7 +42,8 @@ import ReactPlayer from "react-player"
 |![Number 11](../../images/Numbers/circle-11o.png)|Open the report data with a tick at `Status`. `export.zip` gives you access to the previously selected data, `journal.json` gives you technical status information of the export job. |
 |![Number 12](../../images/Numbers/circle-12o.png)| Tick `Switch to your account` or repeat these steps with another queue. |
 
-## Country-specific information
+## Country-specific exports
+Most countries require specific export formats in their fiscalization laws and regulations. The fiskaltrust.Middleware and the fiskaltrust.Portal generally support all required exports in each market we operate in, so that cash registers using it are automatically compliant with these requirements.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

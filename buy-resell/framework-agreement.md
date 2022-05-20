@@ -63,7 +63,7 @@ If you are committing to purchase **large quantities of product bundles** of you
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## further informations
+## Further information
 
 import FrameworkAT from '../_markets/at/buy-resell/framework-agreement/_framework.mdx';
 import FrameworkFR from '../_markets/fr/buy-resell/framework-agreement/_framework.mdx';

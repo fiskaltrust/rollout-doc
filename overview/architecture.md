@@ -7,11 +7,9 @@ title: Architecture
 
 :::info summary
 
-After reading this, you can explain the basic architecture of the fiskaltrust.Middleware, the purpose of a queue, a SSCD, a cashbox and a launcher.
+After reading this, you can explain the basic architecture of the fiskaltrust.Middleware, the purpose of a Queue, a SCU, a Cashbox and a launcher.
 
 :::
-
-
 
 ## Introduction
 
@@ -21,23 +19,18 @@ A typical *fiskaltrust* setup consists of a three-tiered system.
 2. **fiskaltrust.Middleware** (running your *fiskaltrust.CashBox*) to provide the service itself
 3. **fiskaltrust.Portal** to manage your setup
 
-
-
 The following schema provides an overview of how the three tiers interact.
 
 ![Overview of three tiers interaction](./images/arch.png "Overview of three tiers interaction")
 
 
+*fiskaltrust.Middleware* is the autonomous service providing the **core fiscalization functionality**. Your POS system connects to the Middleware to **sign and persist its receipts** and the Middleware, in turn, communicates with *fiskaltrust.Portal* to upload its own receipt chain and receive any changes you made to its configuration on the Portal side.
 
-*fiskaltrust.Middleware* is the autonomous service providing the **core signing functionality**. Your POS system connects to the Middleware to **sign and persist its receipts** and the Middleware, in turn, communicates with *fiskaltrust.Portal* to update its own receipt chain and receive any changes you made to its configuration on the portal side.
-
-The following paragraphs will provide you with a brief overview on the major components here.
-
+The following paragraphs will provide you with a brief overview on these major components.
 
 
 ## Portal
-
-The portal is the central **management hub** where you control all aspects of your *fiskaltrust* account, as well as of the accounts of your associated POS operators (*subject to their authorisation*). This also includes the set-up and management of your Middleware instances (*CashBoxes*).
+The portal is the central **management hub** where you control all aspects of your *fiskaltrust* account, as well as of the accounts of your associated POS Operators (*subject to their authorization*). This also includes the set-up and management of your Middleware instances (*CashBoxes*).
 
 The portal is also **used by the Middleware** to receive aforementioned *CashBox* configuration, for package management, and to update its receipt chain.
 
@@ -48,34 +41,23 @@ Each *fiskaltrust* country has its dedicated portal, which can be reached at `ht
 :::
 
 
-
-
 ## CashBox
-
 The CashBox is the main **configuration set** of a Middleware instance and contains all details for the Middleware to successfully run. It is **configured in the portal** and the Middleware will fetch the latest copy on each start.
 
-
-
 ## Middleware
-
 The Middleware is the main *fiskaltrust* service used *directly* by your POS system. It follows a modular approach and supports a number of components, which can be individually combined in a Middleware instance (*CashBox*) to best fit your custom setup and requirements.
 
-
-
 ### Launcher
+The Launcher is the bootstrap component of a Middleware instance. It downloads the **most recent *CashBox* configuration data** from the portal, performs any necessary **maintenance**, and **starts** the configured components. 
 
-The launcher is the bootstrap component of a Middleware instance. It downloads the **most recent *CashBox* configuration data** from the portal, performs any necessary **maintenance**, and **starts** the configured components.
+Depending on the scenario the Middleware should be used in, there are different kinds of Launchers - for on-premise installations, we provide a desktop Launcher (for Windows and Linux/macOS), an Android Launcher, and also a container setup (in form of a Helm chart) for running the Middleware in a container-based environment like Kubernetes.
 
-
+In addition to this, fiskaltrust also offers a completely cloud-based, hosted fiscalization Middleware wherever this is legally possible.
 
 ### Queue
-
 The queue is the **central component** of your *fiskaltrust* setup. It provides the **communication interface** (*e.g. REST*) for your POS system, manages the **receipt datastore**, and handles the signing requests from your POS system.
 
-
-
 ### SCU
-
 The *Signature Creation Unit* is a supporting component to the queue and is responsible for providing the queue with the actual **legally compliant receipt signature**, as required per national regulations.
 
 :::info
