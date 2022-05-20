@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/middleware/supported-environments
+slug: /posdealers/technical-operations/middleware/supported-environments
 title: Supported Environments
 ---
 # Supported Environments

@@ -1,5 +1,5 @@
 --- 
-slug: /posdealer/overview/countries
+slug: /posdealers/overview/countries
 title: Countries
 ---
 

@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/middleware/cashbox
+slug: /posdealers/technical-operations/middleware/cashbox
 title: Cashbox
 ---
 # Cashbox

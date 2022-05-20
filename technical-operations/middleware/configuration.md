@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/middleware/configuration
+slug: /posdealers/technical-operations/middleware/configuration
 title: Configuration
 ---
 # Configuration

@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/maintenance/exports
+slug: /posdealers/technical-operations/maintenance/exports
 title: Exports
 ---
 # Exports

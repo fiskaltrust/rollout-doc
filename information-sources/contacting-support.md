@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/information-sources/contacting-support
+slug: /posdealers/information-sources/contacting-support
 title: Contacting support
 ---
 # Contacting support

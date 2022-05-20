@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/maintenance/proactive-actions
+slug: /posdealers/technical-operations/maintenance/proactive-actions
 title: Proactive actions
 ---
 # Proactive actions

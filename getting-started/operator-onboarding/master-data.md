@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/getting-started/operator-onboarding/master-data
+slug: /posdealers/getting-started/operator-onboarding/master-data
 title: Master Data
 ---
 # Master Data

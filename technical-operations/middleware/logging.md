@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/middleware/logging
+slug: /posdealers/technical-operations/middleware/logging
 title: Logging
 ---
 # Logging

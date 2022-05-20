@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/buy-resell/framework-agreement
+slug: /posdealers/buy-resell/framework-agreement
 title: Framework Agreement
 ---
 # Framework Agreement

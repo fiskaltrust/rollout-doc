@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/rollout-automation/templates
+slug: /posdealers/technical-operations/rollout-automation/templates
 title: Templates
 ---
 # Templates

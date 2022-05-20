@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/information-sources/status-of-third-party-partners
+slug: /posdealers/information-sources/status-of-third-party-partners
 title: Status of third-party partners
 ---
 # Status of third-party partners

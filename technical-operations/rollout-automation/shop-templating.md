@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/rollout-automation/shop-templating
+slug: /posdealers/technical-operations/rollout-automation/shop-templating
 title: Shop Templating
 ---
 # Shop Templating

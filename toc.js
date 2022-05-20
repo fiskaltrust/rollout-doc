@@ -13,7 +13,7 @@ module.exports = {
 				'rollout-doc/overview/business-model',
 				{
 					type: 'category',
-					label: 'Legal/Data Protection',
+					label: 'Legal & Data Protection',
 					items: [
 						//'rollout-doc/overview/legal-data-protection/compliance-requirements',
 						//'rollout-doc/overview/legal-data-protection/terms-of-service',

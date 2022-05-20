@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/getting-started/my-first-cashbox
+slug: /posdealers/getting-started/my-first-cashbox
 title: My First Cashbox
 ---
 # My First Cashbox

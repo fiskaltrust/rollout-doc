@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/overview/services
+slug: /posdealers/overview/services
 title: Services
 ---
 # Services

@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/middleware/launcher
+slug: /posdealers/technical-operations/middleware/launcher
 title: Launcher
 ---
 # Launcher

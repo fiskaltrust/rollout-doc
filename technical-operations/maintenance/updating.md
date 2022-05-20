@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/maintenance/updating
+slug: /posdealers/technical-operations/maintenance/updating
 title: Updating
 ---
 # Updating

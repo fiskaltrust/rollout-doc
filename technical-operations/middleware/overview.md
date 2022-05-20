@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/technical-operations/middleware/overview
+slug: /posdealers/technical-operations/middleware/overview
 title: Overview
 ---
 # Overview

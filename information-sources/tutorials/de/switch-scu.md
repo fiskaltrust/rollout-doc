@@ -1,5 +1,5 @@
 ---
-slug: /posdealer/information-sources/tutorials/germany/switch-scu
+slug: /posdealers/information-sources/tutorials/germany/switch-scu
 title: 'Switch SCU'
 ---
 
