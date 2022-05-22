@@ -47,9 +47,29 @@ module.exports = {
 			label: 'Buy & Resell',
 			items: [
 				'rollout-doc/buy-resell/framework-agreement',
-				'rollout-doc/buy-resell/products',
 				'rollout-doc/buy-resell/rollout-plans',
-				'rollout-doc/buy-resell/shop'
+				'rollout-doc/buy-resell/shop',
+				{
+					type: 'category',
+					label: 'Products & Services',
+					items: [
+						'rollout-doc/buy-resell/products/overview',
+						'rollout-doc/buy-resell/products/bundles',
+						'rollout-doc/buy-resell/products/middleware',
+						'rollout-doc/buy-resell/products/revision-safe-archiving',						
+						'rollout-doc/buy-resell/products/signing',						
+						'rollout-doc/buy-resell/products/notifications',						
+						'rollout-doc/buy-resell/products/professional-services',
+						{
+							type: 'category',
+							label: '3rd party integrations',
+							items: [				
+								'rollout-doc/buy-resell/products/3rd-party/3rd-party-overview',
+								'rollout-doc/buy-resell/products/3rd-party/datev-meinfiskal'
+							]
+						},
+					]
+				}
 			]
 		},
 		{

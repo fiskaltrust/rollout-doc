@@ -33,8 +33,7 @@ If you are committing to purchase **large quantities of product bundles** of you
 * By assigning entitlements in the fiskaltrust.Portal according to your needs, you control purchase and accounting by yourself.
 
 ## Work steps to achieve a framework agreement
-
-![Buy & Resell Process](images/buy_resell-details.png "Buy & Resell Process")
+A framework agreement can be easily closed by contacting your fiskaltrust account manager.
 
 ### Prerequisites
 
