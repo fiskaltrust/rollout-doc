@@ -28,7 +28,7 @@ import ReactPlayer from "react-player"
 
 ### Find contracts
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Log in to the desired account |
 |![Number 2](images/Numbers/circle-2o.png) |Tick `[Company]` / `Overview` |
@@ -41,7 +41,7 @@ import ReactPlayer from "react-player"
 <ReactPlayer controls url={require("./images/downloads-general-22-02-02.mp4").default} /><br />
 
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Tick `[Tools]` / `Download` |
 |![Number 2](images/Numbers/circle-2o.png) |Depending on the active `Roles` and country-specific criteria documents or data are shown |
@@ -56,7 +56,7 @@ Have a look [here for more details](exports) about configuring your individual d
 <ReactPlayer controls url={require("./images/downloads-find-export-22-02-02.mp4").default} /><br />
 
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Tick `Tools` / `Exports` |
 |![Number 2](images/Numbers/circle-2o.png) |Depending on the configurations and exports before, the `List of queue exports` will show export data |

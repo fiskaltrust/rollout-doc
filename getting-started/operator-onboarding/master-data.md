@@ -49,7 +49,7 @@ import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/mas
 
 </Tabs>
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:---------------------------:|--------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Enter the fiskaltrust.Portal and choose `[COMPANY NAME]` / `Master data`  |
 |![Number 2](images/Numbers/circle-2o.png) |Check the fields marked with * for correct and complete data.  |
@@ -84,7 +84,7 @@ import OutletDE from '../../_markets/de/getting-started/operator-onboarding/mast
 
 </Tabs>
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:---------------------------:|--------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Choose `[COMPANY NAME]` / `Outlets` and control the existing values. |
 |![Number 2](images/Numbers/circle-2o.png) |If several outlets are missing, use `Download demo CSV file`.  |

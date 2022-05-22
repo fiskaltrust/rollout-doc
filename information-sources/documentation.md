@@ -33,7 +33,7 @@ import ReactPlayer from "react-player"
 
 <ReactPlayer controls url={require("./images/search-options-22-01-31.mp4").default} /><br />
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Use `CTRL` & `K` to open the search window or tick the symbol in the task bar. Enter keywords for your search |
 |![Number 2](images/Numbers/circle-2o.png) |keywords, that you have used in the running session are listed here)  |

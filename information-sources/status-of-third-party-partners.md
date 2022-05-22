@@ -24,7 +24,7 @@ For manual exchange, see the section on [Exports](../technical-operations/mainte
 
 ![third party partner](images/5-documentation-third-party.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Tick `[COMPANY]`  |
 |![Number 2](images/Numbers/circle-2o.png) |Choose `Overview`  |

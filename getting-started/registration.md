@@ -68,7 +68,7 @@ All the fields marked with a red star are mandatory and must be filled out with 
 
 ![Enter company data](./images/registration/company_data_2.png "https://portal-sandbox.fiskaltrust.TLD/Account/Register")
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/numbers/circle-1o.png) |The correct company has to be entered. The name will be verified later on against any entered commercial number. This name has to be the same as the one used in the commercial registers. The name of the company may not already be in use for registration.  |
 |![Number 2](../images/numbers/circle-2o.png) |A valid E-mail address must be entered in this field. This E-mail address can only be used once for a company in the portal. If your mailserver supports the use of "+" in your E-mail address (meaning username+tag@domain will be delivered to username@domain) you can use such E-mailadresses especially for testing purposes and the portal will treat each of them as a unique E-mail-adress. |
@@ -129,7 +129,7 @@ Now your account is active and the link  _this link_ in the final confirmation s
 
 If the password for logging into the fiskaltrust.Portal is lost or forgotten, you can request a password reset:
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../rollout-doc/images/numbers/circle-1o.png) |Go to the login screen of the fiskaltrust.Portal and click on the link `If you have forgotten your password please click here`.  |
 |![Number 2](../../rollout-doc/images/numbers/circle-2o.png) |Solve the CAPTCHA..  |
@@ -148,7 +148,7 @@ With different authorizations you define the options that the contacts have in t
 
 ![Data employee](images/registration/user_data_employee.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/numbers/circle-1o.png) |Tick [`COMPANY`] / `Employee` and `+Add`.   |
 |![Number 2](../images/numbers/circle-2o.png) |Enter as new contact the E-Mail Address and tick `Search`. |
@@ -166,7 +166,7 @@ Note that with the default access rights no access is possible, at least `Read` 
 
 ### Work steps for new contacts
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/numbers/circle-1o.png) |The new contact checks the inbox of that E-Mail Address, that was used by the invitator. |
 |![Number 2](../images/numbers/circle-2o.png) |The invitation has to be activated with using the confirmation link. Read and accept the T&C and Privacy Policy and add a password. |
@@ -180,7 +180,7 @@ In the future, all contacts use the login listed up [as above or in the assignme
 
 ![Employees Authorizations](images/registration/user_management.png "Employees Authorizations at https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/numbers/circle-1o.png) |Tick [`COMPANY`] / `Employee`. |
 |![Number 2](../images/numbers/circle-2o.png) |Check the existing `Authorizations`. Inactivate rights are shown with a black symbol, activated rights with a blue symbol. |

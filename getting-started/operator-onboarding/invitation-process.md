@@ -23,7 +23,7 @@ please refer to [Company Roles](../company-roles.md)
 
 There are two ways to add and assign PosOperators to your Account as a PosDealer:
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/numbers/circle-1o.png) |Choose `PosOperator` / `Overview`.  |
 |![Number 2](../../images/Numbers/circle-2o.png) |A list of the already assigned PosOperators is shown.  |
@@ -56,21 +56,12 @@ Under country-specific circumstances, when a PosOperator is first registered, th
 ### Work steps individual invitation
 
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Choose `PosOperator` / `Invitation`.  |
 |![Number 2](images/Numbers/circle-2o.png) |Check the settings previously described [_here_](#preparation-of-invitations).  |
 |![Number 3](images/Numbers/circle-3o.png) |Choose `Add`.  |
-|![Number 4](images/Numbers/circle-4o.png) |The following fields are mandatory fields. They must be filled in to guarantee that the PosOperator can be found correctly in the fiskaltrust.Portal via his E-mail address and can be assigned:  |
-| |    * Company data - Company name
-| |    * E-mail address|
-| |    * Address line 1|
-| |    * Postal code|
-| |    * City|
-| |    * Country|
-| |    * User data - First name|
-| |    * Last name|
-| |    * Contact E-mail address  |
+|![Number 4](images/Numbers/circle-4o.png) |The following fields are mandatory fields. They must be filled in to guarantee that the PosOperator can be found correctly in the fiskaltrust.Portal via his E-mail address and can be assigned: <ul><li>Company data - Company name</li><li>E-mail address</li><li>Address line 1</li><li>Postal code</li><li>City</li><li>Country</li><li>User data - First name</li><li>Last name</li><li>Contact E-mail address</li></ul>  |
 |![Number 5](images/Numbers/circle-5o.png) |The commercial identification is no mandatory field for the invitation. But for the correct management of the cash register systems, these data (AccountIdVat, ~IdGln, ~UStIdNr) and their validation are **essential**.|
 |![Number 6](images/Numbers/circle-6o.png) |Save your values with `Save` |
 |![Number 7](images/Numbers/circle-7o.png) |Choose `Assign all PosOperators`|
@@ -117,7 +108,7 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 ![invitation via csv file](images/6-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators invitation via csv file")  
 
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/Numbers/circle-1o.png) |Choose the fiskaltrust.Portal and `PosOperator` / `Invitation`|
 |![Number 2](../../images/Numbers/circle-2o.png) |Check the configurations of the invitations as previously described [_here_](#preparation-of-invitations) |
@@ -179,7 +170,7 @@ There are several ways to help.
 
 ![8-onboarding](images/8-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/Numbers/circle-1o.png) |Check the status  of the invitation. A red symbol shows, that the E-mail invitation has not yet been sent.|
 |![Number 2](../../images/Numbers/circle-2o.png) |Use `Assign` to send / resend this single E-mail invitation or `Assign all PosOperators` to send all.|
@@ -191,7 +182,7 @@ There are several ways to help.
 
 ![9-onboarding](images/9-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/Numbers/circle-1o.png) |By clicking on `Assign all PosOperator users` the E-mail invitation can be sent to **all**  PosOperators who have not yet been invited.  |
 |![Number 2](../../images/Numbers/circle-2o.png) |`+Add` is used for a manual invitation, see chapter [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator). |
@@ -201,7 +192,7 @@ There are several ways to help.
 
 ![15-onboarding](images/15-onboarding-already-existing-PosOperators.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator")
 
-| steps | description                                                                                                                |
+| Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/Numbers/circle-1o.png) |By clicking on `Assign all PosOperator users` (`PosOperators`/ `Invitation`) the E-mail invitation can be sent to **all**  PosOperators who have not yet been invited. If the message `This e-mail address already exists` is shown, the PosOperator has been onboarded by another PosDealer.|
 |![Number 2](../../images/Numbers/circle-2o.png) |**Do not, under any circumstances, invite this PosOperator again using a different email address.** This will cause problems when verifying business identifications used for authentication to tax authorities or third party services.|
