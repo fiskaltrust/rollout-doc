@@ -42,7 +42,7 @@ This can boost the sales process with your PosOperators.
 #### Improving organization 
 
 The use of rollout plans will support you as a PosDealer with a well-organized rollout strategy.
-This facilitates planning for the current year and for the next year, see also the explanation in the section [framework agreement](../buy-resell/framework-agreement).
+This facilitates planning for the current year and for the next year, see also the explanation in the section [volume purchase agreement](../buy-resell/volume-purchase-agreement.md).
 
 ## Work steps
 

@@ -8,7 +8,7 @@ This documentation is intended for cash register dealers (_PosDealers_). It desc
 ## Sections of this documentation
 Before rolling out a POS system at a customer site, you need a playground to test the services and products in detail. At **Get Started** we explain the concept of our _Sandbox_. _Registration_ and use is free of charge. After that you will get familiar with _Company Roles_ and the _Operator Onboarding_ and then follow _My First Cashbox_ to create your first demo setup.
 
-With **Buy/Resell** you can expand your knowledge of our business model. You will learn how to make a _Framework Agreement_ for which _Products_. With _Rollout Management_, rollouts at the PosOperator succeed in a standardized manner, and with the _Shop_ in a highly individualized manner.  
+With **Buy/Resell** you can expand your knowledge of our business model. You will learn how to make a _Volume purchase agreement_ for which _Products_. With _Rollout Management_, rollouts at the PosOperator succeed in a standardized manner, and with the _Shop_ in a highly individualized manner.  
 
 In the **Technical Operations** section you will find _Scenarios_ for using our products for different requirements. In-depth details on _Middleware_ and _Rollout Automation_ avoid time-consuming problems with _Troubleshooting_ or _Maintenance_.
 

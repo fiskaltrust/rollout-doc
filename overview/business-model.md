@@ -47,7 +47,7 @@ The fiskaltrust products are designed to be resold by our partners, and to allow
 fiskaltrust's products use a subscription model. This means that PosOperators can rest assured that there POS systems are fiscally compliant for a fixed yearly price without having to build assets in case of changed legal requirements. In addition, this model also creates annually calculable, recurring revenues for the PosDealer.
 
 #### Attractive volume discounts
-fiskaltrust offers volume discounts starting from low purchase quantities when signing framework agreements, enabling PosDealers to provide optimum customer support and advice in order to achieve the highest possible level of customer satisfaction.
+fiskaltrust offers volume discounts starting from low purchase quantities when signing volume purchase agreements, enabling PosDealers to provide optimum customer support and advice in order to achieve the highest possible level of customer satisfaction.
 
 ### Portal
 #### Buying products at a single place
