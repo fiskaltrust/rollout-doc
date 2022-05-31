@@ -10,12 +10,23 @@ After reading this, you can buy or transfer selected entitlements in the easiest
 
 :::
 
-## Explanation
+:::caution 🇦🇹 austria
 
-For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollout management as already described under [Rollout Plans](../getting-started/my-first-cashbox.md). In rollout management, the most common products are offered on a market-specific basis.  
-A rollout plan guides you through selecting the product, destination and outlets for which you want to rollout. This way you avoid ambiguities about which activities should be performed at which point in time.
+This tutorial is unfortunately **not yet applicable to the Austrian market** as rollout plans are not active there yet. While we're working on enabling rollout plans in Austria, please use the [shop](./shop.md) to create a SignatureCloud cashbox.
 
-You choose a business plan at the beginning, work on the defined sequence of action steps and use it to create the backend components for a CashBox, for example. Depending on the market, a technical rollout can also be used to create, for example queue and CashBox and link the SCU previously created in the business rollout.
+:::
+
+## Introduction
+
+For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollout management as already described under [Getting Started/Rollout Plans](../getting-started/my-first-cashbox.md). The Rollout Management consists of two sections:
+
+### Business Rollout
+
+The [business rollout](../getting-started/my-first-cashbox.md#business-rollout-getting-the-scu) simplifies the process for acquiring entitlements, transferring them to the PosOperators outlets and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to transfer and activate the products. The system will automatically select the required products for the Business Rollout plan selected. This reduces the risk of an incorrect composition of the shopping basket.
+
+### Technical Rollout
+
+Depending on the market, a [technical rollout](../getting-started/my-first-cashbox.md#technical-rollout-creating-the-cashbox) can also be used to create the technical components for complete CashBoxes for the selected PosOperator and outlet. 
 
 ### Benefits of using a rollout plan
 
@@ -42,15 +53,6 @@ This can boost the sales process with your PosOperators.
 #### Improving organization 
 
 The use of rollout plans will support you as a PosDealer with a well-organized rollout strategy.
-This facilitates planning for the current year and for the next year, see also the explanation in the section [volume purchase agreement](../buy-resell/volume-purchase-agreement.md).
-
-## Work steps
-
-### Prerequisites
-[Prerequisites](../getting-started/my-first-cashbox#prerequisites)
-
-### Steps
-[Rollout Plans](../getting-started/my-first-cashbox#prerequisites)
 
 ## Further information
 

@@ -87,8 +87,15 @@ Once the order is processed successfully, you will find the entitlements you pur
 
 ![Entitlements](./images/entitlements.png)
 
-## Subscriptions
-An overview of your subscriptions can be found at `Shop` / `Subscriptions`.
+## PosDealer subscriptions
+An overview of all PosOperators subscriptions of a PosDealer can be found at `PosDealer` / `Subscriptions`.
+They can be cancelled or the payment renewed.
+
+Screenshot missing !
+
+## PosOperator subscriptions
+An overview of a PosOperators subscriptions can be found at `Shop` / `Subscriptions`.
+They can be cancelled or the payment renewed.
 
 ![Subscriptions](./images/subscriptions.png)
 
