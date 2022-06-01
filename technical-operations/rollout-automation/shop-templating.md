@@ -10,11 +10,11 @@ After reading this, you can create and use templates in the portal.
 
 :::
 
-Instead of creating and configuring a CashBox manually, a template can be used to create many similar CashBoxes. The fiskaltrust.Portal offers a graphical user interface to create, edit and buy templates.
+Instead of creating and configuring a CashBox manually, a template can be used to create many similar CashBoxes. The fiskaltrust.Portal offers a graphical user interface to create, clone, edit and rollout templates.
 
 ## Create & Edit Template
 
-At `Configuration->Template` you can see the existing templates, copy or edit them and create new ones.
+At `Configuration->Template` you can see the existing templates, clone and edit them and create new ones.
 
 ![Template List](./images/template-shop-list.png)
 
@@ -22,7 +22,7 @@ At `Configuration->Template` you can see the existing templates, copy or edit th
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/numbers/circle-1o.png) |Expand a template to get more detailed information.  |
 |![Number 2](../../images/numbers/circle-2o.png) |Templates are visible for different scopes of users: Private (owner only), Deactivated (not visible in shop), Public for (your) PosOperators, Public for (your) PosDealers. |
-|![Number 3](../../images/numbers/circle-3o.png) |You can copy an existing template.  |
+|![Number 3](../../images/numbers/circle-3o.png) |You can clone an existing template.  |
 |![Number 4](../../images/numbers/circle-4o.png) |Edit an existing template. |
 |![Number 5](../../images/numbers/circle-5o.png) |Create a new template. |
 

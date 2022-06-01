@@ -18,15 +18,15 @@ This tutorial is unfortunately **not yet applicable to the Austrian market** as 
 
 ## Introduction
 
-For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollout management as already described under [Getting Started/Rollout Plans](../getting-started/my-first-cashbox.md). The Rollout Management consists of two sections:
+For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollout management as described under [`Getting-Started` / `My First CashBox`](../getting-started/my-first-cashbox.md). The Rollout Management consists of two sections:
 
 ### Business Rollout
 
-The [business rollout](../getting-started/my-first-cashbox.md#business-rollout-getting-the-scu) simplifies the process for acquiring entitlements, transferring them to the PosOperators outlets and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to transfer and activate the products. The system will automatically select the required products for the Business Rollout plan selected. This reduces the risk of an incorrect composition of the shopping basket.
+The [business rollout](../getting-started/my-first-cashbox.md#business-rollout-getting-the-scu) simplifies the process for acquiring entitlements, transferring them to the PosOperators outlets and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to transfer and activate the products. The system will automatically select the required products for the chosen Business Rollout plan. This reduces the risk of an incorrect composition of the shopping basket.
 
 ### Technical Rollout
 
-Depending on the market, a [technical rollout](../getting-started/my-first-cashbox.md#technical-rollout-creating-the-cashbox) can also be used to create the technical components for complete CashBoxes for the selected PosOperator and outlet. 
+The [technical rollout](../getting-started/my-first-cashbox.md#technical-rollout-creating-the-cashbox) can be used, to create the technical components for complete CashBoxes for the selected PosOperator and outlet. 
 
 ### Benefits of using a rollout plan
 

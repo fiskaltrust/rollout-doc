@@ -22,8 +22,8 @@ To buy and resell fiskaltrust products, you have to:
 * Register in the fiskaltrust.Portal.
 * Sign the cooperation agreement as PosDealer.
 * Determine your need for products and product bundles.
-* If you plan to buy and resell more than 10 carefree bundles, it is recommended to contact fiskaltrust sales to get a volume purchase agreement. 
-* If your planned amount exceeds the standard credit limit, contact fiskaltrust sales.
+* If you plan to buy and resell more than 10 carefree bundles, it is recommended to [contact us](buying-reselling.md#contact-information-and-pricelists) to get a volume purchase agreement. 
+* If your planned amount exceeds the standard credit limit, [contact us](buying-reselling.md#contact-information-and-pricelists).
 
 
 ## Credit limit
@@ -31,7 +31,7 @@ To buy and resell fiskaltrust products, you have to:
 When the PosDealer role is activated, a credit limit is also granted in the fiskaltrust.Portal. Note that the limit in the productive system is significantly lower than in the sandbox.
 
 If the invoice amounts exceed the credit limit during rollout management or purchases in the store, you will be notified of the credit limit by a corresponding message when creating further offers. 
-If it is not possible to settle the open invoices in a timely manner, contact the sales department responsible for the country in question with a request to grant you more credit limit. Check the tabs below for country-specific details.
+If it is not possible to settle the open invoices, [contact us](buying-reselling.md#contact-information-and-pricelists) with a request to grant you a higher credit limit. 
 
 ## Volume purchase agreement
 
@@ -56,7 +56,7 @@ If you are committing to purchase **large quantities of product bundles** of you
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Further information
+## Contact information and pricelists
 
 import VolumePurchaseAT from '../_markets/at/buy-resell/volume-purchase-agreement/_volume.mdx';
 import VolumePurchaseFR from '../_markets/fr/buy-resell/volume-purchase-agreement/_volume.mdx';

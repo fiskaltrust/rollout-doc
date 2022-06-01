@@ -12,9 +12,9 @@ After reading this, you can explain how templates work.
 
 ## Introduction
 
-In short, **templates are blueprints for CashBoxes**. They aim to provide a fast way to set up fully configured CashBoxes based on pre-configured layouts.
+**Templates are blueprints for CashBoxes**. They provide a fast way to set up fully configured CashBoxes based on pre-configured layouts.
 
-Templates follow the same JSON structure as shown in the [CashBox](../middleware/cashbox.md#cashbox-instance-middleware) chapter, with the main difference that they are not the configuration of an actual CashBox instance but are used to create such in a second step. Consequently, their configuration entries are either hardcoded default values, used for all instances created with the respective template, or customisable fields which are set at runtime.
+Templates follow the same JSON structure as shown in the [CashBox](../middleware/cashbox.md#cashbox-instance-middleware) chapter, with the main difference that they are not the configuration of an actual CashBox instance but are used to create such in a second step. Consequently, their configuration entries are either hardcoded default values, used for all instances created with the respective template, or variables which are set at runtime.
 
 
 
@@ -27,7 +27,7 @@ There are two different ways in which templates can be used to create a new Cash
 
 #### Shop
 
-You'll find a number of pre-configured templates in the [shop](../../buy-resell/shop.md) under `Shop` / `Products`. These templates were provided by either fiskaltrust, PosCreators, or PosDealers. You can add them to your shopping cart like any other product. After submitting your order the portal will create a new CashBox based on the template's configuration.
+You'll find a number of pre-configured templates in the [shop](../../buy-resell/shop.md) under `Shop` / `Products`. These templates were provided by either fiskaltrust, PosCreators, or PosDealers. You can add them to your shopping cart like any other product or clone them to modify them for your needs. After submitting your order the portal will create a new CashBox based on the template's configuration.
 
 Please see the chapter [Shop Templating](shop-templating.md) for more details.
 
@@ -44,7 +44,7 @@ Please see the chapter [API Templating](api-templating.md) for more details.
 
 ## Variables
 
-Variables are substitute entries for dynamically configured values and will be replaced with their actual content when the template is instantiated. A variable is denoted by its name being wrapped into `|[`  and `]|`.
+Variables are substitute entries for dynamically configured values and will be replaced with their actual content when the template is rolled out. A variable is denoted by its name being wrapped into `|[`  and `]|`.
 
 For example, to use the variable `my_variable` in a template, you'd use `|[my_variable]|` at the location where you want to use its eventual value.
 
@@ -52,7 +52,7 @@ For example, to use the variable `my_variable` in a template, you'd use `|[my_va
 
 ### Pre-defined system variables
 
-The following variables are pre-defined by execution scope of templates.
+The following variables are pre-defined and will populated automatically by auto-generated or predefined values when the template is rolled out.
 
 *Curly brackets denote dynamic values.*
 

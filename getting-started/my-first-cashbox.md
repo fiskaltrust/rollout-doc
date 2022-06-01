@@ -6,7 +6,7 @@ title: My First Cashbox
 
 :::info summary
 
-After reading this, you have completed all necessary steps to create a CashBox and have a functioning Middleware instance.
+After reading this, you can create a CashBox and have a functioning Middleware instance.
 
 :::
 
@@ -18,7 +18,7 @@ This tutorial is unfortunately **not yet applicable to the Austrian market** as 
 
 ## Prerequisites
 
-The following prerequisites must be first in place before we can roll out our Middleware instance
+The following prerequisites must be in place before we can roll out our Middleware instance
 
 * A working **Internet connection** (_please see [Network Requirements](../technical-operations/middleware/network-requirements.md)_)
 * An active _fiskaltrust_ **PosDealer account** (*either by [registration](registration.md) or by invitation through your PosCreator*)
@@ -29,7 +29,7 @@ The following prerequisites must be first in place before we can roll out our Mi
 
 ## Rollout Plans
 
-[Rollout plans](../buy-resell/rollout-plans.md) are guided **deployment wizards** in the portal, which assist you in **setting up CashBoxes** and their components for your PosOperators. A rollout plan typically follows these five steps
+[Rollout plans](../buy-resell/rollout-plans.md) are guided **deployment wizards** in the portal, which assist you in the buy and resell process as well as in **setting up CashBoxes** and their components for your PosOperators. A rollout plan typically follows these five steps
 
 1. Select the **product** you'd like to roll out
 2. Select the **account** for which it should be rolled out
@@ -39,9 +39,9 @@ The following prerequisites must be first in place before we can roll out our Mi
 
 :::tip
 
-Being a demo CashBox, these steps are best performed in the [Sandbox](sandbox.md) as this ensures your account is not going to be billed for this test setup.
+These steps are best performed in the [Sandbox](sandbox.md) as this ensures your account is not going to be billed for this test setup.
 
-Please make sure you are using your Sandbox account in this case. If you don't have one yet, please contact your *PosCreator* for invitation details or [register](registration.md) a new dedicated PosDealer Sandbox account yourself.
+Please make sure you are using your Sandbox account. If you don't have one yet, please contact your *PosCreator* for invitation details or [register](registration.md) a new PosDealer Sandbox account yourself.
 
 :::
 
@@ -53,7 +53,7 @@ import TabItem from '@theme/TabItem';
 
 ### Business Rollout (getting the SCU)
 
-As first step, we will be running a *Business* rollout which will create for us all the necessary backend components for the CashBox.
+As first step, we will be running a *Business* rollout which will acquire entitlements, transferring them to the PosOperators outlets and activating them as well as eventually creating necessary backend components for the CashBox (in this case an SCU).
 
 import BusinessRolloutFR from '../_markets/fr/getting-started/my-first-cashbox/_business.mdx';
 import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_business.mdx';
@@ -74,7 +74,7 @@ import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_
 
 ### Technical Rollout (creating the CashBox)
 
-The second step is the *Technical* rollout which will use a [template](../technical-operations/rollout-automation/templates.md) to create a new CashBox and a new Queue. On top of that, it will also link the previously created SCU (*from the Business rollout*) to the new Queue.
+The second step is the *Technical* rollout which will use a [template](../technical-operations/rollout-automation/templates.md) to create a new CashBox and a new Queue. It will also link the previously created SCU (*from the Business rollout*) to the new Queue.
 
 import TechnicalRolloutFR from '../_markets/fr/getting-started/my-first-cashbox/_technical.mdx';
 import TechnicalRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_technical.mdx';
