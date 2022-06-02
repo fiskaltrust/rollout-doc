@@ -18,15 +18,45 @@ This tutorial is unfortunately **not yet applicable to the Austrian market** as 
 
 ## Introduction
 
-For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollout management as described under [`Getting-Started` / `My First CashBox`](../getting-started/my-first-cashbox.md). The Rollout Management consists of two sections:
+For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollout management as described under [`Getting-Started` / `My First CashBox`](../getting-started/my-first-cashbox.md). The Rollout Management consists of two types of plans:
 
 ### Business Rollout
 
-The [business rollout](../getting-started/my-first-cashbox.md#business-rollout-getting-the-scu) simplifies the process for acquiring entitlements, transferring them to the PosOperators outlets and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to transfer and activate the products. The system will automatically select the required products for the chosen Business Rollout plan. This reduces the risk of an incorrect composition of the shopping basket.
+The business rollout simplifies the process for acquiring entitlements, transferring them to the PosOperators outlets and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to transfer and activate the products. The system will automatically select the required products for the chosen Business Rollout plan. This reduces the risk of an incorrect composition of the shopping basket.
+
+The process is shown in this sketch:
+
+![Rollout-management](./images/rollout-management.png)
+
+import BusinessRolloutFR from '../_markets/fr/getting-started/my-first-cashbox/_business.mdx';
+import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_business.mdx';
+
+<Tabs groupId="market">
+
+  <TabItem value="FR" label="France">
+    <BusinessRolloutFR />
+  </TabItem>
+
+  <TabItem value="DE" label="Germany">
+    <BusinessRolloutDE />
+  </TabItem>
+
+</Tabs>
+
+#### Review successful completion
+
+You can check the successful completion of the order by [surrogating](../getting-started/operator-onboarding/surrogating) into the PosOperator's account.
+
+In the PosOperator's account, now select `PosOperator's Name` / `Outlets`.
+Filter the outlet table by entering a search term or sort the outlets by clicking on one of the table headings.
+In the `Carefree` and `AKO` columns for example, you can check whether these products have been activated.
+The following image shows an example of the fiskaltrust.CarefreeBundle being activated in the PosOperator's account for the selected location:
+
+![check](./images/portal-posoperator-check.png)
 
 ### Technical Rollout
 
-The [technical rollout](../getting-started/my-first-cashbox.md#technical-rollout-creating-the-cashbox) can be used, to create the technical components for complete CashBoxes for the selected PosOperator and outlet. 
+The [technical rollout](../getting-started/my-first-cashbox.md#technical-rollout-creating-the-cashbox) can be used, to create the technical components of CashBoxes for the selected PosOperator and outlet. 
 
 ### Benefits of using a rollout plan
 

@@ -37,6 +37,7 @@ If it is not possible to settle the open invoices, [contact us](buying-reselling
 
 As mentioned in the section [Business model](../overview/business-model.md), _fiskaltrust_ is offering discounted prices if you agree to a certain purchase quantity. If you are planning to purchase ten or more product bundles, you should consider this option. Our products and product bundles are described [here](products.md).  
 If you are committing to purchase **large quantities of product bundles** of your choice over the course of a year, a **Volume Purchase Agreement** is the best option. This allows you to achieve significant discounts depending on your planned sales volume.
+The standard period is one year, but can be agreed on individually. 
 
 ### How to get a volume purchase agreement
 
@@ -45,13 +46,6 @@ If you are committing to purchase **large quantities of product bundles** of you
 * Sign the volume purchase agreement and send it back to the sales team.
 * After succesful confirmation, we will send the signed agreement back to you.
 * The ordered products will be placed in the fiskaltrust.Shop with the agreed prices and are ready to buy for your account.
-
-### Legal Framework
-
-* The contract period is open and the evaluation period for the ordered number of entitlements will be set to one year or the period of your choice.
-* The agreed purchase price applies to each allocation of an entitlement, regardless of whether you use the rollout management or prefer the shop.
-* By assigning entitlements in the fiskaltrust.Portal according to your needs, you control purchase and accounting by yourself.
-
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -83,4 +77,7 @@ import VolumePurchaseDE from '../_markets/de/buy-resell/volume-purchase-agreemen
 Once you have finished these preparations, you can purchase fiskaltrust products in two ways:
 
 * [Rollout Plans](./rollout-plans.md): The easiest way, but not available for all products and markets.
-* [Shop](./shop.md): Availalbe for all markets and products
+* [Shop](./shop.md): Available for all markets and products
+
+How to manage your purchased subscriptions:
+* [Subscription Management](./subscription-management.md)

@@ -47,7 +47,7 @@ If you  want to try how the shop works, you should do this in the [Sandbox](../g
 | ![](../images/numbers/6.png) | A confirmation for your order will be shown and also sent to you via E-Mail.  | 
 
 ## Transfer Entitlements to PosOperators Outlet
-To transfer the entitlements to the PosOperator, you have to [surrogate] (../getting-started/operator-onboarding/surrogating) into that account by clicking the PosOperators name at `PosOperator` / `Overview`. 
+To transfer the entitlements to the PosOperator, you have to [surrogate](../getting-started/operator-onboarding/surrogating) into that account by clicking the PosOperators name at `PosOperator` / `Overview`. 
 
 import ReactPlayer from "react-player"
 
@@ -87,17 +87,7 @@ Once the order is processed successfully, you will find the entitlements you pur
 
 ![Entitlements](./images/entitlements.png)
 
-## PosDealer subscriptions
-An overview of all PosOperators subscriptions of a PosDealer can be found at `PosDealer` / `Subscriptions`.
-They can be cancelled or the payment renewed.
 
-Screenshot missing !
-
-## PosOperator subscriptions
-An overview of a PosOperators subscriptions can be found at `Shop` / `Subscriptions`.
-They can be cancelled or the payment renewed.
-
-![Subscriptions](./images/subscriptions.png)
 
 
 
