@@ -12,17 +12,17 @@ After reading this, you can find webinars for learning purposes.
 
 ## Introduction
 
-fiskaltrust offers free webinars. The offer is primarily aimed at PosCreators. For PosDealers, offers take place when new products, features or processes are introduced or the demand for a webinar has been brought to fiskaltrust. Usually you will be invited to PosDealer webinars via newsletter.
+fiskaltrust offers free webinars. We aim primarily at PosCreators. For PosDealers, we offer webinars when we introduce new products, features or processes. In addition, if several PosDealers ask at fiskaltrusts Customer Success Team for a webinar, we will invite you via newsletter.
 
 ## Work steps
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/Numbers/circle-1o.png)|Check country-specific information sources for guidance.  |
-|![Number 2](../images/Numbers/circle-2o.png)|At the date and time indicated, select the link to the desired webinar.  |
+|![Number 2](../images/Numbers/circle-2o.png)|Select the link to the desired webinar at the date and time indicated.  |
 |![Number 3](../images/Numbers/circle-3o.png)|Enter a name in the dialog box.  |
 |![Number 4](../images/Numbers/circle-4o.png)|Check microphone, speakers and camera, if desired.  |
-|![Number 5](../images/Numbers/circle-5o.png)|Deposit questions in the chat area and the presenters will answer them either live or in writing.  |
+|![Number 5](../images/Numbers/circle-5o.png)|Deposit questions in the chat area, and the presenters will answer them either live or in writing.  |
 
 ## Country-specific information
 

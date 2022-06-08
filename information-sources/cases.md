@@ -6,21 +6,20 @@ title: Cases
 
 :::info summary
 
-After reading this, you can work with support cases in the Help-Section of the portal.
+After reading this, you can work with support cases in the Help Section of the portal.
 
 :::
 
 ## Introduction
 
-As a PosCreator or as a PosDealer, you can contact fiskaltrust's Customer Success Team. Your call will be answered by a call center. The agents will create a ticket, as will any E-mail you send to the country-specific address below. When your ticket is processed, a case is created, you will receive an confirmation via E-mail.
-In the Help-section of the fiskaltrust.Portal you will find the possibility to check the cases assigned to your company. This also gives the various users of your company an overview of open as well as already closed cases.
+As a PosCreator or as a PosDealer, you can contact fiskaltrust's Customer Success Team. A call center will answer your call. The agents will create a ticket, as will any E-mail you send to the country-specific address below. If your request can't be answered with a quick explanation, a Customer Success Team member will make a new case. In that case, you will receive a confirmation via E-mail.  
 
-You can see the progress of each case, distinguishing between `Identify`, `Research` and `Solved`. Further, you will also find descriptions of previous requests. This way you can avoid unnecessary time spent on overlapping requests from different users or repeated requests.
+The Help Section of the fiskaltrust.Portal shows you the option to check all cases assigned to your company. This option also gives the various users of your company an overview of actual open and already closed cases.  
 If you have any questions, please always use the reply E-mail. The case number will help you identify the related messages in your inbox.
 
 ## Work steps
 
-![Help-Section / Cases](images/2-cases.png "https://portal-sandbox.fiskaltrust.TLD/Case")
+![Help Section / Cases](images/2-cases.png "https://portal-sandbox.fiskaltrust.TLD/Case")
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

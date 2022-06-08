@@ -12,8 +12,8 @@ After reading this, you can find current news and product changes.
 
 ## Introduction
 
-You as a PosDealer may find Information about new new products, features or processes by the newsletters, that are sent to you irregularly.  
-Another way to stay with us, is to read our news.
+You, as a PosDealer, may find Information about new products, features or processes in the newsletters that are sent to you irregularly.  
+Another way to stay with us is to read our news.
 
 ## Work steps
 

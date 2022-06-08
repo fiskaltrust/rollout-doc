@@ -20,7 +20,7 @@ After reading this, you can use the documentation effectively in your specific f
 |![Number 2](images/Numbers/circle-2o.png) |PosCreators start reading [here](https://docs.fiskaltrust.cloud/de/docs/poscreators/get-started)  |
 |![Number 3](images/Numbers/circle-3o.png) |PosDealers start reading [here](https://docs.fiskaltrust.cloud/de/docs/posdealers/get-started)   |
 |![Number 4](images/Numbers/circle-4o.png) |Here you can find more detailed [product descriptions](https://docs.fiskaltrust.cloud/docs/product-description/germany)   |
-|![Number 5](images/Numbers/circle-5o.png) |Here answers are listed to frequently asked questions (FAQ), a description of [customer roles](https://docs.fiskaltrust.cloud/docs/faq/customer-roles) like PosCreator, PosDealer an our [Terminology](https://docs.fiskaltrust.cloud/docs/faq/terms)  |
+|![Number 5](images/Numbers/circle-5o.png) |Here you will find answers to frequently asked questions (FAQ), a description of [customer roles](https://docs.fiskaltrust.cloud/docs/faq/customer-roles) like PosCreator, PosDealer an our [Terminology](https://docs.fiskaltrust.cloud/docs/faq/terms)  |
 |![Number 6](images/Numbers/circle-6o.png) |Jump to our [Release Notes](https://docs.fiskaltrust.cloud/docs/release-notes) |
 |![Number 7](images/Numbers/circle-7o.png) |Change between languages, if translations are available  |
 |![Number 8](images/Numbers/circle-8o.png) |Switch between light mode and dark mode with this button  |
@@ -35,19 +35,19 @@ import ReactPlayer from "react-player"
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](images/Numbers/circle-1o.png) |Use `CTRL` & `K` to open the search window or tick the symbol in the task bar. Enter keywords for your search |
-|![Number 2](images/Numbers/circle-2o.png) |keywords, that you have used in the running session are listed here)  |
-|![Number 3](images/Numbers/circle-3o.png) |keywords, that will be used often, can be set as favorites here   |
+|![Number 1](images/Numbers/circle-1o.png) |Use `CTRL` & `K` to open the search window or tick the symbol in the taskbar. Enter keywords for your search |
+|![Number 2](images/Numbers/circle-2o.png) |Keywords that you have used in the running session are listed here)  |
+|![Number 3](images/Numbers/circle-3o.png) |Keywords that are often in use, can be set as favorites here   |
 |![Number 4](images/Numbers/circle-4o.png)|Scroll down to the lower end of the search results (not usable without keywords)  |
 |![Number 5](images/Numbers/circle-5o.png)  |Tick on `See all XYZ results` |
-|![Number 6](images/Numbers/circle-6o.png) |Here you can find more details about the content, in which your keyword was found|
-|![Number 7](images/Numbers/circle-7o.png) |Get more overview with opening the found documents in several tabs |
+|![Number 6](images/Numbers/circle-6o.png) |Find more details about the context of your keyword|
+|![Number 7](images/Numbers/circle-7o.png) |Get more overview by opening the found documents in several tabs |
 
 ### Copying expressions
 
 :::tip Copying expressions made easy
 
-The documentation, in particular technical chapters, contains code blocks which can be executed on your system's command line. When hovering with the mouse over such a code block, a copy button will appear in the top right, allowing for the whole code to be copied with one click to your clipboard. This can save time and avoid typos or spelling issues. Please note the respective explanatory text for notes on where to use the code and whether any adjustments are necessary.
+Fiskaltrust`s documentation, in particular the technical chapters, contains code blocks. These you can execute on your system's command line. When hovering with the mouse over such a code block, a copy button will appear in the top right. This button allows you to copy the whole code with one click to your clipboard. You can save time and avoid typos or spelling issues. Please note the respective explanatory text for notes on where to use the code and whether adjustments are necessary.
 
 :::
 
@@ -60,23 +60,23 @@ The documentation, in particular technical chapters, contains code blocks which 
 * helps you to understand our products
 * gives you and your staff the ability to accomplish tasks at hand
 * provides solutions when you encounter problems using our products
-* helps you to search and quickly find a specific section
+* allows you to search and quickly find a specific section
 * uses master data, which is fictitious, as far as possible
 
+These sources provided the basis for the main points of the description 
 
-The main points of the descriptions are based on the following sources
 * fixing problems encountered during the development process
-* helping the end user understand the product 
+* helping the end-user understand the product 
 * helping PosCreators and PosDealers and the CST find relevant information
 
 ### General offers
 
-* Glossar: look for our [terminology here](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
+* Glossary: look for our [terminology here](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
 * Videos - Learn a concept by following a series of [videos](videos.md) 
 * Scenarios - complete a task or achieve a given goal [here](../../technical-operations/scenarios).
 
 ### Tools in use
 
 We use [docusaurus](https://docusaurus.io/) for this documentation.  
-Screenshots are done with [snagit](https://www.techsmith.com/screen-capture.html)  
-Videos are edited with [camtasia](https://www.techsmith.com/video-editor.html)   
+We create and edit screenshots with [snagit](https://www.techsmith.com/screen-capture.html).  
+We edit our videos with [camtasia](https://www.techsmith.com/video-editor.html)   

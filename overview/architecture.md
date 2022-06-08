@@ -24,13 +24,14 @@ The following schema provides an overview of how the three tiers interact.
 ![Overview of three tiers interaction](./images/arch.png "Overview of three tiers interaction")
 
 
-*fiskaltrust.Middleware* is the autonomous service providing the **core fiscalization functionality**. Your POS system connects to the Middleware to **sign and persist its receipts** and the Middleware, in turn, communicates with *fiskaltrust.Portal* to upload its own receipt chain and receive any changes you made to its configuration on the Portal side.
+*fiskaltrust.Middleware* is the autonomous service providing the **core fiscalization functionality**. Your POS system connects to the Middleware to **sign and persist its receipts**, and the Middleware, in turn, communicates with *fiskaltrust.Portal* to upload its receipt chain and receive any changes you made to its configuration on the Portal side.
 
-The following paragraphs will provide you with a brief overview on these major components.
+The following paragraphs will provide a brief overview of these major components.
 
 
 ## Portal
-The portal is the central **management hub** where you control all aspects of your *fiskaltrust* account, as well as of the accounts of your associated POS Operators (*subject to their authorization*). This also includes the set-up and management of your Middleware instances (*CashBoxes*).
+
+The fiskaltrust.Portal is the central **management hub** where you control all aspects of your *fiskaltrust* account, as well as of the accounts of your associated POS Operators (*subject to their authorization*). This also includes the setup and management of your Middleware instances (*CashBoxes*).
 
 The portal is also **used by the Middleware** to receive aforementioned *CashBox* configuration, for package management, and to update its receipt chain.
 

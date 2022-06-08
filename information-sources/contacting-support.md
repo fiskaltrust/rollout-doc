@@ -12,17 +12,17 @@ After reading this, you can decide when and how to get support.
 
 ## Introduction
 
-Unfortunately, problems in the context of complex processes cannot always be avoided. Please use this documentation or other sources of information explained below for any tasks.  
-This will help you avoid waiting times in case you need to contact support. The fiskaltrust.Staff will be happy to handle your requests if you are a PosDealer or a PosCreator. Since we do not know the respective constellations of POS-Systems on site and can therefore provide advice, we must always refer PosOperators to their PosDealer.   
+Unfortunately, you can not always avoid problems in complex processes. Please use fiskaltrust's documentation or other sources of information explained below for any tasks.  
+This procedure will help you avoid waiting times if you need to contact support. Fiskaltrust's Customer Success Team will be happy to handle your requests if you are a PosDealer or a PosCreator. However, since we do not know the respective constellations of POS-Systems on-site and can therefore provide advice, we must always refer PosOperators to their PosDealer.   
 
-Note the country specific E-mail address below to contact fiskaltrust.Staff.  
+Note the country-specific E-mail address below to contact fiskaltrust's Customer Success Team.  
 
 To track your requests, please refer to the [Cases](cases.md) section.
 
 
 ## Work steps
 
-All our learning in discussions, requests or how-tos`s result in knowledge base articles, FAQ (see Country-specific information) or releases.
+All our learning in discussions, requests, or how-to`s result in knowledge base articles, FAQ (see Country-specific information) or releases.
 
 | requests | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|

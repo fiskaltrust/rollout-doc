@@ -12,7 +12,7 @@ After reading this, you can design the setup of the Middleware components and de
 
 ## Introduction
 The scenarios in this general part will not cover all the aspects, that can be covered with fiskaltrust.Middleware and our products. 
-Please check the country specific notes for further details. Due to technical or legal reasons not all scenarios are available in every country.
+Please check the country-specific notes for further details. Due to technical or legal reasons not all scenarios are available in every country.
 
 ### Explanation of terms and graphics
 

@@ -57,7 +57,7 @@ The fiskaltrust.Portal as a central tool for PosDealers enables the purchase of 
 For large rollouts, fiskaltrust offers a variety of automation options - from the creation of templates for cash register configurations, bulk imports of customers as well as outlets, bulk purchases or assignments of products, to the automated rollout of the fiskaltrust.Middleware.
 
 #### Rollout support
-Economic and technical preparations for a rollout to end users can take place independently of each other: Thus, the purchase and resale of fiskaltrust's products can be handled independently of technical rollout scenarios, configuration and commissioning on site.
+Economic and technical preparations for a rollout to end-users can take place independently of each other: Thus, the purchase and resale of fiskaltrust's products can be handled independently of technical rollout scenarios, configuration and commissioning on site.
 
 #### After-sales support
 Even after a rollout is completed, functionalities such as mass updates of configurations or middleware updates are available. In addition, how-to guides and documentation templates simplify supporting PosOperators.

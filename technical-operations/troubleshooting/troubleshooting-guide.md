@@ -14,7 +14,7 @@ After reading this, you can follow a structured way to determine the source of t
 ## Introduction
 
 Unfortunately, problems in the context of complex processes cannot always be avoided. Please use this Troubleshooting Guide on your way to solve or describe a problem. If the problem cannot be solved with the described steps, you have at least reduced waiting times and possible queries if you need to contact the Customer Success Team.
-The fiskaltrust.Staff will be happy to handle your requests if you are a PosDealer or a PosCreator. Since we do not know the respective constellations of the POS systems on site and therefore cannot advise, we have to refer PosOperators to their PosDealer. Country-specific exceptions or individual cases are possible, but as a rule, PosOperators receive high-quality support from their PosDealer in a short time.
+The fiskaltrust Customer Success Team will be happy to handle your requests if you are a PosDealer or a PosCreator. Since we do not know the respective constellations of the POS systems on-site and therefore cannot advise, we have to refer PosOperators to their PosDealer. Country-specific exceptions or individual cases are possible, but as a rule, PosOperators receive high-quality support from their PosDealer in a short time.
 
 ## Work steps
 In case users run into issues or problems while using our products, we recommend to go through the following steps (in the order below):

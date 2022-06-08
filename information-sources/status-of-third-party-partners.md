@@ -13,7 +13,7 @@ After reading this, you can explain where to find status information about third
 ## Introduction
 
 External service providers can, for example, provide technological support for payment processes or prepare and forward data for accounting.  
-Such data exchange with external service providers must be initialized in the fiskaltrust.portal and can also be managed there.  
+You, as a PosDealer, can initialize the exchange with external service providers in the fiskaltrust.Portal and also manage them there.  
 
 **No data exchange can take place without active setup by PosDealer or PosOperator.**  
 
@@ -30,4 +30,4 @@ For manual exchange, see the section on [Exports](../technical-operations/mainte
 |![Number 2](images/Numbers/circle-2o.png) |Choose `Overview`  |
 |![Number 3](images/Numbers/circle-3o.png) |Scroll down until `Here you can enable connections to 3rd party partners`  |
 |![Number 4](images/Numbers/circle-4o.png) |Enable the connection by setting the slide to the right and signing the contract. |
-|![Number 5](images/Numbers/circle-5o.png) |Return to download the contract again, if needed. This was send to your E-mail-address when the contact was signed or changed  |
+|![Number 5](images/Numbers/circle-5o.png) |Return to download the contract again, if needed. This contract was sent to your E-mail-address when the contact was signed or changed  |
