@@ -107,7 +107,7 @@ Experiences of our partners showed that in exceptional cases terminals become de
 ![Main POS-System for multiple Terminals](images/scenario-5B-RR.png "Main POS-System for multiple Terminals")
 
 ### Hosted Middleware & custom data centers
-This scenarios works best in centralized system architectures. Many POS systems or terminals can be connected to the hosted version of the fiskaltrust.Middleware, which is operated either in the users datacenter or directly in our cloud (as a SaaS product, called SignatureCloud). In countries where remote signing is allowed (Austria and France), this is the generally recommended solution, as it does not require any locally installed Middleware instances.
+This scenarios works best in centralized system architectures. Many POS Systems or terminals can be connected to the hosted version of the fiskaltrust.Middleware, which is operated either in the users datacenter or directly in our cloud (as a SaaS product, called SignatureCloud). In countries where remote signing is allowed (Austria and France), this is the generally recommended solution, as it does not require any locally installed Middleware instances.
 
 ![Main POS-System for multiple Terminals](images/scenario-6-RR.png "Main POS-System for multiple Terminals")
 

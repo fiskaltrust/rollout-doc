@@ -15,7 +15,7 @@ Alpenstraße 99/2.OG/02
 Jede Registrierkasse ist einer CashBox unter Beachtung folgender Kriterien zugeordnet:
 * Pro Betrieb muss mindestens eine CashBox betrieben werden.
 * Pro Standort muss mindestens eine CashBox betrieben werden.
-* Pro Kassenhersteller (PosSystem) pro Standort ist mindestens eine CashBox zu betreiben.
+* Pro Kassenhersteller (POS System) pro Standort ist mindestens eine CashBox zu betreiben.
 * Es dürfen in einer CashBox maximal 10 Queues betrieben werden.
 * Es dürfen in einer Queue maximal 10 Eingabestationen betrieben werden.
 * Es dürfen in einer CashBox maximal 10 Signaturerstellungseinheiten betrieben werden.

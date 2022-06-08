@@ -15,9 +15,9 @@ import TabItem from '@theme/TabItem';
 
 ## Introduction
 
-The Middleware represents the core service of fiskaltrust's portfolio and enables your POS systems to handle their receipts within the scope of full fiscal and legal compliance across markets.
+The Middleware represents the core service of fiskaltrust's portfolio and enables your POS Systems to handle their receipts within the scope of full fiscal and legal compliance across markets.
 
-It features a standardised **communication interface** to receive requests from the POS system, a **data layer** to manage and persist your receipts and their signatures, and a number of different **signing backends** which provide the required signature information.
+It features a standardised **communication interface** to receive requests from the POS System, a **data layer** to manage and persist your receipts and their signatures, and a number of different **signing backends** which provide the required signature information.
 
 There are several **deployment options** available (on- and off-premise) and, being backed by the .NET platform, the Middleware is a platform-independent service and runs on all major platforms with **.NET/Mono support**.
 
@@ -29,7 +29,7 @@ The following sections will give you more insight on the core features, as well 
 
 ### Global Interface
 
-The Middleware uses the **iPOS interface** for communication with your POS systems. Its protocol and its calls are **standardised across all _fiskaltrust_ markets** and, once implemented by your POS system software, you can deploy your systems in all of the supported markets with either no changes at all or only minor adjustments to accommodate particular national regulations.
+The Middleware uses the **iPOS interface** for communication with your POS Systems. Its protocol and its calls are **standardised across all _fiskaltrust_ markets** and, once implemented by your POS System software, you can deploy your systems in all of the supported markets with either no changes at all or only minor adjustments to accommodate particular national regulations.
 
 
 
@@ -115,11 +115,11 @@ Please see [Launcher](launcher.md) for more details.
 
 ### Queue
 
-The queue is one of the main components of a Middleware setup. It provides the central communication interface (e.g. REST) for your POS systems to sign receipts and export data in a number of formats.
+The queue is one of the main components of a Middleware setup. It provides the central communication interface (e.g. REST) for your POS Systems to sign receipts and export data in a number of formats.
 
-Every receipt the queue receives from your POS system will be signed using the SCU, added to the [receipt-chain](#audit-proof-receipt-chaining) (along with the signature), and provided back to your POS system software.
+Every receipt the queue receives from your POS System will be signed using the SCU, added to the [receipt-chain](#audit-proof-receipt-chaining) (along with the signature), and provided back to your POS System software.
 
-The queue is also the authoritative endpoint for your POS system to run direct data exports from the receipt-chain.
+The queue is also the authoritative endpoint for your POS System to run direct data exports from the receipt-chain.
 
 
 
