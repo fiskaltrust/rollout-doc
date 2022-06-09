@@ -5,6 +5,8 @@ title: Product bundles
 
 # Product bundles
 
+We package all relevant products for a specific market into product bundles, that are required to be fully legally compliant without any further requirements, providing **carefree fiscalization**.
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

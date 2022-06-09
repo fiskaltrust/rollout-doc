@@ -1,16 +1,14 @@
 ---
-slug: /posdealers/buy-resell/buying-reselling
-title: Buying and Reselling
+slug: /posdealers/buy-resell/overview
+title: Overview
 ---
-# Buying and Reselling
+# Overview
 
 :::info summary
 
 After reading this, you will know what to do, to buy and resell fiskaltrust products.
 
 :::
-
-## Introduction
 
 In addition to the license-free fiskaltrust.Middleware for PosCreators, fiskaltrust offers fee-based add-on products (which are based on the fiskaltrust.Middleware) and individual products (independent of the fiskaltrust.Middleware) for PosOperators.
 
