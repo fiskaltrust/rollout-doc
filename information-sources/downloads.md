@@ -11,14 +11,15 @@ After reading this, you can download your contracts, general information and arc
 :::
 
 ## Introduction
-In our fiskaltrust.Portal, you may take use of three sources for downloads. 
+In our fiskaltrust.Portal, you can use three sources for downloads. 
 
-**Contracts** are provided in the overview of the chosen account (`[COMPANY]` / `Overview`). These files are the same, which were sent to you by E-mail attachment at the conclusion or a change of a contract. Primarily, these are the contracts for the agreed roles, the user agreements or, in the case of PosDealers, cooperation agreements. If user agreements with third parties have been concluded, you will find these here as well - please note any different, country-specific options for this. 
+You will find **Contracts** in the overview of the chosen account (`[COMPANY]` / `Overview`). These files are the same sent to you by E-mail attachment at the conclusion or a contract change. Primarily, these are the contracts for the agreed roles, the user agreements or, in the case of PosDealers, cooperation agreements. If you concluded user agreements with third parties, you find these here as well - please note any different, country-specific options for this. 
 
-Two other download options are summarized in the tools section:  
-* **General information** such as procedural documentation, SLA, price lists are available in the Downloads section (`Tools` / `Downloads`). These are available for selection depending on the target group. Furthermore, depending on the country, you will find general information such as certificates, brochures, scripts, etc.
+The tools section summarizes two other download options:  
 
-* **Archives**, that were already prepared are available as Exports (`Tools` / `Exports`).
+* **General information** such as procedural documentation, SLA and price lists is available in the Downloads section (`Tools` / `Downloads`). These are available for selection depending on the target group. Furthermore, you will find general information such as certificates, brochures and scripts depending on the country.
+
+* Either manually or automatically prepared, **Archives** are available as Exports (`Tools` / `Exports`).
 
 ## Work steps
 
@@ -50,7 +51,7 @@ import ReactPlayer from "react-player"
 
 ### Find exports
 
-Have a look [here for more details](exports) about configuring your individual download. 
+Have a look [here for more details](exports) at configuring your download. 
 
 
 <ReactPlayer controls url={require("./images/downloads-find-export-22-02-02.mp4").default} /><br />
@@ -68,7 +69,7 @@ Have a look [here for more details](exports) about configuring your individual d
 
 :::info 
 
-Please note, when forwarded from `Configuration`/ `Queue` / `Exports` only the exports of the previously chosen queue are shown. 
+Please note that `[Tools]` / `Download` shows only the queue's exports, that you previously chose at `Configuration`/ `Queue` / `Exports`. 
 
 
 :::

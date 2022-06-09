@@ -6,7 +6,7 @@ title: Introduction
 This documentation is intended for cash register dealers (_PosDealers_). It describes the steps recommended by fiskaltrust for successful purchase, resale, rollout and support of our products.
 
 ## Sections of this documentation
-Before rolling out a POS system at a customer site, you need a playground to test the services and products in detail. At **Get Started** we explain the concept of our _Sandbox_. _Registration_ and use is free of charge. After that you will get familiar with _Company Roles_ and the _Operator Onboarding_ and then follow _My First Cashbox_ to create your first demo setup.
+Before rolling out a POS System at a customer site, you need a playground to test the services and products in detail. At **Get Started** we explain the concept of our _Sandbox_. _Registration_ and use is free of charge. After that you will get familiar with _Company Roles_ and the _Operator Onboarding_ and then follow _My First Cashbox_ to create your first demo setup.
 
 With **Buy/Resell** you can expand your knowledge of our business model. You will learn how to make a _Volume purchase agreement_ for which _Products_. With _Rollout Management_, rollouts at the PosOperator succeed in a standardized manner, and with the _Shop_ in a highly individualized manner.  
 

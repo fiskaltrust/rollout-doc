@@ -4,11 +4,11 @@ title: Middleware
 ---
 
 # Middleware
-The Middleware is fiskaltrust's core product. It is a freely available software solution which complements your POS system and provides the central service of issuing signatures for POS receipts and keeping track of both, receipts and their signatures, in its chained receipt datastore. It does so using the relevant and mandatory national signing mechanisms.
+The Middleware is fiskaltrust's core product. It is a freely available software solution which complements your POS System and provides the central service of issuing signatures for POS receipts and keeping track of both, receipts and their signatures, in its chained receipt datastore. It does so using the relevant and mandatory national signing mechanisms.
 
 The Middleware is available for all supported countries and provides a single, standardized, and unified communication interface.
 
-It features a REST-, gRPC- and SOAP-compatible interface for communication with POS systems and is available for on-premise deployment on Desktop devices and Android, as well as an off-premise SaaS solution.
+It features a REST-, gRPC- and SOAP-compatible interface for communication with POS Systems and is available for on-premise deployment on Desktop devices and Android, as well as an off-premise SaaS solution.
 
 ## Security mechanism
 The fiskaltrust.Middleware processes some of the most important data fields on the receipt. The receipt number, as a unique identifier of a receipt transmitted by the cash register, is created by the fiskaltrust.Middleware to ensure that each receipt is processed by it.
@@ -17,7 +17,7 @@ Compliance is achieved by combining several methods and components.
 
 First, the fiskaltrust.Middleware ensures that all receipts are processed by third party in addition to the PosCreator and PosOperator. This is the _organizational_ implementation of security.
 
-As the _technical_ implementation of security, each request and also each response is hashed, ensuring data integrity of requests and responses. To ensure immutability, another hash value is generated that relates to the entire request-response cycle, including the identification of the cycle, the time of operation, the human-readable document number, and the hash values of the request, response, and previous receipt, called the document hash value. This concatenation of the receipt hash value provides immutability and provides the ability to detect all changes as well as deletion in any action provided by the POS system.
+As the _technical_ implementation of security, each request and also each response is hashed, ensuring data integrity of requests and responses. To ensure immutability, another hash value is generated that relates to the entire request-response cycle, including the identification of the cycle, the time of operation, the human-readable document number, and the hash values of the request, response, and previous receipt, called the document hash value. This concatenation of the receipt hash value provides immutability and provides the ability to detect all changes as well as deletion in any action provided by the POS System.
 
 ![receipt-chaining](../images/receipt-chain.png)
 
@@ -25,7 +25,7 @@ To limit the risk of an attack on the chain from the last unlinked hash value, f
 
 As the final component of the security mechanism, the fiskaltrust.Middleware also provides direct implementations for all relevant market-related security mechanisms (e.g.  relevant smart cards and online signing in Austria and **all** TSSs in Germany).
 
-In order to be as open as possible for different platforms and operating systems and to fulfill the promise of acting as a stable interface to the POS system, the fiskaltrust.Middleware follows a strict architecture:
+In order to be as open as possible for different platforms and operating systems and to fulfill the promise of acting as a stable interface to the POS System, the fiskaltrust.Middleware follows a strict architecture:
 
 ![mw-architecture](../images/mw-architecture.png)
 

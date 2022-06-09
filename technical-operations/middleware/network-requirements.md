@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 ## Introduction
 
-The Middleware requires a basic set of network access to perform its function. First and foremost, this includes **inbound** connections from your POS systems to the Middleware. Please make sure your POS systems have free access to your Middleware instance. For example, firewalls need to be appropriately configured to allow connections from your POS systems to the IP address and ports where the Middleware is running.
+The Middleware requires a basic set of network access to perform its function. First and foremost, this includes **inbound** connections from your POS Systems to the Middleware. Please make sure your POS Systems have free access to your Middleware instance. For example, firewalls need to be appropriately configured to allow connections from your POS Systems to the IP address and ports where the Middleware is running.
 
 There are also a few **outbound** connections (e.g. querying for changes to your CashBox configuration) required for a fully functioning Middleware setup. Please make sure the machine where the Middleware is installed has proper network access to the following hostnames.
 
@@ -67,7 +67,7 @@ Should you need to determine the IP addresses of these hostnames for your networ
 
 :::info inbound connections
 
-The Middleware does not expect or handle any other inbound connections, apart from the receipt requests sent by your POS systems. So you only need to make sure your POS systems have access, all other connections can (and should) be restricted.
+The Middleware does not expect or handle any other inbound connections, apart from the receipt requests sent by your POS Systems. So you only need to make sure your POS Systems have access, all other connections can (and should) be restricted.
 
 :::
 

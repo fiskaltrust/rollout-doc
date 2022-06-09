@@ -12,7 +12,7 @@ After reading this, you can explain what the _Bring your own Data Center_ soluti
 :::
 
 ## Introduction
-In addition to on-premise installations, fiskaltrust offers a Middleware hosting solution for cloud POS systems running in private data centers or public clouds (like Azure or AWS). This version of the Middleware's Launcher runs in a Docker container and comes with a pre-defined _Helm_ chart for high-load installations in Kubernetes clusters.
+In addition to on-premise installations, fiskaltrust offers a Middleware hosting solution for cloud POS Systems running in private data centers or public clouds (like Azure or AWS). This version of the Middleware's Launcher runs in a Docker container and comes with a pre-defined _Helm_ chart for high-load installations in Kubernetes clusters.
 
 
 ## Self-hosted vs. SaaS
@@ -27,6 +27,6 @@ The guidelines for installing and operating _Bring your own Data Center_ is curr
 
 Using the Helm chart is not mandatory, but highly recommended in scenarios where more than one Pod is needed. In cases with a few CashBoxes, hosting a single container might be sufficient, although there is no failover in place then.
 
-If you need assistance with running ByoDC at scale for your cloud POS system, please reach out to sales@fiskaltrust.de.
+If you need assistance with running ByoDC at scale for your cloud POS System, please reach out to sales@fiskaltrust.de.
 
 :::

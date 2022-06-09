@@ -6,31 +6,32 @@ title: Knowledge Base
 
 :::info summary
 
-After reading this, you can use knowledge base articles in the Help-section of the portal.
+After reading this, you can use knowledge base articles in the Help Section of the fiskaltrust.Portal.
 
 :::
 
 ## Introduction
 
-A knowledge base is typically a collection of articles that contains images and text. In the help section of the fiskaltrust.Portal PosDealers or PosOperators will find knowledge base articles. These articles are based on those questions, that our customer success team answers most frequently.
+A knowledge base is typically a collection of articles that contains images and text. In the Help Section of the fiskaltrust.Portal PosDealers or PosOperators find knowledge base articles. Our customer success team's frequent questions are the base for these articles.
 
-You, as a PosDealer or a PosOperator, can browse these articles to learn more about fiskaltrusts products or services or how to solve related problems.  
+As a PosDealer or as a PosOperator, you can browse these articles to learn more about fiskaltrust's products or services or how to solve related problems.  
 
-You can avoid possible waiting times with a support request if you **first visit the knowledge base** in the fiskaltrust.Portal when you have a problem and see if your problem has already been described and a solution explained.
+You can avoid possible waiting times with a support request if you **first visit the knowledge base** in the fiskaltrust.Portal.  
+If we worked on your issue previously, we have explained a solution.
 
-At the end of each article you will find the option to leave feedback. In addition to your rating with one up to five stars, leave comments and suggestions. These will help the fiskaltrust.Staff to see if the articles meet the needs of PosDealers and help to solve problems of PosOperators.
+At the end of each article, you will find the option to leave feedback. In addition to your rating with one up to five stars, leave comments and suggestions. These will help fiskaltrusts Customer Success Team see if the articles meet the needs of PosDealers and help solve problems of PosOperators.
 
 ## Work steps
 
-![Help-Section / knowledge base](images/1-knowledge-base.png "https://portal-sandbox.fiskaltrust.TLD/KBArticle#/")
+![Help Section / knowledge base](images/1-knowledge-base.png "https://portal-sandbox.fiskaltrust.TLD/KBArticle#/")
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/Numbers/circle-1o.png)| `Help:` Tick to open the Help-Area.  |
 |![Number 2](../images/Numbers/circle-2o.png)| `Knowledge Base Articles`: Tick to open the collection of articles.  |
 |![Number 3](../images/Numbers/circle-3o.png)| `Search for articles`: Enter a search keyword.  |
-|![Number 4](../images/Numbers/circle-4o.png)| Choice of language: Select the language you prefer, if available.  |
+|![Number 4](../images/Numbers/circle-4o.png)| Choice of language: Select the preferred language, if available.  |
 |![Number 5](../images/Numbers/circle-5o.png)| Problem: Note the problem description.  |
 |![Number 6](../images/Numbers/circle-6o.png)| Background: Get more overview with background information.  |
-|![Number 7](../images/Numbers/circle-7o.png)| Solution: Note if prerequisites are described that must be met before you can go through the solution steps.  |
-|![Number 8](../images/Numbers/circle-8o.png)| `Was this article helpful?`: Your rating and a comment will be transmitted with `Submit feedback`.  |
+|![Number 7](../images/Numbers/circle-7o.png)| Solution: Note that if prerequisites are necessary, you have to meet these before going through the solution steps.  |
+|![Number 8](../images/Numbers/circle-8o.png)| `Was this article helpful?`: Your rating and comment will be transmitted with `Submit feedback`.  |

@@ -51,7 +51,7 @@ In the event of non-compliance with the Fair Use Policy, **fiskaltrust gmbh** re
 
 ### Estimation of the TSE signature count
 
-The number of signatures depends on the implementation and use of the particular POS system and TSE, but it can be estimated based on the number of transactions. Each sign operation on the fiskaltrust.middleware generates transactions and signatures, however administrative operations of the TSE itself also result in signatures. Cloud TSEs can expect an average of 2-3 signatures per transaction, hardware TSEs 3-8.
+The number of signatures depends on the implementation and use of the particular POS System and TSE, but it can be estimated based on the number of transactions. Each sign operation on the fiskaltrust.middleware generates transactions and signatures, however administrative operations of the TSE itself also result in signatures. Cloud TSEs can expect an average of 2-3 signatures per transaction, hardware TSEs 3-8.
 
 
 ## Download 
