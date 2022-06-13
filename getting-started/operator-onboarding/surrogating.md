@@ -34,7 +34,7 @@ For your visualization, the process of surrogating is described here with the ex
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Choose `PosOperator` / `Overview`  |
 |![Number 2](images/Numbers/circle-2o.png) |Enter a search term for the desired PosOperator.  |
-|![Number 3](images/Numbers/circle-3o.png) |With `Enter` or the Symbol for `Search` the datasets of those PosOperators, whose names or E-mail addresses matches your criteria will be displayed. Without a search term, all PosOperators are displayed.  |
+|![Number 3](images/Numbers/circle-3o.png) |With `Enter` or the Symbol for `Search` the datasets of those PosOperators, whose names or E-Mail addresses matches your criteria will be displayed. Without a search term, all PosOperators are displayed.  |
 |![Number 4](images/Numbers/circle-4o.png) |If the name of the PosOperator is an active link, the account is active. Choose that link to switch to the PosOperators account.  |
 
 ![surrogating accounts](images/3-surrogating-accounts.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator")

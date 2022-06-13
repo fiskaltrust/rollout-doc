@@ -13,13 +13,13 @@ After reading this, you can keep your and the PosOperators Master data up-to-dat
 The Master data of a company in the fiskaltrust.Portal are important for various reasons:  
 On the one hand, parts of this data, such as commercial identifications, are used for authentication with the tax authorities or third party services.  
 On the other hand, this data is used for automated invoice generation between PosDealer and PosOperators.  
-It is therefore essential to check the completeness of Master data in the fiskaltrust.portal. Country-specific check mechanisms are also available for checking the data entered.
+It is therefore essential to check the completeness of Master data in the fiskaltrust.Portal. Country-specific check mechanisms are also available for checking the data entered.
 Depending on the legal situation and the technical equipment of the tax authority, it is checked whether an entered value meets the formal requirements.  
 Under country-specific circumstances, when a PosOperator is first registered, the other master data can be retrieved from the relevant authority and checked imported by entering a tax number.
 
-After logging on to the fiskaltrust.portal, you as a PosDealer should check the completeness and also use the available checking mechanisms.
+After logging on to the fiskaltrust.Portal, you as a PosDealer should check the completeness and also use the available checking mechanisms.
 
-Basically, the information about the user at `[USERNAME]` / `Data` is only important for using the fiskaltrust.Portal. For data protection reasons, fictitious names or function designations can also be used there instead of real data. Only the E-mail Address must be a real, working one, because the login to the fiskaltrust.Portal is done via this address. But also here names can be avoided and functional names can be used (like fiskalizing@PosOperator.TLD).
+Basically, the information about the user at `[USERNAME]` / `Data` is only important for using the fiskaltrust.Portal. For data protection reasons, fictitious names or function designations can also be used there instead of real data. Only the E-Mail address must be a real, working one, because the login to the fiskaltrust.Portal is done via this address. But also here names can be avoided and functional names can be used (like fiskalizing@PosOperator.TLD).
 
 For PosOperators, it is equally essential to check the Master data for completeness and correctness. This must be done in the respective account. 
 
