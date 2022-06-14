@@ -38,7 +38,7 @@ The fiskaltrust.Portal is your central management tool for the entire *fiskaltru
 The _archive service_ is an optional and chargeable add-on product. It enables your middleware instance to use archive functions. After activating an archive service, the middleware saves new receipts in the archive, which persists them in a **secure** and **tamper-proof** receipt chain.  
 The receipt chain can be **retrieved and exported at any time** via the portal (e.g. for a tax audit) and stored as **long as national regulations require**.
 
-### Exports & Third Party Interfaces
+### Exports & third-party Interfaces
 
 An active _archive service_ package will allow you to export your data using the portal in various **formats** relevant to the applicable national regulations.
 

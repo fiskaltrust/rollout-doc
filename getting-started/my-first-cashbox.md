@@ -4,47 +4,45 @@ title: My First Cashbox
 ---
 # My First Cashbox
 
+
 :::info summary
 
 After reading this, you can create a CashBox and have a functioning Middleware instance.
 
 :::
 
-:::caution 🇦🇹 austria
+:::caution 🇦🇹 Austria
 
-This tutorial is unfortunately **not yet applicable to the Austrian market** as rollout plans are not active there yet. While we're working on enabling rollout plans in Austria, please use the shop to create a SignatureCloud cashbox.
+Unfortunately, this tutorial is **not yet applicable to the Austrian market** as rollout plans are not active there. However, while we are working on enabling rollout plans in Austria, you still use the shop to create a SignatureCloud cashbox.
 
 :::
 
 ## Prerequisites
 
-The following prerequisites must be in place before we can roll out our Middleware instance
+Before we roll out our Middleware instance, the following prerequisites must be in place.
 
 * A working **Internet connection** (_please see [Network Requirements](../technical-operations/middleware/network-requirements.md)_)
 * An active _fiskaltrust_ **PosDealer account** (*either by [registration](registration.md) or by invitation through your PosCreator*)
 * A system meeting the hardware and software **[requirements](../technical-operations/middleware/supported-environments.md)** (*in this tutorial we focus on rollouts on Windows*)
 * Any **SSCD components** (*hardware or SaaS credentials*) required for the setup, unless created during the setup itself
 
-
-
-## Rollout Plans
-
-[Rollout plans](../buy-resell/rollout-plans.md) are guided **deployment wizards** in the portal, which assist you in the buy and resell process as well as in **setting up CashBoxes** and their components for your PosOperators. A rollout plan typically follows these five steps
-
-1. Select the **product** you'd like to roll out
-2. Select the **account** for which it should be rolled out
-3. Select one or more **account outlets** where the product should be rolled out
-4. Create a **quote** and load the quote into your **shopping cart**
-5. Perform the **checkout**
-
 :::tip
 
-These steps are best performed in the [Sandbox](sandbox.md) as this ensures your account is not going to be billed for this test setup.
+Please make sure you use your [Sandbox](sandbox.md) account. So you avoid a bill on your account. 
 
-Please make sure you are using your Sandbox account. If you don't have one yet, please contact your *PosCreator* for invitation details or [register](registration.md) a new PosDealer Sandbox account yourself.
+If you don't have one yet, please get in touch with your *PosCreator* for invitation details or [register](registration.md) a new PosDealer Sandbox account yourself.
 
 :::
 
+## Rollout Plans
+
+[Rollout plans](../buy-resell/rollout-plans.md) are guided **deployment wizards** in the portal, which assist you in buying, reselling and **setting up CashBoxes** and their components for your PosOperators. A rollout plan typically follows these five steps:
+
+1. Select the **product** you'd like to roll out.
+2. Select the **account** for which you plan the rollout
+3. Select one or more **account outlets** where you want to perform the rollout.
+4. Create a **quote** and load the quote into your **shopping cart**
+5. Perform the **checkout**
 
 
 import Tabs from '@theme/Tabs';
@@ -53,7 +51,7 @@ import TabItem from '@theme/TabItem';
 
 ### Business Rollout (getting the SCU)
 
-As first step, we will be running a *Business* rollout which will acquire entitlements, transferring them to the PosOperators outlets and activating them as well as eventually creating necessary backend components for the CashBox (in this case an SCU).
+As the first step, we will be running a *Business rollout* which will acquire entitlements, transfer them to the PosOperators outlets and activate them and eventually create necessary backend components for the CashBox (in this case, an SCU).
 
 import BusinessRolloutFR from '../_markets/fr/getting-started/my-first-cashbox/_business.mdx';
 import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_business.mdx';
@@ -91,13 +89,9 @@ import TechnicalRolloutDE from '../_markets/de/getting-started/my-first-cashbox/
 
 </Tabs>
 
-
-
 ## Deploying the CashBox
 
 You should now have a working CashBox and be able to download its package and deploy it on your machine.
-
-
 
 ### Download
 
@@ -105,17 +99,15 @@ To download the Middleware package for your newly created CashBox, go to your li
 
 ![](./images/my-first-cashbox/download.png "https://portal-sandbox.fiskaltrust.TLD/CashBox#/")
 
-This assembles the appropriate binary packages for your CashBox and may take a couple of seconds. Once your browser prompts you for the file download, save the file to your hard disk.
-
-
+The downloaded Middleware package assembles the appropriate binary packages for your CashBox and may take a while. Once your browser prompts you for the file download, save the file to your hard disk.
 
 ### Deployment
 
-Unzip the archive you just downloaded into the directory where you'd like to deploy the Middleware. Once that is complete you can start your Middleware instance with the test script `test.cmd` (_please make sure to launch it with **administrative privileges**_).
+Unzip the archive you downloaded into the directory where you'd like to deploy the Middleware. Once that is complete, you can start your Middleware instance with the test script `test.cmd` (_please make sure to launch it with **administrative privileges**_).
 
 :::info
 
-As we downloaded the online launcher the archive only comes with the launcher stub and the Middleware will fetch all additionally required packages upon the first start. This may delay the first start by a couple of seconds.
+As we downloaded the online launcher, the archive only comes with the launcher stub, and the Middleware will fetch all additionally required packages upon the first start. The download of additionally required packages may delay the first start by a couple of seconds.
 
 :::
 
@@ -126,7 +118,7 @@ As we downloaded the online launcher the archive only comes with the launcher st
 
 Once the Middleware has been deployed and started, it is advisable to perform a quick check if the Middleware is generally available on the network and responds to requests.
 
-For that purpose, the Middleware features an echo/ping request type which responds back with the data it received. If you successfully get a response, the Middleware should be ready to receive your signing requests as well.
+For that purpose, the Middleware features an echo/ping request type that responds with the data it received. If you successfully get a response, the Middleware should also be ready to accept your signing requests.
 
 :::tip postman collection
 

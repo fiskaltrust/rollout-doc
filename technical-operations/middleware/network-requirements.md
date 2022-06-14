@@ -132,7 +132,7 @@ Please keep in mind, any changes only take effect after a restart of fiskaltrust
 :::
 
 
-### Third party proxy settings
+### third-party proxy settings
 
 Depending on your setup you might also need to grant access to additional network resources.
 

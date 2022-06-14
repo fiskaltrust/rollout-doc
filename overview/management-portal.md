@@ -44,7 +44,7 @@ More information is available in the chapter [Surrogating](../getting-started/Op
 
 ## Data Management
 
- The *fiskaltrust.Portal* allows you to **export your data** by various selection criteria and in **different export formats**. Depending on their availability, it is also possible to configure data replication to **third party service providers**.
+ The *fiskaltrust.Portal* allows you to **export your data** by various selection criteria and in **different export formats**. Depending on their availability, it is also possible to configure data replication to **third-party service providers**.
 
 ## CashBox Maintenance
 

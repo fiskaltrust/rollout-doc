@@ -25,7 +25,7 @@ The aforementioned [**signing devices and services**](signing.md) are also distr
 
 Add-on products for [**archiving**](revision-safe-archiving.md) can be used to securely store POS data in a revision-safe storage, which is required in most countries where fiscalization laws are in place. 
 
-The integration of [**third party services**](3rd-party/3rd-party-overview.md) into our products enables partners to benefit from the international, generic Middleware interface, and can e.g. be used to provide end-to-end receipt handling from the POS System into accounting ([**DATEV MeinFiskal**](3rd-party/datev-meinfiskal.md)).
+The integration of [**third-party services**](3rd-party/3rd-party-overview.md) into our products enables partners to benefit from the international, generic Middleware interface, and can e.g. be used to provide end-to-end receipt handling from the POS System into accounting ([**DATEV MeinFiskal**](3rd-party/datev-meinfiskal.md)).
 
 If required by law, fiskaltrust also takes care of [**tax authority notifications**](notifications.md), e.g. when a POS System is initialized or decommissioned.
 
