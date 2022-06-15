@@ -12,7 +12,7 @@ After reading this, you can design the setup of the Middleware components and de
 
 ## Introduction
 The scenarios in this general part will not cover all the aspects that you, as a PosDealer, can cover with fiskaltrust.Middleware and our products. 
-Please check the country-specific notes for further details. Unfortunately, not all scenarios are available in every country due to technical or legal reasons.
+Please check the country-specific notes for further details. Unfortunately, not all scenarios are available in every country for technical or legal reasons.
 
 ### Explanation of terms and graphics
 
@@ -107,7 +107,7 @@ Our partners' experiences showed that in exceptional cases, terminals become def
 ![Main POS-System for multiple Terminals](images/scenario-5B-RR.png "Main POS-System for multiple Terminals")
 
 ### Hosted Middleware & custom data centers
-This scenario works best in centralized system architectures. You connect many POS Systems or terminals to the hosted version of the fiskaltrust.Middleware. The Middleware operates either in the user's data center or our cloud (as a SaaS product called SignatureCloud). In countries where remote signing is allowed (Austria and France), this is the recommended solution, as it does not require any locally installed Middleware instances.
+This scenario works best in centralized system architectures. You connect many POS Systems or terminals to the hosted version of the fiskaltrust.Middleware. The Middleware operates either in the user's data center or our cloud (a SaaS product called SignatureCloud). This solution is recommended in countries where remote signing is allowed (Austria and France), as it does not require any locally installed Middleware instances.
 
 ![Main POS-System for multiple Terminals](images/scenario-6-RR.png "Main POS-System for multiple Terminals")
 
