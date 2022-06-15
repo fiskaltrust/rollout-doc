@@ -5,6 +5,8 @@ title: Overview about 3rd-party products
 
 # Overview about 3rd-party products
 
+There are several 3rd-party products integrated into our products. This way our partners can use our international, generic Middleware interface, to provide additional services to you, e.g. end-to-end receipt handling from the POS System into accounting. These are often market specific.
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
