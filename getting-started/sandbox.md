@@ -19,9 +19,10 @@ Key differences are
 * **No credit limits** need to be set up by the sales team
 * Activating paid features does **not require any payment**
 * It only issues **fiscally non-compliant** test signatures
-* There is **no SLA** in place
+* There is **no SLA** in place  
 
-The Sandbox is a completely separate environment from the live system and there is no data shared between the two systems. That also means you'll need **separate accounts for each system** and a CashBox created in the Sandbox **cannot be used for production** and vice versa.
+The Sandbox system is entirely separate from the live system; there is no data transmission between the two systems.
+Unfortunately, that also means you'll need **separate accounts for** each system, and a CashBox created in the Sandbox **cannot be used for production** and vice versa.
 
 :::caution
 

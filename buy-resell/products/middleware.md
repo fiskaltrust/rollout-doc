@@ -15,7 +15,7 @@ The fiskaltrust.Middleware processes some of the most important data fields on t
 
 Compliance is achieved by combining several methods and components.
 
-First, the fiskaltrust.Middleware ensures that all receipts are processed by third party in addition to the PosCreator and PosOperator. This is the _organizational_ implementation of security.
+First, the fiskaltrust.Middleware ensures that all receipts are processed by third-party in addition to the PosCreator and PosOperator. This is the _organizational_ implementation of security.
 
 As the _technical_ implementation of security, each request and also each response is hashed, ensuring data integrity of requests and responses. To ensure immutability, another hash value is generated that relates to the entire request-response cycle, including the identification of the cycle, the time of operation, the human-readable document number, and the hash values of the request, response, and previous receipt, called the document hash value. This concatenation of the receipt hash value provides immutability and provides the ability to detect all changes as well as deletion in any action provided by the POS System.
 
