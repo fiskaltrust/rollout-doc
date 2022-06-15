@@ -14,11 +14,11 @@ After reading this, you can explain the structure of the data directory.
 
 :::caution
 
-This chapter is about locally deployed **.NET Middleware** setups (Windows or Mono on Unix). Other deployment types (e.g. Android, BYODC, hosted Middleware) may have significantly different layouts and requirements.
+This chapter is about locally deployed **.NET Middleware** setups (Windows or Mono on Unix). Other deployment types (e.g., Android, BYODC, hosted Middleware) may have significantly different layouts and requirements.
 
 :::
 
-When you deploy your Middleware setup and run it for the first time you will find a couple of new files in your file system. This chapter elaborates on how the installation and the data directories of a Middleware installation are structured, what type of files they contain, and how these files are used.
+When you deploy your Middleware setup and run it for the first time, you will find a couple of new files in your file system. This chapter elaborates on the installation's structure and the data directories of a Middleware installation, the type of files they contain, and their usage.
 
 
 
@@ -58,11 +58,11 @@ and on **Unix systems** to
 /usr/share/fiskaltrust/service
 ```
 
-The data directory contains for each CashBox a `.json` file, as well as a separate sub-directory. For example, if your CashBox ID was `12345678-9ABC-DEF1-2345-6789ABCDEF12`, you'd find the following two entries
+The data directory contains for each CashBox a `.json` file, as well as a separate sub-directory. For example, if your CashBox ID were `12345678-9ABC-DEF1-2345-6789ABCDEF12`, you'd find the following two entries.
 
 * a **JSON file** named `Configuration-12345678-9ABC-DEF1-2345-6789ABCDEF12.json`
 * and a **directory** named `12345678-9ABC-DEF1-2345-6789ABCDEF12`
 
-The **JSON file** is the configuration file of the CashBox. As mentioned in the chapter [CashBox](cashbox.md#running-a-cashbox-the-middleware) it contains the details on all the components configured for this particular setup. Whenever you restart the Middleware, it will query the portal for any changes to the CashBox configuration and update this file accordingly.
+The **JSON file** is the configuration file of the CashBox. The chapter [CashBox](cashbox.md#running-a-cashbox-the-middleware) contains the details on all the components configured for this particular setup. Whenever you restart the Middleware, it will query the portal for any changes to the CashBox configuration and update this file accordingly.
 
 The **directory**, on the other hand, contains the runtime data of your CashBox, such as package libraries, relevant databases, and exported data files.

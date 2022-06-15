@@ -10,11 +10,11 @@ After reading this, you can create and use templates in the portal.
 
 :::
 
-Instead of creating and configuring a CashBox manually, a template can be used to create many similar CashBoxes. The fiskaltrust.Portal offers a graphical user interface to create, clone, edit and rollout templates.
+Instead of manually creating and configuring a CashBox, you can use a template to create many similar CashBoxes. The fiskaltrust.Portal offers a graphical user interface to create, clone, edit and roll out templates.
 
 ## Create & Edit Template
 
-At `Configuration->Template` you can see the existing templates, clone and edit them and create new ones.
+At `Configuration-> Template`, you can see the existing templates, clone and edit them and create new ones.
 
 ![Template List](./images/template-shop-list.png)
 
@@ -26,7 +26,7 @@ At `Configuration->Template` you can see the existing templates, clone and edit 
 |![Number 4](../../images/numbers/circle-4o.png) |Edit an existing template. |
 |![Number 5](../../images/numbers/circle-5o.png) |Create a new template. |
 
-When you create or edit a template, you have to fill out the following form.
+When you create or edit a template, you must fill out the following form.
 
 ![Template Create/Edit](./images/template-shop-create.png "https://portal-sandbox.fiskaltrust.TLD/Template")
 
@@ -40,11 +40,11 @@ When you create or edit a template, you have to fill out the following form.
 
 ## Create CashBox from Shop Template
 
-CashBoxes can be created from templates at `Shop->Products` by buying them like a regular product (see chapter [Shop](../../buy-resell/shop.md)). 
-Please make sure to [surrogate](../../getting-started/operator-onboarding/surrogating.md) into the right PosOperator and select the correct Outlet in the Shop, before adding the template into the shopping cart. The CashBox will be created on Checkout.
+You can create CashBoxes from templates at `Shop-> Products` by buying them like a regular product (see chapter [Shop](../../buy-resell/shop.md)). 
+Please make sure to [surrogate](../../getting-started/operator-onboarding/surrogating.md) into the right PosOperator and select the correct Outlet in the Shop before adding the template into the shopping cart. Your Checkout creates the CashBox.
 
 :::info Required Products
 
-Some templates require a product to be bought, before the derived CashBoxes will be fully operational. This should be mentioned in the description of the template. If so, place the required product into the shopping cart, before adding the template to the cart.
+Some templates require buying a product before the derived CashBoxes will be fully operational. It would help if you mentioned this prerequisite in the description of the template. If so, place the required product into the shopping cart **before** adding the template to the cart.
 
 :::

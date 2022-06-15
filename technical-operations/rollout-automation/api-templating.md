@@ -6,13 +6,13 @@ title: API Templating
 
 :::info summary
 
-After reading this, you can use the API to rollout templates.
+After reading this, you can use the API to roll out templates.
 
 :::
 
 ## Introduction
 
-In addition to the other ways of creating a CashBox, mentioned in the previous chapters, _fiskaltrust_ also provides a REST API for a fully automated solution to set up CashBoxes. This API takes a generic template, relevant CashBox parameters and variables, and creates a new CashBox based on this information. Contrary to [templates used in the shop](shop-templating.md), these templates do not need to be pre-configured, but the content is sent directly with the API request.
+In addition to the other ways of creating a CashBox mentioned in the previous chapters, _fiskaltrust_ also provides a REST API for a fully automated solution to set up CashBoxes. This API takes a generic template, relevant CashBox parameters and variables and creates a new CashBox based on this information. Contrary to [templates used in the shop](shop-templating.md), these templates do not need to be pre-configured, but the content is sent directly with the API request.
 
 The response to a successful request will include the [ID and access token](../middleware/cashbox.md#cashbox-id--access-token) of the newly created CashBox, which will allow for an immediate rollout of a launcher instance with these values.
 
@@ -22,7 +22,7 @@ The response to a successful request will include the [ID and access token](../m
 
 ### Prerequisites
 
-In order to run a request successfully against the template API, you'll need at least the following three items.
+You'll need at least the following three items to run a request successfully against the template API.
 
 * Your account ID
 * Your account's access token
@@ -30,15 +30,15 @@ In order to run a request successfully against the template API, you'll need at 
 
 ![](images/account_data.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
 
-The ID and the access token can be obtained from your portal's company overview at `[COMPANYNAME]` / `Overview` (![](../../images/numbers/1.png)). There, you'll find at the bottom of the page your account ID (![](../../images/numbers/2.png)) and the access token (![](../../images/numbers/3.png)) for the authentication against the API.
+You can obtain the ID and the access token from your portal's company overview at `[COMPANYNAME]` / `Overview` (![Overview](../../images/numbers/1.png)). You'll find your account ID (![account ID](../../images/numbers/2.png)) and the access token (![access token](../../images/numbers/3.png)) for the authentication against the API at the bottom.
 
-Additionally to the ID and access token, you will also need the template itself, encoded for a JSON string, as you will have to include it in the API request.
+Additionally to the ID and access token, you will need the template encoded for a JSON string, as you will have to include it in the API request.
 
 
 
 ### Sending a request
 
-The API is available at `https://helipad.fiskaltrust.cloud/api/configuration` and takes a `POST` request, along with the account ID, the account's access token (*please note the distinction to a CashBox's access token*), and the template in question as JSON string.
+The API is available at `https://helipad.fiskaltrust.cloud/api/configuration` and takes a `POST` request, along with the account ID and the account's access token (_please note the distinction to a CashBox's access token_) and the template in question as JSON string.
 
 :::tip sandbox
 
@@ -46,9 +46,9 @@ As mentioned in the chapter [Sandbox](../../getting-started/sandbox.md#how-to-re
 
 :::
 
-The account ID and access token serve as authentication information and are passed as part of the request headers `accountid` and `accesstoken`. In addition to these two headers, the request also requires the template itself as JSON string in the request body.
+The account ID and access token serve as authentication information and are passed as part of the request headers `accountid` and `accesstoken`. In addition to these two headers, the request requires the template as a JSON string in the request body.
 
-A very basic request example would be
+A fundamental request example would be
 
 ```http
 POST /api/configuration HTTP/1.1
@@ -81,7 +81,7 @@ Invoke-WebRequest -Uri https://helipad.fiskaltrust.cloud/api/configuration -Meth
 
 :::caution
 
-If using the shell, please pay particular attention that all applicable characters are appropriately escaped. [Shell escaping](#shell-escaping) has more details on that.
+If using the shell, please pay attention that escaping is appropriately used on all applicable characters. If you are in doubt, read [Shell escaping](#shell-escaping) for more details.
 
 :::
 
@@ -89,10 +89,10 @@ If using the shell, please pay particular attention that all applicable characte
 
 ### Escaping the template
 
-Please do note, the API does **not** expect a plain JSON object in the request body but rather a (properly escaped) JSON string. For example, the following template
+Please note that the API does **not** expect a plain JSON object in the request body but rather a (properly escaped) JSON string. So read, for example, the following template:
 
 
-```json
+```JSON
 {
     "ftCashBoxId": "|[cashbox_id]|",
     "ftSignaturCreationDevices": [],
@@ -105,7 +105,7 @@ Please do note, the API does **not** expect a plain JSON object in the request b
 should be encoded as follows
 
 
-```json
+```JSON
 "{\r\n    \"ftCashBoxId\": \"|[cashbox_id]|\",\r\n    \"ftSignaturCreationDevices\": [],\r\n    \"ftQueues\": [],\r\n    \"helpers\": [],\r\n    \"TimeStamp\": 0\r\n}"
 ```
 
@@ -114,7 +114,7 @@ In short, a traditional JSON string with quotation marks escaped with a slash, n
 
 :::tip
 
-You can escape the template with a [number of tools](https://search.brave.com/search?q=escape+json), such as e.g. [freeformatter.com](https://www.freeformatter.com/json-escape.html) or [codebeautify.org](https://codebeautify.org/json-escape-unescape). If you are comfortable with the browser console (F12), you can also use [JSON.stringify()](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to escape the template object. **Please make sure the string is enclosed by quotation marks.**
+You can escape the template with a [number of tools](https://search.brave.com/search?q=escape+json), such as e.g. [freeformatter.com](https://www.freeformatter.com/json-escape.html) or [codebeautify.org](https://codebeautify.org/json-escape-unescape). If you are comfortable with the browser console (F12), you can also use [JSON.stringify()](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to escape the template object. **Please make sure quotation marks enclose the string.**
 
 :::
 
@@ -131,11 +131,11 @@ If you run the request from the command line, please also pay attention to escap
 
 ### Customising parameters
 
-Similarly to [Custom variables](#custom-variables), you can customise many of the parameters of the individual CashBox components by providing their values in the query string.
+Similar to [Custom variables](#custom-variables), you can customize many of the parameters of the individual CashBox components by providing their values in the query string.
 
 #### Queue parameters
 
-There are three main queue parameters, each using a **zero-based** index to indicate the queue of the template, where you'd like to apply the value.
+There are three main queue parameters, each using a **zero-based** index to indicate the queue of the template where you'd like to apply the value.
 
 | Parameter                          | Description                                                  |
 | ---------------------------------- | ------------------------------------------------------------ |
@@ -173,15 +173,15 @@ import ParametersDE from '../../_markets/de/technical-operations/rollout-automat
 
 
 
-### Handling the response & provisioning the CashBox
+### Handling the response & provisioning of the CashBox
 
-If the response you receive indicates a status code `200`, the request properly went through and a new CashBox should have been created. In this case, the response body will contain a JSON object (not an escaped JSON string) with the details of that new CashBox.
+If your response indicates a status code `200`, the request properly went through, and a new CashBox should have been created. In this case, the response body will contain a JSON object (not an escaped JSON string) with the details of that new CashBox.
 
 ```
 {
-	"cashBoxId": "",
-	"accessToken": "",
-	"configuration": ""
+  "cashBoxId": "",
+  "accessToken": "",
+  "configuration": ""
 }
 ```
 
@@ -191,16 +191,16 @@ If the response you receive indicates a status code `200`, the request properly 
 | `accessToken`   | The access token of the created CashBox.                     |
 | `configuration` | The configuration object of the new CashBox, as escaped JSON string and based on the provided template. |
 
-Here, in particular `cashBoxId` and `accessToken` are interesting, as they allow you to automatically provision the CashBox. To do that, please deploy a vanilla [Launcher](../middleware/launcher.md) instance on the destination system and set its [CashBox ID and Access Token parameters](../middleware/configuration.md) to the values you received in the response.
+Here, in particular, `cashBoxId` and `accessToken` are interesting, as they allow you to provision the CashBox automatically. To do that, please deploy a vanilla [Launcher](../middleware/launcher.md) instance on the destination system and set its [CashBox ID and Access Token parameters](../middleware/configuration.md) to the values you received in the response.
 
 
 
 
 ## Custom variables
 
-In addition to the readily available [system variables](templates.md#pre-defined-system-variables), you can also use custom variables in your templates. These variables follow the same syntax as system variables (i.e. `|[variable_name]|`) and they can be used throughout your template.
+In addition to the readily available [system variables](templates.md#pre-defined-system-variables), you can also use custom variables in your templates. These variables follow the same syntax as system variables (i.e., `|[variable_name]|`); you can use them throughout your template.
 
-Their values are passed via the [query string](https://en.wikipedia.org/wiki/Query_string) of the request to the template API and each custom variable used in your template needs to have a corresponding value in the query string. For example, if you used the variable `|[my_variable]|`, you'd need to pass its value in the call to the API by adding `my_variable` to the query string.
+Their values are passed via the [query string](https://en.wikipedia.org/wiki/Query_string) of the request to the template API, and each custom variable used in your template needs to have a corresponding value in the query string. So, for example, if you used the variable `|[my_variable]|`, you'd need to pass its value in the call to the API by adding `my_variable` to the query string.
 
 ```
 https://helipad.fiskaltrust.cloud/api/configuration?my_variable=desired_value
@@ -210,7 +210,7 @@ The call above will substitute all occurrences of `|[my_variable]|` with `desire
 
 :::tip overriding [system variables](templates.md#pre-defined-system-variables)
 
-The query string can also be used to override values of system variables. Any value passed in this way will have precedence over the default value.
+You can also use the query string to override the values of system variables. Any value passed in this way will have precedence over the default value.
 
 :::
 
@@ -218,9 +218,9 @@ The query string can also be used to override values of system variables. Any va
 
 ## Demo with Postman
 
-Postman is a popular HTTP client and is often used to run REST requests manually. You can use it to try out and fine-tune your own requests to the template API.
+Postman is a popular HTTP client and is often used to run REST requests manually. You can use it to try out and fine-tune your requests to the template API.
 
-To download Postman, please go to https://www.postman.com/downloads and select the appropriate package for your system. _fiskaltrust_ also provides a [Postman collection](../../assets/template_postman.zip) with pre-configured request settings, which you can import and use as foundation to customise your own API requests.
+To download Postman, please go to https://www.postman.com/downloads and select the appropriate package for your system. _fiskaltrust_ also provides a [Postman collection](../../assets/template_postman.zip) with pre-configured request settings, which you can import and use as a foundation to customize your API requests.
 
 
 

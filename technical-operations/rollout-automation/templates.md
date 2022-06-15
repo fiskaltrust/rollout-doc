@@ -14,37 +14,27 @@ After reading this, you can explain how templates work.
 
 **Templates are blueprints for CashBoxes**. They provide a fast way to set up fully configured CashBoxes based on pre-configured layouts.
 
-Templates follow the same JSON structure as shown in the [CashBox](../middleware/cashbox.md#cashbox-instance-middleware) chapter, with the main difference that they are not the configuration of an actual CashBox instance but are used to create such in a second step. Consequently, their configuration entries are either hardcoded default values, used for all instances created with the respective template, or variables which are set at runtime.
-
-
-
+Templates follow the same JSON structure as shown in the [CashBox](../middleware/cashbox.md#cashbox-instance-middleware) chapter, with the main difference that they are not the configuration of an actual CashBox instance but are used to create such in a second step. Consequently, their configuration entries are either hardcoded default values, used for all instances created with the respective template, or variables set at runtime.
 
 ## Instantiating a template
 
-There are two different ways in which templates can be used to create a new CashBox.
-
-
+There are two different ways you can use templates to create a new CashBox.
 
 #### Shop
 
-You'll find a number of pre-configured templates in the [shop](../../buy-resell/shop.md) under `Shop` / `Products`. These templates were provided by either fiskaltrust, PosCreators, or PosDealers. You can add them to your shopping cart like any other product or clone them to modify them for your needs. After submitting your order the portal will create a new CashBox based on the template's configuration.
+You'll find a number of pre-configured templates in the [shop](../../buy-resell/shop.md) under `Shop` / `Products`. Either fiskaltrust, PosCreators, or PosDealers provided these templates. You can add them to your shopping cart like any other product or clone them to modify them for your needs. After submitting your order, the portal will create a new CashBox based on the template's configuration.
 
 Please see the chapter [Shop Templating](shop-templating.md) for more details.
 
-
-
 #### API
 
-Another way to create CashBoxes based on templates is to use fiskaltrust's REST API. You do not need to pre-configure any template in the portal in this case, but can send custom templates with your requests.
+Another way to create CashBoxes based on templates is to use fiskaltrust's REST API. You do not need to pre-configure any template in the portal in this case but can send custom templates with your requests.
 
 Please see the chapter [API Templating](api-templating.md) for more details.
 
-
-
-
 ## Variables
 
-Variables are substitute entries for dynamically configured values and will be replaced with their actual content when the template is rolled out. A variable is denoted by its name being wrapped into `|[`  and `]|`.
+Variables are substitute entries for dynamically configured values. Your rollout replaces these with actual content. You denote a variable by its name being wrapped into `|[`  and `]|`.
 
 For example, to use the variable `my_variable` in a template, you'd use `|[my_variable]|` at the location where you want to use its eventual value.
 
@@ -52,7 +42,7 @@ For example, to use the variable `my_variable` in a template, you'd use `|[my_va
 
 ### Pre-defined system variables
 
-The following variables are pre-defined and will populated automatically by auto-generated or predefined values when the template is rolled out.
+The following variables are pre-defined and will be populated automatically by auto-generated or pre-defined values with the templates rollout.
 
 *Curly brackets denote dynamic values.*
 
@@ -116,13 +106,13 @@ Custom variables are only available when using the API.
 
 Templates are classic JSON documents with a root object and five root-level fields.
 
-```json
+```JSON
 {
-	"ftCashBoxId": "|[cashbox_id]|",
-	"ftSignaturCreationDevices": [],
-	"ftQueues": [],
-	"helpers": [],
-	"TimeStamp": 0
+    "ftCashBoxId": "|[cashbox_id]|",
+    "ftSignaturCreationDevices": [],
+    "ftQueues": [],
+    "helpers": [],
+    "TimeStamp": 0
 }
 ```
 
@@ -140,24 +130,24 @@ The arrays `ftSignaturCreationDevices`, `ftQueues`, and `helpers` each contain p
 
 ### Package object
 
-A package object specifies the entire setup configuration of an individual component (e.g. queue or SCU).
+A package object specifies the entire setup configuration of an individual component (e.g., queue or SCU).
 
-```json
+```JSON
 {
-	"Id": "",
-	"URL": [],
-	"Package": "",
-	"Version": "",
-	"Configuration": {},
-	"Description": ""
+    "Id": "",
+    "URL": [],
+    "Package": "",
+    "Version": "",
+    "Configuration": {},
+    "Description": ""
 }
 ```
 
 | Field           | Type             | Required | Description                                                  |
 | --------------- | ---------------- | :------: | ------------------------------------------------------------ |
 | `Id`            | String           |   yes    | The identifier of this component. Typically, you'll use one of the [relevant system variables](#pre-defined-system-variables) here. |
-| `URL`           | Array of strings |   yes    | One or more URLs under which this component can be reached.  |
+| `URL`           | Array of strings |   yes    | One or more URLs under which you can reach this component.  |
 | `Package`       | String           |   yes    | The package name                                             |
-| `Version`       | String           |    no    | The package version to be used. If not specified, the current version will be used. |
+| `Version`       | String           |    no    | The package version to be used. If not specified, you will use the current version. |
 | `Configuration` | Object           |    no    | The configuration data for this component.                   |
 | `Description`   | String           |    no    | A description of this component.                             |
