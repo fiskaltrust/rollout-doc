@@ -5,7 +5,7 @@ title: Tax authority notifications
 
 # Tax authority notifications
 
-Products including tax authority notifications give you the possibility to perform these necessary notifications in an easy and legal compliant way. 
+Products including tax authority notifications give you the possibility to perform these necessary notifications in an easy and legally compliant way. 
 As these depend on local regulations, the products are highly country-specific.
 
 import Tabs from '@theme/Tabs';
