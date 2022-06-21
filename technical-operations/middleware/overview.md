@@ -38,7 +38,7 @@ The Middleware uses the **iPOS interface** for communication with your POS Syste
 
 In addition to providing your POS setup with a valid signature for each receipt, receipts are also persisted in the **receipt-chain**. The receipt-chain is the Middleware's primary database and keeps track of signed receipts in an audit-proof data structure.
 
-You can **access and export data** from your Middleware instance at all times. Additionally, together with the [archive subscription service](../../buy-resell/products.md#receipt-archive), the receipt-chain is part of the two-tier data approach to ensure the **availability and integrity** of your fiscally relevant business data.
+You can **access and export data** from your Middleware instance at all times. Additionally, together with the [archive subscription service](../../buy-resell/products/overview.md#receipt-archive), the receipt-chain is part of the two-tier data approach to ensure the **availability and integrity** of your fiscally relevant business data.
 
 
 
@@ -109,7 +109,7 @@ Please see [CashBox](cashbox.md) for more details.
 
 The Launcher is an essential component of every CashBox and the Middleware's bootstrap. If necessary, it fetches the most recent CashBox configuration from the portal, updates the CashBox's components, and initializes the whole CashBox and its components.
 
-Please see [Launcher](launcher.md) for more details.
+Please see [Launcher](launchers/desktop.md) for more details.
 
 
 

@@ -89,7 +89,7 @@ C:\>fiskaltrust.exe -?
 
 ### Configuration parameters
 
-The Launcher also supports additional parameters which provide the ability to set [configuration values](configuration.md#parameters) from the command line. To do so, just call `fiskaltrust.exe` and pass the desired parameter, prefixed with a hyphen and followed by an `=` sign and its value, to the call. In case the value contains spaces, please wrap the value in quotes (`"`).
+The Launcher also supports additional parameters which provide the ability to set [configuration values](../configuration.md#parameters) from the command line. To do so, just call `fiskaltrust.exe` and pass the desired parameter, prefixed with a hyphen and followed by an `=` sign and its value, to the call. In case the value contains spaces, please wrap the value in quotes (`"`).
 
 For example, the following call would set the `sandbox` parameter to `false` and the `logfile` parameter to the provide path.
 
@@ -98,7 +98,7 @@ For example, the following call would set the `sandbox` parameter to `false` and
 C:\>fiskaltrust.exe -sandbox=false -logfile="D:\log\fiskaltrust.log"
 ```
 
-Please see the chapter [Configuration](configuration.md) for the full list of supported parameters and values.
+Please see the chapter [Configuration](../configuration.md) for the full list of supported parameters and values.
 
 :::caution
 

@@ -46,9 +46,10 @@ module.exports = {
 			type: 'category',
 			label: 'Buy & Resell',
 			items: [
-				'rollout-doc/buy-resell/volume-purchase-agreement',
+				'rollout-doc/buy-resell/overview',
 				'rollout-doc/buy-resell/rollout-plans',
 				'rollout-doc/buy-resell/shop',
+				'rollout-doc/buy-resell/subscription-management',
 				{
 					type: 'category',
 					label: 'Products & Services',

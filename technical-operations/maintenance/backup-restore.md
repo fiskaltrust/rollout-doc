@@ -32,4 +32,4 @@ You, as a PosDealer, recommend using restoring to:
 - Create a new queue.
 - Replace the queue in the cashbox installed on the system you want to restore.
 - Rebuild the launcher and download it onto the new system.
-- [Install the launcher](../middleware/launcher.md#installing-and-uninstalling-as-a-service) on the new system and start the middleware.
+- [Install the launcher](../middleware/launchers/desktop.md#installing-and-uninstalling-as-a-service) on the new system and start the middleware.

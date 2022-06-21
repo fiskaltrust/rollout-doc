@@ -73,7 +73,7 @@ These sources provided the basis for the main points of the description
 
 * Glossary: look for our [terminology here](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
 * Videos - Learn a concept by following a series of [videos](videos.md) 
-* Scenarios - complete a task or achieve a given goal [here](../../technical-operations/scenarios).
+* Scenarios - complete a task or achieve a given goal [here](../technical-operations/rollout-scenarios).
 
 ### Tools in use
 

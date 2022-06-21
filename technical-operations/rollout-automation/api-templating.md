@@ -191,7 +191,7 @@ If your response indicates a status code `200`, the request properly went throug
 | `accessToken`   | The access token of the created CashBox.                     |
 | `configuration` | The configuration object of the new CashBox, as escaped JSON string and based on the provided template. |
 
-Here, in particular, `cashBoxId` and `accessToken` are interesting, as they allow you to provision the CashBox automatically. To do that, please deploy a vanilla [Launcher](../middleware/launcher.md) instance on the destination system and set its [CashBox ID and Access Token parameters](../middleware/configuration.md) to the values you received in the response.
+Here, in particular, `cashBoxId` and `accessToken` are interesting, as they allow you to provision the CashBox automatically. To do that, please deploy a vanilla [Launcher](../middleware/launchers/desktop.md) instance on the destination system and set its [CashBox ID and Access Token parameters](../middleware/configuration.md) to the values you received in the response.
 
 
 

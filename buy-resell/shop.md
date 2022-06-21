@@ -12,11 +12,11 @@ After reading this, you can buy and transfer all entitlements manually.
 
 ## Introduction
 
-The shop is the most basic way to buy _fiskaltrust_ [products](products) for PosDealers and PosOperators. You can find the price list for these products [here](volume-purchase-agreement.md#pricelist).
+The shop is the most basic way to buy _fiskaltrust_ [products](products) for PosDealers and PosOperators. You can find the price list for these products [here](overview.md#Contact-information-and-pricelists).
 
 :::info prerequisites
 
-As a PosDealer, you should know how to [surrogate](../getting-started/operator-onboarding/surrogating), have signed a  [volume purchase agreement](volume-purchase-agreement.md), have a volume discount and a credit limit. 
+As a PosDealer, you should know how to [surrogate](../getting-started/operator-onboarding/surrogating), have signed a  [volume purchase agreement](overview.md), have a volume discount and a credit limit. 
 As a PosOperator, you should clarify with your PosDealer whether to buy the products directly or via your PosDealer.
 
 :::

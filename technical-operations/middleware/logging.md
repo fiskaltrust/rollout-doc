@@ -14,7 +14,7 @@ After reading this, you can configure and use logging to get information about y
 
 Logging is a crucial part of debugging issues when the Middleware is not working as expected. It can provide you and fiskaltrust.Support with the relevant information to determine the reason for any unexpected behavior.
 
-The Middleware supports **two types** of logging, a default one for standard output when the Middleware is running in [test mode](Launcher.md#in-test-mode) and a second one for traditional file-based logging. The latter requires manual log file configuration and **works in both execution modes**, test and service.
+The Middleware supports **two types** of logging, a default one for standard output when the Middleware is running in [test mode](launchers/desktop.md#in-test-mode) and a second one for traditional file-based logging. The latter requires manual log file configuration and **works in both execution modes**, test and service.
 
 The following sections provide you with more insight on which log levels are available and how to configure logging in detail.
 

@@ -20,8 +20,8 @@ To buy and resell fiskaltrust products, you have to:
 * Register in the fiskaltrust.Portal.
 * Sign the cooperation agreement as PosDealer.
 * Determine your need for products and product bundles.
-* If you plan to buy and resell more than ten carefree bundles, it is recommended to [contact us](buying-reselling.md#contact-information-and-pricelists) to get a volume purchase agreement. 
-* If your planned amount exceeds the standard credit limit, [contact us](buying-reselling.md#contact-information-and-pricelists).
+* If you plan to buy and resell more than ten carefree bundles, it is recommended to [contact us](overview.md#contact-information-and-pricelists) to get a volume purchase agreement. 
+* If your planned amount exceeds the standard credit limit, [contact us](overview.md#contact-information-and-pricelists).
 
 
 ## Credit limit
@@ -29,11 +29,11 @@ To buy and resell fiskaltrust products, you have to:
 With your activation of the PosDealer role, you get a credit limit in the fiskaltrust.Portal. Note that the limit in the productive system is significantly lower than in the sandbox.
 
 Suppose the invoice amounts exceed the credit limit during rollout management or purchases in the store. In that case, a corresponding message will notify you of the credit limit when creating other offers. 
-If it is impossible to settle the open invoices, [contact us](buying-reselling.md#contact-information-and-pricelists) with a request to grant you a higher credit limit. 
+If it is impossible to settle the open invoices, [contact us](overview.md#contact-information-and-pricelists) with a request to grant you a higher credit limit. 
 
 ## Volume purchase agreement
 
-As mentioned in the section [Business model](../overview/business-model.md), _fiskaltrust_ offers discounted prices if you agree to a particular purchase quantity. Therefore, you should consider this option if you plan to purchase ten or more product bundles. You find descriptions of fiskaltrust products and product bundles [here](products.md).  
+As mentioned in the section [Business model](../overview/business-model.md), _fiskaltrust_ offers discounted prices if you agree to a particular purchase quantity. Therefore, you should consider this option if you plan to purchase ten or more product bundles. You find descriptions of fiskaltrust products and product bundles [here](./products/overview.md).  
 If you are committing to purchase **large quantities of product bundles** of your choice over a year, a **Volume Purchase Agreement** is the best option. This agreement allows you to achieve significant discounts depending on your planned sales volume.
 The standard period is one year, but it can be agreed on individually. 
 

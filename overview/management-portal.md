@@ -40,7 +40,7 @@ The *PosOperator* section is where you **invite** your customers to *fiskaltrust
 
 You, as a PosDealer can switch into the account of your PosOperators. Depending on permissions, you may use **read-only** access, **write** access, or have the authority to sign contracts on behalf of your PosOperators. For *PosDealers*, this is an **essential benefit** of the *fiskaltrust.Portal* for establishing and expanding business collaboration.
 
-More information is available in the chapter [Surrogating](../getting-started/Operator-onboarding/surrogating.md).
+More information is available in the chapter [Surrogating](../getting-started/operator-onboarding/surrogating.md).
 
 ## Data Management
 

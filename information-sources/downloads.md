@@ -51,8 +51,6 @@ import ReactPlayer from "react-player"
 
 ### Find exports
 
-Have a look [here for more details](exports) at configuring your download. 
-
 
 <ReactPlayer controls url={require("./images/downloads-find-export-22-02-02.mp4").default} /><br />
 

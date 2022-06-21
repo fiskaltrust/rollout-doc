@@ -28,9 +28,9 @@ After deploying your Middleware package, you will find the following list of fil
 
 | Files                                                        | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `test.[cmd/sh]`                                              | The helper script to start your Middleware instance in [test mode](launcher.md#in-test-mode) |
-| `install-service.[cmd/sh]`<br />`uninstall-service.[cmd/sh]` | The helper scripts to [manage the service setup](launcher.md#installing-and-uninstalling-as-a-service) of your Middleware instance |
-| `fiskaltrust.exe`                                            | The [Launcher](launcher.md) binary                           |
+| `test.[cmd/sh]`                                              | The helper script to start your Middleware instance in [test mode](launchers/desktop.md#in-test-mode) |
+| `install-service.[cmd/sh]`<br />`uninstall-service.[cmd/sh]` | The helper scripts to [manage the service setup](launchers/desktop.md#installing-and-uninstalling-as-a-service) of your Middleware instance |
+| `fiskaltrust.exe`                                            | The [Launcher](launchers/desktop.md) binary                           |
 | `fiskaltrust.exe.config`                                     | The [runtime configuration](configuration.md) of the Middleware instance |
 | `configuration.json`                                         | The [CashBox configuration](cashbox.md#configuration-sample) (*only for offline packages*) |
 | `fiskaltrust*.dll`                                           | Package libraries of the different CashBox components        |

@@ -86,7 +86,7 @@ https://dc.services.visualstudio.com/      ft error reporting                   
 
 The output's last table (with `Url`) is attractive, as it indicates which network connections succeeded.Analyzing the log
 
-The first step in debugging connectivity issues is typically the Middleware's log. You could either start the Middleware in [test [mode](../middleware/launcher.md) and analyze its output directly in the console or configure a [log file](../middleware/logging.md). In either case, please ensure the log level is set to `debug`.
+The first step in debugging connectivity issues is typically the Middleware's log. You could either start the Middleware in [test [mode](../middleware/launchers/desktop.md) and analyze its output directly in the console or configure a [log file](../middleware/logging.md). In either case, please ensure the log level is set to `debug`.
 
 If you find any of the following error messages in the log output, it may suggest an issue in the area mentioned in the right column.
 
@@ -192,6 +192,6 @@ If your operating system is not supported or you have customized your certificat
 
 ### Queue/SCU connection
 
-This issue typically indicates that the [queue](../middleware/overview.md#queue) lost its internal connection to an [SCU](../middleware/overview.md#scu). This loss may occur after you shifted components within a CashBox or any of the involved machines got new IP addresses assigned.
+This issue typically indicates that the [queue](../middleware/overview#queue) lost its internal connection to an [SCU](../middleware/overview#scu-signature-creation-unit). This loss may occur after you shifted components within a CashBox or any of the involved machines got new IP addresses assigned.
 
-Fixing this issue is often quickly done with a [rebuild](../middleware/cashbox.md#rebuilding) of the CashBox and a subsequent restart of the Middleware. Please verify the configuration of the relevant CashBoxes beforehand. In particular, please pay attention to the hostnames, IP addresses, and the ports you configured for each component and make sure they [resolve](#dns) and match the actual machine configuration. Also, please double-check that no (local) firewall may prevent connections.
+Fixing this issue is often quickly done with a [rebuild](../middleware/cashbox#rebuilding) of the CashBox and a subsequent restart of the Middleware. Please verify the configuration of the relevant CashBoxes beforehand. In particular, please pay attention to the hostnames, IP addresses, and the ports you configured for each component and make sure they [resolve](#dns) and match the actual machine configuration. Also, please double-check that no (local) firewall may prevent connections.

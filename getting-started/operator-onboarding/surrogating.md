@@ -54,7 +54,7 @@ We use the example of checking the master data of a PosOperator to describe Surr
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |After signing in (for PosOperators) or surrogating in the Account of a PosOperator (for PosDealers), choose `[COMPANY NAME]`/ `Overview`.  |
-|![Number 2](images/Numbers/circle-2o.png) |Determine if the role PosOperator has been activated as well as no other. Otherwise, cancel the undesired role. Please check [Company Roles](../Company%20Roles) for further questions |
+|![Number 2](images/Numbers/circle-2o.png) |Determine if the role PosOperator has been activated as well as no other. Otherwise, cancel the undesired role. Please check [Company Roles](../company-roles) for further questions |
 
 ![surrogating accounts](images/6-surrogating-accounts.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Edit")
 

@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/buy-resell/products/datev-meinfiskal
+slug: /posdealers/buy-resell/products/3rd-party/datev-meinfiskal
 title: DATEV MeinFiskal
 ---
 # Overview
@@ -7,6 +7,12 @@ title: DATEV MeinFiskal
 :::info summary
 
 After reading this, you will know how the integration of DATEV MeinFiskal works and how to set it up.
+
+:::
+
+:::caution Austria / France
+
+As DATEV MeinFiskal is only available in Germany, this tutorial does not apply to Ausria or France.
 
 :::
 
@@ -31,20 +37,21 @@ The PosOperator already has an account in the fiskaltrust.portal, agreed to the 
 <details>
   <summary>Checking the prerequisites</summary>  
 
-  1. Sign contract permission
-    * Log in to the fiskaltrust.Portal as a PosDealer. 
-    * Go to PosOperator -> Overview. 
-    * If necessary, enter filter criteria to narrow the search results and select Search. 
-    * Check with the icon at Permissions if sign contract is active.
-    * If the permission is not active, contact the PosOperator to give it to you.
-    * Close the dialog box by clicking "OK". 
-  2. Master data
-    * Select the link at Name and go to the account of the PosOperator.
-    * Select Company -> Master data.
-    * Check if every mandatory field like Name* or Address* is filled in. 
-    * Also check that no blanks have been entered before or after. 
-    * Check whether a validity check can be successfully performed with either St.-ldNr. or USt-ldNr.
-    * Save your entries with "Save". 
+  Sign contract permission
+    1. Log in to the fiskaltrust.Portal as a PosDealer. 
+    2. Go to PosOperator -> Overview. 
+    3. If necessary, enter filter criteria to narrow the search results and select Search. 
+    4. Check with the icon at Permissions if sign contract is active.
+    5. If the permission is not active, contact the PosOperator to give it to you.
+    6. Close the dialog box by clicking "OK". 
+  
+  Master data
+    1. Select the link at Name and go to the account of the PosOperator.
+    2. Select Company -> Master data.
+    3. Check if every mandatory field like Name* or Address* is filled in. 
+    4. Also check that no blanks have been entered before or after. 
+    5. Check whether a validity check can be successfully performed with either St.-ldNr. or USt-ldNr.
+    6. Save your entries with "Save". 
 
 </details>
 
@@ -61,7 +68,7 @@ Please note that the DATEV MeinFiskal account is created automatically during th
   <details>
   <summary>Screenshot function DATEV MeinFiskal</summary>.  
 
-  ![Rolle_Datev_MeinFiskal](../../imagesRolle_Datev_MeinFiskal.png)
+  ![Rolle_Datev_MeinFiskal](../../images/Rolle_Datev_MeinFiskal.png)
 
   </details>
 
@@ -72,7 +79,7 @@ Please note that the DATEV MeinFiskal account is created automatically during th
   <details>
   <summary>DATEV MeinFiskal-Onboarding </summary>  
 
-  ![Rolle_Datev_MeinFiskal](../../imagesDATEV_Onboarding.png)
+  ![Rolle_Datev_MeinFiskal](../../images/DATEV_Onboarding.png)
 
   </details>
 
@@ -81,7 +88,7 @@ Please note that the DATEV MeinFiskal account is created automatically during th
   <details>
   <summary>Screenshot DATEV password change</summary>  
 
-  ![DATEV_Passwort_ändern](../../imagesDATEV_PW_Change_Dialog.png)
+  ![DATEV_Passwort_ändern](../../images/DATEV_PW_Change_Dialog.png)
 
   </details>
 
@@ -90,7 +97,7 @@ Please note that the DATEV MeinFiskal account is created automatically during th
   <details>
   <summary>Screenshot DATEV password change successful</summary>  
 
-  ![DATEV_Passwort_erfolgreich](../../imagesDATEV_PW_Change_Success.png)
+  ![DATEV_Passwort_erfolgreich](../../images/DATEV_PW_Change_Success.png)
 
   </details>
 
@@ -99,7 +106,7 @@ Please note that the DATEV MeinFiskal account is created automatically during th
   <details>
   <summary>Screenshot DATEV login / connect accounts</summary>  
 
-  ![DATEV_Consent](../media/DATEV_Login_Dialog.png)
+  ![DATEV_Consent](../../images/DATEV_Login_Dialog.png)
 
   </details>
 

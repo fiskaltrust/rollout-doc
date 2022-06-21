@@ -17,7 +17,7 @@ You, as a PosDealer, can initialize the exchange with external service providers
 
 **No data exchange can take place without active setup by PosDealer or PosOperator.**  
 
-For details, please refer to the respective instructions or product descriptions [Products](../buy-resell/products.md).  
+For details, please refer to the respective instructions or product descriptions [Products](../buy-resell/products/overview.md).  
 For manual exchange, see the section on [Exports](../technical-operations/maintenance/exports.md).
 
 ## Work steps
