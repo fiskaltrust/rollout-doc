@@ -11,9 +11,9 @@ As these depend on local regulations, the products are highly country-specific.
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import notificationAT from '../../_markets/at/buy-resell/products/_fiscal-authority-notification.mdx';
-import notificationFR from '../../_markets/fr/buy-resell/products/_fiscal-authority-notification.mdx';
-import notificationDE from '../../_markets/de/buy-resell/products/_fiscal-authority-notification.mdx';
+import notificationAT from '../../_markets/at/buy-resell/products/_notification.mdx';
+import notificationFR from '../../_markets/fr/buy-resell/products/_notification.mdx';
+import notificationDE from '../../_markets/de/buy-resell/products/_notification.mdx';
 
 <Tabs groupId="market">
 

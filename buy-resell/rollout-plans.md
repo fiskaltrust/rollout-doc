@@ -68,7 +68,7 @@ You generate more time for making adjustments to meet the specific requirements 
 #### Improving communication
 
 With rollout plans, you clearly can define which action steps designated team members have to take during different rollout phases.
-You gain more flexibility to achieve your goals in terms of revenue and customer satisfaction.
+You gain more flexibility to achieve your revenue and customer satisfaction goals.
 
 #### Decreasing stress 
 

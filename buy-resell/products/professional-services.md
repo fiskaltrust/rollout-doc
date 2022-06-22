@@ -8,10 +8,10 @@ title: Professional services
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<!-- 
-import ProfessionalServicesAT from '../_markets/at/buy-resell/products/_professional-services.mdx';
-import ProfessionalServicesFR from '../_markets/fr/buy-resell/products/_professional-services.mdx';
-import ProfessionalServicesDE from '../_markets/de/buy-resell/products/_professional-services.mdx';
+
+import ProfessionalServicesAT from '../../_markets/at/buy-resell/products/_professional-services.mdx';
+import ProfessionalServicesFR from '../../_markets/fr/buy-resell/products/_professional-services.mdx';
+import ProfessionalServicesDE from '../../_markets/de/buy-resell/products/_professional-services.mdx';
 
 <Tabs groupId="market">
 
@@ -27,4 +27,4 @@ import ProfessionalServicesDE from '../_markets/de/buy-resell/products/_professi
     <ProfessionalServicesDE />
   </TabItem>
 
-</Tabs> -->
+</Tabs> 

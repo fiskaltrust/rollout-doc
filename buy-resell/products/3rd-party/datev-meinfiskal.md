@@ -24,7 +24,7 @@ The PosDealer activates the DATEV MeinFiskal function in the fiskaltrust.Portal 
 Customer data such as E-Mail address and tax number (St.-ldNr. or USt-ldNr.) are exchanged between the fiskaltrust.Portal and the "[DATEV MeinFiskal](https://www.meinfiskal.de/)" platform. A MeinFiskal user account and a password is created automatically at DATEV, and the same e-mail address is used as in the fiskaltrust.Portal. 
 The PosDealer changes the password for the user account at DATEV MeinFiskal and confirms the data transfer between fiskaltrust and DATEV. The PosOperator receives a welcome e-mail from DATEV MeinFiskal and can use the services "DATEV Kassenarchiv online" and the "DATEV Kassenbuch-Schnittstelle".
 
-Fiskaltrust takes over the generation of the legally required data formats (DSFinV-K, DFKA taxonomy, .tar files, native format, other documents), as well as the connection and data transfer to DATEV MeinFiskal via the fiskaltrust.portal. No further connection by the PosCreator is necessary.
+Fiskaltrust takes over the generation of the legally required data formats (DSFinV-K, DFKA taxonomy, .tar files, native format, other documents), as well as the connection and data transfer to DATEV MeinFiskal via the fiskaltrust.portal. Therefore, no further connection by the PosCreator is necessary.
 
 ![MeinFiskal_Prozess](../../images/meinFiskal_Schnittstellen.png)
 
@@ -32,7 +32,7 @@ Fiskaltrust takes over the generation of the legally required data formats (DSFi
 
 ### Prerequisites
 
-The PosOperator already has an account in the fiskaltrust.portal, agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust, checked his master data, and the PosDealer has the authorization to sign the contract. If these requirements are not met, the [PosOperator Onboarding](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/invitation-management) must be completed first, or the setup must be performed by the PosOperator itself.
+The PosOperator already has an account in the fiskaltrust.portal, agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust, checked his master data, and the PosDealer has the authorization to sign the contract. If these requirements are not met, the [PosOperator Onboarding](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/invitation-management) must be completed first, or the PosOperator itself must perform the setup.
 
 <details>
   <summary>Checking the prerequisites</summary>  
@@ -49,7 +49,7 @@ The PosOperator already has an account in the fiskaltrust.portal, agreed to the 
     1. Select the link at Name and go to the account of the PosOperator.
     2. Select Company -> Master data.
     3. Check if every mandatory field like Name* or Address* is filled in. 
-    4. Also, check that no blanks have been entered before or after. 
+    4. Check that no blanks have been entered before or after. 
     5. Check whether you can successfully perform a validity check with either St.-ldNr. or USt-ldNr.
     6. Save your entries with "Save". 
 
@@ -72,9 +72,9 @@ Please note that the DATEV MeinFiskal account is created automatically during th
 
   </details>
 
-2. The PosDealer agrees on behalf of the PosOperator to the GTCs, the privacy policy and the processing agreement (of or with fiskaltrust and, in particular the service descriptions, which can be found in the [download area](https://portal.fiskaltrust.de/AccountProfile/Download) of the fiskaltrust. portal). The PosOperator receives the signed contract by e-mail.
+2. The PosDealer agrees on behalf of the PosOperator to the GTCs, the privacy policy and the processing agreement (of or with fiskaltrust and, in particular, the service descriptions, which can be found in the [download area](https://portal.fiskaltrust.de/AccountProfile/Download) of the fiskaltrust. portal). The PosOperator receives the signed contract by e-mail.
 
-3. In the DATEV MeinFiskal section, the user contract is now available for download and a button for carrying out the DATEV MeinFiskal onboarding. The PosDealer clicks on the button "Perform DATEV MeinFiskal onboarding operations". In addition, the master data is checked by DATEV, any errors are displayed, and, if successful, a DATEV MeinFiskal user account is automatically created.
+3. In the DATEV MeinFiskal section, the user contract is now available for download and a button for carrying out the DATEV MeinFiskal onboarding. The PosDealer clicks on the button "Perform DATEV MeinFiskal onboarding operations". In addition, the master data is checked by DATEV; any errors are displayed, and, if successful, a DATEV MeinFiskal user account is automatically created.
 
   <details>
   <summary>DATEV MeinFiskal-Onboarding </summary>  
@@ -92,7 +92,7 @@ Please note that the DATEV MeinFiskal account is created automatically during th
 
   </details>
 
-5. The PosDealer is shown confirmation of the password change and a login button. The PosDealer clicks the login button.
+5. The PosDealer is shown confirmation of the password change and a login button. Then, the PosDealer clicks the login button.
 
   <details>
   <summary>Screenshot DATEV password change successful</summary>  
@@ -110,7 +110,7 @@ Please note that the DATEV MeinFiskal account is created automatically during th
 
   </details>
 
-7. The PosDealer has successfully logged in to the DATEV MeinFiskal website and is asked to confirm the data exchange between fikaltrust and DATEV MeinFiskal. The PosDealer ticks the checkbox and clicks on "Confirm". The data exchange between fiskaltrust and DATEV MeinFiskal is now active. 
+7. The PosDealer has successfully logged in to the DATEV MeinFiskal website and is asked to confirm the data exchange between fiskaltrust and DATEV MeinFiskal. The PosDealer ticks the checkbox and clicks on "Confirm". The data exchange between fiskaltrust and DATEV MeinFiskal is now active. 
 
   <details>
   <summary>Screenshot DATEV data exchange screenshot</summary>  
@@ -129,7 +129,7 @@ The PosOperator can now use the services "DATEV Kassenarchiv online" and the "DA
 
 - The PosDealer cannot sign the DATEV MeinFiskal user agreement for the PosOperator, as he is not authorized to do so. The PosDealer must contact the PosOperator to obtain the necessary authorization.
 
-- The PosDealer does not change the password in step 3 and can no longer log on to DATEV MeinFiskal as a PosDealer. After 4 days at the latest, the welcome e-mail is sent to the PosOperator. To continue the process with step 4, the PosDealer must contact the PosOperator to obtain the current password.
+- The PosDealer does not change the password in step 3 and can no longer log on to DATEV MeinFiskal as a PosDealer. After four days at the latest, the welcome e-mail is sent to the PosOperator. To continue the process with step 4, the PosDealer must contact the PosOperator to obtain the current password.
 
 - The PosDealer can no longer log on to DATEV MeinFiskal because he no longer has the login data. Therefore, he cannot request another e-mail for a password change on the DATEV MeinFiskal website on his own. This is only possible via the PosOperator once he has received the welcome e-mail with the link to change the password on the DATEV MeinFiskal website.
 

@@ -4,9 +4,9 @@ title: Signing devices and services
 ---
 
 # Signing devices and services
-_Signing receipts_ is the main functionality of the Middleware and the core of fiscalization regulations in general. Depending on the country of operation, receipts can either be signed by **software services** or by **hardware devices**.
+_Signing receipts_ is the main functionality of the Middleware and the core of fiscalization regulations in general. Depending on the country of operation, receipts can be signed by **software services** or by **hardware devices**.
 
-As part of our _carefree fiscalization_ approach, fiskaltrust aims to provide both variants, either by hosting appropriate solutions ourselves (like in Austria), re-distributing existing solutions in the market (like in Germany), or handling software-based signing directly in the Middleware (like in France). All three approaches have the common trait that PosDealers can directly obtain the best-matching signing solution for their scenarios via the **Portal's shop**.
+As part of our _carefree fiscalization_ approach, fiskaltrust aims to provide both variants, either by hosting appropriate solutions ourselves (like in Austria) re-distributing existing solutions in the market (like in Germany), or handling software-based signing directly in the Middleware (like in France). However, all three approaches have the common trait that PosDealers can now obtain the best-matching signing solution for their scenarios via the **Portal's shop**.
 
 ## Country-specific variants
 As signing is the most country-specific aspect of fiscalization, the variants available in each country naturally highly differ. Please select the market you're interested in below for further details.
