@@ -13,7 +13,7 @@ With **Buy/Resell**, you can expand your knowledge of our business model. You wi
 In the **Technical Operations** section, you will find _Scenarios_ for using our products for different requirements. Also, in-depth details on _Middleware_ and _Rollout Automation_ avoid time-consuming problems with _Troubleshooting_ or _Maintenance_.
 
 _fiskaltrust_ provides you as PosDealer with **Information sources**. On the one hand, you will find the _Knowledge Base_ in the fiskaltrust.Portal,
-possible _Cases_ at our support, and contractual information and various exports for download. Use our tips for the efficient use of this _Documentation_, read our _News_ and learn more about other information sources such as _Webinars_ and _Videos_. If _Contacting support_ should be necessary, we will help you prepare your request to best support the process.
+possible _Cases_ at our support, contractual information and various exports for download. On the other hand, use our tips for the efficient use of this _documentation_, read our _News_ and learn more about other information sources such as _Webinars_ and _Videos_. If _Contacting support_ should be necessary, we will help you prepare your request to best support the process.
 
 If you are unfamiliar with the used expressions or want to reassure your understanding of our usage of them, have a look at the [Terminology](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
 

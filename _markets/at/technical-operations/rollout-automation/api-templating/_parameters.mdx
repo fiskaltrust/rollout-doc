@@ -9,17 +9,17 @@
 
 #### SCU parameters
 
-Each parameter can be specified globally or per SCU (in parentheses).
+You can specify each parameter globally or per SCU (in parentheses).
 
 | Parameter                                          | Description                                                    |
 | -------------------------------------------------- | -------------------------------------------------------------- |
 | `CertificateBase64` (`scu{0-n}_certificatebase64`) | The certificate used by this SCU, Base64-encoded               |
 | `Mode` (`scu{0-n}_mode`)                           | The active mode of the SCU (`normal`, `backup`, or `deactive`) |
 | `SN` (`scu{0-n}_sn`)                               | The serial number of the certificate                           |
-| `ZDA` (`scu{0-n}_zda`)                             | The certificate authority, which signed the certificate        |
+| `ZDA` (`scu{0-n}_zda`)                             | The certificate authority which signed the certificate        |
 
 :::caution
 
-Global values will override SCU specific ones.
+Global values will override SCU-specific ones.
 
 :::

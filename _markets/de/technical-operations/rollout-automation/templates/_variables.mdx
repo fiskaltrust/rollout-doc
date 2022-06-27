@@ -1,6 +1,6 @@
 | Variable                                    | Content                                                      |
 | ------------------------------------------- | ------------------------------------------------------------ |
-| `reference_scu_{type}_{key}_{value}_{attr}` | References the indicated attribute (`attr`) of an existing SCU with the given key/value pair (`key`/`value`) and of the specified type (`type`). |
+| `reference_scu_{type}_{key}_{value}_{attr}` | References the indicated attribute (`attr`) of an existing SCU with the given key/value pair (`key`/`value`) and the specified type (`type`). |
 
 ### Reference variables
 
@@ -10,7 +10,7 @@ Reference variables allow you to reference values from other components. Their o
 reference_scu_{type}_{key}_{value}_{attr}
 ```
 
-where the four dynamic parts (denoted by curly brackets) specify which attribute of which component you exactly want to reference.
+Where the four dynamic parts (denoted by curly brackets) specify which attribute of which component you exactly want to reference.
 
 
 
@@ -29,13 +29,13 @@ Indicates the SCU type you want to reference. Possible values for `type` are
 
 #### Key / Value
 
-Provides a key-value pair which is used to filter the SCU of the indicated SCU type for. The scope is always your **account** and the **outlet** where you create the CashBox. You cannot reference SCUs from other outlets or accounts.
+Provides a key-value pair that you can use to filter for the SCU of the indicated SCU type. The scope is always your **account** and the **outlet** where you create the CashBox. You cannot reference SCUs from other outlets or accounts.
 
 
 
 #### Attribute
 
-The actual attribute you'd like to reference. Currently `id` and `url` are supported.
+The actual attribute you'd like to reference. Currently, `id` and `url` are supported.
 
 
 
@@ -43,18 +43,18 @@ The actual attribute you'd like to reference. Currently `id` and `url` are suppo
 
 :::info Default field with shop-bought SCUs
 
-Any TSE, bought via fiskaltrust.Shop, will automatically have an incrementing integer field `counter` assigned.
+Any TSE bought via fiskaltrust.Shop will automatically have an incrementing integer field `counter` assigned.
 
 :::
 
-Let's say you have purchased fiskaly TSEs for all your outlets via fiskaltrust.Shop. In that case their SCUs should all have a `counter` field with the value of `1`. By using a reference variable in your template, you can now reference these SCUs (in particular their IDs, in this example) by using the following variable.
+Let's say you have purchased fiskaly TSEs for all your outlets via fiskaltrust.Shop. In that case, their SCUs should all have a `counter` field with the value of `1`. Using a reference variable in your template, you can now reference these SCUs (in particular their IDs, in this example) by using the following variable.
 
 
 ```
 |[reference_scu_fiskaly_counter_1_id]|
 ```
 
-A different example, let's assume you assign a field `masterPOS` manually to all your SCUs and wanted to reference the URL of the SCU where `masterPOS` is set to `true`. In that case you'd use the following variable.
+In a different example, let's assume you assign a field `masterPOS` manually to all your SCUs and want to reference the URL of the SCU where `masterPOS` is set to `true`. In that case, you'd use the following variable.
 
 ```
 |[reference_scu_fiskaly_masterPOS_true_url]|

@@ -1,18 +1,18 @@
 :::caution
 
-This example uses REST as communication protocol and requires your CashBox to have a REST helper enabled.
+This example uses REST as a communication protocol and requires your CashBox to have a REST helper enabled.
 
 :::
 
 To perform an "echo" request, you will need to send a `POST` request to the configured Middleware URL, with the path `/json/Echo`. That request takes a JSON string in its request body, containing the message string you'd like to receive back from the Middleware.
 
-For example, to send `Hello fiskaltrust.Middleware!` as request string, we'd be sending the following request body along with the `POST` request
+For example, to send `Hello fiskaltrust.Middleware!` as a request string, we'd be sending the following request body along with the `POST` request.
 
 ```json
 "Hello fiskaltrust.Middleware!"
 ```
 
-The following HTTP request example would send above's string to the Middleware.
+The following HTTP request example would send the above's string to the Middleware.
 
 ```http
 POST /json/Echo HTTP/1.1
@@ -23,10 +23,10 @@ Content-Type: application/json
 "Hello fiskaltrust.Middleware!"
 ```
 
-The response to your request should have a status code of 200 and contain the same string, you sent in the request, in the response body.
+The response to your request should have a status code of 200 and contain the exact string you sent in the request in the response body.
 
 :::info
 
-The full details on the request and its parameters (along with a curl example) can be found [here](https://middleware-samples.docs.fiskaltrust.cloud/#4a36918f-8950-4893-81c9-1778071d4f98).
+You can find the full details on the request and its parameters (along with a curl example) [here](https://middleware-samples.docs.fiskaltrust.cloud/#4a36918f-8950-4893-81c9-1778071d4f98).
 
 :::

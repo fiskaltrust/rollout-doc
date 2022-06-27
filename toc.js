@@ -63,7 +63,7 @@ module.exports = {
 						'rollout-doc/buy-resell/products/professional-services',
 						{
 							type: 'category',
-							label: '3rd party integrations',
+							label: 'third party integrations',
 							items: [				
 								'rollout-doc/buy-resell/products/3rd-party/3rd-party-overview',
 								'rollout-doc/buy-resell/products/3rd-party/datev-meinfiskal'

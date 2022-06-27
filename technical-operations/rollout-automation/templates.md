@@ -53,7 +53,7 @@ The following variables are pre-defined and will be populated automatically by a
 | `cashbox_ipaddress`                       | The IP address of the machine where the CashBox is running. Defaults to an empty string. |
 | `cashbox_producttype`                     | The product type.                                            |
 | `count`                                   | The number of queues in your account, plus one.              |
-| `description`                             | Description of the CashBox, defaulting to `ft{UTC timestamp}` (e.g. `ft19700101000000`). |
+| `description`                             | Description of the CashBox, defaulting to `ft{UTC timestamp}` (e.g., `ft19700101000000`). |
 | `helper{0-9}_description`                 | Defaults to the same value as `description`.                 |
 | `helper{0-9}_id`                          | Ten random UUIDs for helper components. Used to set or reference helper IDs. |
 | `helper{0-9}_url`                         | Ten helper URLs, defaulting to `net.pipe://localhost/{helperX_id}`. |

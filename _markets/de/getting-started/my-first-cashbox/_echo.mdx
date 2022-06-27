@@ -1,12 +1,12 @@
 :::caution
 
-This example uses REST as communication protocol and requires your queue to have a configured `rest://` URL.
+This example uses REST as a communication protocol and requires your queue to have a configured `rest://` URL.
 
 :::
 
 To perform an "echo" request, you will need to send a `POST` request to the configured Middleware URL, with the path `/json/v1/Echo`. That request takes a JSON object in its request body, with one single string field named `Message`, containing the message string you'd like to receive back from the Middleware.
 
-```json
+```JSON
 {
     "Message": "Hello fiskaltrust.Middleware!"
 }
@@ -23,10 +23,10 @@ Content-Type: application/json
 { "Message": "Hello fiskaltrust.Middleware!" }
 ```
 
-The response to your request should have a status code of 200 and contain the same object and the same string, you sent in the request, in the response body.
+The response to your request should have a status code of 200 and contain the same object and the exact string you sent in the request in the response body.
 
 :::info
 
-The full details on the request and its parameters (along with a curl example) can be found [here](https://middleware-samples.docs.fiskaltrust.cloud/#11f73789-cf7d-4510-bf2c-d3698e954dac).
+You can find the full details on the request and its parameters (along with a curl example) [here](https://middleware-samples.docs.fiskaltrust.cloud/#11f73789-cf7d-4510-bf2c-d3698e954dac).
 
 :::

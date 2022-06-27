@@ -12,7 +12,7 @@ After reading this, you can explain what the Middleware Launcher for Android is 
 :::
 
 ## Introduction
-The Launcher is a core component of every Middleware **on-premise** setup, it is the service's **bootstrap part** which manages and initializes the other components of the CashBox (e.g. the queue). On Android, the Launcher comes as a pre-compiled App that can be installed on Android devices and will run a _foreground_ service that hosts the Middleware components. This service can be controlled via [intents](https://developer.android.com/reference/android/content/Intent), which are typically implemented by the PosCreator.
+The Launcher is a core component of every Middleware **on-premise** setup, it is the service's **bootstrap part** which manages and initializes the other components of the CashBox (e.g., the queue). On Android, the Launcher comes as a pre-compiled App that can be installed on Android devices and will run a _foreground_ service that hosts the Middleware components. This service can be controlled via [intents](https://developer.android.com/reference/android/content/Intent), which are typically implemented by the PosCreator.
 
 ## Distribution
 The Launcher for Android can be downloaded either from Google Play, or directly from the Portal (as an _APK_ file). 
@@ -41,4 +41,4 @@ We highly recommend to use a mobile device management solution to control and ti
 
 
 ## Launching the Middleware
-The Middleware is started and stopped via _Android intents_, which are typically implemented by the PosCreator. This means that the Middleware App should be started when the POS App requires it's functionally (e.g. at startup), and e.g. closed when the POS App closes.
+The Middleware is started and stopped via _Android intents_, which are typically implemented by the PosCreator. This means that the Middleware App should be started when the POS App requires it's functionally (e.g., at startup), and e.g. closed when the POS App closes.
