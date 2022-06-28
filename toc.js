@@ -58,17 +58,25 @@ module.exports = {
 						'rollout-doc/buy-resell/products/bundles',
 						'rollout-doc/buy-resell/products/middleware',
 						'rollout-doc/buy-resell/products/revision-safe-archiving',						
-						'rollout-doc/buy-resell/products/signing',						
+												
+						{
+							type: 'category',
+							label: 'Signing devices and services',
+							items: [				
+								'rollout-doc/buy-resell/products/signing/signing-overview',
+								'rollout-doc/buy-resell/products/signing/rksv-sign'
+							]
+						},
 						'rollout-doc/buy-resell/products/notifications',						
 						'rollout-doc/buy-resell/products/professional-services',
 						{
 							type: 'category',
-							label: 'third party integrations',
+							label: 'Third party integrations',
 							items: [				
 								'rollout-doc/buy-resell/products/3rd-party/3rd-party-overview',
 								'rollout-doc/buy-resell/products/3rd-party/datev-meinfiskal'
 							]
-						},
+						}
 					]
 				}
 			]
