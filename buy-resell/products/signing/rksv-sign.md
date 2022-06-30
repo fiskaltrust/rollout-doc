@@ -57,6 +57,7 @@ Body:
             \"Id\": \"|[scu0_id]|\",
             \"Package\": \"fiskaltrust.RKSVSign\",
             \"Configuration\": {
+                \"ProductNumber\": \"4154+020301\",
                 \"CompanyName\": \"<Name of the PosOperator company>\",
                 \"CompanyEmail\": \"<Email of the PosOperator company>\",
                 \"TaxId\": \"<Tax ID of the PosOperator company>\",
