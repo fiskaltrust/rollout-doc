@@ -11,22 +11,22 @@ As these depend on local regulations, the products are highly country-specific.
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import notificationAT from '../../_markets/at/buy-resell/products/_notification.mdx';
-import notificationFR from '../../_markets/fr/buy-resell/products/_notification.mdx';
-import notificationDE from '../../_markets/de/buy-resell/products/_notification.mdx';
+import MarketAT from '../../_markets/at/buy-resell/products/_notification.mdx';
+import MarketFR from '../../_markets/fr/buy-resell/products/_notification.mdx';
+import MarketDE from '../../_markets/de/buy-resell/products/_notification.mdx';
 
 <Tabs groupId="market">
 
   <TabItem value="AT" label="Austria">
-    <notificationAT />
+    <MarketAT />
   </TabItem>
 
   <TabItem value="FR" label="France">
-    <notificationFR />
+    <MarketFR />
   </TabItem>
 
   <TabItem value="DE" label="Germany">
-    <notificationDE />
+    <MarketDE />
   </TabItem>
 
 </Tabs>
