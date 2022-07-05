@@ -72,7 +72,7 @@ Please note that the DATEV MeinFiskal account is created automatically during th
 
   </details>
 
-2. The PosDealer agrees on behalf of the PosOperator to the GTCs, the privacy policy and the processing agreement (of or with fiskaltrust and, in particular, the service descriptions, which can be found in the [download area](https://portal.fiskaltrust.de/AccountProfile/Download) of the fiskaltrust. portal). The PosOperator receives the signed contract by e-mail.
+2. The PosDealer agrees on behalf of the PosOperator to the GTCs, the privacy policy and the processing agreement (of or with fiskaltrust and, in particular, the service descriptions, which can be found in the [download area](https://portal.fiskaltrust.de/AccountProfile/Download) of the fiskaltrust.Portal). The PosOperator receives the signed contract by e-mail.
 
 3. In the DATEV MeinFiskal section, the user contract is now available for download and a button for carrying out the DATEV MeinFiskal onboarding. The PosDealer clicks on the button "Perform DATEV MeinFiskal onboarding operations". In addition, the master data is checked by DATEV; any errors are displayed, and, if successful, a DATEV MeinFiskal user account is automatically created.
 
@@ -133,4 +133,4 @@ The PosOperator can now use the services "DATEV Kassenarchiv online" and the "DA
 
 - The PosDealer can no longer log on to DATEV MeinFiskal because he no longer has the login data. Therefore, he cannot request another e-mail for a password change on the DATEV MeinFiskal website on his own. This is only possible via the PosOperator once he has received the welcome e-mail with the link to change the password on the DATEV MeinFiskal website.
 
-- The PosDealer cannot complete the linking process between fiskaltrust and DATEV MeinFiskal because the wrong user name (not the same e-mail address as for the fiskaltrust. portal) was entered at DATEV MeinFiskal in step 6. Therefore, the PosDealer must contact the fiskaltrust support so that the incorrect link can be deleted.
+- The PosDealer cannot complete the linking process between fiskaltrust and DATEV MeinFiskal because the wrong user name (not the same e-mail address as for the fiskaltrust.Portal) was entered at DATEV MeinFiskal in step 6. Therefore, the PosDealer must contact the fiskaltrust support so that the incorrect link can be deleted.

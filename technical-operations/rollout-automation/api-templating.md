@@ -63,7 +63,7 @@ accesstoken: ACCOUNT_ACCESS_TOKEN
 
 
 
-This is a standard HTTP `POST` request and you can use any HTTP library (e.g. [Jodd HTTP](https://http.jodd.org) for Java-based applications) or HTTP client (e.g. [curl](https://curl.se/) or [PowerShell's Invoke-WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest)) of your choice to send the request.
+This is a standard HTTP `POST` request and you can use any HTTP library (e.g., [Jodd HTTP](https://http.jodd.org) for Java-based applications) or HTTP client (e.g., [curl](https://curl.se/) or [PowerShell's Invoke-WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest)) of your choice to send the request.
 
 **curl**
 

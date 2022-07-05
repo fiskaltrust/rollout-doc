@@ -13,9 +13,9 @@ As signing is the most country-specific aspect of fiscalization, the variants av
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import SigningAT from '../../_markets/at/buy-resell/products/_signing.mdx';
-import SigningFR from '../../_markets/fr/buy-resell/products/_signing.mdx';
-import SigningDE from '../../_markets/de/buy-resell/products/_signing.mdx';
+import SigningAT from '../../../_markets/at/buy-resell/products/_signing.mdx';
+import SigningFR from '../../../_markets/fr/buy-resell/products/_signing.mdx';
+import SigningDE from '../../../_markets/de/buy-resell/products/_signing.mdx';
 
 <Tabs groupId="market">
 

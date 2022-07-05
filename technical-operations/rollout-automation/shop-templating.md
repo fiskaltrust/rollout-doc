@@ -33,7 +33,7 @@ When you create or edit a template, you must fill out the following form.
 | elements | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../images/numbers/circle-1o.png) |Meaningfull name for the template. |
-|![Number 2](../../images/numbers/circle-2o.png) |More detailed description to understand the purpose and content of the template. An image (e.g. product image) and link url for further information can be assinged.  |
+|![Number 2](../../images/numbers/circle-2o.png) |More detailed description to understand the purpose and content of the template. An image (e.g., product image) and link url for further information can be assinged.  |
 |![Number 3](../../images/numbers/circle-3o.png) |Mode sets the visibility of the template: Private (owner only), Deactivated (not visible in shop),Public for (your) PosOperators, Public for (your) PosDealers.   |
 |![Number 4](../../images/numbers/circle-4o.png) |The JSON content of the template. |
 |![Number 5](../../images/numbers/circle-5o.png) |Save the template before leaving the page. |

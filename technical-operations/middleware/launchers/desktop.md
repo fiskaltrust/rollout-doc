@@ -13,7 +13,7 @@ After reading this, you can explain what the Middleware Launcher for Windows, Li
 
 ## Introduction
 
-The Launcher is a core component of every Middleware **on-premise** setup, it is the service's **bootstrap part** which manages and initializes the other components of the CashBox (e.g. the queue). The file `fiskaltrust.exe` in your Middleware package is the Launcher binary.
+The Launcher is a core component of every Middleware **on-premise** setup, it is the service's **bootstrap part** which manages and initializes the other components of the CashBox (e.g., the queue). The file `fiskaltrust.exe` in your Middleware package is the Launcher binary.
 
 Typically, you will not use the Launcher binary directly yourself, but you will use one of the **included scripts** to start the service in test mode or install it as a system-wide service.
 
