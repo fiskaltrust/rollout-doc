@@ -3,6 +3,18 @@ slug: /posdealers/buy-resell/products/signing/rksv
 title: RKSV.Sign
 ---
 
+:::info summary
+
+After reading this, you will know how the integration of RKSV.Sign works and how to set it up.
+
+:::
+
+:::caution Germany / France
+
+As RKSV.Sign is only available in Austria, this tutorial does not apply to Germany or France.
+
+:::
+
 # RKSV.Sign - Receipt signing for Austria
 RKSV.Sign is a _signing-only_ product for the Austrian market, and offers RKSV-compliant receipt signing. This product is primarily meant for users who have already implemented the Austrian fiscalization laws in their POS systems, and are looking for a cloud signing service they can use. RKSV.Sign can be easily embedded int POS systems with our [public API description](/docs/poscreators/signing/austria/api) and [samples](https://rksvsign-samples.docs.fiskaltrust.cloud/), and uses a simplified business flow when compared to our other products - which is described in the following sections.
 
