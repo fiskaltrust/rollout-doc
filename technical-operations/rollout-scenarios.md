@@ -2,7 +2,7 @@
 slug: /posdealers/technical-operations/rollout-scenarios
 title: Rollout Scenarios
 ---
-
+# Rollout Scenarios
 
 :::info summary
 

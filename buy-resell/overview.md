@@ -2,7 +2,7 @@
 slug: /posdealers/buy-resell/overview
 title: Overview
 ---
-# Overview
+# Buy & Resell Overview
 
 :::info summary
 

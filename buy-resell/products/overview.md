@@ -3,7 +3,7 @@ slug: /posdealers/buy-resell/products
 title: Product overview
 ---
 
-# Products & Services
+# Products & Services Overview
 
 :::info summary
 

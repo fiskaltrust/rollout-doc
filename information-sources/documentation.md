@@ -3,17 +3,18 @@ slug: /posdealers/information-sources/documentation
 title: About this Documentation
 ---
 
+# About this Documentation
+
 :::info summary
 
 After reading this, you can use the documentation effectively in your specific function.
 
 :::
 
-## Our documentation
 
 ![fiskaltrust.Docs start](images/4-documentation-start-new.png "https://docs.fiskaltrust.cloud/")
 
-### Usage of our documentation
+## Usage of the documentation
 | links | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Jump back to the [start](https://docs.fiskaltrust.cloud/)  |
@@ -27,7 +28,7 @@ After reading this, you can use the documentation effectively in your specific f
 |![Number 9](images/Numbers/circle-9o.png) |Jump to our [repositories](https://github.com/fiskaltrust) in GitHub  |
 |![Number 10](images/Numbers/circle-10o.png)|Tick here or use `CTRL` & `K` to open the search window  |
 
-### Searching in our documentation
+## Searching in the documentation
 
 import ReactPlayer from "react-player"
 
@@ -43,7 +44,7 @@ import ReactPlayer from "react-player"
 |![Number 6](images/Numbers/circle-6o.png) |Find more details about the context of your keyword|
 |![Number 7](images/Numbers/circle-7o.png) |Get more overview by opening the found documents in several tabs |
 
-### Copying expressions
+## Copying expressions
 
 :::tip Copying expressions made easy
 
@@ -69,13 +70,13 @@ These sources provided the basis for the main points of the description
 * helping the end-user understand the product 
 * helping PosCreators and PosDealers and the CST find relevant information
 
-### General offers
+## General offers
 
 * Glossary: look for our [terminology here](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
 * Videos - Learn a concept by following a series of [videos](videos.md) 
 * Scenarios - complete a task or achieve a given goal [here](../technical-operations/rollout-scenarios).
 
-### Tools in use
+## Tools in use
 
 We use [docusaurus](https://docusaurus.io/) for this documentation.  
 We create and edit screenshots with [snagit](https://www.techsmith.com/screen-capture.html).  

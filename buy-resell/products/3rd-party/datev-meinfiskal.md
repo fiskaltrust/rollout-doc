@@ -2,7 +2,7 @@
 slug: /posdealers/buy-resell/products/3rd-party/datev-meinfiskal
 title: DATEV MeinFiskal
 ---
-# Overview
+# DATEV MeinFiskal
 
 :::info summary
 

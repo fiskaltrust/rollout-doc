@@ -2,6 +2,7 @@
 slug: /posdealers/getting-started/company-roles
 title: Company Roles
 ---
+# Company Roles
 
 :::info summary
 

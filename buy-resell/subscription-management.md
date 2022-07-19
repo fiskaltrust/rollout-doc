@@ -2,7 +2,7 @@
 slug: /posdealers/buy-resell/subscription-management
 title: Subscription management
 ---
-# Shop
+# Subscription management
 
 :::info summary
 

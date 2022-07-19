@@ -2,7 +2,7 @@
 slug: /posdealers/overview/business-model
 title: Business model
 ---
-
+# Business model
 
 :::info summary
 
