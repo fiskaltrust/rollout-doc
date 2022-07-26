@@ -7,7 +7,7 @@ title: My First Cashbox
 
 :::info summary
 
-After reading this, you can create a CashBox and have a functioning Middleware instance.
+After reading this, you can create a CashBox and have a functioning fiskaltrust.Middleware instance.
 
 :::
 
@@ -19,10 +19,10 @@ Unfortunately, this tutorial is **not yet applicable to the Austrian market** as
 
 ## Prerequisites
 
-Before we roll out our Middleware instance, the following prerequisites must be in place.
+Before we roll out our Middleware instance, the following prerequisites must be in place:
 
 * A working **Internet connection** (_please see [Network Requirements](../technical-operations/middleware/network-requirements.md)_)
-* An active _fiskaltrust_ **PosDealer account** (*either by [registration](registration.md) or by invitation through your PosCreator*)
+* An active **PosDealer account** (*either by [registration](registration.md) or by invitation through your PosCreator*) at the fiskaltrust.Portal (Sandbox)
 * A system meeting the hardware and software **[requirements](../technical-operations/middleware/supported-environments.md)** (*in this tutorial we focus on rollouts on Windows*)
 * Any **SSCD components** (*hardware or SaaS credentials*) required for the setup, unless created during the setup itself
 
@@ -36,11 +36,11 @@ If you don't have one yet, please get in touch with your *PosCreator* for invita
 
 ## Rollout Plans
 
-[Rollout plans](../buy-resell/rollout-plans.md) are guided **deployment wizards** in the portal, which assist you in buying, reselling and **setting up CashBoxes** and their components for your PosOperators. A rollout plan typically follows these five steps:
+[Rollout plans](../buy-resell/rollout-plans.md) are guided **deployment wizards** in the fiskaltrust.Portal, which assists you in buying, reselling and **setting up CashBoxes** and their components for your PosOperators. A rollout plan typically follows these five steps:
 
 1. Select the **product** you'd like to roll out.
-2. Select one or more **accounts** for which you plan the rollout.
-3. Select one or more **account outlets** where you want to perform the rollout.
+2. Select one or more **PosOperators** for which you plan the rollout.
+3. Select one or more **outlets** where you want to perform the rollout.
 4. Create a **quote** and load the quote into your **shopping cart**
 5. Perform the **checkout**
 
