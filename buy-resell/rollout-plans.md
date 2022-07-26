@@ -22,11 +22,14 @@ For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollo
 
 ### Business Rollout
 
-The business rollout simplifies acquiring entitlements, transferring them to the PosOperators outlets and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to move and activate the products. The system will automatically select the required products for the chosen Business Rollout plan. This plan reduces the risk of an incorrect composition of the shopping basket.
+The business rollout simplifies acquiring entitlements, transferring them to the PosOperators outlets and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to move and activate the products. The system will automatically select the required products for the chosen Business Rollout plan. This plan reduces the risk of an incorrect composition of the shopping basket. This can be done for multiple PosOperators and outlets at the same time.
 
 This sketch shows the process :
 
 ![Rollout-management](./images/rollout-management.png)
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 import BusinessRolloutFR from '../_markets/fr/getting-started/my-first-cashbox/_business.mdx';
 import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_business.mdx';
@@ -42,17 +45,6 @@ import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_
   </TabItem>
 
 </Tabs>
-
-#### Review successful completion
-
-You can check the successful completion of the order by [surrogating](../getting-started/operator-onboarding/surrogating) into the PosOperator's account.
-
-In the PosOperator's account, now select `PosOperator's Name` / `Outlets`.
-Filter the outlet table by entering a search term or sort the outlets by clicking on one of the table headings.
-For example, in the `Carefree` and `AKO` columns, you can check whether these products are activated.
-The following image shows an example of activating the fiskaltrust.CarefreeBundle in the PosOperator's account for the selected location:
-
-![check](./images/portal-posoperator-check.png)
 
 ### Technical Rollout
 

@@ -39,7 +39,7 @@ If you don't have one yet, please get in touch with your *PosCreator* for invita
 [Rollout plans](../buy-resell/rollout-plans.md) are guided **deployment wizards** in the portal, which assist you in buying, reselling and **setting up CashBoxes** and their components for your PosOperators. A rollout plan typically follows these five steps:
 
 1. Select the **product** you'd like to roll out.
-2. Select the **account** for which you plan the rollout
+2. Select one or more **accounts** for which you plan the rollout.
 3. Select one or more **account outlets** where you want to perform the rollout.
 4. Create a **quote** and load the quote into your **shopping cart**
 5. Perform the **checkout**
