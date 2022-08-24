@@ -34,24 +34,22 @@ Fiskaltrust takes over the generation of the legally required data formats (DSFi
 
 The PosOperator already has an account in the fiskaltrust.portal, agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust, checked his master data, and the PosDealer has the authorization to sign the contract. If these requirements are not met, the [PosOperator Onboarding](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/invitation-management) must be completed first, or the PosOperator itself must perform the setup.
 
-<details>
-  <summary>Checking the prerequisites</summary>  
-
   Sign contract permission
-    1. Log in to the fiskaltrust.Portal as a PosDealer. 
-    2. Go to PosOperator -> Overview. 
-    3. If necessary, enter filter criteria to narrow the search results and select Search. 
-    4. Check with the icon at Permissions if the sign contract is active.
-    5. If the permission is not active, contact the PosOperator to give it to you.
-    6. Close the dialog box by clicking "OK". 
+
+  1. Log in to the fiskaltrust.Portal as a PosDealer. 
+  2. Go to PosOperator -> Overview. 
+  3. If necessary, enter filter criteria to narrow the search results and select Search. 
+  4. Check with the icon at Permissions if the sign contract is active.
+  5. If the permission is not active, contact the PosOperator to give it to you.
+  6. Close the dialog box by clicking "OK". 
   
   Master data
-    1. Select the link at Name and go to the account of the PosOperator.
-    2. Select Company -> Master data.
-    3. Check if every mandatory field like Name* or Address* is filled in. 
-    4. Check that no blanks have been entered before or after. 
-    5. Check whether you can successfully perform a validity check with either St.-ldNr. or USt-ldNr.
-    6. Save your entries with "Save". 
+  1. Select the link at Name and go to the account of the PosOperator.
+  2. Select Company -> Master data.
+  3. Check if every mandatory field like Name* or Address* is filled in. 
+  4. Check that no blanks have been entered before or after. 
+  5. Check whether you can successfully perform a validity check with either St.-ldNr. or USt-ldNr.
+  6. Save your entries with "Save". 
 
 </details>
 
