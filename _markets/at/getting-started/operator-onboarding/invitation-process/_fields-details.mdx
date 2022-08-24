@@ -1,0 +1,27 @@
+
+| Fields | Description                                                                                                                         | Mandatory |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------|:---------:|
+| AccountName            | Company name, this should be written exactly as it is in the commercial register                                                    | yes       |
+| AccountEmail           | General E-Mail address of the company<br />**IMPORTANT!**<br />All information and all invoices will be sent to this E-Mail address | yes <sup>1</sup>       |
+| AccountAddressLine1    | Address, first line of the company                                                                                                  | no        |
+| AccountAddressLine2    | Address, second line of the company                                                                                                 | no        |
+| AccountPostalCode      | Postal Code of the company's address                                                                                                             | no         |
+| AccountCity            | Name of city of the company's address                                                                                               | no        |
+| AccountCountry         | ISO-Code (3166 ALPHA-2) for the country of the company's address                                                                                                                | no        |
+| AccountWeb             | URL of the company's website                                                                                                        | no        |
+| AccountPhone           | Company phone number                                                                                                                | no        |
+| AccountIdVat           | VAT number of the company, Example: ATU12345678 is important for the reports for Finanz Online!<br />**IMPORTANT!**<br />This is one of the identification criteria for legalization of the service.                              |no <sup>2</sup>      |
+| AccountIdTax           | Tax office tax number of the company - Please enter with 9 digits without special characters and without spaces (2 digits tax office number, 3 digits "/" 4 digits tax number)<br />**IMPORTANT!**<br />This is one of the identification criterias for legalization of the service.                              |no <sup>2</sup>      |
+| AccountIdGln           | GLN  (https://firmen.wko.at) of the company, Example: 1234567890123 <br />**IMPORTANT!**<br />This is one of the identification criteria for legalization of the service.                              |no <sup>2</sup>      |
+| AccountIdFibu          | AccountIdFibu; company register number (if available) <br />**IMPORTANT!**<br />This is one of the identification criteria for legalization of the service.                              |no <sup>2</sup>      |
+| ContactFirstName       | First name of the Primary Contact                                                                                                   | yes       |
+| ContactLastName        | Last name of Primary Contact                                                                                                        | yes       |
+| ContactEmail           | E-Mail address of the Primary Contact<br />**IMPORTANT!**<br />This E-Mail address will be the user's login to the newly created company. | yes       |
+| ContactTitle           | (Academic) Title of Primary Contact (before name)  
+| ContactSuffix          | Name suffix of the Primary Contact (after the name)                                                                                    | no        |
+| ContactMobilePhone     | Mobile phone number of the Primary Contact                                                                                          | no        |
+
+<sup>1</sup> = Optionally, a dedicated billing address for invoices can be provided as well under Company / Master data.  
+<br/>
+
+<sup>2</sup> = The fields for commercial identification are not mandatory for the invitation process. But these identification criteria are the basis for correct cash management and a prerequisite for using of third-party services.  

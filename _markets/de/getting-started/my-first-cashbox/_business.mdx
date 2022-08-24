@@ -1,0 +1,38 @@
+For this setup, we choose a fiskaltrust.Carefree plan with a Swissbit TSE. The fiskaltrust.Carefree plan will create a Carefree and TSE-as-a-Service bundle and automatically generate and assign a Swissbit TSE to your account. Using an online TSE means no further hardware provisioning steps are required from your side. For a quick tutorial, we refrain from choosing a PosOperator and its outlets but assign the bundle to your account and outlet. 
+
+To start the Business rollout, **log into your portal account** and proceed with the following steps.
+
+import ReactPlayer from "react-player"
+
+<ReactPlayer controls url={require("./media/business-rollout.mp4").default} /><br />
+
+1. Open your the **rollout management page** from [`Rollout Management` / `Plan`](https://portal-sandbox.fiskaltrust.de/RolloutManagement/Plan) (*Sandbox link*) in the left-hand navigation menu.
+2. Select `Business Rollout - Rolling out products`.
+3. **Filter** for `swissbit cloud` and **limit entries** to `Dealerpackage based plans`.
+4. Select the plan **4445-0008**. This plan will create **an SCU with a Swissbit Cloud TSE**.
+5. Select `Perform the rollout for the current account`.
+6. Tick the **desired outlet** where you would like to roll out the Middleware.
+7. Click `Submit Selection`.
+8. Click `Create quote` - *this will take a few seconds. Once the quote is ready, the button will change to `Load quote into cart`.*
+9. Click `Load quote into cart` to **place the quote** into your shopping cart.
+10. Verify that the items in your shopping cart match the selected products.
+11. Click `Checkout`.
+12. Click `binding order` to **complete the order**.
+
+-----
+
+At this point, should have the order listed under [`Shop` / `Orders`](https://portal-sandbox.fiskaltrust.de/Shop/Orders). Finishing the order can take a couple of minutes, but once it has been completed, there should be the following items active in your account
+
+* two **new demo subscriptions** under [`Shop` / `Subscriptions`](https://portal-sandbox.fiskaltrust.de/Shop/Subscriptions)
+* a **new SCU** for a Swissbit Cloud TSE under [`Configuration` / `Signature Creation Unit`](https://portal-sandbox.fiskaltrust.de/SignatureCreationUnitDE)
+
+#### Review successful completion
+
+You can check the successful completion of the order by [surrogating](../getting-started/operator-onboarding/surrogating) into the PosOperator's account.
+
+In the PosOperator's account, now select `PosOperator's Name` / `Outlets`.
+Filter the outlet table by entering a search term or sort the outlets by clicking on one of the table headings.
+For example, in the `Carefree` and `AKO` columns, you can check whether these products are activated.
+The following image shows an example of activating the fiskaltrust.CarefreeBundle in the PosOperator's account for the selected location:
+
+![check](./media/portal-posoperator-check.png)

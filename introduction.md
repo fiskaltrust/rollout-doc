@@ -1,81 +1,31 @@
 ---
-slug: /posdealers/rollout-doc
+slug: /posdealers/introduction
 title: Introduction
 ---
+# Introduction
+We created this documentation for cash register dealers (_PosDealers_). It describes the steps recommended by fiskaltrust for successful purchase, resale, rollout and support of our products.
 
-# fiskaltrust Rollout documentation
+## Sections of this documentation
+Before rolling out a POS System at a customer site, you need a playground to test the services and products thoroughly. At **Get Started**, we explain the concept of our _Sandbox_. _Registration_ and use are free of charge. After that, you will get familiar with _Company Roles_ and the _Operator Onboarding_ and then follow _My First Cashbox_ to create your first demo setup.
 
-This documentation is meant to support PosDealers (cash register dealers), and to some extend also PosCreators (cash register manufacturers) in planning and executing the rollout process of the fiskaltrust.Middleware and other fiskaltrust products. 
+With **Buy/Resell**, you can expand your knowledge of our business model. You will learn how to make a _Volume purchase agreement_ for which _Products_. With _Rollout Management_, rollouts at the PosOperator succeed in a standardized manner and with the _Shop_ in a highly individualized way.  
 
-## Getting started
+In the **Technical Operations** section, you will find _Scenarios_ for using our products for different requirements. Also, in-depth details on _Middleware_ and _Rollout Automation_ avoid time-consuming problems with _Troubleshooting_ or _Maintenance_.
 
-fiskaltrust offers Compliance-as-a-Service for POS-Systems in the fiscalization area. This is done by using the license-free fiskaltrust software product "fiskaltrust.Middleware", which is integrated by the PosCreator into his POS-System. 
+_fiskaltrust_ provides you as PosDealer with **Information sources**. On the one hand, you will find the _Knowledge Base_ in the fiskaltrust.Portal,
+possible _Cases_ at our support, contractual information and various exports for download. On the other hand, use our tips for the efficient use of this _documentation_, read our _News_ and learn more about other information sources such as _Webinars_ and _Videos_. If _Contacting support_ should be necessary, we will help you prepare your request to best support the process.
 
-The fiskaltrust.Middleware takes care of the communication with the TSE and prepares the fiscalization data for the POS-System, which must be printed on the receipt (e.g. receipt number, signatures, start times, QR code for the audit, etc.). Furthermore, an export of audit-relevant data can be performed via the fiskaltrust.Middleware, locally at the PosOperator. These exports are provided by the fiskaltrust.Middleware in the formats defined by the legislator (DSFinV-K, TSE-TAR files). 
+If you are unfamiliar with the used expressions or want to reassure your understanding of our usage of them, have a look at the [Terminology](https://docs.fiskaltrust.cloud/de/docs/faq/terms).
 
-The fiskaltrust.Middleware runs as an independent service on the cash register of the PosOperator and must therefore be rolled out there by the PosDealer.
+## Target audience
+We created this documentation for all employees of PosDealers that are involved in working with fiskaltrust's products. While most of the information published here is technical- or business-driven, distinctive sections may be relevant for other target audiences like members of legal departments.
 
-Furthermore, fiskaltrust offers add-on products (based on the fiskaltrust.Middleware) as well as individual products (independent of the fiskaltrust.Middleware) for PosOperators. These products are sold to PosOperators exclusively through our PosDealer partners. These products include archiving products, automated reports to the tax office, technical security equipment (TSE) from various manufacturers as well as fiskaltrust.CarefreeBundle s with and without a TSE-As-A-Service. As part of the rollout, the PosDealer must transfer the products previously acquired from fiskaltrust to its PosOperators and activate them. 
+Below, we've composed a list of specific reader groups and the recommended reading for those:
 
-The rollout process therefore consists of the configuration and delivery of the fiskaltrust.Middleware to the cash register(s) of the PosOperator and the transfer and activation of the add-on and individual products for the PosOperators. In this document we will describe which preparatory measures have to be taken before the actual rollout and how, based on this, the rollout is carried out in detail. The fiskaltrust.Portal will play an important role as a rollout management tool.
+| Target audience                             | Overview | Get started | Buy / Resell | Technical Operations | Information Sources |
+| ------------------------------------------- | :------: | :---------: | :----------: | :------------------: | :-----------------: |
+| **Project Managers and support staff**      |    ✔️     |      ✔️      |      ✔️       |          ✔️           |          ✔️          |
+| **Rollout technicians and testers**         |    ✔️     |      ✔️      |     ---      |          ✔️           |          ✔️          |
+| **Procurement, Sales and Account Managers** |    ✔️     |     ---     |      ✔️       |         ---          |         ---         |
+| **Legal department**                        |    ✔️     |     ---     |      ✔️       |         ---          |         ---         |
 
-### The different roles of the fiskaltrust partners
-
-In the rollout process, fiskaltrust basically distinguishes between three partner roles: PosCreator, PosDealer and PosOperator. 
-
-
-
-![partner roles](images/partner-roles.png "partner roles")
-
-
-
- PosCreators implement POS-Systems and sell them via their PosDealers. The PosDealers sell the POS-System and the associated services to their PosOperators. The PosOperators operate the acquired POS-System in one or more cash registers, at one or more locations. The rollout process of the fiskaltrust.Middleware and other fiskaltrust.Products is also structured according to this principle. The fiskaltrust.Portal plays an important role in this process, as it maps the three partner roles mentioned above to support the rollout process.
-
-### Process overview
-
-![process overview](images/process-1.png "process overview")
-
- PosCreators who have opted for fiskaltrust, integrate the fiskaltrust.Middleware into their POS-Systems, this means that they implement their POS-System in such a way that it can communicate with the fiskaltrust.Middleware, which runs as an independent service. The prerequisite for this is the independent registration of the PosCreator in the fiskaltrust.Portal. In doing so, PosCreators digitally sign a cooperation agreement with fiskaltrust and can thus use the fiskaltrust.Middleware free of license costs. During the integration of the fiskaltrust.Middleware, PosCreators also deal with how the fiskaltrust.Middleware will later be rolled out to the cash registers of the PosOperators. They make preparations to be able to support their PosDealers in the rollout process of their POS-System and the fiskaltrust.Middleware. Depending on the circumstances (number of cash registers to which the fiskaltrust.Middleware is to be delivered later), they also analyze automation options for a mass rollout. It is often the case that PosCreators prepare so-called configuration templates for their PosDealers.
-
- PosCreators should invite their PosDealers to register on the fiskaltrust.Portal as early as possible so that they can prepare together for the rollout of the fiskaltrust.Middleware and so that the PosDealers in turn can invite their PosOperators to register on the fiskaltrust.Portal in good time, because they must digitally sign a user agreement there so that the fiskaltrust.Middleware can be installed and operated on their cash register. These invitations are made via the fiskaltrust.Portal. The invitation process with the associated details is described in the chapter [Invitation management](invitation-management/README.md).
-
- PosCreators then discuss with their PosDealers how to configure the fiskaltrust.Middleware instances to be delivered and carry out a joint pilot installation at a PosOperator. How to configure the fiskaltrust.Middleware, what exactly has to be configured and which automation options are available for mass rollouts can be read in the chapter [Rollout of the fiskaltrust.Middleware](middleware/README.md). After successful pilot installation and preparation for the mass rollout, the PosDealers take over and perform the mass rollout independently.
-
-In addition, PosDealers have the possibility to purchase add-on products and individual products from fiskaltrust in the fiskaltrust.Portal and to resell them to the PosDealers as part of their service. For the activation of volume discounts, PosDealers agree on the conditions with fiskaltrust with the help of framework agreements/contracts and can then purchase so-called Entitlements in the fiskaltrust.Shop (part of the fiskaltrust.Portal). As part of the rollout, they transfer these to their customers, the POSOPerators, and activate the associated products via the fiskaltrust.Portal. The exact procedure for this is described in the chapter [Buying and reselling fiskaltrust products](shop/README.md).
-
-### Structure of the rollout documentation
-
-This documentation is divided into the following main elements based on the processes described above:
-
-1. [Invitation management](invitation-management/README.md) - important for PosCreators and for PosDealers
-2. [Rollout of the fiskaltrust.Middleware](middleware/README.md) - important for PosCreators and for PosDealers
-3. [Buying and reselling fiskaltrust products](shop/README.md) - important especially for PosDealers
-
-### Further
-
-Occasionally, fiskaltrust partners do not fit exactly into the partner roles described above, for example because they are a PosCreator and a PosDealer in one (e.g. a PosCreator that distributes to end customers) or because they are both a PosCreator and a PosOperator (e.g. a franchise company). If you are one of these partners and do not completely fit into the partner roles described here, we recommend that you still follow the described process by inviting yourself to the fiskaltrust.Portal to take over and compensate for the missing partner role(s). If you have any further questions about this, please do not hesitate to contact our fiskaltrust.Support (info@fiskaltrust.at/de/fr).
-
-<div className="hide-in-docs">
-
-## Table of contents
-
-<pre>
-├── <a href="invitation-management/README.md" title="Invitation management">Invitation management</a>
-│   └── <a href="invitation-managemen/README.md#poscreators-invite-posdealers" title=" PosCreators invite PosDealers"> PosCreators invite PosDealers</a>
-│   └── <a href="invitation-managemen/README.md#posdealers-invite-posoperators" title="POSDealers invite PosOperators">POSDealers invite PosOperators</a>
-├── <a href="middleware/README.md" title="Middleware">Rollout of the fiskaltrust.Middleware</a>
-│   └── <a href="middleware/README.md#configuration-of-the-fiskaltrustmiddleware" title="Configuration of the fiskaltrust.Middleware">Configuration of the fiskaltrust.Middleware</a>
-│   └── <a href="middleware/README.md#start-and-test-the-service" title="Start and test the service">Start and test the service</a>
-│   └── <a href="middleware/README.md#test-data-export" title="Test data export">Test data export</a>
-│   └── <a href="middleware/README.md#rollout-scenarios" title="Rollout scenarios">Rollout scenarios</a>
-│   └── <a href="middleware/README.md#rollout-automation" title="Rollout automationt">Rollout automation</a>
-├── <a href="shop/README.md" title="Buy and resell fiskaltrust products">Buy and resell fiskaltrust products</a>
-│   └── <a href="shop/README.md#fiskaltrustshop" title="fiskaltrust.Shop">fiskaltrust.Shop</a>
-│   └── <a href="shop/README.md#framework-agreements-for-volume-discount" title="Framework agreements for volume discount">Framework agreements for volume discount</a>
-│   └── <a href="shop/README.md#buy-products-via-entitlements" title="Buy products via Entitlements">Buy products via Entitlements</a>
-│   └── <a href="shop/README.md#transfer-of-purchased-entitlements-to-the-posoperator" title="Transfer of purchased entitlements to the PosOperators">Transfer of purchased entitlements to the PosOperators</a>
-│   └── <a href="shop/README.md#delivery-options-for-hardware-tses" title="Delivery options for hardware TSEs">Delivery options for hardware TSEs</a>
-│   └── <a href="shop/README.md#swissbit-cloud-tse-check-out-and-setup" title="Swissbit Cloud TSE check out and setup">Swissbit Cloud TSE check out and setup</a>
-│   └── <a href="shop/README.md#fiskaly-cloud-tse-check-out-and-setup" title="fiskaly Cloud TSE  check out and setup">fiskaly Cloud TSE check out and setup</a>
-</pre>
-</div>

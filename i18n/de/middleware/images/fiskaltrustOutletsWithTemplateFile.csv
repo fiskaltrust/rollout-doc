@@ -1,4 +1,0 @@
-LocationId;OutletNumber;Name;Address;ContactName;Telephone;Fax;PostalCode;City;County;StateOrProvince;Country;Template;TillCode
-;15;Outlet 5;street address5;;;;80803;München;;;DE;template1.json;till1
-;16;Outlet 6;street address6;;;;80803;München;;;DE;template2.json;till2
-;17;Outlet 7;street address7;;;;80803;München;;;DE;template1.json;till3
