@@ -144,19 +144,6 @@ module.exports = {
 			items: [
 				'rollout-doc/information-sources/knowledge-base',
 				'rollout-doc/information-sources/cases',
-				{
-					type: 'category',
-					label: 'Tutorials',
-					items: [
-						{
-							type: 'category',
-							label: 'German market',
-							items: [
-								'rollout-doc/information-sources/tutorials/de/switch-scu'
-							]
-						}
-					]
-				},
 				'rollout-doc/information-sources/downloads',
 				'rollout-doc/information-sources/status-of-third-party-partners',
 				'rollout-doc/information-sources/news',
