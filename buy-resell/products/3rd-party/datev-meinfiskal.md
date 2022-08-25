@@ -51,8 +51,6 @@ The PosOperator already has an account in the fiskaltrust.portal, agreed to the 
   5. Check whether you can successfully perform a validity check with either St.-ldNr. or USt-ldNr.
   6. Save your entries with "Save". 
 
-</details>
-
 ### Setup instructions
 
 :::tip
