@@ -194,7 +194,7 @@ In the future, all users will use the login listed up [above](registration.md#Co
 | action | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |`Remove assignment` |This action only removes the assignment of the e-mail address to the company, but does not delete it for security reasons. |
-|`Set to new Primary Contact`| The previous access rights are **completely and at once withdrawn from the own contact** with this action. This action **immediately and completely** revokes the access rights of the previously privileged contact. After the next logout, the former primary contact cannot even log in to the fiskaltrust.portal. The new primary contact must reassign access rights to his own company to him. |
+|`Set to new Primary Contact`| The previous access rights are **completely and at once withdrawn from the own contact** with this action. This action **immediately and completely** revokes the access rights of the previously privileged contact. After the next logout, the former primary contact cannot even log in to the fiskaltrust.Portal. The new primary contact must reassign access rights to his own company to him. |
 
 ## Troubleshooting
 

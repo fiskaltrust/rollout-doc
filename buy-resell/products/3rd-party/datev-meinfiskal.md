@@ -16,7 +16,7 @@ As DATEV MeinFiskal is only available in Germany, this tutorial does not apply t
 
 :::
 
- "DATEV MeinFiskal" is an integral part of the "fiskaltrust.Sorglos" product bundle.The data is transferred from the fiskaltrust.portal via an automated interface to the "[DATEV MeinFiskal](https://www.meinfiskal.de/)" platform, so the included services "DATEV Kassenarchiv online" and the "DATEV Kassenbuch-Schnittstelle" can be used.
+ "DATEV MeinFiskal" is an integral part of the "fiskaltrust.Sorglos" product bundle.The data is transferred from the fiskaltrust.Portal via an automated interface to the "[DATEV MeinFiskal](https://www.meinfiskal.de/)" platform, so the included services "DATEV Kassenarchiv online" and the "DATEV Kassenbuch-Schnittstelle" can be used.
 
 ### Process description
 
@@ -24,7 +24,7 @@ The PosDealer activates the DATEV MeinFiskal function in the fiskaltrust.Portal 
 Customer data such as E-Mail address and tax number (St.-ldNr. or USt-ldNr.) are exchanged between the fiskaltrust.Portal and the "[DATEV MeinFiskal](https://www.meinfiskal.de/)" platform. A MeinFiskal user account and a password is created automatically at DATEV, and the same e-mail address is used as in the fiskaltrust.Portal. 
 The PosDealer changes the password for the user account at DATEV MeinFiskal and confirms the data transfer between fiskaltrust and DATEV. The PosOperator receives a welcome e-mail from DATEV MeinFiskal and can use the services "DATEV Kassenarchiv online" and the "DATEV Kassenbuch-Schnittstelle".
 
-Fiskaltrust takes over the generation of the legally required data formats (DSFinV-K, DFKA taxonomy, .tar files, native format, other documents), as well as the connection and data transfer to DATEV MeinFiskal via the fiskaltrust.portal. Therefore, no further connection by the PosCreator is necessary.
+Fiskaltrust takes over the generation of the legally required data formats (DSFinV-K, DFKA taxonomy, .tar files, native format, other documents), as well as the connection and data transfer to DATEV MeinFiskal via the fiskaltrust.Portal. Therefore, no further connection by the PosCreator is necessary.
 
 ![MeinFiskal_Prozess](../../images/meinFiskal_Schnittstellen.png)
 
@@ -32,7 +32,7 @@ Fiskaltrust takes over the generation of the legally required data formats (DSFi
 
 ### Prerequisites
 
-The PosOperator already has an account in the fiskaltrust.portal, agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust, checked his master data, and the PosDealer has the authorization to sign the contract. If these requirements are not met, the [PosOperator Onboarding](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/invitation-management) must be completed first, or the PosOperator itself must perform the setup.
+The PosOperator already has an account in the fiskaltrust.Portal, agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust, checked his master data, and the PosDealer has the authorization to sign the contract. If these requirements are not met, the [PosOperator Onboarding](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/invitation-management) must be completed first, or the PosOperator itself must perform the setup.
 
   Sign contract permission
 
