@@ -1,7 +1,7 @@
 ---
 slug: /posdealers/buy-resell/products/3rd-party/datev-meinfiskal
 title: DATEV MeinFiskal
----fiskaltrust.Portal
+---
 # DATEV MeinFiskal
 
 :::info summary
@@ -19,17 +19,17 @@ Please note that the included links in this section lead to DATEV, which only ke
 :::
 
   [DATEV](https://www.datev.de/) offers fiscalization solutions for companies in Germany. The solutions for electronic cash management of DATEV meet all legal requirements.   
-_[DATEV MeinFiskal](https://www.meinfiskal.de/)_ is an open cloud platform hosted by DATEV. fiskaltrust, PosCreators and providers of TSE (technical security equipment) joined this platform.  
+_[DATEV MeinFiskal](https://www.meinfiskal.de/)_ is an open cloud platform hosted by DATEV. PosCreators, providers of TSE (technical security equipment) and fiskaltrust joined this platform.  
 _DATEV MeinFiskal_ is an integral part of the _fiskaltrust.Carefree_ product bundle. The data is transferred from the fiskaltrust.Portal via an automated interface to the _DATEV MeinFiskal_ platform.  
 
-The _fiskaltrust.Carefree_ product bundle also includes the _[DATEV Kassenarchiv online](https://apps.datev.de/help-center/documents/0904340)_. This service enables additionally to [revision-safe archiving in fiskaltrust's cloud](https://docs.fiskaltrust.cloud/de/docs/posdealers/buy-resell/products/revision-safe-archiving) daily archiving of end-of-day totals, individual records and other tax-relevant documents as an "extended memory" of the PosSystem. 
+The _fiskaltrust.Carefree_ product bundle also includes the _[DATEV Kassenarchiv online](https://apps.datev.de/help-center/documents/0904340)_. Additionally, this service enables [revision-safe archiving](https://docs.fiskaltrust.cloud/de/docs/posdealers/buy-resell/products/revision-safe-archiving) in fiskaltrust's cloud, daily archiving of end-of-day totals, individual records and other tax-relevant documents as an "extended memory" of the PosSystem. 
 By usage of the _DATEV Kassenarchiv online_, your PosOperator reaches a legally compliant kind of higher security:
 * Additional storage to prevent loss of the data 
 * Proof that nobody can change the PosSystem data
 * Accordance with the GoBD
 * Audit-proof archive for the duration of the statutory retention period
 
-Tax consultants and authorities are working on introducing digital workflows to clients. The interface named _[DATEV Kassenbuch-Schnittstelle](https://apps.datev.de/help-center/documents/0904388)_is available from DATEV; data from PosSystems for financial accounting can be forwarded directly to the tax advisor's DATEV software solution. In addition, an up-to-date database without delays creates transparency in the event of an upcoming external audit.
+Tax consultants and authorities are working on introducing digital workflows to clients. The interface named *[DATEV Kassenbuch-Schnittstelle](https://apps.datev.de/help-center/documents/0904388)* is available from DATEV; data from PosSystems for financial accounting can be forwarded directly to the tax advisor's DATEV software solution. In addition, an up-to-date database without delays creates transparency in the event of an upcoming external audit.
 
 ### Process description
 
@@ -100,7 +100,7 @@ Please note that the _DATEV MeinFiskal_ account is created automatically during 
 
   </details>
 
-* 4. The _DATEV MeinFiskal_ dialog box for changing the password is displayed. The PosDealer sets a new password and clicks **Save**.
+4. The _DATEV MeinFiskal_ dialog box for changing the password is displayed. The PosDealer sets a new password and clicks **Save**.
 
   <details>
   <summary>Screenshot DATEV password change</summary>  
