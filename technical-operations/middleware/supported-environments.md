@@ -19,7 +19,7 @@ After reading this, you can prepare a system where the Middleware will run.
 | **Operating System:** <br /> Android        | **Germany only**<br />**Android 7** or higher<br />Swissbit or Fiskaly TSSs only |
 | **Databases**                         | **SQLite** (local DB)<br />**MS SQL Server** (All versions currently supported by Microsoft)<br />**MySQL** (Germany only) |
 | **Hardware**                          | At least 200MB of memory per Queue<br/> |
-|**CPU Architecture**                   | Multicore CPU recommended <br /> ARM usable with restrictions - [more details here](https://github.com/fiskaltrust/interface-doc/tree/master/doc/middleware-de-kassensichv/operation-modes) <br />The actual memory amount depends on the amount of receipts to process. |
+|**CPU Architecture**                   | Multicore CPU recommended <br /> * x86 <br/> * x64 <br/> * ARM usable with restrictions - [more details here](https://github.com/fiskaltrust/interface-doc/tree/master/doc/middleware-de-kassensichv/operation-modes) <br />The actual memory amount depends on the amount of receipts to process. |
 | **Local Storage**                     | At least 500 MB (200 MB for the Middleware + 200 MB reserved for update packages)<br />Optional: Storage for SQLite DB (~ 8-10Kb/receipt) |
 
 :::info SQLite Database
