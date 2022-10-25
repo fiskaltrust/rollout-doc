@@ -14,7 +14,7 @@ Instead of manually creating and configuring a CashBox, you can use a template t
 
 ## Create & Edit Template
 
-At `Configuration-> Template`, you can see the existing templates, clone and edit them and create new ones.
+At `Configuration` / `Template`, you can see the existing templates, clone and edit them and create new ones.
 
 ![Template List](./images/template-shop-list.png)
 
