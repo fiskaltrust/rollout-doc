@@ -12,11 +12,11 @@ After reading this, you can explain what a Helper does and how to use it.
 
 ## Introduction
 
-Helpers can extend the CashBox with further functionality or change existing functionality. They are created in the portal like any other technical component and assigned to a CashBox.
+Helpers can extend your CashBoxes with further functionality or change existing functionality. They are created in the portal like any other technical component and assigned to a CashBox.
 
 ## Types of Helpers
 
-The type and number of Helpers can vary depending on national laws and/or the needed functionality of POS-Systems.
+The type and number of Helpers can vary depending on national laws and the needed functionality of POS-Systems.
 Depending on the Helper type, it might be necessary to enter values for parameters or add additional parameters.
 
 ![Types of Helpers](images/54446-1-Types-of-Helpers.png "Types of Helpers")
@@ -106,14 +106,27 @@ See **Configure a Helper** below for further details of configuration.
 
 ## Configure a Helper
 
-![Configuration / Helper / Configuration ](images/54446-4-configure-Helper.png "Configuration / Helper / Configuration")
+![Configuration / Helper / Configuration ](images/54446-5-configure-Helper.png "Configuration / Helper / Configuration")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |...|![Number 1](../../images/numbers/circle-1o.png) _Choose `Configuration`/ `Helper`, search for the desired Helper and press `Configuration`._  |
-|![Number 2](../../images/numbers/circle-2o.png)| Enter a parameter like mentioned above at `Key` and add a `Value` |
-|![Number 3](../../images/numbers/circle-3o.png) |Edit the **name** for your Helper at  `Description`. |
-|![Number 4](../../images/numbers/circle-4o.png) |Your formerly selected **Helper type** using the drop-down menu at `Package name` **cannot be changed later**. |
-|![Number 5](../../images/numbers/circle-5o.png) |You can select another `Package version`. Should the desired version not be available, use `Reload package version`to refresh the drop-down menu.|
-|![Number 6](../../images/numbers/circle-6o.png) |You can enter a URL for your Helper. With `net.pipe`you get a URL suitable for local use without an internet connection because no firewall settings are required. With `http`, the system generates a URL for you with which the POS-System can access the Helper. You can rename the URL yourself. This URL can look like this: http://localhost:1200/fiskaltrust.Helper. |
-|![Number 7](../../images/numbers/circle-7o.png) |`Save` your changes or use `Save and close` to return to `Configuration`/ `Helper`. |
+|![Number 2](../../images/numbers/circle-2o.png)| Enter a parameter like the one mentioned above at `Key` and add a `Value`. |
+|![Number 3](../../images/numbers/circle-3o.png)| Select ![Configuration / Helper / Plus ](images/54446-4P-configure-Helper.png "Configuration / Helper / Plus") to add another parameter and enter `Key` and `Value`. |
+|![Number 4](../../images/numbers/circle-4o.png) |Edit the **name** for your Helper in  `Description`. |
+|![Number 5](../../images/numbers/circle-5o.png) |You cannot change your formerly selected Helper type using the drop-down menu at **Package name**. |
+|![Number 6](../../images/numbers/circle-6o.png) |You can select another `Package version`. If the desired version is unavailable, use `Reload package version` to refresh the drop-down menu.|
+|![Number 7](../../images/numbers/circle-7o.png) |You can enter a URL for your Helper. With `net.pipe`you get a URL suitable for local use without an internet connection because no firewall settings are required. With `http`, the system generates a URL for you with which the POS-System can access the Helper. You can rename the URL yourself. For example, this URL can look like this: http://localhost:1200/fiskaltrust.Helper. |
+|![Number 8](../../images/numbers/circle-8o.png) |`Save` your changes or use `Save and close` to return to `Configuration`/ `Helper`. |
+
+## Assign a Helper
+
+![Configuration / Helper / Configuration ](images/54446-6-configure-Helper.png "Configuration / Helper / Configuration")
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|...|![Number 1](../../images/numbers/circle-1o.png) _Change to `Configuration`/ `CashBox`, search for the desired CashBox and press `Drag & Drop to Edit`._  |
+|![Number 2](../../images/numbers/circle-2o.png)| Reduce the List of `Queues` |
+|![Number 3](../../images/numbers/circle-3o.png)| Drag the desired Helper from the menu on the right side and drop it on the left side  |
+|![Number 4](../../images/numbers/circle-4o.png) |Save your changes with `Save`. |
+|... |![Number 5](../../images/numbers/circle-5o.png)Back at `Configuration`/ `CashBox`, select `Rebuild configuration` and restart the CashBox. Note the [formerly mentioned warning](helper.md#HelipadHelper-(Description))|
