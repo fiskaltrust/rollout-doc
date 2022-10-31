@@ -23,7 +23,7 @@ Depending on the Helper type, it might be necessary to enter values for paramete
 
 ### HelipadHelper (Description)
 
-One example of a Helper available in all countries is the HelipadHelper, which is responsible for uploading data from the local queue to the chosen cloud. This Helper belongs to the default settings in the background and is assigned to each CashBox. Therefore, it has not to be added by the user. 
+One example of a Helper available in all countries is the HelipadHelper, which is responsible for uploading data from the local queue to the cloud receipt archive. This Helper belongs to the default settings in the background and is assigned to each CashBox. Therefore, it has not to be added by the user. 
 You can add your own HelipadHelper to change the upload behavior. 
 
 :::caution Troubleshooting only
