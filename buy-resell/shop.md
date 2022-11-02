@@ -47,7 +47,7 @@ If you want to try how the shop works, you should do this in the [Sandbox](../ge
 | ![](../images/numbers/6.png) | Clicking the `binding order` button shows a confirmation of your order, you get a copy via E-Mail.  | 
 
 ## Transfer Entitlements to PosOperators Outlet
-To transfer the entitlements to the PosOperator, you have to [surrogate](../getting-started/operator-onboarding/surrogating) into that account by clicking the PosOperators name at `PosOperator` / `Overview`. 
+To transfer the entitlements to the PosOperator, you have to [surrogate](../getting-started/operator-onboarding/surrogating.md) into that account by clicking the PosOperators name at `PosOperator` / `Overview`. 
 
 import ReactPlayer from "react-player"
 

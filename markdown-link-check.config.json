@@ -3,6 +3,7 @@
       { "pattern": "^https?://fiskaltrust\\.fr.*" },
       { "pattern": "^https?://fiskaltrust\\.de.*" },
       { "pattern": "^https?://fiskaltrust\\.eu.*" },
+      { "pattern": "^https://portal-sandbox\\.fiskaltrust\\.TLD.*" },      
       { "pattern": "^https?://signaturcloud\\.fiskaltrust\\.at/?$" },
       { "pattern": "^https?://signaturcloud\\.fiskaltrust\\.fr/?$" },
       { "pattern": "^https?://helipad\\.fiskaltrust\\.cloud/?$" },

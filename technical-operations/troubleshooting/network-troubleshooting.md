@@ -142,7 +142,7 @@ You can use [curl](https://curl.se) to perform a basic connection test against a
 
 Use the following command to run a test request against `https://packages.fiskaltrust.cloud`.
 
-"`console
+```console
 curl.exe -I https://packages.fiskaltrust.cloud
 ```
 
