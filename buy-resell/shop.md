@@ -16,7 +16,7 @@ The shop is the most basic way to buy _fiskaltrust_ [products](products) for Pos
 
 :::info prerequisites
 
-As a PosDealer, you should know how to [surrogate](../getting-started/operator-onboarding/surrogating), have signed a  [volume purchase agreement](overview.md), have a volume discount and a credit limit. 
+As a PosDealer, you should know how to [surrogate](../getting-started/operator-onboarding/surrogating.md), have signed a  [volume purchase agreement](overview.md), have a volume discount and a credit limit. 
 As a PosOperator, you should clarify with your PosDealer whether to buy the products directly or via your PosDealer.
 
 :::
@@ -31,7 +31,7 @@ In this example, we will go through buying a product using entitlements. The pro
 
 :::tip sandbox
 
-If you want to try how the shop works, you should do this in the [Sandbox](../getting-started/sandbox). Orders placed in the sandbox are just for testing purposes and will not cost you anything, but always make sure you are working in the sandbox.
+If you want to try how the shop works, you should do this in the [Sandbox](../getting-started/sandbox.md). Orders placed in the sandbox are just for testing purposes and will not cost you anything, but always make sure you are working in the sandbox.
 
 :::
 

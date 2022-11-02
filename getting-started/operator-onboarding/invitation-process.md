@@ -10,7 +10,7 @@ After reading this, you can invite a single PosOperator and perform a bulk invit
 
 ## Introduction
 
-As described in the section [business model](../../overview/business-model) _"we are happy to support you (as a PosCreator) in the development of POS-Systems"..."For PosDealers, we offer the fiskaltrust.Portal, which can be used free of charge, as a platform on which the POS-Systems of the PosCreators can be accessed. You as a PosDealer can purchase additional products and product packages in the store of the fiskaltrust.Portal. If your PosOperators are invited to use the fiskaltrust.Portal, the fiskaltrust.products can be transferred to these accounts."_
+As described in the section [business model](../../overview/business-model.md) _"we are happy to support you (as a PosCreator) in the development of POS-Systems"..."For PosDealers, we offer the fiskaltrust.Portal, which can be used free of charge, as a platform on which the POS-Systems of the PosCreators can be accessed. You as a PosDealer can purchase additional products and product packages in the store of the fiskaltrust.Portal. If your PosOperators are invited to use the fiskaltrust.Portal, the fiskaltrust.products can be transferred to these accounts."_
 So you, as a PosDealer, get an invitation by a PosCreator to the fiskaltrust.Portal and your PosOperators get their invitation from you. The invitation of a single PosOperator is possible, for example, for testing in the sandbox or for a new contact. A bulk invitation is your option when you want to invite several PosOperators.
 
 Please note that you cannot delete an E-Mail address entirely in the fiskaltrust.Portal. Therefore, you cannot transfer a formerly used E-Mail address to any other account. So we strictly recommend testing in the sandbox to avoid trouble with E-Mail addresses in the productive system. 
@@ -117,7 +117,7 @@ Inviting PosOperators to a PosDealer account with an import file is especially i
 |![Number 6](../../images/numbers/circle-6o.png) |Change  again to the fiskaltrust.Portal and choose `PosOperator` / `Invitation`.|
 |![Number 7](../../images/numbers/circle-7o.png) |In the section named `PosOperators that should be invited` use `Choose file...` to set your CSV file.  |
 |![Number 8](../../images/numbers/circle-8o.png) |With `Import` the data are uploaded and analyzed to avoid duplicate or incomplete records. You can control or add data to each record.  |
-|![Number 9](../../images/numbers/circle-9o.png) |Choose `Assign all PosOperators` to send the invitation-E-Mail to each business partner in your CSV file.  For a preview to the sent E-Mails refer [here](#preview-of-the-E-Mail-invitation)  |
+|![Number 9](../../images/numbers/circle-9o.png) |Choose `Assign all PosOperators` to send the invitation-E-Mail to each business partner in your CSV file.  For a preview to the sent E-Mails refer [here](invitation-process.md#preview-of-the-E-Mail-invitation)  |
  
 ### Fields of the CSV file
 

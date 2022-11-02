@@ -18,7 +18,7 @@ We use the example of checking the master data of a PosOperator to describe Surr
 ### Prerequisites
 
 1. You, as a PosDealer, have prepared your account ready to use.
-2. You have configured invitations to PosOperators as described under [Preparation of Invitations](invitation-process.md/#preparation-of-invitations).
+2. You have configured invitations to PosOperators as described under [Preparation of Invitations](invitation-process.md#preparation-of-invitations).
 3. The PosOperator followed the invitation by activating the role contract.
 4. There have been no changes with other role contracts or your authorizations.
 5. You, as a PosDealer, check the status of our invited PosOperators with `PosOperator` / `Overview`:
@@ -54,7 +54,7 @@ We use the example of checking the master data of a PosOperator to describe Surr
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |After signing in (for PosOperators) or surrogating in the Account of a PosOperator (for PosDealers), choose `[COMPANY NAME]`/ `Overview`.  |
-|![Number 2](images/Numbers/circle-2o.png) |Determine if the role PosOperator has been activated as well as no other. Otherwise, cancel the undesired role. Please check [Company Roles](../company-roles) for further questions |
+|![Number 2](images/Numbers/circle-2o.png) |Determine if the role PosOperator has been activated as well as no other. Otherwise, cancel the undesired role. Please check [Company Roles](../company-roles.md) for further questions |
 
 ![surrogating accounts](images/6-surrogating-accounts.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Edit")
 

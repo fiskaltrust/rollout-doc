@@ -52,7 +52,7 @@ As a PosDealer, you can get an overview of all your PosSystems and their **PosSy
 1. Log in to **fiskaltrust.Portal** and select `PosSystems`.
 2. If no PosSystem should be available, contact your PosCreator.
 
-The PosOperator already has an account in the **fiskaltrust.Portal**, agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust, checked his master data, and you, as a PosDealer, have the authorization to sign contracts. If these requirements are not met, the [PosOperator Onboarding](https://docs.fiskaltrust.cloud/docs/posdealers/rollout-doc/invitation-management) must be completed first, or the PosOperator itself must perform the setup.
+The PosOperator already has an account in the **fiskaltrust.Portal**, agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust, checked his master data, and you, as a PosDealer, have the authorization to sign contracts. If these requirements are not met, the [PosOperator Onboarding](../../../getting-started/operator-onboarding/invitation-process.md) must be completed first, or the PosOperator itself must perform the setup.
 
 ### Sign contract permission
 

@@ -19,9 +19,9 @@ These products may differ between the markets we operate in, as they're designed
 
 First, the products listed below are usually available in market-specific [**product bundles**](bundles.md). In these bundles, we package all relevant products that are required to be fully legally compliant without any further requirements, providing **carefree fiscalization**.
 
-The [**Middleware**](Middleware.md) is the free core product that is used to fiscalize receipts and abstract signing devices and services. It's either running in the cloud or directly at the user (on-premise).
+The [**Middleware**](middleware.md) is the free core product that is used to fiscalize receipts and abstract signing devices and services. It's either running in the cloud or directly at the user (on-premise).
 
-Those above [**signing devices and services**](signing.md) are also distributed by fiskaltrust. We work closely with our partners to ensure that we make obtaining legally required signing as easy as possible - either by providing hosted signing services where applicable or by re-distributing 3rd-party devices or services via our shop.
+Those above [**signing devices and services**](signing/signing-overview.md) are also distributed by fiskaltrust. We work closely with our partners to ensure that we make obtaining legally required signing as easy as possible - either by providing hosted signing services where applicable or by re-distributing 3rd-party devices or services via our shop.
 
 Add-on products for [**archiving**](revision-safe-archiving.md) can be used to securely store POS data in revision-safe storage, which is required in most countries where fiscalization laws are in place. 
 
