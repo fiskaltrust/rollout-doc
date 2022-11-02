@@ -2,12 +2,15 @@
     "ignorePatterns": [
       { "pattern": "^https?://fiskaltrust\\.fr.*" },
       { "pattern": "^https?://fiskaltrust\\.de.*" },
+      { "pattern": "^https?://fiskaltrust\\.eu.*" },
       { "pattern": "^https?://signaturcloud\\.fiskaltrust\\.at/?$" },
       { "pattern": "^https?://signaturcloud\\.fiskaltrust\\.fr/?$" },
       { "pattern": "^https?://helipad\\.fiskaltrust\\.cloud/?$" },
       { "pattern": "^https?://packages\\.fiskaltrust\\.cloud/?$" },
       { "pattern": "^https?://eur-lex\\.europa\\.eu.*" },
       { "pattern": "^https://dc.services\\.visualstudio\\.com/?$" },
+      { "pattern": "^https://codebeautify\\.org/json-escape-unescape$" },
+      { "pattern": "^https?://localhost.?" },
       { "pattern": "^mailto:.*" }
     ]
   }

@@ -192,6 +192,6 @@ If your operating system is not supported or you have customized your certificat
 
 ### Queue/SCU connection
 
-This issue typically indicates that the [queue](../middleware/overview#queue) lost its internal connection to an [SCU](../middleware/overview#scu-signature-creation-unit). This loss may occur after you shifted components within a CashBox or any of the involved machines got new IP addresses assigned.
+This issue typically indicates that the [queue](../middleware/overview.md#queue) lost its internal connection to an [SCU](../middleware/overview.md#scu-signature-creation-unit). This loss may occur after you shifted components within a CashBox or any of the involved machines got new IP addresses assigned.
 
-Fixing this issue is often quickly done with a [rebuild](../middleware/cashbox#rebuilding) of the CashBox and a subsequent restart of the Middleware. Please verify the configuration of the relevant CashBoxes beforehand. In particular, please pay attention to the hostnames, IP addresses, and the ports you configured for each component and make sure they [resolve](#dns) and match the actual machine configuration. Also, please double-check that no (local) firewall may prevent connections.
+Fixing this issue is often quickly done with a [rebuild](../middleware/cashbox.md#rebuilding) of the CashBox and a subsequent restart of the Middleware. Please verify the configuration of the relevant CashBoxes beforehand. In particular, please pay attention to the hostnames, IP addresses, and the ports you configured for each component and make sure they [resolve](#dns) and match the actual machine configuration. Also, please double-check that no (local) firewall may prevent connections.
