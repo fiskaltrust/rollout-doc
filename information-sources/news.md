@@ -18,9 +18,9 @@ Another way to stay with us is to read our news.
 ## Work steps
 
 
-| target group | link                                                                                                                |
+| Target group | Link                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |general |https://www.linkedin.com/  |
 |Austria |https://www.fiskaltrust.at/news/ |
 |France |https://fiskaltrust.fr/en/ft-news/ |
-|Germany |https://fiskaltrust.de/news/ |
+|Germany |https://fiskaltrust.de/allgemein/ |

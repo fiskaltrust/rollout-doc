@@ -23,10 +23,10 @@ If you have any questions, please always use the reply E-Mail. The case number w
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../images/Numbers/circle-1o.png)| `Help:` Tick to open the Help-Area.  |
-|![Number 2](../images/Numbers/circle-2o.png)| `Cases`: Tick to open the Cases.  |
-|![Number 3](../images/Numbers/circle-3o.png)| `Search table`: Enter a search keyword.  |
-|![Number 4](../images/Numbers/circle-4o.png)| Selection of the search period: reduce or select the period, when your case has been created.  |
-|![Number 5](../images/Numbers/circle-5o.png)| `Case Number`: Tick here to open the description of the case.  |
-|![Number 6](../images/Numbers/circle-6o.png)| `Progress`: the progress of a case changes from  `Identify` to `Research` and `Solved`.  |
+|![Number 1](../images/numbers/circle-1o.png)| `Help:` Tick to open the Help-Area.  |
+|![Number 2](../images/numbers/circle-2o.png)| `Cases`: Tick to open the Cases.  |
+|![Number 3](../images/numbers/circle-3o.png)| `Search table`: Enter a search keyword.  |
+|![Number 4](../images/numbers/circle-4o.png)| Selection of the search period: reduce or select the period, when your case has been created.  |
+|![Number 5](../images/numbers/circle-5o.png)| `Case Number`: Tick here to open the description of the case.  |
+|![Number 6](../images/numbers/circle-6o.png)| `Progress`: the progress of a case changes from  `Identify` to `Research` and `Solved`.  |
 

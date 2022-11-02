@@ -19,7 +19,7 @@ After reading this, you can use the documentation effectively in your specific f
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |Jump back to the [start](https://docs.fiskaltrust.cloud/)  |
 |![Number 2](images/Numbers/circle-2o.png) |PosCreators start reading [here](https://docs.fiskaltrust.cloud/de/docs/poscreators/get-started)  |
-|![Number 3](images/Numbers/circle-3o.png) |PosDealers start reading [here](https://docs.fiskaltrust.cloud/de/docs/posdealers/get-started)   |
+|![Number 3](images/Numbers/circle-3o.png) |PosDealers start reading [here](https://docs.fiskaltrust.cloud/docs/posdealers/introduction)   |
 |![Number 4](images/Numbers/circle-4o.png) |Here you can find more detailed [product descriptions](https://docs.fiskaltrust.cloud/docs/product-description/germany)   |
 |![Number 5](images/Numbers/circle-5o.png) |Here you will find answers to frequently asked questions (FAQ), a description of [customer roles](https://docs.fiskaltrust.cloud/docs/faq/customer-roles) like PosCreator, PosDealer an our [Terminology](https://docs.fiskaltrust.cloud/docs/faq/terms)  |
 |![Number 6](images/Numbers/circle-6o.png) |Jump to our [Release Notes](https://docs.fiskaltrust.cloud/docs/release-notes) |

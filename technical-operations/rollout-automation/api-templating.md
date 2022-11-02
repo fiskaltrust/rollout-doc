@@ -230,14 +230,14 @@ import ReactPlayer from "react-player"
 
 |               Step               | Description                                                  |
 | :------------------------------: | ------------------------------------------------------------ |
-| ![](../../images/Numbers/1.png)  | Import the [demo collection](../../assets/template_postman.zip) into your Postman instance. |
-| ![](../../images/Numbers/2.png)  | Create a duplicate entry of the Sandbox environment.         |
-| ![](../../images/Numbers/3.png)  | Open the newly created entry.                                |
-| ![](../../images/Numbers/4.png)  | In the `Params` tab, specify the desired Sandbox outlet ID and CashBox description. |
-| ![](../../images/Numbers/5.png)  | In the `Headers` tab, specify your Sandbox [account ID and Access Token](#prerequisites). |
-| ![](../../images/Numbers/6.png)  | In the portal, fetch a demo template from `Configuration` / `Template`. |
-| ![](../../images/Numbers/7.png)  | [Escape](#escaping-the-template) the template.               |
-| ![](../../images/Numbers/8.png)  | In the `Body` tab, add the escaped template as JSON string.  |
-| ![](../../images/Numbers/9.png)  | Send the request using the `Send` button.                    |
-| ![](../../images/Numbers/10.png) | Check if the response indicated a successful request.        |
-| ![](../../images/Numbers/11.png) | In the portal, verify if the CashBox was properly created under `Configuration` / `CashBox`. |
+| ![](../../images/numbers/1.png)  | Import the [demo collection](../../assets/template_postman.zip) into your Postman instance. |
+| ![](../../images/numbers/2.png)  | Create a duplicate entry of the Sandbox environment.         |
+| ![](../../images/numbers/3.png)  | Open the newly created entry.                                |
+| ![](../../images/numbers/4.png)  | In the `Params` tab, specify the desired Sandbox outlet ID and CashBox description. |
+| ![](../../images/numbers/5.png)  | In the `Headers` tab, specify your Sandbox [account ID and Access Token](#prerequisites). |
+| ![](../../images/numbers/6.png)  | In the portal, fetch a demo template from `Configuration` / `Template`. |
+| ![](../../images/numbers/7.png)  | [Escape](#escaping-the-template) the template.               |
+| ![](../../images/numbers/8.png)  | In the `Body` tab, add the escaped template as JSON string.  |
+| ![](../../images/numbers/9.png)  | Send the request using the `Send` button.                    |
+| ![](../../images/numbers/10.png) | Check if the response indicated a successful request.        |
+| ![](../../images/numbers/11.png) | In the portal, verify if the CashBox was properly created under `Configuration` / `CashBox`. |

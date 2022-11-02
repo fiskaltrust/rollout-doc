@@ -30,18 +30,18 @@ import ReactPlayer from "react-player"
 
 | Options | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../images/Numbers/circle-1o.png)| You, as PosDealer or PosOperator, log in to the desired account.  |
-|![Number 2](../../images/Numbers/circle-2o.png)| At `Configuration` / `Queue` select the queue from which data should be exported.  |
-|![Number 3](../../images/Numbers/circle-3o.png)| If necessary, reduce the number of queues displayed by filter Criteria like `Active Queues` or by entering search terms.|
-|![Number 4](../../images/Numbers/circle-4o.png)| Check the documents by selecting `Receipt Journals`. There you can check individual receipts in the preview.  |
-|![Number 5](../../images/Numbers/circle-5o.png)| With `Back to selection`, you return to the `List of queues`.  |
-|![Number 6](../../images/Numbers/circle-6o.png)| With `Export`, you switch to creating queue exports.  |
-|![Number 7](../../images/Numbers/circle-7o.png)| Define the export range by limiting it with document numbers or dates. Alternatively, use the slider to specify the export range. |
-|![Number 8](../../images/Numbers/circle-8o.png)| Select one of the export types. |
-|![Number 9](../../images/Numbers/circle-9o.png)| Even if no target is selected, you can download the export from fiskaltrust.Portal. |
-|![Number 10](../../images/Numbers/circle-10o.png)| With your click on `Start Export` data processing starts. You will be redirected to or find the exports later with `Tools` / `Downloads`. |
-|![Number 11](../../images/Numbers/circle-11o.png)|Open the report data with a tick at `Status`. `export.zip` gives you access to the previously selected data, and `journal.json` gives you technical status information of the export job. |
-|![Number 12](../../images/Numbers/circle-12o.png)| Tick `Switch to your account` or repeat these steps with another queue. |
+|![Number 1](../../images/numbers/circle-1o.png)| You, as PosDealer or PosOperator, log in to the desired account.  |
+|![Number 2](../../images/numbers/circle-2o.png)| At `Configuration` / `Queue` select the queue from which data should be exported.  |
+|![Number 3](../../images/numbers/circle-3o.png)| If necessary, reduce the number of queues displayed by filter Criteria like `Active Queues` or by entering search terms.|
+|![Number 4](../../images/numbers/circle-4o.png)| Check the documents by selecting `Receipt Journals`. There you can check individual receipts in the preview.  |
+|![Number 5](../../images/numbers/circle-5o.png)| With `Back to selection`, you return to the `List of queues`.  |
+|![Number 6](../../images/numbers/circle-6o.png)| With `Export`, you switch to creating queue exports.  |
+|![Number 7](../../images/numbers/circle-7o.png)| Define the export range by limiting it with document numbers or dates. Alternatively, use the slider to specify the export range. |
+|![Number 8](../../images/numbers/circle-8o.png)| Select one of the export types. |
+|![Number 9](../../images/numbers/circle-9o.png)| Even if no target is selected, you can download the export from fiskaltrust.Portal. |
+|![Number 10](../../images/numbers/circle-10o.png)| With your click on `Start Export` data processing starts. You will be redirected to or find the exports later with `Tools` / `Downloads`. |
+|![Number 11](../../images/numbers/circle-11o.png)|Open the report data with a tick at `Status`. `export.zip` gives you access to the previously selected data, and `journal.json` gives you technical status information of the export job. |
+|![Number 12](../../images/numbers/circle-12o.png)| Tick `Switch to your account` or repeat these steps with another queue. |
 
 ## Country-specific exports
 Most countries require specific export formats in their fiscalization laws and regulations. The fiskaltrust.Middleware and the Portal generally support all exports needed in each market we operate in so that cash registers using it are automatically compliant with these requirements.

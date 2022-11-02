@@ -27,11 +27,11 @@ At the end of each article, you will find the option to leave feedback. In addit
 
 | options | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../images/Numbers/circle-1o.png)| `Help:` Tick to open the Help-Area.  |
-|![Number 2](../images/Numbers/circle-2o.png)| `Knowledge Base Articles`: Tick to open the collection of articles.  |
-|![Number 3](../images/Numbers/circle-3o.png)| `Search for articles`: Enter a search keyword.  |
-|![Number 4](../images/Numbers/circle-4o.png)| Choice of language: Select the preferred language, if available.  |
-|![Number 5](../images/Numbers/circle-5o.png)| Problem: Note the problem description.  |
-|![Number 6](../images/Numbers/circle-6o.png)| Background: Get more overview with background information.  |
-|![Number 7](../images/Numbers/circle-7o.png)| Solution: Note that if prerequisites are necessary, you have to meet these before going through the solution steps.  |
-|![Number 8](../images/Numbers/circle-8o.png)| `Was this article helpful?`: Your rating and comment will be transmitted with `Submit feedback`.  |
+|![Number 1](../images/numbers/circle-1o.png)| `Help:` Tick to open the Help-Area.  |
+|![Number 2](../images/numbers/circle-2o.png)| `Knowledge Base Articles`: Tick to open the collection of articles.  |
+|![Number 3](../images/numbers/circle-3o.png)| `Search for articles`: Enter a search keyword.  |
+|![Number 4](../images/numbers/circle-4o.png)| Choice of language: Select the preferred language, if available.  |
+|![Number 5](../images/numbers/circle-5o.png)| Problem: Note the problem description.  |
+|![Number 6](../images/numbers/circle-6o.png)| Background: Get more overview with background information.  |
+|![Number 7](../images/numbers/circle-7o.png)| Solution: Note that if prerequisites are necessary, you have to meet these before going through the solution steps.  |
+|![Number 8](../images/numbers/circle-8o.png)| `Was this article helpful?`: Your rating and comment will be transmitted with `Submit feedback`.  |
