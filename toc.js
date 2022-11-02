@@ -104,6 +104,7 @@ module.exports = {
 						},
 						'rollout-doc/technical-operations/middleware/cashbox',
 						'rollout-doc/technical-operations/middleware/configuration',
+						'rollout-doc/technical-operations/middleware/helper',
 						'rollout-doc/technical-operations/middleware/logging',
 						'rollout-doc/technical-operations/middleware/setup'
 					]
