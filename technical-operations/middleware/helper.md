@@ -1,7 +1,8 @@
 ---
-slug: /posdealers/technical-operations/middleware/Helper
+slug: /posdealers/technical-operations/middleware/helper
 title: Helper
 ---
+
 # Helper
 
 :::info summary
