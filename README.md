@@ -1,10 +1,10 @@
 # fiskaltrust dealer documentation 
-This repository hosts the docs of the dealer documentation for our documentation platform at https://docs.fiskaltrust.cloud/docs/posdealers.
+This repository hosts the docs of the dealer documentation for our documentation platform at https://docs.fiskaltrust.cloud/docs/posdealers/introduction.
 
 ## Overview 
 This repository hosts the content used by the fiskaltrust.space.docs repository to display the dealer documentation. 
 
-All the _content_ that is displayed on https://docs.fiskaltrust.cloud/docs/posdealers is taken from our [GitHub](https://github.com/fiskaltrust/rollout-doc) repositories.  
+All the _content_ that is displayed on https://docs.fiskaltrust.cloud/docs/posdealers/introduction is taken from our [GitHub](https://github.com/fiskaltrust/rollout-doc) repositories.  
 
 The content of the repositories is automatically built into the page with the CI/CD pipeline that runs on each change in the repositories' `master`/`main` branch.
 
