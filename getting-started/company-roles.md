@@ -14,7 +14,7 @@ After reading, you can activate or deactivate appropriate roles for customers an
 
 *fiskaltrust* distinguishes between four principal **company roles** in the portal context and its role management.
 
-![](./images/company-roles/roles.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile"
+![](./images/company-roles/roles.png)
 
 Each role's specific audience has a distinct set of features and permissions.
 
