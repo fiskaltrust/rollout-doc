@@ -14,85 +14,88 @@ After reading this, you will understand the benefits for PosOperators of connect
 
 As _FinanzOnline Management_ is only available in Austria, this tutorial does not apply to Germany or France.
 
-Please note that the included links in this section lead to FinanzOnline, which only keeps its documentation in German.
+:::
+
+## FinanzOnline: Overview
+
+The legal basis for FinanzOnline in Austria was created with the FinanzOnline ordinances in 2006.
+FinanzOnline provides electronic access to the tax authorities for entrepreneurs and their representatives. FinanzOnline offers round-the-clock access to relevant tax documents without the need for additional software and provides the services of the company service portal (USP), such as _e-Rechnung_.
+FinanzOnline is constantly being developed into an information and transaction portal in tax matters.
+
+### FinanzOnline: Prerequisites for PosOperators
+
+You as a PosDealer or as a PosOperator start with creating or collecting the access data of a FinanzOnline user who is authorized for the cash register web service.
+After your login to fiskaltrust.Portal, clarify the existing entitlements for the chosen fiskaltrust account (see `Shop` / `Entitlements` for _AT_FON_NOTIFICATION_).
+Switch to `Tools` / `FinanzOnline notifications` and register your FinanzOnline data, for further instructions, see [our austrian portal-manual](https://docs.fiskaltrust.cloud/de/docs/portal-manual/austria/fiscalization#enter-and-check-the-finanzonline-access-data-of-the-posoperator) or from [BMF: Anmeldung FinanzOnline](https://finanzonline.bmf.gv.at/eLearning/BMF_Handbuch_Registrierkassen.pdf).  
+
+## FinanzOnline management: 
+
+### Prerequisites for PosDealers 
+
+The fiskaltrust.Portals shows all connected PosOperators at `PosDealer` / `FinanzOnline Management` - the connection between PosDealer and PosOperator is activated via signing the contract. Further at least a SCU must be created. If you as PosDealer miss a PosOperator on this list, select `PosOperator` / `Invitations` to check the invitation status or `PosOperator` / `Overview` for further investigations. 
+
+
+:::warning
+
+Do not use the button `Execute FinanzOnline status update for all PosOperators` on at `PosDealer` / `FinanzOnline Management` - the page already shows the current status, for further information see below.
 
 :::
 
-## FinanzOnline single use
+
+![](../../../buy-resell/images/FON-Management-1.png)
 
 
-### Prerequisites for PosOperators
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/numbers/circle-1o.png) |Enter the fiskaltrust.Portal and select `PosDealer` / `FinanzOnline Management`.  |
+|![Number 2](../../../images/Numbers/circle-2o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.  |
+|![Number 3](../../../images/Numbers/circle-3o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.  |
 
-create access data at FinanzOnline
-clarify fiskaltrust entitlements
-enter access data at fiskaltrust.Portal
-validate connection
-send notifications
-control status 
+#### Send notifications for a single Queue or SCU
 
+![](../../../buy-resell/images/FON-Management-2.png)
 
-### Prerequisites for PosDealers (optional)
-
-clarify fiskaltrust entitlements
-switch to account and enter access data at fiskaltrust.Portal
-validate connection
-send notifications
-control status 
-
-## FinanzOnline bulk use
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/Numbers/circle-1o.png) |Select the collapser for the details of one of your PosOperators. |
+|![Number 2](../../../images/Numbers/circle-2o.png) |Open the desired tab for details. You can check the amount of available entitlements. </br>If none are available, the tab shows a message like `No entitlements to display`.  |
+|![Number 3](../../../images/Numbers/circle-3o.png) |If necessary, reduce the number of search results displayed by filter criteria like </br>`Cash register identification number`. |
+|![Number 4](../../../images/Numbers/circle-4o.png) |For a single `Queue` or on the corresponding tab for a single `SCU` you can </br>`Start a status check at FinanzOnline`. |
 
 
-### Prerequisites for PosOperators
+#### Send notifications for a single PosOperator
 
-no changes:
-create access data at FinanzOnline
-clarify fiskaltrust entitlements
-enter access data at fiskaltrust.Portal
-validate connection
-send notifications
-control status 
+![](../../../buy-resell/images/FON-Management-3.png)
 
-### Process for PosDealers 
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/Numbers/circle-1o.png) |Select `Execute FinanzOnline status update` for of one of your PosOperators. |
+|![Number 2](../../../images/Numbers/circle-2o.png) |You have to confirm to send all notifications for queues and SCUs for the selected PosOperator.  |
 
-enter fiskaltrust.Portal and select PosDealer / FinanzOnline Management
+#### Send notifications for all PosOperators
 
-#### overview PosOperators:
- * option to send general status request
-    - confirmation to send notifications for all Queues and SCUs of all PosOperators
+![](../../../buy-resell/images/FON-Management-4.png)
 
-* link to switch to PosOperators account
-    - switch to account and enter access data at fiskaltrust.Portal
-    - validate connection
-    - send notifications
-    - control status 
-* status of connection to FinanzOnline
-* option to send notifications for all Queues and SCUs of the selected PosOperator
-* button for details
-
-#### button for details:
-
-* tab for overview fiskaltrust entitlements
-    - search or sort for names or quantities
-* tab for overview notifications
-    - search or sort
-    - check details via collapsible or status icon
-* tab for validations
-     - search or sort
-    - check details via collapsible or status icon
-* tab for queues
-    - search or sort
-    - start status check at FinanzOnline for selected queue
-* tab for SCUs
-    - search or sort
-    - start status check at FinanzOnline for selected SCU
-
+ With the action `Execute FinanzOnline status update for all PosOperators` all messages to queues and/or SCUs for all PosOperators will be sent to FinanzOnline again and claims to messages will be consumed as well. We recommend to check the PosOperators status individually a first. 
 
 ## Troubleshooting
+
 
 ### FAQ
 
 for further details, see
+* [FON-Meldungen](https://docs.fiskaltrust.cloud/de/docs/faq/austria#welche-probleme-k%C3%B6nnen-bei-fon-meldungen-f%C3%BCr-kassenbetreiber-auftreten)
 
-### Manual
+* [Fehler bei eingabe](https://docs.fiskaltrust.cloud/de/docs/faq/austria#welche-h%C3%A4ufigen-fehler-gibt-es-bei-der-eingabe-der-finanzonline-zugangsdaten)
 
-for first steps of PosOperators, see 
+* [Fehlermeldungen](https://docs.fiskaltrust.cloud/de/docs/faq/austria#welche-fehlermeldungen-knnen-bei-der-automatisierten-kommunikation-mit-finanzonline-auftreten)
+
+
+### Manuals
+
+for first steps and further information, see 
+
+* [BMF: Registrierkassen generell und Anmeldung FinanzOnline](https://finanzonline.bmf.gv.at/eLearning/BMF_Handbuch_Registrierkassen.pdf)
+* [BMF: Einstieg, Anmeldung, Abmeldung, Handbücher für Unternehmer](https://www.bmf.gv.at/services/finanzonline/informationen-fuer-unternehmer-und-gemeinden.html)
+
+Please note that the included links in this section lead to FinanzOnline, which only keeps its documentation in German.
