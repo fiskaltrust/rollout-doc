@@ -28,6 +28,7 @@ By usage of the _DATEV Kassenarchiv online_, your PosOperator reaches a legally 
 * Proof that nobody can change the PosSystem data
 * Accordance with the GoBD
 * Audit-proof archive for the duration of the statutory retention period
+* Sotrage of data in DATEV datacenters
 
 Tax consultants and authorities are working on introducing digital workflows to clients. The interface named *[DATEV Kassenbuch-Schnittstelle](https://apps.datev.de/help-center/documents/0904388)* is available from DATEV; data from PosSystems for financial accounting can be forwarded directly to the tax advisor's DATEV software solution. In addition, an up-to-date database without delays creates transparency in the event of an upcoming external audit.
 
