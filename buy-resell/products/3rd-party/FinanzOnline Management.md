@@ -6,7 +6,12 @@ title: FinanzOnline Management
 
 :::info summary
 
-After reading this, you will understand the benefits for PosOperators of connecting their fiskaltrust.Account to _FinanzOnline_. Every change in queues or SCUs in PosOperators is forwarded and `FinanzOnline Management` shows you the overview. A reconciliation with FinanzOnline is only necessary if changes to queues or SCUs have been made manually there by you or the PosOperator. 
+After reading this, you will understand the benefits for PosOperators of connecting their fiskaltrust.Account to _FinanzOnline_:
+The Carefreee bundle includes FinanzOnline notifications, which include signature creation unit registration notifications, cash register notifications and checks of start receipt, annual receipt, or stop receipt. PosOperators without Carefree bundle can purchase them in the store. 
+The `Tools` / `FinanceOnline Notifications` page in the fiskaltrust.Portal provides your PosOperators with an overview.
+
+You, as a PosDealer, can choose `PosDealer` / `FinanzOnline management` to get an overview of connections with FinanzOnline,  and the status of notifications.
+ A reconciliation with FinanzOnline is only necessary if changes to queues or SCUs have been made manually there by you or the PosOperator. 
 
 :::
 
