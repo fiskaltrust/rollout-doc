@@ -69,8 +69,8 @@ Please do not select it without further information, we recommend to read this s
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../../images/numbers/circle-1o.png) |Enter the fiskaltrust.Portal and select `PosDealer` / `FinanzOnline Management`.  |
-|![Number 1](../../../images/numbers/circle-1o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.  |
-|![Number 1](../../../images/numbers/circle-1o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.  |
+|![Number 2](../../../images/numbers/circle-2o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.  |
+|![Number 3](../../../images/numbers/circle-3o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.  |
 
 ### Status check for a single Queue or SCU
 
