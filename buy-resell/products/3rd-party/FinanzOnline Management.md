@@ -68,9 +68,17 @@ Please do not select it without further information, we recommend to read this s
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/numbers/circle-1o.png) |Enter the fiskaltrust.Portal and select `PosDealer` / `FinanzOnline Management`.  |
-|![Number 2](../../../images/Numbers/circle-2o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.  |
-|![Number 3](../../../images/Numbers/circle-3o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.  |
+|![Number 1](../../../images/numbers/circle-1o.png) |Enter the fiskaltrust.Portal and select `PosDealer` / `FinanzOnline Management`.|
+|![Number 2](../../../images/Numbers/circle-2o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.|
+|![Number 3](../../../images/Numbers/circle-3o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.|
+
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](images/Numbers/circle-1o.png) |Enter the fiskaltrust.Portal and select `PosDealer` / `FinanzOnline Management`.  |
+|![Number 2](images/Numbers/circle-2o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.  |
+|![Number 3](images/Numbers/circle-3o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.  |
+|![Number 4](images/Numbers/circle-4o.png) |ddd.  |
 
 ### Status check for a single Queue or SCU
 
@@ -134,7 +142,7 @@ For further details, see
 
 ### Manuals
 
-for first steps and further information, see 
+or first steps and further information, see 
 
 * [BMF: Registrierkassen generell und Anmeldung FinanzOnline](https://finanzonline.bmf.gv.at/eLearning/BMF_Handbuch_Registrierkassen.pdf)
 * [BMF: Einstieg, Anmeldung, Abmeldung, Handbücher für Unternehmer](https://www.bmf.gv.at/services/finanzonline/informationen-fuer-unternehmer-und-gemeinden.html)
