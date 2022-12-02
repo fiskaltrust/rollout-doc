@@ -7,8 +7,9 @@ title: FinanzOnline Management
 :::info summary
 
 After reading this, you will understand the benefits for PosOperators of connecting their fiskaltrust.Account to _FinanzOnline_:
-The Carefreee bundle includes FinanzOnline notifications, which include signature creation unit registration notifications, cash register notifications and checks of start receipt, annual receipt, or stop receipt. PosOperators without Carefree bundle can purchase them in the store. 
-The `Tools` / `FinanceOnline Notifications` page in the fiskaltrust.Portal provides your PosOperators with an overview.
+* The Carefree bundle includes FinanzOnline notifications, which include registration of signature creation units, notifications and checks for cash registers like receipts for a start, annual, or stop. 
+* PosOperators without a Carefree bundle can purchase them. 
+* The `Tools` / `FinanzOnline Notifications` page in the fiskaltrust.Portal provides your PosOperators with an overview.
 
 You, as a PosDealer, can choose `PosDealer` / `FinanzOnline management` to get an overview of connections with FinanzOnline,  and the status of notifications.
  A reconciliation with FinanzOnline is only necessary if changes to queues or SCUs have been made manually there by you or the PosOperator. 
@@ -23,15 +24,20 @@ As _FinanzOnline Management_ is only available in Austria, this tutorial does no
 
 ## FinanzOnline: Overview
 
-The legal basis for FinanzOnline in Austria was created with the FinanzOnline ordinances in 2006.
-FinanzOnline provides electronic access to the tax authorities for entrepreneurs and their representatives. FinanzOnline offers round-the-clock access to relevant tax documents without the need for additional software and provides the services of the company service portal (USP), such as _e-Rechnung_.
+The FinanzOnline ordinances created the legal basis for FinanzOnline in Austria in 2006.
+FinanzOnline provides electronic access to the tax authorities for entrepreneurs and their representatives. In addition, FinanzOnline offers round-the-clock access to relevant tax documents without additional software and provides the services of company service portal (USP) services, such as _e-Rechnung_.
 FinanzOnline is constantly being developed into an information and transaction portal in tax matters.
 
 ### FinanzOnline: Prerequisites for PosOperators
 
-You as a PosDealer or as a PosOperator start with creating or collecting the access data of a FinanzOnline user who is authorized for the cash register web service.
-After your login to fiskaltrust.Portal, clarify the existing entitlements for the chosen fiskaltrust account (see `Shop` / `Entitlements` for _AT_FON_NOTIFICATION_).
-Switch to `Tools` / `FinanzOnline notifications` and register your FinanzOnline data, for further instructions, see [our austrian portal-manual](https://docs.fiskaltrust.cloud/de/docs/portal-manual/austria/fiscalization#enter-and-check-the-finanzonline-access-data-of-the-posoperator) or from [BMF: Anmeldung FinanzOnline](https://finanzonline.bmf.gv.at/eLearning/BMF_Handbuch_Registrierkassen.pdf).  
+You as PosDealer or as PosOperator start by creating or entering access data for a FinanzOnline user. You must have created this user specifically to use the Pos-System web service. Furthermore, it would help if you had sufficient Entitlements to use FinanzOnline. PosOperators with a Carefree package have unlimited access to these. PosOperators without a Carefree package can purchase them.
+
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/numbers/circle-1o.png) |After your login to fiskaltrust.Portal, clarify the existing entitlements for the chosen fiskaltrust account (see `Shop` / `Entitlements` for _AT_FON_NOTIFICATION_). You can purchase them at  `Shop` / `Products`, if none are available.  |
+|![Number 2](../../../images/numbers/circle-2o.png) |Switch to `Tools` / `FinanzOnline notifications` and register your FinanzOnline data.  |
+|![Number 3](../../../images/numbers/circle-3o.png) |For further instructions, see [our austrian portal-manual](https://docs.fiskaltrust.cloud/de/docs/portal-manual/austria/fiscalization#enter-and-check-the-finanzonline-access-data-of-the-posoperator) or from [BMF: Anmeldung FinanzOnline](https://finanzonline.bmf.gv.at/eLearning/BMF_Handbuch_Registrierkassen.pdf).  |
 
 ## FinanzOnline management: 
 
@@ -40,16 +46,18 @@ Switch to `Tools` / `FinanzOnline notifications` and register your FinanzOnline 
 You as a PosDealer find PosOperators listed at `PosDealer` / `FinanzOnline Management`. 
 Prerequisites for listing are:
 
-- [ ] active contract
-- [ ] SCU or queue are active in the account of the desired PosOperator
-- [ ] notifications for FinanzOnline are created
+|  | Prerequisites                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/numbers/circle-1o.png) |Active contract  |
+|![Number 2](../../../images/numbers/circle-2o.png) |SCU or queue are active in the account of the desired PosOperator  |
+|![Number 3](../../../images/numbers/circle-3o.png) |notifications for FinanzOnline are created  |
 
 If you miss a PosOperator on this list, check [Troubleshooting](#troubleshooting) below. 
 
 
 :::warning
 
-On the page `PosDealer` / `FinancialOnline Management` you will find a button `Perform FinancialOnline status update for all PosOperators`. </br>
+On the page `PosDealer` / `FinanzOnline Management` you will find a button `Perform FinanzOnline status update for all PosOperators`. </br>
 Please do not select it without further information, we recommend to read this section including [Status check for all PosOperators](#status-check-for-all-posoperators).
 
 :::
@@ -87,44 +95,42 @@ Please do not select it without further information, we recommend to read this s
 
 ### Status check for all PosOperators
 
- As a PosDealer, the page `PosDealer` / `FinancialOnline Management` provides you with an overview of the data on queues and SCU of the connected accounts. This data is updated when you open the page. You have learned how to check details and update them if necessary in the sections above. Updating is only necessary if, despite automatic data exchange, manual changes have been made in FinanzOnline.
+ As a PosDealer, the page `PosDealer` / `FinanzOnline Management` provides an overview of the data on queues and SCU of the connected accounts. This data is updated when you open the page. You have learned how to check details and update them if necessary in the sections above. A `Status check for all PosOperator` is only required if, despite automatic data exchange, somebody made manual changes in FinanzOnline.
 
 
 ![](../../../buy-resell/images/FON-Management-4.png)
 
- As a PosDealer, the page `PosDealer` / `FinancialOnline Management` provides you with an overview of the data on queues and SCU of the connected accounts. This data is updated when you open the page. You have learned how to check details and update them if necessary in the sections above. Updating is only necessary if, despite automatic data exchange, manual changes have been made in FinanzOnline.
-
-If you still consider it necessary to completely synchronize the data in the fiskaltrust.portal with the data in finanzOnline, use the action `Execute FinanzOnline status update for all PosOperators`. We recommend to check the PosOperators status individually a first. 
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/Numbers/circle-1o.png) |If you still consider it necessary to completely synchronize the data in the fiskaltrust.portal with the data in finanzOnline, use the action `Execute FinanzOnline status update for all PosOperators`. |
+|![Number 2](../../../images/Numbers/circle-2o.png) |We recommend to check the PosOperators status individually a first. Confirm your decision otherwise.  |
 
 ## Troubleshooting
 
-### Question:
 
-I miss some of my PosOperators at `FinancialOnline Management`?
+#### I miss some of my PosOperators at `FinanzOnline Management`?
 
- #### Answer: 
 
 Prerequisites for listing are:
 
 - [ ] active contract
-- [ ] SCU or queue are active in the account of the desired PosOperator
+- [ ] SCU or queue is active in the account of the desired PosOperator
 - [ ] notifications for FinanzOnline are created
 
-* If you miss some of your PosOperators at `FinancialOnline Management`, select `PosOperator` / `Overview` to check the invitation status. </br>In case of missing connection, select `PosOperator` / `Invitations` and use `History` to resend the invitation.
-* If your check at `PosOperator` / `Overview` results in a valid connection, switch to the account  of your PosOperator for further investigations.
+* If you miss some of your PosOperators at `FinanzOnline Management`, select `PosOperator` / `Overview` to check the invitation status. </br>In case of a missing connection, select `PosOperator` / `Invitations` and use `History` to resend the invitation.
+* If your check at `PosOperator` / `Overview` results in a valid connection, switch to the account of your PosOperator for further investigations.
 * Switch to `Tools` / `FinanzOnline notifications` to check the access data to FinanzOnline.
-* If the access data is proofed, check the status of `Forwarding`, it should be set to `On`
+* Having proofed the access data successfully, you can check if the status of `Forwarding` is set to `On`.
 * After checking the connection, check the Tab `Notifications` for notifications. You can either try a new try to send a notification. Or you change to `Configuration` / `Queue` and `Start a status check at FinanzOnline`. 
 
 ### FAQ
 
-for further details, see
+For further details, see
 * [FON-Meldungen](https://docs.fiskaltrust.cloud/de/docs/faq/austria#welche-probleme-k%C3%B6nnen-bei-fon-meldungen-f%C3%BCr-kassenbetreiber-auftreten)
 
 * [Fehler bei eingabe](https://docs.fiskaltrust.cloud/de/docs/faq/austria#welche-h%C3%A4ufigen-fehler-gibt-es-bei-der-eingabe-der-finanzonline-zugangsdaten)
 
 * [Fehlermeldungen](https://docs.fiskaltrust.cloud/de/docs/faq/austria#welche-fehlermeldungen-knnen-bei-der-automatisierten-kommunikation-mit-finanzonline-auftreten)
-
 
 ### Manuals
 
