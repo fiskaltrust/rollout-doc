@@ -80,7 +80,7 @@ Please do not select it without further information, we recommend to read this s
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../../images/numbers/circle-1o.png) |Select the collapser for the details of one of your PosOperators.|
 |![Number 2](../../../images/numbers/circle-2o.png) |Open the desired tab for details. You can check the amount of available entitlements. </br>If none are available, the tab shows a message like `No entitlements to display`.|
-|![Number 3](../../../images/Numbers/circle-3o.png) |If necessary, reduce the number of search results displayed by filter criteria like </br>`Cash register identification number`.|
+|![Number 3](../../../images/numbers/circle-3o.png) |If necessary, reduce the number of search results displayed by filter criteria like </br>`Cash register identification number`.|
 |![Number 4](../../../images/numbers/circle-4o.png) |For a single `Queue` or on the corresponding tab for a single `SCU` you can </br>`Start a status check at FinanzOnline`.|
 
 
