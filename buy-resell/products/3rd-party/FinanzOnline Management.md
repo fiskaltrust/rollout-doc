@@ -68,17 +68,9 @@ Please do not select it without further information, we recommend to read this s
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/numbers/circle-1o.png) |Enter the fiskaltrust.Portal and select `PosDealer` / `FinanzOnline Management`.|
-|![Number 2](../../../images/Numbers/circle-2o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.|
-|![Number 3](../../../images/Numbers/circle-3o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.|
-
-
-| steps | description                                                                                                                |
-|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](images/Numbers/circle-1o.png) |Enter the fiskaltrust.Portal and select `PosDealer` / `FinanzOnline Management`.  |
-|![Number 2](images/Numbers/circle-2o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.  |
-|![Number 3](images/Numbers/circle-3o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.  |
-|![Number 4](images/Numbers/circle-4o.png) |ddd.  |
+|![Number 1](../../../images/numbers/circle-1o.png) |Enter the fiskaltrust.Portal and select `PosDealer` / `FinanzOnline Management`.  |
+|![Number 2](../../../images/Numbers/circle-2o.png) |For further investigations on a PosOperator you can use the link to switch to a certain PosOperators account. Select `Tools` / `FinanzOnline notifications` to check the state of forwarding or the completeness of the registration data for FinanzOnline.  |
+|![Number 3](../../../images/Numbers/circle-3o.png) |Check the actual status of the FinanzOnline Connection at `State of FinanzOnline Notifications`.  |
 
 ### Status check for a single Queue or SCU
 
@@ -86,10 +78,10 @@ Please do not select it without further information, we recommend to read this s
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/Numbers/circle-1o.png) |Select the collapser for the details of one of your PosOperators. |
-|![Number 2](../../../images/Numbers/circle-2o.png) |Open the desired tab for details. You can check the amount of available entitlements. </br>If none are available, the tab shows a message like `No entitlements to display`.  |
-|![Number 3](../../../images/Numbers/circle-3o.png) |If necessary, reduce the number of search results displayed by filter criteria like </br>`Cash register identification number`. |
-|![Number 4](../../../images/Numbers/circle-4o.png) |For a single `Queue` or on the corresponding tab for a single `SCU` you can </br>`Start a status check at FinanzOnline`. |
+|![Number 1](../../../images/Numbers/circle-1o.png) |Select the collapser for the details of one of your PosOperators.|
+|![Number 2](../../../images/Numbers/circle-2o.png) |Open the desired tab for details. You can check the amount of available entitlements. </br>If none are available, the tab shows a message like `No entitlements to display`.|
+|![Number 3](../../../images/Numbers/circle-3o.png) |If necessary, reduce the number of search results displayed by filter criteria like </br>`Cash register identification number`.|
+|![Number 4](../../../images/Numbers/circle-4o.png) |For a single `Queue` or on the corresponding tab for a single `SCU` you can </br>`Start a status check at FinanzOnline`.|
 
 
 ### Status check for a single PosOperator
@@ -142,7 +134,7 @@ For further details, see
 
 ### Manuals
 
-or first steps and further information, see 
+for first steps and further information, see 
 
 * [BMF: Registrierkassen generell und Anmeldung FinanzOnline](https://finanzonline.bmf.gv.at/eLearning/BMF_Handbuch_Registrierkassen.pdf)
 * [BMF: Einstieg, Anmeldung, Abmeldung, Handbücher für Unternehmer](https://www.bmf.gv.at/services/finanzonline/informationen-fuer-unternehmer-und-gemeinden.html)
