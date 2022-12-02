@@ -113,9 +113,11 @@ Please do not select it without further information, we recommend to read this s
 
 Prerequisites for listing are:
 
-- [ ] active contract
-- [ ] SCU or queue is active in the account of the desired PosOperator
-- [ ] notifications for FinanzOnline are created
+|  | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/numbers/circle-1o.png) |active contract|
+|![Number 2](../../../images/numbers/circle-2o.png) |SCU or queue is active in the account of the desired PosOperator|
+|![Number 3](../../../images/numbers/circle-3o.png) |notifications for FinanzOnline are created|
 
 * If you miss some of your PosOperators at `FinanzOnline Management`, select `PosOperator` / `Overview` to check the invitation status. </br>In case of a missing connection, select `PosOperator` / `Invitations` and use `History` to resend the invitation.
 * If your check at `PosOperator` / `Overview` results in a valid connection, switch to the account of your PosOperator for further investigations.
