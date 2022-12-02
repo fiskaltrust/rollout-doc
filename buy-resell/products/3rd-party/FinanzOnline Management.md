@@ -78,10 +78,10 @@ Please do not select it without further information, we recommend to read this s
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/Numbers/circle-1o.png) |Select the collapser for the details of one of your PosOperators.|
-|![Number 2](../../../images/Numbers/circle-2o.png) |Open the desired tab for details. You can check the amount of available entitlements. </br>If none are available, the tab shows a message like `No entitlements to display`.|
+|![Number 1](../../../images/numbers/circle-1o.png) |Select the collapser for the details of one of your PosOperators.|
+|![Number 2](../../../images/numbers/circle-2o.png) |Open the desired tab for details. You can check the amount of available entitlements. </br>If none are available, the tab shows a message like `No entitlements to display`.|
 |![Number 3](../../../images/Numbers/circle-3o.png) |If necessary, reduce the number of search results displayed by filter criteria like </br>`Cash register identification number`.|
-|![Number 4](../../../images/Numbers/circle-4o.png) |For a single `Queue` or on the corresponding tab for a single `SCU` you can </br>`Start a status check at FinanzOnline`.|
+|![Number 4](../../../images/numbers/circle-4o.png) |For a single `Queue` or on the corresponding tab for a single `SCU` you can </br>`Start a status check at FinanzOnline`.|
 
 
 ### Status check for a single PosOperator
@@ -90,8 +90,8 @@ Please do not select it without further information, we recommend to read this s
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/Numbers/circle-1o.png) |Select `Execute FinanzOnline status update` for of one of your PosOperators. |
-|![Number 2](../../../images/Numbers/circle-2o.png) |You have to confirm to send a status request for all queues and SCUs of the selected PosOperator.  |
+|![Number 1](../../../images/numbers/circle-1o.png) |Select `Execute FinanzOnline status update` for of one of your PosOperators. |
+|![Number 2](../../../images/numbers/circle-2o.png) |You have to confirm to send a status request for all queues and SCUs of the selected PosOperator.  |
 
 ### Status check for all PosOperators
 
@@ -102,8 +102,8 @@ Please do not select it without further information, we recommend to read this s
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/Numbers/circle-1o.png) |If you still consider it necessary to completely synchronize the data in the fiskaltrust.portal with the data in finanzOnline, use the action `Execute FinanzOnline status update for all PosOperators`. |
-|![Number 2](../../../images/Numbers/circle-2o.png) |We recommend to check the PosOperators status individually a first. Confirm your decision otherwise.  |
+|![Number 1](../../../images/numbers/circle-1o.png) |If you still consider it necessary to completely synchronize the data in the fiskaltrust.portal with the data in finanzOnline, use the action `Execute FinanzOnline status update for all PosOperators`. |
+|![Number 2](../../../images/numbers/circle-2o.png) |We recommend to check the PosOperators status individually a first. Confirm your decision otherwise.  |
 
 ## Troubleshooting
 
