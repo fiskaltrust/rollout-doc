@@ -57,7 +57,7 @@ If you miss a PosOperator on this list, check [Troubleshooting](#troubleshooting
 
 :::warning
 
-On the page `PosDealer` / `FinanzOnline Management` you will find a button `Perform FinanzOnline status update for all PosOperators`. </br>
+On the page `PosDealer` / `FinanzOnline Management` you will find a button `Perform FinanzOnline status update for all PosOperators`. 
 Please do not select it without further information, we recommend to read this section including [Status check for all PosOperators](#status-check-for-all-posoperators).
 
 :::
@@ -79,9 +79,9 @@ Please do not select it without further information, we recommend to read this s
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../../images/numbers/circle-1o.png) |Select the collapser for the details of one of your PosOperators.|
-|![Number 2](../../../images/numbers/circle-2o.png) |Open the desired tab for details. You can check the amount of available entitlements. </br>If none are available, the tab shows a message like `No entitlements to display`.|
-|![Number 3](../../../images/numbers/circle-3o.png) |If necessary, reduce the number of search results displayed by filter criteria like </br>`Cash register identification number`.|
-|![Number 4](../../../images/numbers/circle-4o.png) |For a single `Queue` or on the corresponding tab for a single `SCU` you can </br>`Start a status check at FinanzOnline`.|
+|![Number 2](../../../images/numbers/circle-2o.png) |Open the desired tab for details. You can check the amount of available entitlements.If none are available, the tab shows a message like `No entitlements to display`.|
+|![Number 3](../../../images/numbers/circle-3o.png) |If necessary, reduce the number of search results displayed by filter criteria like `Cash register identification number`.|
+|![Number 4](../../../images/numbers/circle-4o.png) |For a single `Queue` or on the corresponding tab for a single `SCU` you can `Start a status check at FinanzOnline`.|
 
 
 ### Status check for a single PosOperator
@@ -119,7 +119,7 @@ Prerequisites for listing are:
 |![Number 2](../../../images/numbers/circle-2o.png) |SCU or queue is active in the account of the desired PosOperator|
 |![Number 3](../../../images/numbers/circle-3o.png) |notifications for FinanzOnline are created|
 
-* If you miss some of your PosOperators at `FinanzOnline Management`, select `PosOperator` / `Overview` to check the invitation status. </br>In case of a missing connection, select `PosOperator` / `Invitations` and use `History` to resend the invitation.
+* If you miss some of your PosOperators at `FinanzOnline Management`, select `PosOperator` / `Overview` to check the invitation status. In case of a missing connection, select `PosOperator` / `Invitations` and use `History` to resend the invitation.
 * If your check at `PosOperator` / `Overview` results in a valid connection, switch to the account of your PosOperator for further investigations.
 * Switch to `Tools` / `FinanzOnline notifications` to check the access data to FinanzOnline.
 * Having proofed the access data successfully, you can check if the status of `Forwarding` is set to `On`.
