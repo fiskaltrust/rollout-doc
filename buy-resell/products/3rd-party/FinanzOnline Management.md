@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/buy-resell/products/3rd-party/FinanzOnline Management
+slug: /posdealers/buy-resell/products/3rd-party/finanzonline-management
 title: FinanzOnline Management
 ---
 # FinanzOnline Management

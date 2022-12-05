@@ -74,7 +74,9 @@ module.exports = {
 							label: 'Third party integrations',
 							items: [				
 								'rollout-doc/buy-resell/products/3rd-party/3rd-party-overview',
-								'rollout-doc/buy-resell/products/3rd-party/datev-meinfiskal'
+								'rollout-doc/buy-resell/products/3rd-party/datev-meinfiskal',
+								'rollout-doc/buy-resell/products/3rd-party/finanzonline-management',
+
 							]
 						}
 					]
