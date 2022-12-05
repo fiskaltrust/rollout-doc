@@ -12,7 +12,7 @@ After reading this, you can use the documentation effectively in your specific f
 :::
 
 
-![fiskaltrust.Docs start](images/4-documentation-start-new.png "https://docs.fiskaltrust.cloud/")
+![fiskaltrust.Docs start](images/4-documentation-start.png "https://docs.fiskaltrust.cloud/")
 
 ## Usage of the documentation
 | links | description                                                                                                                |
@@ -20,13 +20,13 @@ After reading this, you can use the documentation effectively in your specific f
 |![Number 1](images/Numbers/circle-1o.png) |Jump back to the [start](https://docs.fiskaltrust.cloud/)  |
 |![Number 2](images/Numbers/circle-2o.png) |PosCreators start reading [here](https://docs.fiskaltrust.cloud/de/docs/poscreators/get-started)  |
 |![Number 3](images/Numbers/circle-3o.png) |PosDealers start reading [here](https://docs.fiskaltrust.cloud/docs/posdealers/introduction)   |
-|![Number 4](images/Numbers/circle-4o.png) |Here you can find more detailed [product descriptions](https://docs.fiskaltrust.cloud/docs/product-description/germany)   |
-|![Number 5](images/Numbers/circle-5o.png) |Here you will find answers to frequently asked questions (FAQ), a description of [customer roles](https://docs.fiskaltrust.cloud/docs/faq/customer-roles) like PosCreator, PosDealer an our [Terminology](https://docs.fiskaltrust.cloud/docs/faq/terms)  |
+|![Number 4](images/Numbers/circle-4o.png) |Here you will find answers to frequently asked questions (FAQ), a description of [customer roles](https://docs.fiskaltrust.cloud/docs/faq/customer-roles) like PosCreator, PosDealer and our [Terminology](https://docs.fiskaltrust.cloud/docs/faq/terms) |
+|![Number 5](images/Numbers/circle-5o.png) |Jump to our [repositories](https://github.com/fiskaltrust) in GitHub |
 |![Number 6](images/Numbers/circle-6o.png) |Jump to our [Release Notes](https://docs.fiskaltrust.cloud/docs/release-notes) |
 |![Number 7](images/Numbers/circle-7o.png) |Change between languages, if translations are available  |
 |![Number 8](images/Numbers/circle-8o.png) |Switch between light mode and dark mode with this button  |
-|![Number 9](images/Numbers/circle-9o.png) |Jump to our [repositories](https://github.com/fiskaltrust) in GitHub  |
-|![Number 10](images/Numbers/circle-10o.png)|Tick here or use `CTRL` & `K` to open the search window  |
+|![Number 9](images/Numbers/circle-9o.png) |Tick here or use `CTRL` & `K` to open the search window  |
+
 
 ## Searching in the documentation
 
