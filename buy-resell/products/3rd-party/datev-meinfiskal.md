@@ -92,23 +92,22 @@ Explanations for the necessary requirements for setting up DATEV MeinFiskal you 
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/Numbers/circle-1o.png) |After purchasing of a fiskaltrust.Sorglos bundle, select `Company` / `Overview`.  |
-|![Number 2](../../../images/Numbers/circle-2o.png) |Press the button  |
-|![Number 3](../../../images/Numbers/circle-3o.png) |You will be redirected to the page to read and sign the contract. With your signature, a background process starts. Please give this the necessary time and refrain from refreshing the page. Changing the page or logging off and on again to the account will not have a negative effect.|
-|![Number 4](../../../images/Numbers/circle-4o.png) |You will be redirected to the page to read and sign the contract. With your signature, a background process starts. Please give this the necessary time and refrain from refreshing the page. Changing the page or logging off and on again to the account will not have a negative effect. |
-|![Number 5](../../../images/Numbers/circle-5o.png) |If the background process for connecting the fiskaltrust.Account to DATEV MeinFiskal was successful, the fiskaltrust.Portal will show you a `Username` and a `Password` with automatically generated values. |
-|![Number 6](../../../images/Numbers/circle-6o.png) |Copy or write down these values. |
+|![Number 1](../../../images/numbers/circle-1o.png) |After purchasing of a fiskaltrust.Sorglos bundle, select `Company` / `Overview`.  |
+|![Number 2](../../../images/numbers/circle-2o.png) |Press the button  |
+|![Number 3](../../../images/numbers/circle-3o.png) |You will be redirected to the page to read and sign the contract. With your signature, a background process starts. Please give this the necessary time and refrain from refreshing the page. Changing the page or logging off and on again to the account will not have a negative effect.|
+|![Number 4](../../../images/numbers/circle-4o.png) |If the background process for connecting the fiskaltrust.Account to DATEV MeinFiskal was successful, the fiskaltrust.Portal will show you a `Username` and a `Password` with automatically generated values. |
+|![Number 5](../../../images/numbers/circle-5o.png) |Copy or write down these values. |
 
 ![preview](../../images/DATEV_PW_Change_Dialog-2.png "Access data for DATEV MeinFiskal")
 
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/Numbers/circle-1o.png) |Switch to [kassenarchiv/login](https://meinfiskal.de/kassenarchiv/login).  |
-|![Number 2](../../../images/Numbers/circle-2o.png) |Log in with the previously automatically generated values.  |
-|![Number 3](../../../images/Numbers/circle-3o.png) |Replace the `Username` with an e-mail address of your choice. |
-|![Number 4](../../../images/Numbers/circle-4o.png) |Replace the `Password` with an expression of your choice; please note the restrictions and validations of DATEV. |
-|![Number 5](../../../images/Numbers/circle-5o.png) |In case of a problem, we strongly recommend checking [Master data](#master-datadata). Then select `Company` / `Overview` again for a retry.|
+|![Number 1](../../../images/numbers/circle-1o.png) |Switch to [kassenarchiv/login](https://meinfiskal.de/kassenarchiv/login).  |
+|![Number 2](../../../images/numbers/circle-2o.png) |Log in with the previously automatically generated values.  |
+|![Number 3](../../../images/numbers/circle-3o.png) |Replace the `Username` with an e-mail address of your choice. |
+|![Number 4](../../../images/numbers/circle-4o.png) |Replace the `Password` with an expression of your choice; please note the restrictions and validations of DATEV. |
+|![Number 5](../../../images/numbers/circle-5o.png) |In case of a problem, we strongly recommend checking [Master data](#master-datadata). Then select `Company` / `Overview` again for a retry.|
  |
 
 #### Setup after the purchase of a DATEV MeinFiskal standalone
