@@ -92,7 +92,7 @@ Explanations for the necessary requirements for setting up DATEV MeinFiskal you 
 
 ##### Connection set up
 
-![preview](../../images/DATEV_PW_Change_Dialog-1.png "Access data for DATEV MeinFiskal")
+![preview](../../images/DATEV_PW_Change_Dialog-0.png "Access data for DATEV MeinFiskal")
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
