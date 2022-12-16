@@ -119,11 +119,12 @@ Explanations for the necessary requirements for setting up DATEV MeinFiskal you 
 ##### Connection set up without success
 
 ![preview](../../images/DATEV_PW_Change_Dialog-3.png "Access data for DATEV MeinFiskal")
+
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../../../images/numbers/circle-1o.png) |In case of a problem, we strongly recommend checking [Master data](#master-data). |
 |![Number 2](../../../images/numbers/circle-2o.png) |Then select `Company` / `Overview` again. |
-|![Number 3](../../../images/numbers/circle-3o.png) |Press `Perform DATEV MeinFiskal onboarding operations` for a retry. |
+|![Number 3](../../../images/numbers/circle-3o.png) |Press `Perform DATEV MeinFiskal onboarding operations` for a retry.  |
 
 #### Setup after the purchase of a DATEV MeinFiskal standalone
 
