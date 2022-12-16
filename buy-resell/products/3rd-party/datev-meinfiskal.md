@@ -81,6 +81,59 @@ Please note that the _DATEV MeinFiskal_ account is created automatically during 
 
 :::
 
+#### Setup after the purchase of a Carefree Package
+
+:::info summary
+
+After purchasing a fiskaltrust.Sorglos-bundle, a process starts for connecting your account at fiskaltrust.Portal and DATEV MeinFiskal, running in the background.
+Explanations for the necessary requirements for setting up DATEV MeinFiskal you find at [Master data](#master-datadata). Whether the [fiskaltrust.Sorglos bundle](https://portal.fiskaltrust.de/Shop/Product?productId=4445-021040) was purchased without or [with the additional product TSE-as-a-Service](https://portal.fiskaltrust.de/Shop/Product?productId=4445-021050) is irrelevant when setting up the connection. Furthermore, neither a queue nor a CashBox is necessary when setting up the connection. However, for successful data backup via DATEV MeinFiskal, Queue and CashBox must be set up and also activated if required. In case of problems, please check [Troubleshooting](#troubleshooting) below.
+
+:::
+
+##### Connection set up
+
+![preview](../../images/DATEV_PW_Change_Dialog-0.png "Access data for DATEV MeinFiskal")
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/numbers/circle-1o.png) |After purchasing of a fiskaltrust.Sorglos bundle, select `Company` / `Overview`.  |
+|![Number 2](../../../images/numbers/circle-2o.png) |Scroll down until **Here you can enable connections to 3rd party partners:**.  |
+|![Number 2](../../../images/numbers/circle-3o.png) |Press the `slider`, if you have not yet.|
+|![Number 4](../../../images/numbers/circle-4o.png) |You will be redirected to the page to read and `sign` the contract (**Nutzungsvertrag über die Nutzung von DATEV MeinFiskal**). With your signature, a background process starts. Please give this the necessary time and refrain from refreshing the page. Changing the page or logging off and on again to the account will not have a negative effect.|
+
+##### Connection set up with success
+
+
+![preview](../../images/DATEV_PW_Change_Dialog-2.png "Access data for DATEV MeinFiskal")
+
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/numbers/circle-1o.png) |If the background process for connecting your account to DATEV MeinFiskal was successful, the fiskaltrust.Portal will show you a `Username` and a `Password` with automatically generated values. |
+|![Number 2](../../../images/numbers/circle-2o.png) |Copy or note these values. |
+|![Number 3](../../../images/numbers/circle-3o.png) |Switch to [kassenarchiv/login](https://meinfiskal.de/kassenarchiv/login).  |
+|![Number 4](../../../images/numbers/circle-4o.png) |Log in with the previously automatically generated values.  |
+|![Number 5](../../../images/numbers/circle-5o.png) |Replace the `Username` with an E-mail address of your choice. |
+|![Number 6](../../../images/numbers/circle-6o.png) |Replace the `Password` with an expression of your choice; please note the restrictions and validations of DATEV. |
+
+##### Connection set up without success
+
+![preview](../../images/DATEV_PW_Change_Dialog-3.png "Access data for DATEV MeinFiskal")
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../../images/numbers/circle-1o.png) |In case of a problem, we strongly recommend checking [Master data](#master-data). |
+|![Number 2](../../../images/numbers/circle-2o.png) |Then select `Company` / `Overview` again. |
+|![Number 3](../../../images/numbers/circle-3o.png) |Press `Perform DATEV MeinFiskal onboarding operations` for a retry. |
+
+#### Setup after the purchase of a DATEV MeinFiskal standalone
+
+:::info summary
+
+After purchasing a Carefree package, a connection between the company and DATEV MeinFiskal is created in the background. After purchasing a standalone product [DATEV MeinFiskal Kassenarchiv online](https://portal.fiskaltrust.de/Shop/Product?productId=4445-041040), you must create this connection manually. This section explains the necessary steps. In case of problems, please check [Troubleshooting](#troubleshooting) below.
+
+:::
+
+
 1. The PosDealer activates the _DATEV MeinFiskal_ function in the [fiskaltrust.Portal](https://portal-sandbox.fiskaltrust.de/AccountProfile) on behalf of the PosOperator.
 
   <details>
