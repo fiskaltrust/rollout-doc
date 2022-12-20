@@ -18,7 +18,7 @@ Please note that the included links in this section lead to DATEV, which only ke
 
 :::
 
-  [DATEV](https://www.datev.de/) offers fiscalization solutions for companies in Germany. The solutions for electronic cash management of DATEV meet all legal requirements.   
+  _[DATEV](https://www.datev.de/)_ offers fiscalization solutions for companies in Germany. The solutions for electronic cash management of DATEV meet all legal requirements.   
 _[DATEV MeinFiskal](https://www.meinfiskal.de/)_ is an open cloud platform hosted by DATEV. PosCreators, providers of TSE (technical security equipment) and fiskaltrust joined this platform.  
 _DATEV MeinFiskal_ is an integral part of the _fiskaltrust.Carefree_ product bundle. The data is transferred from the fiskaltrust.Portal via an automated interface to the _DATEV MeinFiskal_ platform.  
 
@@ -38,8 +38,7 @@ The PosCreator adds a PosSystem in the fiskaltrust.Portal. Thereby a **PosSystem
 A valid PosSystemId is a prerequisite for successfully registering PosOperators with MeinFiskal.
 
 The PosDealer activates the _DATEV MeinFiskal_ function in the fiskaltrust.Portal by signing the **user agreement** on behalf of the PosOperator.
-Customer data such as **E-Mail address** and **tax number** (St.-ldNr. or USt-ldNr.) are exchanged between the fiskaltrust.Portal and the _[DATEV MeinFiskal](https://www.meinfiskal.de/)_ platform. A MeinFiskal user account and a password is created automatically at DATEV. In that creation, the same E-Mail address is used as in the fiskaltrust.Portal. 
-The PosDealer changes the password for the user account at _DATEV MeinFiskal_ and confirms the data transfer between fiskaltrust and DATEV. The PosOperator receives a welcome E-Mail from _DATEV MeinFiskal_ and can use the services _DATEV Kassenarchiv online_. Further services like the _DATEV Kassenbuch-Schnittstelle_ are available at the MeinFiskal platform.
+Customer data such as **E-Mail address** and **tax number** (St.-ldNr. or USt-ldNr.) are exchanged between the fiskaltrust.Portal and the _[DATEV MeinFiskal](https://www.meinfiskal.de/)_ platform. A MeinFiskal user account and a password is created automatically at DATEV. The PosDealer changes E-Mail-address and password for the user account at _DATEV MeinFiskal_ and confirms the data transfer between fiskaltrust and DATEV. The PosOperator receives a welcome E-Mail from _DATEV MeinFiskal_ and can use the services _DATEV Kassenarchiv online_. Further services like the _DATEV Kassenbuch-Schnittstelle_ are available at the MeinFiskal platform.
 
 Fiskaltrust takes over the generation of the legally required data formats (DSFinV-K, DFKA taxonomy, .tar files, native format, other documents), as well as the connection and data transfer to _DATEV MeinFiskal_ via the fiskaltrust.Portal.
 
@@ -81,12 +80,12 @@ Please note that the _DATEV MeinFiskal_ account is created automatically during 
 
 :::
 
-#### Setup after the purchase of a Carefree Package
+#### Setup after the purchase of a fiskaltrust.Carefree Package
 
 :::info summary
 
 After purchasing a fiskaltrust.Sorglos-bundle, a process starts for connecting your account at fiskaltrust.Portal and DATEV MeinFiskal, running in the background.
-Explanations for the necessary requirements for setting up DATEV MeinFiskal you find at [Master data](#master-data). Whether the [fiskaltrust.Sorglos bundle](https://portal.fiskaltrust.de/Shop/Product?productId=4445-021040) was purchased without or [with the additional product TSE-as-a-Service](https://portal.fiskaltrust.de/Shop/Product?productId=4445-021050) is irrelevant when setting up the connection. Furthermore, neither a queue nor a CashBox is necessary when setting up the connection. However, for successful data backup via DATEV MeinFiskal, Queue and CashBox must be set up and also activated if required. In case of problems, please check [Troubleshooting](#troubleshooting) below.
+Explanations for the necessary requirements for setting up DATEV MeinFiskal you find at [Master data](#master-data). Whether the [fiskaltrust.Carefree package](https://portal.fiskaltrust.de/Shop/Product?productId=4445-021040) was purchased without or [with the additional product TSE-as-a-Service](https://portal.fiskaltrust.de/Shop/Product?productId=4445-021050) is irrelevant when setting up the connection. Furthermore, neither a queue nor a CashBox is necessary when setting up the connection. However, for successful data backup via DATEV MeinFiskal, Queue and CashBox must be set up and also activated if required. In case of problems, please check [Troubleshooting](#troubleshooting) below.
 
 :::
 
@@ -96,7 +95,7 @@ Explanations for the necessary requirements for setting up DATEV MeinFiskal you 
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../../../images/numbers/circle-1o.png) |After purchasing of a fiskaltrust.Sorglos bundle, select `Company` / `Overview`.  |
+|![Number 1](../../../images/numbers/circle-1o.png) |After purchasing of a fiskaltrust.Carefree package, select `Company` / `Overview`.  |
 |![Number 2](../../../images/numbers/circle-2o.png) |Scroll down until **Here you can enable connections to 3rd party partners:**.  |
 |![Number 2](../../../images/numbers/circle-3o.png) |Press the `slider`, if you have not yet.|
 |![Number 4](../../../images/numbers/circle-4o.png) |You will be redirected to the page to read and `sign` the contract (**Nutzungsvertrag über die Nutzung von DATEV MeinFiskal**). With your signature, a background process starts. Please give this the necessary time and refrain from refreshing the page. Changing the page or logging off and on again to the account will not have a negative effect.|
@@ -130,7 +129,7 @@ Explanations for the necessary requirements for setting up DATEV MeinFiskal you 
 
 :::info summary
 
-After purchasing a Carefree package, a connection between the company and DATEV MeinFiskal is created in the background. After purchasing a standalone product [DATEV MeinFiskal Kassenarchiv online](https://portal.fiskaltrust.de/Shop/Product?productId=4445-041040), you must create this connection manually. This section explains the necessary steps. In case of problems, please check [Troubleshooting](#troubleshooting) below.
+After purchasing a fiskaltrust.Carefree package, a connection between the company and DATEV MeinFiskal is created in the background. After purchasing a standalone product [DATEV MeinFiskal Kassenarchiv online](https://portal.fiskaltrust.de/Shop/Product?productId=4445-041040), you must create this connection manually. This section explains the necessary steps. In case of problems, please check [Troubleshooting](#troubleshooting) below.
 
 :::
 
