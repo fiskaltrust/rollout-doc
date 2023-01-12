@@ -27,9 +27,9 @@ The information about the status of the connection to a third-party partner vari
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import ThirdPartyStatusAT from '../../../_markets/at/buy-resell/products/_third-party-status.mdx';
-import ThirdPartyStatusFR from '../../../_markets/fr/buy-resell/products/_third-parties-status.mdx';
-import ThirdPartyStatusDE from '../../../_markets/de/buy-resell/products/_third-parties-status.mdx';
+import ThirdPartyStatusAT from '../_markets/at/buy-resell/products/_third-party-status.mdx';
+import ThirdPartyStatusFR from '../_markets/fr/buy-resell/products/_third-party-status.mdx';
+import ThirdPartyStatusDE from '../_markets/de/buy-resell/products/_third-party-status.mdx';
 
 <Tabs groupId="market">
 
