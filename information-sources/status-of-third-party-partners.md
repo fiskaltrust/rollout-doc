@@ -27,24 +27,22 @@ The information about the status of the connection to a third-party partner vari
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import ThirdPartyStatusAT from '../../../_markets/at/buy-resell/products/_third-party-status.mdx';
+import ThirdPartyStatusFR from '../../../_markets/fr/buy-resell/products/_third-parties-status.mdx';
+import ThirdPartyStatusDE from '../../../_markets/de/buy-resell/products/_third-parties-status.mdx';
+
 <Tabs groupId="market">
 
   <TabItem value="AT" label="Austria">
-    ### [FinanzOnline](../buy-resell/products/3rd-party/finanzonline-management.md)
-    
-    [Status check for all PosOperators](../buy-resell/products/3rd-party/finanzonline-management.md#status-check-for-all-posoperators)
-    [Status check for a single Queue or SCU](../buy-resell/products/3rd-party/finanzonline-management.md#status-check-for-a-single-queue-or-scu)
-    [Status check for a single PosOperator](../buy-resell/products/3rd-party/finanzonline-management.md#status-check-for-a-single-posoperator)
+    <ThirdPartyStatusAT />
   </TabItem>
 
   <TabItem value="FR" label="France">
-    There are currently no third-party products in France.
+    <TThirdPartyStatusFR />
   </TabItem>
 
   <TabItem value="DE" label="Germany">
-    ### [DATEV MeinFiskal](../buy-resell/products/3rd-party/datev-meinfiskal.md)
-
-    [Status check for a single PosOperator](../buy-resell/products/3rd-party/datev-meinfiskal.md#status-check-for-a-single-posoperator)
+    <ThirdPartyStatusDE />
   </TabItem>
 
 </Tabs>

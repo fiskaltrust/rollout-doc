@@ -205,7 +205,7 @@ The PosOperator can now use the services *DATEV Kassenarchiv online* and order t
 |![Number 1](../../../images/Numbers/circle-1o.png) |Tick `[COMPANY]`  |
 |![Number 2](../../../images/Numbers/circle-2o.png) |Choose `Overview`  |
 |![Number 3](../../../images/Numbers/circle-3o.png) |Scroll down until `Here you can enable connections to third-party partners`  |
-|![Number 4](../../../images/Numbers/circle-4o.png) |Details about your connection and the status are given here. |
+|![Number 4](../../../images/Numbers/circle-4o.png) |Details about the connection and status are given here. |
 |![Number 5](../../../images/Numbers/circle-5o.png) |The contract can be downloaded using this link again. It was sent to your E-Mail address when the contact was signed or changed  |
 ## Troubleshooting
 
