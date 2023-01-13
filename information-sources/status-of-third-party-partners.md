@@ -17,17 +17,32 @@ You, as a PosDealer, can initialize the exchange with external service providers
 
 **No data exchange can take place without active setup by PosDealer or PosOperator.**  
 
-For details, please refer to the respective instructions or product descriptions [Products](../buy-resell/products/overview.md).  
-For manual exchange, see the section on [Exports](../technical-operations/maintenance/exports.md).
+For details on market-specific third-party products, please refer to the respective instructions or product descriptions [Products](../buy-resell/products/3rd-party/3rd-party-overview.md).  
+For manual exchange of data, see the section on [Exports](../technical-operations/maintenance/exports.md).
 
-## Work steps
+## Status information
 
-![third-party partner](images/5-documentation-third-party.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile")
+The information about the status of the connection to a third-party partner varies depending on market and product.
 
-| Steps | Description                                                                                                                |
-|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](images/Numbers/circle-1o.png) |Tick `[COMPANY]`  |
-|![Number 2](images/Numbers/circle-2o.png) |Choose `Overview`  |
-|![Number 3](images/Numbers/circle-3o.png) |Scroll down until `Here you can enable connections to third-party partners`  |
-|![Number 4](images/Numbers/circle-4o.png) |Enable the connection by setting the slide to the right and signing the contract. |
-|![Number 5](images/Numbers/circle-5o.png) |Return to download the contract again, if needed. This contract was sent to your E-Mail address when the contact was signed or changed  |
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+import ThirdPartyStatusAT from '../_markets/at/buy-resell/products/_third-party-status.mdx';
+import ThirdPartyStatusFR from '../_markets/fr/buy-resell/products/_third-party-status.mdx';
+import ThirdPartyStatusDE from '../_markets/de/buy-resell/products/_third-party-status.mdx';
+
+<Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <ThirdPartyStatusAT />
+  </TabItem>
+
+  <TabItem value="FR" label="France">
+    <TThirdPartyStatusFR />
+  </TabItem>
+
+  <TabItem value="DE" label="Germany">
+    <ThirdPartyStatusDE />
+  </TabItem>
+
+</Tabs>
