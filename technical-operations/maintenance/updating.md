@@ -16,7 +16,7 @@ We announce the availability of a new update on the fiskaltrust.Portal. Check th
 
 import ReactPlayer from "react-player"
 
-<ReactPlayer controls url={require("./media/updaten-23-01-12").default} /><br />
+<ReactPlayer controls url={require("./media/updaten-23-01-12.mp4").default} /><br />
 
 ## Bulk update CashBoxes
 
