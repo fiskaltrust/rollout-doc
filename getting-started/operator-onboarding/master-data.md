@@ -12,8 +12,9 @@ After reading this, you can keep your and the PosOperators Master data up-to-dat
 
 The Master data of a company in the fiskaltrust.Portal are important for various reasons:  
 
-* On the one hand, parts of this data, such as commercial identifications, are used for authentication with the tax authorities or third-party services.  
-* On the other hand, automated invoice generation between PosDealer and PosOperators uses these data.  
+* Parts of this data, such as commercial identifications, are used for authentication with the tax authorities or third-party services.  
+* The automated invoice generation between PosDealer and PosOperators uses these data.
+* The digital receipt uses commercial identifications from the Master data and values like address and an (optional) logo for every single outlet.
 
 Therefore, it is essential to check the completeness of Master data in the fiskaltrust.Portal. Country-specific check mechanisms are also available for checking the data entered.
 Such check mechanisms check, depending on the legal situation and the technical equipment of the fiscal administration, whether an entered value meets the formal requirements.   
@@ -66,7 +67,7 @@ import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/mas
 |![data check invalid](images/data-invalid.png) |This symbol stands for invalid values. Hover with your mouse over the symbol and note the description. Change the values accordingly and repeat the data check. |
 |![data check valid](images/data-valid.png) |This symbol shows a positive validation of the value in the data field. Please note that this is no protection from using duplicates|
 
-### Check or add outlets
+### Add or check outlets
 
 import OutletAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
 import OutletFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
@@ -96,3 +97,35 @@ import OutletDE from '../../_markets/de/getting-started/operator-onboarding/mast
 |![Number 4](images/Numbers/circle-4o.png) |With `Import` the data are checked in `Bulk import of Outlets`, where you choose `Proceed with valid outlets`.  |
 |![Number 5](images/Numbers/circle-5o.png) |If only a single outlet is missing, choose `+Add new Outlet`.  |
 |![Number 6](images/Numbers/circle-6o.png) |Please note that `Edit Primary Outlet` changes the address values that you have previously checked under `[COMPANY NAME]` / `Master data`.  |
+|![Number 7](images/Numbers/circle-7o.png) |For changes to the data of a point of sale, select `Edit`.|
+
+### Edit outlets
+
+import EditOutletAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_edit-outlet.mdx';
+import EditOutletFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_edit-outlet.mdx';
+import EditOutletDE from '../../_markets/de/getting-started/operator-onboarding/master-data/_edit-outlet.mdx';
+
+<Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <EditOutletAT />
+  </TabItem>
+
+  <TabItem value="FR" label="France">
+    <EditOutletFR />
+  </TabItem>
+
+  <TabItem value="DE" label="Germany">
+    <EditOutletDE />
+  </TabItem>
+
+</Tabs>
+
+| Steps | Description                                                                                                                |
+|:---------------------------:|--------------------------------------------------------------------------------------------------------------------------------|
+|...|Choose `[COMPANY NAME]` / `Outlets` and select `Edit` to control or edit the values of the chosen outlet. |
+|![Number 2](images/Numbers/circle-2o.png) |Address data are relevant for the automated invoice generation between PosDealer and PosOperators and for the digital receipt.  |
+|![Number 3](images/Numbers/circle-3o.png) |You can set the `Outlet number` if you create the outlet manually, but you cannot change it afterwards. |
+|![Number 4](images/Numbers/circle-4o.png) |With `Select Image File` you can upload an image file to customize the digital receipts for the chosen outlet.  |
+|![Number 5](images/Numbers/circle-5o.png) |`Save` your changes or use `Cancel` to return to `Company` / `Outlets`.  |
+
