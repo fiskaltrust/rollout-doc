@@ -22,8 +22,8 @@ Under country-specific circumstances, when a PosOperator is first registered, th
 
 After logging on to the fiskaltrust.Portal, as a PosDealer, you should check the completeness and use the available checking mechanisms.
 
-The information about the user at `[USERNAME]` / `Data` is only essential for using the fiskaltrust.Portal. For data protection reasons, fictitious names or function designations can also be used instead of accurate data (like _fiskalizing@company.com_).  
-But the E-Mail address must be a real, working one because you use this address for login to the fiskaltrust.Portal. You can avoid using real names using functional designations (like fiskalizing@PosOperator.TLD).
+The information about the user at `[USERNAME]` / `Data` is only essential for using the fiskaltrust.Portal. For data protection reasons, fictitious names or function designations can also be used instead of accurate data (like _fiscalizing_).  
+But the E-Mail address must be a real, working one because you use this address for login to the fiskaltrust.Portal. You can avoid using real names using functional designations (like fiscalizing@PosOperator.TLD).
 
 For PosOperators, it is equally essential to check the Master data for completeness and correctness. 
 
@@ -97,7 +97,7 @@ import OutletDE from '../../_markets/de/getting-started/operator-onboarding/mast
 |![Number 4](images/Numbers/circle-4o.png) |With `Import`, the data is checked and listed in `Bulk import of Outlets`, where you choose `Proceed with valid outlets`.  |
 |![Number 5](images/Numbers/circle-5o.png) |If only a single outlet is missing, choose `+Add new Outlet`.  |
 |![Number 6](images/Numbers/circle-6o.png) |Please note that `Edit Primary Outlet` changes the address values that you have previously checked under `[COMPANY NAME]` / `Master data`.  |
-|![Number 7](images/Numbers/circle-7o.png) |For changes to the data of a point of sale, select `Edit`.|
+|![Number 7](images/Numbers/circle-7o.png) |For changes to the data of an outlet, select `Edit`.|
 
 ### Edit outlets
 
