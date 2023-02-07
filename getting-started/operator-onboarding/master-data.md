@@ -10,19 +10,19 @@ After reading this, you can keep your and the PosOperators Master data up-to-dat
 
 ## Introduction
 
-The Master data of a company in the fiskaltrust.Portal are important for various reasons:  
+The Master data of a company in the fiskaltrust.Portal are essential for various reasons:  
 
 * Parts of this data, such as commercial identifications, are used for authentication with the tax authorities or third-party services.  
-* The automated invoice generation between PosDealer and PosOperators uses these data.
+* The automated invoice generation between PosDealer and PosOperators uses this data.
 * The digital receipt uses commercial identifications from the Master data and values like address and an (optional) logo for every single outlet.
 
 Therefore, it is essential to check the completeness of Master data in the fiskaltrust.Portal. Country-specific check mechanisms are also available for checking the data entered.
 Such check mechanisms check, depending on the legal situation and the technical equipment of the fiscal administration, whether an entered value meets the formal requirements.   
 Under country-specific circumstances, when a PosOperator is first registered, the other master data can be retrieved from the relevant authority and checked by entering a tax number.
 
-After logging on to the fiskaltrust.Portal, you as a PosDealer should check the completeness and use the available checking mechanisms.
+After logging on to the fiskaltrust.Portal, as a PosDealer, you should check the completeness and use the available checking mechanisms.
 
-The information about the user at `[USERNAME]` / `Data` is only essential for using the fiskaltrust.Portal. For data protection reasons, fictitious names or function designations can also be used instead of accurate data (like fiskalizing).  
+The information about the user at `[USERNAME]` / `Data` is only essential for using the fiskaltrust.Portal. For data protection reasons, fictitious names or function designations can also be used instead of accurate data (like _fiskalizing@company.com_).  
 But the E-Mail address must be a real, working one because you use this address for login to the fiskaltrust.Portal. You can avoid using real names using functional designations (like fiskalizing@PosOperator.TLD).
 
 For PosOperators, it is equally essential to check the Master data for completeness and correctness. 
@@ -65,7 +65,7 @@ import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/mas
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Data check undone](images/data-undone.png) |This symbol represents an unchecked value in the data field.  |
 |![data check invalid](images/data-invalid.png) |This symbol stands for invalid values. Hover with your mouse over the symbol and note the description. Change the values accordingly and repeat the data check. |
-|![data check valid](images/data-valid.png) |This symbol shows a positive validation of the value in the data field. Please note that this is no protection from using duplicates|
+|![data check valid](images/data-valid.png) |This symbol validates the value in the data field. Please note that this is no protection from using duplicates.|
 
 ### Add or check outlets
 
@@ -94,7 +94,7 @@ import OutletDE from '../../_markets/de/getting-started/operator-onboarding/mast
 |![Number 1](images/Numbers/circle-1o.png) |Choose `[COMPANY NAME]` / `Outlets` and control the existing values. |
 |![Number 2](images/Numbers/circle-2o.png) |If several outlets are missing, use `Download demo CSV file`.  |
 |![Number 3](images/Numbers/circle-3o.png) |Open the CSV file, add the desired values and save it. Change back to the fiskaltrust.Portal / `[COMPANY NAME]`/ `Outlet` and `Choose file`. |
-|![Number 4](images/Numbers/circle-4o.png) |With `Import` the data are checked in `Bulk import of Outlets`, where you choose `Proceed with valid outlets`.  |
+|![Number 4](images/Numbers/circle-4o.png) |With `Import`, the data is checked and listed in `Bulk import of Outlets`, where you choose `Proceed with valid outlets`.  |
 |![Number 5](images/Numbers/circle-5o.png) |If only a single outlet is missing, choose `+Add new Outlet`.  |
 |![Number 6](images/Numbers/circle-6o.png) |Please note that `Edit Primary Outlet` changes the address values that you have previously checked under `[COMPANY NAME]` / `Master data`.  |
 |![Number 7](images/Numbers/circle-7o.png) |For changes to the data of a point of sale, select `Edit`.|
@@ -125,7 +125,7 @@ import EditOutletDE from '../../_markets/de/getting-started/operator-onboarding/
 |:---------------------------:|--------------------------------------------------------------------------------------------------------------------------------|
 |...|Choose `[COMPANY NAME]` / `Outlets` and select `Edit` to control or edit the values of the chosen outlet. |
 |![Number 2](images/Numbers/circle-2o.png) |Address data are relevant for the automated invoice generation between PosDealer and PosOperators and for the digital receipt.  |
-|![Number 3](images/Numbers/circle-3o.png) |You can set the `Outlet number` if you create the outlet manually, but you cannot change it afterwards. |
-|![Number 4](images/Numbers/circle-4o.png) |With `Select Image File` you can upload an image file to customize the digital receipts for the chosen outlet.  |
+|![Number 3](images/Numbers/circle-3o.png) |You can set the `Outlet number` if you create the outlet manually, but you cannot change it afterward. |
+|![Number 4](images/Numbers/circle-4o.png) |With `Select Image File`, you can upload an image file to customize the digital receipts for the chosen outlet.  |
 |![Number 5](images/Numbers/circle-5o.png) |`Save` your changes or use `Cancel` to return to `Company` / `Outlets`.  |
 
