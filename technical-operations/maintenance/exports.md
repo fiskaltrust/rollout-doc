@@ -9,7 +9,7 @@ title: Exports
 After reading this, you can create and download exports from the portal.
 
 :::
-n any
+
 ## Introduction
 
 As a PosDealer or PosOperator, you can export data from your POS-Systems via the fiskaltrust.Portal for archiving or for processing with other systems such as your accounting. 
