@@ -240,7 +240,7 @@ You can use one E-Mail address to access different companies, but with three pre
 7. Note **not to create the same company** more than once.
 8. Note that several companies mean **different legal** bindings**, e. g. contracts
 
-### PosDealers have used wrong E-Mail address for invitation
+### Invitation was sent to the wrong recipient
 
 #### Solution for Primary Contacts
 
