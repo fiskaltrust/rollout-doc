@@ -12,7 +12,8 @@ After that, you and your employees can start working in fiskaltrust.Portal.
 :::
 ## Explanation
 
-You create an account for your company and a user for yourself on the fiskaltrust.Portal. With this, you can log in. For security reasons, you can create another user for yourself, as well as additional users for employees of your company.  
+You create an account for your company and a user for yourself on the fiskaltrust.Portal. With this, you can log in.  
+For security reasons, you can create another user for yourself, as well as additional users for employees of your company.  
 Then, you define with different authorizations the options that the users have in the fiskaltrust.Portal. 
 
 ### Country-specific information
@@ -144,18 +145,17 @@ You can create another user for yourself, for example, for security reasons. You
 
 ### Work steps to invite new users
 
+With the user rights shown in the screenshot, an employee could read and change content, switch to the accounts of PosOperators, conclude contracts and create or change PosSystems. However, this user would neither have access to `Company`/ `Employee` nor to `Configuration`in his own company.
 
-![Data employee](images/registration/user_data_employee.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
+![Data employee](images/registration/user_data_employee-23-02-20.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../images/numbers/circle-1o.png) |Tick `COMPANY` / `Employee` and `+Add`.   |
+|![Number 1](../images/numbers/circle-1o.png) |Tick `Company` / `Employee` and `+Add`.   |
 |![Number 2](../images/numbers/circle-2o.png) |Enter the desired E-Mail address for the new user and tick `Search`. |
 |![Number 3](../images/numbers/circle-3o.png) |Complete the **necessary** master data for the new user with entries for `First name` and `Last name` and, if desired, additional information.  |
 |![Number 4](../images/numbers/circle-4o.png) |Design the authorizations by enabling the desired access rights; at least `Read` must be enabled. To activate, slide the slider to the right; to deactivate, slide it to the left. A confirmation message appears at the top right.|
 |![Number 5](../images/numbers/circle-5o.png) |Your click on `Create new` generates an invitation to the new user's E-Mail address. Inform him about the next steps. SPAM folders should also be considered in case the invitation is sorted out. The new user must use this invitation to confirm his E-Mail address, set a password and link his account in the fiskaltrust.Portal with your company. |
-
-With the user rights shown in the screenshot, an employee could read and change content, switch to the accounts of PosOperators, conclude contracts and create or change PosSystems. However, this user would neither have access to `[COMPANY]`/ `Employee` nor to `Configuration`in his own company.
 
 :::tip  Attention
 
@@ -181,7 +181,7 @@ In the future, all users will use the login listed [above](registration.md#Count
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../images/numbers/circle-1o.png) |Tick `COMPANY` / `Employee`. |
+|![Number 1](../images/numbers/circle-1o.png) |Tick `Company` / `Employee`. |
 |![Number 2](../images/numbers/circle-2o.png) |Check the existing `Authorizations`. You can recognize inactive rights with a black symbol and activated rights with a blue symbol. |
 |![Number 3](../images/numbers/circle-3o.png) |To change the authorizations of a particular user, expand the buttons with the arrow on the left edge of the line.  |
 |![Number 4](../images/numbers/circle-4o.png) |To activate, set the slider to the right; to deactivate, set it to the left. A confirmation message appears at the top right. |
@@ -250,13 +250,13 @@ Let's assume that you have received your company's first invitation to the fiska
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/numbers/circle-1o.png) |You, as a new user, check the inbox of that E-Mail address used by the invitation. |
 |![Number 2](../images/numbers/circle-2o.png) |Use the confirmation link to activate the invitation. Next, read and accept the T&C and Privacy Policy and add a password. |
-|![Number 3](../images/numbers/circle-3o.png) |Tick `COMPANY` / `Employee` and `+Add`. |
+|![Number 3](../images/numbers/circle-3o.png) |Tick `Company` / `Employee` and `+Add`. |
 |![Number 4](../images/numbers/circle-4o.png) |Enter the E-Mail address for the desired user and tick `Search`. |
 |![Number 5](../images/numbers/circle-5o.png) |Complete the **necessary** master data.  |
 |![Number 6](../images/numbers/circle-6o.png) |Design the authorizations by enabling all access rights. Note that this is insufficient to set the new user as Primary Contact and select `Create new`.|
 |![Number 7](../images/numbers/circle-7o.png) |Inform the new user about the next steps: _You, as a new user, must use this invitation to confirm your E-Mail address and set a password_. |
 |![Number 8](../images/numbers/circle-8o.png) |The new user checks the inbox of the E-Mail address used by the invitation and selects the included link. Next, he reads and accepts the T&C and Privacy Policy, adds a password and informs you about his registration at fiskaltrust.Portal. |
-|![Number 9](../images/numbers/circle-9o.png) |You, as a Primary Contact, tick `COMPANY` / `Employee` and open the collapsible at the desired employee´s entry. | |
+|![Number 9](../images/numbers/circle-9o.png) |You, as a Primary Contact, tick `Company` / `Employee` and open the collapsible at the desired employee´s entry. | |
 |![Number 10](../images/numbers/circle-10o.png) |Select `Primary Contact` and log out. |
 |![Number 11](../images/numbers/circle-11o.png) |The new user will be the Primary Contact when he logs in the next time. If desired, he can assign your user access rights; otherwise, you will have no further access or responsibilities. |
 
