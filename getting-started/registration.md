@@ -7,14 +7,14 @@ title: Registration
 :::info summary
 
 After reading this, you can create an account in the fiskaltrust.Portal, log out and log in again, invite employees and assign them different rights.  
-After that, you and your employees can start working in fiskaltrust.Portal.
 
 :::
 ## Explanation
 
 You create an account for your company and a user for yourself on the fiskaltrust.Portal. With this, you can log in.  
 For security reasons, you can create another user for yourself, as well as additional users for employees of your company.  
-Then, you define with different authorizations the options that the users have in the fiskaltrust.Portal. 
+Then, you define with different authorizations the users' options in the fiskaltrust.Portal. 
+Frequently asked questions about using the fiskaltrust.Portal are summarized in the Troubleshooting section.
 
 ### Country-specific information
 
@@ -177,16 +177,17 @@ In the future, all users will use the login listed [above](registration.md#Count
 
 ### Expand user rights
 
-![Employees Authorizations](images/registration/user_management.png "Employees Authorizations at https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
+![Employees Authorizations](images/registration/user_management-23-02-20.png "Employees Authorizations at https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/numbers/circle-1o.png) |Tick `Company` / `Employee`. |
-|![Number 2](../images/numbers/circle-2o.png) |Check the existing `Authorizations`. You can recognize inactive rights with a black symbol and activated rights with a blue symbol. |
-|![Number 3](../images/numbers/circle-3o.png) |To change the authorizations of a particular user, expand the buttons with the arrow on the left edge of the line.  |
-|![Number 4](../images/numbers/circle-4o.png) |To activate, set the slider to the right; to deactivate, set it to the left. A confirmation message appears at the top right. |
-|![Number 5](../images/numbers/circle-5o.png) |Choose `Set to new Primary Contact` **only if you want to hand over all** `Authorizations`. |
-|![Number 6](../images/numbers/circle-6o.png) |With `Remove assignment`, you delete the user's assignment. |
+|![Number 2](../images/numbers/circle-2o.png) |At `Authorizations for the employees`, you will find explanations of the permissions.   |
+|![Number 3](../images/numbers/circle-3o.png) |Check the existing `Authorizations`. You can recognize inactive rights with a black symbol and activated rights with a blue symbol.|
+|![Number 4](../images/numbers/circle-4o.png) |To change the authorizations of a particular user, expand the buttons with the arrow on the left edge of the line. |
+|![Number 5](../images/numbers/circle-5o.png) |To activate, set the slider to the right; to deactivate, set it to the left. A confirmation message appears at the top right. |
+|![Number 6](../images/numbers/circle-6o.png) |Choose `Set to new Primary Contact` **only if you want to hand over all** `Authorizations`. |
+|![Number 7](../images/numbers/circle-7o.png) |With `Remove assignment`, you delete the user's assignment. |
 
 
 ### Remove Access rights
@@ -221,7 +222,7 @@ etc.
 
 #### Solution for Primary Contacts
 
-![Different companies](images/registration/user_companies_management.png "Different companies")
+![Different companies](images/registration/user_companies_management-23-02-21.png "Different companies")
 
 **We strongly recommend to check this process at first in the sandbox!**
 
