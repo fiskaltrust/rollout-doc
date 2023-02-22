@@ -6,13 +6,15 @@ title: Registration
 
 :::info summary
 
-After reading this, you can create an account, log in, invite employees and start working with the fiskaltrust.Portal.
+After reading this, you can create an account in the fiskaltrust.Portal, log out and log in again, invite employees and assign them different rights.  
 
 :::
 ## Explanation
 
-You create an account for your company and a user for yourself on the fiskaltrust.Portal. With this, you can log in. For security reasons, you can create another user for yourself, as well as additional users for employees of your company.  
-Then, you define with different authorizations the options that the users have in the fiskaltrust.Portal. 
+You create an account for your company and a user for yourself on the fiskaltrust.Portal. With this, you can log in.  
+For security reasons, you can create another user for yourself, as well as additional users for employees of your company.  
+Then, you define with different authorizations the users' options in the fiskaltrust.Portal. 
+Frequently asked questions about using the fiskaltrust.Portal are summarized in the Troubleshooting section.
 
 ### Country-specific information
 
@@ -137,24 +139,23 @@ If the password for logging into the fiskaltrust.Portal is lost or forgotten; yo
 |![Number 5](../images/numbers/circle-5o.png) |Check after a few minutes the inbox of this E-Mail address. When you click the link in the E-Mail, a browser window will open and show the password reset page of the fiskaltrust.Portal.  |
 |![Number 6](../images/numbers/circle-6o.png) |Enter the E-Mail address of your _fiskaltrust_ account, the new password and confirm it by entering it a second time. Your click on `RESET` will save the new password; you see a confirmation page, and you can log in to the fiskaltrust.Portal again.  |
 
-## Invitation of new users
+## Creation of new users
 
 You can create another user for yourself, for example, for security reasons. You can also add users for your company's employees. Then, you define with different authorization the several options your users have in the fiskaltrust.Portal.
 
 ### Work steps to invite new users
 
+With the user rights shown in the screenshot, an employee could read and change content, switch to the accounts of PosOperators, conclude contracts and create or change PosSystems. However, this user would neither have access to `Company`/ `Employee` nor to `Configuration`in his own company.
 
-![Data employee](images/registration/user_data_employee.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
+![Data employee](images/registration/user_data_employee-23-02-20.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../images/numbers/circle-1o.png) |Tick [`COMPANY`] / `Employee` and `+Add`.   |
-|![Number 2](../images/numbers/circle-2o.png) |Enter as new user the E-Mail address and tick `Search`. |
+|![Number 1](../images/numbers/circle-1o.png) |Tick `Company` / `Employee` and `+Add`.   |
+|![Number 2](../images/numbers/circle-2o.png) |Enter the desired E-Mail address for the new user and tick `Search`. |
 |![Number 3](../images/numbers/circle-3o.png) |Complete the **necessary** master data for the new user with entries for `First name` and `Last name` and, if desired, additional information.  |
 |![Number 4](../images/numbers/circle-4o.png) |Design the authorizations by enabling the desired access rights; at least `Read` must be enabled. To activate, slide the slider to the right; to deactivate, slide it to the left. A confirmation message appears at the top right.|
-|![Number 5](../images/numbers/circle-5o.png) |Your click on `Create` sends an invitation e-Mail to the new user's E-Mail address. Inform them of the next steps to confirm their e-mail address and associate it with your company. |
-
-With the user rights shown in the screenshot, an employee could read and change content, switch to the accounts of cash register operators, conclude contracts and create or change POS Systems. However, this user would neither have access to `[COMPANY]` nor to configurations in his own company's account.
+|![Number 5](../images/numbers/circle-5o.png) |Your click on `Create new` generates an invitation to the new user's E-Mail address. Inform him about the next steps. SPAM folders should also be considered in case the invitation is sorted out. The new user must use this invitation to confirm his E-Mail address, set a password and link his account in the fiskaltrust.Portal with your company. |
 
 :::tip  Attention
 
@@ -167,34 +168,34 @@ Note that no access is possible with the default access rights; you must at leas
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](../images/numbers/circle-1o.png) |The new user checks the inbox of that E-Mail address used by invitation. |
-|![Number 2](../images/numbers/circle-2o.png) |The usage of the confirmation link activates the invitation. Read and accept the T&C and Privacy Policy and add a password. |
+|![Number 2](../images/numbers/circle-2o.png) |The usage of the confirmation link activates the invitation. Next, read and accept the T&C and Privacy Policy and add a password. |
 |![Number 3](../images/numbers/circle-3o.png) |The employee activates the new user by using the confirmation link and adding a password. |
 
-In the future, all users will use the login listed up [above](registration.md#Country-specific-information) or in the assignment message.
-
+In the future, all users will use the login listed [above](registration.md#Country-specific-information) or in the assignment message.
 
 ## Managing user rights
 
 ### Expand user rights
 
-![Employees Authorizations](images/registration/user_management.png "Employees Authorizations at https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
+![Employees Authorizations](images/registration/user_management-23-02-20.png "Employees Authorizations at https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Employee")
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](../images/numbers/circle-1o.png) |Tick [`COMPANY`] / `Employee`. |
-|![Number 2](../images/numbers/circle-2o.png) |Check the existing `Authorizations`. You can recognize inactive rights with a black symbol and activated rights with a blue symbol. |
-|![Number 3](../images/numbers/circle-3o.png) |To change the authorizations of a particular user, expand the buttons with the arrow on the left edge of the line.  |
-|![Number 4](../images/numbers/circle-4o.png) |To activate, set the slider to the right; to deactivate, set it to the left. A confirmation message appears at the top right. |
-|![Number 5](../images/numbers/circle-5o.png) |Choose `Set to new Primary Contact` **only if you want to hand over all** `Authorizations`. |
-|![Number 6](../images/numbers/circle-6o.png) |With `Remove assignment`, you delete the user's assignment. |
+|![Number 1](../images/numbers/circle-1o.png) |Tick `Company` / `Employee`. |
+|![Number 2](../images/numbers/circle-2o.png) |At `Authorizations for the employees`, you will find explanations of the permissions.   |
+|![Number 3](../images/numbers/circle-3o.png) |Check the existing `Authorizations`. You can recognize inactive rights with a black symbol and activated rights with a blue symbol.|
+|![Number 4](../images/numbers/circle-4o.png) |To change the authorizations of a particular user, expand the buttons with the arrow on the left edge of the line. |
+|![Number 5](../images/numbers/circle-5o.png) |To activate, set the slider to the right; to deactivate, set it to the left. A confirmation message appears at the top right. |
+|![Number 6](../images/numbers/circle-6o.png) |Choose `Set to new Primary Contact` **only if you want to hand over all** `Authorizations`. |
+|![Number 7](../images/numbers/circle-7o.png) |With `Remove assignment`, you delete the user's assignment. |
 
 
 ### Remove Access rights
 
 | action | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|`Remove assignment` |This action only removes the assignment of the e-mail address to the company, but does not delete it for security reasons. |
-|`Set to new Primary Contact`| The previous access rights are **completely and at once withdrawn from the own contact** with this action. This action **immediately and completely** revokes the access rights of the previously privileged contact. After the next logout, the former primary contact cannot even log in to the fiskaltrust.Portal. The new primary contact must reassign access rights to his own company to him. |
+|`Remove assignment` |This action only removes the assignment of the E-Mail address to the company, but does not delete it for security reasons. |
+|`Set to new Primary Contact`| The previous access rights are **completely and at once withdrawn from the own contact** with this action. This action **immediately and completely** revokes the access rights of the previously privileged contact. After the next logout, the former Primary Contact cannot even log in to the fiskaltrust.Portal. The new Primary Contact must reassign access rights to his company to him. |
 
 ## Troubleshooting
 
@@ -205,13 +206,13 @@ In the future, all users will use the login listed up [above](registration.md#Co
 
 ### PosDealers have several companies
 
-A user's e-mail address is binding because of its usage as a one-to-one mapping to an account. Therefore, using e-mail addresses for two or more companies is impossible for Primary Contact or employees.
+A user's E-Mail address is binding because of its usage as a one-to-one mapping to an account. Therefore, using E-Mail addresses for two or more companies is impossible for a Primary Contact or employees.
 
 #### Solution for employees
 
 **We strongly recommend to check this process at first in the sandbox!**
 
-1. Select [`Company`] / `Employees` / `+Add`.
+1. Select `Company` / `Employees` / `+Add`.
 2. Add data records, if necessary, with fictitious information; only the E-Mail address must be correct, e.g., peter.pattern@mycomany.com.
 3. If employees are assigned to several accounts, create alias addresses and use these, e.g.:
 
@@ -219,13 +220,13 @@ A user's e-mail address is binding because of its usage as a one-to-one mapping 
 * peter.pattern+2@mycomany.com  
 etc.
 
-#### Solution for primary contacts
+#### Solution for Primary Contacts
 
-![Different companies](images/registration/user_companies_management.png "Different companies")
+![Different companies](images/registration/user_companies_management-23-02-21.png "Different companies")
 
 **We strongly recommend to check this process at first in the sandbox!**
 
-You can use one e-mail address to access different companies, but with three prerequisites only:
+You can use one E-Mail address to access different companies, but with three prerequisites only:
 
 * The companies are not yet created and can be added manually in the fiskaltrust.Portal.
 * You avoid creating Companies more than once.
@@ -239,3 +240,37 @@ You can use one e-mail address to access different companies, but with three pre
 6. Switch from company to company with another click on the arrow symbol next to your user name.
 7. Note **not to create the same company** more than once.
 8. Note that several companies mean **different legal** bindings**, e. g. contracts
+
+### Invitation was sent to the wrong recipient
+
+#### Solution for Primary Contacts
+
+Let's assume that you have received your company's first invitation to the fiskaltrust.portal, but you will not be working as the main contact. The easiest way is to accept the invitation, then invite your designated employee yourself and set him as the new main contact. If he does not reassign access rights to you, you will have no access or further responsibilities after that.
+
+| Steps | Description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../images/numbers/circle-1o.png) |You, as a new user, check the inbox of that E-Mail address used by the invitation. |
+|![Number 2](../images/numbers/circle-2o.png) |Use the confirmation link to activate the invitation. Next, read and accept the T&C and Privacy Policy and add a password. |
+|![Number 3](../images/numbers/circle-3o.png) |Tick `Company` / `Employee` and `+Add`. |
+|![Number 4](../images/numbers/circle-4o.png) |Enter the E-Mail address for the desired user and tick `Search`. |
+|![Number 5](../images/numbers/circle-5o.png) |Complete the **necessary** master data.  |
+|![Number 6](../images/numbers/circle-6o.png) |Design the authorizations by enabling all access rights. Note that this is insufficient to set the new user as Primary Contact and select `Create new`.|
+|![Number 7](../images/numbers/circle-7o.png) |Inform the new user about the next steps: _You, as a new user, must use this invitation to confirm your E-Mail address and set a password_. |
+|![Number 8](../images/numbers/circle-8o.png) |The new user checks the inbox of the E-Mail address used by the invitation and selects the included link. Next, he reads and accepts the T&C and Privacy Policy, adds a password and informs you about his registration at fiskaltrust.Portal. |
+|![Number 9](../images/numbers/circle-9o.png) |You, as a Primary Contact, tick `Company` / `Employee` and open the collapsible at the desired employee´s entry. | |
+|![Number 10](../images/numbers/circle-10o.png) |Select `Primary Contact` and log out. |
+|![Number 11](../images/numbers/circle-11o.png) |The new user will be the Primary Contact when he logs in the next time. If desired, he can assign your user access rights; otherwise, you will have no further access or responsibilities. |
+
+#### Solution for PosDealers
+
+Let's assume you have sent an invitation to a PosOperator using the wrong e-mail address. You, as a PosDealer, can forward an incorrectly addressed invitation to another recipient as long as the original receiver has yet to activate it
+
+| Steps | Description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../images/numbers/circle-1o.png) |You, as a PosDealer, log in to fiskaltrust.Portal and select `PosOperator` / `Invitation`. |
+|![Number 2](../images/numbers/circle-2o.png) |Tick `History` and search for the wrongly used E-Mail address. |
+|![Number 3](../images/numbers/circle-3o.png) |Tick `Edit PosOperator again`. |
+|![Number 4](../images/numbers/circle-4o.png) |Switch back to `PosOperator` / `Invitation`. |
+|![Number 5](../images/numbers/circle-5o.png) |You may search for the wrongly used E-Mail address again, then select `Edit`. |
+|![Number 6](../images/numbers/circle-6o.png) |Change the E-Mail addresses, both at `E-mail address` and at `Contact E-mail address` and save your changes with `Save`.|
+|![Number 7](../images/numbers/circle-7o.png) |Use `Send invitation again` to resend the invitation E-Mail. |
