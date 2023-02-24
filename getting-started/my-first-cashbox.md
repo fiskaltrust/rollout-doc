@@ -12,9 +12,9 @@ After reading this, you can create a CashBox and have a functioning fiskaltrust.
 
 ## Introduction
 
-Our fiskaltrust.Portal supports you, as a PosDealer with two options to create your first CashBox.  
-[Rollout plans](../buy-resell/rollout-plans.md) are **deployment wizards** in the fiskaltrust.Portal. With Rollout Plans, you get, on the one hand, high security when creating, buying and setting up CashBoxes and related components for your PosOperators. On the other hand, you save time by being able to select several PosOperators as well as several outlets at the same time.  
-Suppose, you need a configuration, that is not covered by [Rollout plans](../buy-resell/rollout-plans.md), which assists you. Then, you have to create and generate your Cashbox manually. Read the section [Architecture](../overview/architecture.md) to receive information about the components needed to create a CashBox. 
+Our fiskaltrust.Portal supports you as a PosDealer with two options to create your first CashBox.  
+[Rollout plans](../buy-resell/rollout-plans.md) are **deployment wizards** in the fiskaltrust.Portal. With Rollout Plans, you enjoy high security when creating, buying and setting up CashBoxes and related components for your PosOperators. Additionally, you save time by being able to select several PosOperators as well as several outlets at the same time.  
+Suppose you need a configuration not covered by [Rollout plans](../buy-resell/rollout-plans.md). Then, you have to create and generate your Cashbox individually and manually. Read the section [Architecture](../overview/architecture.md) to learn about the components needed to create a CashBox. 
 
 ![preview](./images/my-first-cashbox/first-CashBox-flow.drawio.png "My first CashBox")
 
@@ -29,10 +29,8 @@ Unfortunately, this tutorial is **not yet applicable to the Austrian market** as
 
 Before we roll out our Middleware instance, the following prerequisites must be in place:
 
-<!-- intro added -->
-
 * A working **Internet connection** (_please see [Network Requirements](../technical-operations/middleware/network-requirements.md)_)
-* An active **PosDealer account** (*either by [registration](registration.md) or by invitation through your PosCreator*) at the fiskaltrust.Portal (Sandbox). Then, as a PosDealer, you can check `PosSystems` too to ensure, that a `PosSystemId` is available. Note that this menu item is not available in the account of PosOperators.
+* An active **PosDealer account** (*either by [registration](registration.md) or by invitation through your PosCreator*) at the fiskaltrust.Portal (Sandbox). Then, as a PosDealer, you can check `PosSystems` too to ensure that a `PosSystemId` is available. Note that this menu item is not available in the account of PosOperators.
 * A checked set of Master Data and at least one outlet (_please see [Master Data](../getting-started/operator-onboarding/master-data.md)_)
 * A system meeting the hardware and software **[requirements](../technical-operations/middleware/supported-environments.md)** (*in this tutorial we focus on rollouts on Windows*)
 * Any **SSCD components** (*hardware or SaaS credentials*) required for the setup, unless created during the setup itself
@@ -124,22 +122,13 @@ The [Configuration](../technical-operations/middleware/configuration.md) of a Ca
 |![Number 7](../images/numbers/circle-7o.png) |At `Package name`, you can select the desired option.  |
 |![Number 8](../images/numbers/circle-8o.png) |After you have selected `Save`, you will be directed to `Configuration` / `Signature Creation Unit` / `Configuration`. Add the necessary details for the selection you have made there.  |
 
-<!-- here a general description of the process
-then a country-specific tab
-screenshots
-details explained  AT has a certain value, that is not given at the others
-DE: https://docs.fiskaltrust.cloud/de/docs/poscreators/middleware-doc/germany/operation-modes/on-premise-installation#scucharacteristics--platform-support-matrix
-
- -->
-
 #### Helper
 
 Helpers are optional and vary depending on national laws and the needed functionality. Read the section [Helper](../technical-operations/middleware/helper.md) for further information.
 
-
 #### Queue
 
-A Queue is defined [here](../overview/architecture.md#queue), find more details at our [interface description](https://github.com/fiskaltrust/interface-doc) 
+A Queue is defined [here](../overview/architecture.md#queue), find more details at our [interface description](https://github.com/fiskaltrust/interface-doc).  
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -154,11 +143,7 @@ A Queue is defined [here](../overview/architecture.md#queue), find more details 
 |![Number 9](../images/numbers/circle-9o.png) |At `Outlet`, you can choose the desired option but note that this value cannot be changed again afer saving your Queue.  |
 |![Number 10](../images/numbers/circle-10o.png) |After you have selected `Save`, you will be directed to `Configuration` / `Queue` / `Configuration`. Add the necessary details for the selection you have made there.
 
-#### CashBox
-<!-- here an general description of the process
-then an country-specific tab
-screenshots
-details explained  AT has a certain value, that is not given at the others -->
+#### CashBox  
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
