@@ -177,7 +177,7 @@ There are several ways to help.
 |![Number 4](../../images/numbers/circle-4o.png) |Use `Delete` to remove the data of a not yet assigned PosOperator.|
 |  |If `This E-Mail address already exists` appears, see [Onboarding of existing PosOperators](./invitation-process.md#onboarding-of-existing-posoperators) .|
 
-### Assigning PosOperators in a bulk process
+#### Assigning PosOperators in a bulk process
 
 ![9-onboarding](images/9-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")
 
@@ -187,7 +187,7 @@ There are several ways to help.
 |![Number 2](../../images/numbers/circle-2o.png) |`+Add` is used for a manual invitation, see chapter [_Invitation of a single PosOperator_](#invitation-of-a-single-posoperator). |
 |![Number 3](../../images/numbers/circle-3o.png) |Choose `History` for control or also repair of E-Mail invitations.|
 
-### Onboarding of existing PosOperators 
+#### Onboarding of existing PosOperators 
 
 ![15-onboarding](images/15-onboarding-already-existing-PosOperators.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator")
 
@@ -201,7 +201,7 @@ There are several ways to help.
 |![Number 6](../../images/numbers/circle-6o.png) |After checking name, E-Mail address and access rights, they choose `Request assignment PosDealer`.|
 |![Number 7](../../images/numbers/circle-7o.png) |You as a PosDealer have to choose `PosOperator` / `Overview`, search the new PosOperator and tick `Accept`. The result is an active link, which you can use for surrogating.|
 
-### Options with invited PosOperators
+#### Options with invited PosOperators
 
 ![10-onboarding](images/10-onboarding-portal.png "https://portal-sandbox.fiskaltrust.TLD/PosOperator/PosOperators")
 

@@ -85,7 +85,7 @@ import HelperDE from '../../_markets/de/technical-operations/middleware/overview
 |![Number 5](../../images/numbers/circle-5o.png) |By clicking on `Edit`, you may edit things like the description, package name and version of the Helper. |
 |![Number 6](../../images/numbers/circle-6o.png) | The button `Trash` is inactive: _You cannot delete Helpers as they are an integral part of the CashBox and contain important audit data that you must preserve._ |
 |![Number 7](../../images/numbers/circle-7o.png) |Click on `+Add` for creating a new Helper. |
-See **Add a Helper** below for further details.
+See [Add a Helper](#add-a-helper) below for further details.
 
 ## Add a Helper
 

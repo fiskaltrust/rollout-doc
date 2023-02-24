@@ -171,7 +171,7 @@ Note that no access is possible with the default access rights; you must at leas
 |![Number 2](../images/numbers/circle-2o.png) |The usage of the confirmation link activates the invitation. Next, read and accept the T&C and Privacy Policy and add a password. |
 |![Number 3](../images/numbers/circle-3o.png) |The employee activates the new user by using the confirmation link and adding a password. |
 
-In the future, all users will use the login listed [above](registration.md#Country-specific-information) or in the assignment message.
+In the future, all users will use the login listed [above](registration.md#country-specific-information) or in the assignment message.
 
 ## Managing user rights
 
