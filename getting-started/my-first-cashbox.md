@@ -13,11 +13,21 @@ After reading this, you can create a CashBox and have a functioning fiskaltrust.
 ## Introduction
 
 Our fiskaltrust.Portal supports you as a PosDealer with two options to create your first CashBox.  
-[Rollout plans](../buy-resell/rollout-plans.md) are **deployment wizards** in the fiskaltrust.Portal. With Rollout Plans, you enjoy high security when creating, buying and setting up CashBoxes and related components for your PosOperators. Additionally, you save time by being able to select several PosOperators as well as several outlets at the same time.  
-Suppose you need a configuration not covered by [Rollout plans](../buy-resell/rollout-plans.md). Then, you have to create and generate your Cashbox individually and manually. Read the section [Architecture](../overview/architecture.md) to learn about the components needed to create a CashBox. 
+We recommend [Rollout plans](#business-rollout-create-scu-data) as our **deployment wizards** in the fiskaltrust.Portal. With Rollout Plans, you enjoy high security when creating, buying and setting up CashBoxes and related components for your PosOperators. Additionally, you save time by being able to select several PosOperators as well as several outlets at the same time.  
 
-![preview](./images/my-first-cashbox/first-CashBox-flow.drawio.png "My first CashBox")
+You use the [Manual creation](#manual-creation-from-scu-to-cashbox) if you need a configuration not covered by rollout plans. Then first read the [Architecture](../overview/architecture.md) section to learn more about the components needed to create a CashBox. Then read the section [Architecture](../overview/architecture.md) first to learn more about the components required to create a CashBox.  
 
+Both options require legally or commercially necessary preparations. These have been described and explained previously in this documentation. In the section [Prerequisites](#prerequisites), you will find them again summarized.
+
+:::tip
+
+Please make sure you use your [Sandbox](sandbox.md) account. So you avoid a bill on your account. 
+
+If you don't have one yet, please get in touch with your *PosCreator* for invitation details or [register](registration.md) a new PosDealer Sandbox account yourself.
+
+:::
+
+![preview](./images/my-first-cashbox/first-CashBox-flow.png "My first CashBox")
 
 :::caution 🇦🇹 Austria
 
@@ -34,14 +44,6 @@ Before we roll out our Middleware instance, the following prerequisites must be 
 * A checked set of Master Data and at least one outlet (_please see [Master Data](../getting-started/operator-onboarding/master-data.md)_)
 * A system meeting the hardware and software **[requirements](../technical-operations/middleware/supported-environments.md)** (*in this tutorial we focus on rollouts on Windows*)
 * Any **SSCD components** (*hardware or SaaS credentials*) required for the setup, unless created during the setup itself
-
-:::tip
-
-Please make sure you use your [Sandbox](sandbox.md) account. So you avoid a bill on your account. 
-
-If you don't have one yet, please get in touch with your *PosCreator* for invitation details or [register](registration.md) a new PosDealer Sandbox account yourself.
-
-:::
 
 ## Rollout Plans
 
