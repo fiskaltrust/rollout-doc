@@ -12,13 +12,13 @@ After reading this, you can keep your and the PosOperators Master data up-to-dat
 
 The Master data of a company in the fiskaltrust.Portal are essential for various reasons:  
 
-* Complete and verified Master data are fundamental for the accounting between fiskaltrust and you as PosDealer - this way you can use all options of the fiskaltrust.portal faster and more comprehensively.
+* Complete and verified Master data are fundamental for the accounting between fiskaltrust and you as PosDealer - this way you can use all options of the fiskaltrust.Portal faster and more comprehensively.
 
-* Accurate and validated Master data are essential for the accounting between you as PosDealer and your PosOperators in the fiskaltrust.portal - with correct data you avoid queries and additional effort.
+* Accurate and validated Master data are essential for the accounting between you as PosDealer and your PosOperators in the fiskaltrust.Portal - with correct data you avoid queries and additional effort.
 
-* Various signing products require a tax registration number  - this is the only way to achieve compliance. 
+* Various [signing devices and services](../../buy-resell/products/signing/signing-overview.md) require a tax registration number  - this is the only way to achieve compliance. 
 
-* Complete Master data also contained fiscal registration numbers - these are used for authentication towards fiscal authorities or third-party services.  
+* Complete Master data also contained fiscal registration numbers - these are used for authentication towards fiscal authorities or [third-party integrations](../../buy-resell/products/3rd-party/3rd-party-overview.md).  
 
 Therefore, it is essential to check the completeness of Master data in the fiskaltrust.Portal. Country-specific check mechanisms are also available for checking the data entered.
 Such check mechanisms check, depending on the legal situation and the technical equipment of the fiscal administration, whether an entered value meets the formal requirements.   
