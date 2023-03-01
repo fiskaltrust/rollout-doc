@@ -12,13 +12,17 @@ After reading this, you can keep your and the PosOperators Master data up-to-dat
 
 The Master data of a company in the fiskaltrust.Portal are essential for various reasons:  
 
-* Parts of this data, such as commercial identifications, are used for authentication with the tax authorities or third-party services.  
-* The automated invoice generation between PosDealer and PosOperators uses this data.
-* The digital receipt uses commercial identifications from the Master data and values like address and an (optional) logo for every single outlet.
+* Complete and verified Master data are fundamental for the accounting between fiskaltrust and you as PosDealer - this way you can use all options of the fiskaltrust.portal faster and more comprehensively.
+
+* Accurate and validated Master data are essential for the accounting between you as PosDealer and your PosOperators in the fiskaltrust.portal - with correct data you avoid queries and additional effort.
+
+* Various signing products require a tax registration number  - this is the only way to achieve compliance. 
+
+* Complete Master data also contained fiscal registration numbers - these are used for authentication towards fiscal authorities or third-party services.  
 
 Therefore, it is essential to check the completeness of Master data in the fiskaltrust.Portal. Country-specific check mechanisms are also available for checking the data entered.
 Such check mechanisms check, depending on the legal situation and the technical equipment of the fiscal administration, whether an entered value meets the formal requirements.   
-Under country-specific circumstances, when a PosOperator is first registered, the other master data can be retrieved from the relevant authority and checked by entering a tax number.
+Under country-specific circumstances, when a PosOperator is first registered, the other Master data can be retrieved from the relevant authority and checked by entering a tax number.
 
 After logging on to the fiskaltrust.Portal, as a PosDealer, you should check the completeness and use the available checking mechanisms.
 
