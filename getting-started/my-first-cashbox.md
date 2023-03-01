@@ -140,10 +140,10 @@ A Queue is defined [here](../overview/architecture.md#queue), find more details 
 |![Number 4](../images/numbers/circle-4o.png) |At `Package name`, you can select the desired option.  |
 |![Number 5](../images/numbers/circle-5o.png) |At `Package version`, you can choose the desired option.  |
 |![Number 6](../images/numbers/circle-6o.png) |At `Timeout`, you can specify a millisecond value for the timeout of the Queue.  |
-|![Number 7](../images/numbers/circle-7o.png) |The `Country Code` depends on the chosen fiskaltrust.Portal and cannot be changed, see [reference tables](../../middleware-doc/doc/general/reference-tables/reference-tables.md "https://docs.fiskaltrust.cloud/de/docs/poscreators/middleware-doc/germany/reference-tables/ftstate") for details.  |
+|![Number 7](../images/numbers/circle-7o.png) |The `Country Code` depends on the chosen fiskaltrust.Portal and cannot be changed, see [reference tables](https://docs.fiskaltrust.cloud/de/docs/poscreators/middleware-doc/germany/reference-tables/ftstate "https://docs.fiskaltrust.cloud/de/docs/poscreators/middleware-doc/germany/reference-tables/ftstate") for details.  |
 |![Number 8](../images/numbers/circle-8o.png) |Enter the desired `CashBox Identification` but note that this value cannot be changed again after saving your Queue.  |
 |![Number 9](../images/numbers/circle-9o.png) |At `Outlet`, you can choose the desired option but note that this value cannot be changed again afer saving your Queue.  |
-|![Number 10](../images/numbers/circle-10o.png) |After you have selected `Save`, you will be directed to `Configuration` / `Queue` / `Configuration`. Add the necessary details for the selection you have made there.
+|![Number 10](../images/numbers/circle-10o.png) |After you have selected `Save`, you will be directed to `Configuration` / `Queue` / `Configuration`. Add  there the necessary details for the selection you have made.
 
 #### CashBox  
 
