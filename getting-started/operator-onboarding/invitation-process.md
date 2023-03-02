@@ -61,7 +61,7 @@ Under country-specific circumstances, when a PosOperator is first registered, th
 |![Number 2](images/Numbers/circle-2o.png) |Check the settings previously described [_here_](#preparation-of-invitations).  |
 |![Number 3](images/Numbers/circle-3o.png) |Choose `Add`.  |
 |![Number 4](images/Numbers/circle-4o.png) |The following fields are mandatory fields. They must be filled in to guarantee that the PosOperator can be found correctly in the fiskaltrust.Portal via his E-Mail address and can be assigned: <ul><li>Company data - Company name</li><li>E-Mail address</li><li>Address line 1</li><li>Postal code</li><li>City</li><li>Country</li><li>User data - First name</li><li>Last name</li><li>Contact E-Mail address</li></ul>  |
-|![Number 5](images/Numbers/circle-5o.png) |The commercial identification is no mandatory field for the invitation. But for the correct management of the cash register systems, these data (AccountIdVat, ~IdGln, ~UStIdNr) and their validation are **essential**.|
+|![Number 5](images/Numbers/circle-5o.png) |The tax identification numbers is no mandatory field for the invitation. But for the correct management of the cash register systems, these data (AccountIdVat, ~IdGln, ~UStIdNr) and their validation are **essential**.|
 |![Number 6](images/Numbers/circle-6o.png) |Save your values with `Save` |
 |![Number 7](images/Numbers/circle-7o.png) |Choose `Assign all PosOperators`|
 |![Number 8](images/Numbers/circle-8o.png) |If the invitation should not reach the PosOperator or get lost, please read the chapter [_Managing the invitations_](#managing-the-invitations)
