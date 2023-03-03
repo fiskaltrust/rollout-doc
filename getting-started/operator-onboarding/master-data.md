@@ -16,7 +16,7 @@ The **Master data** of a company are essential for various reasons in the fiskal
 
 * To set up and use various [**signing devices and services**](../../buy-resell/products/signing/signing-overview.md) PosDealer and PosOperator need at least one of their tax identification numbers. 
 
-* **Tax registration numbers** are essential for authentication towards fiscal authorities or [third-party integrations](../../buy-resell/products/3rd-party/3rd-party-overview.md).  
+* For **authentication** towards fiscal authorities or [third-party integrations](../../buy-resell/products/3rd-party/3rd-party-overview.md) Tax registration numbers are essential..  
 
 A company's **outlets** data is significant and should be checked:
 
