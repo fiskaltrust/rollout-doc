@@ -62,7 +62,7 @@ We use the example of checking the master data of a PosOperator to describe Surr
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |After checking, the roles change to `[COMPANY NAME]`/ `Master data`.  |
 |![Number 2](images/Numbers/circle-2o.png) |Check the values in the address fields. Optionally, you can provide a dedicated billing address at `E-Mail for Invoices`. |
-|![Number 3](images/Numbers/circle-3o.png) |The fields for commercial identification are not mandatory for the invitation process. But these identification criteria are the basis for correct cash management and a prerequisite for using third-party services. Control the completeness of the values.|
+|![Number 3](images/Numbers/circle-3o.png) |The fields for tax identification numbers are not mandatory for the invitation process. But these identification criteria are the basis for correct cash management and a prerequisite for using third-party services. Control the completeness of the values.|
 |![Number 4](images/Numbers/circle-4o.png) |Validate the values with `Data Check`. Save your changes before you leave this page.  |
 |![Number 5](images/Numbers/circle-5o.png) |Do not yet return to your account as a PosDealer with `Switch to your own account` or sign out as a PosOperator. |
 |![Number 6](images/Numbers/circle-6o.png) |Choose `Outlets` to check these for completeness and correctness. |
