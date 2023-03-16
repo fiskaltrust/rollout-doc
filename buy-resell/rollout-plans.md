@@ -10,19 +10,13 @@ After reading this, you can buy or transfer selected entitlements most easily.
 
 :::
 
-:::caution 🇦🇹 Austria
-
-This tutorial is, unfortunately **, not yet applicable to the Austrian market** as rollout plans are not active there yet. While working on enabling rollout plans in Austria, please use the [shop](./shop.md) to create a SignatureCloud cashbox.
-
-:::
-
 ## Introduction
 
 For the scaled rollout of _fiskaltrust_ products, you as PosDealer use the rollout management as described under [`Getting-Started` / `My First CashBox`](../getting-started/my-first-cashbox.md). The Rollout Management consists of two types of plans:
 
 ### Business Rollout
 
-The business rollout simplifies acquiring entitlements, transferring them to the PosOperators outlets and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to move and activate the products. The system will automatically select the required products for the chosen Business Rollout plan. This plan reduces the risk of an incorrect composition of the shopping basket. This can be done for multiple PosOperators and outlets at the same time.
+The business rollout simplifies acquiring entitlements, transferring them to the PosOperators outlets or queues and activating (generating) them for the PosOperator. You do not have to switch to the PosOperator's account to move and activate the products. The system will automatically select the required products for the chosen Business Rollout plan. This plan reduces the risk of an incorrect composition of the shopping basket. This can be done for multiple PosOperators and outlets or queues at the same time.
 
 This sketch shows the process :
 
@@ -33,8 +27,13 @@ import TabItem from '@theme/TabItem';
 
 import BusinessRolloutFR from '../_markets/fr/getting-started/my-first-cashbox/_business.mdx';
 import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_business.mdx';
+import BusinessRolloutAT from '../_markets/at/getting-started/my-first-cashbox/_business.mdx';
 
 <Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <BusinessRolloutAT />
+  </TabItem>
 
   <TabItem value="FR" label="France">
     <BusinessRolloutFR />
