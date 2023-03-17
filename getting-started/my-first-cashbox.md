@@ -29,12 +29,6 @@ If you don't have one yet, please get in touch with your *PosCreator* for invita
 
 ![preview](./images/my-first-cashbox/first-CashBox-flow.png "My first CashBox")
 
-:::caution 🇦🇹 Austria
-
-Unfortunately, this tutorial is **not yet applicable to the Austrian market** as rollout plans are not active there. However, while we work on enabling rollout plans in Austria, you still use the shop to create a SignatureCloud cashbox.
-
-:::
-
 ## Prerequisites
 
 Before we roll out our Middleware instance, the following prerequisites must be in place:
@@ -64,10 +58,15 @@ import TabItem from '@theme/TabItem';
 
 As the first step, we will run a *Business rollout* which will acquire entitlements, transfer them to the PosOperators outlets, activate them and eventually create necessary backend components for the CashBox (in this case, an SCU).
 
+import BusinessRolloutAT from '../_markets/at/getting-started/my-first-cashbox/_business.mdx';
 import BusinessRolloutFR from '../_markets/fr/getting-started/my-first-cashbox/_business.mdx';
 import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_business.mdx';
 
 <Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <BusinessRolloutAT />
+  </TabItem>
 
   <TabItem value="FR" label="France">
     <BusinessRolloutFR />
@@ -193,10 +192,15 @@ For Postman, you can download a request collection from the [Github repository](
 
 ### Request details
 
+import EchoAT from '../_markets/at/getting-started/my-first-cashbox/_echo.mdx';
 import EchoFR from '../_markets/fr/getting-started/my-first-cashbox/_echo.mdx';
 import EchoDE from '../_markets/de/getting-started/my-first-cashbox/_echo.mdx';
 
 <Tabs groupId="market">
+
+  <TabItem value="AT" label="Austria">
+    <EchoAT />
+  </TabItem>
 
   <TabItem value="FR" label="France">
     <EchoFR />
