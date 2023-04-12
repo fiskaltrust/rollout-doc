@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/overview/overview-information-sources
+slug: /posdealers/information-sources/overview-information-sources
 title: Overview Information Sources
 ---
 
