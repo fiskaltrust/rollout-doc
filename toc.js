@@ -4,29 +4,29 @@ module.exports = {
 		'rollout-doc/introduction',
 		{
 			type: 'category',
-			label: 'Overview',
+			label: 'Business Basics',
 			items: [
-				'rollout-doc/overview/overview-business-basics',
-				'rollout-doc/overview/business-model',
-				'rollout-doc/overview/services',
-				'rollout-doc/overview/countries',
-				'rollout-doc/overview/architecture',
-				'rollout-doc/overview/management-portal',
+				'rollout-doc/business-basics/overview-business-basics',
+				'rollout-doc/business-basics/business-model',
+				'rollout-doc/business-basics/services',
+				'rollout-doc/business-basics/countries',
+				'rollout-doc/business-basics/architecture',
+				'rollout-doc/business-basics/management-portal',
 				{
 					type: 'category',
 					label: 'Legal & Data Protection',
 					items: [
-						//'rollout-doc/overview/legal-data-protection/compliance-requirements',
-						//'rollout-doc/overview/legal-data-protection/terms-of-service',
-						'rollout-doc/overview/legal-data-protection/fair-use-policy',
-						//'rollout-doc/overview/legal-data-protection/data-protection'
+						//'rollout-doc/business-basics/legal-data-protection/compliance-requirements',
+						//'rollout-doc/business-basics/legal-data-protection/terms-of-service',
+						'rollout-doc/business-basics/legal-data-protection/fair-use-policy',
+						//'rollout-doc/business-basics/legal-data-protection/data-protection'
 					]
 				}
 			]
 		},
 		{
 			type: 'category',
-			label: 'Get Started',
+			label: 'Getting Started',
 			items: [
 				'rollout-doc/getting-started/overview-getting-started',
 				'rollout-doc/getting-started/sandbox',
