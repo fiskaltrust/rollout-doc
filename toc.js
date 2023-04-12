@@ -6,6 +6,7 @@ module.exports = {
 			type: 'category',
 			label: 'Overview',
 			items: [
+				'rollout-doc/overview/overview-business-basics',
 				'rollout-doc/overview/business-model',
 				'rollout-doc/overview/services',
 				'rollout-doc/overview/countries',
@@ -27,6 +28,7 @@ module.exports = {
 			type: 'category',
 			label: 'Get Started',
 			items: [
+				'rollout-doc/getting-started/overview-getting-started',
 				'rollout-doc/getting-started/sandbox',
 				'rollout-doc/getting-started/registration',
 				'rollout-doc/getting-started/company-roles',
@@ -87,6 +89,7 @@ module.exports = {
 			type: 'category',
 			label: 'Technical Operations',
 			items: [
+				'rollout-doc/technical-operations/overview-technical-operations',
 				'rollout-doc/technical-operations/rollout-scenarios',
 				{
 					type: 'category',
@@ -145,6 +148,7 @@ module.exports = {
 			type: 'category',
 			label: 'Information Sources',
 			items: [
+				'rollout-doc/information-sources/overview-information-sources',
 				'rollout-doc/information-sources/knowledge-base',
 				'rollout-doc/information-sources/cases',
 				'rollout-doc/information-sources/downloads',

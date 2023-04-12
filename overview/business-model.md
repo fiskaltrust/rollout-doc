@@ -16,7 +16,7 @@ fiskaltrust is a software company that focuses on developing compliance-as-a-ser
 
 The distribution of fiskaltrust's _products_ and _product bundles_ is done in partnership with cash register dealers (_PosDealers_). Using existing sales structures in the respective countries, PosDealers can offer a product portfolio that considers and fulfills the individual needs of each of their customers (cash register operators or _PosOperators_).
 
-![business-model](images/business-model.png)
+![Business Model](images/business-model.png)
 
 In this model, the PosOperator remains the direct customer of the PosDealer. Attractive volume discounts on fiskaltrust's products enable PosDealers to integrate these products into their portfolio and pricing model on their terms.
 
