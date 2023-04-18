@@ -44,7 +44,7 @@ You can **access and export data** from your Middleware instance at all times. A
 
 ### Online Management
 
-Most aspects of your Middleware configuration and maintenance are handled online via the [management portal](../../overview/management-portal.md). This online handling includes creating the **initial setup configuration**, downloading the **Middleware binaries**, performing **version upgrades**, and running **data exports**.
+Most aspects of your Middleware configuration and maintenance are handled online via the [management portal](../../business-basics/management-portal.md). This online handling includes creating the **initial setup configuration**, downloading the **Middleware binaries**, performing **version upgrades**, and running **data exports**.
 
 Changes to the configuration are performed in the portal as well. With a restart of the Middleware service, any configuration changes are automatically pulled from the portal and applied. 
 

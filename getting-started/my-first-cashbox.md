@@ -15,7 +15,7 @@ After reading this, you can create a CashBox and have a functioning fiskaltrust.
 Our fiskaltrust.Portal supports you as a PosDealer with two options to create your first CashBox.  
 We recommend [Rollout plans](#business-rollout-create-scu-data) as our **deployment wizards** in the fiskaltrust.Portal. With Rollout Plans, you enjoy high security when creating, buying and setting up CashBoxes and related components for your PosOperators. Additionally, you save time by being able to select several PosOperators as well as several outlets at the same time.  
 
-You use the [Manual creation](#manual-creation) if you need a configuration not covered by rollout plans. Then first read the [Architecture](../overview/architecture.md) section to learn more about the components needed to create a CashBox.     
+You use the [Manual creation](#manual-creation) if you need a configuration not covered by rollout plans. Then first read the [Architecture](../business-basics/architecture.md) section to learn more about the components needed to create a CashBox.     
 
 Both options require legally or commercially necessary preparations. These have been described and explained previously in this documentation. In the section [Prerequisites](#prerequisites), you will find them again summarized.
 
@@ -129,7 +129,7 @@ Helpers are optional and vary depending on national laws and the needed function
 
 #### Queue
 
-A Queue is defined [here](../overview/architecture.md#queue), find more details at our [interface description](https://github.com/fiskaltrust/interface-doc).  
+A Queue is defined [here](../business-basics/architecture.md#queue), find more details at our [interface description](https://github.com/fiskaltrust/interface-doc).  
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
