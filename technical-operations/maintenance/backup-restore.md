@@ -12,7 +12,7 @@ After reading this, you can plan and implement recovery of the Middleware.
 
 ## Backup
 
-With one of our products that includes our [revision-safe receipt archive](../../overview/services.md#revision-safe-receipt-archive), you receive a backup in a secure and legally compliant way for receipts. 
+With one of our products that includes our [revision-safe receipt archive](../../business-basics/services.md#revision-safe-receipt-archive), you receive a backup in a secure and legally compliant way for receipts. 
 
 If you have not subscribed for such a product or use the middleware in offline mode, prepare a local backup for the following components:
 

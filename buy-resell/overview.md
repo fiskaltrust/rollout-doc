@@ -33,7 +33,7 @@ If it is impossible to settle the open invoices, [contact us](overview.md#contac
 
 ## Volume purchase agreement
 
-As mentioned in the section [Business model](../overview/business-model.md), _fiskaltrust_ offers discounted prices if you agree to a particular purchase quantity. Therefore, you should consider this option if you plan to purchase ten or more product bundles. You find descriptions of fiskaltrust products and product bundles [here](./products/overview.md).  
+As mentioned in the section [Business Model](../business-basics/business-model.md), _fiskaltrust_ offers discounted prices if you agree to a particular purchase quantity. Therefore, you should consider this option if you plan to purchase ten or more product bundles. You find descriptions of fiskaltrust products and product bundles [here](./products/overview.md).  
 If you are committing to purchase **large quantities of product bundles** of your choice over a year, a **Volume Purchase Agreement** is the best option. This agreement allows you to achieve significant discounts depending on your planned sales volume.
 The standard period is one year, but it can be agreed on individually. 
 
