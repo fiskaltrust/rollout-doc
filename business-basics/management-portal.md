@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/overview/management-portal
+slug: /posdealers/business-basics/management-portal
 title: Management Portal
 ---
 # Management Portal
