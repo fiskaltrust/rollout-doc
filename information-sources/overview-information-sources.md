@@ -1,9 +1,9 @@
 ---
 slug: /posdealers/information-sources/overview-information-sources
-title: Overview Information Sources
+title: Overview - Information Sources
 ---
 
-# Overview Information Sources
+# Overview - Information Sources
 
 :::info summary
 

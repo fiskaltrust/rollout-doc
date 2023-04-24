@@ -1,9 +1,9 @@
 ---
 slug: /posdealers/getting-started/overview-getting-started
-title: Overview Getting Started
+title: Overview - Getting Started
 ---
 
-# Overview Getting Started
+# Overview - Getting Started
 
 :::info summary
 

@@ -1,9 +1,9 @@
 ---
 slug: /posdealers/technical-operations/overview-technical-operations
-title: Overview Technical Operations
+title: Overview - Technical Operations
 ---
 
-# Overview Technical Operations
+# Overview - Technical Operations
 
 :::info summary
 

@@ -1,8 +1,8 @@
 ---
 slug: /posdealers/buy-resell/overview
-title: Overview
+title: Overview - Buy & Resell
 ---
-# Buy & Resell Overview
+# Overview - Buy & Resell
 
 :::info summary
 

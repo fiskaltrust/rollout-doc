@@ -1,9 +1,9 @@
 ---
 slug: /posdealers/business-basics/overview-business-basics
-title: Overview Business Basics
+title: Overview - Business Basics
 ---
 
-# Overview Business Basics
+# Overview - Business Basics
 
 :::info summary
 
