@@ -7,7 +7,7 @@ title: Digital Receipt
 
 :::info summary
 
-After reading this, you can explain what preparations are necessary for your PosOperators to use digital receipts.
+After reading this, you can explain the preparations for PosOperators to use digital receipts.
 
 :::
 
@@ -21,15 +21,15 @@ As a PosDealer, you thus offer a state-of-the-art PosSystem.
 ![receipt-chaining](../images/buy_resell-digital-receipt.png)
 
 Please note that the visualization in the sandbox may look different than in the productive system.
-Please also note that different regulations or requirements may apply depending on the country in which your POS system is used. Please refer to the country-specific regulations. Please understand that we can only describe these details without claiming to be complete.
+Please also note that different regulations or requirements may apply depending on the country where your PosSystem is used. Please refer to the country-specific regulations. Please understand that we can only describe these details without claiming to be complete.
 
 ## Preparations general
 
-The preparations for having digital receipts available can be made both by PosDealers or PosOperators. For this, only access to the fiskaltrust.Portal with **Write authorizations** is required.
+PosDealers or PosOperators can make the preparations for having digital receipts available. For this, only access to the fiskaltrust.Portal with **Write authorizations** is required.
 The Master Data of the PosOperators account in the fiskaltrust.Portal must be complete. The stored tax identification numbers should be verified.
 The details of the Outlet, not the company, are used as the address on the digital receipt. Therefore, these should be checked for completeness and corrected if necessary. 
 The digital receipt may list a logo at the top. If this logo is desired, you should add it to the data of the Outlet. 
-We recommend to use for best results a file in ~.png-format with transparent background. 
+We recommend using a file in ~.png-format with transparent background for best results. 
 
 ## Preparations country-specific
 
