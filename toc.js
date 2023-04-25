@@ -59,6 +59,7 @@ module.exports = {
 						'rollout-doc/buy-resell/products/overview',
 						'rollout-doc/buy-resell/products/bundles',
 						'rollout-doc/buy-resell/products/middleware',
+						'rollout-doc/buy-resell/products/digital-receipt',
 						'rollout-doc/buy-resell/products/revision-safe-archiving',						
 												
 						{
