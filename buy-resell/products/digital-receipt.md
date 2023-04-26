@@ -18,7 +18,7 @@ With digital receipts, the PosOperator can reduce expenses for printouts and hel
 As a PosDealer, you thus offer a state-of-the-art PosSystem.  
 
 
-![receipt-chaining](../images/buy_resell-digital-receipt.png)
+![receipt-chaining](../images/buy_resell-digital-receipt-3.png)
 
 Please note that the visualization in the sandbox may look different than in the productive system.
 Please also note that different regulations or requirements may apply depending on the country where your PosSystem is used. Please refer to the country-specific regulations. Please understand that we can only describe these details without claiming to be complete.
