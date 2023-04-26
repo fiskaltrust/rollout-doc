@@ -25,24 +25,17 @@ Please also note that different regulations or requirements may apply depending 
 
 ## Preparations general
 
-<<<<<<< HEAD
 PosDealers or PosOperators can make the preparations for having digital receipts available. For this, only access to the fiskaltrust.Portal with **Write authorizations** is required.  
 
 The Master Data of the PosOperators account in the fiskaltrust.Portal must be complete. The stored tax identification numbers should be verified.  
 
 The details of the Outlet, not the company, are used as the address on the digital receipt. Therefore, these should be checked for completeness and corrected if necessary.  
 
-=======
-PosDealers or PosOperators can make the preparations for having digital receipts available. For this, only access to the fiskaltrust.Portal with **Write authorizations** is required.
-The Master Data of the PosOperators account in the fiskaltrust.Portal must be complete. The stored tax identification numbers should be verified.
-The details of the Outlet, not the company, are used as the address on the digital receipt. Therefore, these should be checked for completeness and corrected if necessary. 
->>>>>>> d5914c396f2f522e80922fbeaeb98b5d0aa6c081
 The digital receipt may list a logo at the top. If this logo is desired, you should add it to the data of the Outlet. 
 We recommend using a file in ~.png-format with transparent background for best results. 
 
 ## Preparations country-specific
 
-<<<<<<< HEAD
 ### Work steps to check Master data
 
 import Tabs from '@theme/Tabs';
@@ -112,9 +105,6 @@ import EditOutletDE from '../../_markets/de/getting-started/operator-onboarding/
 </Tabs>
 
 <!-- 
-=======
-
->>>>>>> d5914c396f2f522e80922fbeaeb98b5d0aa6c081
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import DigitalReceiptAT from '../../_markets/at/buy-resell/products/_digital-receipt.mdx';

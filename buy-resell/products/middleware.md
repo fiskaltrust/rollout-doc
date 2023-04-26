@@ -34,7 +34,7 @@ The configuration container - identified by the unique `CashboxId` - can be inte
 ## Country-specific variants
 Wherever possible, fiskaltrust offers a cloud-hosted version of the Middleware to simplify the rollout process. Using this product, the Middleware doesn't need to be installed on-site, drastically reducing the installation effort. Please select the market you're interested in below for further details.
 
-<!-- import Tabs from '@theme/Tabs';
+import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import HostedMiddlewareAT from '../../_markets/at/buy-resell/products/_hosted-middleware.mdx';
 import HostedMiddlewareFR from '../../_markets/fr/buy-resell/products/_hosted-middleware.mdx';
@@ -54,73 +54,4 @@ import HostedMiddlewareDE from '../../_markets/de/buy-resell/products/_hosted-mi
     <HostedMiddlewareDE />
   </TabItem>
 
-</Tabs> -->
-
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import PreviewAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_edit-master.mdx';
-import PreviewFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_edit-master.mdx';
-import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/master-data/_edit-master.mdx';
-
-<Tabs groupId="market">
-
-  <TabItem value="AT" label="Austria">
-    <PreviewAT />
-  </TabItem>
-
-  <TabItem value="FR" label="France">
-    <PreviewFR />
-  </TabItem>
-
-  <TabItem value="DE" label="Germany">
-    <PreviewDE />
-  </TabItem>
-
 </Tabs>
-
-### Work steps to check outlets
-
-import OutletAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
-import OutletFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
-import OutletDE from '../../_markets/de/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
-
-<Tabs groupId="market">
-
-  <TabItem value="AT" label="Austria">
-    <OutletAT />
-  </TabItem>
-
-  <TabItem value="FR" label="France">
-    <OutletFR />
-  </TabItem>
-
-  <TabItem value="DE" label="Germany">
-    <OutletDE />
-  </TabItem>
-
-</Tabs>
-
-
-#### Edit outlets
-
-import EditOutletAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_edit-outlet.mdx';
-import EditOutletFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_edit-outlet.mdx';
-import EditOutletDE from '../../_markets/de/getting-started/operator-onboarding/master-data/_edit-outlet.mdx';
-
-<Tabs groupId="market">
-
-  <TabItem value="AT" label="Austria">
-    <EditOutletAT />
-  </TabItem>
-
-  <TabItem value="FR" label="France">
-    <EditOutletFR />
-  </TabItem>
-
-  <TabItem value="DE" label="Germany">
-    <EditOutletDE />
-  </TabItem>
-
-</Tabs>
-
