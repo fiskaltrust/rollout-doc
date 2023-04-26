@@ -103,30 +103,3 @@ import EditOutletDE from '../../_markets/de/getting-started/operator-onboarding/
   </TabItem>
 
 </Tabs>
-
-<!-- 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import DigitalReceiptAT from '../../_markets/at/buy-resell/products/_digital-receipt.mdx';
-import DigitalReceiptFR from '../../_markets/fr/buy-resell/products/_digital-receipt.mdx';
-import DigitalReceiptDE from '../../_markets/de/buy-resell/products/_digital-receipt.mdx';
-
-<Tabs groupId="market">
-
-  <TabItem value="AT" label="Austria">
-    <DigitalReceiptAT />
-  </TabItem>
-
-  <TabItem value="FR" label="France">
-    <DigitalReceiptFR />
-  </TabItem>
-
-  <TabItem value="DE" label="Germany">
-    <DigitalReceiptDE />
-  </TabItem>
-
-<<<<<<< HEAD
-</Tabs> -->
-=======
-</Tabs>
->>>>>>> d5914c396f2f522e80922fbeaeb98b5d0aa6c081
