@@ -51,6 +51,8 @@ In case the TAR upload fails, set this value to 1.
 
 ### Country specific Helpers
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import HelperAT from '../../_markets/at/technical-operations/middleware/overview/_Helper.mdx';
 import HelperFR from '../../_markets/fr/technical-operations/middleware/overview/_Helper.mdx';
 import HelperDE from '../../_markets/de/technical-operations/middleware/overview/_Helper.mdx';
