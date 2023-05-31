@@ -36,7 +36,9 @@ We recommend using a file in ~.png-format with transparent background for best r
 
 ## Preparations country-specific
 
-### Work steps to check Master data
+  <details>
+
+  <summary>Work steps to check Master data</summary>  
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -60,7 +62,11 @@ import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/mas
 
 </Tabs>
 
-### Work steps to check outlets
+  </details>
+
+  <details>
+
+  <summary>Work steps to check outlets</summary>  
 
 import OutletAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
 import OutletFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
@@ -82,7 +88,12 @@ import OutletDE from '../../_markets/de/getting-started/operator-onboarding/mast
 
 </Tabs>
 
-### Edit outlets
+</details>
+
+<details>
+
+  <summary>Edit outlets</summary>  
+
 
 import EditOutletAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_edit-outlet.mdx';
 import EditOutletFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_edit-outlet.mdx';
@@ -103,3 +114,16 @@ import EditOutletDE from '../../_markets/de/getting-started/operator-onboarding/
   </TabItem>
 
 </Tabs>
+
+</details>
+
+## Evaluation of retrievals of digital receipts
+
+In an audit case for the tax authorities (or in general), you, as a PosDeler or PosOperator, can verify which documents were transmitted and retrieved or printed using an export via the fiskaltrust.Portal. When using the digital receipt, an additional file is added to the export type called Full export (XML). This file provides information about the status of the individual digital receipts. In addition, linking the data records is possible using the ftReceiptJournalID, which is contained both in the raw and in the print data records.
+The file format and its structure were deliberately kept simple for your support. The file format allows the data to be opened and read with a standard spreadsheet (e.g., Excel). The structure of the records is built up as follows:
+
+
+|**Field name** |ftReceiptMoment |ftReceiptIdentification |ftQueueItemid |ftReceiptJournalId |ftSubmittedMoment |ftDeliveredMoment |ftDeliveredStatus |ftDeliveredStatusData                                                                                                             |
+|:----------------------|:---------------------|:---------------------|:---------------------|:---------------------|:---------------------|:---------------------|:---------------------|:---------------------|
+|**Description** |Time (UTC +2) at which the fiskaltrust.middleware processed the document.  | The number of the receipt, which was assigned by the fiskaltrust.SecurityMechanism. |Number of the queue by which the receipt was processed |The fiskaltrust.ReceiptJournal draws, hashes and links all receipt requests from the middleware and creates a number from them |Time (UTC +2 ) when the QR code was provided by the taxpayer.|Time (UTC +2) at which the QR code was retrieved by the consumer.|Output or retrieval status of the Receipt: `printed`: _Receipt was printed_, `accepted`: _Receipt was received elsewhere_, `submitted`: _Receipt was provided by the taxpayer_, `delivered`: _Receipt was received by the consumer_|Outputs additional parameters, such as model number of the terminal. _Function currently not yet active_|
+|**Example**|04/14/2023 11:20:31|ft1D#24| 9df671cf-d0a8-4824- 9bd0-9000d8dcd8ea|1626d96a-ae5b-4a6bb1f9-6468a83ef749|04/14/2023 11:21:09|04/14/2023 11:21:09|`Printed`|Hobex ViA Pro |
