@@ -3,9 +3,9 @@
 
 by
   
-**fiskaltrust gmbh**  
-Toulouser Allee 19a  
-D-40211 Düsseldorf  
+**fiskaltrust Deutschland GmbH**  
+Moosweg 3
+D-51377 Leverkusen
 
 ## Scope
 This Fair Use Policy applies to the use of site-related products of **fiskaltrust gmbh**.
