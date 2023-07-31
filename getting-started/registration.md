@@ -209,7 +209,7 @@ The process described in this section for adding accounts for employees to your 
 
 :::attention
 
-Please note that as a PosDealer, you cannot manage the data of employees in the fiskaltrust.Portal if you switch to a PosOperator account.
+Please note that as a PosDealer, you cannot manage the data of employees in the fiskaltrust.Portal if you switch to a PosOperator account due to data privacy reasons.
 
 :::
 
