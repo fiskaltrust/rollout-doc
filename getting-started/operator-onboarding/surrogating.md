@@ -67,3 +67,9 @@ We use the example of checking the master data of a PosOperator to describe Surr
 |![Number 5](images/Numbers/circle-5o.png) |Do not yet return to your account as a PosDealer with `Switch to your own account` or sign out as a PosOperator. |
 |![Number 6](images/Numbers/circle-6o.png) |Choose `Outlets` to check these for completeness and correctness. |
 |  |Choose `Switch to your own account` to get back to your account and check other accounts of other PosOperators. |
+
+:::attention
+
+Please note that as a PosDealer, you cannot manage the data of employees in the fiskaltrust.Portal if you switch to a PosOperator account due to data privacy reasons.
+
+:::

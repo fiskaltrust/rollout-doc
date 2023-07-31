@@ -141,7 +141,7 @@ If the password for logging into the fiskaltrust.Portal is lost or forgotten; yo
 
 ## Creation of new users
 
-You can create another user for yourself, for example, for security reasons. You can also add users for your company's employees. Then, you define with different authorization the several options your users have in the fiskaltrust.Portal.
+You can create another user for yourself, for example, for security reasons. You can also add users for your company's employees. Then, you define with different authorizations the several options your users have in the fiskaltrust.Portal.
 
 ### Work steps to invite new users
 
@@ -203,6 +203,15 @@ In the future, all users will use the login listed [above](registration.md#count
 
 ![Access employee](images/registration/user_rights_employee.png "Access employee")
 
+### Employees of PosOperators complain about access
+
+The process described in this section for adding accounts for employees to your account (`Company` / `Employees` / `+Add`) also applies to adding accounts for employees to PosOperators. Please note that as a PosDealer, you cannot manage these data if you switch to a PosOperator account.
+
+:::attention
+
+Please note that as a PosDealer, you cannot manage the data of employees in the fiskaltrust.Portal if you switch to a PosOperator account due to data privacy reasons.
+
+:::
 
 ### PosDealers have several companies
 
@@ -210,14 +219,14 @@ A user's E-Mail address is binding because of its usage as a one-to-one mapping 
 
 #### Solution for employees
 
-**We strongly recommend to check this process at first in the sandbox!**
+**We strongly recommend checking this process at first in the sandbox!**
 
 1. Select `Company` / `Employees` / `+Add`.
-2. Add data records, if necessary, with fictitious information; only the E-Mail address must be correct, e.g., peter.pattern@mycomany.com.
+2. Add data records, if necessary, with fictitious information; only the E-Mail address must be correct, e.g., peter.pattern@mycompany.com.
 3. If employees are assigned to several accounts, create alias addresses and use these, e.g.:
 
-* peter.pattern+1@mycomany.com
-* peter.pattern+2@mycomany.com  
+* peter.pattern+1@mycompany.com
+* peter.pattern+2@mycompany.com  
 etc.
 
 #### Solution for Primary Contacts
@@ -263,7 +272,7 @@ Let's assume that you have received your company's first invitation to the fiska
 
 #### Solution for PosDealers
 
-Let's assume you have sent an invitation to a PosOperator using the wrong e-mail address. You, as a PosDealer, can forward an incorrectly addressed invitation to another recipient as long as the original receiver has yet to activate it
+Let's assume you have sent an invitation to a PosOperator using the wrong E-Mail address. You, as a PosDealer, can forward an incorrectly addressed invitation to another recipient as long as the original receiver has yet to activate it
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
