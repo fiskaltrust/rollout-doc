@@ -64,6 +64,13 @@ import PreviewDE from '../../_markets/de/getting-started/operator-onboarding/mas
 
 ### Work steps to check outlets
 
+:::info **Outlet numbers**
+When creating an Outlet manually, you can edit the `Outlet number` yourself. 
+`Outlet number 1` is automatically assigned when creating an account in the fiskaltrust.Portal. 
+`Outlet number 2` is not available.
+Once an `Outlet number` has been set, it cannot be subsequently changed.
+:::
+
 import OutletAT from '../../_markets/at/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
 import OutletFR from '../../_markets/fr/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
 import OutletDE from '../../_markets/de/getting-started/operator-onboarding/master-data/_checking-outlets.mdx';
