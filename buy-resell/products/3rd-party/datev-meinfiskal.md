@@ -56,7 +56,21 @@ If the following requirements are not met, the [PosOperator Onboarding](../../..
 
 1. The PosOperator already has an account in the **fiskaltrust.Portal** and agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust.  
 2. The [Master data](../../../getting-started/operator-onboarding/master-data.md "Master data") are checked by the PosOperator or by the PosDealer.  
-3. As a PosDealer, you have full authorizations (Write/Read, Contract Conclusion) to the account of the PosOperator.  
+3. As a PosDealer, you have full authorizations (Write/Read, Contract Conclusion) to the account of the PosOperator.
+
+#### Master data limitations 
+The following table lists the maximum character lengths allowed for the DATEV onboarding:
+| Master data  |  maximum character length |
+|---|---|
+| AccountName  | 32 |
+| City  | 42 |
+| Mail | 250  |
+| Firstname  | 32 |
+| PostalCode  |max 5 min 5|
+| Street  | 32 |
+| Surname  | 32 |
+| VatId | max 14 min 11  |
+| Firstname  | 32 |
 
 ### Sign contract permission
 
