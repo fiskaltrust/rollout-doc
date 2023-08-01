@@ -38,7 +38,7 @@ The PosCreator adds a PosSystem in the fiskaltrust.Portal. Thereby a **PosSystem
 A valid PosSystemId is a prerequisite for successfully registering PosOperators with MeinFiskal.
 
 The PosDealer activates the _DATEV MeinFiskal_ function in the fiskaltrust.Portal by signing the **user agreement** on behalf of the PosOperator.
-Customer data such as **E-Mail address** and **tax number** (St.-ldNr. or USt-ldNr.) are exchanged between the fiskaltrust.Portal and the _[DATEV MeinFiskal](https://www.meinfiskal.de/)_ platform. A MeinFiskal user account and a password is created automatically at DATEV. The PosDealer changes E-Mail-address and password for the user account at _DATEV MeinFiskal_ and confirms the data transfer between fiskaltrust and DATEV. The PosOperator receives a welcome E-Mail from _DATEV MeinFiskal_ and can use the services _DATEV Kassenarchiv online_. Further services like the _DATEV Kassenbuch-Schnittstelle_ are available at the MeinFiskal platform.
+Customer data such as **E-Mail address** and **tax number** (St.-ldNr. or USt-ldNr.) are exchanged between the fiskaltrust.Portal and the _[DATEV MeinFiskal](https://www.meinfiskal.de/)_ platform. A _DATEV MeinFiskal_ user account and a password is created automatically at DATEV. The PosDealer changes E-Mail-address and password for the user account at _DATEV MeinFiskal_ and confirms the data transfer between fiskaltrust and DATEV. The PosOperator receives a welcome E-Mail from _DATEV MeinFiskal_ and can use the services _DATEV Kassenarchiv online_. Further services like the _DATEV Kassenbuch-Schnittstelle_ are available at the MeinFiskal platform.
 
 Fiskaltrust takes over the generation of the legally required data formats (DSFinV-K, DFKA taxonomy, .tar files, native format, other documents), as well as the connection and data transfer to _DATEV MeinFiskal_ via the fiskaltrust.Portal.
 
@@ -52,15 +52,19 @@ As a PosDealer, you can get an overview of all your PosSystems and their **PosSy
 1. Log in to **fiskaltrust.Portal** and select `PosSystems`.
 2. If no PosSystem should be available, contact your PosCreator.
 
-The PosOperator already has an account in the **fiskaltrust.Portal**, agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust, checked his master data, and you, as a PosDealer, have the authorization to sign contracts. If these requirements are not met, the [PosOperator Onboarding](../../../getting-started/operator-onboarding/invitation-process.md) must be completed first, or the PosOperator itself must perform the setup.
+If the following requirements are not met, the [PosOperator Onboarding](../../../getting-started/operator-onboarding/invitation-process.md) must be completed first, or the PosOperator itself must perform the setup.
+
+1. The PosOperator already has an account in the **fiskaltrust.Portal** and agreed to the general terms and conditions and the PosOperator user agreement of fiskaltrust.  
+2. The [Master data](../../../getting-started/operator-onboarding/master-data.md "Master data") are checked by the PosOperator or by the PosDealer.  
+3. As a PosDealer, you have full authorizations (Write/Read, Contract Conclusion) to the account of the PosOperator.  
 
 ### Sign contract permission
 
   1. Log in to **fiskaltrust.Portal** as a PosDealer. 
   2. Go to `PosOperator` / `Overview`. 
   3. If necessary, enter filter criteria to narrow the search results and select `Search`. 
-  4. Check with the icon at **Permissions** if `sign contract` is active.
-  5. If this permission is not active, contact the PosOperator to give it to you.
+  4. Check with the icon at **Permissions** if `Contract conclusion` is active.
+  5. If this permission is not active, contact the PosOperator to activate it to you.
   6. Close the dialog box by clicking **OK**. 
   
 ###  Master data
@@ -68,9 +72,8 @@ The PosOperator already has an account in the **fiskaltrust.Portal**, agreed to 
   1. Select the link at `Name` and go to the account of the PosOperator.
   2. Select `Company` / `Master data`.
   3. Check if every mandatory field, like `Name*` or `Address*`, is filled in.
-
-  5. Check whether you can successfully perform a validity check with either St.-ldNr. or USt-ldNr.
-  6. Save your entries with **Save**. 
+  4. Check whether you can successfully perform a validity check with either `St-ldNr` or `USt-ldNr`.
+  5. Save your entries with `Save`. 
 
 ### Setup instructions
 
