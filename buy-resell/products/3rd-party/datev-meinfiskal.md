@@ -60,6 +60,7 @@ If the following requirements are not met, the [PosOperator Onboarding](../../..
 
 #### Master data limitations 
 The following table lists the maximum character lengths allowed for the DATEV onboarding:
+
 | Master data  |  maximum character length |
 |---|---|
 | AccountName  | 32 |
