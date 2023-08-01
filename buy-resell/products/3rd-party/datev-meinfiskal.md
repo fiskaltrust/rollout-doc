@@ -72,7 +72,7 @@ If the following requirements are not met, the [PosOperator Onboarding](../../..
   1. Select the link at `Name` and go to the account of the PosOperator.
   2. Select `Company` / `Master data`.
   3. Check if every mandatory field, like `Name*` or `Address*`, is filled in.
-  4. Check whether you can successfully perform a validity check with either `St.-ldNr.` or `USt-ldNr`.
+  4. Check whether you can successfully perform a validity check with either `St-ldNr` or `USt-ldNr`.
   5. Save your entries with `Save`. 
 
 ### Setup instructions
