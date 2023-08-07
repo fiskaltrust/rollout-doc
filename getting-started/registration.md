@@ -207,7 +207,7 @@ In the future, all users will use the login listed [above](registration.md#count
 
 The process described in this section for adding accounts for employees to your account (`Company` / `Employees` / `+Add`) also applies to adding accounts for employees to PosOperators. Please note that as a PosDealer, you cannot manage these data if you switch to a PosOperator account.
 
-:::attention
+:::caution No access to employee data for PosDealer
 
 Please note that as a PosDealer, you cannot manage the data of employees in the fiskaltrust.Portal if you switch to a PosOperator account due to data privacy reasons.
 
