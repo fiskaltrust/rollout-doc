@@ -33,12 +33,29 @@ By usage of the _DATEV Kassenarchiv online_, your PosOperator reaches a legally 
 Tax consultants and authorities are working on introducing digital workflows to clients. The interface named *[DATEV Kassenbuch-Schnittstelle](https://apps.datev.de/help-center/documents/0904388)* is available from DATEV; data from PosSystems for financial accounting can be forwarded directly to the tax advisor's DATEV software solution. In addition, an up-to-date database without delays creates transparency in the event of an upcoming external audit.
 
 ### Process description
-
+#### PosCreator
 The PosCreator adds a PosSystem in the fiskaltrust.Portal. Thereby a **PosSystemId** is assigned. Then the PosCreator invites PosDealers to use this PosSystem.
 A valid PosSystemId is a prerequisite for successfully registering PosOperators with MeinFiskal.
 
+The PosCreator checks their implementation by generating a DFKA-Export. If the validation report inside the DFKA has no errors then the PosDealer can start with the onboarding process.
+**Onboarding to MeinFiskal is only allowed if the validation report didn't contain any errors**
+##### HowTo: DFKA-Export & validation report
+Generate a DFKA-Export by clicking the export button on the desired queue and then select "DFKA". Extract the .zip and open the JSON "validation-report.json".
+Check if the "isValid" field is "true". If the "isValid" field shows the value "false", then your DFKA contains errors. The errors are listed under "Errors" and always refer to the DFKA itself (dfka.json). While exporting the DFKA our backend checks if the data in the dfka.json is valid according to the schema in the taxonomie-schema.json. This is standard json schema validation and can be reproduced by using tools like [JSON Schema Validator](https://www.jsonschemavalidator.net/).
+##### common errors in the validation report
+
+| Error |  Cause |
+|---|---|
+| does not validate against content encoding 'base64' cash_point_closing.security.tse.modules[0].certificate  | Certificate of the TSE is missing. Check if TSE is active in ft.Portal |
+| JSON does not match any schemas from 'anyOf' cash_point_closing.head.company  | tax id or vat id missing. at least one of them is required. Check masterdata in ft.Portal |
+| Required properties are missing from object: brand, model, base_currency_code cash_point_closing.head.company.location.cash_register  | PosSystem masterdata is missing. Check if PosSystemId is included in all requests to the ft.Middleware |
+
+#### PosDealer
 The PosDealer activates the _DATEV MeinFiskal_ function in the fiskaltrust.Portal by signing the **user agreement** on behalf of the PosOperator.
-Customer data such as **E-Mail address** and **tax number** (St.-ldNr. or USt-ldNr.) are exchanged between the fiskaltrust.Portal and the _[DATEV MeinFiskal](https://www.meinfiskal.de/)_ platform. A _DATEV MeinFiskal_ user account and a password is created automatically at DATEV. The PosDealer changes E-Mail-address and password for the user account at _DATEV MeinFiskal_ and confirms the data transfer between fiskaltrust and DATEV. The PosOperator receives a welcome E-Mail from _DATEV MeinFiskal_ and can use the services _DATEV Kassenarchiv online_. Further services like the _DATEV Kassenbuch-Schnittstelle_ are available at the MeinFiskal platform.
+Customer data such as **E-Mail address** and **tax number** (St.-ldNr. or USt-ldNr.) are exchanged between the fiskaltrust.Portal and the _[DATEV MeinFiskal](https://www.meinfiskal.de/)_ platform. A _DATEV MeinFiskal_ user account and a password is created automatically at DATEV. The PosDealer changes E-Mail-address and password for the user account at _DATEV MeinFiskal_ and confirms the data transfer between fiskaltrust and DATEV. 
+
+#### PosOperator
+The PosOperator receives a welcome E-Mail from _DATEV MeinFiskal_ and can use the services _DATEV Kassenarchiv online_. Further services like the _DATEV Kassenbuch-Schnittstelle_ are available at the MeinFiskal platform.
 
 Fiskaltrust takes over the generation of the legally required data formats (DSFinV-K, DFKA taxonomy, .tar files, native format, other documents), as well as the connection and data transfer to _DATEV MeinFiskal_ via the fiskaltrust.Portal.
 
@@ -71,7 +88,6 @@ The following table lists the maximum character lengths allowed for the DATEV on
 | Street  | 32 |
 | Surname  | 32 |
 | VatId | max 14 min 11  |
-| Firstname  | 32 |
 
 ### Sign contract permission
 
