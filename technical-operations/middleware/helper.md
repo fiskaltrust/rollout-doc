@@ -28,10 +28,7 @@ The POS-API Helper speeds up the smooth process from the creation of a document 
 
 #### Introduction
 
-The POS-API Helper allows data for digital receipts to be uploaded directly. With this Helper, uploading data from your local queue to the fiskaltrust backend is fast enough to display a digital receipt on a consument's digital device.  
-The POS-API Helper is available in each of Fiskaltrust`s country-specific portals and works similarly to a proxy.
-
-You, as a PosDealer configure a POS-API Helper in the account of your PosOperator and assign this to each CashBox that uses digital receipts.
+The POS-API Helper is responsible and required for the upload of the receipt data from the local queue (fiskaltrust.Middleware) to the digital receipt endpoint (fiskaltrust). The POS-API Helper is available in all countries and works similarly to a proxy. This helper is part of the default background settings and is assigned to each CashBox. Once added, the POS-API Helper helps to switch to a direct upload behavior of digital receipts within seconds. Without the POS-API Helper, receipt uploads can take up to five minutes - during which time the digital receipt cannot be displayed on consumers' digital devices.
 
 :::caution Risk of confusion
 
@@ -42,19 +39,7 @@ Therefore, please check carefully if the **POS-API Helper** with its purely uplo
 
 If you have further questions or need clarification, please contact your fiskaltrust representative or reach out to fiskaltrust's Customer Success Team ([AT](mailto:support@fiskaltrust.at) / [DE](mailto:support@fiskaltrust.de) / [FR](mailto:support@fiskaltrust.fr)).
 
-#### Functionality
-
-The sequence diagram below describes the process of creating a digital receipt with the `/sign endpoint` and POS-API Helper using the fiskaltrust receipt solution. The participants in the process are your POS software, the fiskaltrust.Middleware, your POS-API Helper, the fiskaltrust backend, and the consumer's digital device.  
-
-In the outlet, the **POS software** creates the data for receipt generation and payment. Then, the POS software sends these data to the **fiskaltrust.Middleware** for signing.  
-At the same time, the **POS-API Helper** receives a request to send the receipt data asynchronously to the fiskaltrust backend.  
-Once the receipt is fully fiscalized at the **fiskaltrust backend**, the POS software receives a response containing the ftQueueID and ftQueueItemID.  
-This allows a **QR code** to be created by the POS software and displayed on the display/device to the customer.  
-The customer can access the receipt by scanning the displayed QR code with the **Customer's Digital Device**. The mobile device requests the receipt from the fiskaltrust backend and receives an HTML document, the digital receipt, for display and further processing.
-
-![preview](images/sequencediagram-2023-08-21.png "Sequence diagram POS-API Helper")
-
-#### Functionality
+#### Preparation and deployment
 
 ###### Preparation Queue
 
