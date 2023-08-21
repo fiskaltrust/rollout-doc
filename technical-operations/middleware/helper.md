@@ -22,7 +22,73 @@ Depending on the Helper type, it might be necessary to enter values for paramete
 
 ![Types of Helpers](images/54446-1-Types-of-Helpers.png "Types of Helpers")
 
-### HelipadHelper (Description)
+### POS-API Helper (Example)
+
+The POS-API Helper speeds up the smooth process from the creation of a document to its display at the PosOperator.
+
+#### Introduction
+
+The POS API Helper allows data for digital receipts to be uploaded directly. With this Helper, uploading data from your local queue to the endpoint is fast enough to display a digital receipt on a customer's digital gadget. The POS API Helper is available in each of Fiskaltrust`s country-specific portals and works similarly to a proxy.
+
+You, as a PosDealer configure a POS-API Helper in the fiskaltrust.Portal (Configuration / Helpers) of your PosOperator and assign this to each CashBox (Configuration / CashBox) that uses digital receipts.
+
+:::caution Risk of confusion
+
+Only our **POS-API** provides you with advanced functionality and full compliance in all markets, **especially Austria**.  
+Therefore, please check carefully if the **POS-API Helper** with its purely upload-focused functionality is suitable for your respective POS software environment.
+
+:::
+
+If you have further questions or need clarification, please contact your fiskaltrust representative or reach out to fiskaltrust's Customer Success Team ([AT](mailto:support@fiskaltrust.at) / [DE](mailto:support@fiskaltrust.de) / [FR](mailto:support@fiskaltrust.fr)).
+
+#### Functionality
+
+The sequence diagram below describes the process of creating a digital receipt with the /sign endpoint and POS-API Helper using the fiskaltrust receipt solution. The participants in the process are your POS software, the fiskaltrust.Middleware, your POS-API Helper, the fiskaltrust backend, and your customer's digital device.  
+
+In the outlet, the **POS software** creates receipt and payment data. Then, the POS software sends this receipt data to the **fiskaltrust.Middleware** for signing.  
+At the same time, the **POS API Helper** receives a request to send the receipt data asynchronously to the fiskaltrust backend.  
+Once the receipt is fully fiscalized at the **fiskaltrust backend**, the POS software receives a response containing the ftQueueID and ftQueueItemID.  
+This allows a **QR code** to be created by the POS software and displayed on the display/device to the customer.  
+The customer can access the receipt by scanning the displayed QR code with the **Customer's Digital Device**. The mobile device requests the receipt from the fiskaltrust backend and receives an HTML document, the digital receipt, for display and further processing.
+
+![preview](images/sequence-diagram-2023-08-21.png "Sequence diagram POS-API Helper")
+
+#### Functionality
+
+###### Prerequisites Queue
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../images/numbers/circle-1o.png) |Login to your fiskaltrust.Portal account.  |
+|![Number 2](../../images/numbers/circle-2o.png) |Navigate to `Configuration` / `Queue`.|
+|![Number 3](../../images/numbers/circle-3o.png) |Select `Configure Queue`.  |
+|![Number 4](../../images/numbers/circle-4o.png) |Copy the URLs to your local machine, these are required for CashBox configuration.  |
+|![Number 5](../../images/numbers/circle-5o.png) |**For all countries**: Change port to the next free port (+1) and.  |
+|...|a.	if **no suffix** exists after the port: add the suffix "/ _placeholder__queue" to the URL (_placeholder_ can be freely chosen)|
+|...|b.	b.	if a suffix already exists: add the suffix "_queue" to the URL|
+|![Number 6](../../images/numbers/circle-6o.png) |**Germany & France only:** Change `grpc port` to the next free port and add the suffix "/I_queue" to the URL (_placeholder_ can be chosen freely). If the designated port is free there is no need to go up to the next free port..  |
+|![Number 7](../../images/numbers/circle-7o.png) |`Save` your changes.  |
+
+###### Helper
+
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../images/numbers/circle-1o.png) |Switch to `Configuration` / `Helper`.  |
+|![Number 2](../../images/numbers/circle-2o.png) |Select `+Create new helper`.|
+|![Number 3](../../images/numbers/circle-3o.png) |Add a `description`.  |
+|![Number 4](../../images/numbers/circle-4o.png) |Select `fiskaltrust.service.helper.posapi` as `Package name`.  |
+|![Number 5](../../images/numbers/circle-5o.png) |Select the latest `Package version`.  |
+|![Number 6](../../images/numbers/circle-6o.png) |Select the `Outlet` of the desired CashBox|
+|![Number 7](../../images/numbers/circle-7o.png) |`Save` the new configuration.  |
+|![Number 8](../../images/numbers/circle-8o.png) |Select `Configure helper`.  |
+|![Number 9](../../images/numbers/circle-9o.png) |**For all Countries**: 	Insert the previously saved Queue URLs to the Helper URLs and add the suffix / _placeholder_ to the URL (analogue to your naming in `Prerequisites Queue`).|
+|![Number 10](../../images/numbers/circle-10o.png) |**Germany & France only**: Add also `GRPC URL` with next free port and add the suffix / _placeholder_ to the URL (analogue to the naming in `Prerequisites Queue`).|
+|![Number 11](../../images/numbers/circle-11o.png) |`Save` your changes.  |
+
+
+
+### HelipadHelper (Example)
 
 One example of a Helper available in all countries is the HelipadHelper, which is responsible for uploading data from the local queue to the cloud receipt archive. This Helper belongs to the default settings in the background and is assigned to each CashBox. Therefore, it has not to be added by the user. 
 You can add your own HelipadHelper to change the upload behavior. 
