@@ -28,9 +28,10 @@ The POS-API Helper speeds up the smooth process from the creation of a document 
 
 #### Introduction
 
-The POS API Helper allows data for digital receipts to be uploaded directly. With this Helper, uploading data from your local queue to the endpoint is fast enough to display a digital receipt on a customer's digital gadget. The POS API Helper is available in each of Fiskaltrust`s country-specific portals and works similarly to a proxy.
+The POS-API Helper allows data for digital receipts to be uploaded directly. With this Helper, uploading data from your local queue to the fiskaltrust backend is fast enough to display a digital receipt on a consument's digital device.  
+The POS-API Helper is available in each of Fiskaltrust`s country-specific portals and works similarly to a proxy.
 
-You, as a PosDealer configure a POS-API Helper in the fiskaltrust.Portal (Configuration / Helpers) of your PosOperator and assign this to each CashBox (Configuration / CashBox) that uses digital receipts.
+You, as a PosDealer configure a POS-API Helper in the account of your PosOperator and assign this to each CashBox that uses digital receipts.
 
 :::caution Risk of confusion
 
@@ -43,19 +44,19 @@ If you have further questions or need clarification, please contact your fiskalt
 
 #### Functionality
 
-The sequence diagram below describes the process of creating a digital receipt with the /sign endpoint and POS-API Helper using the fiskaltrust receipt solution. The participants in the process are your POS software, the fiskaltrust.Middleware, your POS-API Helper, the fiskaltrust backend, and your customer's digital device.  
+The sequence diagram below describes the process of creating a digital receipt with the `/sign endpoint` and POS-API Helper using the fiskaltrust receipt solution. The participants in the process are your POS software, the fiskaltrust.Middleware, your POS-API Helper, the fiskaltrust backend, and the consumer's digital device.  
 
-In the outlet, the **POS software** creates receipt and payment data. Then, the POS software sends this receipt data to the **fiskaltrust.Middleware** for signing.  
-At the same time, the **POS API Helper** receives a request to send the receipt data asynchronously to the fiskaltrust backend.  
+In the outlet, the **POS software** creates the data for receipt generation and payment. Then, the POS software sends these data to the **fiskaltrust.Middleware** for signing.  
+At the same time, the **POS-API Helper** receives a request to send the receipt data asynchronously to the fiskaltrust backend.  
 Once the receipt is fully fiscalized at the **fiskaltrust backend**, the POS software receives a response containing the ftQueueID and ftQueueItemID.  
 This allows a **QR code** to be created by the POS software and displayed on the display/device to the customer.  
 The customer can access the receipt by scanning the displayed QR code with the **Customer's Digital Device**. The mobile device requests the receipt from the fiskaltrust backend and receives an HTML document, the digital receipt, for display and further processing.
 
-![preview](images/sequence-diagram-2023-08-21.png "Sequence diagram POS-API Helper")
+![preview](images/sequencediagram-2023-08-21.png "Sequence diagram POS-API Helper")
 
 #### Functionality
 
-###### Prerequisites Queue
+###### Preparation Queue
 
 | steps | description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -69,7 +70,7 @@ The customer can access the receipt by scanning the displayed QR code with the *
 |![Number 6](../../images/numbers/circle-6o.png) |**Germany & France only:** Change `grpc port` to the next free port and add the suffix "/I_queue" to the URL (_placeholder_ can be chosen freely). If the designated port is free there is no need to go up to the next free port..  |
 |![Number 7](../../images/numbers/circle-7o.png) |`Save` your changes.  |
 
-###### Helper
+###### Preparation Helper
 
 
 | steps | description                                                                                                                |
@@ -82,11 +83,23 @@ The customer can access the receipt by scanning the displayed QR code with the *
 |![Number 6](../../images/numbers/circle-6o.png) |Select the `Outlet` of the desired CashBox|
 |![Number 7](../../images/numbers/circle-7o.png) |`Save` the new configuration.  |
 |![Number 8](../../images/numbers/circle-8o.png) |Select `Configure helper`.  |
-|![Number 9](../../images/numbers/circle-9o.png) |**For all Countries**: 	Insert the previously saved Queue URLs to the Helper URLs and add the suffix / _placeholder_ to the URL (analogue to your naming in `Prerequisites Queue`).|
-|![Number 10](../../images/numbers/circle-10o.png) |**Germany & France only**: Add also `GRPC URL` with next free port and add the suffix / _placeholder_ to the URL (analogue to the naming in `Prerequisites Queue`).|
+|![Number 9](../../images/numbers/circle-9o.png) |**For all Countries**: 	Insert the previously saved Queue URLs to the Helper URLs and add the suffix / _placeholder_ to the URL (analogue to your naming in `Preparation Queue`).|
+|![Number 10](../../images/numbers/circle-10o.png) |**Germany & France only**: Add also `GRPC URL` with next free port and add the suffix / _placeholder_ to the URL (analogue to the naming in `Preparation Queue`).|
 |![Number 11](../../images/numbers/circle-11o.png) |`Save` your changes.  |
 
+##### Preparation CashBox 
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../images/numbers/circle-1o.png) |Switch to `Configuration` / `CashBox`.  |
+|![Number 2](../../images/numbers/circle-2o.png) |Select the desired CashBox and `Edit by list`.|
+|![Number 3](../../images/numbers/circle-3o.png) |Navigate to `Helpers`.  |
+|![Number 4](../../images/numbers/circle-4o.png) |Activate the `POS-API Helper`|
+|![Number 5](../../images/numbers/circle-5o.png) |`Save` your configuration.  |
+|![Number 6](../../images/numbers/circle-6o.png) |Select the `Rebuild` of your configuration|
 
+##### Restart
+
+**Restart** the fiskaltrust.Middleware to apply your changes. 
 
 ### HelipadHelper (Example)
 
