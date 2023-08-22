@@ -30,10 +30,11 @@ The POS-API Helper speeds up the smooth process from the creation of a document 
 
 The POS-API Helper is responsible and required for the upload of the receipt data from the local queue (fiskaltrust.Middleware) to the digital receipt endpoint (fiskaltrust). The POS-API Helper is available in all countries and works similarly to a proxy. This helper is part of the default background settings and is assigned to each CashBox. Once added, the POS-API Helper helps to switch to a direct upload behavior of digital receipts within seconds. Without the POS-API Helper, receipt uploads can take up to five minutes - during which time the digital receipt cannot be displayed on consumers' digital devices.
 
-:::caution Risk of confusion
+:::caution Please note:
 
-Only our **POS-API** provides you with advanced functionality and full compliance in all markets, **especially Austria**.  
-Therefore, please check carefully if the **POS-API Helper** with its purely upload-focused functionality is suitable for your respective POS software environment.
+**POS-API Helper** is just an alternative with less features compared to our **POS-API** which gives you extended functionality and full compliance in Austria. Please choose carefully if the POS-API Helper is suitable for your POS software environment.
+We recommend the **POS-API Helper** for the **fiskaltrust InStore app**,  
+otherwise only for test installations.
 
 :::
 
