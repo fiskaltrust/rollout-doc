@@ -22,7 +22,72 @@ Depending on the Helper type, it might be necessary to enter values for paramete
 
 ![Types of Helpers](images/54446-1-Types-of-Helpers.png "Types of Helpers")
 
-### HelipadHelper (Description)
+### POS-API Helper (Example)
+
+The POS-API Helper speeds up the smooth process from the creation of a document to its display at the PosOperator.
+
+#### Introduction
+
+The POS-API Helper is responsible and required for the upload of the receipt data from the local queue (fiskaltrust.Middleware) to the digital receipt endpoint (fiskaltrust). The POS-API Helper is available in all countries and works similarly to a proxy. This helper is part of the default background settings and is assigned to each CashBox. Once added, the POS-API Helper helps to switch to a direct upload behavior of digital receipts within seconds. Without the POS-API Helper, receipt uploads can take up to five minutes - during which time the digital receipt cannot be displayed on consumers' digital devices.
+
+:::caution Please note:
+
+**POS-API Helper** is just an alternative with less features compared to our **POS-API** which gives you extended functionality and full compliance in Austria. Please choose carefully if the POS-API Helper is suitable for your POS software environment.
+We recommend the **POS-API Helper** for the **fiskaltrust InStore app**,  
+otherwise only for test installations.
+
+:::
+
+If you have further questions or need clarification, please contact your fiskaltrust representative or reach out to fiskaltrust's Customer Success Team ([AT](mailto:support@fiskaltrust.at) / [DE](mailto:support@fiskaltrust.de) / [FR](mailto:support@fiskaltrust.fr)).
+
+#### Preparation and deployment
+
+###### Preparation Queue
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../images/numbers/circle-1o.png) |Login to your fiskaltrust.Portal account.  |
+|![Number 2](../../images/numbers/circle-2o.png) |Navigate to `Configuration` / `Queue`.|
+|![Number 3](../../images/numbers/circle-3o.png) |Select `Configure Queue`.  |
+|![Number 4](../../images/numbers/circle-4o.png) |Copy the URLs to your local machine, these are required for CashBox configuration.  |
+|![Number 5](../../images/numbers/circle-5o.png) |**For all countries**: Change port to the next free port (+1) and.  |
+|...|a.	if **no suffix** exists after the port: add the suffix "/ _placeholder__queue" to the URL (_placeholder_ can be freely chosen)|
+|...|b.	b.	if a suffix already exists: add the suffix "_queue" to the URL|
+|![Number 6](../../images/numbers/circle-6o.png) |**Germany & France only:** Change `grpc port` to the next free port and add the suffix "/I_queue" to the URL (_placeholder_ can be chosen freely). If the designated port is free there is no need to go up to the next free port..  |
+|![Number 7](../../images/numbers/circle-7o.png) |`Save` your changes.  |
+
+###### Preparation Helper
+
+
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../images/numbers/circle-1o.png) |Switch to `Configuration` / `Helper`.  |
+|![Number 2](../../images/numbers/circle-2o.png) |Select `+Create new helper`.|
+|![Number 3](../../images/numbers/circle-3o.png) |Add a `description`.  |
+|![Number 4](../../images/numbers/circle-4o.png) |Select `fiskaltrust.service.helper.posapi` as `Package name`.  |
+|![Number 5](../../images/numbers/circle-5o.png) |Select the latest `Package version`.  |
+|![Number 6](../../images/numbers/circle-6o.png) |Select the `Outlet` of the desired CashBox|
+|![Number 7](../../images/numbers/circle-7o.png) |`Save` the new configuration.  |
+|![Number 8](../../images/numbers/circle-8o.png) |Select `Configure helper`.  |
+|![Number 9](../../images/numbers/circle-9o.png) |**For all Countries**: 	Insert the previously saved Queue URLs to the Helper URLs and add the suffix / _placeholder_ to the URL (analogue to your naming in `Preparation Queue`).|
+|![Number 10](../../images/numbers/circle-10o.png) |**Germany & France only**: Add also `GRPC URL` with next free port and add the suffix / _placeholder_ to the URL (analogue to the naming in `Preparation Queue`).|
+|![Number 11](../../images/numbers/circle-11o.png) |`Save` your changes.  |
+
+##### Preparation CashBox 
+| steps | description                                                                                                                |
+|:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
+|![Number 1](../../images/numbers/circle-1o.png) |Switch to `Configuration` / `CashBox`.  |
+|![Number 2](../../images/numbers/circle-2o.png) |Select the desired CashBox and `Edit by list`.|
+|![Number 3](../../images/numbers/circle-3o.png) |Navigate to `Helpers`.  |
+|![Number 4](../../images/numbers/circle-4o.png) |Activate the `POS-API Helper`|
+|![Number 5](../../images/numbers/circle-5o.png) |`Save` your configuration.  |
+|![Number 6](../../images/numbers/circle-6o.png) |Select the `Rebuild` of your configuration|
+
+##### Restart
+
+**Restart** the fiskaltrust.Middleware to apply your changes. 
+
+### HelipadHelper (Example)
 
 One example of a Helper available in all countries is the HelipadHelper, which is responsible for uploading data from the local queue to the cloud receipt archive. This Helper belongs to the default settings in the background and is assigned to each CashBox. Therefore, it has not to be added by the user. 
 You can add your own HelipadHelper to change the upload behavior. 
