@@ -20,7 +20,7 @@ The CashBox is primarily configured in the fiskaltrust.Portal and then rolled ou
 
 The `CashBoxID` and the `AccessToken` are two crucial parameters of each CashBox and serve for authentication against the portal services. For example, the Middleware itself uses them to fetch its Configuration. You'll also use them in the context of templating.
 
-You can access the `CashBoxID` and the `AccessToken` of each CashBox under its respective entry on the [`Configuration` / `CashBox`](#cashbox-maintenance-portal) screen.
+You can access the `CashBoxID` and the `AccessToken` of each CashBox under its respective entry on the [`Configuration` / `CashBox`](#cashbox-maintenance-fiskaltrustportal) screen.
 
 :::caution
 
