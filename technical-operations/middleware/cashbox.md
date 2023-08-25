@@ -109,7 +109,7 @@ You log in as PosDealer and switch to the desired account (`PosOperators` / `Ove
 |![Number 2](../../images/numbers/circle-2o.png) |Reduce the number of records in the `List of CashBoxes` with filter criteria such as CashBox, Queue or SCU name or use the sort options for your desired overview.|
 |![Number 3](../../images/numbers/circle-3o.png) |`Collapse` the details of the desired CashBox.|
 |![Number 4](../../images/numbers/circle-4o.png) |Please see [CashBox ID and AccessToken](#cashbox-id-and-accesstoken) for more details.|
-|![Number 5](../../images/numbers/circle-5o.png) |[Digital Receipt / InStore App](../../../middleware-doc/doc/digital-receipt/Instore-App/digital-receipt-instore-app.md)|
+|![Number 5](../../images/numbers/circle-5o.png) |[Digital Receipt / InStore App](https://docs.fiskaltrust.cloud/de/docs/poscreators/middleware-doc/digital-receipt/InStore-App)|
 |![Number 6](../../images/numbers/circle-6o.png) |A Queue is defined [here](../../business-basics/architecture.md#queue), find more details in our [interface description](https://github.com/fiskaltrust/interface-doc). For `Configuration`, use the menu or the icon on the right side. |
 |![Number 7](../../images/numbers/circle-7o.png) |Please see [Helpers](../middleware/helper.md) for more details on this subject. For `Configuration`, use the menu or the icon on the right side.|
 |![Number 8](../../images/numbers/circle-8o.png) |Read [the definition of a SCU](../../business-basics/architecture.md#scu) and more about its [Configuration](https://github.com/fiskaltrust/interface-doc).For `Configuration`, use the menu or the icon on the right side.|
