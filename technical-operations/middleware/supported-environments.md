@@ -49,8 +49,6 @@ If you haven't already decided for a communication technology, we strongly recom
 
 When using REST, **the HTTP endpoint slightly differs from the Windows version**, as the version prefix cannot be included because of unfixed bugs in Mono. Hence, a REST URL on Linux would look like this: `http://localhost:1500/a4c4e466-721a-4011-a9a5-a23827a21b45/sign` (instead of `../v1/sign`).
 
-In addition, if REST is used, a gRPC endpoint needs to be configured as the primary endpoint of the Queue and the SCU, so it can be properly used by our packages.
-
 We're working on an updated version of the Launcher that doesn't rely on Mono anymore to resolve these issues.
 
 :::
