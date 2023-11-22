@@ -91,6 +91,9 @@ The following table lists the maximum character lengths allowed for the DATEV on
 | Surname  | 32 |
 | VatId | max 14 min 11  |
 
+#### Address data validation
+DATEV has strict checks that verify the entered address data. The city and street must belong to the correct PLZ registered at Deutsche Post. Please check if your address can be found with the given PLZ. You can use the following website provided by the Deutsche Post [PLZ Check](https://www.postdirekt.de/plzserver/)
+
 ### Sign contract permission
 
   1. Log in to **fiskaltrust.Portal** as a PosDealer. 
