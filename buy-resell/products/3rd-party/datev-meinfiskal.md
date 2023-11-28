@@ -51,6 +51,8 @@ Check if the **isValid** field is **true**. If the **isValid** field shows the v
 | does not validate against content encoding 'base64' cash_point_closing.security.tse.modules[0].certificate  | Certificate of the TSE is missing. Check if TSE is active in fiskaltrust.Portal |
 | JSON does not match any schemas from 'anyOf' cash_point_closing.head.company  | tax id or vat id missing, but at least one of them is required. Check **Master data** in fiskaltrust.Portal |
 | Required properties are missing from object: brand, model, base_currency_code cash_point_closing.head.company.location.cash_register  | PosSystem Master data is missing. Check if PosSystemId is included in all requests to the fiskaltrust.Middleware |
+| JSON is valid against no schemas from 'oneOf' cash_point_closing.transactions[X].head.references[X]  | Reference to other system is missing mandatory data. Check ReceiptCaseData reference rules [References](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/germany/data-structures#receipt-case-data-ftreceiptcasedata) |
+
 
 #### PosDealer
 The PosDealer activates the _DATEV MeinFiskal_ function in the fiskaltrust.Portal by signing the **user agreement** on behalf of the PosOperator.
