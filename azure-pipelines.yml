@@ -7,8 +7,9 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
+    versionSource: 'spec'
+    versionSpec: '16.14.0'
     checkLatest: true
-    versionSpec: '>=12.x'
   displayName: 'Install Node.js'
 
 - script: 'npm install -g markdown-link-check'
