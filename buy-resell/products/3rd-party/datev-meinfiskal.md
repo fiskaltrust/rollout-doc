@@ -38,11 +38,12 @@ The PosCreator adds a PosSystem in the fiskaltrust.Portal. Thereby a **PosSystem
 A valid PosSystemId is a prerequisite for successfully registering PosOperators with MeinFiskal.
 
 The PosCreator checks its implementation by generating a DFKA-Export. If the validation report inside the DFKA has no errors, then the PosDealer can start with the onboarding process.
-**Onboarding to MeinFiskal is only allowed if the validation report didn't contain any errors**
+**Onboarding to MeinFiskal is only allowed if the validation report doesn't contain any errors**
+We highly recommend creating one daily-closing which contains all possible business cases your PosSystem offers in your check. That way it's easy to identify errors that would prevent the successful import into DATEV MeinFiskal in the future. 
 
 ##### HowTo: DFKA-Export & validation report
 Generate a DFKA-Export by clicking the export button on the desired queue and then selecting **DFKA**. Extract the .zip and open the JSON **validation-report.json**.
-Check if the **isValid** field is **true**. If the **isValid** field shows the value **false**, then your DFKA contains errors. The errors are listed under **Errors** and always refer to the DFKA itself (dfka.json). While exporting the DFKA, our backend checks if the data in the dfka.json is valid according to the schema in the **taxonomie-schema.json**. This is standard JSON schema validation and can be reproduced using tools like [JSON Schema Validator](https://www.jsonschemavalidator.net/).
+Check if the **isValid** field is **true**. If the **isValid** field shows the value **false**, then your DFKA contains errors. The errors are listed under **Errors** and always refer to the DFKA itself (dfka.json). While exporting the DFKA, our backend checks if the data in the dfka.json is valid according to the schema in the **taxonomie-schema.json**. This is standard JSON schema validation and can be reproduced using tools like [JSON Schema Validator](https://www.jsonschemavalidator.net/). None valid DFKA-Exports won't be imported into DATEV MeinFiskal.
 
 ##### Common errors in the validation report
 
@@ -117,7 +118,7 @@ DATEV has strict checks that verify the entered address data. The city and stree
 
 :::tip
 
-Please note that the _DATEV MeinFiskal_ account is created automatically during the connection. Therefore, please **do not create** a _DATEV MeinFiskal_ account for your PosOperator in advance.
+Please note that the _DATEV MeinFiskal_ account is created automatically during the connection. Therefore, please **do not create** a _DATEV MeinFiskal_ account for your PosOperator in advance. Fiskaltrust can't delete accounts in the DATEV-Portal that have been created by other parties.
 
 :::
 
@@ -260,3 +261,13 @@ Please note that the fiskaltrust.Portal supports up to 100 characters in the fie
 - The **PosDealer** can no longer log on to _DATEV MeinFiskal_ because he no longer has the login data. Therefore, he cannot request another E-Mail for a password change on the _DATEV MeinFiskal_ website on his own. This is only possible via the PosOperator once he has received the welcome E-Mail with the link to change the password on the _DATEV MeinFiskal_ website.
 
 - The **PosDealer** cannot complete the linking process between fiskaltrust and _DATEV MeinFiskal_ because the wrong user name (not the same E-Mail address as for the fiskaltrust.Portal) was entered at _DATEV MeinFiskal_ in step 6. Therefore, the PosDealer must contact fiskaltrust support to delete the incorrect link.
+
+## Import troubleshooting
+There a common mistakes that prevent us from being able to upload the data to DATEV MeinFiskal or the data having errors in the MeinFiskal overview.
+
+| Error  |  Solution |
+|---|---|
+| No Data visible in DATEV MeinFiskal  | This is most of the time caused by the DFKA not being valid. Please see [HowTo: DFKA-Export & validation report](#howto-dfka-export--validation-report) for common errors and help. |
+| Data from one daily-closing is missing in DATEV MeinFiskal  | This is most of the time caused by the DFKA not being valid. Please see [HowTo: DFKA-Export & validation report](#howto-dfka-export--validation-report) for common errors and help. If a single daily-clsoing is affected then a rarely occuring receiptCase might be responsible.  |
+| Errors in the DATEV MeinFiskal overview regarding mismatches in the revenue sums | If the sums don't match then the error is most of the time caused by the ChargeItems and PayItems not matching in some receipts. Please verify that your ChargeItem sums match the PayItem sums in all receipts. The middleware throws errors if the sums don't match and the receipt validation in the fiskaltrust.Portal shows errors. You can use the receipt check button in the fiskaltrust.Portal to identify affected receipts.  |
+
