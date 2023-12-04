@@ -249,6 +249,7 @@ The PosOperator can now use the services *DATEV Kassenarchiv online* and order t
 |![Number 3](../../../images/numbers/circle-3o.png) |Scroll down until `Here you can enable connections to third-party partners`  |
 |![Number 4](../../../images/numbers/circle-4o.png) |Details about the connection and status are given here. |
 |![Number 5](../../../images/numbers/circle-5o.png) |The contract can be downloaded using this link again. It was sent to your E-Mail address when the contact was signed or changed  |
+
 ## Troubleshooting
 
 - The **PosDealer** cannot sign the _DATEV MeinFiskal_ user agreement for the PosOperator, as he is not authorized to do so. The **PosDealer** must contact the PosOperator to obtain the necessary authorization.
