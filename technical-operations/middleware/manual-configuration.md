@@ -6,7 +6,7 @@ title: Manual CashBox Creation
 
 ## Creating the Components 
 
-The [Configuration](../technical-operations/middleware/configuration.md) of a CashBox follows these steps:
+The [Configuration](./configuration.md) of a CashBox follows these steps:
 
 1. Choose `PosOperator` / `Overview` to switch to the account of the desired PosOperator.
 2. Select `Configuration` / `Signature Creation Unit`.
@@ -63,7 +63,7 @@ The SCU must be assigned to the Queue. Therefore go to `Configuration` / `Queue`
 
 ### Helper
 
-Helpers are optional and vary depending on national laws and the needed functionality. Read the section [Helper](../technical-operations/middleware/helper.md) for further information.
+Helpers are optional and vary depending on national laws and the needed functionality. Read the section [Helper](./helper.md) for further information.
 
 ## Deploying the CashBox
 
