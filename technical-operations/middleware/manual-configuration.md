@@ -25,7 +25,7 @@ The [Configuration](../technical-operations/middleware/configuration.md) of a Ca
 |![Number 4](../../images/numbers/circle-4o.png) |At `Package name`, you can select the type of SCU you want to use.  |
 |![Number 5](../../images/numbers/circle-5o.png) |At `Package version`, you can choose the desired option.  |
 |![Number 6](../../images/numbers/circle-6o.png) |You must select an Outlet at `Outlet`.  |
-|![Number 7](../../images/numbers/circle-87o.png) |After you have selected `Save`, you will be directed to `Configuration` / `Signature Creation Unit` / `Configuration`. Add the necessary details for the type of SCU you have made and add a URL for your SCU there.  |
+|![Number 7](../../images/numbers/circle-8o.png) |After you have selected `Save`, you will be directed to `Configuration` / `Signature Creation Unit` / `Configuration`. Add the necessary details for the type of SCU you have made and add a URL for your SCU there.  |
 
 ### Queue
 
