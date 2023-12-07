@@ -1,3 +1,6 @@
+
+The *Business rollout* used in this tutorial will acquire entitlements, transfer them to the PosOperators outlets, activate them and eventually create necessary backend components for the CashBox (in this case, an SCU). 
+
 For this setup, we choose a fiskaltrust.Carefree plan with a Swissbit TSE. The fiskaltrust.Carefree plan will create a Carefree and TSE-as-a-Service bundle and automatically generate and assign a Swissbit TSE to your account. Using an online TSE means no further hardware provisioning steps are required from your side. For a quick tutorial, we refrain from choosing a PosOperator and its outlets but assign the bundle to your account and outlet. 
 
 To start the Business rollout, **log into your portal account** and proceed with the following steps.
@@ -33,4 +36,34 @@ Filter the outlet table by entering a search term or sort the outlets by clickin
 For example, in the `Carefree` and `AKO` columns, you can check whether these products are activated.
 The following image shows an example of activating the fiskaltrust.CarefreeBundle for the selected location:
 
-![check](./media/portal-posoperator-check.png)
+![check](./media/portal-posoperator-check.png)  
+  
+### Technical Rollout (generate the CashBox)
+
+The second step is the *Technical* rollout which will use a [template](../technical-operations/rollout-automation/templates.md) to create a new CashBox and a new Queue. It will also link the previously created SCU (*from the Business rollout*) to the new Queue.
+
+We choose a rollout plan based on a Swissbit template for this setup. This plan will create a new queue, a new CashBox, and link the previously created SCU.
+
+To start the Technical rollout **log into your portal account** and proceed with the following steps.
+
+<ReactPlayer controls url={require("./media/technical-rollout.mp4").default} /><br />
+
+1. Open your the **rollout management page** from [`Rollout Management` / `Plan`](https://portal-sandbox.fiskaltrust.de/RolloutManagement/Plan) (*Sandbox link*) in the left-hand navigation menu.
+2. Select `Technical Rollout - Creating cashboxes at scale`.
+3. **Filter** for `fiskaltrust Middleware für Swissbit Cloud TSE`.
+4. Select the plan `fiskaltrust Middleware für Swissbit Cloud TSE`.
+5. Select `Perform the rollout for the current account`.
+6. Tick the **same outlet** you chose before during the Business rollout.
+7. Click `Submit Selection`.
+8. Click `Create quote` - *this will take a few seconds. Once the quote is ready, the button will change to `Load quote into cart`.*
+9. Click `Load quote into cart` to **place the quote** into your shopping cart.
+10. Verify that the items in your shopping cart match the selected products.
+11. Click `Checkout`.
+12. Click `binding order` to **complete the order**.
+
+-----
+
+At this point, should have the order listed under [`Shop` / `Orders`](https://portal-sandbox.fiskaltrust.de/Shop/Orders). Finishing the order can take a couple of minutes, but once it has been completed, you should have
+
+* a **new queue** under [`Configuration` / `Queue`](https://portal-sandbox.fiskaltrust.de/Queue)
+* a **new CashBox** under [`Configuration` / `CashBox`](https://portal-sandbox.fiskaltrust.de/CashBox)

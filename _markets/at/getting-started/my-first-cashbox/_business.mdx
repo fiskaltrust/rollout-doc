@@ -8,10 +8,10 @@ import ReactPlayer from "react-player"
 
 1. Open your the **rollout management page** from [`Rollout Management` / `Plan`](https://portal-sandbox.fiskaltrust.at/RolloutManagement/Plan) (*Sandbox link*) in the left-hand navigation menu.
 2. Select `Business Rollout - Rolling out products`.
-3. **Filter** for `Carefree` and **limit entries** to `Dealerpackage based plans`.
-4. Select the plan **4154-0001**. This plan will create **a Carefree bundle**.
-5. Select `Perform the rollout for the current account`.
-6. Tick the **desired outlet** where you would like to roll out the Middleware.
+3. **Filter** for `CloudCashbox`.
+4. Select the plan **4154-0005**. This plan will create **a Carefree bundle** and a CloudCashbox for immediate use.
+5. Instead of selecting a PosOperator, choose `Perform the rollout for the current account` on top.
+6. Tick the **desired outlet** where you would like to roll out the product.
 7. Click `Submit Selection`.
 8. Click `Create quote` - *this will take a few seconds. Once the quote is ready, the button will change to `Load quote into cart`.*
 9. Click `Load quote into cart` to **place the quote** into your shopping cart.
@@ -23,5 +23,7 @@ import ReactPlayer from "react-player"
 
 At this point, should have the order listed under [`Shop` / `Orders`](https://portal-sandbox.fiskaltrust.at/Shop/Orders). Finishing the order can take a couple of minutes, but once it has been completed, there should be the following items active in your account
 
+* a **new queue** under [`Configuration` / `Queue`](https://portal-sandbox.fiskaltrust.at/Queue)
+* a **new CashBox** under [`Configuration` / `CashBox`](https://portal-sandbox.fiskaltrust.at/CashBox)
 * two **new demo subscriptions** under [`Shop` / `Subscriptions`](https://portal-sandbox.fiskaltrust.at/Shop/Subscriptions)
 * the 'Carefree' column for the selected outlet under [`Company Name` / `Outlets`](https://portal-sandbox.fiskaltrust.at/AccountOutlet) shows a symbol for an active Carefree subscription.

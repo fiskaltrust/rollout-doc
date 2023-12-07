@@ -97,8 +97,6 @@ module.exports = {
 					label: 'Middleware',
 					items: [
 						'rollout-doc/technical-operations/middleware/overview',
-						'rollout-doc/technical-operations/middleware/supported-environments',
-						'rollout-doc/technical-operations/middleware/network-requirements',
 						{
 							type: 'category',
 							label: 'Launchers & Hosting',
@@ -108,11 +106,14 @@ module.exports = {
 								'rollout-doc/technical-operations/middleware/launchers/datacenter',
 							]
 						},
+						'rollout-doc/technical-operations/middleware/manual-configuration',
 						'rollout-doc/technical-operations/middleware/cashbox',
 						'rollout-doc/technical-operations/middleware/configuration',
 						'rollout-doc/technical-operations/middleware/helper',
 						'rollout-doc/technical-operations/middleware/logging',
-						'rollout-doc/technical-operations/middleware/setup'
+						'rollout-doc/technical-operations/middleware/setup',
+						'rollout-doc/technical-operations/middleware/supported-environments',
+						'rollout-doc/technical-operations/middleware/network-requirements'
 					]
 				},
 				{
