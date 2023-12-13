@@ -22,7 +22,7 @@ There are two different ways you can use templates to create a new CashBox.
 
 #### Shop
 
-You'll find a number of pre-configured templates in the [shop](../../buy-resell/shop.md) under `Shop` / `Products`. Either fiskaltrust, PosCreators, or PosDealers provided these templates. You can add them to your shopping cart like any other product or clone them to modify them for your needs. After submitting your order, the portal will create a new CashBox based on the template's configuration.
+You'll find a number of pre-configured templates in the [shop](../../buy-resell/shop.md) under `Shop` / `Products`. Either fiskaltrust, PosCreators, or PosDealers provided these templates. You can add them to your basket like any other product or clone them to modify them for your needs. After submitting your order, the portal will create a new CashBox based on the template's configuration.
 
 Please see the chapter [Shop Templating](shop-templating.md) for more details.
 

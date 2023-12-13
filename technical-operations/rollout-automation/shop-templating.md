@@ -41,10 +41,10 @@ When you create or edit a template, you must fill out the following form.
 ## Create CashBox from Shop Template
 
 You can create CashBoxes from templates at `Shop-> Products` by buying them like a regular product (see chapter [Shop](../../buy-resell/shop.md)). 
-Please make sure to [surrogate](../../getting-started/operator-onboarding/surrogating.md) into the right PosOperator and select the correct Outlet in the Shop before adding the template into the shopping cart. Your Checkout creates the CashBox.
+Please make sure to [surrogate](../../getting-started/operator-onboarding/surrogating.md) into the right PosOperator and select the correct Outlet in the Shop before adding the template into the basket. Your Checkout creates the CashBox.
 
 :::info Required Products
 
-Some templates require buying a product before the derived CashBoxes will be fully operational. It would help if you mentioned this prerequisite in the description of the template. If so, place the required product into the shopping cart **before** adding the template to the cart.
+Some templates require buying a product before the derived CashBoxes will be fully operational. It would help if you mentioned this prerequisite in the description of the template. If so, place the required product into the basket **before** adding the template to the basket.
 
 :::

@@ -43,9 +43,9 @@ We use the example of checking the master data of a PosOperator to describe Surr
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
 |![Number 1](images/Numbers/circle-1o.png) |In the Account of the chosen PosOperator, you act with your user. Note the displayed original `USERNAME` and E-Mail address.  |
 |![Number 2](images/Numbers/circle-2o.png) |After switching to the account of a PosOperator, the view is similar. You recognize by the PosOperators COMPANY NAME that you use another account. |
-|![Number 3](images/Numbers/circle-3o.png) |Every product you as a surrogated PosDealer buy in the store will be added to the **shopping cart** and will be available after you switch to your account.   |
+|![Number 3](images/Numbers/circle-3o.png) |Every product you as a surrogated PosDealer buy in the store will be added to the **basket** and will be available after you switch to your account.   |
 |![Number 4](images/Numbers/circle-4o.png) |You switch to your account with the `Switch to your account`- button on the right upper corner.   |
-|![Number 5](images/Numbers/circle-5.png) |Avoid leaving the account of a PosOperator by signing out because your **shopping cart** would get lost.   |
+|![Number 5](images/Numbers/circle-5.png) |Avoid leaving the account of a PosOperator by signing out because your **basket** would get lost.   |
 
 ### Check PosOperators Master data
 
@@ -53,14 +53,14 @@ We use the example of checking the master data of a PosOperator to describe Surr
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](images/Numbers/circle-1o.png) |After signing in (for PosOperators) or surrogating in the Account of a PosOperator (for PosDealers), choose `[COMPANY NAME]`/ `Overview`.  |
+|![Number 1](images/Numbers/circle-1o.png) |After signing in (for PosOperators) or surrogating in the Account of a PosOperator (for PosDealers), choose `Company Info`/ `Overview`.  |
 |![Number 2](images/Numbers/circle-2o.png) |Determine if the role PosOperator has been activated as well as no other. Otherwise, cancel the undesired role. Please check [Company Roles](../company-roles.md) for further questions |
 
 ![surrogating accounts](images/6-surrogating-accounts.png "https://portal-sandbox.fiskaltrust.TLD/AccountProfile/Edit")
 
 | Steps | Description                                                                                                                |
 |:----------------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-|![Number 1](images/Numbers/circle-1o.png) |After checking, the roles change to `[COMPANY NAME]`/ `Master data`.  |
+|![Number 1](images/Numbers/circle-1o.png) |After checking, the roles change to `Company Info`/ `Master data`.  |
 |![Number 2](images/Numbers/circle-2o.png) |Check the values in the address fields. Optionally, you can provide a dedicated billing address at `E-Mail for Invoices`. |
 |![Number 3](images/Numbers/circle-3o.png) |The fields for tax identification numbers are not mandatory for the invitation process. But these identification criteria are the basis for correct cash management and a prerequisite for using third-party services. Control the completeness of the values.|
 |![Number 4](images/Numbers/circle-4o.png) |Validate the values with `Data Check`. Save your changes before you leave this page.  |
