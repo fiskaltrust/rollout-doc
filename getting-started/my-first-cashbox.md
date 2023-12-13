@@ -48,7 +48,7 @@ A rollout plan typically follows these five steps:
 1. Select the **product** you'd like to roll out.
 2. Select one or more **PosOperators** for which you plan the rollout.
 3. Select one or more **outlets** where you want to perform the rollout.
-4. Create a **quote** and load the quote into your **shopping cart**
+4. Create a **quote** and load the quote into your **basket**
 5. Perform the **checkout**
 
 import Tabs from '@theme/Tabs';

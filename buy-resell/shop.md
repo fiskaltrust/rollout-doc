@@ -41,8 +41,8 @@ If you want to try how the shop works, you should do this in the [Sandbox](../ge
 | :--------------------------: | ------------------------------------------------------------ |
 | ![](../images/numbers/1.png) | Go to `Shop` / `Products` in the left-hand navigation menu to buy a product or entitlement. |
 | ![](../images/numbers/2.png) | If you buy a product as a PosOperator directly, select the desired **outlet** in the top center.  |
-| ![](../images/numbers/3.png) | Choose a product, enter an amount to purchase and click on the shopping cart symbol.  |
-| ![](../images/numbers/4.png) | Click on the shopping cart in the top right of the window and click the `Checkout` button.  | 
+| ![](../images/numbers/3.png) | Choose a product, enter an amount to purchase and click on the basket symbol.  |
+| ![](../images/numbers/4.png) | Click on the basket in the top right of the window and click the `Checkout` button.  | 
 | ![](../images/numbers/5.png) | **Check** the products, the amount, price and outlet if applicable before clicking the `binding order` button.| 
 | ![](../images/numbers/6.png) | Clicking the `binding order` button shows a confirmation of your order, you get a copy via E-Mail.  | 
 
@@ -57,16 +57,16 @@ import ReactPlayer from "react-player"
 | :--------------------------: | ------------------------------------------------------------ |
 | ![](../images/numbers/1.png) | Go to `Shop` / `Products` in the left-hand navigation menu to transfer an existing entitlements to this PosOperators outlet. |
 | ![](../images/numbers/2.png) | Select the desired **outlet** in the top center. |
-| ![](../images/numbers/3.png) | Choose a **transfer entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet.  |
-| ![](../images/numbers/4.png) | Choose a **create entitlement** product and click on the shopping cart symbol besides. Repeat this for all entitlements that you want to transfer to this outlet. Note **to first add the products for transferring claims** to the cart! |
+| ![](../images/numbers/3.png) | Choose a **transfer entitlement** product and click on the basket symbol besides. Repeat this for all entitlements that you want to transfer to this outlet.  |
+| ![](../images/numbers/4.png) | Choose a **create entitlement** product and click on the basket symbol besides. Repeat this for all entitlements that you want to transfer to this outlet. Note **to first add the products for transferring claims** to the basket! |
 | ![](../images/numbers/5.png) | **Switch to your account** by clicking the red button on the top right of the window. |
-| ![](../images/numbers/6.png) | Click on the shopping cart in the top right of the window and click the `Checkout` button.  | 
+| ![](../images/numbers/6.png) | Click on the basket in the top right of the window and click the `Checkout` button.  | 
 | ![](../images/numbers/7.png) | The transfer and activation of existing entitlements should be free. **Check** the order, the PosOperator and the outlet before you click the `binding order` button.| 
 | ![](../images/numbers/8.png) |Clicking the `binding order` button shows a confirmation of your order, you get a copy via E-Mail.  | 
 
 :::tip 
 
-Always make sure you perform the transfer for the desired PosOperator and outlet and place the transfer entitlements products before they create entitlements products into the shopping cart.
+Always make sure you perform the transfer for the desired PosOperator and outlet and place the transfer entitlements products before they create entitlements products into the basket.
 You can combine orders for multiple outlets by repeating steps 2 to 4 for different outlets and then go on with step 5.
 :::
 
