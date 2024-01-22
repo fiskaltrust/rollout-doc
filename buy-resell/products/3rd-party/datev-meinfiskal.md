@@ -84,16 +84,16 @@ If the following requirements are not met, the [PosOperator Onboarding](../../..
 #### Master data limitations 
 The following table lists the maximum character lengths allowed for the DATEV onboarding:
 
-| Master data  |  maximum character length |
-|---|---|
-| AccountName  | 32 |
-| City  | 42 |
-| Mail | 250  |
-| Firstname  | 32 |
-| PostalCode  |max 5 min 5|
-| Street  | 32 |
-| Surname  | 32 |
-| VatId | max 14 min 11  |
+| Master data  |  maximum character length |Regular Expression|
+|---|---|---|
+| AccountName  | 32 |^[^\s].*[^\s]$|
+| City  | 42 |^[^\s].*[^\s]$|
+| Mail | 250  |standard mail|
+| Firstname  | 32 |^[^\s].*[^\s]$|
+| PostalCode  |max 5 min 5|^\d{5}$|
+| Street  | 32 |^[^\s].*[^\s]$|
+| Surname  | 32 |^[^\s].*[^\s]$|
+| VatId | max 14 min 11  |^(DE[0-9]{9}\|[0-9]{2,3}\\/[0-9]{3}\\/[0-9]{4,5}\|[0-9]{3}\\/[0-9]{4}\\/[0-9]{4})$|
 
 #### Address data validation
 DATEV has strict checks that verify the entered address data. The city and street must belong to the correct PLZ registered at Deutsche Post. Please check if your address can be found with the given PLZ. You can use the following website provided by the Deutsche Post [PLZ Check](https://www.postdirekt.de/plzserver/)
