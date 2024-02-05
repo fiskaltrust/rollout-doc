@@ -56,11 +56,14 @@ RKSV.Sign instances are represented as _CashBoxes_, fiskaltrust's configuration-
 The required API request looks like this:
 
 ```
-POST https://helipad-sandbox.fiskaltrust.cloud/api/configuration
+POST https://helipad-sandbox.fiskaltrust.cloud/api/configuration?outlet_number=1
 
 Headers:
 accountid: <your-account-id>
 accesstoken: <your-account-accesstoken>
+
+Parameters:
+outlet_number: <your-outlet-id>
 
 Body:
 "{
