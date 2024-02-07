@@ -86,13 +86,13 @@ The following table lists the maximum character lengths allowed for the DATEV on
 
 | Master data  |  maximum character length |Regular Expression|
 |---|---|---|
-| AccountName  | 32 |^[^\s].*[^\s]$|
-| City  | 42 |^[^\s].*[^\s]$|
+| AccountName  | 32 |^\[^\s\].*\[^\s\]$|
+| City  | 42 |^\[^\s\].*\[^\s\]$|
 | Mail | 250  |standard mail|
-| Firstname  | 32 |^[^\s].*[^\s]$|
+| Firstname  | 32 |^\[^\s\].*\[^\s\]$|
 | PostalCode  |max 5 min 5|^\d{5}$|
-| Street  | 32 |^[^\s].*[^\s]$|
-| Surname  | 32 |^[^\s].*[^\s]$|
+| Street  | 32 |^\[^\s\].*\[^\s\]$|
+| Surname  | 32 |^\[^\s\].*\[^\s\]$|
 | VatId | max 14 min 11  |^(DE[0-9]{9}\|[0-9]{2,3}\\/[0-9]{3}\\/[0-9]{4,5}\|[0-9]{3}\\/[0-9]{4}\\/[0-9]{4})$|
 
 #### Address data validation
