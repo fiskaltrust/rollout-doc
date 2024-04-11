@@ -13,7 +13,7 @@ reference_scu_{type}_{key}_{value}_{attr}
 reference_scu_{type}_{attr}
 ```
 
-Where the four dynamic parts (denoted by curly brackets) specify which attribute of which component you exactly want to reference. In the second reference where the reference doesn't contain a key/value, the first existing SCU is selected.
+Where the four dynamic parts (denoted by curly brackets) specify which attribute of which component you exactly want to reference. The first existing SCU is selected in the second reference where the reference doesn't contain a key/value.
 
 
 
@@ -31,19 +31,19 @@ Provides a key-value pair that you can use to filter for the SCU of the indicate
 
 #### Attribute
 
-The actual attribute you'd like to reference. Currently, `id` and `url` are supported.
+The actual attribute you'd like to refer to. Currently, `id` and `url` are supported.
 
 
 
 #### Example
 
-:::info Default field with shop-bought SCUs
+::: info Default field with shop-bought SCUs
 
-Any TSE bought via fiskaltrust.Shop or 'Rollout Management' can have an incrementing integer field `counter` assigned.
+Any SCU bought via fiskaltrust.Shop or Rollout Management can have an incrementing integer field `counter` assigned.
 
 :::
 
-Let's say you have purchased two onlinescu TSEs for one outlet via fiskaltrust.Shop. In that case, their SCUs can have a `counter` field with the value of `1` and '2'. Using a reference variable in your template, you can now reference these SCUs (in particular their IDs, in this example) by using the following variable.
+Let's say you have purchased two onlinescu SCUs for one outlet via fiskaltrust.Shop. In that case, their SCUs can have a `counter` field with  values of `1` and '2'. Using a reference variable in your template, you can now reference these SCUs (in particular their IDs, in this example) by using the following variable.
 
 
 ```
