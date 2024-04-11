@@ -1,1 +1,64 @@
-Templates for Austrian CashBoxes only make use of the standard variables.
+| Variable                                    | Content                                                      |
+| ------------------------------------------- | ------------------------------------------------------------ |
+| `reference_scu_{type}_{key}_{value}_{attr}` | References the indicated attribute (`attr`) of an existing SCU with the given key/value pair (`key`/`value`) and the specified type (`type`). |
+| `reference_scu_{type}_{attr}` | References the indicated attribute (`attr`) of the first existing SCU and the specified type (`type`). |
+
+### Reference variables
+
+Reference variables allow you to reference values from other components. Their overall name structure is
+
+```
+reference_scu_{type}_{key}_{value}_{attr}
+
+reference_scu_{type}_{attr}
+```
+
+Where the four dynamic parts (denoted by curly brackets) specify which attribute of which component you exactly want to reference. In the second reference where the reference doesn't contain a key/value, the first existing SCU is selected.
+
+
+
+#### Type
+
+Indicates the SCU type you want to reference. Possible values for `type` are
+
+* `onlinescu`
+
+#### Key / Value
+
+Provides a key-value pair that you can use to filter for the SCU of the indicated SCU type. The scope is always your **account** and the **outlet** where you create the CashBox. You cannot reference SCUs from other outlets or accounts.
+
+
+
+#### Attribute
+
+The actual attribute you'd like to reference. Currently, `id` and `url` are supported.
+
+
+
+#### Example
+
+:::info Default field with shop-bought SCUs
+
+Any TSE bought via fiskaltrust.Shop or 'Rollout Management' can have an incrementing integer field `counter` assigned.
+
+:::
+
+Let's say you have purchased two onlinescu TSEs for one outlet via fiskaltrust.Shop. In that case, their SCUs can have a `counter` field with the value of `1` and '2'. Using a reference variable in your template, you can now reference these SCUs (in particular their IDs, in this example) by using the following variable.
+
+
+```
+|[reference_scu_onlinescu_counter_1_id]|
+|[reference_scu_onlinescu_counter_2_id]|
+```
+
+or if you have only one onlinescu in your outlet, the key/value can be ignored by using the following variable.
+
+```
+|[reference_scu_onlinescu_id]|
+```
+
+In a different example, let's assume you assign a field `masterPOS` manually to your SCU and want to reference the URL of the SCU where `masterPOS` is set to `true`. In that case, you'd use the following variable.
+
+```
+|[reference_scu_onlinescu_masterPOS_true_url]|
+```
