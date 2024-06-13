@@ -32,7 +32,7 @@ Under country-specific circumstances, when a PosOperator is first registered, th
 
 After logging on to the fiskaltrust.Portal, as a PosDealer, you should check the completeness and use the available checking mechanisms.
 
-The information about the user at `[USERNAME]` / `Data` is only essential for using the fiskaltrust.Portal. For data protection reasons, function designations (like _fiscalizing_) or fictitious names can also be used instead of accurate data.  
+The information about the user at `User Info` / `Data` is only essential for using the fiskaltrust.Portal. For data protection reasons, function designations (like _fiscalizing_) or fictitious names can also be used instead of accurate data.  
 But the E-Mail address must be a real, working one because you use this address for login to the fiskaltrust.Portal. You can avoid using real names using functional designations (like fiscalizing@PosOperator.TLD).
 
 For PosOperators, it is equally essential to check the Master data for completeness and correctness. 
