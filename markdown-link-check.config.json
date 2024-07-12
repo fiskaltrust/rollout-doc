@@ -12,6 +12,7 @@
       { "pattern": "^https://dc.services\\.visualstudio\\.com/?$" },
       { "pattern": "^https://codebeautify\\.org/json-escape-unescape$" },
       { "pattern": "^https?://localhost.?" },
-      { "pattern": "^mailto:.*" }
+      { "pattern": "^mailto:.*" },
+      { "pattern": "^#.*" }
     ]
   }
