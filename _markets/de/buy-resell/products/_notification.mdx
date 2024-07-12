@@ -1,14 +1,13 @@
 :::caution 
 
-This feature is currently unavailable, as the authorities have not yet published a final process. To our knowledge, the post-registration of POS Systems already in use will be necessary once it is published.
-Our Systems already track the activation and deactivation of queues. So, we prepare you to perform these notifications as soon as the lawmaker defines the process.
+From 1 January 2025, the notification obligation pursuant to Section 146a (4) of the German Fiscal Code (AO) will come into force. This regulation states that all electronic recording systems purchased or decommissioned from 1 July 2025 onwards must be reported within one month of acquisition or decommissioning. In addition, all cash registers that were put into operation before 1 July 2025 and are still active must be reported by 31 July 2025 at the latest.
 :::
 
-Notification to the responsible tax office for the activation and deactivation of digital recording systems as soon as tax authorities demand. 
+Notification to the responsible tax office for the activation and deactivation of digital recording systems starting 2025. 
 
 ## Availability
 
-A few weeks after appropriate interfaces for automated notifications to the responsible tax office are available.
+This product will be available by January 1st 2025.
 
 ## Product Bundles (including all single products)
 
@@ -17,4 +16,36 @@ A few weeks after appropriate interfaces for automated notifications to the resp
 
 ## Single Products
 
-not yet available
+Outlet based single product is planned
+
+## Technical Background
+_Please note that the following information may be subject to change in the future._
+
+All cash registers at an outlet must be included in the notification. For those using the fiskaltrust.Middleware, we already have most of the necessary information. Cash registers not using the fiskaltrust.Middleware can still be added to the fiskaltrust.Notification through various user-friendly methods. Fiskaltrust will generate the notification and use the ERiC interface to submit the notification to ELSTER.
+
+If we lack some data needed for an outlet's notification, we have a straightforward automated process in place that will prompt the POS operator to provide the missing information.
+
+### Prerequisites for POSDealers/Operators
+Since we use data from the fiskaltrust.Middleware and fiskaltrust.Portal to generate the notification, certain master data values must be present in the POSOperator's account. As previously mentioned, the POS operator will be prompted to provide any missing information before we create the notification. However, the more of the following values that are already filled out, the less the POSOperator will need to fill out later.
+
+| Source | Path | Value | Description |
+|-----------|-----------------|-----------------------------------------------------|-------------------------|
+| POSOperator-Account | Company info / Master Data | St-IdNr | The taxId (Steuernummer) is mandatory for the notification. Using the USt-IdNr is not possible. |
+| POSOperator-Account | Company info / Master Data | Address | Streetname and Housenumber are mandatory.|
+| POSOperator-Account | Company info / Master Data | Postal code | The postal code is mandatory.|
+| POSOperator-Account | Company info / Master Data | City | The city is mandatory.|
+| POSOperator-Account | Company info / Outlets | Address | Streetname and Housenumber are mandatory.|
+| POSOperator-Account | Company info / Outlets | Postal code | The postal code is mandatory.|
+| POSOperator-Account | Company info / Outlets | City | The city is mandatory.|
+
+### Preriquities for POSCreators
+The fiskaltrust.Notification product won't require a new implementation. However there are processes, receipts and data that have already been part of the fiskaltrust.Middleware that are now mandatory for the notification. 
+
+#### Receipts
+- Initial-Operation-Receipt
+- Out-Of-Operation-Receipt
+- Initiate-Switch-Receipt
+- Finish-Switch-Receipt
+
+#### PosSystemId
+The PosSytemId has been mandatory since the beginning. We use the PosSystemId to map the masterdata of your POSSystem to the individual Middleware-Instances. POSSystem masterdata is a mandatory part of the notification.
