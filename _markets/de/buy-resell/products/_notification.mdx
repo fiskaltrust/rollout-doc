@@ -18,6 +18,27 @@ This product will be available by January 1st 2025.
 
 Outlet based single product is planned
 
+## Legal Baseline
+Law: [§ 146a Abs. 4 AO](https://www.gesetze-im-internet.de/ao_1977/__146a.html)
+Anwendungserlass: [Anwendungserlass zu § 146a AO](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2023-06-30-AEAO-Par-146-AO.pdf?__blob=publicationFile&v=1)
+
+### In which cases is a notification mandatory?
+- initial commissioning of the Cashregister: If the fiskaltrust.Middleware is used then this reflects the initial-operation-receipt
+- decommissioning of the Cashregister: If the fiskaltrust.Middleware is used then this reflects the out-of-operation-receipt
+
+#### Whenever the mandatory data of the last notification changed a new notification needs to be sent to update the data at the financial authorities
+This includes...
+- Changing the used TSE
+- Changes in the mandatory master data
+
+### Deadlines
+A notification is mandatory within a month whenever an initial commissioning, decommissioning, or update/correction of the previous notification occurs.
+
+#### For the start of the notifications in 2025 a transitional period was introduced:
+- Cashregisters commissioned before July 1st 2025 need to be included in the notification by July 31st 2025
+- Cashregisters decommissioned before July 1st 2025 only need to be included in the notification if this Cashregister has been part of a notification before _fiskaltrust won't notify about Cashregisters before July 1st 2025_
+- Cashregisters commissioned on/after July 1st 2025 need to be included in the notification within a month
+
 ## Technical Background
 _Please note that the following information may be subject to change in the future._
 
