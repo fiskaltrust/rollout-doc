@@ -11,6 +11,7 @@
       { "pattern": "^https?://eur-lex\\.europa\\.eu.*" },
       { "pattern": "^https://dc.services\\.visualstudio\\.com/?$" },
       { "pattern": "^https://codebeautify\\.org/json-escape-unescape$" },
+      { "pattern": "^https://jsonformatter\\.org/json-escape-unescape$" },        
       { "pattern": "^https?://localhost.?" },
       { "pattern": "^mailto:.*" },
       { "pattern": "^#.*" }
