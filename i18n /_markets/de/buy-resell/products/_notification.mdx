@@ -50,7 +50,7 @@ Da wir zur Erstellung der Meldung Daten aus der fiskaltrust.Middleware und dem f
 
 | Datenquelle | Navigationspfad | Stammdaten-Wert | Beschreibung |
 |-----------|-----------------|-----------------------------------------------------|-------------------------|
-| Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | St-IdNr | Die Steuernummer ist für die Meldung zwingend erforderlich. Die Verwendung der USt-IdNr ist nicht möglich. |
+| Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | Steuernummer | Die Steuernummer ist für die Meldung zwingend erforderlich. Die Verwendung der USt-IdNr ist nicht möglich. |
 | Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | Adresse | Straßenname und Hausnummer sind obligatorisch.|
 | Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | Postleitzahl | Die Angabe der Postleitzahl ist obligatorisch.|
 | Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | Stadt | Die Angabe der Stadt ist obligatorisch.|
@@ -69,3 +69,46 @@ Für das Produkt fiskaltrust.Notification ist keine neue Implementierung erforde
 
 #### PosSystemId
 Wie im fiskaltrust.Interface definiert ist das inkludieren der `ftPosSytemId` in Requests an die Middleware obligatorisch. Wir verwenden die PosSystemId, um die Stammdaten Ihres POSSystems den einzelnen Middleware-Instanzen zuzuordnen. Diese POSSystem-Stammdaten sind ein notwendiger Bestandteil der Meldung; Kassenhersteller müssen daher darauf achten, die `ftPosSystemId` korrekt in Belegen an die Middleware zu inkludieren, sowie das zugehörige POSSystem im fiskaltrust.Portal zu pflegen.
+
+## FAQ
+Im Folgenden finden Sie häufig gestellte Fragen. Wenn Sie weitere Fragen haben, können Sie uns eine E-Mail an support@fiskaltrust.de senden.
+
+### Was muss als Anschaffungsdatum der Kasse angegeben werden?
+
+Für das Anschaffungsdatum der Kasse sollte das Datum des Kaufs der Kasse oder der Beginn des Leasingzeitraums der Kasse angegeben werden. Sowohl Anschaffungsdatum als auch Inbetriebnahmedatum der Kasse sind unabhängig vom Beginn der Fiskalisierung. Wenn Sie eine Kasse 2005 gekauft haben und diese seit 2021 eine TSE angebunden hat, so ist für diesen Wert das Jahr 2005 entscheidend. Wir als fiskaltrust dürfen keine rechtliche Beratung geben. Sollten Sie detaillierte Fragen zum Anschaffungsdatum haben, so nehmen Sie bitte Kontakt mit einem Steuerberater auf.
+
+---
+
+### Können die Daten aus dem Betreiber-Formular auch vom Hersteller/Händler eingetragen werden?
+
+Sowohl der Kassenhändler als auch der Kassenhersteller werden die Möglichkeit haben, ebenfalls Daten im fiskaltrust.Portal zu pflegen.
+
+---
+
+### In welchem Format muss die Steuernummer angegeben werden?
+
+Wir fordern nicht die bundeseinheitliche Steuernummer (13 stellig). Sollten Sie diese kennen, können Sie diese jedoch gerne eintragen. Generell tragen Sie bitte einfach die Steuernummer in dem Format ein, welche Ihnen vom Finanzamt zugewiesen wurde. Diese finden Sie beispielsweise auf jedem Steuerbescheid.
+
+---
+
+### Welcher Kontakt bekommt den Link zum Betreiber-Formular zugesendet?
+
+Die Mail mit dem entsprechenden Link wird an den, im fiskaltrust.Portal angelegten, Primärkontakt des Betreiberaccounts gesendet.
+
+---
+
+### Wie oft muss eine Meldung erfolgen?
+
+Eine Meldung an das Finanzamt muss immer nur dann erfolgen, wenn eine Anlage oder Änderung der Daten vorliegt. Beispielsweise bleibt eine Kasse für das Finanzamt solange aktiv, bis eine Außerbetriebnahme gemeldet wird.
+
+---
+
+### Wird es eine automatische Möglichkeit geben, die Daten nachzupflegen?
+
+Für Kunden mit großer Anzahl an Kassen und Standorten wird es die Möglichkeit geben, Daten gesammelt nachzupflegen.
+
+---
+
+### Ab wann wird der KassenHändler die Meldung für seine Betreiber aktivieren können (opt-in)?
+
+1. Januar 2025
