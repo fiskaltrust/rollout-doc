@@ -51,7 +51,7 @@ Since we use data from the fiskaltrust.Middleware and fiskaltrust.Portal to gene
 
 | Source | Path | Value | Description |
 |-----------|-----------------|-----------------------------------------------------|-------------------------|
-| POSOperator-Account | Company info / Master Data | St-IdNr | The taxId (Steuernummer) is mandatory for the notification. Using the USt-IdNr is not possible. |
+| POSOperator-Account | Company info / Master Data | tax number | The taxId (Steuernummer) is mandatory for the notification. Using the USt-IdNr is not possible. |
 | POSOperator-Account | Company info / Master Data | Address | Streetname and Housenumber are mandatory.|
 | POSOperator-Account | Company info / Master Data | Postal code | The postal code is mandatory.|
 | POSOperator-Account | Company info / Master Data | City | The city is mandatory.|
@@ -70,3 +70,42 @@ The fiskaltrust.Notification product won't require a new implementation. However
 
 #### PosSystemId
 The PosSytemId has been mandatory since the beginning. We use the PosSystemId to map the masterdata of your POSSystem to the individual Middleware-Instances. POSSystem masterdata is a mandatory part of the notification.
+
+## FAQ
+In the following you'll find frequently asked questions. If you have further questions then you can send us an email to support@fiskaltrust.de
+
+### What should be specified as the acquisition date of the cash register?
+The acquisition date of the cash register should be the date of purchase or the start of the leasing period of the cash register. Both the acquisition date and the commissioning date of the cash register are independent of the start of fiscalization. If you purchased a cash register in 2005 and connected a TSE to it in 2021, the year 2005 is decisive for this value. We at fiskaltrust are not permitted to provide legal advice. If you have detailed questions about the acquisition date, please contact a tax advisor.
+
+---
+
+### Can the form data also be entered by the manufacturer/dealer?
+Both the cash register dealer and the cash register manufacturer will have the ability to manage data in the fiskaltrust.Portal.
+
+---
+
+### In what format must the tax number be provided?
+We do not require the nationwide standard tax number (13 digits). However, if you know it, you are welcome to enter it. Generally, please enter the tax number in the format assigned to you by the tax office. You can find it, for example, on any tax assessment notice.
+
+---
+### Which contact receives the link to the operator form?
+
+The email with the corresponding link is sent to the primary contact of the operator account that is registered in the fiskaltrust.Portal.
+
+---
+
+### How often must a notification be made?
+
+A notification to the tax office is only required when there is a new entry or a change in the data. For example, a cash register remains active for the tax office until a deactivation is reported.
+
+---
+
+### Will there be an automatic option to update the data?
+
+For customers with a large number of cash registers and locations, there will be an option to update the data collectively.
+
+---
+
+### When will the cash register dealer be able to activate the notification for their operators (opt-in)?
+
+January 1, 2025
