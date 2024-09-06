@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/technical-operations/middleware/launchers/Custom data center
+slug: /posdealers/technical-operations/middleware/launchers/custom-data-center
 title: Custom data center
 ---
 
