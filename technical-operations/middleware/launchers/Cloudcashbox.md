@@ -1,5 +1,5 @@
 ---
-slug: /posdealers/technical-operations/middleware/launchers/CloudCashbox
+slug: /posdealers/technical-operations/middleware/launchers/cloudcashbox
 title: CloudCashbox
 ---
 
