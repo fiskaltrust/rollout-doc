@@ -103,7 +103,8 @@ module.exports = {
 							items: [
 								'rollout-doc/technical-operations/middleware/launchers/desktop',
 								'rollout-doc/technical-operations/middleware/launchers/android',
-								'rollout-doc/technical-operations/middleware/launchers/datacenter',
+								'rollout-doc/technical-operations/middleware/launchers/custom-data-center',
+								'rollout-doc/technical-operations/middleware/launchers/cloudcashbox',
 							]
 						},
 						'rollout-doc/technical-operations/middleware/manual-configuration',
