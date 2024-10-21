@@ -145,7 +145,7 @@ In the request on the following screen, you will see a list of Queues and their 
 ![20241017-9-migration-cloud-cashbox](https://github.com/user-attachments/assets/41b998d9-6f2b-4272-8496-8a765e6bd7c3)
 
 
-You can perform the migration for all Queues at once or for smaller batches at a time. In the beginning all Queues will be in the not ready state and you will need to send a _Start-Migration Receipt_ for them to become ready. Once the _Start-Migration Receipt_ was sent and the data has been uploaded, the Queue will move into the `Ready to migrate` column.
+You can perform the migration for all Queues at once or for smaller batches at a time. In the beginning all Queues will be in the not ready state and you will need to send a _Start-Migration Receipt_ for them to become ready. Once the _Start-Migration Receipt_ was sent and the data has been uploaded (leave the Queue running for at least 5min after sending the _Start-Migration Receipt_ to ensure all data is uploaded), the Queue will move into the `Ready to migrate` column.
 
 ![20241017-10-migration-cloud-cashbox](https://github.com/user-attachments/assets/9d4a017a-78d0-42c2-9b8c-b1c63ed09f40)
 
