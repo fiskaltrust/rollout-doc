@@ -32,47 +32,56 @@ To order a  _CloudCashbox_ product, go to the fiskaltrust.Portal and log in.
 
 Once you are logged in, click on the Rollout Management tab and on `Rollout products`
 
-![Rollout](../../images/20241016-1-rollout-cloud-cashbox.png)
+![20241016-1-rollout-cloud-cashbox](https://github.com/user-attachments/assets/9ae51df5-bfc5-4fca-a93f-5d12d6f7c65e)
+
 
 On the next screen, choose the Business Rollout.
 
-![Business-Rollout](../../images/20241016-2-rollout-cloud-cashbox.png)
+![20241016-2-rollout-cloud-cashbox](https://github.com/user-attachments/assets/3a0dc353-5bb8-42ce-bc23-917d0bd6fde8)
+
 
 Once the next screen is loaded, you can now search for _CloudCashbox_ products. In this case, we did the Rollout with a fiskaltrust. Carefree package. It is also possible to rollout an fiskaltrust. Carefree package with your already existing entitlements if you have some or to simply rollout the _CloudCashbox_ as a standalone product.
 
-![Select-Product](../../images/20241016-3-rollout-cloud-cashbox.png)
+![20241016-3-rollout-cloud-cashbox](https://github.com/user-attachments/assets/309ba6b0-26f0-4215-939c-70ae2c29b80a)
+
 
 Once you have made your choice, you can now select for which Operator you will perform the rollout. You can select several operators at once if needed.
 
-![Rollout-Product](../../images/20241016-4-rollout-cloud-cashbox.png)
+![20241016-4-rollout-cloud-cashbox](https://github.com/user-attachments/assets/c563f3c3-7e42-4f9b-8ff3-8a70369fab1d)
+
 
 After choosing the operators, you will now have to select the outlets to be rolled out. There also, you can select more than one at once.
 
-![Rollout-outlet](../../images/20241016-5-rollout-cloud-cashbox.png)
+![20241016-5-rollout-cloud-cashbox](https://github.com/user-attachments/assets/bb1a68b0-711d-459c-a3d5-11d5d4aabdcd)
+
 
 After this step, you can review your order and if everything matches your expectations, click on `Create Quote`.
 
-![Quote-creation](../../images/20241016-6-rollout-cloud-cashbox.png)
+![20241016-6-rollout-cloud-cashbox](https://github.com/user-attachments/assets/dc6cc622-cb45-48af-b7a0-81e2b7d7e943)
+
 
 After a small loading time, you will have to add your selected products to the Basket by clicking on the `Add to basket` button.
 
-![Basket](../../images/20241016-7-rollout-cloud-cashbox.png)
+![20241016-7-rollout-cloud-cashbox](https://github.com/user-attachments/assets/c39c51db-bdc1-4fa1-9900-a86403a35ac8)
 
 This will send you to the Checkout Cart in which you can go through the payment process
 
-![Checkout](../../images/20241016-8-rollout-cloud-cashbox.png)
+![20241016-8-rollout-cloud-cashbox](https://github.com/user-attachments/assets/8fb4a6ee-cead-45cc-ab53-750026896978)
 
 There you can validate your order. It will then generate the order, your invoice but more important, it will start to work in the background to generate your _CloudCashbox_ containing the new queue.
 
-![Payment](../../images/20241016-9-rollout-cloud-cashbox.png)
+![20241016-9-rollout-cloud-cashbox](https://github.com/user-attachments/assets/ca7193b3-5dbe-422d-b6dd-3d1050c4b910)
+
 
 After some minutes, you will be able to see the cashbox that has been created and is ready to be used through the address and the access token. 
 
-![Cashbox](../../images/20241016-10-cloud-cashbox.png)
+![20241016-10-cloud-cashbox](https://github.com/user-attachments/assets/9e53c8bb-b243-45c0-a0a4-501afa1ff255)
+
 
 Also under Configuration > Queue, you will see the created Queue. You are now ready to go!
 
-![Configuration](../../images/20241016-11-cloud-cashbox.png)
+![20241016-11-cloud-cashbox](https://github.com/user-attachments/assets/ae2420a1-716a-4182-bcf9-ce9d6162b05b)
+
 
 
 ### How to migrate to the _CloudCashbox_
@@ -85,27 +94,33 @@ If you already have local Cashboxes or some using a TSE in the cloud, you can mi
 
 First, you will have to go to `Rollout management`. There, you will have to select `Exchange product`.
 
-![Request-migration1](../../images/20241017-1-migration-cloud-cashbox.png)
+![20241017-1-migration-cloud-cashbox](https://github.com/user-attachments/assets/c2430c58-d180-491e-9e86-f2425ac7cfbe)
+
 
 On the next screen, select `Switch to CloudCashbox`.
 
-![Request-migration2](../../images/20241017-2-migration-cloud-cashbox.png)
+![20241017-2-migration-cloud-cashbox](https://github.com/user-attachments/assets/4acb281f-8299-41da-bc74-0c25306c94b3)
+
 
 After this step, you will have to select, as usual, the PosOperator for whom you want the migration to be done.
 
-![Request-migration3](../../images/20241017-3-migration-cloud-cashbox.png)
+![20241017-3-migration-cloud-cashbox](https://github.com/user-attachments/assets/7ea981cc-d3aa-4327-922e-cab26bd1b8e6)
+
 
 and right after the outlet and the queues you want to migrate.
 
-![Request-migration4](../../images/20241017-4-migration-cloud-cashbox.png)
+![20241017-4-migration-cloud-cashbox](https://github.com/user-attachments/assets/0c70e6ee-2738-4f7a-ba08-00131642138c)
+
 
 After this step, you will be asked to verify your selection. If everything is alright, click on `Request Migration`. In the pop-up window that will appear, validate your request.
 
-![Request-migration5](../../images/20241017-5-migration-cloud-cashbox.png)
+![20241017-5-migration-cloud-cashbox](https://github.com/user-attachments/assets/439ea46f-eee1-43e5-b6a7-9b26fbb73126)
+
 
 Your request has then been sent and can take to up to 5 days to be validated. 
 
-![Request-migration6](../../images/20241017-6-migration-cloud-cashbox.png)
+![20241017-6-migration-cloud-cashbox](https://github.com/user-attachments/assets/e7b840ee-f63c-48be-9390-015cd3e6f810)
+
 
 
 **2. Wait for approval**
@@ -113,11 +128,13 @@ Your request has then been sent and can take to up to 5 days to be validated.
 
 You can check the status by clicking on Requests & Updates, that will show you the evolution of your request. The request needs to be approved by fiskaltrust before the migration can be performed.
 
-![Awaiting-approval](../../images/20241017-7-migration-cloud-cashbox.png)
+![20241017-7-migration-cloud-cashbox](https://github.com/user-attachments/assets/6eac02f8-d6c6-47f6-acca-4641123eec65)
+
 
 Once it has been approved, you can continue.
 
-![Migration-approved](../../images/20241017-8-migration-cloud-cashbox.png)
+![20241017-8-migration-cloud-cashbox](https://github.com/user-attachments/assets/5aa282bb-7a32-4cd4-9d48-fe71db312ef2)
+
 
 
 **3.Send Start-Migration Receipt**
@@ -125,11 +142,13 @@ Once it has been approved, you can continue.
 
 In the request on the following screen, you will see a list of Queues and their migration status.
 
-![Migration-receipt1](../../images/20241017-9-migration-cloud-cashbox.png)
+![20241017-9-migration-cloud-cashbox](https://github.com/user-attachments/assets/41b998d9-6f2b-4272-8496-8a765e6bd7c3)
+
 
 You can perform the migration for all Queues at once or for smaller batches at a time. In the beginning all Queues will be in the not ready state and you will need to send a _Start-Migration Receipt_ for them to become ready. Once the _Start-Migration Receipt_ was sent and the data has been uploaded, the Queue will move into the `Ready to migrate` column.
 
-![Migration-receipt2](../../images/20241017-10-migration-cloud-cashbox.png)
+![20241017-10-migration-cloud-cashbox](https://github.com/user-attachments/assets/9d4a017a-78d0-42c2-9b8c-b1c63ed09f40)
+
 
 :::Note
 
@@ -142,9 +161,11 @@ After sending the Start-Migration Receipt the Queue will stop signing locally.
 
 To perform the technical migration, select the queues that are ready to migrate and migrate them. This will only take a few minutes.
 
-![Migration1](../../images/20241017-11-migration-cloud-cashbox.png)
+![20241017-11-migration-cloud-cashbox](https://github.com/user-attachments/assets/d2d68b1a-8670-4188-b414-4a8122c81f41)
 
-![Migration2](../../images/20241017-12-migration-cloud-cashbox.png)
+
+![20241017-12-migration-cloud-cashbox](https://github.com/user-attachments/assets/c34e40d8-176e-411f-8f44-8e850c3cf087)
+
 
 **5.Update PosSystem**
 
@@ -154,4 +175,4 @@ Once the 4. Perform Migration step is completed for the Queue, the CloudCashbox 
 
 After this, you can then come back to the request to perform the migration for the remaining queues.
 
-![Possystem-update](../../images/20241017-13-migration-cloud-cashbox.png)
+![20241017-13-migration-cloud-cashbox](https://github.com/user-attachments/assets/05e676ac-f253-4d7d-87d7-453752a8b875)
