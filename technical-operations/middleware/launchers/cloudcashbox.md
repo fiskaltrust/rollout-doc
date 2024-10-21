@@ -40,7 +40,7 @@ On the next screen, choose the Business Rollout.
 ![20241016-2-rollout-cloud-cashbox](https://github.com/user-attachments/assets/3a0dc353-5bb8-42ce-bc23-917d0bd6fde8)
 
 
-Once the next screen is loaded, you can now search for _CloudCashbox_ products. In this case, we did the Rollout with a fiskaltrust. Carefree package. It is also possible to rollout an fiskaltrust. Carefree package with your already existing entitlements if you have some or to simply rollout the _CloudCashbox_ as a standalone product.
+Once the next screen is loaded, you can now search for _CloudCashbox_ products. In this case, we did the Rollout with a fiskaltrust. Carefree package. It is also possible to rollout an fiskaltrust.Carefree package with your already existing entitlements if you have some or to simply rollout the _CloudCashbox_ as a standalone product.
 
 ![20241016-3-rollout-cloud-cashbox](https://github.com/user-attachments/assets/309ba6b0-26f0-4215-939c-70ae2c29b80a)
 
