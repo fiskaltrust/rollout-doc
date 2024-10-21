@@ -169,7 +169,7 @@ To perform the technical migration, select the queues that are ready to migrate 
 
 **5.Update PosSystem**
 
-Next you need to update the Queue Url that the PosSystem uses to https://cloudcashbox.fiskaltrust.de.
+Next you need to update the Queue Url that the PosSystem uses to `https://cloudcashbox.fiskaltrust.de`.
 
 Once the 4. Perform Migration step is completed for the Queue, the CloudCashbox is ready to use. You can now uninstall the local CashBox.
 
