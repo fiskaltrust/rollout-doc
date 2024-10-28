@@ -182,7 +182,9 @@ After this, you can then come back to the request to perform the migration for t
 If you're running Bring Your Own Datacenter it might not be possible to change the url for a single cashbox which is why
 byodc will automatically redirect to the cloudcashbox (Starting with [v1.3.65](https://docs.fiskaltrust.cloud/changelog/middleware/1.3.65#-feature-byodc-now-automatically-acts-as-a-proxy-when-mistakenly-used-with-a-cloudcashbox-queue)) when a migrated queue is used.
 
-This means you can migrate queues at your own pace and keep the url to your byodc installation until all queues are migrated.
+This means that BYODC will not process the request itself, but it will already be processed in the CloudCashbox and the response is forwarded back.
+
+This allows you to migrate queues at your own pace and keep the url to your byodc installation until all queues are migrated.
 Then once the migrations are complete you can change the url from your byodc installation to the cloudcashbox and shutdown your byodc installation.
 
 :::
