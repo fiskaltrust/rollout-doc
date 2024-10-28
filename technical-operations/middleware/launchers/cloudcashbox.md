@@ -150,7 +150,7 @@ You can perform the migration for all Queues at once or for smaller batches at a
 ![20241017-10-migration-cloud-cashbox](https://github.com/user-attachments/assets/9d4a017a-78d0-42c2-9b8c-b1c63ed09f40)
 
 
-:::Note
+:::info
 
 After sending the Start-Migration Receipt the Queue will stop signing locally.
 
@@ -177,7 +177,7 @@ After this, you can then come back to the request to perform the migration for t
 
 ![20241017-13-migration-cloud-cashbox](https://github.com/user-attachments/assets/05e676ac-f253-4d7d-87d7-453752a8b875)
 
-:::Note
+:::info
 
 If you're running Bring Your Own Datacenter it might not be possible to change the url for a single Cashbox which is why
 BYODC will automatically redirect to the CloudCashbox (Starting with [v1.3.65](https://docs.fiskaltrust.cloud/changelog/middleware/1.3.65#-feature-byodc-now-automatically-acts-as-a-proxy-when-mistakenly-used-with-a-cloudcashbox-queue)) when a migrated Queue is used.
