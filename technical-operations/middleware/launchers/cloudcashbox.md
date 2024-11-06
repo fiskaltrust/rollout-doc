@@ -86,6 +86,10 @@ Also under Configuration > Queue, you will see the created Queue. You are now re
 
 ### How to migrate to the _CloudCashbox_
 
+:::info
+The migration feature is currently only available for the German market.
+:::
+
 If you already have local Cashboxes or some using a TSE in the cloud, you can migrate them into CloudCashboxes by following this process.
 
 
