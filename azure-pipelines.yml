@@ -12,7 +12,7 @@ steps:
     checkLatest: true
   displayName: 'Install Node.js'
 
-- script: 'npm install -g markdown-link-check'
+- script: 'npm install -g markdown-link-check@3.12.2'
   displayName: 'Install markdown-link-check'
     
 - powershell: |

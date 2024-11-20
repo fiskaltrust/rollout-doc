@@ -4,7 +4,12 @@ This example uses REST as a communication protocol and requires your queue to ha
 
 :::
 
-To perform an "echo" request, you will need to send a `POST` request to the configured Middleware URL, with the path `/json/v1/Echo`. That request takes a JSON object in its request body, with one single string field named `Message`, containing the message string you'd like to receive back from the Middleware.
+To perform an "echo" request, you will need to send a `POST` request to the configured Middleware URL, with the path `/v1/Echo`.
+
+You can get the middleware URL from the portal cashbox configuration page.
+![](./media/cloudcashbox-url.png")
+
+That request takes a JSON object in its request body, with one single string field named `Message`, containing the message string you'd like to receive back from the Middleware.
 
 ```JSON
 {
@@ -12,13 +17,22 @@ To perform an "echo" request, you will need to send a `POST` request to the conf
 }
 ```
 
-The following HTTP request example would take the (minified) JSON object from above and send `Hello fiskaltrust.Middleware!` to the Middleware.
+:::info
+
+For the cloudcashbox you need to provide the `cashboxid` and `accesstoken` headers in the request.
+You can also get them from the cashbox configuration page.
+
+:::
+
+The following HTTP request example would take the (minified) JSON object from above and send `Hello fiskaltrust.Middleware!` to a CloudCashbox.
 
 ```http
-POST /json/v1/Echo HTTP/1.1
+POST  https://cloudcashbox-sandbox.fiskaltrust.de/v1/Echo HTTP/1.1
 Host: localhost
 Content-Length: 46
 Content-Type: application/json
+cashboxid: XXXX
+accesstoken: XXXX
 
 { "Message": "Hello fiskaltrust.Middleware!" }
 ```
