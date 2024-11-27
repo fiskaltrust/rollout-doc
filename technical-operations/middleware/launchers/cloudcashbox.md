@@ -25,7 +25,7 @@ The CloudCashbox is a fully hosted SaaS version of fiskaltrust's Middleware, off
 
 ### How to order and create new CloudCashboxes
 
-First of all, before creating a _CloudCashbox_, you will need to order one of the products that contains a CloudCashbox. 
+First of all, before creating a _CloudCashbox_, you will need to order one of the products that contains a CloudCashbox.
 The Cashbox and the Queue will then be created automatically, which is also another difference with the Middleware.
 
 To order a  _CloudCashbox_ product, go to the fiskaltrust.Portal and log in.
@@ -73,7 +73,7 @@ There you can validate your order. It will then generate the order, your invoice
 ![20241016-9-rollout-cloud-cashbox](https://github.com/user-attachments/assets/ca7193b3-5dbe-422d-b6dd-3d1050c4b910)
 
 
-After some minutes, you will be able to see the cashbox that has been created and is ready to be used through the address and the access token. 
+After some minutes, you will be able to see the cashbox that has been created and is ready to be used through the address and the access token.
 
 ![20241016-10-cloud-cashbox](https://github.com/user-attachments/assets/9e53c8bb-b243-45c0-a0a4-501afa1ff255)
 
@@ -121,7 +121,7 @@ After this step, you will be asked to verify your selection. If everything is al
 ![20241017-5-migration-cloud-cashbox](https://github.com/user-attachments/assets/439ea46f-eee1-43e5-b6a7-9b26fbb73126)
 
 
-Your request has then been sent and can take to up to 5 days to be validated. 
+Your request has then been sent and can take to up to 5 days to be validated.
 
 ![20241017-6-migration-cloud-cashbox](https://github.com/user-attachments/assets/e7b840ee-f63c-48be-9390-015cd3e6f810)
 
@@ -192,4 +192,3 @@ This allows you to migrate Queues at your own pace and keep the url to your BYOD
 Then once the migrations are complete you can change the url from your byodc installation to the cloudcashbox and shutdown your byodc installation.
 
 :::
-
