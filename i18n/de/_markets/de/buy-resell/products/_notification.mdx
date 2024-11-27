@@ -1,0 +1,114 @@
+:::caution 
+
+Ab dem 1. Januar 2025 tritt die Meldepflicht nach § 146a Abs. 4 der Abgabenordnung (AO) in Kraft. Diese Regelung besagt, dass alle elektronischen Aufzeichnungssysteme, die ab dem 1. Juli 2025 beschafft oder außer Betrieb genommen werden, innerhalb eines Monats nach Anschaffung oder Außerbetriebnahme gemeldet werden müssen. Darüber hinaus müssen alle Kassen, die vor dem 1. Juli 2025 in Betrieb genommen wurden und noch nicht als aktiv gemeldet sind, bis spätestens 31. Juli 2025 gemeldet werden.
+
+:::
+
+
+## Verfügbarkeit
+Dieses Produkt wird ab dem 1. Januar 2025 verfügbar sein.
+
+## Produkte & Produktpakete
+- fiskaltrust.Sorglos ohne TSE (4445-10040)
+- fiskaltrust.Sorglos mit TSE (Hardware- und Cloud-TSEs)
+- Standort-basiertes Einzelprodukt (_geplant_)
+
+## Rechtliche Grundlagen
+Abgabenordnung : [§ 146a Abs. 4 AO](https://www.gesetze-im-internet.de/ao_1977/__146a.html)
+Anwendungserlass: [Anwendungserlass zu § 146a AO](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2023-06-30-AEAO-Par-146-AO.pdf?__blob=publicationFile&v=1)
+
+### In welchen Fällen ist die Meldung von Kassen verpflichtend?
+- initial commissioning of the Cashregister: If the fiskaltrust.Middleware is used then this reflects the initial-operation-receipt
+- decommissioning of the Cashregister: If the fiskaltrust.Middleware is used then this reflects the out-of-operation-receipt
+
+- Erstinbetriebnahme der Kasse: Wenn die fiskaltrust.Middleware verwendet wird, dann entspricht dies dem Zeitpunkt des Initial-Operation-Beleg
+- Außerbetriebnahme der Kasse: Wenn die fiskaltrust.Middleware verwendet wird, dann entspricht dies dem Zeitpunkt des Out-Of-Operation-Beleg
+
+#### Wenn sich die in der letzten Meldung enthaltenden Daten geändert haben, muss eine neue Meldung mit den aktualisierten Daten gesendet werden
+Dies betrifft u.A.:
+- Den Wechsel der verwendeten TSE
+- Änderungen in den Stammdaten des Unternehmens
+
+### Fristen
+Eine Meldung ist innerhalb eines Monats erforderlich, wenn eine Erstinbetriebnahme, eine Außerbetriebnahme oder eine Aktualisierung/Korrektur der vorherigen Meldung erfolgt.
+
+#### Für den Beginn der Notifizierungen im Jahr 2025 wurde eine Übergangsfrist eingeführt:
+- Kassen, die vor dem 1. Juli 2025 in Betrieb genommen werden, müssen bis zum 31. Juli 2025 in die Meldung aufgenommen werden.
+- Kassen, die vor dem 1. Juli 2025 außer Betrieb genommen werden, müssen nur dann in die Meldung aufgenommen werden, wenn diese Registrierkasse bereits zuvor Teil einer Meldung war (_fiskaltrust meldet keine Kassen vor dem 1. Juli 2025_).
+- Kassen, die am/nach dem 1. Juli 2025 in Betrieb genommen werden, müssen innerhalb eines Monats in die Meldung aufgenommen werden.
+
+
+## Technische Grundlagen
+_Bitte beachten Sie, dass es sich in den folgenden Abschnitten um vorläufige Hintergrundinformationen handelt, die ggf. in Zukunft geändert werden können._
+
+Alle Kassen in einer Filiale müssen in die Meldung einbezogen werden. Für diejenigen Kassen, die die fiskaltrust.Middleware verwenden, liegen uns die meisten der erforderlichen Informationen bereits vor. Kassen, die nicht die fiskaltrust.Middleware verwenden, können der fiskaltrust.Notification über verschiedene benutzerfreundliche Methoden hinzugefügt werden. fiskaltrust generiert die Meldung und verwendet die ERiC-Schnittstelle, um die Meldung an ELSTER zu übermitteln.
+
+Wenn uns Daten fehlen, die für die Meldung eines Standorts benötigt werden, bieten wir einen automatisierten Prozess, der den Kassenbetreiber nach Freigabe durch den Kassenhändler auffordert, die fehlenden Informationen zu liefern.
+
+### Voraussetzungen für Kassenhändler / -Betreiber
+Da wir zur Erstellung der Meldung Daten aus der fiskaltrust.Middleware und dem fiskaltrust.Portal verwenden, müssen bestimmte Stammdatenwerte im Konto des Kassenbetreibers vorhanden sein. Nach expliziter Freigabe des Vorgangs durch den Kassenhändler (über eine Übersichts-Seite im fiskaltrust.Portal) wird der Kassenbetreiber aufgefordert, fehlende Informationen nachzutragen, bevor wir die Benachrichtigung erstellen. Je mehr der folgenden Werte jedoch bereits ausgefüllt sind, desto weniger muss der Kassenbetreiber später ausfüllen.
+
+| Datenquelle | Navigationspfad | Stammdaten-Wert | Beschreibung |
+|-----------|-----------------|-----------------------------------------------------|-------------------------|
+| Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | Steuernummer | Die Steuernummer ist für die Meldung zwingend erforderlich. Die Verwendung der USt-IdNr ist nicht möglich. |
+| Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | Adresse | Straßenname und Hausnummer sind obligatorisch.|
+| Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | Postleitzahl | Die Angabe der Postleitzahl ist obligatorisch.|
+| Kassenbetreiber-Account | Informationen zum Unternehmen / Stammdaten | Stadt | Die Angabe der Stadt ist obligatorisch.|
+| Kassenbetreiber-Account | Informationen zum Unternehmen / Standorte | Adresse | Straßenname und Hausnummer sind obligatorisch.|
+| Kassenbetreiber-Account | Informationen zum Unternehmen / Standorte | Postleitzahl | Die Angabe der Postleitzahl ist obligatorisch.|
+| Kassenbetreiber-Account | Informationen zum Unternehmen / Standorte | Stadt | Die Angabe der Stadt ist obligatorisch.|
+
+### Voraussetzungen für Kassenhersteller
+Für das Produkt fiskaltrust.Notification ist keine neue Implementierung erforderlich. Allerdings gibt es Prozesse, Belege und Daten, die bereits Teil der fiskaltrust.Middleware waren und nun für die Benachrichtigung zwingend erforderlich sind. 
+
+#### Belege
+- In-Betriebnahme-Beleg 
+- Außer-Betriebnahme-Beleg 
+- Initiate-SCU-Switch-Beleg (beim TSE-Tausch)
+- Finish-Switch-Beleg (beim TSE-Tausch)
+
+#### PosSystemId
+Wie im fiskaltrust.Interface definiert ist das inkludieren der `ftPosSytemId` in Requests an die Middleware obligatorisch. Wir verwenden die PosSystemId, um die Stammdaten Ihres POSSystems den einzelnen Middleware-Instanzen zuzuordnen. Diese POSSystem-Stammdaten sind ein notwendiger Bestandteil der Meldung; Kassenhersteller müssen daher darauf achten, die `ftPosSystemId` korrekt in Belegen an die Middleware zu inkludieren, sowie das zugehörige POSSystem im fiskaltrust.Portal zu pflegen.
+
+## FAQ
+Im Folgenden finden Sie häufig gestellte Fragen. Wenn Sie weitere Fragen haben, können Sie uns eine E-Mail an support@fiskaltrust.de senden.
+
+### Was muss als Anschaffungsdatum der Kasse angegeben werden?
+
+Für das Anschaffungsdatum der Kasse sollte das Datum des Kaufs der Kasse oder der Beginn des Leasingzeitraums der Kasse angegeben werden. Sowohl Anschaffungsdatum als auch Inbetriebnahmedatum der Kasse sind unabhängig vom Beginn der Fiskalisierung. Wenn Sie eine Kasse 2005 gekauft haben und diese seit 2021 eine TSE angebunden hat, so ist für diesen Wert das Jahr 2005 entscheidend. Wir als fiskaltrust dürfen keine rechtliche Beratung geben. Sollten Sie detaillierte Fragen zum Anschaffungsdatum haben, so nehmen Sie bitte Kontakt mit einem Steuerberater auf.
+
+---
+
+### Können die Daten aus dem Betreiber-Formular auch vom Hersteller/Händler eingetragen werden?
+
+Sowohl der Kassenhändler als auch der Kassenhersteller werden die Möglichkeit haben, ebenfalls Daten im fiskaltrust.Portal zu pflegen.
+
+---
+
+### In welchem Format muss die Steuernummer angegeben werden?
+
+Wir fordern nicht die bundeseinheitliche Steuernummer (13 stellig). Sollten Sie diese kennen, können Sie diese jedoch gerne eintragen. Generell tragen Sie bitte einfach die Steuernummer in dem Format ein, welche Ihnen vom Finanzamt zugewiesen wurde. Diese finden Sie beispielsweise auf jedem Steuerbescheid.
+
+---
+
+### Welcher Kontakt bekommt den Link zum Betreiber-Formular zugesendet?
+
+Die Mail mit dem entsprechenden Link wird an den, im fiskaltrust.Portal angelegten, Primärkontakt des Betreiberaccounts gesendet.
+
+---
+
+### Wie oft muss eine Meldung erfolgen?
+
+Eine Meldung an das Finanzamt muss immer nur dann erfolgen, wenn eine Anlage oder Änderung der Daten vorliegt. Beispielsweise bleibt eine Kasse für das Finanzamt solange aktiv, bis eine Außerbetriebnahme gemeldet wird.
+
+---
+
+### Wird es eine automatische Möglichkeit geben, die Daten nachzupflegen?
+
+Für Kunden mit großer Anzahl an Kassen und Standorten wird es die Möglichkeit geben, Daten gesammelt nachzupflegen.
+
+---
+
+### Ab wann wird der KassenHändler die Meldung für seine Betreiber aktivieren können (opt-in)?
+
+1. Januar 2025
