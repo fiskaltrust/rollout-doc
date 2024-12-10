@@ -11,15 +11,13 @@ Dieses Produkt wird ab dem 1. Januar 2025 verfügbar sein.
 ## Produkte & Produktpakete
 - fiskaltrust.Sorglos ohne TSE (4445-10040)
 - fiskaltrust.Sorglos mit TSE (Hardware- und Cloud-TSEs)
-- Standort-basiertes Einzelprodukt (_geplant_)
+- Standort-basiertes Einzelprodukt
 
 ## Rechtliche Grundlagen
 Abgabenordnung : [§ 146a Abs. 4 AO](https://www.gesetze-im-internet.de/ao_1977/__146a.html)
 Anwendungserlass: [Anwendungserlass zu § 146a AO](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2023-06-30-AEAO-Par-146-AO.pdf?__blob=publicationFile&v=1)
 
 ### In welchen Fällen ist die Meldung von Kassen verpflichtend?
-- initial commissioning of the Cashregister: If the fiskaltrust.Middleware is used then this reflects the initial-operation-receipt
-- decommissioning of the Cashregister: If the fiskaltrust.Middleware is used then this reflects the out-of-operation-receipt
 
 - Erstinbetriebnahme der Kasse: Wenn die fiskaltrust.Middleware verwendet wird, dann entspricht dies dem Zeitpunkt des Initial-Operation-Beleg
 - Außerbetriebnahme der Kasse: Wenn die fiskaltrust.Middleware verwendet wird, dann entspricht dies dem Zeitpunkt des Out-Of-Operation-Beleg
@@ -39,7 +37,6 @@ Eine Meldung ist innerhalb eines Monats erforderlich, wenn eine Erstinbetriebnah
 
 
 ## Technische Grundlagen
-_Bitte beachten Sie, dass es sich in den folgenden Abschnitten um vorläufige Hintergrundinformationen handelt, die ggf. in Zukunft geändert werden können._
 
 Alle Kassen in einer Filiale müssen in die Meldung einbezogen werden. Für diejenigen Kassen, die die fiskaltrust.Middleware verwenden, liegen uns die meisten der erforderlichen Informationen bereits vor. Kassen, die nicht die fiskaltrust.Middleware verwenden, können der fiskaltrust.Notification über verschiedene benutzerfreundliche Methoden hinzugefügt werden. fiskaltrust generiert die Meldung und verwendet die ERiC-Schnittstelle, um die Meldung an ELSTER zu übermitteln.
 
@@ -69,6 +66,129 @@ Für das Produkt fiskaltrust.Notification ist keine neue Implementierung erforde
 
 #### PosSystemId
 Wie im fiskaltrust.Interface definiert ist das inkludieren der `ftPosSytemId` in Requests an die Middleware obligatorisch. Wir verwenden die PosSystemId, um die Stammdaten Ihres POSSystems den einzelnen Middleware-Instanzen zuzuordnen. Diese POSSystem-Stammdaten sind ein notwendiger Bestandteil der Meldung; Kassenhersteller müssen daher darauf achten, die `ftPosSystemId` korrekt in Belegen an die Middleware zu inkludieren, sowie das zugehörige POSSystem im fiskaltrust.Portal zu pflegen.
+
+## Anleitung Betreiber-Formular
+Anleitung für das Formular zur Aktualisierung der Kassendaten für die Finanzamtsmeldung (§146a Absatz 4 AO)
+
+### Hinweis
+Eine Meldung an das Finanzamt kann nur erfolgen, wenn im Formular keine Informationen fehlen und alle Felder valide Daten enthalten.
+
+## Das Formular
+
+### 1. Übersicht über die durchzuführenden Schritte
+Nach dem Öffnen des Links zum Formular werden die durchzuführenden Schritte angezeigt.
+
+Im Formular kann man jederzeit zu den vorherigen Schritten zurückkehren. Auch das Schließen des Formulars und das spätere erneute Öffnen über denselben Link ist problemlos möglich. Die Schritte werden zwischengespeichert, und der Fortschritt bleibt erhalten.  
+![Form Opening](./images/1_Opening_Page_Form_DE.png)
+
+### 2. Unternehmensdaten überprüfen
+Die angezeigten Daten sind zu überprüfen und gegebenenfalls zu korrigieren. Hierbei handelt es sich um die Stammdaten des Unternehmenssitzes, also die Adresse, für die das Finanzamt dem Unternehmen die Steuernummer zugewiesen hat. Sollten die angezeigten Informationen nicht stimmen, sind diese im Formular zu korrigieren.  
+![HQ Masterdata](./images/2_HQ_masterdata_DE.png)
+
+#### Auszufüllende Felder
+| Feld                        | Erklärung                                                                                                                                                            |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Steuernummer                | Ihre vom Finanzamt vergebene Steuernummer. Diese finden Sie z. B. auf Ihrem letzten Steuerbescheid. Normalerweise befindet sich die Steuernummer in der oberen linken Ecke des Steuerbescheids. **Wichtig:** Hier ist **nicht** die Steueridentifikationsnummer einzutragen. Tragen Sie die Steuernummer in dem Format ein, wie es auf dem Steuerbescheid angegeben ist. |
+| Straße (Hauptsitz des Unternehmens) | Einzutragen ist hier die Adresse, die für die oben genannte Steuernummer registriert ist. Einzelne Betriebsstätten (Standorte), falls vorhanden, werden später im Formular behandelt. |
+| Hausnummer (Hauptsitz des Unternehmens) | Einzutragen ist hier die Adresse, die für die oben genannte Steuernummer registriert ist. Einzelne Betriebsstätten (Standorte), falls vorhanden, werden später im Formular behandelt. |
+| Postleitzahl (Hauptsitz des Unternehmens) | Einzutragen ist hier die Adresse, die für die oben genannte Steuernummer registriert ist. Einzelne Betriebsstätten (Standorte), falls vorhanden, werden später im Formular behandelt. |
+| Stadt (Hauptsitz des Unternehmens) | Einzutragen ist hier die Adresse, die für die oben genannte Steuernummer registriert ist. Einzelne Betriebsstätten (Standorte), falls vorhanden, werden später im Formular behandelt. |
+
+#### Steuernummer
+Beispiel Steuerbescheid:  
+![Steuernummer](./images/2_steuerbescheid_DE.jpg)
+
+### 3. Vorhandene Daten prüfen
+Die bereits bei fiskaltrust vorliegenden Informationen zu Betriebsstätten und Kassen werden angezeigt. Noch fehlende Informationen oder nicht valide Daten werden rot markiert.
+
+In der Liste werden die Daten je Betriebsstätte als eigene Zeile aufgelistet.  
+![Outlet zu prüfen](./images/3_Outlet_Data_DE.png)
+
+#### Standortdaten prüfen und bearbeiten
+Zunächst sollte die angezeigte Adresse des Standorts überprüft werden. Sollten hier Informationen inkorrekt sein, können diese über den Button **Bearbeiten** editiert werden.  
+![Outlet bearbeiten](./images/3_Outlet_Edit_DE.png)
+
+Im Bearbeitungsmenü können nun die Daten des Standorts angepasst und gespeichert werden.  
+![Outlet window](./images/3_Outlet_Edit_windows_DE.png)
+
+#### Kassendaten bearbeiten
+In rot wird angezeigt, bei welchen und wie vielen Kassen noch Pflichtinformationen fehlen. Die einzelnen Kassen eines Standorts werden durch das Auswählen des **>**-Buttons neben dem Standortnamen aufgelistet.
+
+Sollten hier mehr Kassen aufgelistet werden, als tatsächlich am Standort existieren, sind diese über die Kassensoftware außer Betrieb zu nehmen. Alternativ können die Kassen auch im fiskaltrust.Portal deaktiviert werden. Im Zweifel sollte der Kassenhändler kontaktiert werden.  
+![POS Edit](./images/3_pos_Edit_DE.png)
+
+Über den Button **Bearbeiten** können die fehlenden Informationen ergänzt werden.  
+![POS Edit Window](./images/3_pos_Edit_windows_DE.png)
+
+##### Mögliche Felder
+| Feld                                 | Erklärung                                                                                                                        |
+|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Kaufdatum der Registrierkasse       | Hier ist entweder das Kaufdatum (Rechnungsdatum) der Kasse oder das Leasingdatum der Kasse einzutragen.                          |
+| Datum der Inbetriebnahme der Registrierkasse | Einzutragen ist das Datum, an dem die Kasse in Betrieb genommen wurde. Dies ist der Zeitpunkt, ab dem die Kasse für Geschäftsvorfälle genutzt werden konnte. **Hinweis:** Die Aktivierung der TSE ist hier nicht relevant. |
+
+#### Abschluss der Prüfung
+Nachdem alle Daten ergänzt oder korrigiert wurden, werden alle Standorte und Kassen grün markiert.  
+![Grüne Felder](./images/3_Outlet_green_DE.png)
+
+### 4. Fremdkassen hinzufügen
+Wenn in den Standorten noch weitere Kassen vorhanden sind, die nicht auf der Seite [3. Vorhandene Daten prüfen](#3-vorhandene-daten-prüfen) aufgelistet wurden, handelt es sich hierbei um sogenannte **Fremdkassen**. Dies ist meist dann der Fall, wenn sich an einem Standort Kassen von verschiedenen Herstellern befinden, die nicht alle über die fiskaltrust.Middleware angebunden sind.
+
+Der Gesetzgeber fordert für die Meldung nach §146a Absatz 4 AO alle Kassen einer Betriebsstätte. Es ist somit verpflichtend, auch die Kassen der Meldung hinzuzufügen, die nicht auf der Seite [3. Vorhandene Daten prüfen](#3-vorhandene-daten-prüfen) angezeigt werden.  
+![External POS](./images/4_external_pos_DE.png)
+
+Für das Hinzufügen von Fremdkassen bietet das Formular zwei Optionen:
+
+#### Import der DSFinV-K (ZIP) oder einer DFKA-Taxonomie (JSON)
+Der DSFinV-K-Export ist ein verpflichtender Bestandteil jeder Kasse. Wird an der/den Kasse(n) ein Export der DSFinV-K durchgeführt, kann diese Exportdatei verwendet werden, um im Formular die fehlende(n) Kasse(n) hinzuzufügen. Es ist hierbei egal, ob die DSFinV-K bereits alle Kassen eines Standorts enthält oder nur einzelne Kassen.
+
+**Hinweis:** Ein Import der DSFinV-K ist nur möglich, wenn der DSFinV-K-Export der gesetzlichen Definition und Struktur entspricht. Sollte ein Import Fehler liefern, sollte Kontakt mit dem Hersteller der Kasse aufgenommen werden.
+
+Mit Auswahl des Buttons **Datei auswählen** kann die DSFinV-K im ZIP-Format hochgeladen werden.  
+![DSFinV-K Upload](./images/4_dsfinvk_DE.png)
+
+Die DSFinV-K wird durch Wählen des Buttons **Datei importieren** in das Formular importiert.  
+![DSFinV-K Import](./images/4_dsfinvk_importr.png)
+
+Es muss nun der Standort ausgewählt werden, aus dem die DSFinV-K stammt. Durch das Wählen von **importieren** werden die Kassen importiert.  
+![Outlet Select](./images/4_select_outlet_DE.png)
+
+Die Liste zeigt nun je Standort die importierten Kassen an. Der Importvorgang kann beliebig oft wiederholt werden.  
+![Liste](./images/4_pos_list_DE.png)
+
+#### Registrierkasse manuell hinzufügen
+Sollte ein Export der DSFinV-K an der Fremdkasse nicht möglich sein oder der Import Fehler liefern, ist das manuelle Hinzufügen dieser Kasse durch Wählen des Buttons **Registrierkasse manuell hinzufügen** möglich.  
+![Manual Third Party POS](./images/4_manual_DE.png)
+
+##### Felder
+| Feld                | Beschreibung                                                                                                                      |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Software            | Tragen Sie hier den Namen der Software Ihrer Kasse ein.                                                                          |
+| Software-Version    | Tragen Sie hier die Versionsnummer oder die Bezeichnung der Software ein.                                                         |
+| Kassen-Seriennummer | Die Seriennummer der Kasse muss dieselbe sein, wie die in der TSE registrierte Kassenseriennummer. Diese finden Sie auf Kassenbelegen. |
+| Hersteller          | Tragen Sie hier den Hersteller Ihrer Kasse ein.                                                                                   |
+| Modell              | Tragen Sie hier die Modellbezeichnung Ihrer Kasse ein.                                                                            |
+| TSE Seriennummer    | Tragen Sie hier die Seriennummer der verwendeten TSE ein.                                                                         |
+| BSI-ID              | Jede TSE ist vom BSI zertifiziert und erhält eine BSI-ID. Diese finden Sie auf [Wikipedia](https://de.wikipedia.org/wiki/Technische_Sicherheitseinrichtung#%C3%9Cbersicht_der_zertifizierten_TSE). Anzugeben ist nur der Wert ohne `BSI-K-TR-`. Beispiel: 0412-2020 |
+| Inbetriebnahme TSE  | Tragen Sie hier das Datum ein, an dem die TSE in Betrieb genommen wurde.                                                           |
+| Kaufdatum           | Hier ist entweder das Kaufdatum (Rechnungsdatum) der Kasse oder das Leasingdatum der Kasse einzutragen.                           |
+| Datum der Inbetriebnahme | Einzutragen ist das Datum, an dem die Kasse in Betrieb genommen wurde. Dies ist der Zeitpunkt, ab dem die Kasse für Geschäftsvorfälle genutzt werden konnte. |
+
+#### Daten überprüfen und ergänzen
+Sollten nach dem Import der DSFinV-K oder dem manuellen Hinzufügen der Kasse noch Daten fehlen, können diese wie in [Kassendaten bearbeiten](#kassendaten-bearbeiten) beschrieben ergänzt oder korrigiert werden. Mögliche Felder sind in [Registrierkasse manuell hinzufügen](#felder) beschrieben.
+
+#### Standort/Kassen entfernen
+Wurden versehentlich falsche Kassen importiert oder der falsche Standort gewählt, können diese jeweils über das _Papierkorb-Symbol_ entfernt werden.  
+![Delete](./images/4_delete_DE.png)
+
+### 5. Abschluss
+Es werden alle durchlaufenen Schritte angezeigt. Sollten in einem der Schritte noch Informationen fehlen oder nicht valide sein, werden diese ebenfalls in dieser Übersicht angezeigt. Nur wenn alle Schritte keine Fehler aufweisen, ist eine Meldung möglich.  
+![Overview](./images/5_overview_DE.png)
+
+Durch das Auswählen von **übermitteln** öffnet sich die verpflichtende Abfrage nach der Richtigkeit und Vollständigkeit der Daten.  
+![Confirm](./images/5_confirm_DE.png)
+
+Nach der Bestätigung dieser Abfrage erhält der Kassenbetreiber eine E-Mail, die über die Aktualisierung der Daten informiert. Am darauffolgenden Sonntag erfolgt die Übermittlung an das Finanzamt. Der Kassenbetreiber erhält daraufhin das ELSTER-Übermittlungsprotokoll. Wir empfehlen, dieses in der Verfahrensdokumentation zu hinterlegen.
+
 
 ## FAQ
 Im Folgenden finden Sie häufig gestellte Fragen. Wenn Sie weitere Fragen haben, können Sie uns eine E-Mail an support@fiskaltrust.de senden.
