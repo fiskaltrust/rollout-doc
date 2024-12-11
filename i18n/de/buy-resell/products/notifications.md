@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 
 import MarketAT from '../../../../../../../docs/rollout-doc/_markets/at/buy-resell/products/_notification.mdx';
 import MarketFR from '../../../../../../../docs/rollout-doc/_markets/fr/buy-resell/products/_notification.mdx';
-import MarketDE from '../../../../../../de/_markets/docusaurus-plugin-content-docs/current/rollout-doc/de/buy-resell/products/_notification.mdx';
+import MarketDE from '../../_markets/de/buy-resell/products/_notification.mdx';
 
 <Tabs groupId="market">
 

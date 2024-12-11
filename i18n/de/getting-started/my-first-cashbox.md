@@ -27,7 +27,7 @@ If you don't have one yet, please get in touch with your *PosCreator* for invita
 
 :::
 
-![preview](./images/my-first-cashbox/first-CashBox-flow.png "My first CashBox")
+![preview](./images/first-CashBox-flow.png "My first CashBox")
 
 ## Prerequisites
 
