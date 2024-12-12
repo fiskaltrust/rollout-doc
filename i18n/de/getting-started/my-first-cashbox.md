@@ -55,7 +55,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import BusinessRolloutAT from '../../../../../../docs/rollout-doc/_markets/at/getting-started/my-first-cashbox/_business.mdx';
-import BusinessRolloutFR from '../../../../../../docs/rollout-doc_markets/fr/getting-started/my-first-cashbox/_business.mdx';
+import BusinessRolloutFR from '../../../../../../docs/rollout-doc/_markets/fr/getting-started/my-first-cashbox/_business.mdx';
 import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_business.mdx';
 
 <Tabs groupId="market">
