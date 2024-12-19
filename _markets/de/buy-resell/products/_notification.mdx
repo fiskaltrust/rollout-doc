@@ -71,6 +71,129 @@ The fiskaltrust.Notification product won't require a new implementation. However
 #### PosSystemId
 The PosSytemId has been mandatory since the beginning. We use the PosSystemId to map the masterdata of your POSSystem to the individual Middleware-Instances. POSSystem masterdata is a mandatory part of the notification.
 
+# Instructions for the Operator Form
+Instructions for the form to update cash register data for tax office reporting (§146a Paragraph 4 AO)
+
+## Note
+A report to the tax office can only be made if no information is missing in the form and all fields contain valid data.
+
+## The Form
+
+### 1. Overview of Steps
+After opening the form link, the steps to be performed are displayed.
+
+You can return to previous steps in the form at any time. Closing and reopening the form via the same link is also possible without issues. The steps are saved, and progress is preserved.  
+![Form Opening](./images/1_Opening_Page_Form_DE.png)
+
+### 2. Verify Company Data
+Check and, if necessary, correct the displayed data. This concerns the master data of the company's headquarters, i.e., the address for which the tax office has assigned the tax number to the company. If the displayed information is incorrect, it must be corrected in the form.  
+![HQ Masterdata](./images/2_HQ_masterdata_DE.png)
+
+#### Fields to Complete
+| Field                        | Explanation                                                                                                                                                            |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tax Number                | Your tax number assigned by the tax office. You can find it on your last tax notice, typically in the upper left corner. **Important:** Do **not** enter the tax ID number here. Enter the tax number in the format shown on the tax notice. |
+| Street (Company Headquarters) | Enter the address registered for the above-mentioned tax number. Individual branch locations, if applicable, will be addressed later in the form. |
+| House Number (Company Headquarters) | Enter the address registered for the above-mentioned tax number. Individual branch locations, if applicable, will be addressed later in the form. |
+| Postal Code (Company Headquarters) | Enter the address registered for the above-mentioned tax number. Individual branch locations, if applicable, will be addressed later in the form. |
+| City (Company Headquarters) | Enter the address registered for the above-mentioned tax number. Individual branch locations, if applicable, will be addressed later in the form. |
+
+#### Tax Number
+Example tax notice:  
+![Steuernummer](./images/2_steuerbescheid_DE.jpg)
+
+### 3. Review Existing Data
+The information already available at fiskaltrust regarding branch locations and cash registers is displayed. Missing or invalid data is marked in red.
+
+Data for each branch location is listed in a separate row.  
+![Outlet to Review](./images/3_Outlet_Data_DE.png)
+
+#### Verify and Edit Location Data
+First, review the displayed address of the location. If the information is incorrect, it can be edited via the **Edit** button.  
+![Outlet Edit](./images/3_Outlet_Edit_DE.png)
+
+Data for the location can now be adjusted and saved in the edit menu.  
+![Outlet Window](./images/3_Outlet_Edit_windows_DE.png)
+
+#### Edit Cash Register Data
+Missing mandatory information for cash registers is displayed in red. The individual cash registers of a location can be listed by selecting the **>** button next to the location name.
+
+If more cash registers are listed than actually exist at the location, they must be deactivated via the cash register software or in the fiskaltrust.Portal. If in doubt, contact your cash register provider.  
+![POS Edit](./images/3_pos_Edit_DE.png)
+
+Missing information can be added using the **Edit** button.  
+![POS Edit Window](./images/3_pos_Edit_windows_DE.png)
+
+##### Possible Fields
+| Field                                 | Explanation                                                                                                                        |
+|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Purchase Date of the Cash Register       | Enter the purchase date (invoice date) or the lease date of the cash register.                          |
+| Date of Cash Register Activation | Enter the date the cash register was activated. This is the point at which the cash register could be used for business transactions. **Note:** TSE activation is not relevant here. |
+
+#### Completion of Review
+Once all data has been supplemented or corrected, all locations and cash registers are marked in green.  
+![Green Fields](./images/3_Outlet_green_DE.png)
+
+### 4. Add External Cash Registers
+If there are additional cash registers at the locations that are not listed on the [3. Review Existing Data](#3-review-existing-data) page, these are so-called **external cash registers**. This usually occurs when there are cash registers from various manufacturers at a location that are not all connected via the fiskaltrust.Middleware.
+
+The law requires that all cash registers at a branch location must be reported according to §146a Paragraph 4 AO. Thus, it is mandatory to add all cash registers not shown on the [3. Review Existing Data](#3-review-existing-data) page to the report.  
+![External POS](./images/4_external_pos_DE.png)
+
+For adding external cash registers, the form provides two options:
+
+#### Import of DSFinV-K (ZIP) or DFKA-Taxonomy (JSON)
+The DSFinV-K export is a mandatory feature of every cash register. If a DSFinV-K export is performed on the cash register(s), this file can be used to add missing cash registers to the form. It does not matter whether the DSFinV-K contains all cash registers of a location or just individual cash registers.
+
+**Note:** DSFinV-K import is only possible if the export complies with the legal structure and definition. If errors occur during import, contact the manufacturer.
+
+Select **Choose File** to upload the DSFinV-K in ZIP format.  
+![DSFinV-K Upload](./images/4_dsfinvk_DE.png)
+
+The DSFinV-K is imported into the form by clicking **Import File**.  
+![DSFinV-K Import](./images/4_dsfinvk_importr.png)
+
+You must now select the location the DSFinV-K originates from. Click **Import** to import the cash registers.  
+![Outlet Select](./images/4_select_outlet_DE.png)
+
+The list now shows imported cash registers by location. The import process can be repeated as often as necessary.  
+![List](./images/4_pos_list_DE.png)
+
+#### Manually Add Cash Register
+If a DSFinV-K export is not possible or import errors occur, you can manually add the cash register using the **Manually Add Cash Register** button.  
+![Manual Third Party POS](./images/4_manual_DE.png)
+
+##### Fields
+| Field                | Description                                                                                                                      |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Software            | Enter the name of your cash register's software.                                                                          |
+| Software Version    | Enter the software version or designation.                                                         |
+| Cash Register Serial Number | The serial number must match the one registered in the TSE. This can be found on receipts. |
+| Manufacturer          | Enter the manufacturer of your cash register.                                                                                   |
+| Model              | Enter the model name of your cash register.                                                                            |
+| TSE Serial Number    | Enter the serial number of the TSE used.                                                                         |
+| BSI-ID              | Every TSE is certified by the BSI and receives a BSI-ID. This can be found on [Wikipedia](https://de.wikipedia.org/wiki/Technische_Sicherheitseinrichtung#%C3%9Cbersicht_der_zertifizierten_TSE). Provide the value without `BSI-K-TR-`. Example: 0412-2020 |
+| TSE Activation Date  | Enter the date the TSE was activated.                                                           |
+| Purchase Date           | Enter the purchase date (invoice date) or the lease date of the cash register.                           |
+| Activation Date | Enter the date the cash register was activated. This is the point at which it was usable for business transactions. |
+
+##### Verify and Complete Data
+If data is still missing after importing the DSFinV-K or manually adding the cash register, it can be completed or corrected as described in [Edit Cash Register Data](#edit-cash-register-data). Possible fields are described in [Manually Add Cash Register](#fields).
+
+##### Remove Location/Cash Registers
+If incorrect cash registers were imported or the wrong location was selected, they can be removed via the _trash icon_.  
+![Delete](./images/4_delete_DE.png)
+
+### 5. Completion
+All steps performed are displayed. If information is missing or invalid in any step, it will also be displayed in this overview. A report can only be made if all steps are error-free.  
+![Overview](./images/5_overview_DE.png)
+
+Click **Submit** to open the mandatory confirmation regarding the accuracy and completeness of the data.  
+![Confirm](./images/5_confirm_DE.png)
+
+After confirming, the cash register operator will receive an email informing them about the data update. The data will be transmitted to the tax office the following Sunday. The cash register operator will then receive the ELSTER transmission protocol, which we recommend storing in the procedural documentation.
+
+
 ## FAQ
 In the following you'll find frequently asked questions. If you have further questions then you can send us an email to support@fiskaltrust.de
 
