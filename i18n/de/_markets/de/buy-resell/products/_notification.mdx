@@ -225,33 +225,6 @@ Falls anstelle des komfortablen fiskaltrust-Prozesses die manuelle Eingabe der D
 Ausfüllhilfe des Finanzministeriums: [PDF](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/FAQ-Ausfuellanleitung.pdf?__blob=publicationFile&v=2)
 
 
-| XML/ELSTER Formular                                                   | DSFinV-K table    | DSFinV-K field     | fiskaltrust Quelle        |
-|-------------------------------------------------------|-------------------|--------------------|-------------------------------------------|
-| Aufzeichnung146a/StNr                                 | cashpointclosing  | STNR               | Operator.Account.masterData.TaxId         |
-| AllgAngabenNichtNatuerlichePerson/Firmenname          | cashpointclosing  | NAME               | Operator.Account.masterData.AccountName   |
-| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Strasse | cashpointclosing  | STRASSE            | Operator.Account.masterData.Street     |
-| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Hausnummer | cashpointclosing  | STRASSE            | Operator.Account.masterData.Street  |
-| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Postleitzahl | cashpointclosing  | PLZ               | Operator.Account.masterData.Zip    |
-| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Ort  | cashpointclosing  | ORT                | Operator.Account.masterData.City          |
-| AngabenZuBetriebsstaette/AnzahlAufzeichnungssysteme   |                   |                    |                                           |
-| AngabenZuBetriebsstaette/Adresse/Strasse              | location          | LOC_STRASSE        | Operator.Account.Outlet.Street            |
-| AngabenZuBetriebsstaette/Adresse/Hausnummer           | location          | LOC_STRASSE        | Operator.Account.Outlet.Street            |
-| AngabenZuBetriebsstaette/Adresse/Postleitzahl         | location          | LOC_PLZ            | Operator.Account.Outlet.Zip               |
-| AngabenZuBetriebsstaette/Adresse/Ort                  | location          | LOC_ORT            | Operator.Account.Outlet.City              |
-| AngabenAufzeichnungssystem/Art                        |                   |                    | fixed?                                    |
-| AngabenAufzeichnungssystem/Software                   | cashregister      | KASSE_SW_BRAND     | fixed                                     |
-| AngabenAufzeichnungssystem/SoftwareVersion            | cashregister      | KASSE_SW_VERSION   | MiddlewareVersion                         |
-| AngabenAufzeichnungssystem/SeriennummerAS             | cashregister      | Z_KASSE_ID         | CashboxIdentification                     |
-| AngabenAufzeichnungssystem/Hersteller                 | cashregister      | KASSE_BRAND        | Creator.Account.posSystem.Brand           |
-| AngabenAufzeichnungssystem/Modell                     | cashregister      | KASSE_MODELL       | Creator.Account.posSystem.Model           |
-| AngabenAufzeichnungssystem/SeriennummerTSE            | tse               | TSE_SERIAL         | tseData                                   |
-| AngabenAufzeichnungssystem/InbetriebnahmeTSE          |                   | ActionJournal      |                                           |
-| AngabenAufzeichnungssystem/AblaufdatumTSE             | tse               | TSE_ZERTIFIKAT     | tseData                                   |
-| AngabenAufzeichnungssystem/BSIID                      | tse               | TSE_ZERTIFIKAT     | tseData                                   |
-| AngabenAufzeichnungssystem/AnschaffungAS              |                   |                    | Operator form                              |
-| AngabenAufzeichnungssystem/InbetriebnahmeAS           |                   |                    | Operator form                              |
-
-
 ## FAQ
 Im Folgenden finden Sie häufig gestellte Fragen. Wenn Sie weitere Fragen haben, können Sie uns eine E-Mail an support@fiskaltrust.de senden.
 
