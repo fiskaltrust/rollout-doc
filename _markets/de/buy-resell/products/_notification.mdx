@@ -193,6 +193,37 @@ Click **Submit** to open the mandatory confirmation regarding the accuracy and c
 
 After confirming, the cash register operator will receive an email informing them about the data update. The data will be transmitted to the tax office the following Sunday. The cash register operator will then receive the ELSTER transmission protocol, which we recommend storing in the procedural documentation.
 
+## Finding Data for the ELSTER Form
+
+If the manual entry of data into the ELSTER form is preferred over the convenient fiskaltrust process, the following list can assist in locating the required data.
+
+| XML/ELSTER Formular Feld                                                   | DSFinV-K Table      | DSFinV-K Field       | Data for ELSTER                         | Where to Find                              |
+|----------------------------------------------------------------------------|---------------------|----------------------|------------------------------------------|-------------------------------------------|
+| Aufzeichnung146a/StNr                                                       | cashpointclosing    | STNR                 | Operator.Account.masterData.TaxId        | Company info/master data            |
+| AllgAngabenNichtNatuerlichePerson/Firmenname                                | cashpointclosing    | NAME                 | Operator.Account.masterData.AccountName  | Company info/master data            |
+| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Strasse                    | cashpointclosing    | STRASSE              | Operator.Account.masterData.Street       | Company info/master data            |
+| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Hausnummer                 | cashpointclosing    | STRASSE              | Operator.Account.masterData.Street       | Company info/master data            |
+| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Postleitzahl               | cashpointclosing    | PLZ                  | Operator.Account.masterData.Zip          | Company info/master data            |
+| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Ort                        | cashpointclosing    | ORT                  | Operator.Account.masterData.City         | Company info/master data            |
+| AngabenZuBetriebsstaette/AnzahlAufzeichnungssysteme                         |                     |                      | Configuration.Queue                      | Total number of active queues              |
+| AngabenZuBetriebsstaette/Adresse/Strasse                                    | location            | LOC_STRASSE          | Operator.Account.Outlet.Street           | Company info/outlets              |
+| AngabenZuBetriebsstaette/Adresse/Hausnummer                                 | location            | LOC_STRASSE          | Operator.Account.Outlet.Street           | Company info/outlets              |
+| AngabenZuBetriebsstaette/Adresse/Postleitzahl                               | location            | LOC_PLZ              | Operator.Account.Outlet.Zip              | Company info/outlets              |
+| AngabenZuBetriebsstaette/Adresse/Ort                                        | location            | LOC_ORT              | Operator.Account.Outlet.City             | Company info/outlets              |
+| AngabenAufzeichnungssystem/Art                                              |                     |                      |                                          | Select from dropdown in ELSTER form        |
+| AngabenAufzeichnungssystem/Software                                         | cashregister        | KASSE_SW_BRAND       | fiskaltrust.Middleware                   | Enter "fiskaltrust.Middleware"             |
+| AngabenAufzeichnungssystem/SoftwareVersion                                  | cashregister        | KASSE_SW_VERSION     | 1.3                                      | Enter the Middleware version (1.3)         |
+| AngabenAufzeichnungssystem/SeriennummerAS                                   | cashregister        | Z_KASSE_ID           | CashboxIdentification                    | Configuration/Queue/Details                |
+| AngabenAufzeichnungssystem/Hersteller                                       | cashregister        | KASSE_BRAND          | Creator.Account.posSystem.Brand          | Provided by the manufacturer               |
+| AngabenAufzeichnungssystem/Modell                                           | cashregister        | KASSE_MODELL         | Creator.Account.posSystem.Model          | Provided by the manufacturer               |
+| AngabenAufzeichnungssystem/SeriennummerTSE                                  | tse                 | TSE_SERIAL           | Configuration.Signature Creation Unit.Details.SerialNumberOctet | Configuration/Signature Creation Unit/Details/SerialNumberOctet |
+| AngabenAufzeichnungssystem/InbetriebnahmeTSE                                |                     |                      | Queue.ActionJournal.Initial-Operation    | Configuration/Queue/ActionJournal (select initial operation receipt and enter the date) |
+| AngabenAufzeichnungssystem/BSIID                                            | tse                 | TSE_ZERTIFIKAT       | Configuration.Signature Creation Unit.Details.CertificationIdentification | Configuration/Signature Creation Unit/Details/CertificationIdentification |
+| AngabenAufzeichnungssystem/AnschaffungAS                                    |                     |                      | Not provided by fiskaltrust               | Date of cash register acquisition          |
+| AngabenAufzeichnungssystem/InbetriebnahmeAS                                 |                     |                      | Not provided by fiskaltrust               | Date of cash register commissioning        |
+
+Guidelines from the Ministry of Finance: [PDF](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/FAQ-Ausfuellanleitung.pdf?__blob=publicationFile&v=2)
+
 
 ## FAQ
 In the following you'll find frequently asked questions. If you have further questions then you can send us an email to support@fiskaltrust.de

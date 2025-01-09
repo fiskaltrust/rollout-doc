@@ -194,6 +194,36 @@ Durch das Auswählen von **übermitteln** öffnet sich die verpflichtende Abfrag
 
 Nach der Bestätigung dieser Abfrage erhält der Kassenbetreiber eine E-Mail, die über die Aktualisierung der Daten informiert. Am darauffolgenden Sonntag erfolgt die Übermittlung an das Finanzamt. Der Kassenbetreiber erhält daraufhin das ELSTER-Übermittlungsprotokoll. Wir empfehlen, dieses in der Verfahrensdokumentation zu hinterlegen.
 
+## Finden der Daten für das ELSTER-Formular
+Falls anstelle des komfortablen fiskaltrust-Prozesses die manuelle Eingabe der Daten im ELSTER-Formular bevorzugt wird, kann die folgende Liste dabei helfen, die erforderlichen Daten zu finden.
+
+| XML/ELSTER Formular Feld                                                   | DSFinV-K Tabelle    | DSFinV-K Feld     | Daten für ELSTER        | Wo zu finden |
+|-------------------------------------------------------|-------------------|--------------------|-------------------------------------------|------------------|
+| Aufzeichnung146a/StNr                                 | cashpointclosing  | STNR               | Betreiber.Account.Stammdaten.Steuernummer |Informationen zum Unternehmen/Stammdaten|
+| AllgAngabenNichtNatuerlichePerson/Firmenname          | cashpointclosing  | NAME               | Betreiber.Account.Stammdaten.AccountName   |Informationen zum Unternehmen/Stammdaten|
+| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Strasse | cashpointclosing  | STRASSE            | Betreiber.Account.Stammdaten.Straße     |Informationen zum Unternehmen/Stammdaten|
+| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Hausnummer | cashpointclosing  | STRASSE            | Betreiber.Account.Stammdaten.Straße  |Informationen zum Unternehmen/Stammdaten|
+| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Postleitzahl | cashpointclosing  | PLZ               | Betreiber.Account.Stammdaten.Postleitzahl|Informationen zum Unternehmen/Stammdaten|
+| AllgAngabenNichtNatuerlichePerson/Adresse/AdrInl/Ort  | cashpointclosing  | ORT                | Betreiber.Account.Stammdaten.Stadt          |Informationen zum Unternehmen/Stammdaten|
+| AngabenZuBetriebsstaette/AnzahlAufzeichnungssysteme   |                   |                    | Konfigruation.Queue                          | Summe aller aktiven Queues|
+| AngabenZuBetriebsstaette/Adresse/Strasse              | location          | LOC_STRASSE        | Betreiber.Account.Standort.Straße            |Informationen zum Unternehmen/Standorte|
+| AngabenZuBetriebsstaette/Adresse/Hausnummer           | location          | LOC_STRASSE        | Betreiber.Account.Standort.Straße            |Informationen zum Unternehmen/Standorte|
+| AngabenZuBetriebsstaette/Adresse/Postleitzahl         | location          | LOC_PLZ            | Betreiber.Account.Standort.Postleitzahl      |Informationen zum Unternehmen/Standorte|
+| AngabenZuBetriebsstaette/Adresse/Ort                  | location          | LOC_ORT            | Betreiber.Account.Standort.Stadt              |Informationen zum Unternehmen/Standorte|
+| AngabenAufzeichnungssystem/Art                        |                   |                    |                                     |Im Dropdown des ELSTER-Fomulars auswählen|
+| AngabenAufzeichnungssystem/Software                   | cashregister      | KASSE_SW_BRAND     | fiskaltrust.Middleware               | Es ist "fiskaltrust.Middleware" einzutragen|
+| AngabenAufzeichnungssystem/SoftwareVersion            | cashregister      | KASSE_SW_VERSION   | 1.3                         |Die Version der Middleware ist einzutragen (1.3)|
+| AngabenAufzeichnungssystem/SeriennummerAS             | cashregister      | Z_KASSE_ID         | CashboxIdentification                     |Konfigruation/Queue/Details|
+| AngabenAufzeichnungssystem/Hersteller                 | cashregister      | KASSE_BRAND        | Creator.Account.posSystem.Brand           |Wird vom Hersteller genannt|
+| AngabenAufzeichnungssystem/Modell                     | cashregister      | KASSE_MODELL       | Creator.Account.posSystem.Model           |Wird vom Hersteller genannt|
+| AngabenAufzeichnungssystem/SeriennummerTSE            | tse               | TSE_SERIAL         | Konfigruation.TSE.Details.SerialNumberOctet|Konfigruation/TSE/Details/SerialNumberOctet|
+| AngabenAufzeichnungssystem/InbetriebnahmeTSE          |                   |       |              Queue.ActionJournal.Intitial-Operation     |Konfigruation/Queue/ActionJournal und dort den Start-Beleg wählen und das Datum eintragen|
+| AngabenAufzeichnungssystem/BSIID                      | tse               | TSE_ZERTIFIKAT     | Konfigruation.TSE.Details.CertificationIdentification|Konfigruation/TSE/Details/CertificationIdentification|
+| AngabenAufzeichnungssystem/AnschaffungAS              |                   |                    | Nicht von fiskaltrust                             |Anschaffungsdatum Kasse|
+| AngabenAufzeichnungssystem/InbetriebnahmeAS           |                   |                    | Nicht von fiskaltrust                             |Inbetriebnahme Kasse|
+
+Ausfüllhilfe des Finanzministeriums: [PDF](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/FAQ-Ausfuellanleitung.pdf?__blob=publicationFile&v=2)
+
 
 ## FAQ
 Im Folgenden finden Sie häufig gestellte Fragen. Wenn Sie weitere Fragen haben, können Sie uns eine E-Mail an support@fiskaltrust.de senden.
