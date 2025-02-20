@@ -27,7 +27,7 @@ If you don't have one yet, please get in touch with your *PosCreator* for invita
 
 :::
 
-![preview](./images/my-first-cashbox/first-CashBox-flow.png "My first CashBox")
+![preview](./images/first-CashBox-flow.png "My first CashBox")
 
 ## Prerequisites
 
@@ -54,8 +54,8 @@ A rollout plan typically follows these five steps:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import BusinessRolloutAT from '../../_markets/at/getting-started/my-first-cashbox/_business.mdx';
-import BusinessRolloutFR from '../../_markets/fr/getting-started/my-first-cashbox/_business.mdx';
+import BusinessRolloutAT from '../../../../../../docs/rollout-doc/_markets/at/getting-started/my-first-cashbox/_business.mdx';
+import BusinessRolloutFR from '../../../../../../docs/rollout-doc/_markets/fr/getting-started/my-first-cashbox/_business.mdx';
 import BusinessRolloutDE from '../_markets/de/getting-started/my-first-cashbox/_business.mdx';
 
 <Tabs groupId="market">
@@ -88,9 +88,9 @@ For Postman, you can download a request collection from the [Github repository](
 
 ### Request details
 
-import EchoAT from '../_markets/at/getting-started/my-first-cashbox/_echo.mdx';
-import EchoFR from '../_markets/fr/getting-started/my-first-cashbox/_echo.mdx';
-import EchoDE from '../_markets/de/getting-started/my-first-cashbox/_echo.mdx';
+import EchoAT from '../../../../../../docs/rollout-doc/_markets/at/getting-started/my-first-cashbox/_echo.mdx';
+import EchoFR from '../../../../../../docs/rollout-doc/_markets/fr/getting-started/my-first-cashbox/_echo.mdx';
+import EchoDE from '../../../../../../docs/rollout-doc/_markets/de/getting-started/my-first-cashbox/_echo.mdx';
 
 <Tabs groupId="market">
 
