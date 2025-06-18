@@ -16,9 +16,8 @@ In addition to on-premise installations, fiskaltrust offers a Middleware hosting
 
 
 ## Self-hosted vs. SaaS
-fiskaltrust aims to offer a fully hosted SaaS (_Software as a Service_) version in every country where this is legally possible. Out of the three countries we're currently operating in, this is the case in **Austria** and **France**, where the Middleware can be used via the SaaS service _SignatureCloud_.
+fiskaltrust now also offers our [CloudCashbox](./cloudcashbox) a fully hosted SaaS (_Software as a Service_) version in all markets where the Middleware can be used.
 
-In **Germany**, the signing device (i.e. the TSS) must reside in the same operational environment as the POS logic, which currently prevents us from hosting the Middleware centrally. Because of that, _Bring your own Data Center_ is currently only available in Germany, while we support to use our SaaS products in other countries.
 
 ## Guidelines
 The guidelines for installing and operating _Bring your own Data Center_ is currently directly maintained on [the projects GitHub page](https://github.com/fiskaltrust/product-de-bring-your-own-datacenter).
