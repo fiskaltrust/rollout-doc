@@ -16,7 +16,7 @@ In addition to on-premise installations, fiskaltrust offers a Middleware hosting
 
 
 ## Self-hosted vs. SaaS
-fiskaltrust now also offers our [CloudCashbox](./cloudcashbox) a fully hosted SaaS (_Software as a Service_) version in all markets where the Middleware can be used.
+fiskaltrust now also offers our [CloudCashbox](../cloudcashbox) a fully hosted SaaS (_Software as a Service_) version in all markets where the Middleware can be used.
 
 
 ## Guidelines
