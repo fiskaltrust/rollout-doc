@@ -1,17 +1,162 @@
-:::caution 
+## Funktionsübersicht
 
-Ab dem 1. Januar 2025 tritt die Meldepflicht nach § 146a Abs. 4 der Abgabenordnung (AO) in Kraft. Diese Regelung besagt, dass alle elektronischen Aufzeichnungssysteme, die ab dem 1. Juli 2025 beschafft oder außer Betrieb genommen werden, innerhalb eines Monats nach Anschaffung oder Außerbetriebnahme gemeldet werden müssen. Darüber hinaus müssen alle Kassen, die vor dem 1. Juli 2025 in Betrieb genommen wurden und noch nicht als aktiv gemeldet sind, bis spätestens 31. Juli 2025 gemeldet werden.
+Der Hauptzweck des Meldungs-Workflows besteht darin, **Händlern die Möglichkeit zu geben, Betreiber** durch die Verwaltung ihres Onboarding-Prozesses mithilfe strukturierter und nachverfolgbarer Meldungen **zu unterstützen**. Dadurch wird sichergestellt, dass Unternehmens-, Standort- und Kassendaten korrekt ausgefüllt werden, was für eine erfolgreiche Fiskalisierung und Compliance unerlässlich ist.
 
-:::
+### Rollen und Verantwortlichkeiten
 
+• **Händler**: Aktiviert Meldungen, hilft bei der Dateneingabe und Fehlerbehebung, verfolgt den Status und stellt sicher, dass die Betreiber das Onboarding-Formular ausfüllen.
 
-## Verfügbarkeit
-Dieses Produkt wird ab dem 1. Januar 2025 verfügbar sein.
+• **Betreiber**: Gibt genaue Unternehmens-, Standort- und Kasseninformationen ein und reicht das erforderliche Onboarding-Formular ein.
 
-## Produkte & Produktpakete
-- fiskaltrust.Sorglos ohne TSE (4445-10040)
-- fiskaltrust.Sorglos mit TSE (Hardware- und Cloud-TSEs)
-- Standort-basiertes Einzelprodukt
+• **fiskaltrust**: Bietet technischen Support für Händler und hilft bei der Lösung von System- oder Datenproblemen.
+
+### Zugriff und Navigation
+
+Händler können über das Händlerportal auf die Seite „**Meldungen**” zugreifen, indem sie zu folgendem Pfad navigieren:
+**KassenHändler → Meldungen.**
+
+Auf dieser Seite werden alle zugehörigen Betreiber und deren Meldungsstatus aufgelistet.
+
+### Abonnementanforderungen
+
+Meldungen können nur aktiviert werden, wenn der Betreiber ein aktives Abonnement für eines der erforderlichen Produkte hat:
+
+• **fiskaltrust.Sorglos ohne TSE** oder
+
+• **fiskaltrust.Sorglos mit TSE-as-a-Service** oder
+
+**• fiskaltrust.Finanzamtsmeldung**
+
+Diese Abonnements können über das **Rollout-Management** erworben werden.
+
+Wenn für einen Betreiber kein gültiges Abonnement vorliegt, wird:
+
+• ist das Dropdown-Menü für Meldungen deaktiviert, und
+
+• Händler müssen zunächst sicherstellen, dass das Produkt gekauft wurde, bevor Meldungen gesendet werden können.
+
+### Senden und Verwalten von Meldungen
+
+So aktivieren Sie Meldungen:
+
+• Händler setzen die Dropdown-Liste für BetreiberMeldungen auf „**Aktiviert**”.
+
+• Durch diese Aktion wird eine **Onboarding-E-Mail** an den Betreiber gesendet:
+
+![Onboarding Email](./images/OnboardingEmail_DE.png)
+
+Die Onboarding-E-Mail enthält:
+
+• Eine kurze Erläuterung des Meldungsprozesses
+
+• Einen Link zu einem **4-stufigen Datenformular**, das der Betreiber ausfüllen muss:
+
+1\. Unternehmensinformationen
+
+2\. Angaben zu Standorten
+
+3\. Registrierkassen-Setup
+
+4\. Abschließende Überprüfung und Übermittlung
+
+Das Formular kann nur übermittelt werden, wenn **alle erforderlichen Felder** korrekt ausgefüllt sind.
+
+### Warum korrekte Daten wichtig sind
+
+Meldungen sind auf vollständige und korrekte Daten angewiesen, um erfolgreich zugestellt werden zu können. Fehlende oder fehlerhafte Eingaben wie:
+
+• Falsche **Steuernummer**
+
+• Fehlende **POSsystemID**
+
+• Unvollständige Adressen
+
+können die erfolgreiche Zustellung von Meldungen verhindern.
+
+### Meldungsprozess
+
+Nach dem Absenden des Formulars:
+
+• Das System plant die Meldung für das nächste verfügbare Zeitfenster ein.
+
+• Häufigkeit und Zeitpunkt werden durch die interne Planung festgelegt und später ausführlicher dokumentiert.
+
+Wenn der Betreiber das Formular nicht abgeschickt hat:
+
+• Händler können die **Onboarding-E-Mail** über das Portal **erneut versenden.**
+
+Händler können außerdem:
+
+• Meldungen aktivieren/deaktivieren
+
+• Nach Status filtern
+
+• Das Versenden von Meldungen manuell auslösen
+
+• Pro Betreiber aufgelistete Probleme überprüfen (z. B. fehlende Daten)
+
+Wenn die Meldung erfolgreich war, erhält der Betreiber eine Bestätigungs-E-Mail mit dem ELSTER-Übermittlungsprotokoll im Anhang:
+
+![Confirmation Email](./images/ConfirmationEmail_DE.png)
+
+## Fehlerbehebung und Support
+
+### Häufige Probleme
+
+• **Falsche Standort-Konfiguration:**
+
+Wenn eine Queue mit dem falschen Standort verknüpft ist, muss der Händler die Standort-Konfiguration korrigieren.
+
+• **Doppelte Outlets:**
+
+Wenn mehrere Standorte denselben physischen Standort repräsentieren (z. B. aufgrund virtueller Standort-Duplikate), verwenden Sie das Feld „Location-ID“ in der Ansicht „Outlet bearbeiten“, um sie zu einem zu gruppieren.
+
+### Umgang mit fehlgeschlagenen Meldungen
+
+Wenn eine Meldung fehlschlägt:
+
+• Überprüfen Sie die Spalte **Probleme** auf fehlende oder falsche Daten.
+
+• Unterstützen Sie den Betreiber bei der Korrektur der Informationen.
+
+• Senden Sie die Onboarding-E-Mail bei Bedarf erneut.
+
+Wenn Meldungen deaktiviert und später wieder aktiviert werden:
+
+• Der Betreiber kann weiterhin auf das Formular zugreifen.
+
+• Meldungen werden nur gesendet, wenn der Status „**Aktiviert**“ ist.
+
+• Händler sollten Betreiber klar darüber informieren, wenn Meldungen pausiert werden.
+
+### E-Mail- und Statusmitteilungen
+
+• **Händler**: Sehen Sie den Status in Echtzeit im Portal und melden Sie sich für E-Mail-Zusammenfassungen (wöchentlich oder zweiwöchentlich) an.
+
+• **Betreiber**: Erhalten Sie Onboarding-E-Mails und Updates.
+
+### Best Practices für Händler
+
+• Überprüfen Sie regelmäßig den Meldungsstatus und die Spalte „Probleme”.
+
+• Unterstützen Sie die Betreiber aktiv beim Ausfüllen des Formulars.
+
+• Verwenden Sie Filter, um Prioritäten zu setzen (z. B. fehlgeschlagene Meldungen).
+
+• Verwenden Sie Massenaktionen für eine effiziente Verwaltung.
+
+• Führen Sie Protokolle für Compliance und Support.
+
+| Schritt | Verantwortlichkeiten des Händlers | Verantwortlichkeiten des Betreibers |
+| --- | --- | --- |
+| 1\. Abonnement Check | \- Überprüfen Sie, ob der Betreiber über ein aktives Abonnement verfügt (fiskaltrust.Carefree ohne TSE / fiskaltrust.Carefree mit TSE-as-a-Service oder fiskaltrust. Finanzamtsmeldung).<br><br>\- Bei Bedarf erwerben Sie das Produkt über das Rollout-Management oder verlängern das bestehende Abonnement (über Abonnements). | —   |
+| 2\. Meldungen aktivieren | \- Gehen Sie zur Seite „Meldungen“ im Händlerportal.<br><br>\- Setzen Sie den Benachrichtigungsstatus des Betreibers auf „Aktiviert“ (dadurch wird eine Onboarding-E-Mail versendet). | —   |
+| 3\. Dateneingabe des Betreibers | —   | \- Öffnen Sie die Onboarding-E-Mail.<br><br>\- Füllen Sie das 4-stufige Datenformular aus:<br><br>\- Unternehmensdaten<br><br>\- Informationen zu Standorten<br><br>\- Registrierkassensetup<br><br>\- Überprüfen und senden Sie das Formular |
+| 4\. Datenvalidierung und Fehlerbehebung | \- Überwachen Sie den Fortschritt des Betreibers auf der Seite „Meldungen“.<br><br>\- Senden Sie die Onboarding-E-Mail erneut, wenn das Formular nicht übermittelt wurde oder der Betreiber einen Link zum Formular anfordert.<br><br>\- Überprüfen Sie die Spalte „Probleme“ auf fehlende/falsche Daten.<br><br>\- Unterstützen Sie den Betreiber bei der Korrektur von Fehlern. | \- Korrigieren Sie alle im Formular hervorgehobenen Fehler.<br><br>\- Wenden Sie sich bei Bedarf an den Händler, um Hilfe zu erhalten. |
+| 5\. Versand der Meldungen und Statusverfolgung | \- Verfolgen Sie den Status von Meldungen (geplant, gesendet, fehlgeschlagen, blockiert).<br><br>\- Aktivieren/deaktivieren oder lösen Sie Meldungen manuell aus.<br><br>\- Verwenden Sie Filter, um Betreiber zu priorisieren.<br><br>\- Führen Sie Aufzeichnungen für Compliance und Support. | \- Überprüfen Sie Bestätigungs- oder Folge-E-Mails.<br><br>\- Bleiben Sie auf dem Laufenden, wenn Benachrichtigungen pausiert oder deaktiviert sind. |
+| 6\. Laufender Support | \- Halten Sie die Kommunikation mit den Betreibern aufrecht.<br><br>\- Wenden Sie sich bei technischen Problemen an den Support von fiskaltrust. | \- Wenden Sie sich bei Fragen oder für Unterstützung an Ihren Händler. |
+
+![Notification Flow](./images/NotificationFlow_DE.png)
 
 ## Rechtliche Grundlagen
 Abgabenordnung : [§ 146a Abs. 4 AO](https://www.gesetze-im-internet.de/ao_1977/__146a.html)
@@ -261,9 +406,3 @@ Eine Meldung an das Finanzamt muss immer nur dann erfolgen, wenn eine Anlage ode
 ### Wird es eine automatische Möglichkeit geben, die Daten nachzupflegen?
 
 Für Kunden mit großer Anzahl an Kassen und Standorten wird es die Möglichkeit geben, Daten gesammelt nachzupflegen.
-
----
-
-### Ab wann wird der KassenHändler die Meldung für seine Betreiber aktivieren können (opt-in)?
-
-Mitte Januar 2025
