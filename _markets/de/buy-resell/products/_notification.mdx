@@ -1,22 +1,260 @@
-:::caution 
-
-From 1 January 2025, the notification obligation pursuant to Section 146a (4) of the German Fiscal Code (AO) will come into force. This regulation states that all electronic recording systems purchased or decommissioned from 1 July 2025 onwards must be reported within one month of acquisition or decommissioning. In addition, all cash registers that were put into operation before 1 July 2025 and are still active must be reported by 31 July 2025 at the latest.
-:::
-
 Notification to the responsible tax office for the activation and deactivation of digital recording systems starting 2025. 
 
-## Availability
+## Feature Overview
 
-This product will be available by January 1st 2025.
+The core purpose of the Notifications workflow is to **enable Dealers to support Operators** by managing their onboarding process through structured and trackable notifications. This ensures that company, outlet, and register data are correctly completed, which is essential for successful fiscalization and compliance.
 
-## Product Bundles (including all single products)
+### Roles & Responsibilities
 
-- fiskaltrust.Sorglos ohne TSE (4445-10040)
-- fiskaltrust.Sorglos mit TSE
+- **Dealer**: Enables notifications, assists with data entry and troubleshooting, tracks status, and ensures Operators complete the onboarding form.
+- **Operator**: Enters accurate company, outlet, and register information and submits the required onboarding form.
+- **fiskaltrust**: Provides technical support to Dealers and helps resolve any system or data-related issues.
 
-## Single Products
+### Access & Navigation
 
-Outlet based single product is planned
+Dealers can access the **Notifications page** via the Dealer Portal by navigating to:  
+**PosDealer** → **Notifications**.  
+This page lists all associated Operators and their notification statuses.
+
+### Subscription Requirements
+
+Notifications can only be enabled if the Operator has an **active subscription** to one of the required products:
+
+- **fiskaltrust.Carefree without TSE** or
+- **fiskaltrust.Carefree with TSE-as-a-Service** or
+- **fiskaltrust. Finanzamtsmeldung**
+
+These subscriptions can be purchased via [**Rollout Management**](https://docs.fiskaltrust.cloud/docs/posdealers/buy-resell/rollout-plans#introduction).
+
+If no valid subscription is detected for an Operator:
+
+- The notifications dropdown is **disabled**, and
+- Dealers must first ensure the product is purchased before notifications can be sent.
+
+### Sending and Managing Notifications
+
+To enable notifications:
+
+- Dealers set the Operator’s notification dropdown to **“Enabled”**.
+- This action sends an **onboarding email** to the Operator:
+
+![Onboarding Email](./images/OnboardingEmail_DE.png)
+
+The onboarding email includes:
+
+- A brief explanation of the notifications process
+- A link to a **4-step data form** for the Operator to complete:
+    1. Company information
+    2. Outlet details
+    3. Cash register setup
+    4. Final review and submission
+
+Form submission is only possible if **all required fields** are completed correctly.
+
+### Why Accurate Data Matters
+
+Notifications rely on **complete and correct data** to be delivered successfully. Missing or malformed inputs like:
+
+- Incorrect **Steuernummer (Tax ID)**
+- Missing **POSsystemID**
+- Incomplete addresses  
+    can all prevent the successful sending of notifications.
+
+### Notification Lifecycle
+
+After form submission:
+
+- The system **schedules** the notification for the next available time slot.
+- Frequency and timing are determined by internal scheduling and will be documented in more detail later.
+
+If the Operator hasn’t submitted the form:
+
+- Dealers can **resend the onboarding email** from the portal.
+
+Dealers can also:
+
+- Enable/disable notifications
+- Filter by status
+- Manually trigger notification sending
+- Review **Issues** listed per Operator (e.g., missing data)
+
+If the notification was successful, the operator receives a **confirmation email** with the ELSTER-Übermittlungsprotokoll attached:
+
+![Confirmation Email](./images/ConfirmationEmail_DE.png)
+
+## Troubleshooting & Support  
+
+### Common Problems
+
+- **Wrong Outlet configuration**:  
+    If a Queue is linked to the wrong Outlet, Dealers should correct the Outlet configuration.
+- **Duplicate Outlets**:  
+    If multiple outlets represent the same physical location (e.g., due to virtual duplicates), use the **Location ID** field in the Outlet Edit screen to group them as one.
+
+### Dealing with Notification Failures
+
+If a notification fails:
+
+- Review the **Issues** column for missing or incorrect data
+- Assist the Operator in correcting the information
+- Resend the onboarding email if needed
+
+If notifications are disabled and later re-enabled:
+
+- The Operator can still access the form
+- Notifications are only sent if status is “Enabled”
+- Dealers should clearly inform Operators when notifications are paused
+
+### Email & Status Communication
+
+- **Dealers**: See real-time statuses in the portal and may opt into **consolidated email summaries** (weekly or bi-weekly).
+- **Operators**: Receive onboarding emails and updates.
+
+### Best Practices for Dealers
+
+- Regularly check notification statuses and Issues column
+- Actively assist Operators in form completion
+- Use filters to prioritize attention (e.g., failed notifications)
+- Use bulk actions for efficient management
+- Maintain logs for compliance and support
+
+| Step | Dealer Responsibilities | Operator Responsibilities |
+| --- | --- | --- |
+| 1\. Subscription Check | \- Check that Operator has an active subscription (fiskaltrust.Carefree without TSE / fiskaltrust.Carefree with TSE-as-a-Service or fiskaltrust. Finanzamtsmeldung).  <br>\- Purchase product if needed via Rollout Management or extend existing subscription via Subscriptions | —   |
+| 2\. Enabling Notifications | \- Go to Notifications page in Dealer Portal.  <br>\- Set Operator’s notification status to Enabled (this sends onboarding email). | —   |
+| 3\. Operator Data Entry | —   | \- Open onboarding email.  <br>\- Complete 4-step data form:  <br>\- Company details  <br>\- Outlet information  <br>\- Cash register setup  <br>\- Review and submit form. |
+| 4\. Data Validation & Troubleshooting | \- Monitor Operator progress on Notifications page.  <br>\- Resend onboarding email if form not submitted or link to form is requested by operator  <br>\- Check Issues column for missing/incorrect data.  <br>\- Assist Operator in correcting errors. | \- Correct any errors highlighted in the form.  <br>\- Contact Dealer for help if needed. |
+| 5\. Notification Sending & Status Tracking | \- Track notification status (scheduled, sent, failed, blocked).  <br>\- Enable/disable or trigger notifications manually.  <br>\- Use filters to prioritize Operators.  <br>\- Keep records for compliance and support. | \- Monitor confirmation or follow-up emails.  <br>\- Stay informed if notifications are paused or disabled. |
+| 6\. Ongoing Support | \- Maintain communication with Operators.  <br>\- Contact fiskaltrust support for technical issues. | \- Reach out to Dealer with questions or for assistance. |
+
+![Notification Flow](./images/NotificationFlow_DE.png)## Feature Overview
+
+The core purpose of the Notifications workflow is to **enable Dealers to support Operators** by managing their onboarding process through structured and trackable notifications. This ensures that company, outlet, and register data are correctly completed, which is essential for successful fiscalization and compliance.
+
+### Roles & Responsibilities
+
+- **Dealer**: Enables notifications, assists with data entry and troubleshooting, tracks status, and ensures Operators complete the onboarding form.
+- **Operator**: Enters accurate company, outlet, and register information and submits the required onboarding form.
+- **fiskaltrust**: Provides technical support to Dealers and helps resolve any system or data-related issues.
+
+### Access & Navigation
+
+Dealers can access the **Notifications page** via the Dealer Portal by navigating to:  
+**PosDealer** → **Notifications**.  
+This page lists all associated Operators and their notification statuses.
+
+### Subscription Requirements
+
+Notifications can only be enabled if the Operator has an **active subscription** to one of the required products:
+
+- **fiskaltrust.Carefree without TSE** or
+- **fiskaltrust.Carefree with TSE-as-a-Service** or
+- **fiskaltrust. Finanzamtsmeldung**
+
+These subscriptions can be purchased via [**Rollout Management**](https://docs.fiskaltrust.cloud/docs/posdealers/buy-resell/rollout-plans#introduction).
+
+If no valid subscription is detected for an Operator:
+
+- The notifications dropdown is **disabled**, and
+- Dealers must first ensure the product is purchased before notifications can be sent.
+
+### Sending and Managing Notifications
+
+To enable notifications:
+
+- Dealers set the Operator’s notification dropdown to **“Enabled”**.
+- This action sends an **onboarding email** to the Operator:
+
+![Onboarding Email](./images/OnboardingEmail_DE.png)
+
+The onboarding email includes:
+
+- A brief explanation of the notifications process
+- A link to a **4-step data form** for the Operator to complete:
+    1. Company information
+    2. Outlet details
+    3. Cash register setup
+    4. Final review and submission
+
+Form submission is only possible if **all required fields** are completed correctly.
+
+### Why Accurate Data Matters
+
+Notifications rely on **complete and correct data** to be delivered successfully. Missing or malformed inputs like:
+
+- Incorrect **Steuernummer (Tax ID)**
+- Missing **POSsystemID**
+- Incomplete addresses  
+    can all prevent the successful sending of notifications.
+
+### Notification Lifecycle
+
+After form submission:
+
+- The system **schedules** the notification for the next available time slot.
+- Frequency and timing are determined by internal scheduling and will be documented in more detail later.
+
+If the Operator hasn’t submitted the form:
+
+- Dealers can **resend the onboarding email** from the portal.
+
+Dealers can also:
+
+- Enable/disable notifications
+- Filter by status
+- Manually trigger notification sending
+- Review **Issues** listed per Operator (e.g., missing data)
+
+If the notification was successful, the operator receives a **confirmation email** with the ELSTER-Übermittlungsprotokoll attached:
+
+![Confirmation Email](./images/ConfirmationEmail_DE.png)
+
+## Troubleshooting & Support  
+
+### Common Problems
+
+- **Wrong Outlet configuration**:  
+    If a Queue is linked to the wrong Outlet, Dealers should correct the Outlet configuration.
+- **Duplicate Outlets**:  
+    If multiple outlets represent the same physical location (e.g., due to virtual duplicates), use the **Location ID** field in the Outlet Edit screen to group them as one.
+
+### Dealing with Notification Failures
+
+If a notification fails:
+
+- Review the **Issues** column for missing or incorrect data
+- Assist the Operator in correcting the information
+- Resend the onboarding email if needed
+
+If notifications are disabled and later re-enabled:
+
+- The Operator can still access the form
+- Notifications are only sent if status is “Enabled”
+- Dealers should clearly inform Operators when notifications are paused
+
+### Email & Status Communication
+
+- **Dealers**: See real-time statuses in the portal and may opt into **consolidated email summaries** (weekly or bi-weekly).
+- **Operators**: Receive onboarding emails and updates.
+
+### Best Practices for Dealers
+
+- Regularly check notification statuses and Issues column
+- Actively assist Operators in form completion
+- Use filters to prioritize attention (e.g., failed notifications)
+- Use bulk actions for efficient management
+- Maintain logs for compliance and support
+
+| Step | Dealer Responsibilities | Operator Responsibilities |
+| --- | --- | --- |
+| 1\. Subscription Check | \- Check that Operator has an active subscription (fiskaltrust.Carefree without TSE / fiskaltrust.Carefree with TSE-as-a-Service or fiskaltrust. Finanzamtsmeldung).  <br>\- Purchase product if needed via Rollout Management or extend existing subscription via Subscriptions | —   |
+| 2\. Enabling Notifications | \- Go to Notifications page in Dealer Portal.  <br>\- Set Operator’s notification status to Enabled (this sends onboarding email). | —   |
+| 3\. Operator Data Entry | —   | \- Open onboarding email.  <br>\- Complete 4-step data form:  <br>\- Company details  <br>\- Outlet information  <br>\- Cash register setup  <br>\- Review and submit form. |
+| 4\. Data Validation & Troubleshooting | \- Monitor Operator progress on Notifications page.  <br>\- Resend onboarding email if form not submitted or link to form is requested by operator  <br>\- Check Issues column for missing/incorrect data.  <br>\- Assist Operator in correcting errors. | \- Correct any errors highlighted in the form.  <br>\- Contact Dealer for help if needed. |
+| 5\. Notification Sending & Status Tracking | \- Track notification status (scheduled, sent, failed, blocked).  <br>\- Enable/disable or trigger notifications manually.  <br>\- Use filters to prioritize Operators.  <br>\- Keep records for compliance and support. | \- Monitor confirmation or follow-up emails.  <br>\- Stay informed if notifications are paused or disabled. |
+| 6\. Ongoing Support | \- Maintain communication with Operators.  <br>\- Contact fiskaltrust support for technical issues. | \- Reach out to Dealer with questions or for assistance. |
+
+![Notification Flow](./images/NotificationFlow_DE.png)
 
 ## Legal Baseline
 Law: [§ 146a Abs. 4 AO](https://www.gesetze-im-internet.de/ao_1977/__146a.html)
@@ -59,10 +297,6 @@ Since we use data from the fiskaltrust.Middleware and fiskaltrust.Portal to gene
 | POSOperator-Account | Company info / Outlets | Postal code | The postal code is mandatory.|
 | POSOperator-Account | Company info / Outlets | City | The city is mandatory.|
 
-#### Dealer overview
-In the Menu _PosDealer_-> Notifications you'll get an overview of all connected _PosOperators_. Enabling _Automatic Notification_ will trigger the mail with the form being sent to the _PosOperator_.
-
-![DealerOverview1](./images/dealer-Overview.png)
 ### Preriquities for POSCreators
 The fiskaltrust.Notification product won't require a new implementation. However there are processes, receipts and data that have already been part of the fiskaltrust.Middleware that are now mandatory for the notification. 
 
@@ -261,9 +495,3 @@ A notification to the tax office is only required when there is a new entry or a
 ### Will there be an automatic option to update the data?
 
 For customers with a large number of cash registers and locations, there will be an option to update the data collectively.
-
----
-
-### When will the cash register dealer be able to activate the notification for their operators (opt-in)?
-
-Mid of January 2025
