@@ -17,7 +17,7 @@ After reading this, you can prepare a system where the Middleware will run.
 | **Operating System:** <br /> Windows        | **Windows 7** or higher <br />**.NET Framework >= 4.8** |
 | **Operating System:** <br /> Linux & macOS  | Ubuntu or Debian recommended<br />**Mono >= 6.8.0**<br />SOAP is not supported, gRPC is recommended |
 | **Operating System:** <br /> Android        | **Germany only**<br />**Android 7** or higher<br />Swissbit or Fiskaly TSSs only |
-| **Databases**                         | **SQLite** (local DB)<br />**MS SQL Server** (All versions currently supported by Microsoft)<br />**MySQL** (Germany only) |
+| **Databases**                         | **SQLite** (local DB)<br />**MS SQL Server** (All versions currently supported by Microsoft)<br />**MySQL** (only for use with Bring your own datacenter) |
 | **Hardware**                          | At least 200MB of memory per Queue<br/> |
 |**CPU Architecture**                   | Multicore CPU recommended <br /> * x86 <br/> * x64 <br/> * ARM usable with restrictions - [more details here](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/operation-modes#arm-processor) <br />The actual memory amount depends on the amount of receipts to process. |
 | **Local Storage**                     | At least 500 MB (200 MB for the Middleware + 200 MB reserved for update packages)<br />Optional: Storage for SQLite DB (~ 8-10Kb/receipt) |
@@ -70,3 +70,4 @@ Android 7 and higher is supported. Due to the security restrictions of Android, 
 This Google security restriction also implies that our regular package update mechanism is not supported on Android. To receive the latest middleware updates, the APK must therefore be updated either via Google Play or Mobile Device Management.
 
 Additional information on how to run the Middleware on Android can be found [here](https://github.com/fiskaltrust/middleware-demo-android).
+
