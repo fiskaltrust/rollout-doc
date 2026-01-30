@@ -91,9 +91,9 @@ The first step in debugging connectivity issues is typically the Middleware's lo
 If you find any of the following error messages in the log output, it may suggest an issue in the area mentioned in the right column.
 
 | Error message                                                    | Typically suggests                                             |
-| ---------------------------------------------------------------- | -------------------------------------------------------------- |
+|------------------------------------------------------------------|----------------------------------------------------------------|
 | The remote name could not be resolved                            | [DNS issues](#dns)                                             |
-| Unable to connect to the remote server                           | [General network issues](#network) (e.g., ports blocked)        |
+| Unable to connect to the remote server                           | [General network issues](#network) (e.g., ports blocked)       |
 | The request was aborted: Could not create SSL/TLS secure channel | [SSL issues](#ssl)                                             |
 | Failed to connect to all addresses                               | [Connection issue between queue and SCU](#queuescu-connection) |
 
@@ -185,7 +185,7 @@ Apart from firewalls, the most common issue is an improperly configured SSL stac
 
 If your operating system is not supported or you have customized your certificate trust store, you may have to import/configure the certificates manually. You can obtain the necessary certificate details in two ways.
 
-* By opening the site in question in your browser and [accessing the certificates from the security dialog](https://search.brave.com/search?q=accessing+certificate+chain+in+browser).
+* By opening the site in question in your browser and [accessing the certificates from the security dialog](https://google.com/search?q=accessing+certificate+chain+in+browser).
 * By downloading the applicable certificate pack from fiskaltrust.Portal under `Tools` / `Download` (subject to availability).
 
 

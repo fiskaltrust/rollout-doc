@@ -114,7 +114,7 @@ In short, a traditional JSON string with quotation marks escaped with a slash, n
 
 :::tip
 
-You can escape the template with a [number of tools](https://search.brave.com/search?q=escape+json), such as e.g. [freeformatter.com](https://www.freeformatter.com/json-escape.html) or [codebeautify.org](https://codebeautify.org/json-escape-unescape). If you are comfortable with the browser console (F12), you can also use [JSON.stringify()](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to escape the template object. **Please make sure quotation marks enclose the string.**
+You can escape the template with a [number of tools](https://google.com/search?q=escape+json), such as e.g. [freeformatter.com](https://www.freeformatter.com/json-escape.html) or [codebeautify.org](https://codebeautify.org/json-escape-unescape). If you are comfortable with the browser console (F12), you can also use [JSON.stringify()](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to escape the template object. **Please make sure quotation marks enclose the string.**
 
 :::
 
@@ -137,11 +137,11 @@ Similar to [Custom variables](#custom-variables), you can customize many of the 
 
 There are three main queue parameters, each using a **zero-based** index to indicate the queue of the template where you'd like to apply the value.
 
-| Parameter                          | Description                                                  |
-| ---------------------------------- | ------------------------------------------------------------ |
-| `queue{0-n}_cashboxidentification` | The identifier of the CashBox.                               |
+| Parameter                          | Description                                                                                       |
+|------------------------------------|---------------------------------------------------------------------------------------------------|
+| `queue{0-n}_cashboxidentification` | The identifier of the CashBox.                                                                    |
 | `queue{0-n}_countrycode`           | [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the queue. |
-| `queue{0-n}_timeout`               | Specifying a millisecond value for the timeout of the queue. |
+| `queue{0-n}_timeout`               | Specifying a millisecond value for the timeout of the queue.                                      |
 
 For example, to specify a timeout value of 10,000 milliseconds for the **second** queue in your template, you'd append `queue1_timeout=10000` to the query string of your HTTP call.
 
@@ -185,10 +185,10 @@ If your response indicates a status code `200`, the request properly went throug
 }
 ```
 
-| Field           | Description                                                  |
-| --------------- | ------------------------------------------------------------ |
-| `cashBoxId`     | The ID of the created CashBox.                               |
-| `accessToken`   | The access token of the created CashBox.                     |
+| Field           | Description                                                                                             |
+|-----------------|---------------------------------------------------------------------------------------------------------|
+| `cashBoxId`     | The ID of the created CashBox.                                                                          |
+| `accessToken`   | The access token of the created CashBox.                                                                |
 | `configuration` | The configuration object of the new CashBox, as escaped JSON string and based on the provided template. |
 
 Here, in particular, `cashBoxId` and `accessToken` are interesting, as they allow you to provision the CashBox automatically. To do that, please deploy a vanilla [Launcher](../middleware/launchers/desktop.md) instance on the destination system and set its [CashBox ID and Access Token parameters](../middleware/configuration.md) to the values you received in the response.
@@ -228,16 +228,16 @@ import ReactPlayer from "react-player"
 
 <ReactPlayer controls url={require("./media/postman_example.mp4").default} /><br />
 
-|               Step               | Description                                                  |
-| :------------------------------: | ------------------------------------------------------------ |
-| ![](../../images/numbers/1.png)  | Import the [demo collection](../../assets/template_postman.zip) into your Postman instance. |
-| ![](../../images/numbers/2.png)  | Create a duplicate entry of the Sandbox environment.         |
-| ![](../../images/numbers/3.png)  | Open the newly created entry.                                |
-| ![](../../images/numbers/4.png)  | In the `Params` tab, specify the desired Sandbox outlet ID and CashBox description. |
-| ![](../../images/numbers/5.png)  | In the `Headers` tab, specify your Sandbox [account ID and Access Token](#prerequisites). |
-| ![](../../images/numbers/6.png)  | In the portal, fetch a demo template from `Configuration` / `Template`. |
-| ![](../../images/numbers/7.png)  | [Escape](#escaping-the-template) the template.               |
-| ![](../../images/numbers/8.png)  | In the `Body` tab, add the escaped template as JSON string.  |
-| ![](../../images/numbers/9.png)  | Send the request using the `Send` button.                    |
-| ![](../../images/numbers/10.png) | Check if the response indicated a successful request.        |
+| Step                             | Description                                                                                  |
+|----------------------------------|----------------------------------------------------------------------------------------------|
+| ![](../../images/numbers/1.png)  | Import the [demo collection](../../assets/template_postman.zip) into your Postman instance.  |
+| ![](../../images/numbers/2.png)  | Create a duplicate entry of the Sandbox environment.                                         |
+| ![](../../images/numbers/3.png)  | Open the newly created entry.                                                                |
+| ![](../../images/numbers/4.png)  | In the `Params` tab, specify the desired Sandbox outlet ID and CashBox description.          |
+| ![](../../images/numbers/5.png)  | In the `Headers` tab, specify your Sandbox [account ID and Access Token](#prerequisites).    |
+| ![](../../images/numbers/6.png)  | In the portal, fetch a demo template from `Configuration` / `Template`.                      |
+| ![](../../images/numbers/7.png)  | [Escape](#escaping-the-template) the template.                                               |
+| ![](../../images/numbers/8.png)  | In the `Body` tab, add the escaped template as JSON string.                                  |
+| ![](../../images/numbers/9.png)  | Send the request using the `Send` button.                                                    |
+| ![](../../images/numbers/10.png) | Check if the response indicated a successful request.                                        |
 | ![](../../images/numbers/11.png) | In the portal, verify if the CashBox was properly created under `Configuration` / `CashBox`. |

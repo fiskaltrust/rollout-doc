@@ -1,0 +1,6 @@
+https?://localhost(:[0-9]+)?/.*
+
+https?://portal(-sandbox)\.fiskaltrust\....?/.*
+
+https?://support\.fiskaly\.com/.*
+https://www.gs1.org/standards/id-keys/gln
