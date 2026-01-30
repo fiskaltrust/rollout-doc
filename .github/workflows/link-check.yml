@@ -33,3 +33,7 @@ jobs:
         with:
           args: "./i18n/ --exclude '^file://.*'"
           fail: true
+
+      - name: Check if any step failed
+        if: steps.lychee.outcome == 'failure' || steps.lychee_markets.outcome == 'failure' || steps.lychee_i18n.outcome == 'failure'
+        run: exit 1
