@@ -19,6 +19,7 @@ jobs:
         with:
           args: ". --exclude-path '.*/_.*' --exclude-path '.*/i18n/.*'"
           fail: true
+          lycheeVersion: 0.22.0
 
       - uses: lycheeverse/lychee-action@v2
         id: lychee_markets
@@ -26,6 +27,7 @@ jobs:
         with:
           args: "./_markets/ --exclude '^file://.*'"
           fail: true
+          lycheeVersion: 0.22.0
 
       - uses: lycheeverse/lychee-action@v2
         id: lychee_i18n
@@ -33,6 +35,7 @@ jobs:
         with:
           args: "./i18n/ --exclude '^file://.*'"
           fail: true
+          lycheeVersion: 0.22.0
 
       - name: Check if any step failed
         if: steps.lychee.outcome == 'failure' || steps.lychee_markets.outcome == 'failure' || steps.lychee_i18n.outcome == 'failure'
