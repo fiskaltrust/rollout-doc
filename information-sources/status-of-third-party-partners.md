@@ -38,7 +38,7 @@ import ThirdPartyStatusDE from '../_markets/de/buy-resell/products/_third-party-
   </TabItem>
 
   <TabItem value="FR" label="France">
-    <TThirdPartyStatusFR />
+    <ThirdPartyStatusFR />
   </TabItem>
 
   <TabItem value="DE" label="Germany">
