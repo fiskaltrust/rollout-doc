@@ -20,10 +20,10 @@ The Middleware requires a basic set of network access to perform its function. F
 A fully functioning Middleware setup requires a few **outbound** connections (e.g., querying for changes to your CashBox configuration). Therefore, please ensure the machine where the Middleware is active has proper network access to the following hostnames.
 
 | Hostname                     | Protocol | Port(s) | Description                                                                                                                    |
-| ---------------------------- | :------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------ |
-| packages.fiskaltrust.cloud   |   TCP    |   443   | Provides the required binary packages of the CashBox components                                                                |
-| helipad.fiskaltrust.cloud    |   TCP    |   443   | Provides the CashBox configuration and the archive service                                                                     |
-| dc.services.visualstudio.com |   TCP    |   443   | Error reporting (Microsoft provides a [list of IP addresses](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses)) |
+|------------------------------|----------|---------|--------------------------------------------------------------------------------------------------------------------------------|
+| packages.fiskaltrust.cloud   | TCP      | 443     | Provides the required binary packages of the CashBox components                                                                |
+| helipad.fiskaltrust.cloud    | TCP      | 443     | Provides the CashBox configuration and the archive service                                                                     |
+| dc.services.visualstudio.com | TCP      | 443     | Error reporting (Microsoft provides a [list of IP addresses](https://docs.microsoft.com/azure/azure-monitor/app/ip-addresses)) |
 
 
 
@@ -62,7 +62,7 @@ import HostsDE from '../../_markets/de/technical-operations/middleware/network-r
 
 :::tip address lookup
 
-Should you need to determine the IP addresses of these hostnames for your network policies, please use the appropriate tools on your local workstation (e.g., nslookup or dig) or an [online lookup service](https://search.brave.com/search?q=dns+lookup+online).
+Should you need to determine the IP addresses of these hostnames for your network policies, please use the appropriate tools on your local workstation (e.g., nslookup or dig) or an [online lookup service](https://google.com/search?q=dns+lookup+online).
 
 :::
 
@@ -81,13 +81,13 @@ Suppose your network requires a proxy for outbound connections. In that case, yo
 
 Setting the configuration parameters can be done using the Launcher's [`-proxy` parameter](https://docs.fiskaltrust.cloud/docs/poscreators/middleware-doc/general/installation#launcher-configuration). This parameter takes a semicolon-separated connection string with **five arguments**, specifying the address of the proxy, an optional username and password for authentication, as well as two exception settings.
 
-| Value           | Description                                                                                                                 | Required |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------- | -------: |
-| address         | The URL of the proxy *(if only a hostname is provided, default is set to HTTP)*                                                    |      Yes |
-| username        | The user which should be used for authentication against the proxy                                                          |       No |
-| password        | The password of the proxy user                                                                                              |       No |
-| bypass          | A regular expression with host addresses and names that ought to be exempt from proxying<br />*Can be used more than once* |       No |
-| bypasslocalhost | Indicates whether local connections require proxying as well (`false` or `true`)                                            |       No |
+| Value           | Description                                                                                                                | Required |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------|----------|
+| address         | The URL of the proxy *(if only a hostname is provided, default is set to HTTP)*                                            | Yes      |
+| username        | The user which should be used for authentication against the proxy                                                         | No       |
+| password        | The password of the proxy user                                                                                             | No       |
+| bypass          | A regular expression with host addresses and names that ought to be exempt from proxying<br />*Can be used more than once* | No       |
+| bypasslocalhost | Indicates whether local connections require proxying as well (`false` or `true`)                                           | No       |
 
 #### Example Proxy Strings
 

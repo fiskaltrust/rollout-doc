@@ -1,0 +1,62 @@
+name: Check Links
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: lycheeverse/lychee-action@v2
+        id: lychee
+        continue-on-error: true
+        with:
+          args: ". --exclude-path '.*/_.*' --exclude-path '.*/i18n/.*'"
+          fail: true
+          lycheeVersion: v0.22.0
+          output: lychee/out.txt
+
+      - uses: lycheeverse/lychee-action@v2
+        id: lychee_markets
+        continue-on-error: true
+        with:
+          args: "./_markets/ --exclude '^file://.*'"
+          fail: true
+          lycheeVersion: v0.22.0
+          output: lychee/out.markets.txt
+
+      - uses: lycheeverse/lychee-action@v2
+        id: lychee_i18n
+        continue-on-error: true
+        with:
+          args: "./i18n/ --exclude '^file://.*'"
+          fail: true
+          lycheeVersion: v0.22.0
+          output: lychee/out.i18n.txt
+
+      - name: Check if any step failed
+        if: steps.lychee.outcome == 'failure' || steps.lychee_markets.outcome == 'failure' || steps.lychee_i18n.outcome == 'failure'
+        run: |
+          echo "## Link Check Failures"
+          if [ "${{ steps.lychee.outcome }}" == "failure" ]; then
+            echo "### Main directory check failed"
+            cat lychee/out.txt 2>/dev/null || echo "No output file found"
+            echo ""
+          fi
+          if [ "${{ steps.lychee_markets.outcome }}" == "failure" ]; then
+            echo "### Markets directory check failed"
+            cat lychee/out.markets.txt 2>/dev/null || echo "No output file found"
+            echo ""
+          fi
+          if [ "${{ steps.lychee_i18n.outcome }}" == "failure" ]; then
+            echo "### i18n directory check failed"
+            cat lychee/out.i18n.txt 2>/dev/null || echo "No output file found"
+            echo ""
+          fi
+          exit 1
