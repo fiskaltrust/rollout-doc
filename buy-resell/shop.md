@@ -12,7 +12,7 @@ After reading this, you can buy and transfer all entitlements manually.
 
 ## Introduction
 
-The shop is the most basic way to buy _fiskaltrust_ [products](products) for PosDealers and PosOperators. You can find the price list for these products [here](overview.md#Contact-information-and-pricelists).
+The shop is the most basic way to buy _fiskaltrust_ [products](products) for PosDealers and PosOperators. You can find the price list for these products [here](overview.md#contact-information-and-pricelists).
 
 :::info prerequisites
 

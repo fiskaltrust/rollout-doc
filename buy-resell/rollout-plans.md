@@ -45,10 +45,6 @@ import BusinessRolloutAT from '../_markets/at/getting-started/my-first-cashbox/_
 
 </Tabs>
 
-### Technical Rollout
-
-You, as a PosDealer,  can use the [technical rollout](../getting-started/my-first-cashbox.md#technical-rollout-creating-the-cashbox) to create the technical components of CashBoxes for the selected PosOperator and outlet. 
-
 ### Benefits of using a rollout plan
 
 #### Saving time

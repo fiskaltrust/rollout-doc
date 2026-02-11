@@ -18,7 +18,7 @@ This chapter is about locally deployed **.NET Middleware** setups (Windows or Mo
 
 :::
 
-The Middleware uses two types of configurations. One is for the actual CashBox instance running; the other defines the Middleware's general runtime settings. For information about the former,  read the chapter [CashBox](cashbox.md#running-a-cashbox-the-middleware).
+The Middleware uses two types of configurations. One is for the actual CashBox instance running; the other defines the Middleware's general runtime settings. For information about the former,  read the chapter [CashBox](cashbox.md).
 Read this chapter for information about the latter.
 
 ## The Configuration File

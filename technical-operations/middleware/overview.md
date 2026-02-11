@@ -38,7 +38,7 @@ The Middleware uses the **iPOS interface** for communication with your POS Syste
 
 In addition to providing your POS setup with a valid signature for each receipt, receipts are also persisted in the **receipt-chain**. The receipt-chain is the Middleware's primary database and keeps track of signed receipts in an audit-proof data structure.
 
-You can **access and export data** from your Middleware instance at all times. Additionally, together with the [archive subscription service](../../buy-resell/products/overview.md#receipt-archive), the receipt-chain is part of the two-tier data approach to ensure the **availability and integrity** of your fiscally relevant business data.
+You can **access and export data** from your Middleware instance at all times. Additionally, together with the [archive subscription service](../../buy-resell/products/overview.md), the receipt-chain is part of the two-tier data approach to ensure the **availability and integrity** of your fiscally relevant business data.
 
 
 

@@ -63,6 +63,6 @@ The data directory contains for each CashBox a `.json` file, as well as a separa
 * a **JSON file** named `Configuration-12345678-9ABC-DEF1-2345-6789ABCDEF12.json`
 * and a **directory** named `12345678-9ABC-DEF1-2345-6789ABCDEF12`
 
-The **JSON file** is the configuration file of the CashBox. The chapter [CashBox](cashbox.md#running-a-cashbox-the-middleware) contains the details on all the components configured for this particular setup. Whenever you restart the Middleware, it will query the portal for any changes to the CashBox configuration and update this file accordingly.
+The **JSON file** is the configuration file of the CashBox. The chapter [CashBox](cashbox.md) contains the details on all the components configured for this particular setup. Whenever you restart the Middleware, it will query the portal for any changes to the CashBox configuration and update this file accordingly.
 
 The **directory**, on the other hand, contains the runtime data of your CashBox, such as package libraries, relevant databases, and exported data files.

@@ -198,4 +198,4 @@ See **Configure a Helper** below for further details of configuration.
 |![Number 2](../../images/numbers/circle-2o.png)| Reduce the List of `Queues` |
 |![Number 3](../../images/numbers/circle-3o.png)| Drag the desired Helper from the menu on the right side and drop it on the left side  |
 |![Number 4](../../images/numbers/circle-4o.png) |Save your changes with `Save`. |
-|... |![Number 5](../../images/numbers/circle-5o.png)Back at `Configuration`/ `CashBox`, select `Rebuild configuration` and restart the CashBox. Note the [formerly mentioned warning](helper.md#HelipadHelper-(Description))|
+|... |![Number 5](../../images/numbers/circle-5o.png)Back at `Configuration`/ `CashBox`, select `Rebuild configuration` and restart the CashBox. Note the [formerly mentioned warning](helper.md#helipadhelper-example)|

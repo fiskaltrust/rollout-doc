@@ -14,7 +14,7 @@ After reading this, you can use the API to roll out templates.
 
 In addition to the other ways of creating a CashBox mentioned in the previous chapters, _fiskaltrust_ also provides a REST API for a fully automated solution to set up CashBoxes. This API takes a generic template, relevant CashBox parameters and variables and creates a new CashBox based on this information. Contrary to [templates used in the shop](shop-templating.md), these templates do not need to be pre-configured, but the content is sent directly with the API request.
 
-The response to a successful request will include the [ID and access token](../middleware/cashbox.md#cashbox-id--access-token) of the newly created CashBox, which will allow for an immediate rollout of a launcher instance with these values.
+The response to a successful request will include the [ID and access token](../middleware/cashbox.md#cashbox-id-and-accesstoken) of the newly created CashBox, which will allow for an immediate rollout of a launcher instance with these values.
 
 
 
