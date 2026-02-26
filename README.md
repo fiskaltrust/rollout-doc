@@ -1,3 +1,7 @@
+ > # The docs have been moved to the [docs](https://github.com/fiskaltrust/docs) repository.
+
+---
+
 # fiskaltrust dealer documentation 
 This repository hosts the docs of the dealer documentation for our documentation platform at https://docs.fiskaltrust.cloud/docs/posdealers/introduction.
 
@@ -26,5 +30,6 @@ These .mdx files are placed in the same folder structure then the main pages, ju
 The content can be changed directly in the browser. You can also copy and paste the content or clone the repository locally and work on it with other tools like Visual Studio Code that provide a better usability. 
 
 ![Edit Content directly](./images/GithubChange.png)
+
 
 To save your changes to the repository, you can commit them at the bottom of the page. Depending on how the market specific team deals with these changes, you could also create a branch and start a pull request to have them reviewed before they are merged into the main branch.
